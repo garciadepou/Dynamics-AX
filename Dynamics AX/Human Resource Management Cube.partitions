@@ -1,3 +1,341 @@
 ﻿<Cube xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:ddl200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:ddl200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:ddl300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:ddl300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:ddl400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:ddl400_400="http://schemas.microsoft.com/analysisservices/2012/engine/400/400" xmlns:ddl500="http://schemas.microsoft.com/analysisservices/2013/engine/500" xmlns:ddl500_500="http://schemas.microsoft.com/analysisservices/2013/engine/500/500" xmlns:dwd="http://schemas.microsoft.com/DataWarehouse/Designer/1.0" dwd:design-time-name="d5004271-4dcd-4177-987e-71c39e303678" xmlns="http://schemas.microsoft.com/analysisservices/2003/engine">
   <ID>Human Resource Management Cube</ID>
+  <MeasureGroups>
+    <MeasureGroup>
+      <ID>EMPLTABLE</ID>
+      <Partitions>
+        <Partition dwd:design-time-name="2d18ee15-5ebc-4d9c-aa36-999344e3ebe9">
+          <ID>EMPLTABLE</ID>
+          <Name>Employee</Name>
+          <CreatedTimestamp>2014-05-21T09:20:59.626667Z</CreatedTimestamp>
+          <LastSchemaUpdate>2018-10-23T14:46:15.606667Z</LastSchemaUpdate>
+          <LastProcessed>2019-02-15T07:34:28.953333Z</LastProcessed>
+          <State>Processed</State>
+          <Source xsi:type="DsvTableBinding" dwd:design-time-name="6c4eb7af-dbcf-42b7-b079-c1fb5ca653aa">
+            <DataSourceViewID>Dynamics AX</DataSourceViewID>
+            <TableID>EMPLTABLE</TableID>
+          </Source>
+          <StorageMode>Molap</StorageMode>
+          <CurrentStorageMode>Molap</CurrentStorageMode>
+          <ProcessingMode>Regular</ProcessingMode>
+          <ProactiveCaching dwd:design-time-name="9abf2540-bdce-4ff3-9f15-5e608dafcc05">
+            <SilenceInterval>-PT1S</SilenceInterval>
+            <Latency>-PT1S</Latency>
+            <SilenceOverrideInterval>-PT1S</SilenceOverrideInterval>
+            <ForceRebuildInterval>-PT1S</ForceRebuildInterval>
+            <Source xsi:type="ProactiveCachingInheritedBinding" dwd:design-time-name="d9fa4f93-9d02-45a3-8bc5-f6e0ed2858bb" />
+          </ProactiveCaching>
+          <EstimatedSize>16758</EstimatedSize>
+        </Partition>
+      </Partitions>
+    </MeasureGroup>
+    <MeasureGroup>
+      <ID>BIMASTERCOMPANYEXCHANGERATES</ID>
+      <Partitions>
+        <Partition dwd:design-time-name="3c1e0f4d-208e-4bea-a053-4c449df0e983">
+          <ID>BIMASTERCOMPANYEXCHANGERATES</ID>
+          <Name>Master company exchange rate</Name>
+          <CreatedTimestamp>2014-05-21T09:20:59.673333Z</CreatedTimestamp>
+          <LastSchemaUpdate>2018-10-23T14:46:15.686667Z</LastSchemaUpdate>
+          <LastProcessed>2019-02-15T07:34:28.86Z</LastProcessed>
+          <State>Processed</State>
+          <Source xsi:type="DsvTableBinding" dwd:design-time-name="9e766e1c-5953-4c20-8df7-d56f91237c35">
+            <DataSourceViewID>Dynamics AX</DataSourceViewID>
+            <TableID>BIMASTERCOMPANYEXCHANGERATES</TableID>
+          </Source>
+          <StorageMode>Molap</StorageMode>
+          <CurrentStorageMode>Molap</CurrentStorageMode>
+          <ProcessingMode>Regular</ProcessingMode>
+          <ProactiveCaching dwd:design-time-name="78ee35aa-3c06-462f-b663-ff50b4b3a576">
+            <SilenceInterval>-PT1S</SilenceInterval>
+            <Latency>-PT1S</Latency>
+            <SilenceOverrideInterval>-PT1S</SilenceOverrideInterval>
+            <ForceRebuildInterval>-PT1S</ForceRebuildInterval>
+            <Source xsi:type="ProactiveCachingInheritedBinding" dwd:design-time-name="62514141-4553-4c35-a327-e40c6884df15" />
+          </ProactiveCaching>
+          <EstimatedSize>125189</EstimatedSize>
+        </Partition>
+      </Partitions>
+    </MeasureGroup>
+    <MeasureGroup>
+      <ID>HRPPARTYPOSITIONTABLERELAT2226</ID>
+      <Partitions>
+        <Partition dwd:design-time-name="4e1320f8-f0e4-4fa7-b264-00dc5f2ccf98">
+          <ID>HRPPARTYPOSITIONTABLERELAT2226</ID>
+          <Name>Position</Name>
+          <CreatedTimestamp>2014-05-21T09:20:59.703333Z</CreatedTimestamp>
+          <LastSchemaUpdate>2018-10-23T14:46:15.733333Z</LastSchemaUpdate>
+          <LastProcessed>2019-02-15T07:34:47.08Z</LastProcessed>
+          <State>Processed</State>
+          <Source xsi:type="DsvTableBinding" dwd:design-time-name="5a5992cb-5ba3-4117-8c70-40ed56b57f57">
+            <DataSourceViewID>Dynamics AX</DataSourceViewID>
+            <TableID>HRPPARTYPOSITIONTABLERELAT2226</TableID>
+          </Source>
+          <StorageMode>Molap</StorageMode>
+          <CurrentStorageMode>Molap</CurrentStorageMode>
+          <ProcessingMode>Regular</ProcessingMode>
+          <ProactiveCaching dwd:design-time-name="9686ef44-cf3d-4dc0-b29d-bf22e58bbed6">
+            <SilenceInterval>-PT1S</SilenceInterval>
+            <Latency>-PT1S</Latency>
+            <SilenceOverrideInterval>-PT1S</SilenceOverrideInterval>
+            <ForceRebuildInterval>-PT1S</ForceRebuildInterval>
+            <Source xsi:type="ProactiveCachingInheritedBinding" dwd:design-time-name="2d239f99-2c20-4464-8229-06165256437a" />
+          </ProactiveCaching>
+          <EstimatedSize>29842</EstimatedSize>
+        </Partition>
+      </Partitions>
+    </MeasureGroup>
+    <MeasureGroup>
+      <ID>HRMGOAL</ID>
+      <Partitions>
+        <Partition dwd:design-time-name="502ee983-2dd9-4d2b-9541-95331e96038d">
+          <ID>HRMGOAL</ID>
+          <Name>Goals</Name>
+          <CreatedTimestamp>2014-05-21T09:20:59.75Z</CreatedTimestamp>
+          <LastSchemaUpdate>2018-10-23T14:46:15.81Z</LastSchemaUpdate>
+          <LastProcessed>2019-02-15T07:34:46.05Z</LastProcessed>
+          <State>Processed</State>
+          <Source xsi:type="DsvTableBinding" dwd:design-time-name="72b28efb-ab8a-49b1-8e92-c1227fb4a4c9">
+            <DataSourceViewID>Dynamics AX</DataSourceViewID>
+            <TableID>HRMGOAL</TableID>
+          </Source>
+          <StorageMode>Molap</StorageMode>
+          <CurrentStorageMode>Molap</CurrentStorageMode>
+          <ProcessingMode>Regular</ProcessingMode>
+          <ProactiveCaching dwd:design-time-name="d126f06e-f034-4657-8ba2-c4b60a8ca76d">
+            <SilenceInterval>-PT1S</SilenceInterval>
+            <Latency>-PT1S</Latency>
+            <SilenceOverrideInterval>-PT1S</SilenceOverrideInterval>
+            <ForceRebuildInterval>-PT1S</ForceRebuildInterval>
+            <Source xsi:type="ProactiveCachingInheritedBinding" dwd:design-time-name="eebad6c8-f56c-4a70-b37a-052d7de96426" />
+          </ProactiveCaching>
+          <EstimatedSize>156</EstimatedSize>
+        </Partition>
+      </Partitions>
+    </MeasureGroup>
+    <MeasureGroup>
+      <ID>BIEXCHANGERATES</ID>
+      <Partitions>
+        <Partition dwd:design-time-name="bfa7cb64-c307-41e0-bff4-db504772025d">
+          <ID>BIEXCHANGERATES</ID>
+          <Name>Exchange rate</Name>
+          <CreatedTimestamp>2014-05-21T09:20:59.783333Z</CreatedTimestamp>
+          <LastSchemaUpdate>2018-10-23T14:46:15.856667Z</LastSchemaUpdate>
+          <LastProcessed>2019-02-15T07:34:28.83Z</LastProcessed>
+          <State>Processed</State>
+          <Source xsi:type="DsvTableBinding" dwd:design-time-name="02f51332-3a33-445f-a2ec-5f3ea2b71d92">
+            <DataSourceViewID>Dynamics AX</DataSourceViewID>
+            <TableID>BIEXCHANGERATES</TableID>
+          </Source>
+          <StorageMode>Molap</StorageMode>
+          <CurrentStorageMode>Molap</CurrentStorageMode>
+          <ProcessingMode>Regular</ProcessingMode>
+          <ProactiveCaching dwd:design-time-name="00c0b61a-9bd1-409a-a283-c4fd865f63b2">
+            <SilenceInterval>-PT1S</SilenceInterval>
+            <Latency>-PT1S</Latency>
+            <SilenceOverrideInterval>-PT1S</SilenceOverrideInterval>
+            <ForceRebuildInterval>-PT1S</ForceRebuildInterval>
+            <Source xsi:type="ProactiveCachingInheritedBinding" dwd:design-time-name="27c161b3-6266-42b9-b282-0d4317829c13" />
+          </ProactiveCaching>
+          <EstimatedSize>1296118</EstimatedSize>
+        </Partition>
+      </Partitions>
+    </MeasureGroup>
+    <MeasureGroup>
+      <ID>HRMAPPLICATION</ID>
+      <Partitions>
+        <Partition dwd:design-time-name="810eee81-aa4c-42da-85b0-00884c152f99">
+          <ID>HRMAPPLICATION</ID>
+          <Name>Application</Name>
+          <CreatedTimestamp>2014-05-21T09:20:59.826667Z</CreatedTimestamp>
+          <LastSchemaUpdate>2018-10-23T14:46:15.886667Z</LastSchemaUpdate>
+          <LastProcessed>2019-02-15T07:35:02.033333Z</LastProcessed>
+          <State>Processed</State>
+          <Source xsi:type="DsvTableBinding" dwd:design-time-name="949a5d7f-2a0f-42a3-87b6-6afdeb7c61ae">
+            <DataSourceViewID>Dynamics AX</DataSourceViewID>
+            <TableID>HRMAPPLICATION</TableID>
+          </Source>
+          <StorageMode>Molap</StorageMode>
+          <CurrentStorageMode>Molap</CurrentStorageMode>
+          <ProcessingMode>Regular</ProcessingMode>
+          <ProactiveCaching dwd:design-time-name="79550258-0c08-4b55-a4fa-20688fc1f9a3">
+            <SilenceInterval>-PT1S</SilenceInterval>
+            <Latency>-PT1S</Latency>
+            <SilenceOverrideInterval>-PT1S</SilenceOverrideInterval>
+            <ForceRebuildInterval>-PT1S</ForceRebuildInterval>
+            <Source xsi:type="ProactiveCachingInheritedBinding" dwd:design-time-name="a5fdfc92-d9fd-4de9-bd39-ba6adb00b8b8" />
+          </ProactiveCaching>
+          <EstimatedSize>156</EstimatedSize>
+        </Partition>
+      </Partitions>
+    </MeasureGroup>
+    <MeasureGroup>
+      <ID>HRMCOURSETABLE</ID>
+      <Partitions>
+        <Partition dwd:design-time-name="7ea7989d-30fe-48db-ae03-d1880c07c5cf">
+          <ID>HRMCOURSETABLE</ID>
+          <Name>Course</Name>
+          <CreatedTimestamp>2014-05-21T09:20:59.86Z</CreatedTimestamp>
+          <LastSchemaUpdate>2018-10-23T14:46:15.933333Z</LastSchemaUpdate>
+          <LastProcessed>2019-02-15T07:35:00.75Z</LastProcessed>
+          <State>Processed</State>
+          <Source xsi:type="DsvTableBinding" dwd:design-time-name="d5f80ad7-a11c-45ac-9079-8181a44ab206">
+            <DataSourceViewID>Dynamics AX</DataSourceViewID>
+            <TableID>HRMCOURSETABLE</TableID>
+          </Source>
+          <StorageMode>Molap</StorageMode>
+          <CurrentStorageMode>Molap</CurrentStorageMode>
+          <ProcessingMode>Regular</ProcessingMode>
+          <ProactiveCaching dwd:design-time-name="9e1ced96-dbe2-48f3-b7f8-582deabc66b4">
+            <SilenceInterval>-PT1S</SilenceInterval>
+            <Latency>-PT1S</Latency>
+            <SilenceOverrideInterval>-PT1S</SilenceOverrideInterval>
+            <ForceRebuildInterval>-PT1S</ForceRebuildInterval>
+            <Source xsi:type="ProactiveCachingInheritedBinding" dwd:design-time-name="78df0b6a-2c38-4be9-9969-decce1fe9e1e" />
+          </ProactiveCaching>
+          <EstimatedSize>8056</EstimatedSize>
+        </Partition>
+      </Partitions>
+    </MeasureGroup>
+    <MeasureGroup>
+      <ID>HRMRECRUITINGTABLE</ID>
+      <Partitions>
+        <Partition dwd:design-time-name="68f6885f-cf31-4d21-9683-b35b7f801160">
+          <ID>HRMRECRUITINGTABLE</ID>
+          <Name>Recruitment project</Name>
+          <CreatedTimestamp>2014-05-21T09:20:59.906667Z</CreatedTimestamp>
+          <LastSchemaUpdate>2018-10-23T14:46:15.966667Z</LastSchemaUpdate>
+          <LastProcessed>2019-02-15T07:34:46.41Z</LastProcessed>
+          <State>Processed</State>
+          <Source xsi:type="DsvTableBinding" dwd:design-time-name="59c93f41-f058-497d-aba0-e011de1bf711">
+            <DataSourceViewID>Dynamics AX</DataSourceViewID>
+            <TableID>HRMRECRUITINGTABLE</TableID>
+          </Source>
+          <StorageMode>Molap</StorageMode>
+          <CurrentStorageMode>Molap</CurrentStorageMode>
+          <ProcessingMode>Regular</ProcessingMode>
+          <ProactiveCaching dwd:design-time-name="2aad6268-9d01-4f12-9f31-92c7bbe03692">
+            <SilenceInterval>-PT1S</SilenceInterval>
+            <Latency>-PT1S</Latency>
+            <SilenceOverrideInterval>-PT1S</SilenceOverrideInterval>
+            <ForceRebuildInterval>-PT1S</ForceRebuildInterval>
+            <Source xsi:type="ProactiveCachingInheritedBinding" dwd:design-time-name="29fd9d41-2ed0-4bf0-aae0-4f6ca5f2de92" />
+          </ProactiveCaching>
+          <EstimatedSize>156</EstimatedSize>
+        </Partition>
+      </Partitions>
+    </MeasureGroup>
+    <MeasureGroup>
+      <ID>HRMINTERVIEWTABLE</ID>
+      <Partitions>
+        <Partition dwd:design-time-name="79125aaf-f39c-4557-b14e-d4899639f893">
+          <ID>HRMINTERVIEWTABLE</ID>
+          <Name>Appraisal interview</Name>
+          <CreatedTimestamp>2014-05-21T09:20:59.936667Z</CreatedTimestamp>
+          <LastSchemaUpdate>2018-10-23T14:46:16.013333Z</LastSchemaUpdate>
+          <LastProcessed>2019-02-15T07:34:28.953333Z</LastProcessed>
+          <State>Processed</State>
+          <Source xsi:type="DsvTableBinding" dwd:design-time-name="9bd6df53-6614-4b3c-883e-c05e6a200bbd">
+            <DataSourceViewID>Dynamics AX</DataSourceViewID>
+            <TableID>HRMINTERVIEWTABLE</TableID>
+          </Source>
+          <StorageMode>Molap</StorageMode>
+          <CurrentStorageMode>Molap</CurrentStorageMode>
+          <ProcessingMode>Regular</ProcessingMode>
+          <ProactiveCaching dwd:design-time-name="e6b0e99a-9df2-4fea-9f3d-72af466647f6">
+            <SilenceInterval>-PT1S</SilenceInterval>
+            <Latency>-PT1S</Latency>
+            <SilenceOverrideInterval>-PT1S</SilenceOverrideInterval>
+            <ForceRebuildInterval>-PT1S</ForceRebuildInterval>
+            <Source xsi:type="ProactiveCachingInheritedBinding" dwd:design-time-name="84a1d635-b3da-4671-9350-2a2ef1377890" />
+          </ProactiveCaching>
+          <EstimatedSize>156</EstimatedSize>
+        </Partition>
+      </Partitions>
+    </MeasureGroup>
+    <MeasureGroup>
+      <ID>HRMCOURSEATTENDEE</ID>
+      <Partitions>
+        <Partition dwd:design-time-name="8b9c5aee-bdd1-4176-a234-758910f3c978">
+          <ID>HRMCOURSEATTENDEE</ID>
+          <Name>HRMCOURSEATTENDEE</Name>
+          <CreatedTimestamp>2014-05-21T09:20:59.983333Z</CreatedTimestamp>
+          <LastSchemaUpdate>2018-10-23T14:46:16.06Z</LastSchemaUpdate>
+          <LastProcessed>2019-02-15T07:34:24.44Z</LastProcessed>
+          <State>Processed</State>
+          <Source xsi:type="DsvTableBinding" dwd:design-time-name="c4e264b6-b0a9-435a-a953-faca1578359b">
+            <DataSourceViewID>Dynamics AX</DataSourceViewID>
+            <TableID>HRMCOURSEATTENDEE</TableID>
+          </Source>
+          <StorageMode>Molap</StorageMode>
+          <CurrentStorageMode>Molap</CurrentStorageMode>
+          <ProcessingMode>Regular</ProcessingMode>
+          <ProactiveCaching dwd:design-time-name="89e67655-4dfd-4865-866f-4cbf7e0f23d3">
+            <SilenceInterval>-PT1S</SilenceInterval>
+            <Latency>-PT1S</Latency>
+            <SilenceOverrideInterval>-PT1S</SilenceOverrideInterval>
+            <ForceRebuildInterval>-PT1S</ForceRebuildInterval>
+            <Source xsi:type="ProactiveCachingInheritedBinding" dwd:design-time-name="8a7d749b-cb13-49ff-a285-910fe56b5110" />
+          </ProactiveCaching>
+          <EstimatedSize>8579</EstimatedSize>
+        </Partition>
+      </Partitions>
+    </MeasureGroup>
+    <MeasureGroup>
+      <ID>HRMVIRTUALNETWORKSKILL</ID>
+      <Partitions>
+        <Partition dwd:design-time-name="0980e488-b268-4abd-acce-4e3479772e1c">
+          <ID>HRMVIRTUALNETWORKSKILL</ID>
+          <Name>HRMVIRTUALNETWORKSKILL</Name>
+          <CreatedTimestamp>2014-05-21T09:21:00.016667Z</CreatedTimestamp>
+          <LastSchemaUpdate>2018-10-23T14:46:16.09Z</LastSchemaUpdate>
+          <LastProcessed>2019-02-15T07:34:46.253333Z</LastProcessed>
+          <State>Processed</State>
+          <Source xsi:type="DsvTableBinding" dwd:design-time-name="7238f4c4-10d0-4b7a-9c3c-02723176d911">
+            <DataSourceViewID>Dynamics AX</DataSourceViewID>
+            <TableID>HRMVIRTUALNETWORKSKILL</TableID>
+          </Source>
+          <StorageMode>Molap</StorageMode>
+          <CurrentStorageMode>Molap</CurrentStorageMode>
+          <ProcessingMode>Regular</ProcessingMode>
+          <ProactiveCaching dwd:design-time-name="5de67039-6624-4c7e-8859-8e29107cf477">
+            <SilenceInterval>-PT1S</SilenceInterval>
+            <Latency>-PT1S</Latency>
+            <SilenceOverrideInterval>-PT1S</SilenceOverrideInterval>
+            <ForceRebuildInterval>-PT1S</ForceRebuildInterval>
+            <Source xsi:type="ProactiveCachingInheritedBinding" dwd:design-time-name="5fc6bd31-2558-461f-b6dc-6585804a52df" />
+          </ProactiveCaching>
+          <EstimatedSize>264</EstimatedSize>
+        </Partition>
+      </Partitions>
+    </MeasureGroup>
+    <MeasureGroup>
+      <ID>HRMABSENCETRANS</ID>
+      <Partitions>
+        <Partition dwd:design-time-name="ba67cc7d-4a62-42a0-a945-3c7aa238e07b">
+          <ID>HRMABSENCETRANS</ID>
+          <Name>HRMABSENCETRANS</Name>
+          <CreatedTimestamp>2014-05-21T09:21:00.063333Z</CreatedTimestamp>
+          <LastSchemaUpdate>2018-10-23T14:46:16.123333Z</LastSchemaUpdate>
+          <LastProcessed>2019-02-15T07:34:28.69Z</LastProcessed>
+          <State>Processed</State>
+          <Source xsi:type="DsvTableBinding" dwd:design-time-name="7b5e45cb-93a1-4423-8d43-b05eb454558e">
+            <DataSourceViewID>Dynamics AX</DataSourceViewID>
+            <TableID>HRMABSENCETRANS</TableID>
+          </Source>
+          <StorageMode>Molap</StorageMode>
+          <CurrentStorageMode>Molap</CurrentStorageMode>
+          <ProcessingMode>Regular</ProcessingMode>
+          <ProactiveCaching dwd:design-time-name="ed04d473-4710-4c55-ae7c-ee4959f851e7">
+            <SilenceInterval>-PT1S</SilenceInterval>
+            <Latency>-PT1S</Latency>
+            <SilenceOverrideInterval>-PT1S</SilenceOverrideInterval>
+            <ForceRebuildInterval>-PT1S</ForceRebuildInterval>
+            <Source xsi:type="ProactiveCachingInheritedBinding" dwd:design-time-name="35c0ed6f-35cb-4a49-9a8d-a18b6bcec99e" />
+          </ProactiveCaching>
+          <EstimatedSize>402</EstimatedSize>
+        </Partition>
+      </Partitions>
+    </MeasureGroup>
+  </MeasureGroups>
 </Cube>

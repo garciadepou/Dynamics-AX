@@ -1,136 +1,173 @@
-﻿<Cube xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:ddl200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:ddl200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:ddl300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:ddl300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:ddl400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:ddl400_400="http://schemas.microsoft.com/analysisservices/2012/engine/400/400" xmlns:ddl500="http://schemas.microsoft.com/analysisservices/2013/engine/500" xmlns:ddl500_500="http://schemas.microsoft.com/analysisservices/2013/engine/500/500" xmlns="http://schemas.microsoft.com/analysisservices/2003/engine">
+﻿<Cube xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:ddl200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:ddl200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:ddl300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:ddl300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:ddl400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:ddl400_400="http://schemas.microsoft.com/analysisservices/2012/engine/400/400" xmlns:ddl500="http://schemas.microsoft.com/analysisservices/2013/engine/500" xmlns:ddl500_500="http://schemas.microsoft.com/analysisservices/2013/engine/500/500" xmlns:dwd="http://schemas.microsoft.com/DataWarehouse/Designer/1.0" dwd:design-time-name="12fcf166-bd59-4e33-89b0-1b26f11c8e5c" xmlns="http://schemas.microsoft.com/analysisservices/2003/engine">
   <ID>Dynamics AX</ID>
   <Name>Shipments Cube</Name>
   <CreatedTimestamp>2018-10-29T11:47:04.643333Z</CreatedTimestamp>
   <LastSchemaUpdate>2019-02-07T21:38:00.61Z</LastSchemaUpdate>
+  <Annotations>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramLayout</Name>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ShowFriendlyNames</Name>
+      <Value>true</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ShowRelationshipNames</Name>
+      <Value>false</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:UseDiagramDefaultLayout</Name>
+      <Value>true</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramViewPortLeft</Name>
+      <Value>0</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramViewPortTop</Name>
+      <Value>0</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramBoundingLeft</Name>
+      <Value>0</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramBoundingTop</Name>
+      <Value>0</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramZoom</Name>
+      <Value>100</Value>
+    </Annotation>
+  </Annotations>
   <LastProcessed>2019-02-15T07:32:13.05Z</LastProcessed>
   <State>Processed</State>
   <Language>1033</Language>
   <Collation>Modern_Spanish_CI_AS</Collation>
   <Translations>
-    <Translation>
+    <Translation dwd:design-time-name="2cd47c3c-ea2e-49b2-8b52-07ccdd75deb4">
       <Language>3082</Language>
       <Caption>Cubo de envíos</Caption>
     </Translation>
   </Translations>
   <Dimensions>
-    <Dimension>
+    <Dimension dwd:design-time-name="bb3e558c-ef63-48e9-a787-5f79c2b8a11a">
       <ID>Sales Carrier</ID>
       <Name>Sales Carrier</Name>
       <Translations>
-        <Translation>
+        <Translation dwd:design-time-name="80c62f80-06f4-43ed-b9e2-2c084628ea2b">
           <Language>3082</Language>
           <Caption>Transportista</Caption>
         </Translation>
       </Translations>
       <DimensionID>Sales Carrier</DimensionID>
       <Attributes>
-        <Attribute>
+        <Attribute dwd:design-time-name="fda651ad-0c8c-4994-bc42-9974d522e157">
           <AttributeID>CARRIERNAME</AttributeID>
         </Attribute>
-        <Attribute>
+        <Attribute dwd:design-time-name="6fbf96cf-7973-4421-850b-b3b5d4545f48">
           <AttributeID>AODESCRIPTION</AttributeID>
         </Attribute>
       </Attributes>
     </Dimension>
-    <Dimension>
+    <Dimension dwd:design-time-name="58d023d7-ad13-4bc7-b8b7-4e5166b4e4cf">
       <ID>Company</ID>
       <Name>Company</Name>
       <Translations>
-        <Translation>
+        <Translation dwd:design-time-name="9503a498-db2b-4dd6-b0e7-077b7563671c">
           <Language>1033</Language>
           <Caption>Company</Caption>
         </Translation>
-        <Translation>
+        <Translation dwd:design-time-name="1b8cdb31-2076-4fbe-b023-85d0d75cbebd">
           <Language>3082</Language>
           <Caption>Compañía</Caption>
         </Translation>
       </Translations>
       <DimensionID>DATAAREA</DimensionID>
       <Attributes>
-        <Attribute>
+        <Attribute dwd:design-time-name="f69ad892-02d9-405d-983e-80591123c733">
           <AttributeID>ID</AttributeID>
         </Attribute>
-        <Attribute>
+        <Attribute dwd:design-time-name="223786aa-5185-4218-92e5-7f57c486c9e7">
           <AttributeID>CURRENCYCODE</AttributeID>
         </Attribute>
-        <Attribute>
+        <Attribute dwd:design-time-name="5ba5dac8-c698-4965-b879-c14e8d5c050b">
           <AttributeID>SECONDARYCURRENCYCODE</AttributeID>
         </Attribute>
-        <Attribute>
+        <Attribute dwd:design-time-name="04fe848d-4c75-49c8-888c-a5b5e0ad75ca">
           <AttributeID>ISPIVOT</AttributeID>
         </Attribute>
       </Attributes>
     </Dimension>
-    <Dimension>
+    <Dimension dwd:design-time-name="0bce96e5-b533-4f40-923e-c427f0c04c8b">
       <ID>DSTime</ID>
       <Name>DSTime</Name>
       <Translations>
-        <Translation>
+        <Translation dwd:design-time-name="e1fe0aac-37c2-4012-ac96-d980fc7f455a">
           <Language>3082</Language>
           <Caption>Tiempo</Caption>
         </Translation>
       </Translations>
       <DimensionID>DSTime</DimensionID>
       <Attributes>
-        <Attribute>
+        <Attribute dwd:design-time-name="7e54d677-38f0-482d-b4cf-93b7d343bb8d">
           <AttributeID>PKDATE</AttributeID>
         </Attribute>
-        <Attribute>
+        <Attribute dwd:design-time-name="9eea8533-94c5-4cf5-a2a6-fc3970260744">
           <AttributeID>YEAR</AttributeID>
         </Attribute>
-        <Attribute>
+        <Attribute dwd:design-time-name="92cd1397-52ad-4d2f-873c-27f2d36e7a12">
           <AttributeID>QUARTER</AttributeID>
         </Attribute>
-        <Attribute>
+        <Attribute dwd:design-time-name="c661e415-10cc-4077-a2cf-70ec0c1ce68a">
           <AttributeID>MONTH</AttributeID>
         </Attribute>
-        <Attribute>
+        <Attribute dwd:design-time-name="60a19165-4493-4403-8a53-d246b3ef1e8a">
           <AttributeID>WEEK</AttributeID>
         </Attribute>
-        <Attribute>
+        <Attribute dwd:design-time-name="234ca1a4-ee8b-453e-b1b7-3b89c574b5b5">
           <AttributeID>DAYOFYEAR</AttributeID>
         </Attribute>
-        <Attribute>
+        <Attribute dwd:design-time-name="2539d303-ab09-4d0f-a008-95df41d61abd">
           <AttributeID>DAYOFQUARTER</AttributeID>
         </Attribute>
-        <Attribute>
+        <Attribute dwd:design-time-name="1d2c9cf6-8d9e-42d2-815b-4e3dd38e3254">
           <AttributeID>DAYOFMONTH</AttributeID>
         </Attribute>
-        <Attribute>
+        <Attribute dwd:design-time-name="4b4bf3ba-0f50-4539-abd3-daa09c6a6cb3">
           <AttributeID>DAYOFWEEK</AttributeID>
         </Attribute>
-        <Attribute>
+        <Attribute dwd:design-time-name="6f68329a-c056-4ed2-81e6-0f19f888ec20">
           <AttributeID>WEEKOFYEAR</AttributeID>
         </Attribute>
-        <Attribute>
+        <Attribute dwd:design-time-name="4bc4c6d8-d21b-4786-aec3-5c2cf687bfb9">
           <AttributeID>MONTHOFYEAR</AttributeID>
         </Attribute>
-        <Attribute>
+        <Attribute dwd:design-time-name="b16fa0f0-1020-4cbe-8e09-82e72f55bc33">
           <AttributeID>MONTHOFQUARTER</AttributeID>
         </Attribute>
-        <Attribute>
+        <Attribute dwd:design-time-name="6bab0df0-e3d4-4877-95d3-4e4773f6dd44">
           <AttributeID>QUARTEROFYEAR</AttributeID>
         </Attribute>
-        <Attribute>
+        <Attribute dwd:design-time-name="7c46d140-5039-4b83-8117-5c4248d86a50">
           <AttributeID>Año - Trimestre - Mes - Fecha Time Calculations</AttributeID>
         </Attribute>
-        <Attribute>
+        <Attribute dwd:design-time-name="f303f93f-6384-4e09-93fb-5dc70cd998a0">
           <AttributeID>MONTH 1</AttributeID>
         </Attribute>
       </Attributes>
       <Hierarchies>
-        <Hierarchy>
+        <Hierarchy dwd:design-time-name="bdddbbde-cda7-47c1-9194-1af3f3d15294">
           <HierarchyID>Hierarchy</HierarchyID>
         </Hierarchy>
-        <Hierarchy>
+        <Hierarchy dwd:design-time-name="29fb00bc-17cf-4339-85a7-7887bcb05f28">
           <HierarchyID>Hierarchy 2</HierarchyID>
         </Hierarchy>
       </Hierarchies>
     </Dimension>
   </Dimensions>
   <MeasureGroups>
-    <MeasureGroup>
+    <MeasureGroup dwd:design-time-name="8a5e808b-4a24-475c-8be6-33e8562bb021">
       <ID>SALESSHIPPINGSTAT</ID>
       <Name>Shipments</Name>
       <CreatedTimestamp>2018-10-29T11:47:04.656667Z</CreatedTimestamp>
@@ -138,217 +175,217 @@
       <LastProcessed>2019-02-15T07:32:12.41Z</LastProcessed>
       <State>Processed</State>
       <Translations>
-        <Translation>
+        <Translation dwd:design-time-name="7272673c-ea19-4cb7-889e-8fb661d28b16">
           <Language>3082</Language>
           <Caption>Envíos</Caption>
         </Translation>
       </Translations>
       <Measures>
-        <Measure>
+        <Measure dwd:design-time-name="d4a3b13a-8eab-4d45-9f6d-e1456dd6cadc">
           <ID>VOLUME</ID>
           <Name>Volume</Name>
           <DataType>Double</DataType>
-          <Source>
+          <Source dwd:design-time-name="60be9c57-5332-4bc1-8f11-8bc64de4e0f2">
             <DataType>Double</DataType>
-            <Source xsi:type="ColumnBinding">
+            <Source xsi:type="ColumnBinding" dwd:design-time-name="18d398f3-03eb-48c4-ad3d-851fcf0f5dbf">
               <TableID>SALESSHIPPINGSTAT</TableID>
               <ColumnID>VOLUME</ColumnID>
             </Source>
           </Source>
           <FormatString>#,##0.000;-#,##0.000</FormatString>
           <Translations>
-            <Translation>
+            <Translation dwd:design-time-name="54a5a55f-354d-4836-bfbc-f8f94f07b9bf">
               <Language>3082</Language>
               <Caption>Volumen</Caption>
             </Translation>
           </Translations>
         </Measure>
-        <Measure>
+        <Measure dwd:design-time-name="4a5a3d86-a2e5-41d0-930f-2e2442b9ed25">
           <ID>NETWEIGHT</ID>
           <Name>Net Weight</Name>
           <DataType>Double</DataType>
-          <Source>
+          <Source dwd:design-time-name="e6e1734d-7d2c-43bd-8355-c4f52f901a54">
             <DataType>Double</DataType>
-            <Source xsi:type="ColumnBinding">
+            <Source xsi:type="ColumnBinding" dwd:design-time-name="e8cc9fac-b4ac-4ccd-8e41-567849bee00e">
               <TableID>SALESSHIPPINGSTAT</TableID>
               <ColumnID>NETWEIGHT</ColumnID>
             </Source>
           </Source>
           <FormatString>#,##0.00;-#,##0.00</FormatString>
           <Translations>
-            <Translation>
+            <Translation dwd:design-time-name="21b1774c-3c54-4ea6-8098-b8a7a7d44a7b">
               <Language>3082</Language>
               <Caption>Peso neto</Caption>
             </Translation>
           </Translations>
         </Measure>
-        <Measure>
+        <Measure dwd:design-time-name="8875fbf2-a806-4ebd-aaed-34cbcc4d49cf">
           <ID>GROSSWEIGHT</ID>
           <Name>Gross Weight</Name>
           <DataType>Double</DataType>
-          <Source>
+          <Source dwd:design-time-name="20246d94-2a99-44b7-b686-09c00a55b794">
             <DataType>Double</DataType>
-            <Source xsi:type="ColumnBinding">
+            <Source xsi:type="ColumnBinding" dwd:design-time-name="5c194b69-a2a8-4a8e-b8d6-4445a39d0d1d">
               <TableID>SALESSHIPPINGSTAT</TableID>
               <ColumnID>GROSSWEIGHT</ColumnID>
             </Source>
           </Source>
           <FormatString>#,##0.00;-#,##0.00</FormatString>
           <Translations>
-            <Translation>
+            <Translation dwd:design-time-name="d2967661-ea94-47e1-8acc-c5bd72d57ee5">
               <Language>3082</Language>
               <Caption>Peso bruto</Caption>
             </Translation>
           </Translations>
         </Measure>
-        <Measure>
+        <Measure dwd:design-time-name="5a099b48-1385-477e-ad6e-ba697e026576">
           <ID>GPTHEORICGROSSWEIGHT</ID>
           <Name>Theoric Gross Weight</Name>
           <DataType>Double</DataType>
-          <Source>
+          <Source dwd:design-time-name="4ec0c7f9-4cef-4c34-b0d8-6409bf4b237e">
             <DataType>Double</DataType>
-            <Source xsi:type="ColumnBinding">
+            <Source xsi:type="ColumnBinding" dwd:design-time-name="e8c10e0e-f697-4bb9-bbba-6df888e95ce9">
               <TableID>SALESSHIPPINGSTAT</TableID>
               <ColumnID>GPTHEORICGROSSWEIGHT</ColumnID>
             </Source>
           </Source>
           <FormatString>#,##0.00;-#,##0.00</FormatString>
           <Translations>
-            <Translation>
+            <Translation dwd:design-time-name="347e8322-77c6-463e-955e-540adc978b46">
               <Language>3082</Language>
               <Caption>Peso teórico</Caption>
             </Translation>
           </Translations>
         </Measure>
-        <Measure>
+        <Measure dwd:design-time-name="1168577d-2a64-41d0-a056-95311bd23449">
           <ID>GPREALGROSSWEIGHT</ID>
           <Name>Real Gross Weight</Name>
           <DataType>Double</DataType>
-          <Source>
+          <Source dwd:design-time-name="9a0a7d28-5cf8-4dc3-9795-374cc503369a">
             <DataType>Double</DataType>
-            <Source xsi:type="ColumnBinding">
+            <Source xsi:type="ColumnBinding" dwd:design-time-name="24c10b34-daaf-4355-a570-9c2cc33d368f">
               <TableID>SALESSHIPPINGSTAT</TableID>
               <ColumnID>GPREALGROSSWEIGHT</ColumnID>
             </Source>
           </Source>
           <FormatString>#,##0.00;-#,##0.00</FormatString>
           <Translations>
-            <Translation>
+            <Translation dwd:design-time-name="1672cd8d-0102-4a32-b6d5-a867a7cf9754">
               <Language>3082</Language>
               <Caption>Peso real</Caption>
             </Translation>
           </Translations>
         </Measure>
-        <Measure>
+        <Measure dwd:design-time-name="55b3a60c-9f25-4a6a-9f37-f08664921ab9">
           <ID>CARTONSQTY</ID>
           <Name>Cartons per Pallet</Name>
           <DataType>Double</DataType>
-          <Source>
+          <Source dwd:design-time-name="f53d36bb-52b3-4b13-a2a8-5269ff862c19">
             <DataType>Double</DataType>
-            <Source xsi:type="ColumnBinding">
+            <Source xsi:type="ColumnBinding" dwd:design-time-name="b7c9f30a-0fb4-41ac-be6c-aee0c2016a83">
               <TableID>SALESSHIPPINGSTAT</TableID>
               <ColumnID>CARTONSQTY</ColumnID>
             </Source>
           </Source>
           <FormatString>#,##0;-#,##0</FormatString>
           <Translations>
-            <Translation>
+            <Translation dwd:design-time-name="7429d2b4-533b-4922-851e-d6d20d3e3f7e">
               <Language>3082</Language>
               <Caption>Bultos en palet</Caption>
             </Translation>
           </Translations>
         </Measure>
-        <Measure>
+        <Measure dwd:design-time-name="0e19158b-6747-4443-88e8-71cb87cd5ec9">
           <ID>QUANTITY</ID>
           <Name>Qty</Name>
           <DataType>Double</DataType>
-          <Source>
+          <Source dwd:design-time-name="d27c8381-ee49-4270-b3f5-ca5f604e2526">
             <DataType>Double</DataType>
-            <Source xsi:type="ColumnBinding">
+            <Source xsi:type="ColumnBinding" dwd:design-time-name="65d404d7-58fe-4649-9934-6a1f7bdd4c52">
               <TableID>SALESSHIPPINGSTAT</TableID>
               <ColumnID>QUANTITY</ColumnID>
             </Source>
           </Source>
           <FormatString>#,##0.000;-#,##0.000</FormatString>
           <Translations>
-            <Translation>
+            <Translation dwd:design-time-name="3fe351f8-16bb-4d17-a500-6166415c2438">
               <Language>3082</Language>
               <Caption>Número de unidades</Caption>
             </Translation>
           </Translations>
         </Measure>
-        <Measure>
+        <Measure dwd:design-time-name="be056ba0-0386-4607-8d5e-636c88fb00fa">
           <ID>PALLETEURQTY</ID>
           <Name>Pallet EUR Qty</Name>
           <DataType>Double</DataType>
-          <Source>
+          <Source dwd:design-time-name="23ca9ac9-8099-4578-9975-d714fc88485b">
             <DataType>Double</DataType>
-            <Source xsi:type="ColumnBinding">
+            <Source xsi:type="ColumnBinding" dwd:design-time-name="1fff7634-f68c-4f03-a509-17d043d95bba">
               <TableID>SALESSHIPPINGSTAT</TableID>
               <ColumnID>PALLETEURQTY</ColumnID>
             </Source>
           </Source>
           <FormatString>#,##0;-#,##0</FormatString>
           <Translations>
-            <Translation>
+            <Translation dwd:design-time-name="25e0a1d7-1f0d-4783-9349-853af9fa9115">
               <Language>3082</Language>
               <Caption>Nro Pallets EUR</Caption>
             </Translation>
           </Translations>
         </Measure>
-        <Measure>
+        <Measure dwd:design-time-name="6726d041-6e46-47a8-a42d-35040e0dbeb4">
           <ID>PALLETQTY</ID>
           <Name>Pallet Qty</Name>
           <DataType>Double</DataType>
-          <Source>
+          <Source dwd:design-time-name="7a515fd3-fff8-499e-813c-79b6ba897a1b">
             <DataType>Double</DataType>
-            <Source xsi:type="ColumnBinding">
+            <Source xsi:type="ColumnBinding" dwd:design-time-name="bf6e79ea-1c52-42ff-bdd7-dc9e917fbaec">
               <TableID>SALESSHIPPINGSTAT</TableID>
               <ColumnID>PALLETQTY</ColumnID>
             </Source>
           </Source>
           <FormatString>#,##0;-#,##0</FormatString>
           <Translations>
-            <Translation>
+            <Translation dwd:design-time-name="45a3754f-2e76-477e-80fe-c70d06aa4a93">
               <Language>3082</Language>
               <Caption>Nro Pallets totales</Caption>
             </Translation>
           </Translations>
         </Measure>
-        <Measure>
+        <Measure dwd:design-time-name="67e6d18f-ba2c-4b13-84f1-f73a6eb8bc6c">
           <ID>TAGGDPQTY</ID>
           <Name>Tag Qty</Name>
           <DataType>Double</DataType>
-          <Source>
+          <Source dwd:design-time-name="d00e7d21-540a-420a-8e6a-b04ca7f06d8d">
             <DataType>Double</DataType>
-            <Source xsi:type="ColumnBinding">
+            <Source xsi:type="ColumnBinding" dwd:design-time-name="3cb7b638-328f-4da4-95b8-7f5eb46f7148">
               <TableID>SALESSHIPPINGSTAT</TableID>
               <ColumnID>TAGGDPQTY</ColumnID>
             </Source>
           </Source>
           <FormatString>#,##0;-#,##0</FormatString>
           <Translations>
-            <Translation>
+            <Translation dwd:design-time-name="5383a305-cf8c-46fd-8ae9-c29cfb4c5f79">
               <Language>3082</Language>
               <Caption>Nro de etiquetas</Caption>
             </Translation>
           </Translations>
         </Measure>
-        <Measure>
+        <Measure dwd:design-time-name="4866f9f5-da75-4bfc-a93b-69f31ab7a9de">
           <ID>Recuento SALESSHIPPINGSTAT</ID>
           <Name>Shipments count</Name>
           <AggregateFunction>Count</AggregateFunction>
           <DataType>Integer</DataType>
-          <Source>
+          <Source dwd:design-time-name="bd6d90c4-92e9-4867-a024-1a733881d32f">
             <DataType>Integer</DataType>
             <DataSize>4</DataSize>
-            <Source xsi:type="RowBinding">
+            <Source xsi:type="RowBinding" dwd:design-time-name="01318ffc-18d1-451a-bd94-8a7a614a5474">
               <TableID>SALESSHIPPINGSTAT</TableID>
             </Source>
           </Source>
           <FormatString>#,##0;-#,##0</FormatString>
           <Translations>
-            <Translation>
+            <Translation dwd:design-time-name="3cf57067-9594-40f7-b1a1-34309fa416a7">
               <Language>3082</Language>
               <Caption>Recuento de envíos</Caption>
             </Translation>
@@ -359,17 +396,17 @@
       <EstimatedSize>1376165</EstimatedSize>
       <ProcessingMode>Regular</ProcessingMode>
       <Dimensions>
-        <Dimension xsi:type="RegularMeasureGroupDimension">
+        <Dimension xsi:type="RegularMeasureGroupDimension" dwd:design-time-name="b50c1155-1a10-4f8a-97a0-f4b3ad2d584a">
           <CubeDimensionID>Company</CubeDimensionID>
           <Cardinality>One</Cardinality>
           <Attributes>
-            <Attribute>
+            <Attribute dwd:design-time-name="7d5ed802-4171-41f7-9501-c446a3112236">
               <AttributeID>ID</AttributeID>
               <KeyColumns>
-                <KeyColumn>
+                <KeyColumn dwd:design-time-name="724cca55-d5bd-4773-a39a-b66ed2b4bcce">
                   <DataType>WChar</DataType>
                   <NullProcessing>UnknownMember</NullProcessing>
-                  <Source xsi:type="ColumnBinding">
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="a7b72cb5-5497-4239-bc06-6ed8833b05bf">
                     <TableID>SALESSHIPPINGSTAT</TableID>
                     <ColumnID>DATAAREAID</ColumnID>
                   </Source>
@@ -377,36 +414,36 @@
               </KeyColumns>
               <Type>Granularity</Type>
             </Attribute>
-            <Attribute>
+            <Attribute dwd:design-time-name="c9e25aa4-d253-4c15-97ac-5019f3e2fd23">
               <AttributeID>CURRENCYCODE</AttributeID>
               <KeyColumns>
-                <KeyColumn>
+                <KeyColumn dwd:design-time-name="f4082578-2957-4c0e-87eb-a51914ae4029">
                   <DataType>WChar</DataType>
-                  <Source xsi:type="ColumnBinding">
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="1d61e99b-e111-4147-bb14-5af23ea98707">
                     <TableID>DATAAREA</TableID>
                     <ColumnID>CURRENCYCODE</ColumnID>
                   </Source>
                 </KeyColumn>
               </KeyColumns>
             </Attribute>
-            <Attribute>
+            <Attribute dwd:design-time-name="c3a70d82-f530-48f9-932f-40e008d2f736">
               <AttributeID>SECONDARYCURRENCYCODE</AttributeID>
               <KeyColumns>
-                <KeyColumn>
+                <KeyColumn dwd:design-time-name="0952d528-b2d0-4f7d-b13b-b61fd75dbc7e">
                   <DataType>WChar</DataType>
-                  <Source xsi:type="ColumnBinding">
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="3085b233-0401-4ce4-b173-30ffe42371d5">
                     <TableID>DATAAREA</TableID>
                     <ColumnID>SECONDARYCURRENCYCODE</ColumnID>
                   </Source>
                 </KeyColumn>
               </KeyColumns>
             </Attribute>
-            <Attribute>
+            <Attribute dwd:design-time-name="9470dcde-cd7b-4b35-9f9f-2acd396053ad">
               <AttributeID>ISPIVOT</AttributeID>
               <KeyColumns>
-                <KeyColumn>
+                <KeyColumn dwd:design-time-name="f9c3076a-a0fc-425c-82e9-3dff6d9b2398">
                   <DataType>Integer</DataType>
-                  <Source xsi:type="ColumnBinding">
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="61f15343-96e3-42dd-8a9d-98b5d4be17ef">
                     <TableID>DATAAREA</TableID>
                     <ColumnID>ISPIVOT</ColumnID>
                   </Source>
@@ -415,25 +452,25 @@
             </Attribute>
           </Attributes>
         </Dimension>
-        <Dimension xsi:type="RegularMeasureGroupDimension">
+        <Dimension xsi:type="RegularMeasureGroupDimension" dwd:design-time-name="213b1f20-27c6-4db0-afe6-66b8cccb461f">
           <CubeDimensionID>Sales Carrier</CubeDimensionID>
           <Cardinality>One</Cardinality>
           <Attributes>
-            <Attribute>
+            <Attribute dwd:design-time-name="8b147154-acd2-4557-8aea-b0c91e3024c2">
               <AttributeID>CARRIERNAME</AttributeID>
               <KeyColumns>
-                <KeyColumn>
+                <KeyColumn dwd:design-time-name="a7e0bf86-cf67-45b6-80f8-7956deae4f1b">
                   <DataType>WChar</DataType>
                   <DataSize>4</DataSize>
-                  <Source xsi:type="ColumnBinding">
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="5bdcf4ee-086a-4054-b0ee-19ef22b80e67">
                     <TableID>SALESSHIPPINGSTAT</TableID>
                     <ColumnID>DATAAREAID</ColumnID>
                   </Source>
                 </KeyColumn>
-                <KeyColumn>
+                <KeyColumn dwd:design-time-name="ca87d6d2-bf0e-4fc2-a1f9-1a064e472d62">
                   <DataType>WChar</DataType>
                   <DataSize>30</DataSize>
-                  <Source xsi:type="ColumnBinding">
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="9f79f574-4098-4b6a-a8ba-194f22ba6716">
                     <TableID>SALESSHIPPINGSTAT</TableID>
                     <ColumnID>SALESCARRIER</ColumnID>
                   </Source>
@@ -441,21 +478,21 @@
               </KeyColumns>
               <Type>Granularity</Type>
             </Attribute>
-            <Attribute>
+            <Attribute dwd:design-time-name="c20add05-5557-4f3e-8228-f05b454b47bc">
               <AttributeID>AODESCRIPTION</AttributeID>
               <KeyColumns>
-                <KeyColumn>
+                <KeyColumn dwd:design-time-name="2253297c-ba1f-41b2-8557-d7b9f4744695">
                   <DataType>WChar</DataType>
                   <DataSize>4</DataSize>
-                  <Source xsi:type="ColumnBinding">
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="2c2f44a5-82c1-4340-95fb-1341db48b3ee">
                     <TableID>dbo_SALESCARRIER</TableID>
                     <ColumnID>DATAAREAID</ColumnID>
                   </Source>
                 </KeyColumn>
-                <KeyColumn>
+                <KeyColumn dwd:design-time-name="10e177b1-ae9a-42f3-946f-3fd3de956731">
                   <DataType>WChar</DataType>
                   <DataSize>60</DataSize>
-                  <Source xsi:type="ColumnBinding">
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="7773132c-a407-49fc-a4f9-9f512a85bc68">
                     <TableID>dbo_SALESCARRIER</TableID>
                     <ColumnID>AODESCRIPTION</ColumnID>
                   </Source>
@@ -464,16 +501,16 @@
             </Attribute>
           </Attributes>
         </Dimension>
-        <Dimension xsi:type="RegularMeasureGroupDimension">
+        <Dimension xsi:type="RegularMeasureGroupDimension" dwd:design-time-name="5966ca80-5781-476e-8f23-43f61d5b8ddc">
           <CubeDimensionID>DSTime</CubeDimensionID>
           <Cardinality>One</Cardinality>
           <Attributes>
-            <Attribute>
+            <Attribute dwd:design-time-name="ea756e19-ce9f-4112-98c3-7daac416e393">
               <AttributeID>PKDATE</AttributeID>
               <KeyColumns>
-                <KeyColumn>
+                <KeyColumn dwd:design-time-name="66546939-c85c-4380-ac33-75ae05191848">
                   <DataType>Date</DataType>
-                  <Source xsi:type="ColumnBinding">
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="f180b8f5-1e29-4cb1-9a03-aee0dfeba058">
                     <TableID>SALESSHIPPINGSTAT</TableID>
                     <ColumnID>DELIVERYDATE</ColumnID>
                   </Source>
@@ -481,169 +518,169 @@
               </KeyColumns>
               <Type>Granularity</Type>
             </Attribute>
-            <Attribute>
+            <Attribute dwd:design-time-name="1391a04c-88ec-44da-a235-0b0952e92d57">
               <AttributeID>YEAR</AttributeID>
               <KeyColumns>
-                <KeyColumn>
+                <KeyColumn dwd:design-time-name="0b9ed11e-5a6d-4ea8-804d-f354db69996e">
                   <DataType>Date</DataType>
-                  <Source xsi:type="ColumnBinding">
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="cd1ed6b6-f949-4b12-89c4-037553f1a0b6">
                     <TableID>dbo_GPBITIMEDIMENSION</TableID>
                     <ColumnID>YEAR</ColumnID>
                   </Source>
                 </KeyColumn>
               </KeyColumns>
             </Attribute>
-            <Attribute>
+            <Attribute dwd:design-time-name="edc21b4f-9bf8-47a1-bdd1-3524abb3db91">
               <AttributeID>QUARTER</AttributeID>
               <KeyColumns>
-                <KeyColumn>
+                <KeyColumn dwd:design-time-name="a6e4f4e8-4dcd-46c8-947b-10c46d056e9b">
                   <DataType>Date</DataType>
-                  <Source xsi:type="ColumnBinding">
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="8d4c85c1-5ffa-4c08-8cf5-0b2ce4374bf5">
                     <TableID>dbo_GPBITIMEDIMENSION</TableID>
                     <ColumnID>QUARTER</ColumnID>
                   </Source>
                 </KeyColumn>
               </KeyColumns>
             </Attribute>
-            <Attribute>
+            <Attribute dwd:design-time-name="7fdeec17-77a4-4d56-be13-d395204f4a92">
               <AttributeID>MONTH</AttributeID>
               <KeyColumns>
-                <KeyColumn>
+                <KeyColumn dwd:design-time-name="6ee03b46-bd7d-4e59-b35b-da1afc0fec2d">
                   <DataType>Date</DataType>
-                  <Source xsi:type="ColumnBinding">
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="c02c2469-cc66-4daf-a965-1b81c9a6b090">
                     <TableID>dbo_GPBITIMEDIMENSION</TableID>
                     <ColumnID>MONTH</ColumnID>
                   </Source>
                 </KeyColumn>
               </KeyColumns>
             </Attribute>
-            <Attribute>
+            <Attribute dwd:design-time-name="f0478ac9-b844-493f-92fc-71c85d85249f">
               <AttributeID>WEEK</AttributeID>
               <KeyColumns>
-                <KeyColumn>
+                <KeyColumn dwd:design-time-name="c0781df6-bd68-4252-8c07-acb6e4b1e9f8">
                   <DataType>Date</DataType>
-                  <Source xsi:type="ColumnBinding">
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="5d8b31c7-7e91-4bf4-bf8b-0a19b13abc13">
                     <TableID>dbo_GPBITIMEDIMENSION</TableID>
                     <ColumnID>WEEK</ColumnID>
                   </Source>
                 </KeyColumn>
               </KeyColumns>
             </Attribute>
-            <Attribute>
+            <Attribute dwd:design-time-name="c100ea8f-4d4f-45b3-959d-9a95d9b29da8">
               <AttributeID>DAYOFYEAR</AttributeID>
               <KeyColumns>
-                <KeyColumn>
+                <KeyColumn dwd:design-time-name="85f9ce45-3db9-4442-9319-d61cf02dab2f">
                   <DataType>Integer</DataType>
-                  <Source xsi:type="ColumnBinding">
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="80170a53-de86-4c12-9326-10326e4cd2ea">
                     <TableID>dbo_GPBITIMEDIMENSION</TableID>
                     <ColumnID>DAYOFYEAR</ColumnID>
                   </Source>
                 </KeyColumn>
               </KeyColumns>
             </Attribute>
-            <Attribute>
+            <Attribute dwd:design-time-name="faccc75a-a6d2-436f-b9cd-5c5c109cdc31">
               <AttributeID>DAYOFQUARTER</AttributeID>
               <KeyColumns>
-                <KeyColumn>
+                <KeyColumn dwd:design-time-name="a985b2b2-c9bb-4972-bf47-d227f6441988">
                   <DataType>Integer</DataType>
-                  <Source xsi:type="ColumnBinding">
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="dfbede26-b873-4c84-a708-68b707236602">
                     <TableID>dbo_GPBITIMEDIMENSION</TableID>
                     <ColumnID>DAYOFQUARTER</ColumnID>
                   </Source>
                 </KeyColumn>
               </KeyColumns>
             </Attribute>
-            <Attribute>
+            <Attribute dwd:design-time-name="67553ece-95c2-4972-984c-d03a74fa09bd">
               <AttributeID>DAYOFMONTH</AttributeID>
               <KeyColumns>
-                <KeyColumn>
+                <KeyColumn dwd:design-time-name="19bbe8d0-c14d-4b71-9c4c-bb47d4c8ac4b">
                   <DataType>Integer</DataType>
-                  <Source xsi:type="ColumnBinding">
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="9ba9c52c-78ad-48f7-abf1-b35031bf5b42">
                     <TableID>dbo_GPBITIMEDIMENSION</TableID>
                     <ColumnID>DAYOFMONTH</ColumnID>
                   </Source>
                 </KeyColumn>
               </KeyColumns>
             </Attribute>
-            <Attribute>
+            <Attribute dwd:design-time-name="edd6dc15-63dc-4141-8b60-9882d04d68fb">
               <AttributeID>DAYOFWEEK</AttributeID>
               <KeyColumns>
-                <KeyColumn>
+                <KeyColumn dwd:design-time-name="8fd85919-edb1-4966-acdf-b56f792512e8">
                   <DataType>Integer</DataType>
-                  <Source xsi:type="ColumnBinding">
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="11414002-34dc-4c4a-beba-0db179724517">
                     <TableID>dbo_GPBITIMEDIMENSION</TableID>
                     <ColumnID>DAYOFWEEK</ColumnID>
                   </Source>
                 </KeyColumn>
               </KeyColumns>
             </Attribute>
-            <Attribute>
+            <Attribute dwd:design-time-name="85315aa2-a59e-4fdd-9eba-bc914e48c22e">
               <AttributeID>WEEKOFYEAR</AttributeID>
               <KeyColumns>
-                <KeyColumn>
+                <KeyColumn dwd:design-time-name="ed735c1b-86cc-4b84-95c3-27c443573543">
                   <DataType>Integer</DataType>
-                  <Source xsi:type="ColumnBinding">
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="4cb93ed8-fd21-4ce3-bef4-48349ace1588">
                     <TableID>dbo_GPBITIMEDIMENSION</TableID>
                     <ColumnID>WEEKOFYEAR</ColumnID>
                   </Source>
                 </KeyColumn>
               </KeyColumns>
             </Attribute>
-            <Attribute>
+            <Attribute dwd:design-time-name="a67e95e1-f6c5-4279-81f8-4e1d84dbbb4d">
               <AttributeID>MONTHOFYEAR</AttributeID>
               <KeyColumns>
-                <KeyColumn>
+                <KeyColumn dwd:design-time-name="72ae4f8e-71d4-4c25-aca5-2b8837e2ca38">
                   <DataType>Integer</DataType>
-                  <Source xsi:type="ColumnBinding">
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="3312d991-72f0-41a7-8cd2-146819dde2a0">
                     <TableID>dbo_GPBITIMEDIMENSION</TableID>
                     <ColumnID>MONTHOFYEAR</ColumnID>
                   </Source>
                 </KeyColumn>
               </KeyColumns>
             </Attribute>
-            <Attribute>
+            <Attribute dwd:design-time-name="33f2750d-44e8-4f55-8386-de911e6d39c1">
               <AttributeID>MONTHOFQUARTER</AttributeID>
               <KeyColumns>
-                <KeyColumn>
+                <KeyColumn dwd:design-time-name="6899a004-25f4-4fdf-aee3-abe9c5c53e4f">
                   <DataType>Integer</DataType>
-                  <Source xsi:type="ColumnBinding">
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="d8e5c7be-4ee8-4539-b795-e7539a218811">
                     <TableID>dbo_GPBITIMEDIMENSION</TableID>
                     <ColumnID>MONTHOFQUARTER</ColumnID>
                   </Source>
                 </KeyColumn>
               </KeyColumns>
             </Attribute>
-            <Attribute>
+            <Attribute dwd:design-time-name="a0eff45b-5a6b-49f0-8c6a-d195e3c32878">
               <AttributeID>QUARTEROFYEAR</AttributeID>
               <KeyColumns>
-                <KeyColumn>
+                <KeyColumn dwd:design-time-name="d6fa5d79-90bb-45ab-8e6f-f20bcfab2c17">
                   <DataType>Integer</DataType>
-                  <Source xsi:type="ColumnBinding">
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="101ff5dd-99d6-4334-a629-fb21477b3e42">
                     <TableID>dbo_GPBITIMEDIMENSION</TableID>
                     <ColumnID>QUARTEROFYEAR</ColumnID>
                   </Source>
                 </KeyColumn>
               </KeyColumns>
             </Attribute>
-            <Attribute>
+            <Attribute dwd:design-time-name="4824de2c-7fbd-48a4-9aa6-84c1538634e8">
               <AttributeID>Año - Trimestre - Mes - Fecha Time Calculations</AttributeID>
               <KeyColumns>
-                <KeyColumn>
+                <KeyColumn dwd:design-time-name="0a1b5835-9821-48ae-b89d-c624ac98f4db">
                   <DataType>WChar</DataType>
                   <DataSize>15</DataSize>
-                  <Source xsi:type="ColumnBinding">
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="71775638-bf74-4458-801d-ae530b56a70f">
                     <TableID>dbo_GPBITIMEDIMENSION</TableID>
                     <ColumnID>Año_x0020_-_x0020_Trimestre_x0020_-_x0020_Mes_x0020_-_x0020_Fecha_x0020_Time_x0020_Calculations</ColumnID>
                   </Source>
                 </KeyColumn>
               </KeyColumns>
             </Attribute>
-            <Attribute>
+            <Attribute dwd:design-time-name="78c69bb1-d3ee-49b1-a48c-a43cf74789d0">
               <AttributeID>MONTH 1</AttributeID>
               <KeyColumns>
-                <KeyColumn>
+                <KeyColumn dwd:design-time-name="5920b297-5883-4e25-96c3-1347c18e0aa5">
                   <DataType>Date</DataType>
-                  <Source xsi:type="ColumnBinding">
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="1143c0fa-a78a-43c1-ab5b-b12e70f36f37">
                     <TableID>dbo_GPBITIMEDIMENSION</TableID>
                     <ColumnID>MONTH</ColumnID>
                   </Source>
@@ -653,60 +690,33 @@
           </Attributes>
         </Dimension>
       </Dimensions>
-      <Partitions>
-        <Partition>
-          <ID>SALESSHIPPINGSTAT</ID>
-          <Name>SALESSHIPPINGSTAT</Name>
-          <CreatedTimestamp>2018-10-29T11:47:04.673333Z</CreatedTimestamp>
-          <LastSchemaUpdate>2019-02-07T21:38:00.643333Z</LastSchemaUpdate>
-          <LastProcessed>2019-02-15T07:32:11.176667Z</LastProcessed>
-          <State>Processed</State>
-          <Source xsi:type="DsvTableBinding">
-            <DataSourceViewID>Dynamics AX</DataSourceViewID>
-            <TableID>SALESSHIPPINGSTAT</TableID>
-          </Source>
-          <StorageMode>Molap</StorageMode>
-          <CurrentStorageMode>Molap</CurrentStorageMode>
-          <ProcessingMode>Regular</ProcessingMode>
-          <ProactiveCaching>
-            <SilenceInterval>-PT1S</SilenceInterval>
-            <Latency>-PT1S</Latency>
-            <SilenceOverrideInterval>-PT1S</SilenceOverrideInterval>
-            <ForceRebuildInterval>-PT1S</ForceRebuildInterval>
-            <AggregationStorage>MolapOnly</AggregationStorage>
-            <Source xsi:type="ProactiveCachingInheritedBinding">
-              <NotificationTechnique>Server</NotificationTechnique>
-            </Source>
-          </ProactiveCaching>
-          <EstimatedSize>1376165</EstimatedSize>
-        </Partition>
-      </Partitions>
-      <ProactiveCaching>
+      <Partitions />
+      <ProactiveCaching dwd:design-time-name="21371ec3-ecff-46f2-a8da-e78b0b47f574">
         <SilenceInterval>-PT1S</SilenceInterval>
         <Latency>-PT1S</Latency>
         <SilenceOverrideInterval>-PT1S</SilenceOverrideInterval>
         <ForceRebuildInterval>-PT1S</ForceRebuildInterval>
         <AggregationStorage>MolapOnly</AggregationStorage>
-        <Source xsi:type="ProactiveCachingInheritedBinding">
+        <Source xsi:type="ProactiveCachingInheritedBinding" dwd:design-time-name="05ac725c-62bf-493e-9fd3-d747be205bd6">
           <NotificationTechnique>Server</NotificationTechnique>
         </Source>
       </ProactiveCaching>
     </MeasureGroup>
   </MeasureGroups>
-  <Source>
+  <Source dwd:design-time-name="47892e1d-3066-418f-b2ad-efece523a168">
     <DataSourceViewID>Dynamics AX</DataSourceViewID>
   </Source>
-  <ErrorConfiguration>
+  <ErrorConfiguration dwd:design-time-name="1dfed485-421c-42e7-9c0c-47312014b7dc">
     <KeyNotFound>IgnoreError</KeyNotFound>
     <NullKeyNotAllowed>IgnoreError</NullKeyNotAllowed>
   </ErrorConfiguration>
-  <ProactiveCaching>
+  <ProactiveCaching dwd:design-time-name="72a732d4-85cf-48cf-a217-0843ab445b17">
     <SilenceInterval>-PT1S</SilenceInterval>
     <Latency>-PT1S</Latency>
     <SilenceOverrideInterval>-PT1S</SilenceOverrideInterval>
     <ForceRebuildInterval>-PT1S</ForceRebuildInterval>
     <AggregationStorage>MolapOnly</AggregationStorage>
-    <Source xsi:type="ProactiveCachingInheritedBinding">
+    <Source xsi:type="ProactiveCachingInheritedBinding" dwd:design-time-name="adfb18b7-b07a-4d40-a622-457257f19da5">
       <NotificationTechnique>Server</NotificationTechnique>
     </Source>
   </ProactiveCaching>

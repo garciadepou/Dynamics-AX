@@ -738,6 +738,20 @@
     <Configuration>
       <Name>Development</Name>
       <Options>
+        <ConnectionMappings>
+          <ConfigurationSetting>
+            <Id>Dynamics Database</Id>
+            <Name>Dynamics Database</Name>
+            <Value xsi:type="xsd:string">Provider=SQLOLEDB.1;Data Source=AXSQL02SRV;Integrated Security=SSPI;Initial Catalog=AX_Produccion</Value>
+          </ConfigurationSetting>
+        </ConnectionMappings>
+        <ConnectionSecurityMappings>
+          <ConfigurationSetting>
+            <Id>Dynamics Database</Id>
+            <Name>Dynamics Database</Name>
+            <Value xsi:type="xsd:int">0</Value>
+          </ConfigurationSetting>
+        </ConnectionSecurityMappings>
         <DeploymentServerEdition>Enterprise</DeploymentServerEdition>
       </Options>
     </Configuration>
