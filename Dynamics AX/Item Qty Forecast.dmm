@@ -1,0 +1,129 @@
+﻿<MiningStructure xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:ddl200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:ddl200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:ddl300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:ddl300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:ddl400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:ddl400_400="http://schemas.microsoft.com/analysisservices/2012/engine/400/400" xmlns:ddl500="http://schemas.microsoft.com/analysisservices/2013/engine/500" xmlns:ddl500_500="http://schemas.microsoft.com/analysisservices/2013/engine/500/500" xmlns="http://schemas.microsoft.com/analysisservices/2003/engine">
+  <ID>Item Qty Forecast</ID>
+  <Name>Item Qty Forecast</Name>
+  <CreatedTimestamp>2019-02-08T09:07:26.336667Z</CreatedTimestamp>
+  <LastSchemaUpdate>2019-02-11T09:01:35.873333Z</LastSchemaUpdate>
+  <Annotations>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:CaseTableName</Name>
+      <Value>test</Value>
+    </Annotation>
+  </Annotations>
+  <LastProcessed>2019-02-15T07:50:14.526667Z</LastProcessed>
+  <State>Processed</State>
+  <Source xsi:type="DataSourceViewBinding">
+    <DataSourceViewID>Dynamics AX BI</DataSourceViewID>
+  </Source>
+  <Language>3082</Language>
+  <Columns>
+    <Column xsi:type="ScalarMiningStructureColumn">
+      <ID>Artículo</ID>
+      <Name>Artículo</Name>
+      <IsKey>true</IsKey>
+      <Type>Text</Type>
+      <Content>Key</Content>
+      <KeyColumns>
+        <KeyColumn>
+          <DataType>WChar</DataType>
+          <DataSize>20</DataSize>
+          <Source xsi:type="ColumnBinding">
+            <TableID>test</TableID>
+            <ColumnID>Artículo</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+    </Column>
+    <Column xsi:type="ScalarMiningStructureColumn">
+      <ID>Cantidad</ID>
+      <Name>Cantidad</Name>
+      <Type>Double</Type>
+      <Content>Continuous</Content>
+      <KeyColumns>
+        <KeyColumn>
+          <DataType>Double</DataType>
+          <DataSize>-1</DataSize>
+          <Source xsi:type="ColumnBinding">
+            <TableID>test</TableID>
+            <ColumnID>Cantidad</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+    </Column>
+    <Column xsi:type="ScalarMiningStructureColumn">
+      <ID>Mes</ID>
+      <Name>Mes</Name>
+      <IsKey>true</IsKey>
+      <Type>Date</Type>
+      <Content>Key Time</Content>
+      <NameColumn>
+        <DataType>WChar</DataType>
+        <DataSize>50</DataSize>
+        <Source xsi:type="ColumnBinding">
+          <TableID>test</TableID>
+          <ColumnID>Nombre_x0020_Mes</ColumnID>
+        </Source>
+      </NameColumn>
+      <KeyColumns>
+        <KeyColumn>
+          <DataType>Date</DataType>
+          <DataSize>-1</DataSize>
+          <Source xsi:type="ColumnBinding">
+            <TableID>test</TableID>
+            <ColumnID>Mes</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+    </Column>
+  </Columns>
+  <MiningModels>
+    <MiningModel>
+      <ID>Item Qty Forecast</ID>
+      <Name>Item Qty Forecast</Name>
+      <CreatedTimestamp>2019-02-08T09:07:26.416667Z</CreatedTimestamp>
+      <LastSchemaUpdate>2019-02-11T09:01:35.886667Z</LastSchemaUpdate>
+      <LastProcessed>2019-02-15T07:50:14.513333Z</LastProcessed>
+      <State>Processed</State>
+      <Algorithm>Microsoft_Time_Series</Algorithm>
+      <AlgorithmParameters>
+        <AlgorithmParameter>
+          <Name>HISTORIC_MODEL_COUNT</Name>
+          <Value xsi:type="xsd:int">2</Value>
+        </AlgorithmParameter>
+        <AlgorithmParameter>
+          <Name>HISTORIC_MODEL_GAP</Name>
+          <Value xsi:type="xsd:int">12</Value>
+        </AlgorithmParameter>
+        <AlgorithmParameter>
+          <Name>MISSING_VALUE_SUBSTITUTION</Name>
+          <Value xsi:type="xsd:string">0</Value>
+        </AlgorithmParameter>
+      </AlgorithmParameters>
+      <Columns>
+        <Column>
+          <ID>Artículo</ID>
+          <Name>Artículo</Name>
+          <SourceColumnID>Artículo</SourceColumnID>
+          <Usage>Key</Usage>
+        </Column>
+        <Column>
+          <ID>Cantidad</ID>
+          <Name>Cantidad</Name>
+          <SourceColumnID>Cantidad</SourceColumnID>
+          <Usage>PredictOnly</Usage>
+          <ModelingFlags>
+            <ModelingFlag>REGRESSOR</ModelingFlag>
+          </ModelingFlags>
+        </Column>
+        <Column>
+          <ID>Mes</ID>
+          <Name>Mes</Name>
+          <SourceColumnID>Mes</SourceColumnID>
+          <Usage>Key</Usage>
+        </Column>
+      </Columns>
+      <AllowDrillThrough>true</AllowDrillThrough>
+      <Language>3082</Language>
+      <Collation>Modern_Spanish_CI_AS</Collation>
+    </MiningModel>
+  </MiningModels>
+</MiningStructure>

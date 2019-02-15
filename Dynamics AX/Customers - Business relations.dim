@@ -1,0 +1,1448 @@
+﻿<Dimension xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:ddl200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:ddl200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:ddl300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:ddl300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:ddl400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:ddl400_400="http://schemas.microsoft.com/analysisservices/2012/engine/400/400" xmlns:ddl500="http://schemas.microsoft.com/analysisservices/2013/engine/500" xmlns:ddl500_500="http://schemas.microsoft.com/analysisservices/2013/engine/500/500" xmlns="http://schemas.microsoft.com/analysisservices/2003/engine">
+  <ID>CUSTBUSREL</ID>
+  <Name>Customers - Business relations</Name>
+  <CreatedTimestamp>2014-05-21T09:20:55.523333Z</CreatedTimestamp>
+  <LastSchemaUpdate>2018-12-05T10:26:22.176667Z</LastSchemaUpdate>
+  <Annotations>
+    <Annotation>
+      <Name>LabelID</Name>
+      <Value>@SYS122143</Value>
+    </Annotation>
+    <Annotation>
+      <Name>AttributeAllMemberLabelID</Name>
+      <Value>@SYS77406</Value>
+    </Annotation>
+    <Annotation>
+      <Name>UnknownMemberLabelID</Name>
+      <Value>@SYS21247</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramLayout</Name>
+      <Value>
+        <dds xmlns="">
+          <diagram fontclsid="{0BE35203-8F91-11CE-9DE3-00AA004BB851}" mouseiconclsid="{0BE35204-8F91-11CE-9DE3-00AA004BB851}" defaultlayout="MSDDS.Rectilinear" defaultlineroute="MSDDS.Rectilinear" version="7" nextobject="3" scale="100" pagebreakanchorx="0" pagebreakanchory="0" pagebreaksizex="0" pagebreaksizey="0" scrollleft="23" scrolltop="-10831" gridx="150" gridy="150" marginx="5000" marginy="5000" zoom="78" x="6429" y="16933" backcolor="15334399" defaultpersistence="2" PrintPageNumbersMode="3" PrintMarginTop="0" PrintMarginBottom="635" PrintMarginLeft="0" PrintMarginRight="0" marqueeselectionmode="0" mousepointer="0" snaptogrid="0" autotypeannotation="1" showscrollbars="1" viewpagebreaks="0" donotforceconnectorsbehindshapes="1" backpictureclsid="{00000000-0000-0000-0000-000000000000}">
+            <font>
+              <ddsxmlobjectstreamwrapper binary="01000000900144420100065461686f6d61" />
+            </font>
+            <mouseicon>
+              <ddsxmlobjectstreamwrapper binary="6c74000000000000" />
+            </mouseicon>
+          </diagram>
+          <layoutmanager>
+            <ddsxmlobj />
+          </layoutmanager>
+          <ddscontrol controlprogid="DdsShapes.DdsObjectManagedBridge.3" tooltip="CUSTBUSREL" left="20" top="0" logicalid="2" controlid="1" masterid="0" hint1="0" hint2="0" width="10081" height="5000" noresize="0" nomove="0" nodefaultattachpoints="0" autodrag="1" usedefaultiddshape="1" selectable="1" showselectionhandles="1" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+            <control>
+              <ddsxmlobjectstreaminitwrapper binary="000800006127000088130000" />
+            </control>
+            <layoutobject>
+              <ddsxmlobj>
+                <property name="LogicalObject" value="CUSTBUSREL" vartype="8" />
+              </ddsxmlobj>
+            </layoutobject>
+            <shape groupshapeid="0" groupnode="0" />
+          </ddscontrol>
+        </dds>
+      </Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ShowFriendlyNames</Name>
+      <Value>true</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ShowRelationshipNames</Name>
+      <Value>false</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:UseDiagramDefaultLayout</Name>
+      <Value>true</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramViewPortLeft</Name>
+      <Value>23</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramViewPortTop</Name>
+      <Value>-10831</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramBoundingLeft</Name>
+      <Value>20</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramBoundingTop</Name>
+      <Value>0</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramZoom</Name>
+      <Value>78</Value>
+    </Annotation>
+    <Annotation>
+      <Name>PATH</Name>
+      <Value>CUSTBUSREL.dim</Value>
+    </Annotation>
+  </Annotations>
+  <LastProcessed>2019-02-15T07:32:18.176667Z</LastProcessed>
+  <State>Processed</State>
+  <Source xsi:type="DataSourceViewBinding">
+    <DataSourceViewID>Dynamics AX</DataSourceViewID>
+  </Source>
+  <UnknownMember>Visible</UnknownMember>
+  <ErrorConfiguration>
+    <KeyNotFound>IgnoreError</KeyNotFound>
+    <NullKeyNotAllowed>IgnoreError</NullKeyNotAllowed>
+  </ErrorConfiguration>
+  <CurrentStorageMode>Molap</CurrentStorageMode>
+  <Language>1033</Language>
+  <Collation>Modern_Spanish_CI_AS</Collation>
+  <UnknownMemberName>Unknown</UnknownMemberName>
+  <UnknownMemberTranslations>
+    <UnknownMemberTranslation>
+      <Language>1033</Language>
+      <Caption>Unknown</Caption>
+    </UnknownMemberTranslation>
+  </UnknownMemberTranslations>
+  <Translations>
+    <Translation>
+      <Language>1033</Language>
+      <Caption>Customers - Business relations</Caption>
+    </Translation>
+  </Translations>
+  <Attributes>
+    <Attribute>
+      <Annotations>
+        <Annotation>
+          <Name>LabelID</Name>
+          <Value>@SYS122143</Value>
+        </Annotation>
+      </Annotations>
+      <ID>CUSTBUSREL</ID>
+      <Name>Customers - Business relations</Name>
+      <Usage>Key</Usage>
+      <KeyColumns>
+        <KeyColumn>
+          <DataType>WChar</DataType>
+          <DataSize>4</DataSize>
+          <Source xsi:type="ColumnBinding">
+            <TableID>CUSTBUSREL</TableID>
+            <ColumnID>DATAAREAID</ColumnID>
+          </Source>
+        </KeyColumn>
+        <KeyColumn>
+          <DataType>WChar</DataType>
+          <DataSize>20</DataSize>
+          <Source xsi:type="ColumnBinding">
+            <TableID>CUSTBUSREL</TableID>
+            <ColumnID>PARTYID</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <NameColumn>
+        <DataType>WChar</DataType>
+        <DataSize>20</DataSize>
+        <Source xsi:type="ColumnBinding">
+          <TableID>CUSTBUSREL</TableID>
+          <ColumnID>PARTYID</ColumnID>
+        </Source>
+      </NameColumn>
+      <Translations>
+        <Translation>
+          <Language>1033</Language>
+          <Caption>Customers - Business relations</Caption>
+        </Translation>
+      </Translations>
+      <AttributeRelationships>
+        <AttributeRelationship>
+          <AttributeID>ACCOUNTNUM</AttributeID>
+          <Name>Account</Name>
+          <Translations>
+            <Translation>
+              <Language>1033</Language>
+              <Caption>Account</Caption>
+            </Translation>
+          </Translations>
+        </AttributeRelationship>
+        <AttributeRelationship>
+          <AttributeID>STATE</AttributeID>
+          <Name>State</Name>
+        </AttributeRelationship>
+      </AttributeRelationships>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute>
+      <Annotations>
+        <Annotation>
+          <Name>LabelID</Name>
+          <Value>@SYS24500</Value>
+        </Annotation>
+      </Annotations>
+      <ID>ACCOUNTNUM</ID>
+      <Name>Account</Name>
+      <KeyColumns>
+        <KeyColumn>
+          <DataType>WChar</DataType>
+          <DataSize>4</DataSize>
+          <Source xsi:type="ColumnBinding">
+            <TableID>CUSTBUSREL</TableID>
+            <ColumnID>DATAAREAID</ColumnID>
+          </Source>
+        </KeyColumn>
+        <KeyColumn>
+          <DataType>WChar</DataType>
+          <DataSize>20</DataSize>
+          <Source xsi:type="ColumnBinding">
+            <TableID>CUSTBUSREL</TableID>
+            <ColumnID>ACCOUNTNUM</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <NameColumn>
+        <DataType>WChar</DataType>
+        <DataSize>20</DataSize>
+        <Source xsi:type="ColumnBinding">
+          <TableID>CUSTBUSREL</TableID>
+          <ColumnID>ACCOUNTNUM</ColumnID>
+        </Source>
+      </NameColumn>
+      <Translations>
+        <Translation>
+          <Language>1033</Language>
+          <Caption>Account</Caption>
+        </Translation>
+      </Translations>
+      <AttributeRelationships>
+        <AttributeRelationship>
+          <AttributeID>ADDRESSCOUNTRYREGION NAME</AttributeID>
+          <Name>Country region - Name</Name>
+          <Translations>
+            <Translation>
+              <Language>1033</Language>
+              <Caption>Country region - Name</Caption>
+            </Translation>
+          </Translations>
+        </AttributeRelationship>
+        <AttributeRelationship>
+          <AttributeID>ADDRESSCOUNTRYREGION CURRENCYCODE</AttributeID>
+          <Name>Country region - Currency</Name>
+          <Translations>
+            <Translation>
+              <Language>1033</Language>
+              <Caption>Country region - Currency</Caption>
+            </Translation>
+          </Translations>
+        </AttributeRelationship>
+        <AttributeRelationship>
+          <AttributeID>DIRPARTYTABLE NAME</AttributeID>
+          <Name>Directory - Name</Name>
+          <Translations>
+            <Translation>
+              <Language>1033</Language>
+              <Caption>Directory - Name</Caption>
+            </Translation>
+          </Translations>
+        </AttributeRelationship>
+        <AttributeRelationship>
+          <AttributeID>DIRPARTYTABLE TYPE</AttributeID>
+          <Name>Directory type</Name>
+          <Translations>
+            <Translation>
+              <Language>1033</Language>
+              <Caption>Directory type</Caption>
+            </Translation>
+          </Translations>
+        </AttributeRelationship>
+        <AttributeRelationship>
+          <AttributeID>SUBSEGMENT</AttributeID>
+          <Name>Subsegment</Name>
+          <Translations>
+            <Translation>
+              <Language>1033</Language>
+              <Caption>Subsegment</Caption>
+            </Translation>
+          </Translations>
+        </AttributeRelationship>
+        <AttributeRelationship>
+          <AttributeID>ZIPCODE</AttributeID>
+          <Name>Zipcode</Name>
+          <Translations>
+            <Translation>
+              <Language>1033</Language>
+              <Caption>ZIP Code</Caption>
+            </Translation>
+          </Translations>
+        </AttributeRelationship>
+        <AttributeRelationship>
+          <AttributeID>MAINCONTACT</AttributeID>
+          <Name>Sales person</Name>
+          <Translations>
+            <Translation>
+              <Language>1033</Language>
+              <Caption>Sales person</Caption>
+            </Translation>
+          </Translations>
+        </AttributeRelationship>
+        <AttributeRelationship>
+          <AttributeID>COUNTRYREGION</AttributeID>
+          <Name>Country region</Name>
+          <Translations>
+            <Translation>
+              <Language>1033</Language>
+              <Caption>Country region</Caption>
+            </Translation>
+          </Translations>
+        </AttributeRelationship>
+        <AttributeRelationship>
+          <AttributeID>CURRENCY</AttributeID>
+          <Name>Currency</Name>
+          <Translations>
+            <Translation>
+              <Language>1033</Language>
+              <Caption>Currency</Caption>
+            </Translation>
+          </Translations>
+        </AttributeRelationship>
+        <AttributeRelationship>
+          <AttributeID>CREATEDDATETIME</AttributeID>
+          <Name>Created date time</Name>
+          <Translations>
+            <Translation>
+              <Language>1033</Language>
+              <Caption>Created date time</Caption>
+            </Translation>
+          </Translations>
+        </AttributeRelationship>
+        <AttributeRelationship>
+          <AttributeID>NAME</AttributeID>
+          <Name>Name_</Name>
+          <Translations>
+            <Translation>
+              <Language>1033</Language>
+              <Caption>Name</Caption>
+            </Translation>
+          </Translations>
+        </AttributeRelationship>
+        <AttributeRelationship>
+          <AttributeID>CITY</AttributeID>
+          <Name>City</Name>
+          <Translations>
+            <Translation>
+              <Language>1033</Language>
+              <Caption>City</Caption>
+            </Translation>
+          </Translations>
+        </AttributeRelationship>
+        <AttributeRelationship>
+          <AttributeID>ISCUSTOMER</AttributeID>
+          <Name>Es cliente</Name>
+        </AttributeRelationship>
+        <AttributeRelationship>
+          <AttributeID>EMAIL</AttributeID>
+          <Name>Email</Name>
+          <Translations>
+            <Translation>
+              <Language>1033</Language>
+              <Caption>Email</Caption>
+            </Translation>
+          </Translations>
+        </AttributeRelationship>
+      </AttributeRelationships>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute>
+      <Annotations>
+        <Annotation>
+          <Name>LabelID</Name>
+          <Value>@SYS122423</Value>
+        </Annotation>
+      </Annotations>
+      <ID>COUNTRYREGION</ID>
+      <Name>Country region</Name>
+      <KeyColumns>
+        <KeyColumn>
+          <DataType>WChar</DataType>
+          <DataSize>4</DataSize>
+          <Source xsi:type="ColumnBinding">
+            <TableID>CUSTBUSREL</TableID>
+            <ColumnID>DATAAREAID</ColumnID>
+          </Source>
+        </KeyColumn>
+        <KeyColumn>
+          <DataType>WChar</DataType>
+          <DataSize>10</DataSize>
+          <Source xsi:type="ColumnBinding">
+            <TableID>CUSTBUSREL</TableID>
+            <ColumnID>COUNTRYREGION</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <NameColumn>
+        <DataType>WChar</DataType>
+        <DataSize>10</DataSize>
+        <Source xsi:type="ColumnBinding">
+          <TableID>CUSTBUSREL</TableID>
+          <ColumnID>COUNTRYREGION</ColumnID>
+        </Source>
+      </NameColumn>
+      <Translations>
+        <Translation>
+          <Language>1033</Language>
+          <Caption>Country region</Caption>
+        </Translation>
+      </Translations>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute>
+      <Annotations>
+        <Annotation>
+          <Name>LabelID</Name>
+          <Value>@SYS122424</Value>
+        </Annotation>
+      </Annotations>
+      <ID>ADDRESSCOUNTRYREGION CURRENCYCODE</ID>
+      <Name>Country region - Currency</Name>
+      <KeyColumns>
+        <KeyColumn>
+          <DataType>WChar</DataType>
+          <DataSize>4</DataSize>
+          <Source xsi:type="ColumnBinding">
+            <TableID>CUSTBUSREL</TableID>
+            <ColumnID>ADDRESSCOUNTRYREGION_DATAAREAID</ColumnID>
+          </Source>
+        </KeyColumn>
+        <KeyColumn>
+          <DataType>WChar</DataType>
+          <DataSize>3</DataSize>
+          <Source xsi:type="ColumnBinding">
+            <TableID>CUSTBUSREL</TableID>
+            <ColumnID>ADDRESSCOUNTRYREGION_CURRENCYCODE</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <NameColumn>
+        <DataType>WChar</DataType>
+        <DataSize>3</DataSize>
+        <Source xsi:type="ColumnBinding">
+          <TableID>CUSTBUSREL</TableID>
+          <ColumnID>ADDRESSCOUNTRYREGION_CURRENCYCODE</ColumnID>
+        </Source>
+      </NameColumn>
+      <Translations>
+        <Translation>
+          <Language>1033</Language>
+          <Caption>Country region - Currency</Caption>
+        </Translation>
+      </Translations>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute>
+      <Annotations>
+        <Annotation>
+          <Name>LabelID</Name>
+          <Value>@SYS122425</Value>
+        </Annotation>
+      </Annotations>
+      <ID>ADDRESSCOUNTRYREGION NAME</ID>
+      <Name>Country region - Name</Name>
+      <KeyColumns>
+        <KeyColumn>
+          <DataType>WChar</DataType>
+          <DataSize>4</DataSize>
+          <Source xsi:type="ColumnBinding">
+            <TableID>CUSTBUSREL</TableID>
+            <ColumnID>ADDRESSCOUNTRYREGION_DATAAREAID</ColumnID>
+          </Source>
+        </KeyColumn>
+        <KeyColumn>
+          <DataType>WChar</DataType>
+          <DataSize>60</DataSize>
+          <Source xsi:type="ColumnBinding">
+            <TableID>CUSTBUSREL</TableID>
+            <ColumnID>ADDRESSCOUNTRYREGION_NAME</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <NameColumn>
+        <DataType>WChar</DataType>
+        <DataSize>60</DataSize>
+        <Source xsi:type="ColumnBinding">
+          <TableID>CUSTBUSREL</TableID>
+          <ColumnID>ADDRESSCOUNTRYREGION_NAME</ColumnID>
+        </Source>
+      </NameColumn>
+      <Translations>
+        <Translation>
+          <Language>1033</Language>
+          <Caption>Country region - Name</Caption>
+        </Translation>
+      </Translations>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute>
+      <Annotations>
+        <Annotation>
+          <Name>LabelID</Name>
+          <Value>@SYS106862</Value>
+        </Annotation>
+      </Annotations>
+      <ID>CREATEDDATETIME</ID>
+      <Name>Created date time</Name>
+      <KeyColumns>
+        <KeyColumn>
+          <DataType>Date</DataType>
+          <Source xsi:type="ColumnBinding">
+            <TableID>CUSTBUSREL</TableID>
+            <ColumnID>CREATEDDATETIME</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <NameColumn>
+        <DataType>WChar</DataType>
+        <Source xsi:type="ColumnBinding">
+          <TableID>CUSTBUSREL</TableID>
+          <ColumnID>CREATEDDATETIME</ColumnID>
+        </Source>
+      </NameColumn>
+      <Translations>
+        <Translation>
+          <Language>1033</Language>
+          <Caption>Created date time</Caption>
+        </Translation>
+      </Translations>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute>
+      <Annotations>
+        <Annotation>
+          <Name>LabelID</Name>
+          <Value>@SYS7572</Value>
+        </Annotation>
+      </Annotations>
+      <ID>CURRENCY</ID>
+      <Name>Currency</Name>
+      <KeyColumns>
+        <KeyColumn>
+          <DataType>WChar</DataType>
+          <DataSize>4</DataSize>
+          <Source xsi:type="ColumnBinding">
+            <TableID>CUSTBUSREL</TableID>
+            <ColumnID>DATAAREAID</ColumnID>
+          </Source>
+        </KeyColumn>
+        <KeyColumn>
+          <DataType>WChar</DataType>
+          <DataSize>3</DataSize>
+          <Source xsi:type="ColumnBinding">
+            <TableID>CUSTBUSREL</TableID>
+            <ColumnID>CURRENCY</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <NameColumn>
+        <DataType>WChar</DataType>
+        <DataSize>3</DataSize>
+        <Source xsi:type="ColumnBinding">
+          <TableID>CUSTBUSREL</TableID>
+          <ColumnID>CURRENCY</ColumnID>
+        </Source>
+      </NameColumn>
+      <Translations>
+        <Translation>
+          <Language>1033</Language>
+          <Caption>Currency</Caption>
+        </Translation>
+      </Translations>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute>
+      <Annotations>
+        <Annotation>
+          <Name>LabelID</Name>
+          <Value>@SYS122426</Value>
+        </Annotation>
+      </Annotations>
+      <ID>DIRPARTYTABLE NAME</ID>
+      <Name>Directory - Name</Name>
+      <KeyColumns>
+        <KeyColumn>
+          <DataType>WChar</DataType>
+          <DataSize>4</DataSize>
+          <Source xsi:type="ColumnBinding">
+            <TableID>CUSTBUSREL</TableID>
+            <ColumnID>DATAAREAID</ColumnID>
+          </Source>
+        </KeyColumn>
+        <KeyColumn>
+          <DataType>WChar</DataType>
+          <DataSize>60</DataSize>
+          <Source xsi:type="ColumnBinding">
+            <TableID>CUSTBUSREL</TableID>
+            <ColumnID>DIRPARTYTABLE_NAME</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <NameColumn>
+        <DataType>WChar</DataType>
+        <DataSize>60</DataSize>
+        <Source xsi:type="ColumnBinding">
+          <TableID>CUSTBUSREL</TableID>
+          <ColumnID>DIRPARTYTABLE_NAME</ColumnID>
+        </Source>
+      </NameColumn>
+      <Translations>
+        <Translation>
+          <Language>1033</Language>
+          <Caption>Directory - Name</Caption>
+        </Translation>
+      </Translations>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute>
+      <Annotations>
+        <Annotation>
+          <Name>LabelID</Name>
+          <Value>@SYS122427</Value>
+        </Annotation>
+      </Annotations>
+      <ID>DIRPARTYTABLE TYPE</ID>
+      <Name>Directory type</Name>
+      <KeyColumns>
+        <KeyColumn>
+          <DataType>Integer</DataType>
+          <Source xsi:type="ColumnBinding">
+            <TableID>CUSTBUSREL</TableID>
+            <ColumnID>DIRPARTYTABLE_TYPE</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <NameColumn>
+        <DataType>WChar</DataType>
+        <Source xsi:type="ColumnBinding">
+          <TableID>CUSTBUSREL</TableID>
+          <ColumnID>DIRPARTYTABLE_TYPE</ColumnID>
+        </Source>
+      </NameColumn>
+      <Translations>
+        <Translation>
+          <Language>1033</Language>
+          <Caption>Directory type</Caption>
+        </Translation>
+      </Translations>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute>
+      <Annotations>
+        <Annotation>
+          <Name>LabelID</Name>
+          <Value>@SYS7399</Value>
+        </Annotation>
+      </Annotations>
+      <ID>NAME</ID>
+      <Name>Name</Name>
+      <KeyColumns>
+        <KeyColumn>
+          <DataType>WChar</DataType>
+          <DataSize>4</DataSize>
+          <Source xsi:type="ColumnBinding">
+            <TableID>CUSTBUSREL</TableID>
+            <ColumnID>DATAAREAID</ColumnID>
+          </Source>
+        </KeyColumn>
+        <KeyColumn>
+          <DataType>WChar</DataType>
+          <DataSize>60</DataSize>
+          <Source xsi:type="ColumnBinding">
+            <TableID>CUSTBUSREL</TableID>
+            <ColumnID>NAME</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <NameColumn>
+        <DataType>WChar</DataType>
+        <DataSize>60</DataSize>
+        <Source xsi:type="ColumnBinding">
+          <TableID>CUSTBUSREL</TableID>
+          <ColumnID>NAME</ColumnID>
+        </Source>
+      </NameColumn>
+      <Translations>
+        <Translation>
+          <Language>1033</Language>
+          <Caption>Name</Caption>
+        </Translation>
+      </Translations>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute>
+      <Annotations>
+        <Annotation>
+          <Name>LabelID</Name>
+          <Value>@SYS111868</Value>
+        </Annotation>
+      </Annotations>
+      <ID>MAINCONTACT</ID>
+      <Name>Sales person</Name>
+      <KeyColumns>
+        <KeyColumn>
+          <DataType>WChar</DataType>
+          <DataSize>4</DataSize>
+          <Source xsi:type="ColumnBinding">
+            <TableID>CUSTBUSREL</TableID>
+            <ColumnID>DATAAREAID</ColumnID>
+          </Source>
+        </KeyColumn>
+        <KeyColumn>
+          <DataType>WChar</DataType>
+          <DataSize>20</DataSize>
+          <Source xsi:type="ColumnBinding">
+            <TableID>CUSTBUSREL</TableID>
+            <ColumnID>MAINCONTACT</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <NameColumn>
+        <DataType>WChar</DataType>
+        <DataSize>20</DataSize>
+        <Source xsi:type="ColumnBinding">
+          <TableID>CUSTBUSREL</TableID>
+          <ColumnID>MAINCONTACT</ColumnID>
+        </Source>
+      </NameColumn>
+      <Translations>
+        <Translation>
+          <Language>1033</Language>
+          <Caption>Sales person</Caption>
+        </Translation>
+      </Translations>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute>
+      <Annotations>
+        <Annotation>
+          <Name>LabelID</Name>
+          <Value>@SYS26267</Value>
+        </Annotation>
+      </Annotations>
+      <ID>SEGMENT</ID>
+      <Name>Segment</Name>
+      <KeyColumns>
+        <KeyColumn>
+          <DataType>WChar</DataType>
+          <DataSize>4</DataSize>
+          <Source xsi:type="ColumnBinding">
+            <TableID>CUSTBUSREL</TableID>
+            <ColumnID>DATAAREAID</ColumnID>
+          </Source>
+        </KeyColumn>
+        <KeyColumn>
+          <DataType>WChar</DataType>
+          <DataSize>20</DataSize>
+          <Source xsi:type="ColumnBinding">
+            <TableID>CUSTBUSREL</TableID>
+            <ColumnID>SEGMENT</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <NameColumn>
+        <DataType>WChar</DataType>
+        <DataSize>20</DataSize>
+        <Source xsi:type="ColumnBinding">
+          <TableID>CUSTBUSREL</TableID>
+          <ColumnID>SEGMENT</ColumnID>
+        </Source>
+      </NameColumn>
+      <Translations>
+        <Translation>
+          <Language>1033</Language>
+          <Caption>Segment</Caption>
+        </Translation>
+      </Translations>
+      <AttributeRelationships>
+        <AttributeRelationship>
+          <AttributeID>SMMBUSRELSEGMENTGROUP DESCRIPTION</AttributeID>
+          <Name>Segment description</Name>
+          <Translations>
+            <Translation>
+              <Language>1033</Language>
+              <Caption>Segment description</Caption>
+            </Translation>
+          </Translations>
+        </AttributeRelationship>
+      </AttributeRelationships>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute>
+      <Annotations>
+        <Annotation>
+          <Name>LabelID</Name>
+          <Value>@SYS122428</Value>
+        </Annotation>
+      </Annotations>
+      <ID>SMMBUSRELSEGMENTGROUP DESCRIPTION</ID>
+      <Name>Segment description</Name>
+      <KeyColumns>
+        <KeyColumn>
+          <DataType>WChar</DataType>
+          <DataSize>4</DataSize>
+          <Source xsi:type="ColumnBinding">
+            <TableID>CUSTBUSREL</TableID>
+            <ColumnID>SMMBUSRELSEGMENTGROUP_DATAAREAID</ColumnID>
+          </Source>
+        </KeyColumn>
+        <KeyColumn>
+          <DataType>WChar</DataType>
+          <DataSize>60</DataSize>
+          <Source xsi:type="ColumnBinding">
+            <TableID>CUSTBUSREL</TableID>
+            <ColumnID>SMMBUSRELSEGMENTGROUP_DESCRIPTION</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <NameColumn>
+        <DataType>WChar</DataType>
+        <DataSize>60</DataSize>
+        <Source xsi:type="ColumnBinding">
+          <TableID>CUSTBUSREL</TableID>
+          <ColumnID>SMMBUSRELSEGMENTGROUP_DESCRIPTION</ColumnID>
+        </Source>
+      </NameColumn>
+      <Translations>
+        <Translation>
+          <Language>1033</Language>
+          <Caption>Segment description</Caption>
+        </Translation>
+      </Translations>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute>
+      <Annotations>
+        <Annotation>
+          <Name>LabelID</Name>
+          <Value>@SYS81381</Value>
+        </Annotation>
+      </Annotations>
+      <ID>SUBSEGMENT</ID>
+      <Name>Subsegment</Name>
+      <KeyColumns>
+        <KeyColumn>
+          <DataType>WChar</DataType>
+          <DataSize>4</DataSize>
+          <Source xsi:type="ColumnBinding">
+            <TableID>CUSTBUSREL</TableID>
+            <ColumnID>DATAAREAID</ColumnID>
+          </Source>
+        </KeyColumn>
+        <KeyColumn>
+          <DataType>WChar</DataType>
+          <DataSize>20</DataSize>
+          <Source xsi:type="ColumnBinding">
+            <TableID>CUSTBUSREL</TableID>
+            <ColumnID>SUBSEGMENT</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <NameColumn>
+        <DataType>WChar</DataType>
+        <DataSize>20</DataSize>
+        <Source xsi:type="ColumnBinding">
+          <TableID>CUSTBUSREL</TableID>
+          <ColumnID>SUBSEGMENT</ColumnID>
+        </Source>
+      </NameColumn>
+      <Translations>
+        <Translation>
+          <Language>1033</Language>
+          <Caption>Subsegment</Caption>
+        </Translation>
+      </Translations>
+      <AttributeRelationships>
+        <AttributeRelationship>
+          <AttributeID>SEGMENT</AttributeID>
+          <Name>Segment</Name>
+          <Translations>
+            <Translation>
+              <Language>1033</Language>
+              <Caption>Segment</Caption>
+            </Translation>
+          </Translations>
+        </AttributeRelationship>
+        <AttributeRelationship>
+          <AttributeID>SMMBUSRELSUBSEGMENTGROUP SUBSEGMENTDESCRIPTION</AttributeID>
+          <Name>Subsegment description</Name>
+          <Translations>
+            <Translation>
+              <Language>1033</Language>
+              <Caption>Subsegment description</Caption>
+            </Translation>
+          </Translations>
+        </AttributeRelationship>
+      </AttributeRelationships>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute>
+      <Annotations>
+        <Annotation>
+          <Name>LabelID</Name>
+          <Value>@SYS122429</Value>
+        </Annotation>
+      </Annotations>
+      <ID>SMMBUSRELSUBSEGMENTGROUP SUBSEGMENTDESCRIPTION</ID>
+      <Name>Subsegment description</Name>
+      <KeyColumns>
+        <KeyColumn>
+          <DataType>WChar</DataType>
+          <DataSize>4</DataSize>
+          <Source xsi:type="ColumnBinding">
+            <TableID>CUSTBUSREL</TableID>
+            <ColumnID>DATAAREAID</ColumnID>
+          </Source>
+        </KeyColumn>
+        <KeyColumn>
+          <DataType>WChar</DataType>
+          <DataSize>60</DataSize>
+          <Source xsi:type="ColumnBinding">
+            <TableID>CUSTBUSREL</TableID>
+            <ColumnID>SMMBUSRELSUBSEGMENTGROUP_SUBSEGMENTDESCRIPTION</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <NameColumn>
+        <DataType>WChar</DataType>
+        <DataSize>60</DataSize>
+        <Source xsi:type="ColumnBinding">
+          <TableID>CUSTBUSREL</TableID>
+          <ColumnID>SMMBUSRELSUBSEGMENTGROUP_SUBSEGMENTDESCRIPTION</ColumnID>
+        </Source>
+      </NameColumn>
+      <Translations>
+        <Translation>
+          <Language>1033</Language>
+          <Caption>Subsegment description</Caption>
+        </Translation>
+      </Translations>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute>
+      <Annotations>
+        <Annotation>
+          <Name>LabelID</Name>
+          <Value>@SYS113530</Value>
+        </Annotation>
+      </Annotations>
+      <ID>ZIPCODE</ID>
+      <Name>Zipcode</Name>
+      <KeyColumns>
+        <KeyColumn>
+          <DataType>WChar</DataType>
+          <DataSize>4</DataSize>
+          <Source xsi:type="ColumnBinding">
+            <TableID>CUSTBUSREL</TableID>
+            <ColumnID>DATAAREAID</ColumnID>
+          </Source>
+        </KeyColumn>
+        <KeyColumn>
+          <DataType>WChar</DataType>
+          <DataSize>10</DataSize>
+          <Source xsi:type="ColumnBinding">
+            <TableID>CUSTBUSREL</TableID>
+            <ColumnID>ZIPCODE</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <NameColumn>
+        <DataType>WChar</DataType>
+        <DataSize>10</DataSize>
+        <Source xsi:type="ColumnBinding">
+          <TableID>CUSTBUSREL</TableID>
+          <ColumnID>ZIPCODE</ColumnID>
+        </Source>
+      </NameColumn>
+      <Translations>
+        <Translation>
+          <Language>1033</Language>
+          <Caption>ZIP Code</Caption>
+        </Translation>
+      </Translations>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute>
+      <Annotations>
+        <Annotation>
+          <Name>LabelID</Name>
+          <Value>@SYS22249</Value>
+        </Annotation>
+      </Annotations>
+      <ID>CITY</ID>
+      <Name>City</Name>
+      <KeyColumns>
+        <KeyColumn>
+          <DataType>WChar</DataType>
+          <DataSize>4</DataSize>
+          <Source xsi:type="ColumnBinding">
+            <TableID>CUSTBUSREL</TableID>
+            <ColumnID>DATAAREAID</ColumnID>
+          </Source>
+        </KeyColumn>
+        <KeyColumn>
+          <DataType>WChar</DataType>
+          <DataSize>60</DataSize>
+          <Source xsi:type="ColumnBinding">
+            <TableID>CUSTBUSREL</TableID>
+            <ColumnID>CITY</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <NameColumn>
+        <DataType>WChar</DataType>
+        <DataSize>60</DataSize>
+        <Source xsi:type="ColumnBinding">
+          <TableID>CUSTBUSREL</TableID>
+          <ColumnID>CITY</ColumnID>
+        </Source>
+      </NameColumn>
+      <Translations>
+        <Translation>
+          <Language>1033</Language>
+          <Caption>City</Caption>
+        </Translation>
+      </Translations>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute>
+      <ID>ISCUSTOMER</ID>
+      <Name>Es cliente</Name>
+      <KeyColumns>
+        <KeyColumn>
+          <DataType>WChar</DataType>
+          <DataSize>4</DataSize>
+          <Source xsi:type="ColumnBinding">
+            <TableID>CUSTBUSREL</TableID>
+            <ColumnID>DATAAREAID</ColumnID>
+          </Source>
+        </KeyColumn>
+        <KeyColumn>
+          <DataType>WChar</DataType>
+          <Source xsi:type="ColumnBinding">
+            <TableID>CUSTBUSREL</TableID>
+            <ColumnID>ISCUSTOMER</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <NameColumn>
+        <DataType>WChar</DataType>
+        <Source xsi:type="ColumnBinding">
+          <TableID>CUSTBUSREL</TableID>
+          <ColumnID>ISCUSTOMER</ColumnID>
+        </Source>
+      </NameColumn>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute>
+      <ID>EMAIL</ID>
+      <Name>Email</Name>
+      <KeyColumns>
+        <KeyColumn>
+          <DataType>WChar</DataType>
+          <DataSize>4</DataSize>
+          <Source xsi:type="ColumnBinding">
+            <TableID>CUSTBUSREL</TableID>
+            <ColumnID>DATAAREAID</ColumnID>
+          </Source>
+        </KeyColumn>
+        <KeyColumn>
+          <DataType>WChar</DataType>
+          <DataSize>80</DataSize>
+          <Source xsi:type="ColumnBinding">
+            <TableID>CUSTBUSREL</TableID>
+            <ColumnID>EMAIL</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <NameColumn>
+        <DataType>WChar</DataType>
+        <DataSize>80</DataSize>
+        <Source xsi:type="ColumnBinding">
+          <TableID>CUSTBUSREL</TableID>
+          <ColumnID>EMAIL</ColumnID>
+        </Source>
+      </NameColumn>
+      <Translations>
+        <Translation>
+          <Language>1033</Language>
+          <Caption>Email</Caption>
+        </Translation>
+      </Translations>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute>
+      <ID>STATE</ID>
+      <Name>State</Name>
+      <KeyColumns>
+        <KeyColumn>
+          <DataType>WChar</DataType>
+          <DataSize>4</DataSize>
+          <Source xsi:type="ColumnBinding">
+            <TableID>CUSTBUSREL</TableID>
+            <ColumnID>DATAAREAID</ColumnID>
+          </Source>
+        </KeyColumn>
+        <KeyColumn>
+          <DataType>WChar</DataType>
+          <DataSize>80</DataSize>
+          <Source xsi:type="ColumnBinding">
+            <TableID>CUSTBUSREL</TableID>
+            <ColumnID>STATE</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <NameColumn>
+        <DataType>WChar</DataType>
+        <DataSize>80</DataSize>
+        <Source xsi:type="ColumnBinding">
+          <TableID>CUSTBUSREL</TableID>
+          <ColumnID>STATE</ColumnID>
+        </Source>
+      </NameColumn>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+  </Attributes>
+  <AttributeAllMemberName>All</AttributeAllMemberName>
+  <AttributeAllMemberTranslations>
+    <AttributeAllMemberTranslation>
+      <Language>1033</Language>
+      <Caption>All</Caption>
+    </AttributeAllMemberTranslation>
+  </AttributeAllMemberTranslations>
+  <Hierarchies>
+    <Hierarchy>
+      <Annotations>
+        <Annotation>
+          <Name>LabelID</Name>
+          <Value>@SYS122430</Value>
+        </Annotation>
+        <Annotation>
+          <Name>AllMemberLabelID</Name>
+          <Value>@SYS77406</Value>
+        </Annotation>
+      </Annotations>
+      <ID>Hierarchy</ID>
+      <Name>Subsegment - Customers - Business relations</Name>
+      <Translations>
+        <Translation>
+          <Language>1033</Language>
+          <Caption>Subsegment - Customers - Business relations</Caption>
+        </Translation>
+      </Translations>
+      <AllMemberName>All</AllMemberName>
+      <AllMemberTranslations>
+        <AllMemberTranslation>
+          <Language>1033</Language>
+          <Caption>All</Caption>
+        </AllMemberTranslation>
+      </AllMemberTranslations>
+      <Levels>
+        <Level>
+          <Annotations>
+            <Annotation>
+              <Name>LabelID</Name>
+              <Value>@SYS81381</Value>
+            </Annotation>
+          </Annotations>
+          <ID>Subsegment</ID>
+          <Name>Subsegment</Name>
+          <SourceAttributeID>SUBSEGMENT</SourceAttributeID>
+          <Translations>
+            <Translation>
+              <Language>1033</Language>
+              <Caption>Subsegment</Caption>
+            </Translation>
+          </Translations>
+        </Level>
+        <Level>
+          <Annotations>
+            <Annotation>
+              <Name>LabelID</Name>
+              <Value>@SYS122143</Value>
+            </Annotation>
+          </Annotations>
+          <ID>Customers - Business relations</ID>
+          <Name>Customers - Business relations</Name>
+          <SourceAttributeID>CUSTBUSREL</SourceAttributeID>
+          <Translations>
+            <Translation>
+              <Language>1033</Language>
+              <Caption>Customers - Business relations</Caption>
+            </Translation>
+          </Translations>
+        </Level>
+      </Levels>
+    </Hierarchy>
+    <Hierarchy>
+      <Annotations>
+        <Annotation>
+          <Name>LabelID</Name>
+          <Value>@SYS122430</Value>
+        </Annotation>
+        <Annotation>
+          <Name>AllMemberLabelID</Name>
+          <Value>@SYS77406</Value>
+        </Annotation>
+      </Annotations>
+      <ID>Hierarchy 1</ID>
+      <Name>Segment - Customers - Business relations</Name>
+      <Translations>
+        <Translation>
+          <Language>1033</Language>
+          <Caption>Subsegment - Customers - Business relations</Caption>
+        </Translation>
+      </Translations>
+      <AllMemberName>All</AllMemberName>
+      <AllMemberTranslations>
+        <AllMemberTranslation>
+          <Language>1033</Language>
+          <Caption>All</Caption>
+        </AllMemberTranslation>
+      </AllMemberTranslations>
+      <Levels>
+        <Level>
+          <Annotations>
+            <Annotation>
+              <Name>LabelID</Name>
+              <Value>@SYS26267</Value>
+            </Annotation>
+          </Annotations>
+          <ID>Segment</ID>
+          <Name>Segment</Name>
+          <SourceAttributeID>SEGMENT</SourceAttributeID>
+          <Translations>
+            <Translation>
+              <Language>1033</Language>
+              <Caption>Segment</Caption>
+            </Translation>
+          </Translations>
+        </Level>
+        <Level>
+          <Annotations>
+            <Annotation>
+              <Name>LabelID</Name>
+              <Value>@SYS122143</Value>
+            </Annotation>
+          </Annotations>
+          <ID>Customers - Business relations</ID>
+          <Name>Customers - Business relations</Name>
+          <SourceAttributeID>CUSTBUSREL</SourceAttributeID>
+          <Translations>
+            <Translation>
+              <Language>1033</Language>
+              <Caption>Customers - Business relations</Caption>
+            </Translation>
+          </Translations>
+        </Level>
+      </Levels>
+    </Hierarchy>
+    <Hierarchy>
+      <Annotations>
+        <Annotation>
+          <Name>LabelID</Name>
+          <Value>@SYS122431</Value>
+        </Annotation>
+        <Annotation>
+          <Name>AllMemberLabelID</Name>
+          <Value>@SYS77406</Value>
+        </Annotation>
+      </Annotations>
+      <ID>Hierarchy 2</ID>
+      <Name>Segment - Subsegment - Customers - Business relations</Name>
+      <Translations>
+        <Translation>
+          <Language>1033</Language>
+          <Caption>Segment - Subsegment - Customers - Business relations</Caption>
+        </Translation>
+      </Translations>
+      <AllMemberName>All</AllMemberName>
+      <AllMemberTranslations>
+        <AllMemberTranslation>
+          <Language>1033</Language>
+          <Caption>All</Caption>
+        </AllMemberTranslation>
+      </AllMemberTranslations>
+      <Levels>
+        <Level>
+          <Annotations>
+            <Annotation>
+              <Name>LabelID</Name>
+              <Value>@SYS26267</Value>
+            </Annotation>
+          </Annotations>
+          <ID>Segment</ID>
+          <Name>Segment</Name>
+          <SourceAttributeID>SEGMENT</SourceAttributeID>
+          <Translations>
+            <Translation>
+              <Language>1033</Language>
+              <Caption>Segment</Caption>
+            </Translation>
+          </Translations>
+        </Level>
+        <Level>
+          <Annotations>
+            <Annotation>
+              <Name>LabelID</Name>
+              <Value>@SYS81381</Value>
+            </Annotation>
+          </Annotations>
+          <ID>Subsegment</ID>
+          <Name>Subsegment</Name>
+          <SourceAttributeID>SUBSEGMENT</SourceAttributeID>
+          <Translations>
+            <Translation>
+              <Language>1033</Language>
+              <Caption>Subsegment</Caption>
+            </Translation>
+          </Translations>
+        </Level>
+        <Level>
+          <Annotations>
+            <Annotation>
+              <Name>LabelID</Name>
+              <Value>@SYS122143</Value>
+            </Annotation>
+          </Annotations>
+          <ID>Customers - Business relations</ID>
+          <Name>Customers - Business relations</Name>
+          <SourceAttributeID>CUSTBUSREL</SourceAttributeID>
+          <Translations>
+            <Translation>
+              <Language>1033</Language>
+              <Caption>Customers - Business relations</Caption>
+            </Translation>
+          </Translations>
+        </Level>
+      </Levels>
+    </Hierarchy>
+    <Hierarchy>
+      <Annotations>
+        <Annotation>
+          <Name>LabelID</Name>
+          <Value>@SYS40832</Value>
+        </Annotation>
+        <Annotation>
+          <Name>AllMemberLabelID</Name>
+          <Value>@SYS77406</Value>
+        </Annotation>
+      </Annotations>
+      <ID>Hierarchy 3</ID>
+      <Name>Hierarchy</Name>
+      <Translations>
+        <Translation>
+          <Language>1033</Language>
+          <Caption>Hierarchy</Caption>
+        </Translation>
+      </Translations>
+      <AllMemberName>All</AllMemberName>
+      <AllMemberTranslations>
+        <AllMemberTranslation>
+          <Language>1033</Language>
+          <Caption>All</Caption>
+        </AllMemberTranslation>
+      </AllMemberTranslations>
+      <Levels>
+        <Level>
+          <Annotations>
+            <Annotation>
+              <Name>LabelID</Name>
+              <Value>@SYS122423</Value>
+            </Annotation>
+          </Annotations>
+          <ID>Country region</ID>
+          <Name>Country region</Name>
+          <SourceAttributeID>COUNTRYREGION</SourceAttributeID>
+          <Translations>
+            <Translation>
+              <Language>1033</Language>
+              <Caption>Country region</Caption>
+            </Translation>
+          </Translations>
+        </Level>
+        <Level>
+          <Annotations>
+            <Annotation>
+              <Name>LabelID</Name>
+              <Value>@SYS22249</Value>
+            </Annotation>
+          </Annotations>
+          <ID>City</ID>
+          <Name>City</Name>
+          <SourceAttributeID>CITY</SourceAttributeID>
+          <Translations>
+            <Translation>
+              <Language>1033</Language>
+              <Caption>City</Caption>
+            </Translation>
+          </Translations>
+        </Level>
+        <Level>
+          <Annotations>
+            <Annotation>
+              <Name>LabelID</Name>
+              <Value>@SYS113530</Value>
+            </Annotation>
+          </Annotations>
+          <ID>Zipcode</ID>
+          <Name>Zipcode</Name>
+          <SourceAttributeID>ZIPCODE</SourceAttributeID>
+          <Translations>
+            <Translation>
+              <Language>1033</Language>
+              <Caption>ZIP Code</Caption>
+            </Translation>
+          </Translations>
+        </Level>
+        <Level>
+          <Annotations>
+            <Annotation>
+              <Name>LabelID</Name>
+              <Value>@SYS122143</Value>
+            </Annotation>
+          </Annotations>
+          <ID>Customers - Business relations</ID>
+          <Name>Customers - Business relations</Name>
+          <SourceAttributeID>CUSTBUSREL</SourceAttributeID>
+          <Translations>
+            <Translation>
+              <Language>1033</Language>
+              <Caption>Customers - Business relations</Caption>
+            </Translation>
+          </Translations>
+        </Level>
+      </Levels>
+    </Hierarchy>
+  </Hierarchies>
+  <ProactiveCaching>
+    <SilenceInterval>-PT1S</SilenceInterval>
+    <Latency>-PT1S</Latency>
+    <SilenceOverrideInterval>-PT1S</SilenceOverrideInterval>
+    <ForceRebuildInterval>-PT1S</ForceRebuildInterval>
+    <Source xsi:type="ProactiveCachingInheritedBinding" />
+  </ProactiveCaching>
+  <ddl300:ProcessingState>Unprocessed</ddl300:ProcessingState>
+</Dimension>

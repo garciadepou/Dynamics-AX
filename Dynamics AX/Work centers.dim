@@ -1,0 +1,1054 @@
+﻿<Dimension xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:ddl200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:ddl200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:ddl300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:ddl300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:ddl400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:ddl400_400="http://schemas.microsoft.com/analysisservices/2012/engine/400/400" xmlns:ddl500="http://schemas.microsoft.com/analysisservices/2013/engine/500" xmlns:ddl500_500="http://schemas.microsoft.com/analysisservices/2013/engine/500/500" xmlns="http://schemas.microsoft.com/analysisservices/2003/engine">
+  <ID>WRKCTRTABLE</ID>
+  <Name>Work centers</Name>
+  <CreatedTimestamp>2014-05-21T09:20:56.77Z</CreatedTimestamp>
+  <LastSchemaUpdate>2014-05-21T09:27:00.953333Z</LastSchemaUpdate>
+  <Annotations>
+    <Annotation>
+      <Name>LabelID</Name>
+      <Value>@SYS10369</Value>
+    </Annotation>
+    <Annotation>
+      <Name>AttributeAllMemberLabelID</Name>
+      <Value>@SYS77406</Value>
+    </Annotation>
+    <Annotation>
+      <Name>UnknownMemberLabelID</Name>
+      <Value>@SYS21247</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramLayout</Name>
+      <Value>
+        <dds xmlns="">
+          <diagram fontclsid="{0BE35203-8F91-11CE-9DE3-00AA004BB851}" mouseiconclsid="{0BE35204-8F91-11CE-9DE3-00AA004BB851}" defaultlayout="MSDDS.Rectilinear" defaultlineroute="MSDDS.Rectilinear" version="7" nextobject="8" scale="100" pagebreakanchorx="0" pagebreakanchory="0" pagebreaksizex="0" pagebreaksizey="0" scrollleft="-106" scrolltop="-5971" gridx="150" gridy="150" marginx="5000" marginy="5000" zoom="100" x="10134" y="16933" backcolor="15334399" defaultpersistence="2" PrintPageNumbersMode="3" PrintMarginTop="0" PrintMarginBottom="635" PrintMarginLeft="0" PrintMarginRight="0" marqueeselectionmode="0" mousepointer="0" snaptogrid="0" autotypeannotation="1" showscrollbars="0" viewpagebreaks="0" donotforceconnectorsbehindshapes="1" backpictureclsid="{00000000-0000-0000-0000-000000000000}">
+            <font>
+              <ddsxmlobjectstreamwrapper binary="01000000900144420100065461686f6d61" />
+            </font>
+            <mouseicon>
+              <ddsxmlobjectstreamwrapper binary="6c74000000000000" />
+            </mouseicon>
+          </diagram>
+          <layoutmanager>
+            <ddsxmlobj />
+          </layoutmanager>
+          <ddscontrol controlprogid="DdsShapes.DdsObjectManagedBridge.3" tooltip="WRKCTRTABLE" left="20" top="0" logicalid="4" controlid="1" masterid="0" hint1="0" hint2="0" width="9260" height="5000" noresize="0" nomove="0" nodefaultattachpoints="0" autodrag="1" usedefaultiddshape="1" selectable="1" showselectionhandles="1" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+            <control>
+              <ddsxmlobjectstreaminitwrapper binary="000800002c24000088130000" />
+            </control>
+            <layoutobject>
+              <ddsxmlobj>
+                <property name="LogicalObject" value="WRKCTRTABLE" vartype="8" />
+              </ddsxmlobj>
+            </layoutobject>
+            <shape groupshapeid="0" groupnode="0" />
+          </ddscontrol>
+          <ddscontrol controlprogid="DdsShapes.DdsObjectManagedBridge.3" tooltip="BASEENUM_CapacityUnit (DBO.BASEENUM_CapacityUnit)" left="2824" top="7400" logicalid="5" controlid="2" masterid="0" hint1="0" hint2="0" width="3651" height="1879" noresize="0" nomove="0" nodefaultattachpoints="0" autodrag="1" usedefaultiddshape="1" selectable="1" showselectionhandles="1" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+            <control>
+              <ddsxmlobjectstreaminitwrapper binary="00080000430e000057070000" />
+            </control>
+            <layoutobject>
+              <ddsxmlobj>
+                <property name="LogicalObject" value="BASEENUM_CapacityUnit" vartype="8" />
+              </ddsxmlobj>
+            </layoutobject>
+            <shape groupshapeid="0" groupnode="0" />
+          </ddscontrol>
+          <ddscontrol controlprogid="MSDDS.Polyline" left="4250" top="4700" logicalid="6" controlid="3" masterid="0" hint1="0" hint2="0" width="799" height="3200" noresize="0" nomove="0" nodefaultattachpoints="1" autodrag="0" usedefaultiddshape="0" selectable="1" showselectionhandles="0" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+            <control>
+              <ddsxmlobj>
+                <polyline endtypedst="6" endtypesrc="3" usercolor="0" linestyle="0" linerender="1" customendtypedstid="0" customendtypesrcid="0" adornsvisible="1" />
+              </ddsxmlobj>
+            </control>
+            <layoutobject>
+              <ddsxmlobj>
+                <property name="LogicalObject" value="dataSet.Relations[KT266F9_E38F1]" vartype="8" />
+                <property name="Virtual" value="0" vartype="11" />
+                <property name="VisibleAP" value="0" vartype="3" />
+              </ddsxmlobj>
+            </layoutobject>
+            <connector lineroutestyle="MSDDS.Rectilinear" sourceid="2" destid="1" sourceattachpoint="6" destattachpoint="17" segmenteditmode="0" bendpointeditmode="0" bendpointvisibility="0" relatedid="0" virtual="0">
+              <point x="4649" y="7400" />
+              <point x="4649" y="6200" />
+              <point x="4650" y="6200" />
+              <point x="4650" y="5000" />
+            </connector>
+          </ddscontrol>
+        </dds>
+      </Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ShowFriendlyNames</Name>
+      <Value>true</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ShowRelationshipNames</Name>
+      <Value>false</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:UseDiagramDefaultLayout</Name>
+      <Value>true</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramViewPortLeft</Name>
+      <Value>-106</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramViewPortTop</Name>
+      <Value>-5971</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramBoundingLeft</Name>
+      <Value>20</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramBoundingTop</Name>
+      <Value>0</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramZoom</Name>
+      <Value>100</Value>
+    </Annotation>
+    <Annotation>
+      <Name>PATH</Name>
+      <Value>WRKCTRTABLE.dim</Value>
+    </Annotation>
+  </Annotations>
+  <LastProcessed>2019-02-15T07:34:17.423333Z</LastProcessed>
+  <State>Processed</State>
+  <Source xsi:type="DataSourceViewBinding">
+    <DataSourceViewID>Dynamics AX</DataSourceViewID>
+  </Source>
+  <UnknownMember>Visible</UnknownMember>
+  <ErrorConfiguration>
+    <KeyErrorLimitAction>StopLogging</KeyErrorLimitAction>
+    <KeyNotFound>IgnoreError</KeyNotFound>
+    <NullKeyNotAllowed>IgnoreError</NullKeyNotAllowed>
+  </ErrorConfiguration>
+  <CurrentStorageMode>Molap</CurrentStorageMode>
+  <Language>1033</Language>
+  <Collation>Modern_Spanish_CI_AS</Collation>
+  <UnknownMemberName>Unknown</UnknownMemberName>
+  <UnknownMemberTranslations>
+    <UnknownMemberTranslation>
+      <Language>1033</Language>
+      <Caption>Unknown</Caption>
+    </UnknownMemberTranslation>
+  </UnknownMemberTranslations>
+  <Translations>
+    <Translation>
+      <Language>1033</Language>
+      <Caption>Work centers</Caption>
+    </Translation>
+  </Translations>
+  <Attributes>
+    <Attribute>
+      <Annotations>
+        <Annotation>
+          <Name>LabelID</Name>
+          <Value>@SYS10597</Value>
+        </Annotation>
+      </Annotations>
+      <ID>NAME</ID>
+      <Name>Work center</Name>
+      <KeyColumns>
+        <KeyColumn>
+          <DataType>WChar</DataType>
+          <Source xsi:type="ColumnBinding">
+            <TableID>WRKCTRTABLE</TableID>
+            <ColumnID>DATAAREAID</ColumnID>
+          </Source>
+        </KeyColumn>
+        <KeyColumn>
+          <DataType>WChar</DataType>
+          <Source xsi:type="ColumnBinding">
+            <TableID>WRKCTRTABLE</TableID>
+            <ColumnID>NAME</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <NameColumn>
+        <DataType>WChar</DataType>
+        <Source xsi:type="ColumnBinding">
+          <TableID>WRKCTRTABLE</TableID>
+          <ColumnID>NAME</ColumnID>
+        </Source>
+      </NameColumn>
+      <Translations>
+        <Translation>
+          <Language>1033</Language>
+          <Caption>Work center</Caption>
+        </Translation>
+      </Translations>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute>
+      <Annotations>
+        <Annotation>
+          <Name>LabelID</Name>
+          <Value>@SYS1645</Value>
+        </Annotation>
+      </Annotations>
+      <ID>CAPUNIT</ID>
+      <Name>Capacity Unit</Name>
+      <KeyColumns>
+        <KeyColumn>
+          <DataType>WChar</DataType>
+          <Source xsi:type="ColumnBinding">
+            <TableID>BASEENUM_CapacityUnit</TableID>
+            <ColumnID>ENUMITEMVALUE</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <NameColumn>
+        <DataType>WChar</DataType>
+        <Source xsi:type="ColumnBinding">
+          <TableID>BASEENUM_CapacityUnit</TableID>
+          <ColumnID>ENUMITEMNAME</ColumnID>
+        </Source>
+      </NameColumn>
+      <Translations>
+        <Translation>
+          <Language>1033</Language>
+          <Caption>Capacity Unit</Caption>
+          <CaptionColumn>
+            <DataType>WChar</DataType>
+            <DataSize>255</DataSize>
+            <Source xsi:type="ColumnBinding">
+              <TableID>BASEENUM_CapacityUnit_1033</TableID>
+              <ColumnID>ENUMITEMNAME</ColumnID>
+            </Source>
+          </CaptionColumn>
+        </Translation>
+      </Translations>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute>
+      <Annotations>
+        <Annotation>
+          <Name>LabelID</Name>
+          <Value>@SYS10369</Value>
+        </Annotation>
+      </Annotations>
+      <ID>WRKCTRTABLE</ID>
+      <Name>Work centers</Name>
+      <Usage>Key</Usage>
+      <KeyColumns>
+        <KeyColumn>
+          <DataType>WChar</DataType>
+          <Source xsi:type="ColumnBinding">
+            <TableID>WRKCTRTABLE</TableID>
+            <ColumnID>DATAAREAID</ColumnID>
+          </Source>
+        </KeyColumn>
+        <KeyColumn>
+          <DataType>WChar</DataType>
+          <Source xsi:type="ColumnBinding">
+            <TableID>WRKCTRTABLE</TableID>
+            <ColumnID>WRKCTRID</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <NameColumn>
+        <DataType>WChar</DataType>
+        <Source xsi:type="ColumnBinding">
+          <TableID>WRKCTRTABLE</TableID>
+          <ColumnID>WRKCTRID</ColumnID>
+        </Source>
+      </NameColumn>
+      <Translations>
+        <Translation>
+          <Language>1033</Language>
+          <Caption>Work centers</Caption>
+        </Translation>
+      </Translations>
+      <AttributeRelationships>
+        <AttributeRelationship>
+          <AttributeID>NAME</AttributeID>
+          <Name>Work center</Name>
+          <Translations>
+            <Translation>
+              <Language>1033</Language>
+              <Caption>Work center</Caption>
+            </Translation>
+          </Translations>
+        </AttributeRelationship>
+        <AttributeRelationship>
+          <AttributeID>CAPUNIT</AttributeID>
+          <Name>Capacity Unit</Name>
+          <Translations>
+            <Translation>
+              <Language>1033</Language>
+              <Caption>Capacity Unit</Caption>
+            </Translation>
+          </Translations>
+        </AttributeRelationship>
+        <AttributeRelationship>
+          <AttributeID>ROUTECOSTCATEGORY</AttributeID>
+          <Name>Cost categories</Name>
+          <Translations>
+            <Translation>
+              <Language>1033</Language>
+              <Caption>Cost categories</Caption>
+            </Translation>
+          </Translations>
+        </AttributeRelationship>
+        <AttributeRelationship>
+          <AttributeID>WRKCTRGROUPID</AttributeID>
+          <Name>Work center group</Name>
+          <Translations>
+            <Translation>
+              <Language>1033</Language>
+              <Caption>Work center group</Caption>
+            </Translation>
+          </Translations>
+        </AttributeRelationship>
+        <AttributeRelationship>
+          <AttributeID>PRODUNITTABLE PRODUNITID</AttributeID>
+          <Name>Production units</Name>
+          <Translations>
+            <Translation>
+              <Language>1033</Language>
+              <Caption>Production units</Caption>
+            </Translation>
+          </Translations>
+        </AttributeRelationship>
+      </AttributeRelationships>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute>
+      <Annotations>
+        <Annotation>
+          <Name>LabelID</Name>
+          <Value>@SYS13371</Value>
+        </Annotation>
+      </Annotations>
+      <ID>ROUTECOSTCATEGORY</ID>
+      <Name>Cost categories</Name>
+      <KeyColumns>
+        <KeyColumn>
+          <DataType>WChar</DataType>
+          <Source xsi:type="ColumnBinding">
+            <TableID>WRKCTRTABLE</TableID>
+            <ColumnID>ROUTECOSTCATEGORY_DATAAREAID</ColumnID>
+          </Source>
+        </KeyColumn>
+        <KeyColumn>
+          <DataType>WChar</DataType>
+          <Source xsi:type="ColumnBinding">
+            <TableID>WRKCTRTABLE</TableID>
+            <ColumnID>ROUTECOSTCATEGORY_COSTCATEGORYID</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <NameColumn>
+        <DataType>WChar</DataType>
+        <Source xsi:type="ColumnBinding">
+          <TableID>WRKCTRTABLE</TableID>
+          <ColumnID>ROUTECOSTCATEGORY_COSTCATEGORYID</ColumnID>
+        </Source>
+      </NameColumn>
+      <Translations>
+        <Translation>
+          <Language>1033</Language>
+          <Caption>Cost categories</Caption>
+        </Translation>
+      </Translations>
+      <AttributeRelationships>
+        <AttributeRelationship>
+          <AttributeID>CATEGORYTABLE</AttributeID>
+          <Name>Category Table</Name>
+          <Translations>
+            <Translation>
+              <Language>1033</Language>
+              <Caption>Category Table</Caption>
+            </Translation>
+          </Translations>
+        </AttributeRelationship>
+      </AttributeRelationships>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute>
+      <Annotations>
+        <Annotation>
+          <Name>LabelID</Name>
+          <Value>@SYS929</Value>
+        </Annotation>
+      </Annotations>
+      <ID>CATEGORYNAME</ID>
+      <Name>Cost category</Name>
+      <KeyColumns>
+        <KeyColumn>
+          <DataType>WChar</DataType>
+          <Source xsi:type="ColumnBinding">
+            <TableID>WRKCTRTABLE</TableID>
+            <ColumnID>CATEGORYTABLE_DATAAREAID</ColumnID>
+          </Source>
+        </KeyColumn>
+        <KeyColumn>
+          <DataType>WChar</DataType>
+          <Source xsi:type="ColumnBinding">
+            <TableID>WRKCTRTABLE</TableID>
+            <ColumnID>CATEGORYTABLE_CATEGORYNAME</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <NameColumn>
+        <DataType>WChar</DataType>
+        <Source xsi:type="ColumnBinding">
+          <TableID>WRKCTRTABLE</TableID>
+          <ColumnID>CATEGORYTABLE_CATEGORYNAME</ColumnID>
+        </Source>
+      </NameColumn>
+      <Translations>
+        <Translation>
+          <Language>1033</Language>
+          <Caption>Cost category</Caption>
+        </Translation>
+      </Translations>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute>
+      <Annotations>
+        <Annotation>
+          <Name>LabelID</Name>
+          <Value>@SYS104937</Value>
+        </Annotation>
+      </Annotations>
+      <ID>CATEGORYTABLE</ID>
+      <Name>Category Table</Name>
+      <KeyColumns>
+        <KeyColumn>
+          <DataType>WChar</DataType>
+          <Source xsi:type="ColumnBinding">
+            <TableID>WRKCTRTABLE</TableID>
+            <ColumnID>CATEGORYTABLE_DATAAREAID</ColumnID>
+          </Source>
+        </KeyColumn>
+        <KeyColumn>
+          <DataType>WChar</DataType>
+          <Source xsi:type="ColumnBinding">
+            <TableID>WRKCTRTABLE</TableID>
+            <ColumnID>CATEGORYTABLE_CATEGORYID</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <NameColumn>
+        <DataType>WChar</DataType>
+        <Source xsi:type="ColumnBinding">
+          <TableID>WRKCTRTABLE</TableID>
+          <ColumnID>CATEGORYTABLE_CATEGORYID</ColumnID>
+        </Source>
+      </NameColumn>
+      <Translations>
+        <Translation>
+          <Language>1033</Language>
+          <Caption>Category Table</Caption>
+        </Translation>
+      </Translations>
+      <AttributeRelationships>
+        <AttributeRelationship>
+          <AttributeID>CATEGORYNAME</AttributeID>
+          <Name>Cost category</Name>
+          <Translations>
+            <Translation>
+              <Language>1033</Language>
+              <Caption>Cost category</Caption>
+            </Translation>
+          </Translations>
+        </AttributeRelationship>
+      </AttributeRelationships>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute>
+      <Annotations>
+        <Annotation>
+          <Name>LabelID</Name>
+          <Value>@SYS103211</Value>
+        </Annotation>
+      </Annotations>
+      <ID>INVENTSITE NAME</ID>
+      <Name>Site</Name>
+      <KeyColumns>
+        <KeyColumn>
+          <DataType>WChar</DataType>
+          <Source xsi:type="ColumnBinding">
+            <TableID>WRKCTRTABLE</TableID>
+            <ColumnID>INVENTSITE_DATAAREAID</ColumnID>
+          </Source>
+        </KeyColumn>
+        <KeyColumn>
+          <DataType>WChar</DataType>
+          <Source xsi:type="ColumnBinding">
+            <TableID>WRKCTRTABLE</TableID>
+            <ColumnID>INVENTSITE_NAME</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <NameColumn>
+        <DataType>WChar</DataType>
+        <Source xsi:type="ColumnBinding">
+          <TableID>WRKCTRTABLE</TableID>
+          <ColumnID>INVENTSITE_NAME</ColumnID>
+        </Source>
+      </NameColumn>
+      <Translations>
+        <Translation>
+          <Language>1033</Language>
+          <Caption>Site</Caption>
+        </Translation>
+      </Translations>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute>
+      <Annotations>
+        <Annotation>
+          <Name>LabelID</Name>
+          <Value>@SYS103211</Value>
+        </Annotation>
+      </Annotations>
+      <ID>INVENTSITE</ID>
+      <Name>Work centers Site</Name>
+      <KeyColumns>
+        <KeyColumn>
+          <DataType>WChar</DataType>
+          <Source xsi:type="ColumnBinding">
+            <TableID>WRKCTRTABLE</TableID>
+            <ColumnID>INVENTSITE_DATAAREAID</ColumnID>
+          </Source>
+        </KeyColumn>
+        <KeyColumn>
+          <DataType>WChar</DataType>
+          <Source xsi:type="ColumnBinding">
+            <TableID>WRKCTRTABLE</TableID>
+            <ColumnID>INVENTSITE_SITEID</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <NameColumn>
+        <DataType>WChar</DataType>
+        <Source xsi:type="ColumnBinding">
+          <TableID>WRKCTRTABLE</TableID>
+          <ColumnID>INVENTSITE_SITEID</ColumnID>
+        </Source>
+      </NameColumn>
+      <Translations>
+        <Translation>
+          <Language>1033</Language>
+          <Caption>Site</Caption>
+        </Translation>
+      </Translations>
+      <AttributeRelationships>
+        <AttributeRelationship>
+          <AttributeID>INVENTSITE NAME</AttributeID>
+          <Name>Site</Name>
+          <Translations>
+            <Translation>
+              <Language>1033</Language>
+              <Caption>Site</Caption>
+            </Translation>
+          </Translations>
+        </AttributeRelationship>
+      </AttributeRelationships>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute>
+      <Annotations>
+        <Annotation>
+          <Name>LabelID</Name>
+          <Value>@SYS15433</Value>
+        </Annotation>
+      </Annotations>
+      <ID>WRKCTRGROUPID</ID>
+      <Name>Work center group</Name>
+      <KeyColumns>
+        <KeyColumn>
+          <DataType>WChar</DataType>
+          <DataSize>4</DataSize>
+          <Source xsi:type="ColumnBinding">
+            <TableID>WRKCTRTABLE</TableID>
+            <ColumnID>DATAAREAID</ColumnID>
+          </Source>
+        </KeyColumn>
+        <KeyColumn>
+          <DataType>WChar</DataType>
+          <DataSize>10</DataSize>
+          <Source xsi:type="ColumnBinding">
+            <TableID>WRKCTRTABLE</TableID>
+            <ColumnID>WRKCTRGROUPID</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <NameColumn>
+        <DataType>WChar</DataType>
+        <DataSize>10</DataSize>
+        <Source xsi:type="ColumnBinding">
+          <TableID>WRKCTRTABLE</TableID>
+          <ColumnID>WRKCTRGROUPID</ColumnID>
+        </Source>
+      </NameColumn>
+      <Translations>
+        <Translation>
+          <Language>1033</Language>
+          <Caption>Work center group</Caption>
+        </Translation>
+      </Translations>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute>
+      <Annotations>
+        <Annotation>
+          <Name>LabelID</Name>
+          <Value>@SYS102974</Value>
+        </Annotation>
+      </Annotations>
+      <ID>PRODUNITTABLE PRODUNITID</ID>
+      <Name>Production units</Name>
+      <KeyColumns>
+        <KeyColumn>
+          <DataType>WChar</DataType>
+          <DataSize>4</DataSize>
+          <Source xsi:type="ColumnBinding">
+            <TableID>WRKCTRTABLE</TableID>
+            <ColumnID>PRODUNITTABLE_DATAAREAID</ColumnID>
+          </Source>
+        </KeyColumn>
+        <KeyColumn>
+          <DataType>WChar</DataType>
+          <DataSize>10</DataSize>
+          <Source xsi:type="ColumnBinding">
+            <TableID>WRKCTRTABLE</TableID>
+            <ColumnID>PRODUNITTABLE_PRODUNITID</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <NameColumn>
+        <DataType>WChar</DataType>
+        <DataSize>10</DataSize>
+        <Source xsi:type="ColumnBinding">
+          <TableID>WRKCTRTABLE</TableID>
+          <ColumnID>PRODUNITTABLE_PRODUNITID</ColumnID>
+        </Source>
+      </NameColumn>
+      <Translations>
+        <Translation>
+          <Language>1033</Language>
+          <Caption>Production units</Caption>
+        </Translation>
+      </Translations>
+      <AttributeRelationships>
+        <AttributeRelationship>
+          <AttributeID>PRODUNITTABLE NAME</AttributeID>
+          <Name>Product Unit</Name>
+          <Translations>
+            <Translation>
+              <Language>1033</Language>
+              <Caption>Product Unit</Caption>
+            </Translation>
+          </Translations>
+        </AttributeRelationship>
+        <AttributeRelationship>
+          <AttributeID>INVENTSITE</AttributeID>
+          <Name>Work centers Site</Name>
+          <Translations>
+            <Translation>
+              <Language>1033</Language>
+              <Caption>Site</Caption>
+            </Translation>
+          </Translations>
+        </AttributeRelationship>
+      </AttributeRelationships>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute>
+      <Annotations>
+        <Annotation>
+          <Name>LabelID</Name>
+          <Value>@SYS111564</Value>
+        </Annotation>
+      </Annotations>
+      <ID>PRODUNITTABLE NAME</ID>
+      <Name>Product Unit</Name>
+      <KeyColumns>
+        <KeyColumn>
+          <DataType>WChar</DataType>
+          <DataSize>4</DataSize>
+          <Source xsi:type="ColumnBinding">
+            <TableID>WRKCTRTABLE</TableID>
+            <ColumnID>PRODUNITTABLE_DATAAREAID</ColumnID>
+          </Source>
+        </KeyColumn>
+        <KeyColumn>
+          <DataType>WChar</DataType>
+          <DataSize>60</DataSize>
+          <Source xsi:type="ColumnBinding">
+            <TableID>WRKCTRTABLE</TableID>
+            <ColumnID>PRODUNITTABLE_NAME</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <NameColumn>
+        <DataType>WChar</DataType>
+        <DataSize>60</DataSize>
+        <Source xsi:type="ColumnBinding">
+          <TableID>WRKCTRTABLE</TableID>
+          <ColumnID>PRODUNITTABLE_NAME</ColumnID>
+        </Source>
+      </NameColumn>
+      <Translations>
+        <Translation>
+          <Language>1033</Language>
+          <Caption>Product Unit</Caption>
+        </Translation>
+      </Translations>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+  </Attributes>
+  <AttributeAllMemberName>All</AttributeAllMemberName>
+  <AttributeAllMemberTranslations>
+    <AttributeAllMemberTranslation>
+      <Language>1033</Language>
+      <Caption>All</Caption>
+    </AttributeAllMemberTranslation>
+  </AttributeAllMemberTranslations>
+  <Hierarchies>
+    <Hierarchy>
+      <Annotations>
+        <Annotation>
+          <Name>LabelID</Name>
+          <Value>@SYS104937,@SYS13371,@SYS10369</Value>
+        </Annotation>
+        <Annotation>
+          <Name>AllMemberLabelID</Name>
+          <Value>@SYS77406</Value>
+        </Annotation>
+      </Annotations>
+      <ID>Category Table - Cost categories - Work centers</ID>
+      <Name>Category Table - Cost categories - Work centers</Name>
+      <Translations>
+        <Translation>
+          <Language>1033</Language>
+          <Caption>Category Table - Cost categories - Work centers</Caption>
+        </Translation>
+      </Translations>
+      <AllMemberName>All</AllMemberName>
+      <AllMemberTranslations>
+        <AllMemberTranslation>
+          <Language>1033</Language>
+          <Caption>All</Caption>
+        </AllMemberTranslation>
+      </AllMemberTranslations>
+      <Levels>
+        <Level>
+          <Annotations>
+            <Annotation>
+              <Name>LabelID</Name>
+              <Value>@SYS104937</Value>
+            </Annotation>
+          </Annotations>
+          <ID>CATEGORYTABLE</ID>
+          <Name>Category Table</Name>
+          <SourceAttributeID>CATEGORYTABLE</SourceAttributeID>
+          <Translations>
+            <Translation>
+              <Language>1033</Language>
+              <Caption>Category Table</Caption>
+            </Translation>
+          </Translations>
+        </Level>
+        <Level>
+          <Annotations>
+            <Annotation>
+              <Name>LabelID</Name>
+              <Value>@SYS13371</Value>
+            </Annotation>
+          </Annotations>
+          <ID>ROUTECOSTCATEGORY</ID>
+          <Name>Cost categories</Name>
+          <SourceAttributeID>ROUTECOSTCATEGORY</SourceAttributeID>
+          <Translations>
+            <Translation>
+              <Language>1033</Language>
+              <Caption>Cost categories</Caption>
+            </Translation>
+          </Translations>
+        </Level>
+        <Level>
+          <Annotations>
+            <Annotation>
+              <Name>LabelID</Name>
+              <Value>@SYS10369</Value>
+            </Annotation>
+          </Annotations>
+          <ID>WRKCTRTABLE</ID>
+          <Name>Work centers</Name>
+          <SourceAttributeID>WRKCTRTABLE</SourceAttributeID>
+          <Translations>
+            <Translation>
+              <Language>1033</Language>
+              <Caption>Work centers</Caption>
+            </Translation>
+          </Translations>
+        </Level>
+      </Levels>
+    </Hierarchy>
+    <Hierarchy>
+      <Annotations>
+        <Annotation>
+          <Name>LabelID</Name>
+          <Value>@SYS103211,@SYS10369</Value>
+        </Annotation>
+        <Annotation>
+          <Name>AllMemberLabelID</Name>
+          <Value>@SYS77406</Value>
+        </Annotation>
+      </Annotations>
+      <ID>Site - Work centers</ID>
+      <Name>Site - Work centers</Name>
+      <Translations>
+        <Translation>
+          <Language>1033</Language>
+          <Caption>Site - Work centers</Caption>
+        </Translation>
+      </Translations>
+      <AllMemberName>All</AllMemberName>
+      <AllMemberTranslations>
+        <AllMemberTranslation>
+          <Language>1033</Language>
+          <Caption>All</Caption>
+        </AllMemberTranslation>
+      </AllMemberTranslations>
+      <Levels>
+        <Level>
+          <Annotations>
+            <Annotation>
+              <Name>LabelID</Name>
+              <Value>@SYS103211</Value>
+            </Annotation>
+          </Annotations>
+          <ID>INVENTSITE</ID>
+          <Name>Work centers Site</Name>
+          <SourceAttributeID>INVENTSITE</SourceAttributeID>
+          <Translations>
+            <Translation>
+              <Language>1033</Language>
+              <Caption>Site</Caption>
+            </Translation>
+          </Translations>
+        </Level>
+        <Level>
+          <Annotations>
+            <Annotation>
+              <Name>LabelID</Name>
+              <Value>@SYS10369</Value>
+            </Annotation>
+          </Annotations>
+          <ID>WRKCTRTABLE</ID>
+          <Name>Work centers</Name>
+          <SourceAttributeID>WRKCTRTABLE</SourceAttributeID>
+          <Translations>
+            <Translation>
+              <Language>1033</Language>
+              <Caption>Work centers</Caption>
+            </Translation>
+          </Translations>
+        </Level>
+      </Levels>
+    </Hierarchy>
+    <Hierarchy>
+      <Annotations>
+        <Annotation>
+          <Name>LabelID</Name>
+          <Value>@SYS103211,@SYS102974,@SYS10369</Value>
+        </Annotation>
+        <Annotation>
+          <Name>AllMemberLabelID</Name>
+          <Value>@SYS77406</Value>
+        </Annotation>
+      </Annotations>
+      <ID>Hierarchy</ID>
+      <Name>Site - Production units - Work centers</Name>
+      <Translations>
+        <Translation>
+          <Language>1033</Language>
+          <Caption>Site - Production units - Work centers</Caption>
+        </Translation>
+      </Translations>
+      <AllMemberName>All</AllMemberName>
+      <AllMemberTranslations>
+        <AllMemberTranslation>
+          <Language>1033</Language>
+          <Caption>All</Caption>
+        </AllMemberTranslation>
+      </AllMemberTranslations>
+      <Levels>
+        <Level>
+          <Annotations>
+            <Annotation>
+              <Name>LabelID</Name>
+              <Value>@SYS103211</Value>
+            </Annotation>
+          </Annotations>
+          <ID>Work centers Site</ID>
+          <Name>Work centers Site</Name>
+          <SourceAttributeID>INVENTSITE</SourceAttributeID>
+          <Translations>
+            <Translation>
+              <Language>1033</Language>
+              <Caption>Site</Caption>
+            </Translation>
+          </Translations>
+        </Level>
+        <Level>
+          <Annotations>
+            <Annotation>
+              <Name>LabelID</Name>
+              <Value>@SYS102974</Value>
+            </Annotation>
+          </Annotations>
+          <ID>Production units</ID>
+          <Name>Production units</Name>
+          <SourceAttributeID>PRODUNITTABLE PRODUNITID</SourceAttributeID>
+          <Translations>
+            <Translation>
+              <Language>1033</Language>
+              <Caption>Production units</Caption>
+            </Translation>
+          </Translations>
+        </Level>
+        <Level>
+          <Annotations>
+            <Annotation>
+              <Name>LabelID</Name>
+              <Value>@SYS10369</Value>
+            </Annotation>
+          </Annotations>
+          <ID>Work centers</ID>
+          <Name>Work centers</Name>
+          <SourceAttributeID>WRKCTRTABLE</SourceAttributeID>
+          <Translations>
+            <Translation>
+              <Language>1033</Language>
+              <Caption>Work centers</Caption>
+            </Translation>
+          </Translations>
+        </Level>
+      </Levels>
+    </Hierarchy>
+    <Hierarchy>
+      <Annotations>
+        <Annotation>
+          <Name>LabelID</Name>
+          <Value>@SYS122445</Value>
+        </Annotation>
+        <Annotation>
+          <Name>AllMemberLabelID</Name>
+          <Value>@SYS77406</Value>
+        </Annotation>
+      </Annotations>
+      <ID>Hierarchy 1</ID>
+      <Name>Hierarchy - Work Centers By Site</Name>
+      <Translations>
+        <Translation>
+          <Language>1033</Language>
+          <Caption>Hierarchy - Work Centers By Site</Caption>
+        </Translation>
+      </Translations>
+      <AllMemberName>All</AllMemberName>
+      <AllMemberTranslations>
+        <AllMemberTranslation>
+          <Language>1033</Language>
+          <Caption>All</Caption>
+        </AllMemberTranslation>
+      </AllMemberTranslations>
+      <Levels>
+        <Level>
+          <Annotations>
+            <Annotation>
+              <Name>LabelID</Name>
+              <Value>@SYS103211</Value>
+            </Annotation>
+          </Annotations>
+          <ID>Site</ID>
+          <Name>Site</Name>
+          <SourceAttributeID>INVENTSITE NAME</SourceAttributeID>
+          <Translations>
+            <Translation>
+              <Language>1033</Language>
+              <Caption>Site</Caption>
+            </Translation>
+          </Translations>
+        </Level>
+        <Level>
+          <Annotations>
+            <Annotation>
+              <Name>LabelID</Name>
+              <Value>@SYS111564</Value>
+            </Annotation>
+          </Annotations>
+          <ID>Product Unit</ID>
+          <Name>Product Unit</Name>
+          <SourceAttributeID>PRODUNITTABLE NAME</SourceAttributeID>
+          <Translations>
+            <Translation>
+              <Language>1033</Language>
+              <Caption>Product Unit</Caption>
+            </Translation>
+          </Translations>
+        </Level>
+        <Level>
+          <Annotations>
+            <Annotation>
+              <Name>LabelID</Name>
+              <Value>@SYS15433</Value>
+            </Annotation>
+          </Annotations>
+          <ID>Work center group</ID>
+          <Name>Work center group</Name>
+          <SourceAttributeID>WRKCTRGROUPID</SourceAttributeID>
+          <Translations>
+            <Translation>
+              <Language>1033</Language>
+              <Caption>Work center group</Caption>
+            </Translation>
+          </Translations>
+        </Level>
+        <Level>
+          <Annotations>
+            <Annotation>
+              <Name>LabelID</Name>
+              <Value>@SYS10369</Value>
+            </Annotation>
+          </Annotations>
+          <ID>Work centers</ID>
+          <Name>Work centers</Name>
+          <SourceAttributeID>WRKCTRTABLE</SourceAttributeID>
+          <Translations>
+            <Translation>
+              <Language>1033</Language>
+              <Caption>Work centers</Caption>
+            </Translation>
+          </Translations>
+        </Level>
+      </Levels>
+    </Hierarchy>
+  </Hierarchies>
+  <ProactiveCaching>
+    <SilenceInterval>-PT1S</SilenceInterval>
+    <Latency>-PT1S</Latency>
+    <SilenceOverrideInterval>-PT1S</SilenceOverrideInterval>
+    <ForceRebuildInterval>-PT1S</ForceRebuildInterval>
+    <Source xsi:type="ProactiveCachingInheritedBinding" />
+  </ProactiveCaching>
+  <ddl300:ProcessingState>Unprocessed</ddl300:ProcessingState>
+</Dimension>

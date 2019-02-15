@@ -1,0 +1,230 @@
+﻿<DataSource xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:ddl200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:ddl200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:ddl300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:ddl300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:ddl400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:ddl400_400="http://schemas.microsoft.com/analysisservices/2012/engine/400/400" xmlns:ddl500="http://schemas.microsoft.com/analysisservices/2013/engine/500" xmlns:ddl500_500="http://schemas.microsoft.com/analysisservices/2013/engine/500/500" xsi:type="RelationalDataSource" xmlns="http://schemas.microsoft.com/analysisservices/2003/engine">
+  <ID>Dynamics Database</ID>
+  <Name>Dynamics Database</Name>
+  <CreatedTimestamp>2014-05-21T09:20:54.866667Z</CreatedTimestamp>
+  <LastSchemaUpdate>2019-02-15T13:30:34.863333Z</LastSchemaUpdate>
+  <Annotations>
+    <Annotation>
+      <Name>PATH</Name>
+      <Value>Dynamics Database.ds</Value>
+    </Annotation>
+  </Annotations>
+  <ConnectionString>Provider=SQLOLEDB.1;Data Source=AXSQL02SRV;Integrated Security=SSPI;Initial Catalog=AX_Produccion</ConnectionString>
+  <ConnectionStringSecurity>Unchanged</ConnectionStringSecurity>
+  <ImpersonationInfo>
+    <ImpersonationMode>ImpersonateAccount</ImpersonationMode>
+    <Account>garciadepou\aosuser</Account>
+    <ImpersonationInfoSecurity>Unchanged</ImpersonationInfoSecurity>
+  </ImpersonationInfo>
+  <Timeout>PT0S</Timeout>
+  <DataSourcePermissions>
+    <DataSourcePermission>
+      <ID>DataSourcePermission</ID>
+      <Name>DataSourcePermission</Name>
+      <CreatedTimestamp>2014-05-21T09:20:54.883333Z</CreatedTimestamp>
+      <LastSchemaUpdate>2019-02-15T13:30:34.91Z</LastSchemaUpdate>
+      <RoleID>Role 9</RoleID>
+      <Read>Allowed</Read>
+    </DataSourcePermission>
+    <DataSourcePermission>
+      <ID>DataSourcePermission 1</ID>
+      <Name>DataSourcePermission 1</Name>
+      <CreatedTimestamp>2014-05-21T09:20:54.896667Z</CreatedTimestamp>
+      <LastSchemaUpdate>2019-02-15T13:30:34.94Z</LastSchemaUpdate>
+      <RoleID>Role 10</RoleID>
+      <Read>Allowed</Read>
+    </DataSourcePermission>
+    <DataSourcePermission>
+      <ID>DataSourcePermission 3</ID>
+      <Name>DataSourcePermission 3</Name>
+      <CreatedTimestamp>2014-05-21T09:20:54.896667Z</CreatedTimestamp>
+      <LastSchemaUpdate>2019-02-15T13:30:34.94Z</LastSchemaUpdate>
+      <RoleID>Role 13</RoleID>
+      <Read>Allowed</Read>
+    </DataSourcePermission>
+    <DataSourcePermission>
+      <ID>DataSourcePermission 4</ID>
+      <Name>DataSourcePermission 4</Name>
+      <CreatedTimestamp>2014-05-21T09:20:54.913333Z</CreatedTimestamp>
+      <LastSchemaUpdate>2019-02-15T13:30:34.956667Z</LastSchemaUpdate>
+      <RoleID>Role 14</RoleID>
+      <Read>Allowed</Read>
+    </DataSourcePermission>
+    <DataSourcePermission>
+      <ID>DataSourcePermission 5</ID>
+      <Name>DataSourcePermission 5</Name>
+      <CreatedTimestamp>2014-05-21T09:20:54.93Z</CreatedTimestamp>
+      <LastSchemaUpdate>2019-02-15T13:30:34.97Z</LastSchemaUpdate>
+      <RoleID>Role 8</RoleID>
+      <Read>Allowed</Read>
+    </DataSourcePermission>
+    <DataSourcePermission>
+      <ID>DataSourcePermission 6</ID>
+      <Name>DataSourcePermission 6</Name>
+      <CreatedTimestamp>2014-05-21T09:20:54.946667Z</CreatedTimestamp>
+      <LastSchemaUpdate>2019-02-15T13:30:34.97Z</LastSchemaUpdate>
+      <RoleID>Role 12</RoleID>
+      <Read>Allowed</Read>
+    </DataSourcePermission>
+    <DataSourcePermission>
+      <ID>DataSourcePermission 7</ID>
+      <Name>DataSourcePermission 7</Name>
+      <CreatedTimestamp>2014-05-21T09:20:54.946667Z</CreatedTimestamp>
+      <LastSchemaUpdate>2019-02-15T13:30:34.986667Z</LastSchemaUpdate>
+      <RoleID>Role 11</RoleID>
+      <Read>Allowed</Read>
+    </DataSourcePermission>
+    <DataSourcePermission>
+      <ID>DataSourcePermission 8</ID>
+      <Name>DataSourcePermission 8</Name>
+      <CreatedTimestamp>2014-05-21T09:20:54.96Z</CreatedTimestamp>
+      <LastSchemaUpdate>2019-02-15T13:30:35.006667Z</LastSchemaUpdate>
+      <RoleID>Role 20</RoleID>
+      <Read>Allowed</Read>
+    </DataSourcePermission>
+    <DataSourcePermission>
+      <ID>DataSourcePermission 9</ID>
+      <Name>DataSourcePermission 9</Name>
+      <CreatedTimestamp>2014-05-21T09:20:54.976667Z</CreatedTimestamp>
+      <LastSchemaUpdate>2019-02-15T13:30:35.006667Z</LastSchemaUpdate>
+      <RoleID>Role 5</RoleID>
+      <Read>Allowed</Read>
+    </DataSourcePermission>
+    <DataSourcePermission>
+      <ID>DataSourcePermission 10</ID>
+      <Name>DataSourcePermission 10</Name>
+      <CreatedTimestamp>2014-05-21T09:20:54.993333Z</CreatedTimestamp>
+      <LastSchemaUpdate>2019-02-15T13:30:35.026667Z</LastSchemaUpdate>
+      <RoleID>Role 21</RoleID>
+      <Read>Allowed</Read>
+    </DataSourcePermission>
+    <DataSourcePermission>
+      <ID>DataSourcePermission 11</ID>
+      <Name>DataSourcePermission 11</Name>
+      <CreatedTimestamp>2014-05-21T09:20:55.006667Z</CreatedTimestamp>
+      <LastSchemaUpdate>2019-02-15T13:30:35.026667Z</LastSchemaUpdate>
+      <RoleID>Role 2</RoleID>
+      <Read>Allowed</Read>
+    </DataSourcePermission>
+    <DataSourcePermission>
+      <ID>DataSourcePermission 2</ID>
+      <Name>DataSourcePermission 2</Name>
+      <CreatedTimestamp>2014-05-21T09:20:55.006667Z</CreatedTimestamp>
+      <LastSchemaUpdate>2019-02-15T13:30:35.043333Z</LastSchemaUpdate>
+      <RoleID>Role 23</RoleID>
+      <Read>Allowed</Read>
+    </DataSourcePermission>
+    <DataSourcePermission>
+      <ID>DataSourcePermission 12</ID>
+      <Name>DataSourcePermission 12</Name>
+      <CreatedTimestamp>2014-05-21T09:20:55.023333Z</CreatedTimestamp>
+      <LastSchemaUpdate>2019-02-15T13:30:35.043333Z</LastSchemaUpdate>
+      <RoleID>Role 24</RoleID>
+      <Read>Allowed</Read>
+    </DataSourcePermission>
+    <DataSourcePermission>
+      <ID>DataSourcePermission 13</ID>
+      <Name>DataSourcePermission 13</Name>
+      <CreatedTimestamp>2014-05-21T09:20:55.04Z</CreatedTimestamp>
+      <LastSchemaUpdate>2019-02-15T13:30:35.056667Z</LastSchemaUpdate>
+      <RoleID>Role 25</RoleID>
+      <Read>Allowed</Read>
+    </DataSourcePermission>
+    <DataSourcePermission>
+      <ID>DataSourcePermission 14</ID>
+      <Name>DataSourcePermission 14</Name>
+      <CreatedTimestamp>2014-05-21T09:20:55.053333Z</CreatedTimestamp>
+      <LastSchemaUpdate>2019-02-15T13:30:35.073333Z</LastSchemaUpdate>
+      <RoleID>Role 26</RoleID>
+      <Read>Allowed</Read>
+    </DataSourcePermission>
+    <DataSourcePermission>
+      <ID>DataSourcePermission 15</ID>
+      <Name>DataSourcePermission 15</Name>
+      <CreatedTimestamp>2014-05-21T09:20:55.053333Z</CreatedTimestamp>
+      <LastSchemaUpdate>2019-02-15T13:30:35.076667Z</LastSchemaUpdate>
+      <RoleID>Role 15</RoleID>
+      <Read>Allowed</Read>
+    </DataSourcePermission>
+    <DataSourcePermission>
+      <ID>DataSourcePermission 16</ID>
+      <Name>DataSourcePermission 16</Name>
+      <CreatedTimestamp>2014-05-21T09:20:55.07Z</CreatedTimestamp>
+      <LastSchemaUpdate>2019-02-15T13:30:35.093333Z</LastSchemaUpdate>
+      <RoleID>Role 45</RoleID>
+      <Read>Allowed</Read>
+    </DataSourcePermission>
+    <DataSourcePermission>
+      <ID>DataSourcePermission 17</ID>
+      <Name>DataSourcePermission 17</Name>
+      <CreatedTimestamp>2014-05-21T09:20:55.083333Z</CreatedTimestamp>
+      <LastSchemaUpdate>2019-02-15T13:30:35.093333Z</LastSchemaUpdate>
+      <RoleID>Role 41</RoleID>
+      <Read>Allowed</Read>
+    </DataSourcePermission>
+    <DataSourcePermission>
+      <ID>DataSourcePermission 18</ID>
+      <Name>DataSourcePermission 18</Name>
+      <CreatedTimestamp>2014-05-21T09:20:55.1Z</CreatedTimestamp>
+      <LastSchemaUpdate>2019-02-15T13:30:35.11Z</LastSchemaUpdate>
+      <RoleID>Role 42</RoleID>
+      <Read>Allowed</Read>
+    </DataSourcePermission>
+    <DataSourcePermission>
+      <ID>DataSourcePermission 19</ID>
+      <Name>DataSourcePermission 19</Name>
+      <CreatedTimestamp>2014-05-21T09:20:55.1Z</CreatedTimestamp>
+      <LastSchemaUpdate>2019-02-15T13:30:35.116667Z</LastSchemaUpdate>
+      <RoleID>Role 3</RoleID>
+      <Read>Allowed</Read>
+    </DataSourcePermission>
+    <DataSourcePermission>
+      <ID>DataSourcePermission 20</ID>
+      <Name>DataSourcePermission 20</Name>
+      <CreatedTimestamp>2014-05-21T09:20:55.116667Z</CreatedTimestamp>
+      <LastSchemaUpdate>2019-02-15T13:30:35.116667Z</LastSchemaUpdate>
+      <RoleID>Role 30</RoleID>
+      <Read>Allowed</Read>
+    </DataSourcePermission>
+    <DataSourcePermission>
+      <ID>DataSourcePermission 21</ID>
+      <Name>DataSourcePermission 21</Name>
+      <CreatedTimestamp>2014-05-21T09:20:55.133333Z</CreatedTimestamp>
+      <LastSchemaUpdate>2019-02-15T13:30:35.136667Z</LastSchemaUpdate>
+      <RoleID>Role 31</RoleID>
+      <Read>Allowed</Read>
+    </DataSourcePermission>
+    <DataSourcePermission>
+      <ID>DataSourcePermission 22</ID>
+      <Name>DataSourcePermission 22</Name>
+      <CreatedTimestamp>2014-05-21T09:20:55.133333Z</CreatedTimestamp>
+      <LastSchemaUpdate>2019-02-15T13:30:35.136667Z</LastSchemaUpdate>
+      <RoleID>Role</RoleID>
+      <Read>Allowed</Read>
+    </DataSourcePermission>
+    <DataSourcePermission>
+      <ID>DataSourcePermission 23</ID>
+      <Name>DataSourcePermission 23</Name>
+      <CreatedTimestamp>2014-05-21T09:20:55.146667Z</CreatedTimestamp>
+      <LastSchemaUpdate>2019-02-15T13:30:35.153333Z</LastSchemaUpdate>
+      <RoleID>Role 33</RoleID>
+      <Read>Allowed</Read>
+    </DataSourcePermission>
+    <DataSourcePermission>
+      <ID>DataSourcePermission 24</ID>
+      <Name>DataSourcePermission 24</Name>
+      <CreatedTimestamp>2014-05-21T09:20:55.163333Z</CreatedTimestamp>
+      <LastSchemaUpdate>2019-02-15T13:30:35.153333Z</LastSchemaUpdate>
+      <RoleID>Role 1</RoleID>
+      <Read>Allowed</Read>
+    </DataSourcePermission>
+    <DataSourcePermission>
+      <ID>DataSourcePermission 25</ID>
+      <Name>DataSourcePermission 25</Name>
+      <CreatedTimestamp>2017-01-12T10:45:13.516667Z</CreatedTimestamp>
+      <LastSchemaUpdate>2019-02-15T13:30:35.173333Z</LastSchemaUpdate>
+      <RoleID>Role 4</RoleID>
+      <Read>Allowed</Read>
+    </DataSourcePermission>
+  </DataSourcePermissions>
+</DataSource>

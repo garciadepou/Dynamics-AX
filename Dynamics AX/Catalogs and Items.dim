@@ -1,0 +1,500 @@
+﻿<Dimension xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:ddl200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:ddl200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:ddl300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:ddl300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:ddl400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:ddl400_400="http://schemas.microsoft.com/analysisservices/2012/engine/400/400" xmlns:ddl500="http://schemas.microsoft.com/analysisservices/2013/engine/500" xmlns:ddl500_500="http://schemas.microsoft.com/analysisservices/2013/engine/500/500" xmlns="http://schemas.microsoft.com/analysisservices/2003/engine">
+  <ID>Catálogos y Artículos</ID>
+  <Name>Catalogs and Items</Name>
+  <CreatedTimestamp>2014-09-30T11:55:21.746667Z</CreatedTimestamp>
+  <LastSchemaUpdate>2018-10-03T09:36:21.846667Z</LastSchemaUpdate>
+  <LastProcessed>2019-02-15T07:31:40.713333Z</LastProcessed>
+  <State>Processed</State>
+  <Source xsi:type="DataSourceViewBinding">
+    <DataSourceViewID>Dynamics AX</DataSourceViewID>
+  </Source>
+  <ErrorConfiguration>
+    <KeyErrorLimitAction>StopLogging</KeyErrorLimitAction>
+    <KeyNotFound>IgnoreError</KeyNotFound>
+    <NullKeyNotAllowed>IgnoreError</NullKeyNotAllowed>
+  </ErrorConfiguration>
+  <CurrentStorageMode>Molap</CurrentStorageMode>
+  <Language>1033</Language>
+  <Collation>Modern_Spanish_CI_AS</Collation>
+  <UnknownMemberName>Unknown</UnknownMemberName>
+  <UnknownMemberTranslations>
+    <UnknownMemberTranslation>
+      <Language>3082</Language>
+      <Caption>Desconocido</Caption>
+    </UnknownMemberTranslation>
+  </UnknownMemberTranslations>
+  <Translations>
+    <Translation>
+      <Language>3082</Language>
+      <Caption>Catálogos y Artículos</Caption>
+    </Translation>
+  </Translations>
+  <Attributes>
+    <Attribute>
+      <ID>Name</ID>
+      <Name>Name</Name>
+      <Usage>Key</Usage>
+      <KeyColumns>
+        <KeyColumn>
+          <DataType>WChar</DataType>
+          <DataSize>4</DataSize>
+          <Source xsi:type="ColumnBinding">
+            <TableID>dbo_GPINVENTCATALOG</TableID>
+            <ColumnID>DATAAREAID</ColumnID>
+          </Source>
+        </KeyColumn>
+        <KeyColumn>
+          <DataType>BigInt</DataType>
+          <Source xsi:type="ColumnBinding">
+            <TableID>dbo_GPINVENTCATALOG</TableID>
+            <ColumnID>RECID</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <NameColumn>
+        <DataType>WChar</DataType>
+        <DataSize>62</DataSize>
+        <Source xsi:type="ColumnBinding">
+          <TableID>dbo_GPINVENTCATALOG</TableID>
+          <ColumnID>Name</ColumnID>
+        </Source>
+      </NameColumn>
+      <Translations>
+        <Translation>
+          <Language>3082</Language>
+          <Caption>Catálogos y Artículos (Nombre)</Caption>
+        </Translation>
+      </Translations>
+      <AttributeRelationships>
+        <AttributeRelationship>
+          <AttributeID>ITEMID</AttributeID>
+          <Name>Item</Name>
+          <Translations>
+            <Translation>
+              <Language>3082</Language>
+              <Caption>Artículos</Caption>
+            </Translation>
+          </Translations>
+        </AttributeRelationship>
+        <AttributeRelationship>
+          <AttributeID>CATALOGID</AttributeID>
+          <Name>Catalog</Name>
+          <Translations>
+            <Translation>
+              <Language>3082</Language>
+              <Caption>Catálogo</Caption>
+            </Translation>
+          </Translations>
+        </AttributeRelationship>
+        <AttributeRelationship>
+          <AttributeID>PRINCIPAL</AttributeID>
+          <Name>Is main</Name>
+          <Translations>
+            <Translation>
+              <Language>3082</Language>
+              <Caption>Es principal</Caption>
+            </Translation>
+          </Translations>
+        </AttributeRelationship>
+        <AttributeRelationship>
+          <AttributeID>PAGENUM</AttributeID>
+          <Name>Page Num</Name>
+          <Translations>
+            <Translation>
+              <Language>3082</Language>
+              <Caption>Núm. de página</Caption>
+            </Translation>
+          </Translations>
+        </AttributeRelationship>
+        <AttributeRelationship>
+          <AttributeID>CHAPTER NAME</AttributeID>
+          <Name>Chapter Name</Name>
+          <Translations>
+            <Translation>
+              <Language>3082</Language>
+              <Caption>Capítulo</Caption>
+            </Translation>
+          </Translations>
+        </AttributeRelationship>
+      </AttributeRelationships>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute>
+      <ID>ITEMID</ID>
+      <Name>Item</Name>
+      <KeyColumns>
+        <KeyColumn>
+          <DataType>WChar</DataType>
+          <DataSize>4</DataSize>
+          <Source xsi:type="ColumnBinding">
+            <TableID>dbo_GPINVENTCATALOG</TableID>
+            <ColumnID>DATAAREAID</ColumnID>
+          </Source>
+        </KeyColumn>
+        <KeyColumn>
+          <DataType>WChar</DataType>
+          <DataSize>20</DataSize>
+          <Source xsi:type="ColumnBinding">
+            <TableID>dbo_GPINVENTCATALOG</TableID>
+            <ColumnID>ITEMID</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <NameColumn>
+        <DataType>WChar</DataType>
+        <DataSize>20</DataSize>
+        <Source xsi:type="ColumnBinding">
+          <TableID>dbo_GPINVENTCATALOG</TableID>
+          <ColumnID>ITEMID</ColumnID>
+        </Source>
+      </NameColumn>
+      <Translations>
+        <Translation>
+          <Language>3082</Language>
+          <Caption>Artículos</Caption>
+        </Translation>
+      </Translations>
+      <AttributeRelationships>
+        <AttributeRelationship>
+          <AttributeID>ITEM NAME</AttributeID>
+          <Name>Item Name</Name>
+          <Translations>
+            <Translation>
+              <Language>3082</Language>
+              <Caption>Nombre de artículo</Caption>
+            </Translation>
+          </Translations>
+        </AttributeRelationship>
+      </AttributeRelationships>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute>
+      <ID>CATALOGID</ID>
+      <Name>Catalog</Name>
+      <KeyColumns>
+        <KeyColumn>
+          <DataType>WChar</DataType>
+          <DataSize>4</DataSize>
+          <Source xsi:type="ColumnBinding">
+            <TableID>dbo_GPINVENTCATALOG</TableID>
+            <ColumnID>DATAAREAID</ColumnID>
+          </Source>
+        </KeyColumn>
+        <KeyColumn>
+          <DataType>WChar</DataType>
+          <DataSize>60</DataSize>
+          <Source xsi:type="ColumnBinding">
+            <TableID>dbo_GPINVENTCATALOG</TableID>
+            <ColumnID>CATALOGID</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <NameColumn>
+        <DataType>WChar</DataType>
+        <DataSize>60</DataSize>
+        <Source xsi:type="ColumnBinding">
+          <TableID>dbo_GPINVENTCATALOG</TableID>
+          <ColumnID>CATALOGID</ColumnID>
+        </Source>
+      </NameColumn>
+      <Translations>
+        <Translation>
+          <Language>3082</Language>
+          <Caption>Catálogo</Caption>
+        </Translation>
+      </Translations>
+      <AttributeRelationships>
+        <AttributeRelationship>
+          <AttributeID>CATALOG NAME</AttributeID>
+          <Name>Catalog Name</Name>
+          <Translations>
+            <Translation>
+              <Language>3082</Language>
+              <Caption>Nombre del catálogo</Caption>
+            </Translation>
+          </Translations>
+        </AttributeRelationship>
+      </AttributeRelationships>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute>
+      <ID>PRINCIPAL</ID>
+      <Name>Is main</Name>
+      <KeyColumns>
+        <KeyColumn>
+          <DataType>WChar</DataType>
+          <DataSize>4</DataSize>
+          <Source xsi:type="ColumnBinding">
+            <TableID>dbo_GPINVENTCATALOG</TableID>
+            <ColumnID>DATAAREAID</ColumnID>
+          </Source>
+        </KeyColumn>
+        <KeyColumn>
+          <DataType>Integer</DataType>
+          <Source xsi:type="ColumnBinding">
+            <TableID>dbo_GPINVENTCATALOG</TableID>
+            <ColumnID>PRINCIPAL</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <NameColumn>
+        <DataType>WChar</DataType>
+        <Source xsi:type="ColumnBinding">
+          <TableID>dbo_GPINVENTCATALOG</TableID>
+          <ColumnID>PRINCIPAL</ColumnID>
+        </Source>
+      </NameColumn>
+      <Translations>
+        <Translation>
+          <Language>3082</Language>
+          <Caption>Es principal</Caption>
+        </Translation>
+      </Translations>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute>
+      <ID>PAGENUM</ID>
+      <Name>Page Num</Name>
+      <KeyColumns>
+        <KeyColumn>
+          <DataType>WChar</DataType>
+          <DataSize>4</DataSize>
+          <Source xsi:type="ColumnBinding">
+            <TableID>dbo_GPINVENTCATALOG</TableID>
+            <ColumnID>DATAAREAID</ColumnID>
+          </Source>
+        </KeyColumn>
+        <KeyColumn>
+          <DataType>Integer</DataType>
+          <Source xsi:type="ColumnBinding">
+            <TableID>dbo_GPINVENTCATALOG</TableID>
+            <ColumnID>PAGENUM</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <NameColumn>
+        <DataType>WChar</DataType>
+        <Source xsi:type="ColumnBinding">
+          <TableID>dbo_GPINVENTCATALOG</TableID>
+          <ColumnID>PAGENUM</ColumnID>
+        </Source>
+      </NameColumn>
+      <Translations>
+        <Translation>
+          <Language>3082</Language>
+          <Caption>Núm. de página</Caption>
+        </Translation>
+      </Translations>
+      <OrderBy>Key</OrderBy>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute>
+      <ID>CHAPTER NAME</ID>
+      <Name>Chapter Name</Name>
+      <KeyColumns>
+        <KeyColumn>
+          <DataType>WChar</DataType>
+          <DataSize>4</DataSize>
+          <Source xsi:type="ColumnBinding">
+            <TableID>dbo_GPINVENTCATALOG</TableID>
+            <ColumnID>DATAAREAID</ColumnID>
+          </Source>
+        </KeyColumn>
+        <KeyColumn>
+          <DataType>WChar</DataType>
+          <DataSize>60</DataSize>
+          <Source xsi:type="ColumnBinding">
+            <TableID>dbo_GPINVENTCATALOG</TableID>
+            <ColumnID>CHAPTER_NAME</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <NameColumn>
+        <DataType>WChar</DataType>
+        <DataSize>60</DataSize>
+        <Source xsi:type="ColumnBinding">
+          <TableID>dbo_GPINVENTCATALOG</TableID>
+          <ColumnID>CHAPTER_NAME</ColumnID>
+        </Source>
+      </NameColumn>
+      <Translations>
+        <Translation>
+          <Language>3082</Language>
+          <Caption>Capítulo</Caption>
+        </Translation>
+      </Translations>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute>
+      <ID>CATALOG NAME</ID>
+      <Name>Catalog Name</Name>
+      <KeyColumns>
+        <KeyColumn>
+          <DataType>WChar</DataType>
+          <DataSize>4</DataSize>
+          <Source xsi:type="ColumnBinding">
+            <TableID>dbo_GPINVENTCATALOG</TableID>
+            <ColumnID>DATAAREAID</ColumnID>
+          </Source>
+        </KeyColumn>
+        <KeyColumn>
+          <DataType>WChar</DataType>
+          <DataSize>60</DataSize>
+          <Source xsi:type="ColumnBinding">
+            <TableID>dbo_GPINVENTCATALOG</TableID>
+            <ColumnID>CATALOG_NAME</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <NameColumn>
+        <DataType>WChar</DataType>
+        <DataSize>60</DataSize>
+        <Source xsi:type="ColumnBinding">
+          <TableID>dbo_GPINVENTCATALOG</TableID>
+          <ColumnID>CATALOG_NAME</ColumnID>
+        </Source>
+      </NameColumn>
+      <Translations>
+        <Translation>
+          <Language>3082</Language>
+          <Caption>Nombre del catálogo</Caption>
+        </Translation>
+      </Translations>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute>
+      <ID>ITEM NAME</ID>
+      <Name>Item Name</Name>
+      <KeyColumns>
+        <KeyColumn>
+          <DataType>WChar</DataType>
+          <DataSize>4</DataSize>
+          <Source xsi:type="ColumnBinding">
+            <TableID>dbo_GPINVENTCATALOG</TableID>
+            <ColumnID>DATAAREAID</ColumnID>
+          </Source>
+        </KeyColumn>
+        <KeyColumn>
+          <DataType>WChar</DataType>
+          <DataSize>60</DataSize>
+          <Source xsi:type="ColumnBinding">
+            <TableID>dbo_GPINVENTCATALOG</TableID>
+            <ColumnID>ITEM_NAME</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <NameColumn>
+        <DataType>WChar</DataType>
+        <DataSize>60</DataSize>
+        <Source xsi:type="ColumnBinding">
+          <TableID>dbo_GPINVENTCATALOG</TableID>
+          <ColumnID>ITEM_NAME</ColumnID>
+        </Source>
+      </NameColumn>
+      <Translations>
+        <Translation>
+          <Language>3082</Language>
+          <Caption>Nombre de artículo</Caption>
+        </Translation>
+      </Translations>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+  </Attributes>
+  <Hierarchies>
+    <Hierarchy>
+      <ID>Hierarchy 1</ID>
+      <Name>Cat-Cap-Pag</Name>
+      <Levels>
+        <Level>
+          <ID>Catalog Name</ID>
+          <Name>Catalog Name</Name>
+          <SourceAttributeID>CATALOG NAME</SourceAttributeID>
+          <Translations>
+            <Translation>
+              <Language>3082</Language>
+              <Caption>Nombre del catálogo</Caption>
+            </Translation>
+          </Translations>
+        </Level>
+        <Level>
+          <ID>Chapter Name</ID>
+          <Name>Chapter Name</Name>
+          <SourceAttributeID>CHAPTER NAME</SourceAttributeID>
+        </Level>
+        <Level>
+          <ID>Page Num</ID>
+          <Name>Page Num</Name>
+          <SourceAttributeID>PAGENUM</SourceAttributeID>
+        </Level>
+        <Level>
+          <ID>Item</ID>
+          <Name>Item</Name>
+          <SourceAttributeID>ITEMID</SourceAttributeID>
+        </Level>
+      </Levels>
+    </Hierarchy>
+    <Hierarchy>
+      <ID>Hierarchy</ID>
+      <Name>Cat-Pag</Name>
+      <Levels>
+        <Level>
+          <ID>Catalog Name</ID>
+          <Name>Catalog Name</Name>
+          <SourceAttributeID>CATALOG NAME</SourceAttributeID>
+        </Level>
+        <Level>
+          <ID>Page Num</ID>
+          <Name>Page Num</Name>
+          <SourceAttributeID>PAGENUM</SourceAttributeID>
+        </Level>
+        <Level>
+          <ID>Item</ID>
+          <Name>Item</Name>
+          <SourceAttributeID>ITEMID</SourceAttributeID>
+        </Level>
+      </Levels>
+    </Hierarchy>
+    <Hierarchy>
+      <ID>Jerarquía</ID>
+      <Name>Jerarquía</Name>
+      <Levels>
+        <Level>
+          <ID>Catalog</ID>
+          <Name>Catalog</Name>
+          <SourceAttributeID>CATALOGID</SourceAttributeID>
+        </Level>
+        <Level>
+          <ID>Chapter Name</ID>
+          <Name>Chapter Name</Name>
+          <SourceAttributeID>CHAPTER NAME</SourceAttributeID>
+        </Level>
+        <Level>
+          <ID>Page Num</ID>
+          <Name>Page Num</Name>
+          <SourceAttributeID>PAGENUM</SourceAttributeID>
+        </Level>
+        <Level>
+          <ID>Item</ID>
+          <Name>Item</Name>
+          <SourceAttributeID>ITEMID</SourceAttributeID>
+        </Level>
+      </Levels>
+    </Hierarchy>
+  </Hierarchies>
+  <ProactiveCaching>
+    <SilenceInterval>-PT1S</SilenceInterval>
+    <Latency>-PT1S</Latency>
+    <SilenceOverrideInterval>-PT1S</SilenceOverrideInterval>
+    <ForceRebuildInterval>-PT1S</ForceRebuildInterval>
+    <Source xsi:type="ProactiveCachingInheritedBinding" />
+  </ProactiveCaching>
+  <ddl300:ProcessingState>Unprocessed</ddl300:ProcessingState>
+</Dimension>

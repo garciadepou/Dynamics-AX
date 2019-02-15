@@ -1,0 +1,745 @@
+﻿<Project xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:ddl200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:ddl200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:ddl300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:ddl300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:ddl400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:ddl400_400="http://schemas.microsoft.com/analysisservices/2012/engine/400/400" xmlns:ddl500="http://schemas.microsoft.com/analysisservices/2013/engine/500" xmlns:ddl500_500="http://schemas.microsoft.com/analysisservices/2013/engine/500/500" xmlns:dwd="http://schemas.microsoft.com/DataWarehouse/Designer/1.0">
+  <ProductVersion>15.0.1300.59</ProductVersion>
+  <SchemaVersion>9.0.2.10</SchemaVersion>
+  <State>$base64$PFNvdXJjZUNvbnRyb2xJbmZvIHhtbG5zOnhzZD0iaHR0cDovL3d3dy53My5vcmcvMjAwMS9YTUxTY2hlbWEiIHhtbG5zOnhzaT0iaHR0cDovL3d3dy53My5vcmcvMjAwMS9YTUxTY2hlbWEtaW5zdGFuY2UiIHhtbG5zOmRkbDI9Imh0dHA6Ly9zY2hlbWFzLm1pY3Jvc29mdC5jb20vYW5hbHlzaXNzZXJ2aWNlcy8yMDAzL2VuZ2luZS8yIiB4bWxuczpkZGwyXzI9Imh0dHA6Ly9zY2hlbWFzLm1pY3Jvc29mdC5jb20vYW5hbHlzaXNzZXJ2aWNlcy8yMDAzL2VuZ2luZS8yLzIiIHhtbG5zOmRkbDEwMF8xMDA9Imh0dHA6Ly9zY2hlbWFzLm1pY3Jvc29mdC5jb20vYW5hbHlzaXNzZXJ2aWNlcy8yMDA4L2VuZ2luZS8xMDAvMTAwIiB4bWxuczpkZGwyMDA9Imh0dHA6Ly9zY2hlbWFzLm1pY3Jvc29mdC5jb20vYW5hbHlzaXNzZXJ2aWNlcy8yMDEwL2VuZ2luZS8yMDAiIHhtbG5zOmRkbDIwMF8yMDA9Imh0dHA6Ly9zY2hlbWFzLm1pY3Jvc29mdC5jb20vYW5hbHlzaXNzZXJ2aWNlcy8yMDEwL2VuZ2luZS8yMDAvMjAwIiB4bWxuczpkZGwzMDA9Imh0dHA6Ly9zY2hlbWFzLm1pY3Jvc29mdC5jb20vYW5hbHlzaXNzZXJ2aWNlcy8yMDExL2VuZ2luZS8zMDAiIHhtbG5zOmRkbDMwMF8zMDA9Imh0dHA6Ly9zY2hlbWFzLm1pY3Jvc29mdC5jb20vYW5hbHlzaXNzZXJ2aWNlcy8yMDExL2VuZ2luZS8zMDAvMzAwIiB4bWxuczpkZGw0MDA9Imh0dHA6Ly9zY2hlbWFzLm1pY3Jvc29mdC5jb20vYW5hbHlzaXNzZXJ2aWNlcy8yMDEyL2VuZ2luZS80MDAiIHhtbG5zOmRkbDQwMF80MDA9Imh0dHA6Ly9zY2hlbWFzLm1pY3Jvc29mdC5jb20vYW5hbHlzaXNzZXJ2aWNlcy8yMDEyL2VuZ2luZS80MDAvNDAwIiB4bWxuczpkZGw1MDA9Imh0dHA6Ly9zY2hlbWFzLm1pY3Jvc29mdC5jb20vYW5hbHlzaXNzZXJ2aWNlcy8yMDEzL2VuZ2luZS81MDAiIHhtbG5zOmRkbDUwMF81MDA9Imh0dHA6Ly9zY2hlbWFzLm1pY3Jvc29mdC5jb20vYW5hbHlzaXNzZXJ2aWNlcy8yMDEzL2VuZ2luZS81MDAvNTAwIiB4bWxuczpkd2Q9Imh0dHA6Ly9zY2hlbWFzLm1pY3Jvc29mdC5jb20vRGF0YVdhcmVob3VzZS9EZXNpZ25lci8xLjAiPg0KICA8RW5hYmxlZD5mYWxzZTwvRW5hYmxlZD4NCiAgPFByb2plY3ROYW1lPjwvUHJvamVjdE5hbWU+DQogIDxBdXhQYXRoPjwvQXV4UGF0aD4NCiAgPExvY2FsUGF0aD48L0xvY2FsUGF0aD4NCiAgPFByb3ZpZGVyPjwvUHJvdmlkZXI+DQo8L1NvdXJjZUNvbnRyb2xJbmZvPg==</State>
+  <Database>
+    <Name>Dynamics AX.database</Name>
+    <FullPath>Dynamics AX.database</FullPath>
+  </Database>
+  <Cubes>
+    <ProjectItem>
+      <Name>Accounts Payable Cube.cube</Name>
+      <FullPath>Accounts Payable Cube.cube</FullPath>
+      <Dependencies>
+        <ProjectItem>
+          <Name>Accounts Payable Cube.partitions</Name>
+          <FullPath>Accounts Payable Cube.partitions</FullPath>
+        </ProjectItem>
+      </Dependencies>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Accounts Receivable Cube.cube</Name>
+      <FullPath>Accounts Receivable Cube.cube</FullPath>
+      <Dependencies>
+        <ProjectItem>
+          <Name>Accounts Receivable Cube.partitions</Name>
+          <FullPath>Accounts Receivable Cube.partitions</FullPath>
+        </ProjectItem>
+      </Dependencies>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Customer Relationship Management Cube.cube</Name>
+      <FullPath>Customer Relationship Management Cube.cube</FullPath>
+      <Dependencies>
+        <ProjectItem>
+          <Name>Customer Relationship Management Cube.partitions</Name>
+          <FullPath>Customer Relationship Management Cube.partitions</FullPath>
+        </ProjectItem>
+      </Dependencies>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Expense Management Cube.cube</Name>
+      <FullPath>Expense Management Cube.cube</FullPath>
+      <Dependencies>
+        <ProjectItem>
+          <Name>Expense Management Cube.partitions</Name>
+          <FullPath>Expense Management Cube.partitions</FullPath>
+        </ProjectItem>
+      </Dependencies>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>General Ledger Cube.cube</Name>
+      <FullPath>General Ledger Cube.cube</FullPath>
+      <Dependencies>
+        <ProjectItem>
+          <Name>General Ledger Cube.partitions</Name>
+          <FullPath>General Ledger Cube.partitions</FullPath>
+        </ProjectItem>
+      </Dependencies>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Human Resource Management Cube.cube</Name>
+      <FullPath>Human Resource Management Cube.cube</FullPath>
+      <Dependencies>
+        <ProjectItem>
+          <Name>Human Resource Management Cube.partitions</Name>
+          <FullPath>Human Resource Management Cube.partitions</FullPath>
+        </ProjectItem>
+      </Dependencies>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Production Cube.cube</Name>
+      <FullPath>Production Cube.cube</FullPath>
+      <Dependencies>
+        <ProjectItem>
+          <Name>Production Cube.partitions</Name>
+          <FullPath>Production Cube.partitions</FullPath>
+        </ProjectItem>
+      </Dependencies>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Purchase Cube.cube</Name>
+      <FullPath>Purchase Cube.cube</FullPath>
+      <Dependencies>
+        <ProjectItem>
+          <Name>Purchase Cube.partitions</Name>
+          <FullPath>Purchase Cube.partitions</FullPath>
+        </ProjectItem>
+      </Dependencies>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Sales Cube.cube</Name>
+      <FullPath>Sales Cube.cube</FullPath>
+      <Dependencies>
+        <ProjectItem>
+          <Name>Sales Cube.partitions</Name>
+          <FullPath>Sales Cube.partitions</FullPath>
+        </ProjectItem>
+      </Dependencies>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Shipments Cube.cube</Name>
+      <FullPath>Shipments Cube.cube</FullPath>
+      <Dependencies>
+        <ProjectItem>
+          <Name>Shipments Cube.partitions</Name>
+          <FullPath>Shipments Cube.partitions</FullPath>
+        </ProjectItem>
+      </Dependencies>
+    </ProjectItem>
+  </Cubes>
+  <Dimensions>
+    <ProjectItem>
+      <Name>Absence codes.dim</Name>
+      <FullPath>Absence codes.dim</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Activitats.dim</Name>
+      <FullPath>Activitats.dim</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Activities.dim</Name>
+      <FullPath>Activities.dim</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Activity plan table.dim</Name>
+      <FullPath>Activity plan table.dim</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Activity Type.dim</Name>
+      <FullPath>Activity Type.dim</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Applicants.dim</Name>
+      <FullPath>Applicants.dim</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Applications.dim</Name>
+      <FullPath>Applications.dim</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Appraisal interviews.dim</Name>
+      <FullPath>Appraisal interviews.dim</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Bank accounts.dim</Name>
+      <FullPath>Bank accounts.dim</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Bank transaction type.dim</Name>
+      <FullPath>Bank transaction type.dim</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Bank transactions.dim</Name>
+      <FullPath>Bank transactions.dim</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Budget updates.dim</Name>
+      <FullPath>Budget updates.dim</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Buyer groups.dim</Name>
+      <FullPath>Buyer groups.dim</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Calculation.dim</Name>
+      <FullPath>Calculation.dim</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Campaigns.dim</Name>
+      <FullPath>Campaigns.dim</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Catalogs and Items.dim</Name>
+      <FullPath>Catalogs and Items.dim</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Colors.dim</Name>
+      <FullPath>Colors.dim</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Company information.dim</Name>
+      <FullPath>Company information.dim</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Company.dim</Name>
+      <FullPath>Company.dim</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Competitor.dim</Name>
+      <FullPath>Competitor.dim</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Competitors.dim</Name>
+      <FullPath>Competitors.dim</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Cost center.dim</Name>
+      <FullPath>Cost center.dim</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Course participants.dim</Name>
+      <FullPath>Course participants.dim</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Courses.dim</Name>
+      <FullPath>Courses.dim</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Currency.dim</Name>
+      <FullPath>Currency.dim</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Customer - Packing slip lines - Delayed.dim</Name>
+      <FullPath>Customer - Packing slip lines - Delayed.dim</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Customer - Packing slip lines.dim</Name>
+      <FullPath>Customer - Packing slip lines.dim</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Customer invoice journal.dim</Name>
+      <FullPath>Customer invoice journal.dim</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Customer invoice lines.dim</Name>
+      <FullPath>Customer invoice lines.dim</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Customer transactions.dim</Name>
+      <FullPath>Customer transactions.dim</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Customers - Business relations.dim</Name>
+      <FullPath>Customers - Business relations.dim</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Customers.dim</Name>
+      <FullPath>Customers.dim</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Department.dim</Name>
+      <FullPath>Department.dim</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>DSTime.dim</Name>
+      <FullPath>DSTime.dim</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Employee - Item.dim</Name>
+      <FullPath>Employee - Item.dim</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Employee.dim</Name>
+      <FullPath>Employee.dim</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Expense category.dim</Name>
+      <FullPath>Expense category.dim</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Expense header.dim</Name>
+      <FullPath>Expense header.dim</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Expense lines.dim</Name>
+      <FullPath>Expense lines.dim</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Expense.dim</Name>
+      <FullPath>Expense.dim</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Fee.dim</Name>
+      <FullPath>Fee.dim</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Forecast models.dim</Name>
+      <FullPath>Forecast models.dim</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>GdP Customer Invoice Transaction.dim</Name>
+      <FullPath>GdP Customer Invoice Transaction.dim</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>GdP Customer invoice.dim</Name>
+      <FullPath>GdP Customer invoice.dim</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>GdP Customer Transactions.dim</Name>
+      <FullPath>GdP Customer Transactions.dim</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Goals.dim</Name>
+      <FullPath>Goals.dim</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>GP Catalogs.dim</Name>
+      <FullPath>GP Catalogs.dim</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Hours.dim</Name>
+      <FullPath>Hours.dim</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Invent dimmensions.dim</Name>
+      <FullPath>Invent dimmensions.dim</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Invent Transactions.dim</Name>
+      <FullPath>Invent Transactions.dim</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Item configurations.dim</Name>
+      <FullPath>Item configurations.dim</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Item group.dim</Name>
+      <FullPath>Item group.dim</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Items.dim</Name>
+      <FullPath>Items.dim</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Items2.dim</Name>
+      <FullPath>Items2.dim</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Jobs.dim</Name>
+      <FullPath>Jobs.dim</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Lead priority.dim</Name>
+      <FullPath>Lead priority.dim</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Lead rating.dim</Name>
+      <FullPath>Lead rating.dim</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Lead type.dim</Name>
+      <FullPath>Lead type.dim</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Leads.dim</Name>
+      <FullPath>Leads.dim</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Ledger budget models.dim</Name>
+      <FullPath>Ledger budget models.dim</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Ledger budget.dim</Name>
+      <FullPath>Ledger budget.dim</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Ledger chart of accounts.dim</Name>
+      <FullPath>Ledger chart of accounts.dim</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Ledger period time dimension.dim</Name>
+      <FullPath>Ledger period time dimension.dim</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Ledger transactions.dim</Name>
+      <FullPath>Ledger transactions.dim</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Ledger updates.dim</Name>
+      <FullPath>Ledger updates.dim</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Line property.dim</Name>
+      <FullPath>Line property.dim</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Lines for setup of statistics.dim</Name>
+      <FullPath>Lines for setup of statistics.dim</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Master Company Reporting Currency.dim</Name>
+      <FullPath>Master Company Reporting Currency.dim</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Media.dim</Name>
+      <FullPath>Media.dim</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Methods of payment - Customers.dim</Name>
+      <FullPath>Methods of payment - Customers.dim</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Methods of payment - Vendors.dim</Name>
+      <FullPath>Methods of payment - Vendors.dim</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>On account.dim</Name>
+      <FullPath>On account.dim</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Opportunity.dim</Name>
+      <FullPath>Opportunity.dim</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Order lines.dim</Name>
+      <FullPath>Order lines.dim</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Organization Units.dim</Name>
+      <FullPath>Organization Units.dim</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Payment method.dim</Name>
+      <FullPath>Payment method.dim</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Phase for quotation.dim</Name>
+      <FullPath>Phase for quotation.dim</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Policy table.dim</Name>
+      <FullPath>Policy table.dim</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Policy Violations Log.dim</Name>
+      <FullPath>Policy Violations Log.dim</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Positions.dim</Name>
+      <FullPath>Positions.dim</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Process stage.dim</Name>
+      <FullPath>Process stage.dim</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Production Level.dim</Name>
+      <FullPath>Production Level.dim</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Production order - Delayed.dim</Name>
+      <FullPath>Production order - Delayed.dim</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Production Order Detail.dim</Name>
+      <FullPath>Production Order Detail.dim</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Production order.dim</Name>
+      <FullPath>Production order.dim</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Production Route Detail.dim</Name>
+      <FullPath>Production Route Detail.dim</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Production route.dim</Name>
+      <FullPath>Production route.dim</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Project - Invoice lines  items.dim</Name>
+      <FullPath>Project - Invoice lines  items.dim</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Project category.dim</Name>
+      <FullPath>Project category.dim</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Project invoice table.dim</Name>
+      <FullPath>Project invoice table.dim</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Project parameters.dim</Name>
+      <FullPath>Project parameters.dim</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Project period lines.dim</Name>
+      <FullPath>Project period lines.dim</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Project periods.dim</Name>
+      <FullPath>Project periods.dim</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Project type utilization settings.dim</Name>
+      <FullPath>Project type utilization settings.dim</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Purpose.dim</Name>
+      <FullPath>Purpose.dim</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Quotation lines.dim</Name>
+      <FullPath>Quotation lines.dim</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Quotation probability.dim</Name>
+      <FullPath>Quotation probability.dim</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Quotation prognosis.dim</Name>
+      <FullPath>Quotation prognosis.dim</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Quotation reason.dim</Name>
+      <FullPath>Quotation reason.dim</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Quotations.dim</Name>
+      <FullPath>Quotations.dim</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Recruitment projects.dim</Name>
+      <FullPath>Recruitment projects.dim</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Reporting Currency.dim</Name>
+      <FullPath>Reporting Currency.dim</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Responsibility table.dim</Name>
+      <FullPath>Responsibility table.dim</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Route transactions.dim</Name>
+      <FullPath>Route transactions.dim</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Sales Carrier.dim</Name>
+      <FullPath>Sales Carrier.dim</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Sales management units.dim</Name>
+      <FullPath>Sales management units.dim</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Sales tax group description.dim</Name>
+      <FullPath>Sales tax group description.dim</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Service orders.dim</Name>
+      <FullPath>Service orders.dim</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Sizes.dim</Name>
+      <FullPath>Sizes.dim</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Skills.dim</Name>
+      <FullPath>Skills.dim</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Source Type.dim</Name>
+      <FullPath>Source Type.dim</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Stock Lacks.dim</Name>
+      <FullPath>Stock Lacks.dim</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Time.dim</Name>
+      <FullPath>Time.dim</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Travel locations.dim</Name>
+      <FullPath>Travel locations.dim</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Units.dim</Name>
+      <FullPath>Units.dim</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Vendor - Packing slip lines - Delayed.dim</Name>
+      <FullPath>Vendor - Packing slip lines - Delayed.dim</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Vendor - Packing slip lines.dim</Name>
+      <FullPath>Vendor - Packing slip lines.dim</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Vendor invoice journal.dim</Name>
+      <FullPath>Vendor invoice journal.dim</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Vendor invoice lines.dim</Name>
+      <FullPath>Vendor invoice lines.dim</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Vendor transactions.dim</Name>
+      <FullPath>Vendor transactions.dim</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Vendors.dim</Name>
+      <FullPath>Vendors.dim</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Warehouses.dim</Name>
+      <FullPath>Warehouses.dim</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Work centers.dim</Name>
+      <FullPath>Work centers.dim</FullPath>
+    </ProjectItem>
+  </Dimensions>
+  <DataSources>
+    <ProjectItem>
+      <Name>Dynamics Database.ds</Name>
+      <FullPath>Dynamics Database.ds</FullPath>
+    </ProjectItem>
+  </DataSources>
+  <DataSourceViews>
+    <ProjectItem>
+      <Name>Dynamics AX BI.dsv</Name>
+      <FullPath>Dynamics AX BI.dsv</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Dynamics AX.dsv</Name>
+      <FullPath>Dynamics AX.dsv</FullPath>
+    </ProjectItem>
+  </DataSourceViews>
+  <MiningModels>
+    <ProjectItem>
+      <Name>Item Qty Forecast.dmm</Name>
+      <FullPath>Item Qty Forecast.dmm</FullPath>
+    </ProjectItem>
+  </MiningModels>
+  <Roles>
+    <ProjectItem>
+      <Name>Accountant.role</Name>
+      <FullPath>Accountant.role</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Accounting Manager.role</Name>
+      <FullPath>Accounting Manager.role</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Accounts Payable Coordinator.role</Name>
+      <FullPath>Accounts Payable Coordinator.role</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Accounts Receivable Administrator.role</Name>
+      <FullPath>Accounts Receivable Administrator.role</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Bookkeeper.role</Name>
+      <FullPath>Bookkeeper.role</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>CFO.role</Name>
+      <FullPath>CFO.role</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Controller.role</Name>
+      <FullPath>Controller.role</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Credit and Collections Manager.role</Name>
+      <FullPath>Credit and Collections Manager.role</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Customer Service Manager.role</Name>
+      <FullPath>Customer Service Manager.role</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Human Resource Management.role</Name>
+      <FullPath>Human Resource Management.role</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Machine Operator.role</Name>
+      <FullPath>Machine Operator.role</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Marketing.role</Name>
+      <FullPath>Marketing.role</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Operation Manager.role</Name>
+      <FullPath>Operation Manager.role</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Order Processor.role</Name>
+      <FullPath>Order Processor.role</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Product Designer.role</Name>
+      <FullPath>Product Designer.role</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Production Manager.role</Name>
+      <FullPath>Production Manager.role</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Production Planner.role</Name>
+      <FullPath>Production Planner.role</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Project Manager.role</Name>
+      <FullPath>Project Manager.role</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Project Team Member.role</Name>
+      <FullPath>Project Team Member.role</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Purchasing Agent.role</Name>
+      <FullPath>Purchasing Agent.role</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Purchasing Manager.role</Name>
+      <FullPath>Purchasing Manager.role</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Sales Manager.role</Name>
+      <FullPath>Sales Manager.role</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Sales.role</Name>
+      <FullPath>Sales.role</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Shipping and Receiving.role</Name>
+      <FullPath>Shipping and Receiving.role</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Shop Supervisor.role</Name>
+      <FullPath>Shop Supervisor.role</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Warehouse Manager.role</Name>
+      <FullPath>Warehouse Manager.role</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Warehouse Worker.role</Name>
+      <FullPath>Warehouse Worker.role</FullPath>
+    </ProjectItem>
+  </Roles>
+  <Configurations>
+    <Configuration>
+      <Name>Development</Name>
+      <Options>
+        <DeploymentServerEdition>Enterprise</DeploymentServerEdition>
+      </Options>
+    </Configuration>
+  </Configurations>
+</Project>

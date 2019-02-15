@@ -1,0 +1,713 @@
+﻿<Cube xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:ddl200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:ddl200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:ddl300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:ddl300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:ddl400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:ddl400_400="http://schemas.microsoft.com/analysisservices/2012/engine/400/400" xmlns:ddl500="http://schemas.microsoft.com/analysisservices/2013/engine/500" xmlns:ddl500_500="http://schemas.microsoft.com/analysisservices/2013/engine/500/500" xmlns="http://schemas.microsoft.com/analysisservices/2003/engine">
+  <ID>Dynamics AX</ID>
+  <Name>Shipments Cube</Name>
+  <CreatedTimestamp>2018-10-29T11:47:04.643333Z</CreatedTimestamp>
+  <LastSchemaUpdate>2019-02-07T21:38:00.61Z</LastSchemaUpdate>
+  <LastProcessed>2019-02-15T07:32:13.05Z</LastProcessed>
+  <State>Processed</State>
+  <Language>1033</Language>
+  <Collation>Modern_Spanish_CI_AS</Collation>
+  <Translations>
+    <Translation>
+      <Language>3082</Language>
+      <Caption>Cubo de envíos</Caption>
+    </Translation>
+  </Translations>
+  <Dimensions>
+    <Dimension>
+      <ID>Sales Carrier</ID>
+      <Name>Sales Carrier</Name>
+      <Translations>
+        <Translation>
+          <Language>3082</Language>
+          <Caption>Transportista</Caption>
+        </Translation>
+      </Translations>
+      <DimensionID>Sales Carrier</DimensionID>
+      <Attributes>
+        <Attribute>
+          <AttributeID>CARRIERNAME</AttributeID>
+        </Attribute>
+        <Attribute>
+          <AttributeID>AODESCRIPTION</AttributeID>
+        </Attribute>
+      </Attributes>
+    </Dimension>
+    <Dimension>
+      <ID>Company</ID>
+      <Name>Company</Name>
+      <Translations>
+        <Translation>
+          <Language>1033</Language>
+          <Caption>Company</Caption>
+        </Translation>
+        <Translation>
+          <Language>3082</Language>
+          <Caption>Compañía</Caption>
+        </Translation>
+      </Translations>
+      <DimensionID>DATAAREA</DimensionID>
+      <Attributes>
+        <Attribute>
+          <AttributeID>ID</AttributeID>
+        </Attribute>
+        <Attribute>
+          <AttributeID>CURRENCYCODE</AttributeID>
+        </Attribute>
+        <Attribute>
+          <AttributeID>SECONDARYCURRENCYCODE</AttributeID>
+        </Attribute>
+        <Attribute>
+          <AttributeID>ISPIVOT</AttributeID>
+        </Attribute>
+      </Attributes>
+    </Dimension>
+    <Dimension>
+      <ID>DSTime</ID>
+      <Name>DSTime</Name>
+      <Translations>
+        <Translation>
+          <Language>3082</Language>
+          <Caption>Tiempo</Caption>
+        </Translation>
+      </Translations>
+      <DimensionID>DSTime</DimensionID>
+      <Attributes>
+        <Attribute>
+          <AttributeID>PKDATE</AttributeID>
+        </Attribute>
+        <Attribute>
+          <AttributeID>YEAR</AttributeID>
+        </Attribute>
+        <Attribute>
+          <AttributeID>QUARTER</AttributeID>
+        </Attribute>
+        <Attribute>
+          <AttributeID>MONTH</AttributeID>
+        </Attribute>
+        <Attribute>
+          <AttributeID>WEEK</AttributeID>
+        </Attribute>
+        <Attribute>
+          <AttributeID>DAYOFYEAR</AttributeID>
+        </Attribute>
+        <Attribute>
+          <AttributeID>DAYOFQUARTER</AttributeID>
+        </Attribute>
+        <Attribute>
+          <AttributeID>DAYOFMONTH</AttributeID>
+        </Attribute>
+        <Attribute>
+          <AttributeID>DAYOFWEEK</AttributeID>
+        </Attribute>
+        <Attribute>
+          <AttributeID>WEEKOFYEAR</AttributeID>
+        </Attribute>
+        <Attribute>
+          <AttributeID>MONTHOFYEAR</AttributeID>
+        </Attribute>
+        <Attribute>
+          <AttributeID>MONTHOFQUARTER</AttributeID>
+        </Attribute>
+        <Attribute>
+          <AttributeID>QUARTEROFYEAR</AttributeID>
+        </Attribute>
+        <Attribute>
+          <AttributeID>Año - Trimestre - Mes - Fecha Time Calculations</AttributeID>
+        </Attribute>
+        <Attribute>
+          <AttributeID>MONTH 1</AttributeID>
+        </Attribute>
+      </Attributes>
+      <Hierarchies>
+        <Hierarchy>
+          <HierarchyID>Hierarchy</HierarchyID>
+        </Hierarchy>
+        <Hierarchy>
+          <HierarchyID>Hierarchy 2</HierarchyID>
+        </Hierarchy>
+      </Hierarchies>
+    </Dimension>
+  </Dimensions>
+  <MeasureGroups>
+    <MeasureGroup>
+      <ID>SALESSHIPPINGSTAT</ID>
+      <Name>Shipments</Name>
+      <CreatedTimestamp>2018-10-29T11:47:04.656667Z</CreatedTimestamp>
+      <LastSchemaUpdate>2019-02-07T21:38:00.626667Z</LastSchemaUpdate>
+      <LastProcessed>2019-02-15T07:32:12.41Z</LastProcessed>
+      <State>Processed</State>
+      <Translations>
+        <Translation>
+          <Language>3082</Language>
+          <Caption>Envíos</Caption>
+        </Translation>
+      </Translations>
+      <Measures>
+        <Measure>
+          <ID>VOLUME</ID>
+          <Name>Volume</Name>
+          <DataType>Double</DataType>
+          <Source>
+            <DataType>Double</DataType>
+            <Source xsi:type="ColumnBinding">
+              <TableID>SALESSHIPPINGSTAT</TableID>
+              <ColumnID>VOLUME</ColumnID>
+            </Source>
+          </Source>
+          <FormatString>#,##0.000;-#,##0.000</FormatString>
+          <Translations>
+            <Translation>
+              <Language>3082</Language>
+              <Caption>Volumen</Caption>
+            </Translation>
+          </Translations>
+        </Measure>
+        <Measure>
+          <ID>NETWEIGHT</ID>
+          <Name>Net Weight</Name>
+          <DataType>Double</DataType>
+          <Source>
+            <DataType>Double</DataType>
+            <Source xsi:type="ColumnBinding">
+              <TableID>SALESSHIPPINGSTAT</TableID>
+              <ColumnID>NETWEIGHT</ColumnID>
+            </Source>
+          </Source>
+          <FormatString>#,##0.00;-#,##0.00</FormatString>
+          <Translations>
+            <Translation>
+              <Language>3082</Language>
+              <Caption>Peso neto</Caption>
+            </Translation>
+          </Translations>
+        </Measure>
+        <Measure>
+          <ID>GROSSWEIGHT</ID>
+          <Name>Gross Weight</Name>
+          <DataType>Double</DataType>
+          <Source>
+            <DataType>Double</DataType>
+            <Source xsi:type="ColumnBinding">
+              <TableID>SALESSHIPPINGSTAT</TableID>
+              <ColumnID>GROSSWEIGHT</ColumnID>
+            </Source>
+          </Source>
+          <FormatString>#,##0.00;-#,##0.00</FormatString>
+          <Translations>
+            <Translation>
+              <Language>3082</Language>
+              <Caption>Peso bruto</Caption>
+            </Translation>
+          </Translations>
+        </Measure>
+        <Measure>
+          <ID>GPTHEORICGROSSWEIGHT</ID>
+          <Name>Theoric Gross Weight</Name>
+          <DataType>Double</DataType>
+          <Source>
+            <DataType>Double</DataType>
+            <Source xsi:type="ColumnBinding">
+              <TableID>SALESSHIPPINGSTAT</TableID>
+              <ColumnID>GPTHEORICGROSSWEIGHT</ColumnID>
+            </Source>
+          </Source>
+          <FormatString>#,##0.00;-#,##0.00</FormatString>
+          <Translations>
+            <Translation>
+              <Language>3082</Language>
+              <Caption>Peso teórico</Caption>
+            </Translation>
+          </Translations>
+        </Measure>
+        <Measure>
+          <ID>GPREALGROSSWEIGHT</ID>
+          <Name>Real Gross Weight</Name>
+          <DataType>Double</DataType>
+          <Source>
+            <DataType>Double</DataType>
+            <Source xsi:type="ColumnBinding">
+              <TableID>SALESSHIPPINGSTAT</TableID>
+              <ColumnID>GPREALGROSSWEIGHT</ColumnID>
+            </Source>
+          </Source>
+          <FormatString>#,##0.00;-#,##0.00</FormatString>
+          <Translations>
+            <Translation>
+              <Language>3082</Language>
+              <Caption>Peso real</Caption>
+            </Translation>
+          </Translations>
+        </Measure>
+        <Measure>
+          <ID>CARTONSQTY</ID>
+          <Name>Cartons per Pallet</Name>
+          <DataType>Double</DataType>
+          <Source>
+            <DataType>Double</DataType>
+            <Source xsi:type="ColumnBinding">
+              <TableID>SALESSHIPPINGSTAT</TableID>
+              <ColumnID>CARTONSQTY</ColumnID>
+            </Source>
+          </Source>
+          <FormatString>#,##0;-#,##0</FormatString>
+          <Translations>
+            <Translation>
+              <Language>3082</Language>
+              <Caption>Bultos en palet</Caption>
+            </Translation>
+          </Translations>
+        </Measure>
+        <Measure>
+          <ID>QUANTITY</ID>
+          <Name>Qty</Name>
+          <DataType>Double</DataType>
+          <Source>
+            <DataType>Double</DataType>
+            <Source xsi:type="ColumnBinding">
+              <TableID>SALESSHIPPINGSTAT</TableID>
+              <ColumnID>QUANTITY</ColumnID>
+            </Source>
+          </Source>
+          <FormatString>#,##0.000;-#,##0.000</FormatString>
+          <Translations>
+            <Translation>
+              <Language>3082</Language>
+              <Caption>Número de unidades</Caption>
+            </Translation>
+          </Translations>
+        </Measure>
+        <Measure>
+          <ID>PALLETEURQTY</ID>
+          <Name>Pallet EUR Qty</Name>
+          <DataType>Double</DataType>
+          <Source>
+            <DataType>Double</DataType>
+            <Source xsi:type="ColumnBinding">
+              <TableID>SALESSHIPPINGSTAT</TableID>
+              <ColumnID>PALLETEURQTY</ColumnID>
+            </Source>
+          </Source>
+          <FormatString>#,##0;-#,##0</FormatString>
+          <Translations>
+            <Translation>
+              <Language>3082</Language>
+              <Caption>Nro Pallets EUR</Caption>
+            </Translation>
+          </Translations>
+        </Measure>
+        <Measure>
+          <ID>PALLETQTY</ID>
+          <Name>Pallet Qty</Name>
+          <DataType>Double</DataType>
+          <Source>
+            <DataType>Double</DataType>
+            <Source xsi:type="ColumnBinding">
+              <TableID>SALESSHIPPINGSTAT</TableID>
+              <ColumnID>PALLETQTY</ColumnID>
+            </Source>
+          </Source>
+          <FormatString>#,##0;-#,##0</FormatString>
+          <Translations>
+            <Translation>
+              <Language>3082</Language>
+              <Caption>Nro Pallets totales</Caption>
+            </Translation>
+          </Translations>
+        </Measure>
+        <Measure>
+          <ID>TAGGDPQTY</ID>
+          <Name>Tag Qty</Name>
+          <DataType>Double</DataType>
+          <Source>
+            <DataType>Double</DataType>
+            <Source xsi:type="ColumnBinding">
+              <TableID>SALESSHIPPINGSTAT</TableID>
+              <ColumnID>TAGGDPQTY</ColumnID>
+            </Source>
+          </Source>
+          <FormatString>#,##0;-#,##0</FormatString>
+          <Translations>
+            <Translation>
+              <Language>3082</Language>
+              <Caption>Nro de etiquetas</Caption>
+            </Translation>
+          </Translations>
+        </Measure>
+        <Measure>
+          <ID>Recuento SALESSHIPPINGSTAT</ID>
+          <Name>Shipments count</Name>
+          <AggregateFunction>Count</AggregateFunction>
+          <DataType>Integer</DataType>
+          <Source>
+            <DataType>Integer</DataType>
+            <DataSize>4</DataSize>
+            <Source xsi:type="RowBinding">
+              <TableID>SALESSHIPPINGSTAT</TableID>
+            </Source>
+          </Source>
+          <FormatString>#,##0;-#,##0</FormatString>
+          <Translations>
+            <Translation>
+              <Language>3082</Language>
+              <Caption>Recuento de envíos</Caption>
+            </Translation>
+          </Translations>
+        </Measure>
+      </Measures>
+      <StorageMode>Molap</StorageMode>
+      <EstimatedSize>1376165</EstimatedSize>
+      <ProcessingMode>Regular</ProcessingMode>
+      <Dimensions>
+        <Dimension xsi:type="RegularMeasureGroupDimension">
+          <CubeDimensionID>Company</CubeDimensionID>
+          <Cardinality>One</Cardinality>
+          <Attributes>
+            <Attribute>
+              <AttributeID>ID</AttributeID>
+              <KeyColumns>
+                <KeyColumn>
+                  <DataType>WChar</DataType>
+                  <NullProcessing>UnknownMember</NullProcessing>
+                  <Source xsi:type="ColumnBinding">
+                    <TableID>SALESSHIPPINGSTAT</TableID>
+                    <ColumnID>DATAAREAID</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+              <Type>Granularity</Type>
+            </Attribute>
+            <Attribute>
+              <AttributeID>CURRENCYCODE</AttributeID>
+              <KeyColumns>
+                <KeyColumn>
+                  <DataType>WChar</DataType>
+                  <Source xsi:type="ColumnBinding">
+                    <TableID>DATAAREA</TableID>
+                    <ColumnID>CURRENCYCODE</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+            </Attribute>
+            <Attribute>
+              <AttributeID>SECONDARYCURRENCYCODE</AttributeID>
+              <KeyColumns>
+                <KeyColumn>
+                  <DataType>WChar</DataType>
+                  <Source xsi:type="ColumnBinding">
+                    <TableID>DATAAREA</TableID>
+                    <ColumnID>SECONDARYCURRENCYCODE</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+            </Attribute>
+            <Attribute>
+              <AttributeID>ISPIVOT</AttributeID>
+              <KeyColumns>
+                <KeyColumn>
+                  <DataType>Integer</DataType>
+                  <Source xsi:type="ColumnBinding">
+                    <TableID>DATAAREA</TableID>
+                    <ColumnID>ISPIVOT</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+            </Attribute>
+          </Attributes>
+        </Dimension>
+        <Dimension xsi:type="RegularMeasureGroupDimension">
+          <CubeDimensionID>Sales Carrier</CubeDimensionID>
+          <Cardinality>One</Cardinality>
+          <Attributes>
+            <Attribute>
+              <AttributeID>CARRIERNAME</AttributeID>
+              <KeyColumns>
+                <KeyColumn>
+                  <DataType>WChar</DataType>
+                  <DataSize>4</DataSize>
+                  <Source xsi:type="ColumnBinding">
+                    <TableID>SALESSHIPPINGSTAT</TableID>
+                    <ColumnID>DATAAREAID</ColumnID>
+                  </Source>
+                </KeyColumn>
+                <KeyColumn>
+                  <DataType>WChar</DataType>
+                  <DataSize>30</DataSize>
+                  <Source xsi:type="ColumnBinding">
+                    <TableID>SALESSHIPPINGSTAT</TableID>
+                    <ColumnID>SALESCARRIER</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+              <Type>Granularity</Type>
+            </Attribute>
+            <Attribute>
+              <AttributeID>AODESCRIPTION</AttributeID>
+              <KeyColumns>
+                <KeyColumn>
+                  <DataType>WChar</DataType>
+                  <DataSize>4</DataSize>
+                  <Source xsi:type="ColumnBinding">
+                    <TableID>dbo_SALESCARRIER</TableID>
+                    <ColumnID>DATAAREAID</ColumnID>
+                  </Source>
+                </KeyColumn>
+                <KeyColumn>
+                  <DataType>WChar</DataType>
+                  <DataSize>60</DataSize>
+                  <Source xsi:type="ColumnBinding">
+                    <TableID>dbo_SALESCARRIER</TableID>
+                    <ColumnID>AODESCRIPTION</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+            </Attribute>
+          </Attributes>
+        </Dimension>
+        <Dimension xsi:type="RegularMeasureGroupDimension">
+          <CubeDimensionID>DSTime</CubeDimensionID>
+          <Cardinality>One</Cardinality>
+          <Attributes>
+            <Attribute>
+              <AttributeID>PKDATE</AttributeID>
+              <KeyColumns>
+                <KeyColumn>
+                  <DataType>Date</DataType>
+                  <Source xsi:type="ColumnBinding">
+                    <TableID>SALESSHIPPINGSTAT</TableID>
+                    <ColumnID>DELIVERYDATE</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+              <Type>Granularity</Type>
+            </Attribute>
+            <Attribute>
+              <AttributeID>YEAR</AttributeID>
+              <KeyColumns>
+                <KeyColumn>
+                  <DataType>Date</DataType>
+                  <Source xsi:type="ColumnBinding">
+                    <TableID>dbo_GPBITIMEDIMENSION</TableID>
+                    <ColumnID>YEAR</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+            </Attribute>
+            <Attribute>
+              <AttributeID>QUARTER</AttributeID>
+              <KeyColumns>
+                <KeyColumn>
+                  <DataType>Date</DataType>
+                  <Source xsi:type="ColumnBinding">
+                    <TableID>dbo_GPBITIMEDIMENSION</TableID>
+                    <ColumnID>QUARTER</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+            </Attribute>
+            <Attribute>
+              <AttributeID>MONTH</AttributeID>
+              <KeyColumns>
+                <KeyColumn>
+                  <DataType>Date</DataType>
+                  <Source xsi:type="ColumnBinding">
+                    <TableID>dbo_GPBITIMEDIMENSION</TableID>
+                    <ColumnID>MONTH</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+            </Attribute>
+            <Attribute>
+              <AttributeID>WEEK</AttributeID>
+              <KeyColumns>
+                <KeyColumn>
+                  <DataType>Date</DataType>
+                  <Source xsi:type="ColumnBinding">
+                    <TableID>dbo_GPBITIMEDIMENSION</TableID>
+                    <ColumnID>WEEK</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+            </Attribute>
+            <Attribute>
+              <AttributeID>DAYOFYEAR</AttributeID>
+              <KeyColumns>
+                <KeyColumn>
+                  <DataType>Integer</DataType>
+                  <Source xsi:type="ColumnBinding">
+                    <TableID>dbo_GPBITIMEDIMENSION</TableID>
+                    <ColumnID>DAYOFYEAR</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+            </Attribute>
+            <Attribute>
+              <AttributeID>DAYOFQUARTER</AttributeID>
+              <KeyColumns>
+                <KeyColumn>
+                  <DataType>Integer</DataType>
+                  <Source xsi:type="ColumnBinding">
+                    <TableID>dbo_GPBITIMEDIMENSION</TableID>
+                    <ColumnID>DAYOFQUARTER</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+            </Attribute>
+            <Attribute>
+              <AttributeID>DAYOFMONTH</AttributeID>
+              <KeyColumns>
+                <KeyColumn>
+                  <DataType>Integer</DataType>
+                  <Source xsi:type="ColumnBinding">
+                    <TableID>dbo_GPBITIMEDIMENSION</TableID>
+                    <ColumnID>DAYOFMONTH</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+            </Attribute>
+            <Attribute>
+              <AttributeID>DAYOFWEEK</AttributeID>
+              <KeyColumns>
+                <KeyColumn>
+                  <DataType>Integer</DataType>
+                  <Source xsi:type="ColumnBinding">
+                    <TableID>dbo_GPBITIMEDIMENSION</TableID>
+                    <ColumnID>DAYOFWEEK</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+            </Attribute>
+            <Attribute>
+              <AttributeID>WEEKOFYEAR</AttributeID>
+              <KeyColumns>
+                <KeyColumn>
+                  <DataType>Integer</DataType>
+                  <Source xsi:type="ColumnBinding">
+                    <TableID>dbo_GPBITIMEDIMENSION</TableID>
+                    <ColumnID>WEEKOFYEAR</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+            </Attribute>
+            <Attribute>
+              <AttributeID>MONTHOFYEAR</AttributeID>
+              <KeyColumns>
+                <KeyColumn>
+                  <DataType>Integer</DataType>
+                  <Source xsi:type="ColumnBinding">
+                    <TableID>dbo_GPBITIMEDIMENSION</TableID>
+                    <ColumnID>MONTHOFYEAR</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+            </Attribute>
+            <Attribute>
+              <AttributeID>MONTHOFQUARTER</AttributeID>
+              <KeyColumns>
+                <KeyColumn>
+                  <DataType>Integer</DataType>
+                  <Source xsi:type="ColumnBinding">
+                    <TableID>dbo_GPBITIMEDIMENSION</TableID>
+                    <ColumnID>MONTHOFQUARTER</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+            </Attribute>
+            <Attribute>
+              <AttributeID>QUARTEROFYEAR</AttributeID>
+              <KeyColumns>
+                <KeyColumn>
+                  <DataType>Integer</DataType>
+                  <Source xsi:type="ColumnBinding">
+                    <TableID>dbo_GPBITIMEDIMENSION</TableID>
+                    <ColumnID>QUARTEROFYEAR</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+            </Attribute>
+            <Attribute>
+              <AttributeID>Año - Trimestre - Mes - Fecha Time Calculations</AttributeID>
+              <KeyColumns>
+                <KeyColumn>
+                  <DataType>WChar</DataType>
+                  <DataSize>15</DataSize>
+                  <Source xsi:type="ColumnBinding">
+                    <TableID>dbo_GPBITIMEDIMENSION</TableID>
+                    <ColumnID>Año_x0020_-_x0020_Trimestre_x0020_-_x0020_Mes_x0020_-_x0020_Fecha_x0020_Time_x0020_Calculations</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+            </Attribute>
+            <Attribute>
+              <AttributeID>MONTH 1</AttributeID>
+              <KeyColumns>
+                <KeyColumn>
+                  <DataType>Date</DataType>
+                  <Source xsi:type="ColumnBinding">
+                    <TableID>dbo_GPBITIMEDIMENSION</TableID>
+                    <ColumnID>MONTH</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+            </Attribute>
+          </Attributes>
+        </Dimension>
+      </Dimensions>
+      <Partitions>
+        <Partition>
+          <ID>SALESSHIPPINGSTAT</ID>
+          <Name>SALESSHIPPINGSTAT</Name>
+          <CreatedTimestamp>2018-10-29T11:47:04.673333Z</CreatedTimestamp>
+          <LastSchemaUpdate>2019-02-07T21:38:00.643333Z</LastSchemaUpdate>
+          <LastProcessed>2019-02-15T07:32:11.176667Z</LastProcessed>
+          <State>Processed</State>
+          <Source xsi:type="DsvTableBinding">
+            <DataSourceViewID>Dynamics AX</DataSourceViewID>
+            <TableID>SALESSHIPPINGSTAT</TableID>
+          </Source>
+          <StorageMode>Molap</StorageMode>
+          <CurrentStorageMode>Molap</CurrentStorageMode>
+          <ProcessingMode>Regular</ProcessingMode>
+          <ProactiveCaching>
+            <SilenceInterval>-PT1S</SilenceInterval>
+            <Latency>-PT1S</Latency>
+            <SilenceOverrideInterval>-PT1S</SilenceOverrideInterval>
+            <ForceRebuildInterval>-PT1S</ForceRebuildInterval>
+            <AggregationStorage>MolapOnly</AggregationStorage>
+            <Source xsi:type="ProactiveCachingInheritedBinding">
+              <NotificationTechnique>Server</NotificationTechnique>
+            </Source>
+          </ProactiveCaching>
+          <EstimatedSize>1376165</EstimatedSize>
+        </Partition>
+      </Partitions>
+      <ProactiveCaching>
+        <SilenceInterval>-PT1S</SilenceInterval>
+        <Latency>-PT1S</Latency>
+        <SilenceOverrideInterval>-PT1S</SilenceOverrideInterval>
+        <ForceRebuildInterval>-PT1S</ForceRebuildInterval>
+        <AggregationStorage>MolapOnly</AggregationStorage>
+        <Source xsi:type="ProactiveCachingInheritedBinding">
+          <NotificationTechnique>Server</NotificationTechnique>
+        </Source>
+      </ProactiveCaching>
+    </MeasureGroup>
+  </MeasureGroups>
+  <Source>
+    <DataSourceViewID>Dynamics AX</DataSourceViewID>
+  </Source>
+  <ErrorConfiguration>
+    <KeyNotFound>IgnoreError</KeyNotFound>
+    <NullKeyNotAllowed>IgnoreError</NullKeyNotAllowed>
+  </ErrorConfiguration>
+  <ProactiveCaching>
+    <SilenceInterval>-PT1S</SilenceInterval>
+    <Latency>-PT1S</Latency>
+    <SilenceOverrideInterval>-PT1S</SilenceOverrideInterval>
+    <ForceRebuildInterval>-PT1S</ForceRebuildInterval>
+    <AggregationStorage>MolapOnly</AggregationStorage>
+    <Source xsi:type="ProactiveCachingInheritedBinding">
+      <NotificationTechnique>Server</NotificationTechnique>
+    </Source>
+  </ProactiveCaching>
+</Cube>

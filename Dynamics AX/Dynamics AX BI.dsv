@@ -1,0 +1,326 @@
+﻿<DataSourceView xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:ddl200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:ddl200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:ddl300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:ddl300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:ddl400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:ddl400_400="http://schemas.microsoft.com/analysisservices/2012/engine/400/400" xmlns:ddl500="http://schemas.microsoft.com/analysisservices/2013/engine/500" xmlns:ddl500_500="http://schemas.microsoft.com/analysisservices/2013/engine/500/500" xmlns="http://schemas.microsoft.com/analysisservices/2003/engine">
+  <ID>Dynamics AX BI</ID>
+  <Name>Dynamics AX BI</Name>
+  <CreatedTimestamp>2016-02-02T17:03:28.62Z</CreatedTimestamp>
+  <LastSchemaUpdate>2019-02-10T11:04:39.466667Z</LastSchemaUpdate>
+  <Annotations>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:NameMatchingCriteria</Name>
+      <Value>1</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:SchemaRestriction</Name>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:RetrieveRelationships</Name>
+      <Value>true</Value>
+    </Annotation>
+  </Annotations>
+  <DataSourceID>Dynamics Database</DataSourceID>
+  <Schema>
+    <xs:schema id="Dynamics_x0020_AX_x0020_BI" xmlns="" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop">
+      <xs:element name="Dynamics_x0020_AX_x0020_BI" msdata:IsDataSet="true" msdata:UseCurrentLocale="true">
+        <xs:complexType>
+          <xs:choice minOccurs="0" maxOccurs="unbounded">
+            <xs:element name="CustInvoiceTransBI" msprop:IsLogical="True" msprop:FriendlyName="CustInvoiceTransBI" msprop:DbTableName="CustInvoiceTransBI" msprop:TableType="View" msprop:Description="" msprop:QueryDefinition="SELECT        b.ORDERACCOUNT, a.INVOICEID, a.ITEMID, a.QTY, a.INVOICEDATE, a.LINEAMOUNT, a.RECID, c.ACCOUNTNUM, c.NAME, c.COUNTRYREGIONID&#xD;&#xA;FROM            CUSTINVOICETRANS AS a INNER JOIN&#xD;&#xA;                         CUSTINVOICEJOUR AS b ON a.DATAAREAID = b.DATAAREAID AND a.INVOICEID = b.INVOICEID INNER JOIN&#xD;&#xA;                         CUSTTABLE AS c ON c.ACCOUNTNUM = b.ORDERACCOUNT AND b.DATAAREAID = c.DATAAREAID INNER JOIN&#xD;&#xA;                         GPBITIMEDIMENSION AS t ON t.PKDATE = a.INVOICEDATE&#xD;&#xA;WHERE        (a.ITEMID BETWEEN '080.00' AND '999.99') AND (b.INVOICEDATE &gt;= N'2015-01-01 00:00:00.000') AND (b.DATAAREAID = N'gdp')" msprop:QueryBuilder="SpecificQueryBuilder">
+              <xs:complexType>
+                <xs:sequence>
+                  <xs:element name="ORDERACCOUNT" msprop:DbColumnName="ORDERACCOUNT" msprop:FriendlyName="ORDERACCOUNT" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="20" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="INVOICEID" msprop:DbColumnName="INVOICEID" msprop:FriendlyName="INVOICEID" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="20" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="ITEMID" msprop:DbColumnName="ITEMID" msprop:FriendlyName="ITEMID" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="20" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="QTY" msprop:DbColumnName="QTY" msprop:FriendlyName="QTY" type="xs:decimal" minOccurs="0" />
+                  <xs:element name="INVOICEDATE" msprop:DbColumnName="INVOICEDATE" msprop:FriendlyName="INVOICEDATE" type="xs:dateTime" minOccurs="0" />
+                  <xs:element name="LINEAMOUNT" msprop:DbColumnName="LINEAMOUNT" msprop:FriendlyName="LINEAMOUNT" type="xs:decimal" minOccurs="0" />
+                  <xs:element name="RECID" msprop:DbColumnName="RECID" msprop:FriendlyName="RECID" type="xs:long" />
+                  <xs:element name="ACCOUNTNUM" msprop:DbColumnName="ACCOUNTNUM" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="20" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="NAME" msprop:DbColumnName="NAME" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="60" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="COUNTRYREGIONID" msprop:DbColumnName="COUNTRYREGIONID" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="80" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                </xs:sequence>
+              </xs:complexType>
+            </xs:element>
+            <xs:element name="dbo_GPBITIMEDIMENSION" msprop:DbTableName="GPBITIMEDIMENSION" msprop:FriendlyName="GPBITIMEDIMENSION" msprop:DbSchemaName="dbo" msprop:TableType="Table">
+              <xs:complexType>
+                <xs:sequence>
+                  <xs:element name="PKDATE" msprop:DbColumnName="PKDATE" msprop:FriendlyName="PKDATE" type="xs:dateTime" />
+                  <xs:element name="DATENAME" msprop:DbColumnName="DATENAME" msprop:FriendlyName="DATENAME">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="50" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="YEAR" msprop:DbColumnName="YEAR" msprop:FriendlyName="YEAR" type="xs:dateTime" />
+                  <xs:element name="YEARNAME" msprop:DbColumnName="YEARNAME" msprop:FriendlyName="YEARNAME">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="50" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="QUARTER" msprop:DbColumnName="QUARTER" msprop:FriendlyName="QUARTER" type="xs:dateTime" />
+                  <xs:element name="QUARTERNAME" msprop:DbColumnName="QUARTERNAME" msprop:FriendlyName="QUARTERNAME">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="50" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="MONTH" msprop:DbColumnName="MONTH" msprop:FriendlyName="MONTH" type="xs:dateTime" />
+                  <xs:element name="MONTHNAME" msprop:DbColumnName="MONTHNAME" msprop:FriendlyName="MONTHNAME">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="50" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="WEEK" msprop:DbColumnName="WEEK" msprop:FriendlyName="WEEK" type="xs:dateTime" />
+                  <xs:element name="WEEKNAME" msprop:DbColumnName="WEEKNAME" msprop:FriendlyName="WEEKNAME">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="50" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="DAYOFYEAR" msprop:DbColumnName="DAYOFYEAR" msprop:FriendlyName="DAYOFYEAR" type="xs:int" />
+                  <xs:element name="DAYOFYEARNAME" msprop:DbColumnName="DAYOFYEARNAME" msprop:FriendlyName="DAYOFYEARNAME">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="50" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="DAYOFQUARTER" msprop:DbColumnName="DAYOFQUARTER" msprop:FriendlyName="DAYOFQUARTER" type="xs:int" />
+                  <xs:element name="DAYOFQUARTERNAME" msprop:DbColumnName="DAYOFQUARTERNAME" msprop:FriendlyName="DAYOFQUARTERNAME">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="50" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="DAYOFMONTH" msprop:DbColumnName="DAYOFMONTH" msprop:FriendlyName="DAYOFMONTH" type="xs:int" />
+                  <xs:element name="DAYOFMONTHNAME" msprop:DbColumnName="DAYOFMONTHNAME" msprop:FriendlyName="DAYOFMONTHNAME">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="50" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="DAYOFWEEK" msprop:DbColumnName="DAYOFWEEK" msprop:FriendlyName="DAYOFWEEK" type="xs:int" />
+                  <xs:element name="DAYOFWEEKNAME" msprop:DbColumnName="DAYOFWEEKNAME" msprop:FriendlyName="DAYOFWEEKNAME">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="50" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="WEEKOFYEAR" msprop:DbColumnName="WEEKOFYEAR" msprop:FriendlyName="WEEKOFYEAR" type="xs:int" />
+                  <xs:element name="WEEKOFYEARNAME" msprop:DbColumnName="WEEKOFYEARNAME" msprop:FriendlyName="WEEKOFYEARNAME">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="50" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="MONTHOFYEAR" msprop:DbColumnName="MONTHOFYEAR" msprop:FriendlyName="MONTHOFYEAR" type="xs:int" />
+                  <xs:element name="MONTHOFYEARNAME" msprop:DbColumnName="MONTHOFYEARNAME" msprop:FriendlyName="MONTHOFYEARNAME">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="50" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="MONTHOFQUARTER" msprop:DbColumnName="MONTHOFQUARTER" msprop:FriendlyName="MONTHOFQUARTER" type="xs:int" />
+                  <xs:element name="MONTHOFQUARTERNAME" msprop:DbColumnName="MONTHOFQUARTERNAME" msprop:FriendlyName="MONTHOFQUARTERNAME">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="50" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="QUARTEROFYEAR" msprop:DbColumnName="QUARTEROFYEAR" msprop:FriendlyName="QUARTEROFYEAR" type="xs:int" />
+                  <xs:element name="QUARTEROFYEARNAME" msprop:DbColumnName="QUARTEROFYEARNAME" msprop:FriendlyName="QUARTEROFYEARNAME">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="50" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="RECVERSION" msprop:DbColumnName="RECVERSION" msprop:FriendlyName="RECVERSION" type="xs:int" />
+                  <xs:element name="RECID" msprop:DbColumnName="RECID" msprop:FriendlyName="RECID" type="xs:long" />
+                </xs:sequence>
+              </xs:complexType>
+            </xs:element>
+            <xs:element name="dbo_CUSTTABLE" msprop:IsLogical="True" msprop:FriendlyName="CUSTTABLE" msprop:DbTableName="CUSTTABLE" msprop:TableType="View" msprop:QueryDefinition="SELECT        ACCOUNTNUM, NAME, CUSTGROUP, SALESGROUP, COUNTRYREGIONID, ZIPCODE, STATE, COUNTY, LANGUAGEID, SEGMENTID, SUBSEGMENTID, &#xD;&#xA;                         COMPANYCHAINID, RECID&#xD;&#xA;FROM            CUSTTABLE&#xD;&#xA;WHERE        (DATAAREAID = N'gdp')" msprop:QueryBuilder="SpecificQueryBuilder">
+              <xs:complexType>
+                <xs:sequence>
+                  <xs:element name="ACCOUNTNUM" msprop:DbColumnName="ACCOUNTNUM" msprop:FriendlyName="ACCOUNTNUM">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="20" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="NAME" msprop:DbColumnName="NAME" msprop:FriendlyName="NAME" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="60" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="CUSTGROUP" msprop:DbColumnName="CUSTGROUP" msprop:FriendlyName="CUSTGROUP" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="80" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="SALESGROUP" msprop:DbColumnName="SALESGROUP" msprop:FriendlyName="SALESGROUP" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="80" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="COUNTRYREGIONID" msprop:DbColumnName="COUNTRYREGIONID" msprop:FriendlyName="COUNTRYREGIONID" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="80" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="ZIPCODE" msprop:DbColumnName="ZIPCODE" msprop:FriendlyName="ZIPCODE" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="10" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="STATE" msprop:DbColumnName="STATE" msprop:FriendlyName="STATE" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="80" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="COUNTY" msprop:DbColumnName="COUNTY" msprop:FriendlyName="COUNTY" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="80" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="LANGUAGEID" msprop:DbColumnName="LANGUAGEID" msprop:FriendlyName="LANGUAGEID" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="7" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="SEGMENTID" msprop:DbColumnName="SEGMENTID" msprop:FriendlyName="SEGMENTID" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="20" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="SUBSEGMENTID" msprop:DbColumnName="SUBSEGMENTID" msprop:FriendlyName="SUBSEGMENTID" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="20" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="COMPANYCHAINID" msprop:DbColumnName="COMPANYCHAINID" msprop:FriendlyName="COMPANYCHAINID" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="20" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="RECID" msprop:DbColumnName="RECID" msprop:FriendlyName="RECID" type="xs:long" minOccurs="0" />
+                </xs:sequence>
+              </xs:complexType>
+            </xs:element>
+            <xs:element name="test" msprop:IsLogical="True" msprop:FriendlyName="Item Qty Forecast" msprop:DbTableName="Item Qty Forecast" msprop:TableType="View" msprop:Description="" msprop:QueryDefinition="SELECT        IT.ITEMID AS Artículo, TD.MONTH AS Mes, TD.MONTHNAME AS [Nombre Mes], SUM(CIT.QTY) AS Cantidad&#xD;&#xA;FROM            INVENTTABLE AS IT INNER JOIN&#xD;&#xA;                         GPINVENTCATALOG AS IC ON IC.DATAAREAID = IT.DATAAREAID AND IC.ITEMID = IT.ITEMID INNER JOIN&#xD;&#xA;                         CUSTINVOICETRANS AS CIT ON CIT.DATAAREAID = IT.DATAAREAID AND CIT.ITEMID = IT.ITEMID INNER JOIN&#xD;&#xA;                         INVENTDIM AS ID ON ID.DATAAREAID = CIT.DATAAREAID AND ID.INVENTDIMID = CIT.INVENTDIMID INNER JOIN&#xD;&#xA;                         GPBITIMEDIMENSION AS TD ON TD.PKDATE = CIT.INVOICEDATE&#xD;&#xA;WHERE        (IC.CATALOGID = 'HOS') AND (YEAR(TD.YEAR) &gt;= 2014) AND (ID.INVENTLOCATIONID = '3000')&#xD;&#xA;GROUP BY IT.ITEMID, TD.MONTH, TD.MONTHNAME" msprop:QueryBuilder="SpecificQueryBuilder">
+              <xs:complexType>
+                <xs:sequence>
+                  <xs:element name="Artículo" msprop:DbColumnName="Artículo" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="20" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="Mes" msprop:DbColumnName="Mes" type="xs:dateTime" minOccurs="0" />
+                  <xs:element name="Nombre_x0020_Mes" msprop:DbColumnName="Nombre Mes" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="50" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="Cantidad" msprop:DbColumnName="Cantidad" type="xs:decimal" minOccurs="0" />
+                </xs:sequence>
+              </xs:complexType>
+            </xs:element>
+          </xs:choice>
+        </xs:complexType>
+        <xs:unique name="Constraint1" msprop:IsLogical="True" msdata:PrimaryKey="true">
+          <xs:selector xpath=".//CustInvoiceTransBI" />
+          <xs:field xpath="RECID" />
+        </xs:unique>
+        <xs:unique name="dbo_GPBITIMEDIMENSION_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+          <xs:selector xpath=".//dbo_GPBITIMEDIMENSION" />
+          <xs:field xpath="PKDATE" />
+        </xs:unique>
+        <xs:unique name="dbo_CUSTTABLE_Constraint1" msdata:ConstraintName="Constraint1" msprop:IsLogical="True" msdata:PrimaryKey="true">
+          <xs:selector xpath=".//dbo_CUSTTABLE" />
+          <xs:field xpath="ACCOUNTNUM" />
+        </xs:unique>
+      </xs:element>
+      <xs:annotation>
+        <xs:appinfo>
+          <msdata:Relationship name="CustInvoiceTransBI-GPBITIMEDIMENSION" msdata:parent="dbo_GPBITIMEDIMENSION" msdata:child="CustInvoiceTransBI" msdata:parentkey="PKDATE" msdata:childkey="INVOICEDATE" msprop:IsLogical="True" msprop:Description="" />
+          <msdata:Relationship name="CustInvoiceTransBI-CUSTTABLE" msdata:parent="dbo_CUSTTABLE" msdata:child="CustInvoiceTransBI" msdata:parentkey="ACCOUNTNUM" msdata:childkey="ORDERACCOUNT" msprop:IsLogical="True" msprop:Description="" />
+        </xs:appinfo>
+      </xs:annotation>
+    </xs:schema>
+    <Dynamics_x0020_AX_x0020_BI xmlns="" />
+  </Schema>
+</DataSourceView>

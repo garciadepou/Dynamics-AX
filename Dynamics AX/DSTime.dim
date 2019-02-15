@@ -1,0 +1,754 @@
+﻿<Dimension xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:ddl200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:ddl200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:ddl300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:ddl300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:ddl400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:ddl400_400="http://schemas.microsoft.com/analysisservices/2012/engine/400/400" xmlns:ddl500="http://schemas.microsoft.com/analysisservices/2013/engine/500" xmlns:ddl500_500="http://schemas.microsoft.com/analysisservices/2013/engine/500/500" xmlns="http://schemas.microsoft.com/analysisservices/2003/engine">
+  <ID>DSTime</ID>
+  <Name>DSTime</Name>
+  <CreatedTimestamp>2014-05-21T09:20:55.553333Z</CreatedTimestamp>
+  <LastSchemaUpdate>2019-02-07T22:42:15.103333Z</LastSchemaUpdate>
+  <Annotations>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramLayout</Name>
+      <Value>
+        <dds xmlns="">
+          <diagram fontclsid="{0BE35203-8F91-11CE-9DE3-00AA004BB851}" mouseiconclsid="{0BE35204-8F91-11CE-9DE3-00AA004BB851}" defaultlayout="MSDDS.Rectilinear" defaultlineroute="MSDDS.Rectilinear" version="7" nextobject="3" scale="100" pagebreakanchorx="0" pagebreakanchory="0" pagebreaksizex="0" pagebreaksizey="0" scrollleft="-2454" scrolltop="-6165" gridx="150" gridy="150" marginx="5000" marginy="5000" zoom="100" x="7779" y="17330" backcolor="15334399" defaultpersistence="2" PrintPageNumbersMode="3" PrintMarginTop="0" PrintMarginBottom="635" PrintMarginLeft="0" PrintMarginRight="0" marqueeselectionmode="0" mousepointer="0" snaptogrid="0" autotypeannotation="1" showscrollbars="0" viewpagebreaks="0" donotforceconnectorsbehindshapes="1" backpictureclsid="{00000000-0000-0000-0000-000000000000}">
+            <font>
+              <ddsxmlobjectstreamwrapper binary="01000000900144420100065461686f6d61" />
+            </font>
+            <mouseicon>
+              <ddsxmlobjectstreamwrapper binary="6c74000000000000" />
+            </mouseicon>
+          </diagram>
+          <layoutmanager>
+            <ddsxmlobj />
+          </layoutmanager>
+          <ddscontrol controlprogid="DdsShapes.DdsObjectManagedBridge.3" tooltip="GPBITIMEDIMENSION" left="-1435" top="-3678" logicalid="2" controlid="1" masterid="0" hint1="0" hint2="0" width="4842" height="5000" noresize="0" nomove="0" nodefaultattachpoints="0" autodrag="1" usedefaultiddshape="1" selectable="1" showselectionhandles="1" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+            <control>
+              <ddsxmlobjectstreaminitwrapper binary="00080000ea12000088130000" />
+            </control>
+            <layoutobject>
+              <ddsxmlobj>
+                <property name="LogicalObject" value="dbo_GPBITIMEDIMENSION" vartype="8" />
+              </ddsxmlobj>
+            </layoutobject>
+            <shape groupshapeid="0" groupnode="0" />
+          </ddscontrol>
+        </dds>
+      </Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ShowFriendlyNames</Name>
+      <Value>true</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ShowRelationshipNames</Name>
+      <Value>false</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:UseDiagramDefaultLayout</Name>
+      <Value>true</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramViewPortLeft</Name>
+      <Value>-2454</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramViewPortTop</Name>
+      <Value>-6165</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramBoundingLeft</Name>
+      <Value>-1435</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramBoundingTop</Name>
+      <Value>-3678</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramZoom</Name>
+      <Value>100</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ARDiagramLayout</Name>
+      <Value>
+        <DiagramLayout ZoomPercent="100" ViewPortX="0" ViewPortY="0" xmlns="">
+          <Shapes NodeWidth="137">
+            <Shape Id="PKDATE" Expanded="true">
+              <Attributes>
+                <Attribute Id="PKDATE" />
+                <Attribute Id="DAYOFWEEK" />
+                <Attribute Id="DAYOFYEAR" />
+                <Attribute Id="DAYOFMONTH" />
+                <Attribute Id="DAYOFQUARTER" />
+                <Attribute Id="MONTHOFYEAR" />
+                <Attribute Id="MONTHOFQUARTER" />
+                <Attribute Id="WEEKOFYEAR" />
+                <Attribute Id="QUARTEROFYEAR" />
+              </Attributes>
+              <Position x="20" y="20" />
+            </Shape>
+            <Shape Id="MONTH" Expanded="false">
+              <Attributes>
+                <Attribute Id="MONTH" />
+              </Attributes>
+              <Position x="196" y="20" />
+            </Shape>
+            <Shape Id="QUARTER" Expanded="false">
+              <Attributes>
+                <Attribute Id="QUARTER" />
+              </Attributes>
+              <Position x="372" y="20" />
+            </Shape>
+            <Shape Id="YEAR" Expanded="false">
+              <Attributes>
+                <Attribute Id="YEAR" />
+              </Attributes>
+              <Position x="548" y="20" />
+            </Shape>
+            <Shape Id="WEEK" Expanded="false">
+              <Attributes>
+                <Attribute Id="WEEK" />
+              </Attributes>
+              <Position x="196" y="68" />
+            </Shape>
+          </Shapes>
+        </DiagramLayout>
+      </Value>
+    </Annotation>
+  </Annotations>
+  <LastProcessed>2019-02-15T07:30:59.03Z</LastProcessed>
+  <State>Processed</State>
+  <Source xsi:type="DataSourceViewBinding">
+    <DataSourceViewID>Dynamics AX</DataSourceViewID>
+  </Source>
+  <Type>Time</Type>
+  <CurrentStorageMode>Molap</CurrentStorageMode>
+  <DimensionPermissions>
+    <DimensionPermission>
+      <ID>DimensionPermission</ID>
+      <Name>DimensionPermission</Name>
+      <CreatedTimestamp>2015-02-25T08:06:43.08Z</CreatedTimestamp>
+      <LastSchemaUpdate>2019-02-07T22:42:19.766667Z</LastSchemaUpdate>
+      <RoleID>Role 5</RoleID>
+      <ReadDefinition>Allowed</ReadDefinition>
+      <Read>Allowed</Read>
+    </DimensionPermission>
+    <DimensionPermission>
+      <ID>DimensionPermission 1</ID>
+      <Name>DimensionPermission 1</Name>
+      <CreatedTimestamp>2015-02-25T08:09:43.013333Z</CreatedTimestamp>
+      <LastSchemaUpdate>2019-02-07T22:42:19.786667Z</LastSchemaUpdate>
+      <RoleID>Role 42</RoleID>
+      <ReadDefinition>Allowed</ReadDefinition>
+      <Read>Allowed</Read>
+    </DimensionPermission>
+  </DimensionPermissions>
+  <Language>1033</Language>
+  <Collation>Modern_Spanish_CI_AS</Collation>
+  <UnknownMemberName>Unknown</UnknownMemberName>
+  <Attributes>
+    <Attribute>
+      <ID>PKDATE</ID>
+      <Name>Fecha</Name>
+      <Type>Date</Type>
+      <Usage>Key</Usage>
+      <EstimatedCount>4749</EstimatedCount>
+      <KeyColumns>
+        <KeyColumn>
+          <DataType>Date</DataType>
+          <Source xsi:type="ColumnBinding">
+            <TableID>dbo_GPBITIMEDIMENSION</TableID>
+            <ColumnID>PKDATE</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <NameColumn>
+        <DataType>WChar</DataType>
+        <Source xsi:type="ColumnBinding">
+          <TableID>dbo_GPBITIMEDIMENSION</TableID>
+          <ColumnID>PKDATE</ColumnID>
+        </Source>
+      </NameColumn>
+      <AttributeRelationships>
+        <AttributeRelationship>
+          <AttributeID>WEEK</AttributeID>
+          <RelationshipType>Rigid</RelationshipType>
+          <Name>Semana</Name>
+        </AttributeRelationship>
+        <AttributeRelationship>
+          <AttributeID>MONTH</AttributeID>
+          <RelationshipType>Rigid</RelationshipType>
+          <Name>Mes</Name>
+        </AttributeRelationship>
+        <AttributeRelationship>
+          <AttributeID>DAYOFWEEK</AttributeID>
+          <Name>Día de la semana</Name>
+        </AttributeRelationship>
+        <AttributeRelationship>
+          <AttributeID>QUARTEROFYEAR</AttributeID>
+          <Name>Trimestre del año</Name>
+        </AttributeRelationship>
+        <AttributeRelationship>
+          <AttributeID>DAYOFYEAR</AttributeID>
+          <Name>Día del año</Name>
+        </AttributeRelationship>
+        <AttributeRelationship>
+          <AttributeID>DAYOFMONTH</AttributeID>
+          <Name>Día del mes</Name>
+        </AttributeRelationship>
+        <AttributeRelationship>
+          <AttributeID>DAYOFQUARTER</AttributeID>
+          <Name>Día del trimestre</Name>
+        </AttributeRelationship>
+        <AttributeRelationship>
+          <AttributeID>WEEKOFYEAR</AttributeID>
+          <RelationshipType>Rigid</RelationshipType>
+          <Name>Semana del año</Name>
+        </AttributeRelationship>
+        <AttributeRelationship>
+          <AttributeID>MONTHOFYEAR</AttributeID>
+          <RelationshipType>Rigid</RelationshipType>
+          <Name>Mes del año</Name>
+        </AttributeRelationship>
+        <AttributeRelationship>
+          <AttributeID>MONTHOFQUARTER</AttributeID>
+          <RelationshipType>Rigid</RelationshipType>
+          <Name>Mes del trimestre</Name>
+        </AttributeRelationship>
+        <AttributeRelationship>
+          <AttributeID>Año - Trimestre - Mes - Fecha Time Calculations</AttributeID>
+          <Name>Año - Trimestre - Mes - Fecha Time Calculations</Name>
+        </AttributeRelationship>
+        <AttributeRelationship>
+          <AttributeID>MONTH 1</AttributeID>
+          <Name>Mes BI</Name>
+        </AttributeRelationship>
+      </AttributeRelationships>
+      <OrderBy>Key</OrderBy>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute>
+      <ID>YEAR</ID>
+      <Name>Año</Name>
+      <Type>Years</Type>
+      <EstimatedCount>13</EstimatedCount>
+      <KeyColumns>
+        <KeyColumn>
+          <DataType>Date</DataType>
+          <Source xsi:type="ColumnBinding">
+            <TableID>dbo_GPBITIMEDIMENSION</TableID>
+            <ColumnID>YEAR</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <NameColumn>
+        <DataType>WChar</DataType>
+        <DataSize>50</DataSize>
+        <Source xsi:type="ColumnBinding">
+          <TableID>dbo_GPBITIMEDIMENSION</TableID>
+          <ColumnID>YEARNAME</ColumnID>
+        </Source>
+      </NameColumn>
+      <OrderBy>Key</OrderBy>
+      <ValueColumn>
+        <DataType>Date</DataType>
+        <Source xsi:type="ColumnBinding">
+          <TableID>dbo_GPBITIMEDIMENSION</TableID>
+          <ColumnID>YEAR</ColumnID>
+        </Source>
+      </ValueColumn>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute>
+      <ID>QUARTER</ID>
+      <Name>Trimestre</Name>
+      <Type>Quarters</Type>
+      <EstimatedCount>52</EstimatedCount>
+      <KeyColumns>
+        <KeyColumn>
+          <DataType>Date</DataType>
+          <Source xsi:type="ColumnBinding">
+            <TableID>dbo_GPBITIMEDIMENSION</TableID>
+            <ColumnID>QUARTER</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <NameColumn>
+        <DataType>WChar</DataType>
+        <DataSize>50</DataSize>
+        <Source xsi:type="ColumnBinding">
+          <TableID>dbo_GPBITIMEDIMENSION</TableID>
+          <ColumnID>QUARTERNAME</ColumnID>
+        </Source>
+      </NameColumn>
+      <AttributeRelationships>
+        <AttributeRelationship>
+          <AttributeID>YEAR</AttributeID>
+          <RelationshipType>Rigid</RelationshipType>
+          <Name>Año</Name>
+        </AttributeRelationship>
+      </AttributeRelationships>
+      <OrderBy>Key</OrderBy>
+      <ValueColumn>
+        <DataType>Date</DataType>
+        <Source xsi:type="ColumnBinding">
+          <TableID>dbo_GPBITIMEDIMENSION</TableID>
+          <ColumnID>QUARTER</ColumnID>
+        </Source>
+      </ValueColumn>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute>
+      <ID>MONTH</ID>
+      <Name>Mes</Name>
+      <Type>Months</Type>
+      <EstimatedCount>156</EstimatedCount>
+      <KeyColumns>
+        <KeyColumn>
+          <DataType>Date</DataType>
+          <Source xsi:type="ColumnBinding">
+            <TableID>dbo_GPBITIMEDIMENSION</TableID>
+            <ColumnID>MONTH</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <NameColumn>
+        <DataType>WChar</DataType>
+        <DataSize>50</DataSize>
+        <Source xsi:type="ColumnBinding">
+          <TableID>dbo_GPBITIMEDIMENSION</TableID>
+          <ColumnID>MONTHNAME</ColumnID>
+        </Source>
+      </NameColumn>
+      <AttributeRelationships>
+        <AttributeRelationship>
+          <AttributeID>QUARTER</AttributeID>
+          <RelationshipType>Rigid</RelationshipType>
+          <Name>Trimestre</Name>
+        </AttributeRelationship>
+      </AttributeRelationships>
+      <OrderBy>Key</OrderBy>
+      <ValueColumn>
+        <DataType>Date</DataType>
+        <Source xsi:type="ColumnBinding">
+          <TableID>dbo_GPBITIMEDIMENSION</TableID>
+          <ColumnID>MONTH</ColumnID>
+        </Source>
+      </ValueColumn>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute>
+      <ID>WEEK</ID>
+      <Name>Semana</Name>
+      <Type>Weeks</Type>
+      <EstimatedCount>680</EstimatedCount>
+      <KeyColumns>
+        <KeyColumn>
+          <DataType>Date</DataType>
+          <Source xsi:type="ColumnBinding">
+            <TableID>dbo_GPBITIMEDIMENSION</TableID>
+            <ColumnID>WEEK</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <NameColumn>
+        <DataType>WChar</DataType>
+        <DataSize>50</DataSize>
+        <Source xsi:type="ColumnBinding">
+          <TableID>dbo_GPBITIMEDIMENSION</TableID>
+          <ColumnID>WEEKNAME</ColumnID>
+        </Source>
+      </NameColumn>
+      <AttributeRelationships>
+        <AttributeRelationship>
+          <AttributeID>YEAR</AttributeID>
+          <RelationshipType>Rigid</RelationshipType>
+          <Name>Año</Name>
+        </AttributeRelationship>
+      </AttributeRelationships>
+      <OrderBy>Key</OrderBy>
+      <ValueColumn>
+        <DataType>Date</DataType>
+        <Source xsi:type="ColumnBinding">
+          <TableID>dbo_GPBITIMEDIMENSION</TableID>
+          <ColumnID>WEEK</ColumnID>
+        </Source>
+      </ValueColumn>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute>
+      <ID>DAYOFYEAR</ID>
+      <Name>Día del año</Name>
+      <Type>DayOfYear</Type>
+      <EstimatedCount>366</EstimatedCount>
+      <KeyColumns>
+        <KeyColumn>
+          <DataType>Integer</DataType>
+          <Source xsi:type="ColumnBinding">
+            <TableID>dbo_GPBITIMEDIMENSION</TableID>
+            <ColumnID>DAYOFYEAR</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <NameColumn>
+        <DataType>WChar</DataType>
+        <DataSize>50</DataSize>
+        <Source xsi:type="ColumnBinding">
+          <TableID>dbo_GPBITIMEDIMENSION</TableID>
+          <ColumnID>DAYOFYEARNAME</ColumnID>
+        </Source>
+      </NameColumn>
+      <OrderBy>Key</OrderBy>
+      <ValueColumn>
+        <DataType>Integer</DataType>
+        <Source xsi:type="ColumnBinding">
+          <TableID>dbo_GPBITIMEDIMENSION</TableID>
+          <ColumnID>DAYOFYEAR</ColumnID>
+        </Source>
+      </ValueColumn>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute>
+      <ID>DAYOFQUARTER</ID>
+      <Name>Día del trimestre</Name>
+      <Type>DayOfQuarter</Type>
+      <EstimatedCount>92</EstimatedCount>
+      <KeyColumns>
+        <KeyColumn>
+          <DataType>Integer</DataType>
+          <Source xsi:type="ColumnBinding">
+            <TableID>dbo_GPBITIMEDIMENSION</TableID>
+            <ColumnID>DAYOFQUARTER</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <NameColumn>
+        <DataType>WChar</DataType>
+        <DataSize>50</DataSize>
+        <Source xsi:type="ColumnBinding">
+          <TableID>dbo_GPBITIMEDIMENSION</TableID>
+          <ColumnID>DAYOFQUARTERNAME</ColumnID>
+        </Source>
+      </NameColumn>
+      <OrderBy>Key</OrderBy>
+      <ValueColumn>
+        <DataType>Integer</DataType>
+        <Source xsi:type="ColumnBinding">
+          <TableID>dbo_GPBITIMEDIMENSION</TableID>
+          <ColumnID>DAYOFQUARTER</ColumnID>
+        </Source>
+      </ValueColumn>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute>
+      <ID>DAYOFMONTH</ID>
+      <Name>Día del mes</Name>
+      <Type>DayOfMonth</Type>
+      <EstimatedCount>31</EstimatedCount>
+      <KeyColumns>
+        <KeyColumn>
+          <DataType>Integer</DataType>
+          <Source xsi:type="ColumnBinding">
+            <TableID>dbo_GPBITIMEDIMENSION</TableID>
+            <ColumnID>DAYOFMONTH</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <NameColumn>
+        <DataType>WChar</DataType>
+        <DataSize>50</DataSize>
+        <Source xsi:type="ColumnBinding">
+          <TableID>dbo_GPBITIMEDIMENSION</TableID>
+          <ColumnID>DAYOFMONTHNAME</ColumnID>
+        </Source>
+      </NameColumn>
+      <OrderBy>Key</OrderBy>
+      <ValueColumn>
+        <DataType>Integer</DataType>
+        <Source xsi:type="ColumnBinding">
+          <TableID>dbo_GPBITIMEDIMENSION</TableID>
+          <ColumnID>DAYOFMONTH</ColumnID>
+        </Source>
+      </ValueColumn>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute>
+      <ID>DAYOFWEEK</ID>
+      <Name>Día de la semana</Name>
+      <Type>DayOfWeek</Type>
+      <EstimatedCount>7</EstimatedCount>
+      <KeyColumns>
+        <KeyColumn>
+          <DataType>Integer</DataType>
+          <Source xsi:type="ColumnBinding">
+            <TableID>dbo_GPBITIMEDIMENSION</TableID>
+            <ColumnID>DAYOFWEEK</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <NameColumn>
+        <DataType>WChar</DataType>
+        <DataSize>50</DataSize>
+        <Source xsi:type="ColumnBinding">
+          <TableID>dbo_GPBITIMEDIMENSION</TableID>
+          <ColumnID>DAYOFWEEKNAME</ColumnID>
+        </Source>
+      </NameColumn>
+      <OrderBy>Key</OrderBy>
+      <ValueColumn>
+        <DataType>Integer</DataType>
+        <Source xsi:type="ColumnBinding">
+          <TableID>dbo_GPBITIMEDIMENSION</TableID>
+          <ColumnID>DAYOFWEEK</ColumnID>
+        </Source>
+      </ValueColumn>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute>
+      <ID>WEEKOFYEAR</ID>
+      <Name>Semana del año</Name>
+      <Type>WeekOfYear</Type>
+      <EstimatedCount>53</EstimatedCount>
+      <KeyColumns>
+        <KeyColumn>
+          <DataType>Integer</DataType>
+          <Source xsi:type="ColumnBinding">
+            <TableID>dbo_GPBITIMEDIMENSION</TableID>
+            <ColumnID>WEEKOFYEAR</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <NameColumn>
+        <DataType>WChar</DataType>
+        <DataSize>50</DataSize>
+        <Source xsi:type="ColumnBinding">
+          <TableID>dbo_GPBITIMEDIMENSION</TableID>
+          <ColumnID>WEEKOFYEARNAME</ColumnID>
+        </Source>
+      </NameColumn>
+      <OrderBy>Key</OrderBy>
+      <ValueColumn>
+        <DataType>Integer</DataType>
+        <Source xsi:type="ColumnBinding">
+          <TableID>dbo_GPBITIMEDIMENSION</TableID>
+          <ColumnID>WEEKOFYEAR</ColumnID>
+        </Source>
+      </ValueColumn>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute>
+      <ID>MONTHOFYEAR</ID>
+      <Name>Mes del año</Name>
+      <Type>MonthOfYear</Type>
+      <EstimatedCount>12</EstimatedCount>
+      <KeyColumns>
+        <KeyColumn>
+          <DataType>Integer</DataType>
+          <Source xsi:type="ColumnBinding">
+            <TableID>dbo_GPBITIMEDIMENSION</TableID>
+            <ColumnID>MONTHOFYEAR</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <NameColumn>
+        <DataType>WChar</DataType>
+        <DataSize>50</DataSize>
+        <Source xsi:type="ColumnBinding">
+          <TableID>dbo_GPBITIMEDIMENSION</TableID>
+          <ColumnID>MONTHOFYEARNAME</ColumnID>
+        </Source>
+      </NameColumn>
+      <OrderBy>Key</OrderBy>
+      <ValueColumn>
+        <DataType>Integer</DataType>
+        <Source xsi:type="ColumnBinding">
+          <TableID>dbo_GPBITIMEDIMENSION</TableID>
+          <ColumnID>MONTHOFYEAR</ColumnID>
+        </Source>
+      </ValueColumn>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute>
+      <ID>MONTHOFQUARTER</ID>
+      <Name>Mes del trimestre</Name>
+      <Type>MonthOfQuarter</Type>
+      <EstimatedCount>3</EstimatedCount>
+      <KeyColumns>
+        <KeyColumn>
+          <DataType>Integer</DataType>
+          <Source xsi:type="ColumnBinding">
+            <TableID>dbo_GPBITIMEDIMENSION</TableID>
+            <ColumnID>MONTHOFQUARTER</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <NameColumn>
+        <DataType>WChar</DataType>
+        <DataSize>50</DataSize>
+        <Source xsi:type="ColumnBinding">
+          <TableID>dbo_GPBITIMEDIMENSION</TableID>
+          <ColumnID>MONTHOFQUARTERNAME</ColumnID>
+        </Source>
+      </NameColumn>
+      <OrderBy>Key</OrderBy>
+      <ValueColumn>
+        <DataType>Integer</DataType>
+        <Source xsi:type="ColumnBinding">
+          <TableID>dbo_GPBITIMEDIMENSION</TableID>
+          <ColumnID>MONTHOFQUARTER</ColumnID>
+        </Source>
+      </ValueColumn>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute>
+      <ID>QUARTEROFYEAR</ID>
+      <Name>Trimestre del año</Name>
+      <Type>QuarterOfYear</Type>
+      <EstimatedCount>4</EstimatedCount>
+      <KeyColumns>
+        <KeyColumn>
+          <DataType>Integer</DataType>
+          <Source xsi:type="ColumnBinding">
+            <TableID>dbo_GPBITIMEDIMENSION</TableID>
+            <ColumnID>QUARTEROFYEAR</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <NameColumn>
+        <DataType>WChar</DataType>
+        <DataSize>50</DataSize>
+        <Source xsi:type="ColumnBinding">
+          <TableID>dbo_GPBITIMEDIMENSION</TableID>
+          <ColumnID>QUARTEROFYEARNAME</ColumnID>
+        </Source>
+      </NameColumn>
+      <OrderBy>Key</OrderBy>
+      <ValueColumn>
+        <DataType>Integer</DataType>
+        <Source xsi:type="ColumnBinding">
+          <TableID>dbo_GPBITIMEDIMENSION</TableID>
+          <ColumnID>QUARTEROFYEAR</ColumnID>
+        </Source>
+      </ValueColumn>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute>
+      <ID>Año - Trimestre - Mes - Fecha Time Calculations</ID>
+      <Name>Año - Trimestre - Mes - Fecha Time Calculations</Name>
+      <EstimatedCount>1</EstimatedCount>
+      <KeyColumns>
+        <KeyColumn>
+          <DataType>WChar</DataType>
+          <DataSize>15</DataSize>
+          <Source xsi:type="ColumnBinding">
+            <TableID>dbo_GPBITIMEDIMENSION</TableID>
+            <ColumnID>Año_x0020_-_x0020_Trimestre_x0020_-_x0020_Mes_x0020_-_x0020_Fecha_x0020_Time_x0020_Calculations</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <NameColumn>
+        <DataType>WChar</DataType>
+        <DataSize>15</DataSize>
+        <Source xsi:type="ColumnBinding">
+          <TableID>dbo_GPBITIMEDIMENSION</TableID>
+          <ColumnID>Año_x0020_-_x0020_Trimestre_x0020_-_x0020_Mes_x0020_-_x0020_Fecha_x0020_Time_x0020_Calculations</ColumnID>
+        </Source>
+      </NameColumn>
+      <DefaultMember>[Año - Trimestre - Mes - Fecha Time Calculations].[Current Time]</DefaultMember>
+      <IsAggregatable>false</IsAggregatable>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute>
+      <ID>MONTH 1</ID>
+      <Name>Mes BI</Name>
+      <Type>Months</Type>
+      <KeyColumns>
+        <KeyColumn>
+          <DataType>Date</DataType>
+          <Source xsi:type="ColumnBinding">
+            <TableID>dbo_GPBITIMEDIMENSION</TableID>
+            <ColumnID>MONTH</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <NameColumn>
+        <DataType>WChar</DataType>
+        <Source xsi:type="ColumnBinding">
+          <TableID>dbo_GPBITIMEDIMENSION</TableID>
+          <ColumnID>MONTH</ColumnID>
+        </Source>
+      </NameColumn>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+  </Attributes>
+  <Hierarchies>
+    <Hierarchy>
+      <ID>Hierarchy</ID>
+      <Name>Año - Trimestre - Mes - Fecha</Name>
+      <Levels>
+        <Level>
+          <ID>Año</ID>
+          <Name>Año</Name>
+          <SourceAttributeID>YEAR</SourceAttributeID>
+        </Level>
+        <Level>
+          <ID>Trimestre</ID>
+          <Name>Trimestre</Name>
+          <SourceAttributeID>QUARTER</SourceAttributeID>
+        </Level>
+        <Level>
+          <ID>Mes</ID>
+          <Name>Mes</Name>
+          <SourceAttributeID>MONTH</SourceAttributeID>
+        </Level>
+        <Level>
+          <ID>Fecha</ID>
+          <Name>Fecha</Name>
+          <SourceAttributeID>PKDATE</SourceAttributeID>
+        </Level>
+      </Levels>
+    </Hierarchy>
+    <Hierarchy>
+      <ID>Hierarchy 2</ID>
+      <Name>Año - Semana - Fecha</Name>
+      <Levels>
+        <Level>
+          <ID>Año</ID>
+          <Name>Año</Name>
+          <SourceAttributeID>YEAR</SourceAttributeID>
+        </Level>
+        <Level>
+          <ID>Semana</ID>
+          <Name>Semana</Name>
+          <SourceAttributeID>WEEK</SourceAttributeID>
+        </Level>
+        <Level>
+          <ID>Fecha</ID>
+          <Name>Fecha</Name>
+          <SourceAttributeID>PKDATE</SourceAttributeID>
+        </Level>
+      </Levels>
+    </Hierarchy>
+  </Hierarchies>
+  <ProactiveCaching>
+    <SilenceInterval>-PT1S</SilenceInterval>
+    <Latency>-PT1S</Latency>
+    <SilenceOverrideInterval>-PT1S</SilenceOverrideInterval>
+    <ForceRebuildInterval>-PT1S</ForceRebuildInterval>
+    <AggregationStorage>MolapOnly</AggregationStorage>
+    <Source xsi:type="ProactiveCachingInheritedBinding" />
+  </ProactiveCaching>
+  <ddl300:ProcessingState>Unprocessed</ddl300:ProcessingState>
+</Dimension>

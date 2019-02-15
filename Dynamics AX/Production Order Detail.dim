@@ -1,0 +1,1457 @@
+﻿<Dimension xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:ddl200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:ddl200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:ddl300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:ddl300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:ddl400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:ddl400_400="http://schemas.microsoft.com/analysisservices/2012/engine/400/400" xmlns:ddl500="http://schemas.microsoft.com/analysisservices/2013/engine/500" xmlns:ddl500_500="http://schemas.microsoft.com/analysisservices/2013/engine/500/500" xmlns="http://schemas.microsoft.com/analysisservices/2003/engine">
+  <ID>Production Order Detail</ID>
+  <Name>Production Order Detail</Name>
+  <CreatedTimestamp>2018-10-16T14:06:41.366667Z</CreatedTimestamp>
+  <LastSchemaUpdate>2019-01-21T10:49:37.72Z</LastSchemaUpdate>
+  <LastProcessed>2019-02-15T07:31:31.866667Z</LastProcessed>
+  <State>Processed</State>
+  <Source xsi:type="DataSourceViewBinding">
+    <DataSourceViewID>Dynamics AX</DataSourceViewID>
+  </Source>
+  <UnknownMember>Visible</UnknownMember>
+  <ErrorConfiguration>
+    <KeyErrorLimitAction>StopLogging</KeyErrorLimitAction>
+    <KeyNotFound>IgnoreError</KeyNotFound>
+    <NullKeyNotAllowed>IgnoreError</NullKeyNotAllowed>
+  </ErrorConfiguration>
+  <CurrentStorageMode>Molap</CurrentStorageMode>
+  <Language>1033</Language>
+  <Collation>Modern_Spanish_CI_AS</Collation>
+  <UnknownMemberName>Unknown</UnknownMemberName>
+  <Translations>
+    <Translation>
+      <Language>1033</Language>
+      <Caption>Production Order Detail</Caption>
+    </Translation>
+    <Translation>
+      <Language>3082</Language>
+      <Caption>Orden de producción - Detalles</Caption>
+    </Translation>
+  </Translations>
+  <Attributes>
+    <Attribute>
+      <ID>DATAAREAID</ID>
+      <Name>Production ID</Name>
+      <Usage>Key</Usage>
+      <KeyColumns>
+        <KeyColumn>
+          <DataType>WChar</DataType>
+          <DataSize>4</DataSize>
+          <NullProcessing>UnknownMember</NullProcessing>
+          <Source xsi:type="ColumnBinding">
+            <TableID>PRODTABLE</TableID>
+            <ColumnID>DATAAREAID</ColumnID>
+          </Source>
+        </KeyColumn>
+        <KeyColumn>
+          <DataType>WChar</DataType>
+          <DataSize>20</DataSize>
+          <NullProcessing>UnknownMember</NullProcessing>
+          <Source xsi:type="ColumnBinding">
+            <TableID>PRODTABLE</TableID>
+            <ColumnID>PRODID</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <NameColumn>
+        <DataType>WChar</DataType>
+        <DataSize>20</DataSize>
+        <Source xsi:type="ColumnBinding">
+          <TableID>PRODTABLE</TableID>
+          <ColumnID>PRODID</ColumnID>
+        </Source>
+      </NameColumn>
+      <Translations>
+        <Translation>
+          <Language>1033</Language>
+          <Caption>Production Id</Caption>
+        </Translation>
+        <Translation>
+          <Language>3082</Language>
+          <Caption>Producción</Caption>
+        </Translation>
+      </Translations>
+      <AttributeRelationships>
+        <AttributeRelationship>
+          <AttributeID>ITEMID</AttributeID>
+          <Name>Item</Name>
+          <Translations>
+            <Translation>
+              <Language>1033</Language>
+              <Caption>Item Id</Caption>
+            </Translation>
+            <Translation>
+              <Language>3082</Language>
+              <Caption>Artículo</Caption>
+            </Translation>
+          </Translations>
+        </AttributeRelationship>
+        <AttributeRelationship>
+          <AttributeID>NAME</AttributeID>
+          <Name>Item name</Name>
+          <Translations>
+            <Translation>
+              <Language>1033</Language>
+              <Caption>Item name</Caption>
+            </Translation>
+            <Translation>
+              <Language>3082</Language>
+              <Caption>Nombre de artículo</Caption>
+            </Translation>
+          </Translations>
+        </AttributeRelationship>
+        <AttributeRelationship>
+          <AttributeID>STENCILID</AttributeID>
+          <Name>Stencil ID</Name>
+          <Translations>
+            <Translation>
+              <Language>1033</Language>
+              <Caption>Stencil Id</Caption>
+            </Translation>
+            <Translation>
+              <Language>3082</Language>
+              <Caption>Cliché</Caption>
+            </Translation>
+          </Translations>
+        </AttributeRelationship>
+        <AttributeRelationship>
+          <AttributeID>STENCILNAME</AttributeID>
+          <Name>Stencil Name</Name>
+          <Translations>
+            <Translation>
+              <Language>1033</Language>
+              <Caption>Stencil name</Caption>
+            </Translation>
+            <Translation>
+              <Language>3082</Language>
+              <Caption>Nombre del Cliché</Caption>
+            </Translation>
+          </Translations>
+        </AttributeRelationship>
+        <AttributeRelationship>
+          <AttributeID>PRODSTATUS</AttributeID>
+          <Name>Production Status</Name>
+          <Translations>
+            <Translation>
+              <Language>1033</Language>
+              <Caption>Production Status</Caption>
+            </Translation>
+            <Translation>
+              <Language>3082</Language>
+              <Caption>Estado de la Producción</Caption>
+            </Translation>
+          </Translations>
+        </AttributeRelationship>
+        <AttributeRelationship>
+          <AttributeID>SCHEDDATE</AttributeID>
+          <Name>Schedule Date</Name>
+          <Translations>
+            <Translation>
+              <Language>1033</Language>
+              <Caption>Schedule Date</Caption>
+            </Translation>
+            <Translation>
+              <Language>3082</Language>
+              <Caption>Fecha Programado</Caption>
+            </Translation>
+          </Translations>
+        </AttributeRelationship>
+        <AttributeRelationship>
+          <AttributeID>DLVDATE</AttributeID>
+          <Name>Delivery Date</Name>
+          <Translations>
+            <Translation>
+              <Language>1033</Language>
+              <Caption>Delivery Date</Caption>
+            </Translation>
+            <Translation>
+              <Language>3082</Language>
+              <Caption>Fecha Entrega</Caption>
+            </Translation>
+          </Translations>
+        </AttributeRelationship>
+        <AttributeRelationship>
+          <AttributeID>STUPDATE</AttributeID>
+          <Name>Start Update</Name>
+          <Translations>
+            <Translation>
+              <Language>1033</Language>
+              <Caption>Start Update</Caption>
+            </Translation>
+            <Translation>
+              <Language>3082</Language>
+              <Caption>Fecha Actualizada Iniciado</Caption>
+            </Translation>
+          </Translations>
+        </AttributeRelationship>
+        <AttributeRelationship>
+          <AttributeID>FINISHEDDATE</AttributeID>
+          <Name>Finished Date</Name>
+          <Translations>
+            <Translation>
+              <Language>1033</Language>
+              <Caption>Finished Date</Caption>
+            </Translation>
+            <Translation>
+              <Language>3082</Language>
+              <Caption>Fecha Notificado Terminado</Caption>
+            </Translation>
+          </Translations>
+        </AttributeRelationship>
+        <AttributeRelationship>
+          <AttributeID>SCHEDSTART</AttributeID>
+          <Name>Schedule Start</Name>
+          <Translations>
+            <Translation>
+              <Language>1033</Language>
+              <Caption>Schedule Start</Caption>
+            </Translation>
+            <Translation>
+              <Language>3082</Language>
+              <Caption>Fecha Inicial Programada</Caption>
+            </Translation>
+          </Translations>
+        </AttributeRelationship>
+        <AttributeRelationship>
+          <AttributeID>SCHEDEND</AttributeID>
+          <Name>Schedule End</Name>
+          <Translations>
+            <Translation>
+              <Language>1033</Language>
+              <Caption>Schedule End</Caption>
+            </Translation>
+            <Translation>
+              <Language>3082</Language>
+              <Caption>Fecha Final Programada</Caption>
+            </Translation>
+          </Translations>
+        </AttributeRelationship>
+        <AttributeRelationship>
+          <AttributeID>REALDATE</AttributeID>
+          <Name>Real Date</Name>
+          <Translations>
+            <Translation>
+              <Language>1033</Language>
+              <Caption>Real Date</Caption>
+            </Translation>
+            <Translation>
+              <Language>3082</Language>
+              <Caption>Fecha Terminado</Caption>
+            </Translation>
+          </Translations>
+        </AttributeRelationship>
+        <AttributeRelationship>
+          <AttributeID>BOMDATE</AttributeID>
+          <Name>Bill of Materials Date</Name>
+          <Translations>
+            <Translation>
+              <Language>1033</Language>
+              <Caption>Bill Of Materials Date</Caption>
+            </Translation>
+            <Translation>
+              <Language>3082</Language>
+              <Caption>Fecha Lista Materiales</Caption>
+            </Translation>
+          </Translations>
+        </AttributeRelationship>
+        <AttributeRelationship>
+          <AttributeID>CALCDATE</AttributeID>
+          <Name>Estimated Date</Name>
+          <Translations>
+            <Translation>
+              <Language>1033</Language>
+              <Caption>Estimated Date</Caption>
+            </Translation>
+            <Translation>
+              <Language>3082</Language>
+              <Caption>Fecha Estimada</Caption>
+            </Translation>
+          </Translations>
+        </AttributeRelationship>
+        <AttributeRelationship>
+          <AttributeID>LATESTSCHEDDATE</AttributeID>
+          <Name>Latest Schedule Date</Name>
+          <Translations>
+            <Translation>
+              <Language>1033</Language>
+              <Caption>Latest Schedule Date</Caption>
+            </Translation>
+            <Translation>
+              <Language>3082</Language>
+              <Caption>Fecha Última Programación</Caption>
+            </Translation>
+          </Translations>
+        </AttributeRelationship>
+        <AttributeRelationship>
+          <AttributeID>CREATEDDATETIME</AttributeID>
+          <Name>Created Date Time</Name>
+          <Translations>
+            <Translation>
+              <Language>1033</Language>
+              <Caption>Created Date Time</Caption>
+            </Translation>
+            <Translation>
+              <Language>3082</Language>
+              <Caption>Fecha y Hora de Creación</Caption>
+            </Translation>
+          </Translations>
+        </AttributeRelationship>
+        <AttributeRelationship>
+          <AttributeID>DAYSBETWEENCALCDATE</AttributeID>
+          <Name>Days Between Calc Date</Name>
+          <Translations>
+            <Translation>
+              <Language>1033</Language>
+              <Caption>Days Between Calc Date</Caption>
+            </Translation>
+            <Translation>
+              <Language>3082</Language>
+              <Caption>Dias entre Fecha Estimada y Hoy</Caption>
+            </Translation>
+          </Translations>
+        </AttributeRelationship>
+        <AttributeRelationship>
+          <AttributeID>PRODSTATUSNAME</AttributeID>
+          <Name>Production Status Name</Name>
+          <Translations>
+            <Translation>
+              <Language>1033</Language>
+              <Caption>Production Status Name</Caption>
+            </Translation>
+            <Translation>
+              <Language>3082</Language>
+              <Caption>Nombre Estado de la Producción</Caption>
+            </Translation>
+          </Translations>
+        </AttributeRelationship>
+        <AttributeRelationship>
+          <AttributeID>ABNORMALITIESID</AttributeID>
+          <Name>Abnormalitie ID</Name>
+          <Translations>
+            <Translation>
+              <Language>1033</Language>
+              <Caption>Abnormalitie ID</Caption>
+            </Translation>
+            <Translation>
+              <Language>3082</Language>
+              <Caption>Anomalía</Caption>
+            </Translation>
+          </Translations>
+        </AttributeRelationship>
+        <AttributeRelationship>
+          <AttributeID>ABNORMALITIESNAME</AttributeID>
+          <Name>Abnormalitie Name</Name>
+          <Translations>
+            <Translation>
+              <Language>1033</Language>
+              <Caption>Abnormalitie Name</Caption>
+            </Translation>
+            <Translation>
+              <Language>3082</Language>
+              <Caption>Nombre de Anomalía</Caption>
+            </Translation>
+          </Translations>
+        </AttributeRelationship>
+        <AttributeRelationship>
+          <AttributeID>QTYSCHED</AttributeID>
+          <Name>Scheduled Quantity</Name>
+          <Translations>
+            <Translation>
+              <Language>1033</Language>
+              <Caption>Scheduled Quantity</Caption>
+            </Translation>
+            <Translation>
+              <Language>3082</Language>
+              <Caption>Cantidad Programada</Caption>
+            </Translation>
+          </Translations>
+        </AttributeRelationship>
+        <AttributeRelationship>
+          <AttributeID>SALESID</AttributeID>
+          <Name>Sales ID</Name>
+          <Translations>
+            <Translation>
+              <Language>1033</Language>
+              <Caption>Sales ID</Caption>
+            </Translation>
+            <Translation>
+              <Language>3082</Language>
+              <Caption>Pedido de Ventas</Caption>
+            </Translation>
+          </Translations>
+        </AttributeRelationship>
+        <AttributeRelationship>
+          <AttributeID>PRODUCTIONSTATUS</AttributeID>
+          <Name>Production Quantity Status</Name>
+          <Translations>
+            <Translation>
+              <Language>1033</Language>
+              <Caption>Production Quantity Status</Caption>
+            </Translation>
+            <Translation>
+              <Language>3082</Language>
+              <Caption>Estado Cantidad Producida</Caption>
+            </Translation>
+          </Translations>
+        </AttributeRelationship>
+        <AttributeRelationship>
+          <AttributeID>CONFIRMDATE</AttributeID>
+          <Name>Confirm Date</Name>
+          <Translations>
+            <Translation>
+              <Language>1033</Language>
+              <Caption>Confirm Date</Caption>
+            </Translation>
+            <Translation>
+              <Language>3082</Language>
+              <Caption>Fecha Confirmación</Caption>
+            </Translation>
+          </Translations>
+        </AttributeRelationship>
+        <AttributeRelationship>
+          <AttributeID>DAYSCONFIRMDATE</AttributeID>
+          <Name>Days Between Confirm Date</Name>
+          <Translations>
+            <Translation>
+              <Language>1033</Language>
+              <Caption>Days Between Confirm Date</Caption>
+            </Translation>
+            <Translation>
+              <Language>3082</Language>
+              <Caption>Dias entre Fecha Confirmación</Caption>
+            </Translation>
+          </Translations>
+        </AttributeRelationship>
+        <AttributeRelationship>
+          <AttributeID>CUSTACCOUNT</AttributeID>
+          <Name>Cust Account</Name>
+          <Translations>
+            <Translation>
+              <Language>1033</Language>
+              <Caption>Cust Account</Caption>
+            </Translation>
+            <Translation>
+              <Language>3082</Language>
+              <Caption>Cliente</Caption>
+            </Translation>
+          </Translations>
+        </AttributeRelationship>
+        <AttributeRelationship>
+          <AttributeID>CUSTNAME</AttributeID>
+          <Name>Cust Name</Name>
+          <Translations>
+            <Translation>
+              <Language>1033</Language>
+              <Caption>Cust Name</Caption>
+            </Translation>
+            <Translation>
+              <Language>3082</Language>
+              <Caption>Nombre del Cliente</Caption>
+            </Translation>
+          </Translations>
+        </AttributeRelationship>
+        <AttributeRelationship>
+          <AttributeID>ITEMGROUPID</AttributeID>
+          <Name>Item Group</Name>
+          <Translations>
+            <Translation>
+              <Language>1033</Language>
+              <Caption>Item Group</Caption>
+            </Translation>
+            <Translation>
+              <Language>3082</Language>
+              <Caption>Grupo de Artículos</Caption>
+            </Translation>
+          </Translations>
+        </AttributeRelationship>
+        <AttributeRelationship>
+          <AttributeID>COUNTRYREGIONID</AttributeID>
+          <Name>Country Region</Name>
+          <Translations>
+            <Translation>
+              <Language>1033</Language>
+              <Caption>Country Region</Caption>
+            </Translation>
+            <Translation>
+              <Language>3082</Language>
+              <Caption>Pais</Caption>
+            </Translation>
+          </Translations>
+        </AttributeRelationship>
+      </AttributeRelationships>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute>
+      <ID>ITEMID</ID>
+      <Name>Item</Name>
+      <KeyColumns>
+        <KeyColumn>
+          <DataType>WChar</DataType>
+          <DataSize>4</DataSize>
+          <Source xsi:type="ColumnBinding">
+            <TableID>PRODTABLE</TableID>
+            <ColumnID>DATAAREAID</ColumnID>
+          </Source>
+        </KeyColumn>
+        <KeyColumn>
+          <DataType>WChar</DataType>
+          <DataSize>20</DataSize>
+          <Source xsi:type="ColumnBinding">
+            <TableID>PRODTABLE</TableID>
+            <ColumnID>ITEMID</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <NameColumn>
+        <DataType>WChar</DataType>
+        <DataSize>20</DataSize>
+        <Source xsi:type="ColumnBinding">
+          <TableID>PRODTABLE</TableID>
+          <ColumnID>ITEMID</ColumnID>
+        </Source>
+      </NameColumn>
+      <Translations>
+        <Translation>
+          <Language>1033</Language>
+          <Caption>Item Id</Caption>
+        </Translation>
+        <Translation>
+          <Language>3082</Language>
+          <Caption>Artículo</Caption>
+        </Translation>
+      </Translations>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute>
+      <ID>NAME</ID>
+      <Name>NAME</Name>
+      <KeyColumns>
+        <KeyColumn>
+          <DataType>WChar</DataType>
+          <DataSize>60</DataSize>
+          <Source xsi:type="ColumnBinding">
+            <TableID>PRODTABLE</TableID>
+            <ColumnID>NAME</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <NameColumn>
+        <DataType>WChar</DataType>
+        <DataSize>60</DataSize>
+        <Source xsi:type="ColumnBinding">
+          <TableID>PRODTABLE</TableID>
+          <ColumnID>NAME</ColumnID>
+        </Source>
+      </NameColumn>
+      <Translations>
+        <Translation>
+          <Language>1033</Language>
+          <Caption>Item name</Caption>
+        </Translation>
+        <Translation>
+          <Language>3082</Language>
+          <Caption>Nombre de artículo</Caption>
+        </Translation>
+      </Translations>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute>
+      <ID>STENCILID</ID>
+      <Name>Stencil ID</Name>
+      <KeyColumns>
+        <KeyColumn>
+          <DataType>WChar</DataType>
+          <DataSize>20</DataSize>
+          <Source xsi:type="ColumnBinding">
+            <TableID>PRODTABLE</TableID>
+            <ColumnID>STENCILID</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <NameColumn>
+        <DataType>WChar</DataType>
+        <DataSize>20</DataSize>
+        <Source xsi:type="ColumnBinding">
+          <TableID>PRODTABLE</TableID>
+          <ColumnID>STENCILID</ColumnID>
+        </Source>
+      </NameColumn>
+      <Translations>
+        <Translation>
+          <Language>1033</Language>
+          <Caption>Stencil Id</Caption>
+        </Translation>
+        <Translation>
+          <Language>3082</Language>
+          <Caption>Cliché</Caption>
+        </Translation>
+      </Translations>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute>
+      <ID>STENCILNAME</ID>
+      <Name>Stencil Name</Name>
+      <KeyColumns>
+        <KeyColumn>
+          <DataType>WChar</DataType>
+          <DataSize>60</DataSize>
+          <Source xsi:type="ColumnBinding">
+            <TableID>PRODTABLE</TableID>
+            <ColumnID>STENCILNAME</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <NameColumn>
+        <DataType>WChar</DataType>
+        <DataSize>60</DataSize>
+        <Source xsi:type="ColumnBinding">
+          <TableID>PRODTABLE</TableID>
+          <ColumnID>STENCILNAME</ColumnID>
+        </Source>
+      </NameColumn>
+      <Translations>
+        <Translation>
+          <Language>1033</Language>
+          <Caption>Stencil name</Caption>
+        </Translation>
+        <Translation>
+          <Language>3082</Language>
+          <Caption>Nombre del Cliché</Caption>
+        </Translation>
+      </Translations>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute>
+      <ID>PRODSTATUS</ID>
+      <Name>Production Status</Name>
+      <KeyColumns>
+        <KeyColumn>
+          <DataType>Integer</DataType>
+          <Source xsi:type="ColumnBinding">
+            <TableID>PRODTABLE</TableID>
+            <ColumnID>PRODSTATUS</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <NameColumn>
+        <DataType>WChar</DataType>
+        <Source xsi:type="ColumnBinding">
+          <TableID>PRODTABLE</TableID>
+          <ColumnID>PRODSTATUS</ColumnID>
+        </Source>
+      </NameColumn>
+      <Translations>
+        <Translation>
+          <Language>1033</Language>
+          <Caption>Production Status</Caption>
+        </Translation>
+        <Translation>
+          <Language>3082</Language>
+          <Caption>Estado de la Producción</Caption>
+        </Translation>
+      </Translations>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute>
+      <ID>SCHEDDATE</ID>
+      <Name>Schedule Date</Name>
+      <KeyColumns>
+        <KeyColumn>
+          <DataType>Date</DataType>
+          <Source xsi:type="ColumnBinding">
+            <TableID>PRODTABLE</TableID>
+            <ColumnID>SCHEDDATE</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <NameColumn>
+        <DataType>WChar</DataType>
+        <Source xsi:type="ColumnBinding">
+          <TableID>PRODTABLE</TableID>
+          <ColumnID>SCHEDDATE</ColumnID>
+        </Source>
+      </NameColumn>
+      <Translations>
+        <Translation>
+          <Language>1033</Language>
+          <Caption>Schedule Date</Caption>
+        </Translation>
+        <Translation>
+          <Language>3082</Language>
+          <Caption>Fecha Programado</Caption>
+        </Translation>
+      </Translations>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute>
+      <ID>DLVDATE</ID>
+      <Name>Delivery Date</Name>
+      <KeyColumns>
+        <KeyColumn>
+          <DataType>Date</DataType>
+          <Source xsi:type="ColumnBinding">
+            <TableID>PRODTABLE</TableID>
+            <ColumnID>DLVDATE</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <NameColumn>
+        <DataType>WChar</DataType>
+        <Source xsi:type="ColumnBinding">
+          <TableID>PRODTABLE</TableID>
+          <ColumnID>DLVDATE</ColumnID>
+        </Source>
+      </NameColumn>
+      <Translations>
+        <Translation>
+          <Language>1033</Language>
+          <Caption>Delivery Date</Caption>
+        </Translation>
+        <Translation>
+          <Language>3082</Language>
+          <Caption>Fecha Entrega</Caption>
+        </Translation>
+      </Translations>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute>
+      <ID>STUPDATE</ID>
+      <Name>Start Update</Name>
+      <KeyColumns>
+        <KeyColumn>
+          <DataType>Date</DataType>
+          <Source xsi:type="ColumnBinding">
+            <TableID>PRODTABLE</TableID>
+            <ColumnID>STUPDATE</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <NameColumn>
+        <DataType>WChar</DataType>
+        <Source xsi:type="ColumnBinding">
+          <TableID>PRODTABLE</TableID>
+          <ColumnID>STUPDATE</ColumnID>
+        </Source>
+      </NameColumn>
+      <Translations>
+        <Translation>
+          <Language>1033</Language>
+          <Caption>Start Update</Caption>
+        </Translation>
+        <Translation>
+          <Language>3082</Language>
+          <Caption>Fecha Actualizada Iniciado</Caption>
+        </Translation>
+      </Translations>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute>
+      <ID>FINISHEDDATE</ID>
+      <Name>Finished Date</Name>
+      <KeyColumns>
+        <KeyColumn>
+          <DataType>Date</DataType>
+          <Source xsi:type="ColumnBinding">
+            <TableID>PRODTABLE</TableID>
+            <ColumnID>FINISHEDDATE</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <NameColumn>
+        <DataType>WChar</DataType>
+        <Source xsi:type="ColumnBinding">
+          <TableID>PRODTABLE</TableID>
+          <ColumnID>FINISHEDDATE</ColumnID>
+        </Source>
+      </NameColumn>
+      <Translations>
+        <Translation>
+          <Language>1033</Language>
+          <Caption>Finished Date</Caption>
+        </Translation>
+        <Translation>
+          <Language>3082</Language>
+          <Caption>Fecha Notificado Terminado</Caption>
+        </Translation>
+      </Translations>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute>
+      <ID>SCHEDSTART</ID>
+      <Name>Schedule Start</Name>
+      <KeyColumns>
+        <KeyColumn>
+          <DataType>Date</DataType>
+          <Source xsi:type="ColumnBinding">
+            <TableID>PRODTABLE</TableID>
+            <ColumnID>SCHEDSTART</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <NameColumn>
+        <DataType>WChar</DataType>
+        <Source xsi:type="ColumnBinding">
+          <TableID>PRODTABLE</TableID>
+          <ColumnID>SCHEDSTART</ColumnID>
+        </Source>
+      </NameColumn>
+      <Translations>
+        <Translation>
+          <Language>1033</Language>
+          <Caption>Schedule Start</Caption>
+        </Translation>
+        <Translation>
+          <Language>3082</Language>
+          <Caption>Fecha Inicial Programada</Caption>
+        </Translation>
+      </Translations>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute>
+      <ID>SCHEDEND</ID>
+      <Name>Schedule End</Name>
+      <KeyColumns>
+        <KeyColumn>
+          <DataType>Date</DataType>
+          <Source xsi:type="ColumnBinding">
+            <TableID>PRODTABLE</TableID>
+            <ColumnID>SCHEDEND</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <NameColumn>
+        <DataType>WChar</DataType>
+        <Source xsi:type="ColumnBinding">
+          <TableID>PRODTABLE</TableID>
+          <ColumnID>SCHEDEND</ColumnID>
+        </Source>
+      </NameColumn>
+      <Translations>
+        <Translation>
+          <Language>1033</Language>
+          <Caption>Schedule End</Caption>
+        </Translation>
+        <Translation>
+          <Language>3082</Language>
+          <Caption>Fecha Final Programada</Caption>
+        </Translation>
+      </Translations>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute>
+      <ID>REALDATE</ID>
+      <Name>Real Date</Name>
+      <KeyColumns>
+        <KeyColumn>
+          <DataType>Date</DataType>
+          <Source xsi:type="ColumnBinding">
+            <TableID>PRODTABLE</TableID>
+            <ColumnID>REALDATE</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <NameColumn>
+        <DataType>WChar</DataType>
+        <Source xsi:type="ColumnBinding">
+          <TableID>PRODTABLE</TableID>
+          <ColumnID>REALDATE</ColumnID>
+        </Source>
+      </NameColumn>
+      <Translations>
+        <Translation>
+          <Language>1033</Language>
+          <Caption>Real Date</Caption>
+        </Translation>
+        <Translation>
+          <Language>3082</Language>
+          <Caption>Fecha Terminado</Caption>
+        </Translation>
+      </Translations>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute>
+      <ID>BOMDATE</ID>
+      <Name>Bill of Materials Date</Name>
+      <KeyColumns>
+        <KeyColumn>
+          <DataType>Date</DataType>
+          <Source xsi:type="ColumnBinding">
+            <TableID>PRODTABLE</TableID>
+            <ColumnID>BOMDATE</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <NameColumn>
+        <DataType>WChar</DataType>
+        <Source xsi:type="ColumnBinding">
+          <TableID>PRODTABLE</TableID>
+          <ColumnID>BOMDATE</ColumnID>
+        </Source>
+      </NameColumn>
+      <Translations>
+        <Translation>
+          <Language>1033</Language>
+          <Caption>Bill Of Materials Date</Caption>
+        </Translation>
+        <Translation>
+          <Language>3082</Language>
+          <Caption>Fecha Lista Materiales</Caption>
+        </Translation>
+      </Translations>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute>
+      <ID>CALCDATE</ID>
+      <Name>Estimated Date</Name>
+      <KeyColumns>
+        <KeyColumn>
+          <DataType>Date</DataType>
+          <Source xsi:type="ColumnBinding">
+            <TableID>PRODTABLE</TableID>
+            <ColumnID>CALCDATE</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <NameColumn>
+        <DataType>WChar</DataType>
+        <Source xsi:type="ColumnBinding">
+          <TableID>PRODTABLE</TableID>
+          <ColumnID>CALCDATE</ColumnID>
+        </Source>
+      </NameColumn>
+      <Translations>
+        <Translation>
+          <Language>1033</Language>
+          <Caption>Estimated Date</Caption>
+        </Translation>
+        <Translation>
+          <Language>3082</Language>
+          <Caption>Fecha Estimada</Caption>
+        </Translation>
+      </Translations>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute>
+      <ID>LATESTSCHEDDATE</ID>
+      <Name>Latest Schedule Date</Name>
+      <KeyColumns>
+        <KeyColumn>
+          <DataType>Date</DataType>
+          <Source xsi:type="ColumnBinding">
+            <TableID>PRODTABLE</TableID>
+            <ColumnID>LATESTSCHEDDATE</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <NameColumn>
+        <DataType>WChar</DataType>
+        <Source xsi:type="ColumnBinding">
+          <TableID>PRODTABLE</TableID>
+          <ColumnID>LATESTSCHEDDATE</ColumnID>
+        </Source>
+      </NameColumn>
+      <Translations>
+        <Translation>
+          <Language>1033</Language>
+          <Caption>Latest Schedule Date</Caption>
+        </Translation>
+        <Translation>
+          <Language>3082</Language>
+          <Caption>Fecha Última Programación</Caption>
+        </Translation>
+      </Translations>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute>
+      <ID>CREATEDDATETIME</ID>
+      <Name>Created Date Time</Name>
+      <KeyColumns>
+        <KeyColumn>
+          <DataType>Date</DataType>
+          <Source xsi:type="ColumnBinding">
+            <TableID>PRODTABLE</TableID>
+            <ColumnID>CREATEDDATETIME</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <NameColumn>
+        <DataType>WChar</DataType>
+        <Source xsi:type="ColumnBinding">
+          <TableID>PRODTABLE</TableID>
+          <ColumnID>CREATEDDATETIME</ColumnID>
+        </Source>
+      </NameColumn>
+      <Translations>
+        <Translation>
+          <Language>1033</Language>
+          <Caption>Created Date Time</Caption>
+        </Translation>
+        <Translation>
+          <Language>3082</Language>
+          <Caption>Fecha y Hora de Creación</Caption>
+        </Translation>
+      </Translations>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute>
+      <ID>DAYSBETWEENCALCDATE</ID>
+      <Name>Days Between Calc Date</Name>
+      <KeyColumns>
+        <KeyColumn>
+          <DataType>Integer</DataType>
+          <Source xsi:type="ColumnBinding">
+            <TableID>PRODTABLE</TableID>
+            <ColumnID>DAYSBETWEENCALCDATE</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <NameColumn>
+        <DataType>WChar</DataType>
+        <Source xsi:type="ColumnBinding">
+          <TableID>PRODTABLE</TableID>
+          <ColumnID>DAYSBETWEENCALCDATE</ColumnID>
+        </Source>
+      </NameColumn>
+      <Translations>
+        <Translation>
+          <Language>1033</Language>
+          <Caption>Days Between Calc Date</Caption>
+        </Translation>
+        <Translation>
+          <Language>3082</Language>
+          <Caption>Dias entre Fecha Estimada y Hoy</Caption>
+        </Translation>
+      </Translations>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute>
+      <ID>PRODSTATUSNAME</ID>
+      <Name>Production Status Name</Name>
+      <KeyColumns>
+        <KeyColumn>
+          <DataType>WChar</DataType>
+          <DataSize>25</DataSize>
+          <Source xsi:type="ColumnBinding">
+            <TableID>PRODTABLE</TableID>
+            <ColumnID>PRODSTATUSNAME</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <NameColumn>
+        <DataType>WChar</DataType>
+        <DataSize>25</DataSize>
+        <Source xsi:type="ColumnBinding">
+          <TableID>PRODTABLE</TableID>
+          <ColumnID>PRODSTATUSNAME</ColumnID>
+        </Source>
+      </NameColumn>
+      <Translations>
+        <Translation>
+          <Language>1033</Language>
+          <Caption>Production Status Name</Caption>
+        </Translation>
+        <Translation>
+          <Language>3082</Language>
+          <Caption>Nombre Estado de la Producción</Caption>
+        </Translation>
+      </Translations>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute>
+      <ID>ABNORMALITIESID</ID>
+      <Name>Abnormalitie ID</Name>
+      <KeyColumns>
+        <KeyColumn>
+          <DataType>WChar</DataType>
+          <DataSize>20</DataSize>
+          <Source xsi:type="ColumnBinding">
+            <TableID>PRODTABLE</TableID>
+            <ColumnID>ABNORMALITIESID</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <NameColumn>
+        <DataType>WChar</DataType>
+        <DataSize>20</DataSize>
+        <Source xsi:type="ColumnBinding">
+          <TableID>PRODTABLE</TableID>
+          <ColumnID>ABNORMALITIESID</ColumnID>
+        </Source>
+      </NameColumn>
+      <Translations>
+        <Translation>
+          <Language>1033</Language>
+          <Caption>Abnormalitie ID</Caption>
+        </Translation>
+        <Translation>
+          <Language>3082</Language>
+          <Caption>Anomalía</Caption>
+        </Translation>
+      </Translations>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute>
+      <ID>ABNORMALITIESNAME</ID>
+      <Name>Abnormalitie Name</Name>
+      <KeyColumns>
+        <KeyColumn>
+          <DataType>WChar</DataType>
+          <DataSize>60</DataSize>
+          <Source xsi:type="ColumnBinding">
+            <TableID>PRODTABLE</TableID>
+            <ColumnID>ABNORMALITIESNAME</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <NameColumn>
+        <DataType>WChar</DataType>
+        <DataSize>60</DataSize>
+        <Source xsi:type="ColumnBinding">
+          <TableID>PRODTABLE</TableID>
+          <ColumnID>ABNORMALITIESNAME</ColumnID>
+        </Source>
+      </NameColumn>
+      <Translations>
+        <Translation>
+          <Language>1033</Language>
+          <Caption>Abnormalitie Name</Caption>
+        </Translation>
+        <Translation>
+          <Language>3082</Language>
+          <Caption>Nombre de Anomalía</Caption>
+        </Translation>
+      </Translations>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute>
+      <ID>QTYSCHED</ID>
+      <Name>Scheduled Quantity</Name>
+      <KeyColumns>
+        <KeyColumn>
+          <DataType>Double</DataType>
+          <Source xsi:type="ColumnBinding">
+            <TableID>PRODTABLE</TableID>
+            <ColumnID>QTYSCHED</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <NameColumn>
+        <DataType>WChar</DataType>
+        <Source xsi:type="ColumnBinding">
+          <TableID>PRODTABLE</TableID>
+          <ColumnID>QTYSCHED</ColumnID>
+        </Source>
+      </NameColumn>
+      <Translations>
+        <Translation>
+          <Language>1033</Language>
+          <Caption>Scheduled Quantity</Caption>
+        </Translation>
+        <Translation>
+          <Language>3082</Language>
+          <Caption>Cantidad Programada</Caption>
+        </Translation>
+      </Translations>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+      <ddl300_300:FormatString>#,##0.0000;-#,##0.0000</ddl300_300:FormatString>
+    </Attribute>
+    <Attribute>
+      <ID>SALESID</ID>
+      <Name>Sales ID</Name>
+      <KeyColumns>
+        <KeyColumn>
+          <DataType>WChar</DataType>
+          <DataSize>20</DataSize>
+          <Source xsi:type="ColumnBinding">
+            <TableID>PRODTABLE</TableID>
+            <ColumnID>SALESID</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <NameColumn>
+        <DataType>WChar</DataType>
+        <DataSize>20</DataSize>
+        <Source xsi:type="ColumnBinding">
+          <TableID>PRODTABLE</TableID>
+          <ColumnID>SALESID</ColumnID>
+        </Source>
+      </NameColumn>
+      <Translations>
+        <Translation>
+          <Language>1033</Language>
+          <Caption>Sales ID</Caption>
+        </Translation>
+        <Translation>
+          <Language>3082</Language>
+          <Caption>Pedido de Ventas</Caption>
+        </Translation>
+      </Translations>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute>
+      <ID>PRODUCTIONSTATUS</ID>
+      <Name>Production Quantity Status</Name>
+      <KeyColumns>
+        <KeyColumn>
+          <DataType>WChar</DataType>
+          <DataSize>13</DataSize>
+          <Source xsi:type="ColumnBinding">
+            <TableID>PRODTABLE</TableID>
+            <ColumnID>PRODUCTIONSTATUS</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <NameColumn>
+        <DataType>WChar</DataType>
+        <DataSize>13</DataSize>
+        <Source xsi:type="ColumnBinding">
+          <TableID>PRODTABLE</TableID>
+          <ColumnID>PRODUCTIONSTATUS</ColumnID>
+        </Source>
+      </NameColumn>
+      <Translations>
+        <Translation>
+          <Language>1033</Language>
+          <Caption>Production Quantity Status</Caption>
+        </Translation>
+        <Translation>
+          <Language>3082</Language>
+          <Caption>Estado Cantidad Producida</Caption>
+        </Translation>
+      </Translations>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute>
+      <ID>CONFIRMDATE</ID>
+      <Name>Confirm Date</Name>
+      <KeyColumns>
+        <KeyColumn>
+          <DataType>Date</DataType>
+          <Source xsi:type="ColumnBinding">
+            <TableID>PRODTABLE</TableID>
+            <ColumnID>CONFIRMDATE</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <NameColumn>
+        <DataType>WChar</DataType>
+        <Source xsi:type="ColumnBinding">
+          <TableID>PRODTABLE</TableID>
+          <ColumnID>CONFIRMDATE</ColumnID>
+        </Source>
+      </NameColumn>
+      <Translations>
+        <Translation>
+          <Language>1033</Language>
+          <Caption>Confirm Date</Caption>
+        </Translation>
+        <Translation>
+          <Language>3082</Language>
+          <Caption>Fecha Confirmación</Caption>
+        </Translation>
+      </Translations>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute>
+      <ID>DAYSCONFIRMDATE</ID>
+      <Name>Days Between Confirm Date</Name>
+      <KeyColumns>
+        <KeyColumn>
+          <DataType>Integer</DataType>
+          <Source xsi:type="ColumnBinding">
+            <TableID>PRODTABLE</TableID>
+            <ColumnID>DAYSCONFIRMDATE</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <NameColumn>
+        <DataType>WChar</DataType>
+        <Source xsi:type="ColumnBinding">
+          <TableID>PRODTABLE</TableID>
+          <ColumnID>DAYSCONFIRMDATE</ColumnID>
+        </Source>
+      </NameColumn>
+      <Translations>
+        <Translation>
+          <Language>1033</Language>
+          <Caption>Days Between Confirm Date</Caption>
+        </Translation>
+        <Translation>
+          <Language>3082</Language>
+          <Caption>Dias entre Fecha Confirmación</Caption>
+        </Translation>
+      </Translations>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute>
+      <ID>CUSTACCOUNT</ID>
+      <Name>Cust Account</Name>
+      <KeyColumns>
+        <KeyColumn>
+          <DataType>WChar</DataType>
+          <DataSize>20</DataSize>
+          <Source xsi:type="ColumnBinding">
+            <TableID>PRODTABLE</TableID>
+            <ColumnID>CUSTACCOUNT</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <NameColumn>
+        <DataType>WChar</DataType>
+        <DataSize>20</DataSize>
+        <Source xsi:type="ColumnBinding">
+          <TableID>PRODTABLE</TableID>
+          <ColumnID>CUSTACCOUNT</ColumnID>
+        </Source>
+      </NameColumn>
+      <Translations>
+        <Translation>
+          <Language>1033</Language>
+          <Caption>Cust Account</Caption>
+        </Translation>
+        <Translation>
+          <Language>3082</Language>
+          <Caption>Cliente</Caption>
+        </Translation>
+      </Translations>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute>
+      <ID>CUSTNAME</ID>
+      <Name>Cust Name</Name>
+      <KeyColumns>
+        <KeyColumn>
+          <DataType>WChar</DataType>
+          <DataSize>60</DataSize>
+          <Source xsi:type="ColumnBinding">
+            <TableID>PRODTABLE</TableID>
+            <ColumnID>CUSTNAME</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <NameColumn>
+        <DataType>WChar</DataType>
+        <DataSize>60</DataSize>
+        <Source xsi:type="ColumnBinding">
+          <TableID>PRODTABLE</TableID>
+          <ColumnID>CUSTNAME</ColumnID>
+        </Source>
+      </NameColumn>
+      <Translations>
+        <Translation>
+          <Language>1033</Language>
+          <Caption>Cust Name</Caption>
+        </Translation>
+        <Translation>
+          <Language>3082</Language>
+          <Caption>Nombre del Cliente</Caption>
+        </Translation>
+      </Translations>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute>
+      <ID>ITEMGROUPID</ID>
+      <Name>Item Group</Name>
+      <KeyColumns>
+        <KeyColumn>
+          <DataType>WChar</DataType>
+          <DataSize>80</DataSize>
+          <Source xsi:type="ColumnBinding">
+            <TableID>PRODTABLE</TableID>
+            <ColumnID>ITEMGROUPID</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <NameColumn>
+        <DataType>WChar</DataType>
+        <DataSize>80</DataSize>
+        <Source xsi:type="ColumnBinding">
+          <TableID>PRODTABLE</TableID>
+          <ColumnID>ITEMGROUPID</ColumnID>
+        </Source>
+      </NameColumn>
+      <Translations>
+        <Translation>
+          <Language>1033</Language>
+          <Caption>Item Group</Caption>
+        </Translation>
+        <Translation>
+          <Language>3082</Language>
+          <Caption>Grupo de Artículos</Caption>
+        </Translation>
+      </Translations>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute>
+      <ID>COUNTRYREGIONID</ID>
+      <Name>Country Region</Name>
+      <KeyColumns>
+        <KeyColumn>
+          <DataType>WChar</DataType>
+          <DataSize>80</DataSize>
+          <Source xsi:type="ColumnBinding">
+            <TableID>PRODTABLE</TableID>
+            <ColumnID>COUNTRYREGIONID</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <NameColumn>
+        <DataType>WChar</DataType>
+        <DataSize>80</DataSize>
+        <Source xsi:type="ColumnBinding">
+          <TableID>PRODTABLE</TableID>
+          <ColumnID>COUNTRYREGIONID</ColumnID>
+        </Source>
+      </NameColumn>
+      <Translations>
+        <Translation>
+          <Language>1033</Language>
+          <Caption>Country Region</Caption>
+        </Translation>
+        <Translation>
+          <Language>3082</Language>
+          <Caption>Pais</Caption>
+        </Translation>
+      </Translations>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+  </Attributes>
+  <ProactiveCaching>
+    <SilenceInterval>-PT1S</SilenceInterval>
+    <Latency>-PT1S</Latency>
+    <SilenceOverrideInterval>-PT1S</SilenceOverrideInterval>
+    <ForceRebuildInterval>-PT1S</ForceRebuildInterval>
+    <Source xsi:type="ProactiveCachingInheritedBinding" />
+  </ProactiveCaching>
+  <ddl300:ProcessingState>Unprocessed</ddl300:ProcessingState>
+</Dimension>
