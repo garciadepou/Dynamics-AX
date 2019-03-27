@@ -20,7 +20,7 @@
       <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramLayout</Name>
       <Value>
         <dds xmlns="">
-          <diagram fontclsid="{0BE35203-8F91-11CE-9DE3-00AA004BB851}" mouseiconclsid="{0BE35204-8F91-11CE-9DE3-00AA004BB851}" defaultlayout="MSDDS.Rectilinear" defaultlineroute="MSDDS.Rectilinear" version="7" nextobject="30" scale="100" pagebreakanchorx="0" pagebreakanchory="0" pagebreaksizex="0" pagebreaksizey="0" scrollleft="4593" scrolltop="-7085" gridx="150" gridy="150" marginx="5000" marginy="5000" zoom="75" x="13891" y="20638" backcolor="16777215" defaultpersistence="2" PrintPageNumbersMode="3" PrintMarginTop="0" PrintMarginBottom="635" PrintMarginLeft="0" PrintMarginRight="0" marqueeselectionmode="0" mousepointer="0" snaptogrid="0" autotypeannotation="1" showscrollbars="1" viewpagebreaks="0" donotforceconnectorsbehindshapes="1" backpictureclsid="{00000000-0000-0000-0000-000000000000}">
+          <diagram fontclsid="{0BE35203-8F91-11CE-9DE3-00AA004BB851}" mouseiconclsid="{0BE35204-8F91-11CE-9DE3-00AA004BB851}" defaultlayout="MSDDS.Rectilinear" defaultlineroute="MSDDS.Rectilinear" version="7" nextobject="30" scale="100" pagebreakanchorx="0" pagebreakanchory="0" pagebreaksizex="0" pagebreaksizey="0" scrollleft="4593" scrolltop="-7085" gridx="150" gridy="150" marginx="5000" marginy="5000" zoom="75" x="14579" y="20611" backcolor="16777215" defaultpersistence="2" PrintPageNumbersMode="3" PrintMarginTop="0" PrintMarginBottom="635" PrintMarginLeft="0" PrintMarginRight="0" marqueeselectionmode="0" mousepointer="0" snaptogrid="0" autotypeannotation="1" showscrollbars="1" viewpagebreaks="0" donotforceconnectorsbehindshapes="1" backpictureclsid="{00000000-0000-0000-0000-000000000000}">
             <font>
               <ddsxmlobjectstreamwrapper binary="01000000900144420100065461686f6d61" />
             </font>
@@ -304,10 +304,18 @@
                 <Attribute Id="ABCCONTRIBUTIONMARGIN" />
                 <Attribute Id="ABCREVENUE" />
                 <Attribute Id="ABCVALUE" />
+                <Attribute Id="CATALOG AND PAGE" />
+                <Attribute Id="INTRACODE" />
                 <Attribute Id="INVENTTABLEMODULE UNITID" />
+                <Attribute Id="ISSTENCIL" />
                 <Attribute Id="ITEMNAME" />
+                <Attribute Id="MAIN CATALOG" />
+                <Attribute Id="MAIN CATALOG PAGE" />
+                <Attribute Id="GPINVENTMATERIALNAME" />
                 <Attribute Id="MESES SIN COMPRA" />
                 <Attribute Id="INVENTTABLEMODULE PRICE" />
+                <Attribute Id="PRIMARYVENDORID" />
+                <Attribute Id="PRIMARYVENDORNAME" />
               </Attributes>
               <Position x="20" y="20" />
             </Shape>
@@ -952,6 +960,10 @@
         <AttributeRelationship dwd:design-time-name="d27c6497-f4a7-44de-b28b-51631a56b526">
           <AttributeID>GPINVENTMATERIALNAME</AttributeID>
           <Name>Material</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="310af0c0-8999-4f1c-989c-01fb0f4b899d">
+          <AttributeID>INTRACODE</AttributeID>
+          <Name>Intrastat code</Name>
         </AttributeRelationship>
       </AttributeRelationships>
       <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
@@ -1644,6 +1656,48 @@
         <Translation dwd:design-time-name="d74bf538-8431-4932-8099-b553de74c138">
           <Language>3082</Language>
           <Caption>Material</Caption>
+        </Translation>
+      </Translations>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="695728b3-d7b1-4192-9d10-5ce85fcae88f">
+      <ID>INTRACODE</ID>
+      <Name>Intrastat code</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="78f46911-c291-44c5-a824-e5ff5c24657b">
+          <DataType>WChar</DataType>
+          <DataSize>4</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="c82d06b5-87a4-4cb5-83c6-5d07106d6457">
+            <TableID>INVENTTABLE</TableID>
+            <ColumnID>DATAAREAID</ColumnID>
+          </Source>
+        </KeyColumn>
+        <KeyColumn dwd:design-time-name="304878e4-2940-4e69-adbd-16a3c26a4c1e">
+          <DataType>WChar</DataType>
+          <DataSize>80</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="eae06f2c-b604-4a5a-a759-d6853abc1431">
+            <TableID>INVENTTABLE</TableID>
+            <ColumnID>INTRACODE</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <NameColumn dwd:design-time-name="bdb97148-342e-48a4-a3b7-56faa275d1a6">
+        <DataType>WChar</DataType>
+        <DataSize>80</DataSize>
+        <Source xsi:type="ColumnBinding" dwd:design-time-name="85e62886-a793-43c7-8eff-8e93773dc438">
+          <TableID>INVENTTABLE</TableID>
+          <ColumnID>INTRACODE</ColumnID>
+        </Source>
+      </NameColumn>
+      <Translations>
+        <Translation dwd:design-time-name="6dd209fb-9394-43aa-8762-6a9a38dc9296">
+          <Language>1033</Language>
+          <Caption>Intrastat code</Caption>
+        </Translation>
+        <Translation dwd:design-time-name="b1171a75-4dde-42e7-8fa6-f735d5711f97">
+          <Language>3082</Language>
+          <Caption>Código intrastat</Caption>
         </Translation>
       </Translations>
       <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
