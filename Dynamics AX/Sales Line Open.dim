@@ -1,0 +1,204 @@
+﻿<Dimension xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:ddl200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:ddl200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:ddl300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:ddl300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:ddl400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:ddl400_400="http://schemas.microsoft.com/analysisservices/2012/engine/400/400" xmlns:ddl500="http://schemas.microsoft.com/analysisservices/2013/engine/500" xmlns:ddl500_500="http://schemas.microsoft.com/analysisservices/2013/engine/500/500" xmlns:dwd="http://schemas.microsoft.com/DataWarehouse/Designer/1.0" dwd:design-time-name="01092db8-9b8d-47c6-ba57-9fe7d6d0ee01" xmlns="http://schemas.microsoft.com/analysisservices/2003/engine">
+  <ID>Sales Line Open</ID>
+  <Name>Sales Line Open</Name>
+  <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+  <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+  <Annotations>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramLayout</Name>
+      <Value>
+        <dds xmlns="">
+          <diagram fontclsid="{0BE35203-8F91-11CE-9DE3-00AA004BB851}" mouseiconclsid="{0BE35204-8F91-11CE-9DE3-00AA004BB851}" defaultlayout="MSDDS.Rectilinear" defaultlineroute="MSDDS.Rectilinear" version="7" nextobject="2" scale="100" pagebreakanchorx="0" pagebreakanchory="0" pagebreaksizex="0" pagebreaksizey="0" scrollleft="-3446" scrolltop="-7131" gridx="150" gridy="150" marginx="5000" marginy="5000" zoom="100" x="13732" y="19262" backcolor="16777215" defaultpersistence="2" PrintPageNumbersMode="3" PrintMarginTop="0" PrintMarginBottom="635" PrintMarginLeft="0" PrintMarginRight="0" marqueeselectionmode="0" mousepointer="0" snaptogrid="0" autotypeannotation="1" showscrollbars="0" viewpagebreaks="0" donotforceconnectorsbehindshapes="1" backpictureclsid="{00000000-0000-0000-0000-000000000000}">
+            <font>
+              <ddsxmlobjectstreamwrapper binary="01000000900144420100065461686f6d61" />
+            </font>
+            <mouseicon>
+              <ddsxmlobjectstreamwrapper binary="6c74000000000000" />
+            </mouseicon>
+          </diagram>
+          <layoutmanager>
+            <ddsxmlobj />
+          </layoutmanager>
+          <ddscontrol controlprogid="DdsShapes.DdsObjectManagedBridge" tooltip="SALESLINE_OPEN" left="-588" top="-556" logicalid="1" controlid="1" masterid="0" hint1="0" hint2="0" width="6800" height="5000" noresize="0" nomove="0" nodefaultattachpoints="0" autodrag="1" usedefaultiddshape="1" selectable="1" showselectionhandles="1" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+            <control>
+              <ddsxmlobjectstreaminitwrapper binary="000e0000901a000088130000" />
+            </control>
+            <layoutobject>
+              <ddsxmlobj>
+                <property name="LogicalObject" value="SALESLINE_OPEN" vartype="8" />
+              </ddsxmlobj>
+            </layoutobject>
+            <shape groupshapeid="0" groupnode="0" />
+          </ddscontrol>
+        </dds>
+      </Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ShowFriendlyNames</Name>
+      <Value>true</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ShowRelationshipNames</Name>
+      <Value>false</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:UseDiagramDefaultLayout</Name>
+      <Value>true</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramViewPortLeft</Name>
+      <Value>-3446</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramViewPortTop</Name>
+      <Value>-7131</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramBoundingLeft</Name>
+      <Value>-588</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramBoundingTop</Name>
+      <Value>-556</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramZoom</Name>
+      <Value>100</Value>
+    </Annotation>
+  </Annotations>
+  <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+  <State>Unprocessed</State>
+  <Source xsi:type="DataSourceViewBinding" dwd:design-time-name="1717c1e1-bd90-47ac-8619-b5ae3a07d162">
+    <DataSourceViewID>Dynamics AX</DataSourceViewID>
+  </Source>
+  <UnknownMember>Visible</UnknownMember>
+  <ErrorConfiguration dwd:design-time-name="3fe9a83b-9f85-4269-9f7f-a6d61951f3d6">
+    <KeyErrorLimitAction>StopLogging</KeyErrorLimitAction>
+    <KeyNotFound>IgnoreError</KeyNotFound>
+    <NullKeyNotAllowed>IgnoreError</NullKeyNotAllowed>
+  </ErrorConfiguration>
+  <CurrentStorageMode>Molap</CurrentStorageMode>
+  <Language>1033</Language>
+  <Collation>Modern_Spanish_CI_AS</Collation>
+  <UnknownMemberName>Unknown</UnknownMemberName>
+  <UnknownMemberTranslations>
+    <UnknownMemberTranslation dwd:design-time-name="98407925-bca9-46e4-9758-5135dea98dbb">
+      <Language>3082</Language>
+      <Caption>Desconocido</Caption>
+    </UnknownMemberTranslation>
+  </UnknownMemberTranslations>
+  <Translations>
+    <Translation dwd:design-time-name="42918927-ff9e-4afc-93e5-6fb5eaf73581">
+      <Language>3082</Language>
+      <Caption>Líneas de pedido abiertas</Caption>
+    </Translation>
+  </Translations>
+  <Attributes>
+    <Attribute dwd:design-time-name="91cc0f68-f553-4be7-95cb-40d6e1b3cb07">
+      <ID>LINENUM</ID>
+      <Name>Sales line</Name>
+      <Usage>Key</Usage>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="3048bd23-600f-4ac2-8574-4ba3f61d795a">
+          <DataType>WChar</DataType>
+          <DataSize>4</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="418d28ef-7b51-448e-bcb8-e0602b0bf602">
+            <TableID>SALESLINE_OPEN</TableID>
+            <ColumnID>DATAAREAID</ColumnID>
+          </Source>
+        </KeyColumn>
+        <KeyColumn dwd:design-time-name="61f5d622-f77f-411d-bf11-0690a73f99fc">
+          <DataType>WChar</DataType>
+          <DataSize>20</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="e2467e87-e7f9-4f24-88dc-6af38e7cda15">
+            <TableID>SALESLINE_OPEN</TableID>
+            <ColumnID>SALESID</ColumnID>
+          </Source>
+        </KeyColumn>
+        <KeyColumn dwd:design-time-name="cc208145-92f2-43e3-9f3e-4a3b5afe6f9e">
+          <DataType>Double</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="3884e21d-7b1e-463f-98b3-017cc618913c">
+            <TableID>SALESLINE_OPEN</TableID>
+            <ColumnID>LINENUM</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <NameColumn dwd:design-time-name="28ed53f5-b5d5-4b33-a208-9d9866453dd0">
+        <DataType>WChar</DataType>
+        <DataSize>20</DataSize>
+        <Source xsi:type="ColumnBinding" dwd:design-time-name="cbee31d4-bdf2-4620-8353-98cb48ad876b">
+          <TableID>SALESLINE_OPEN</TableID>
+          <ColumnID>INVENTTRANSID</ColumnID>
+        </Source>
+      </NameColumn>
+      <Translations>
+        <Translation dwd:design-time-name="e262c935-9192-4d9b-aefb-03dfda15ccd3">
+          <Language>3082</Language>
+          <Caption>Línea de pedido</Caption>
+        </Translation>
+      </Translations>
+      <AttributeRelationships>
+        <AttributeRelationship dwd:design-time-name="85fd6eda-f363-4fb1-ab47-94acaae4fdf4">
+          <AttributeID>READYFORPICKING</AttributeID>
+          <Name>Ready For Picking</Name>
+        </AttributeRelationship>
+      </AttributeRelationships>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="16eca990-558b-4c3c-953f-132410fde057">
+      <ID>READYFORPICKING</ID>
+      <Name>Ready For Picking</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="60af01eb-393e-43fb-9539-3fe650a4ae15">
+          <DataType>Integer</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="b71a3105-473e-4f35-ac48-f71e15543d6e">
+            <TableID>SALESLINE_OPEN</TableID>
+            <ColumnID>READYFORPICKING</ColumnID>
+          </Source>
+        </KeyColumn>
+        <KeyColumn dwd:design-time-name="48881a35-3e8c-413b-9eeb-a2e5b492f6be">
+          <DataType>WChar</DataType>
+          <DataSize>4</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="b3603c16-c621-4f85-8c49-85e171b7bdad">
+            <TableID>SALESLINE_OPEN</TableID>
+            <ColumnID>DATAAREAID</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <NameColumn dwd:design-time-name="41f50472-bd38-42e1-a58c-29a955c473d4">
+        <DataType>WChar</DataType>
+        <Source xsi:type="ColumnBinding" dwd:design-time-name="7ae9796a-c1db-42c4-a72c-880898d8215c">
+          <TableID>SALESLINE_OPEN</TableID>
+          <ColumnID>READYFORPICKING</ColumnID>
+        </Source>
+      </NameColumn>
+      <Translations>
+        <Translation dwd:design-time-name="0a5b8be5-d196-4653-8438-ee5b7e9100fb">
+          <Language>3082</Language>
+          <Caption>Listo para picking</Caption>
+        </Translation>
+      </Translations>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+  </Attributes>
+  <AttributeAllMemberName>All</AttributeAllMemberName>
+  <AttributeAllMemberTranslations>
+    <AttributeAllMemberTranslation dwd:design-time-name="dfe2e349-5c55-4739-839e-571cca92cc1b">
+      <Language>3082</Language>
+      <Caption>Todo</Caption>
+    </AttributeAllMemberTranslation>
+  </AttributeAllMemberTranslations>
+  <ProactiveCaching dwd:design-time-name="26d11920-dcae-4472-a97c-b6d86cb631e9">
+    <SilenceInterval>-PT1S</SilenceInterval>
+    <Latency>-PT1S</Latency>
+    <SilenceOverrideInterval>-PT1S</SilenceOverrideInterval>
+    <ForceRebuildInterval>-PT1S</ForceRebuildInterval>
+    <AggregationStorage>MolapOnly</AggregationStorage>
+    <Source xsi:type="ProactiveCachingInheritedBinding" dwd:design-time-name="4bb1c755-53b5-4ff0-8e2e-3da6dd338817">
+      <NotificationTechnique>Server</NotificationTechnique>
+    </Source>
+  </ProactiveCaching>
+  <ddl300:ProcessingState>Unprocessed</ddl300:ProcessingState>
+</Dimension>

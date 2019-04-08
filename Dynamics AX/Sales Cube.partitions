@@ -19018,5 +19018,25 @@
         </Partition>
       </Partitions>
     </MeasureGroup>
+    <MeasureGroup>
+      <ID>SALESLINE OPEN</ID>
+      <Partitions>
+        <Partition dwd:design-time-name="a1241d2e-4507-4ea4-acbb-2ba47d19d0e6">
+          <ID>SALESLINE OPEN</ID>
+          <Name>SALESLINE OPEN</Name>
+          <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+          <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+          <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+          <State>Unprocessed</State>
+          <Source xsi:type="DsvTableBinding" dwd:design-time-name="966edbf4-ca50-4417-8a47-84b440635432">
+            <DataSourceViewID>Dynamics AX</DataSourceViewID>
+            <TableID>SALESLINE_OPEN</TableID>
+          </Source>
+          <StorageMode>Molap</StorageMode>
+          <CurrentStorageMode>Molap</CurrentStorageMode>
+          <ProcessingMode>Regular</ProcessingMode>
+        </Partition>
+      </Partitions>
+    </MeasureGroup>
   </MeasureGroups>
 </Cube>
