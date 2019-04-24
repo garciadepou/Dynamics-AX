@@ -1,14 +1,77 @@
-﻿<Dimension xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:ddl200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:ddl200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:ddl300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:ddl300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:ddl400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:ddl400_400="http://schemas.microsoft.com/analysisservices/2012/engine/400/400" xmlns:ddl500="http://schemas.microsoft.com/analysisservices/2013/engine/500" xmlns:ddl500_500="http://schemas.microsoft.com/analysisservices/2013/engine/500/500" xmlns="http://schemas.microsoft.com/analysisservices/2003/engine">
+﻿<Dimension xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:ddl200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:ddl200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:ddl300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:ddl300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:ddl400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:ddl400_400="http://schemas.microsoft.com/analysisservices/2012/engine/400/400" xmlns:ddl500="http://schemas.microsoft.com/analysisservices/2013/engine/500" xmlns:ddl500_500="http://schemas.microsoft.com/analysisservices/2013/engine/500/500" xmlns:dwd="http://schemas.microsoft.com/DataWarehouse/Designer/1.0" dwd:design-time-name="410af35a-cbe2-492e-bcef-8f333ef61862" xmlns="http://schemas.microsoft.com/analysisservices/2003/engine">
   <ID>Catálogos y Artículos</ID>
   <Name>Catalogs and Items</Name>
   <CreatedTimestamp>2014-09-30T11:55:21.746667Z</CreatedTimestamp>
   <LastSchemaUpdate>2018-10-03T09:36:21.846667Z</LastSchemaUpdate>
+  <Annotations>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramLayout</Name>
+      <Value>
+        <dds xmlns="">
+          <diagram fontclsid="{0BE35203-8F91-11CE-9DE3-00AA004BB851}" mouseiconclsid="{0BE35204-8F91-11CE-9DE3-00AA004BB851}" defaultlayout="MSDDS.Rectilinear" defaultlineroute="MSDDS.Rectilinear" version="7" nextobject="3" scale="100" pagebreakanchorx="0" pagebreakanchory="0" pagebreaksizex="0" pagebreaksizey="0" scrollleft="-5074" scrolltop="-7131" gridx="150" gridy="150" marginx="5000" marginy="5000" zoom="100" x="13732" y="19262" backcolor="16777215" defaultpersistence="2" PrintPageNumbersMode="3" PrintMarginTop="0" PrintMarginBottom="635" PrintMarginLeft="0" PrintMarginRight="0" marqueeselectionmode="0" mousepointer="0" snaptogrid="0" autotypeannotation="1" showscrollbars="0" viewpagebreaks="0" donotforceconnectorsbehindshapes="1" backpictureclsid="{00000000-0000-0000-0000-000000000000}">
+            <font>
+              <ddsxmlobjectstreamwrapper binary="01000000900144420100065461686f6d61" />
+            </font>
+            <mouseicon>
+              <ddsxmlobjectstreamwrapper binary="6c74000000000000" />
+            </mouseicon>
+          </diagram>
+          <layoutmanager>
+            <ddsxmlobj />
+          </layoutmanager>
+          <ddscontrol controlprogid="DdsShapes.DdsObjectManagedBridge" tooltip="GPINVENTCATALOG" left="20" top="0" logicalid="2" controlid="1" masterid="0" hint1="0" hint2="0" width="3545" height="5000" noresize="0" nomove="0" nodefaultattachpoints="0" autodrag="1" usedefaultiddshape="1" selectable="1" showselectionhandles="1" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+            <control>
+              <ddsxmlobjectstreaminitwrapper binary="000e0000d90d000088130000" />
+            </control>
+            <layoutobject>
+              <ddsxmlobj>
+                <property name="LogicalObject" value="dbo_GPINVENTCATALOG" vartype="8" />
+              </ddsxmlobj>
+            </layoutobject>
+            <shape groupshapeid="0" groupnode="0" />
+          </ddscontrol>
+        </dds>
+      </Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ShowFriendlyNames</Name>
+      <Value>true</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ShowRelationshipNames</Name>
+      <Value>false</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:UseDiagramDefaultLayout</Name>
+      <Value>true</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramViewPortLeft</Name>
+      <Value>-5074</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramViewPortTop</Name>
+      <Value>-7131</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramBoundingLeft</Name>
+      <Value>20</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramBoundingTop</Name>
+      <Value>0</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramZoom</Name>
+      <Value>100</Value>
+    </Annotation>
+  </Annotations>
   <LastProcessed>2019-02-15T07:31:40.713333Z</LastProcessed>
   <State>Processed</State>
-  <Source xsi:type="DataSourceViewBinding">
+  <Source xsi:type="DataSourceViewBinding" dwd:design-time-name="60ccf4c1-0e4a-49e1-bfb1-64057d76a0af">
     <DataSourceViewID>Dynamics AX</DataSourceViewID>
   </Source>
-  <ErrorConfiguration>
+  <ErrorConfiguration dwd:design-time-name="419c783f-b0ca-42ef-ae5d-f3ba506314dc">
     <KeyErrorLimitAction>StopLogging</KeyErrorLimitAction>
     <KeyNotFound>IgnoreError</KeyNotFound>
     <NullKeyNotAllowed>IgnoreError</NullKeyNotAllowed>
@@ -18,99 +81,99 @@
   <Collation>Modern_Spanish_CI_AS</Collation>
   <UnknownMemberName>Unknown</UnknownMemberName>
   <UnknownMemberTranslations>
-    <UnknownMemberTranslation>
+    <UnknownMemberTranslation dwd:design-time-name="13c7f787-b116-4644-8d23-a817d2d5fc46">
       <Language>3082</Language>
       <Caption>Desconocido</Caption>
     </UnknownMemberTranslation>
   </UnknownMemberTranslations>
   <Translations>
-    <Translation>
+    <Translation dwd:design-time-name="e0da614e-c308-43b8-b6ab-dcc12ee64b54">
       <Language>3082</Language>
       <Caption>Catálogos y Artículos</Caption>
     </Translation>
   </Translations>
   <Attributes>
-    <Attribute>
+    <Attribute dwd:design-time-name="735b4da5-0bef-42e3-96f6-4ba9f6a2b264">
       <ID>Name</ID>
       <Name>Name</Name>
       <Usage>Key</Usage>
       <KeyColumns>
-        <KeyColumn>
+        <KeyColumn dwd:design-time-name="4a02d83d-9c52-4c6c-a8ab-873e89523e82">
           <DataType>WChar</DataType>
           <DataSize>4</DataSize>
-          <Source xsi:type="ColumnBinding">
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="dcb02e44-64c7-4d35-b52e-765811719e49">
             <TableID>dbo_GPINVENTCATALOG</TableID>
             <ColumnID>DATAAREAID</ColumnID>
           </Source>
         </KeyColumn>
-        <KeyColumn>
+        <KeyColumn dwd:design-time-name="e9d911e3-e2c1-45ac-a812-1ed115ef0657">
           <DataType>BigInt</DataType>
-          <Source xsi:type="ColumnBinding">
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="01bb3071-1717-426b-9d7a-031b053d6e7a">
             <TableID>dbo_GPINVENTCATALOG</TableID>
             <ColumnID>RECID</ColumnID>
           </Source>
         </KeyColumn>
       </KeyColumns>
-      <NameColumn>
+      <NameColumn dwd:design-time-name="5478c70a-782c-46da-a2e8-fca85519a905">
         <DataType>WChar</DataType>
-        <DataSize>62</DataSize>
-        <Source xsi:type="ColumnBinding">
+        <DataSize>100</DataSize>
+        <Source xsi:type="ColumnBinding" dwd:design-time-name="9074fbe9-dd45-485a-a843-bada9d9b9023">
           <TableID>dbo_GPINVENTCATALOG</TableID>
           <ColumnID>Name</ColumnID>
         </Source>
       </NameColumn>
       <Translations>
-        <Translation>
+        <Translation dwd:design-time-name="f2a7a838-67da-44e3-8cb3-2964b5a928e8">
           <Language>3082</Language>
           <Caption>Catálogos y Artículos (Nombre)</Caption>
         </Translation>
       </Translations>
       <AttributeRelationships>
-        <AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="e8de9261-ee7b-4613-98ed-de193a863ba7">
           <AttributeID>ITEMID</AttributeID>
           <Name>Item</Name>
           <Translations>
-            <Translation>
+            <Translation dwd:design-time-name="375c03ed-3001-4e77-abbb-d74154992c95">
               <Language>3082</Language>
               <Caption>Artículos</Caption>
             </Translation>
           </Translations>
         </AttributeRelationship>
-        <AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="02a24999-14d0-4353-bd70-995a3549904b">
           <AttributeID>CATALOGID</AttributeID>
           <Name>Catalog</Name>
           <Translations>
-            <Translation>
+            <Translation dwd:design-time-name="6adcb2e0-270a-4895-a3e3-736c6fcd7957">
               <Language>3082</Language>
               <Caption>Catálogo</Caption>
             </Translation>
           </Translations>
         </AttributeRelationship>
-        <AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="724cb7ea-aa9d-4738-a03a-264908554854">
           <AttributeID>PRINCIPAL</AttributeID>
           <Name>Is main</Name>
           <Translations>
-            <Translation>
+            <Translation dwd:design-time-name="789124c2-cbd2-436a-9a32-d7f0062c3a29">
               <Language>3082</Language>
               <Caption>Es principal</Caption>
             </Translation>
           </Translations>
         </AttributeRelationship>
-        <AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="c4b320f1-b5dc-4a0e-b57a-b98a31edf4e9">
           <AttributeID>PAGENUM</AttributeID>
           <Name>Page Num</Name>
           <Translations>
-            <Translation>
+            <Translation dwd:design-time-name="e1b6d64d-7f92-4ab0-9eb8-64d5fe4f8d8d">
               <Language>3082</Language>
               <Caption>Núm. de página</Caption>
             </Translation>
           </Translations>
         </AttributeRelationship>
-        <AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="4a2aabcc-c6b5-42dc-b8e8-21839a7594b9">
           <AttributeID>CHAPTER NAME</AttributeID>
           <Name>Chapter Name</Name>
           <Translations>
-            <Translation>
+            <Translation dwd:design-time-name="dca34d5d-5d84-4fe3-adc9-392fa0f9e9e4">
               <Language>3082</Language>
               <Caption>Capítulo</Caption>
             </Translation>
@@ -120,47 +183,47 @@
       <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
       <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
     </Attribute>
-    <Attribute>
+    <Attribute dwd:design-time-name="b747b15e-6bb1-425a-a348-cbc867ff4687">
       <ID>ITEMID</ID>
       <Name>Item</Name>
       <KeyColumns>
-        <KeyColumn>
+        <KeyColumn dwd:design-time-name="8e02b84b-3668-443a-8e74-394f95da23e3">
           <DataType>WChar</DataType>
           <DataSize>4</DataSize>
-          <Source xsi:type="ColumnBinding">
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="a1787987-644b-49c6-be2a-2737a4ef1766">
             <TableID>dbo_GPINVENTCATALOG</TableID>
             <ColumnID>DATAAREAID</ColumnID>
           </Source>
         </KeyColumn>
-        <KeyColumn>
+        <KeyColumn dwd:design-time-name="15e33488-623f-4a83-b4e9-cc45bdc3a648">
           <DataType>WChar</DataType>
           <DataSize>20</DataSize>
-          <Source xsi:type="ColumnBinding">
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="142f7b9e-fe27-43ee-aa26-46704612cea5">
             <TableID>dbo_GPINVENTCATALOG</TableID>
             <ColumnID>ITEMID</ColumnID>
           </Source>
         </KeyColumn>
       </KeyColumns>
-      <NameColumn>
+      <NameColumn dwd:design-time-name="cc6201fa-d22d-43a4-a1e6-122d3d38eaaa">
         <DataType>WChar</DataType>
         <DataSize>20</DataSize>
-        <Source xsi:type="ColumnBinding">
+        <Source xsi:type="ColumnBinding" dwd:design-time-name="b14d73f4-8513-4230-be00-8a2c744b3fe6">
           <TableID>dbo_GPINVENTCATALOG</TableID>
           <ColumnID>ITEMID</ColumnID>
         </Source>
       </NameColumn>
       <Translations>
-        <Translation>
+        <Translation dwd:design-time-name="0169fdd0-7069-46cd-99c4-8d57c6d03866">
           <Language>3082</Language>
           <Caption>Artículos</Caption>
         </Translation>
       </Translations>
       <AttributeRelationships>
-        <AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="f2d40188-4afd-4445-98ea-ea9983527ab9">
           <AttributeID>ITEM NAME</AttributeID>
           <Name>Item Name</Name>
           <Translations>
-            <Translation>
+            <Translation dwd:design-time-name="1b8c6f19-c3a9-48fe-a1e6-22f097332a13">
               <Language>3082</Language>
               <Caption>Nombre de artículo</Caption>
             </Translation>
@@ -170,47 +233,47 @@
       <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
       <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
     </Attribute>
-    <Attribute>
+    <Attribute dwd:design-time-name="429d9094-b46a-4701-bc07-72b00c81e35f">
       <ID>CATALOGID</ID>
       <Name>Catalog</Name>
       <KeyColumns>
-        <KeyColumn>
+        <KeyColumn dwd:design-time-name="fd735ccb-fe36-4d85-9ebe-a07fc25d9748">
           <DataType>WChar</DataType>
           <DataSize>4</DataSize>
-          <Source xsi:type="ColumnBinding">
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="54fc85e1-5296-470d-901b-0921cb340eda">
             <TableID>dbo_GPINVENTCATALOG</TableID>
             <ColumnID>DATAAREAID</ColumnID>
           </Source>
         </KeyColumn>
-        <KeyColumn>
+        <KeyColumn dwd:design-time-name="46b938e9-be0a-4333-8f50-16c2d66f2402">
           <DataType>WChar</DataType>
           <DataSize>60</DataSize>
-          <Source xsi:type="ColumnBinding">
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="8dd950ac-1fff-482f-82b0-5af7d870f21e">
             <TableID>dbo_GPINVENTCATALOG</TableID>
             <ColumnID>CATALOGID</ColumnID>
           </Source>
         </KeyColumn>
       </KeyColumns>
-      <NameColumn>
+      <NameColumn dwd:design-time-name="7fdde3d6-29ec-43aa-b91c-32ee39d9ea2b">
         <DataType>WChar</DataType>
         <DataSize>60</DataSize>
-        <Source xsi:type="ColumnBinding">
+        <Source xsi:type="ColumnBinding" dwd:design-time-name="df151c10-046b-477b-a96c-eb552f1353ff">
           <TableID>dbo_GPINVENTCATALOG</TableID>
           <ColumnID>CATALOGID</ColumnID>
         </Source>
       </NameColumn>
       <Translations>
-        <Translation>
+        <Translation dwd:design-time-name="feda74fa-3b80-4e77-bed4-e0ed8c43ae23">
           <Language>3082</Language>
           <Caption>Catálogo</Caption>
         </Translation>
       </Translations>
       <AttributeRelationships>
-        <AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="b9778cc2-9b2f-438c-923f-3da7183c4787">
           <AttributeID>CATALOG NAME</AttributeID>
           <Name>Catalog Name</Name>
           <Translations>
-            <Translation>
+            <Translation dwd:design-time-name="21911eff-8748-4921-a6af-be66a531aa3a">
               <Language>3082</Language>
               <Caption>Nombre del catálogo</Caption>
             </Translation>
@@ -220,35 +283,35 @@
       <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
       <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
     </Attribute>
-    <Attribute>
+    <Attribute dwd:design-time-name="df10aa5b-3f86-4fdb-8a21-9b091a57dbc6">
       <ID>PRINCIPAL</ID>
       <Name>Is main</Name>
       <KeyColumns>
-        <KeyColumn>
+        <KeyColumn dwd:design-time-name="5c634356-a24e-4409-97fa-498646675be6">
           <DataType>WChar</DataType>
           <DataSize>4</DataSize>
-          <Source xsi:type="ColumnBinding">
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="28256b34-2e77-4b23-9203-f2e59e8040b4">
             <TableID>dbo_GPINVENTCATALOG</TableID>
             <ColumnID>DATAAREAID</ColumnID>
           </Source>
         </KeyColumn>
-        <KeyColumn>
+        <KeyColumn dwd:design-time-name="b9eb05b7-f8e9-478f-a596-cbe0832797bf">
           <DataType>Integer</DataType>
-          <Source xsi:type="ColumnBinding">
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="a9c42979-d1d3-49ad-bf85-83df61124cfb">
             <TableID>dbo_GPINVENTCATALOG</TableID>
             <ColumnID>PRINCIPAL</ColumnID>
           </Source>
         </KeyColumn>
       </KeyColumns>
-      <NameColumn>
+      <NameColumn dwd:design-time-name="3c9192d8-0096-4374-8b5e-8d186dc33e84">
         <DataType>WChar</DataType>
-        <Source xsi:type="ColumnBinding">
+        <Source xsi:type="ColumnBinding" dwd:design-time-name="370b6453-1485-469e-8dc5-c11ab4c4395b">
           <TableID>dbo_GPINVENTCATALOG</TableID>
           <ColumnID>PRINCIPAL</ColumnID>
         </Source>
       </NameColumn>
       <Translations>
-        <Translation>
+        <Translation dwd:design-time-name="775b52ae-bc5c-413f-8d8c-27155b82bcd9">
           <Language>3082</Language>
           <Caption>Es principal</Caption>
         </Translation>
@@ -256,35 +319,35 @@
       <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
       <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
     </Attribute>
-    <Attribute>
+    <Attribute dwd:design-time-name="f160d7ea-d734-4042-97d6-1075feb15dd7">
       <ID>PAGENUM</ID>
       <Name>Page Num</Name>
       <KeyColumns>
-        <KeyColumn>
+        <KeyColumn dwd:design-time-name="9c112ac3-1d84-45d6-8289-e82452be8f6b">
           <DataType>WChar</DataType>
           <DataSize>4</DataSize>
-          <Source xsi:type="ColumnBinding">
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="97d9643f-bed2-4f32-a06c-e29cf4d42ffd">
             <TableID>dbo_GPINVENTCATALOG</TableID>
             <ColumnID>DATAAREAID</ColumnID>
           </Source>
         </KeyColumn>
-        <KeyColumn>
+        <KeyColumn dwd:design-time-name="67a690c6-d461-4fa8-a012-150f0eba9460">
           <DataType>Integer</DataType>
-          <Source xsi:type="ColumnBinding">
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="8cee6b1d-8552-4541-9011-f03fd688ba60">
             <TableID>dbo_GPINVENTCATALOG</TableID>
             <ColumnID>PAGENUM</ColumnID>
           </Source>
         </KeyColumn>
       </KeyColumns>
-      <NameColumn>
+      <NameColumn dwd:design-time-name="d9130111-5b3d-48a8-ba90-708e55729e42">
         <DataType>WChar</DataType>
-        <Source xsi:type="ColumnBinding">
+        <Source xsi:type="ColumnBinding" dwd:design-time-name="b7e1f89a-6985-45ce-b5b4-fbcb3708001f">
           <TableID>dbo_GPINVENTCATALOG</TableID>
           <ColumnID>PAGENUM</ColumnID>
         </Source>
       </NameColumn>
       <Translations>
-        <Translation>
+        <Translation dwd:design-time-name="18c04ef6-8fff-43f0-b33a-5ea31d426c76">
           <Language>3082</Language>
           <Caption>Núm. de página</Caption>
         </Translation>
@@ -293,37 +356,37 @@
       <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
       <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
     </Attribute>
-    <Attribute>
+    <Attribute dwd:design-time-name="c7f6e6ca-66b8-41c1-8b03-3f186ff112bf">
       <ID>CHAPTER NAME</ID>
       <Name>Chapter Name</Name>
       <KeyColumns>
-        <KeyColumn>
+        <KeyColumn dwd:design-time-name="0bb3110e-016f-4b89-897f-a08ab42ffc59">
           <DataType>WChar</DataType>
           <DataSize>4</DataSize>
-          <Source xsi:type="ColumnBinding">
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="767044be-0ab7-4f0b-b653-32484a558065">
             <TableID>dbo_GPINVENTCATALOG</TableID>
             <ColumnID>DATAAREAID</ColumnID>
           </Source>
         </KeyColumn>
-        <KeyColumn>
+        <KeyColumn dwd:design-time-name="3a577a8a-f89e-48e9-b404-afefd738d19f">
           <DataType>WChar</DataType>
-          <DataSize>60</DataSize>
-          <Source xsi:type="ColumnBinding">
+          <DataSize>100</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="cfd9ab9b-3d24-4457-85e8-fbecad7fd275">
             <TableID>dbo_GPINVENTCATALOG</TableID>
             <ColumnID>CHAPTER_NAME</ColumnID>
           </Source>
         </KeyColumn>
       </KeyColumns>
-      <NameColumn>
+      <NameColumn dwd:design-time-name="583cb435-fb20-40e0-ba1c-3a61b0cfd255">
         <DataType>WChar</DataType>
-        <DataSize>60</DataSize>
-        <Source xsi:type="ColumnBinding">
+        <DataSize>100</DataSize>
+        <Source xsi:type="ColumnBinding" dwd:design-time-name="6aa56c9f-8d3c-44ff-8dc9-23305d732ddf">
           <TableID>dbo_GPINVENTCATALOG</TableID>
           <ColumnID>CHAPTER_NAME</ColumnID>
         </Source>
       </NameColumn>
       <Translations>
-        <Translation>
+        <Translation dwd:design-time-name="1dfc6811-ca15-4010-a8fc-a74b919b0931">
           <Language>3082</Language>
           <Caption>Capítulo</Caption>
         </Translation>
@@ -331,37 +394,37 @@
       <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
       <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
     </Attribute>
-    <Attribute>
+    <Attribute dwd:design-time-name="df32f4c1-b4c4-411f-b945-128bdc8c998a">
       <ID>CATALOG NAME</ID>
       <Name>Catalog Name</Name>
       <KeyColumns>
-        <KeyColumn>
+        <KeyColumn dwd:design-time-name="02338e60-1266-4027-87e2-5691558eb9a2">
           <DataType>WChar</DataType>
           <DataSize>4</DataSize>
-          <Source xsi:type="ColumnBinding">
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="5e02d900-5edf-41a9-9f36-8ec21694ca9d">
             <TableID>dbo_GPINVENTCATALOG</TableID>
             <ColumnID>DATAAREAID</ColumnID>
           </Source>
         </KeyColumn>
-        <KeyColumn>
+        <KeyColumn dwd:design-time-name="c4cc58c0-ec94-49c8-8768-4bc437e98da8">
           <DataType>WChar</DataType>
-          <DataSize>60</DataSize>
-          <Source xsi:type="ColumnBinding">
+          <DataSize>100</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="6b6e7266-9849-45ca-93cf-450989285169">
             <TableID>dbo_GPINVENTCATALOG</TableID>
             <ColumnID>CATALOG_NAME</ColumnID>
           </Source>
         </KeyColumn>
       </KeyColumns>
-      <NameColumn>
+      <NameColumn dwd:design-time-name="cacfc967-bf8a-4d9a-ac95-138801fbc850">
         <DataType>WChar</DataType>
-        <DataSize>60</DataSize>
-        <Source xsi:type="ColumnBinding">
+        <DataSize>100</DataSize>
+        <Source xsi:type="ColumnBinding" dwd:design-time-name="979bedaf-f189-44ec-ae43-cda31b35c81e">
           <TableID>dbo_GPINVENTCATALOG</TableID>
           <ColumnID>CATALOG_NAME</ColumnID>
         </Source>
       </NameColumn>
       <Translations>
-        <Translation>
+        <Translation dwd:design-time-name="211e97ab-95f2-48de-8c18-e8b60447d237">
           <Language>3082</Language>
           <Caption>Nombre del catálogo</Caption>
         </Translation>
@@ -369,37 +432,37 @@
       <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
       <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
     </Attribute>
-    <Attribute>
+    <Attribute dwd:design-time-name="e6276c28-e583-45be-9103-d0010f5e26ad">
       <ID>ITEM NAME</ID>
       <Name>Item Name</Name>
       <KeyColumns>
-        <KeyColumn>
+        <KeyColumn dwd:design-time-name="25d9797f-99cc-4a7e-862b-56fe1b8047a7">
           <DataType>WChar</DataType>
           <DataSize>4</DataSize>
-          <Source xsi:type="ColumnBinding">
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="4feea78f-9eb9-45e8-9814-9cd18db08f62">
             <TableID>dbo_GPINVENTCATALOG</TableID>
             <ColumnID>DATAAREAID</ColumnID>
           </Source>
         </KeyColumn>
-        <KeyColumn>
+        <KeyColumn dwd:design-time-name="65a8f2cc-fb15-47d5-a334-c56f75f25fe4">
           <DataType>WChar</DataType>
-          <DataSize>60</DataSize>
-          <Source xsi:type="ColumnBinding">
+          <DataSize>100</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="8a1fc0bb-14d2-410b-9fb8-9c9a2d16ef65">
             <TableID>dbo_GPINVENTCATALOG</TableID>
             <ColumnID>ITEM_NAME</ColumnID>
           </Source>
         </KeyColumn>
       </KeyColumns>
-      <NameColumn>
+      <NameColumn dwd:design-time-name="8ee47894-1cb9-402a-814a-7fab856f7da5">
         <DataType>WChar</DataType>
-        <DataSize>60</DataSize>
-        <Source xsi:type="ColumnBinding">
+        <DataSize>100</DataSize>
+        <Source xsi:type="ColumnBinding" dwd:design-time-name="49d0a31f-d46e-4473-9fef-e4c62257750c">
           <TableID>dbo_GPINVENTCATALOG</TableID>
           <ColumnID>ITEM_NAME</ColumnID>
         </Source>
       </NameColumn>
       <Translations>
-        <Translation>
+        <Translation dwd:design-time-name="34378e28-5d6e-44b9-8679-78b83a3d01c1">
           <Language>3082</Language>
           <Caption>Nombre de artículo</Caption>
         </Translation>
@@ -409,79 +472,79 @@
     </Attribute>
   </Attributes>
   <Hierarchies>
-    <Hierarchy>
+    <Hierarchy dwd:design-time-name="89e7f43f-e1cf-4ff7-9738-e39ce290d1e0">
       <ID>Hierarchy 1</ID>
       <Name>Cat-Cap-Pag</Name>
       <Levels>
-        <Level>
+        <Level dwd:design-time-name="e92d1fc1-9716-48ac-af4c-f46d5602dc7b">
           <ID>Catalog Name</ID>
           <Name>Catalog Name</Name>
           <SourceAttributeID>CATALOG NAME</SourceAttributeID>
           <Translations>
-            <Translation>
+            <Translation dwd:design-time-name="cee708e1-c908-44f4-a0fe-b9ad85791718">
               <Language>3082</Language>
               <Caption>Nombre del catálogo</Caption>
             </Translation>
           </Translations>
         </Level>
-        <Level>
+        <Level dwd:design-time-name="69f6897a-3703-4bc8-91d0-577628881095">
           <ID>Chapter Name</ID>
           <Name>Chapter Name</Name>
           <SourceAttributeID>CHAPTER NAME</SourceAttributeID>
         </Level>
-        <Level>
+        <Level dwd:design-time-name="9b494dcb-1d18-40ee-99e1-c08a0df63982">
           <ID>Page Num</ID>
           <Name>Page Num</Name>
           <SourceAttributeID>PAGENUM</SourceAttributeID>
         </Level>
-        <Level>
+        <Level dwd:design-time-name="8ffb94bd-797c-485a-bacd-91f289871e77">
           <ID>Item</ID>
           <Name>Item</Name>
           <SourceAttributeID>ITEMID</SourceAttributeID>
         </Level>
       </Levels>
     </Hierarchy>
-    <Hierarchy>
+    <Hierarchy dwd:design-time-name="a36fe26d-e10c-4c71-9d2b-060e8fed8b48">
       <ID>Hierarchy</ID>
       <Name>Cat-Pag</Name>
       <Levels>
-        <Level>
+        <Level dwd:design-time-name="d20131e6-83e0-4da6-9055-ba925c0bcbfb">
           <ID>Catalog Name</ID>
           <Name>Catalog Name</Name>
           <SourceAttributeID>CATALOG NAME</SourceAttributeID>
         </Level>
-        <Level>
+        <Level dwd:design-time-name="e91805c1-b402-4292-86c9-48b7d853143d">
           <ID>Page Num</ID>
           <Name>Page Num</Name>
           <SourceAttributeID>PAGENUM</SourceAttributeID>
         </Level>
-        <Level>
+        <Level dwd:design-time-name="6889c25b-5562-4b43-adbe-643bd763c5b1">
           <ID>Item</ID>
           <Name>Item</Name>
           <SourceAttributeID>ITEMID</SourceAttributeID>
         </Level>
       </Levels>
     </Hierarchy>
-    <Hierarchy>
+    <Hierarchy dwd:design-time-name="2d782964-abb4-46d5-8fa2-ce2d44a53a57">
       <ID>Jerarquía</ID>
       <Name>Jerarquía</Name>
       <Levels>
-        <Level>
+        <Level dwd:design-time-name="d618824d-cfa0-45f0-8b2f-b965354d0719">
           <ID>Catalog</ID>
           <Name>Catalog</Name>
           <SourceAttributeID>CATALOGID</SourceAttributeID>
         </Level>
-        <Level>
+        <Level dwd:design-time-name="d081ca7d-06f2-49e4-bcd3-9b00ed938fc4">
           <ID>Chapter Name</ID>
           <Name>Chapter Name</Name>
           <SourceAttributeID>CHAPTER NAME</SourceAttributeID>
         </Level>
-        <Level>
+        <Level dwd:design-time-name="39fd72ea-4062-4343-bbde-45504b2d97c2">
           <ID>Page Num</ID>
           <Name>Page Num</Name>
           <SourceAttributeID>PAGENUM</SourceAttributeID>
         </Level>
-        <Level>
+        <Level dwd:design-time-name="6638caf1-a9c4-48a1-a284-0d94d10a73bb">
           <ID>Item</ID>
           <Name>Item</Name>
           <SourceAttributeID>ITEMID</SourceAttributeID>
@@ -489,12 +552,12 @@
       </Levels>
     </Hierarchy>
   </Hierarchies>
-  <ProactiveCaching>
+  <ProactiveCaching dwd:design-time-name="9855c927-74be-46d8-a460-0052161e5d39">
     <SilenceInterval>-PT1S</SilenceInterval>
     <Latency>-PT1S</Latency>
     <SilenceOverrideInterval>-PT1S</SilenceOverrideInterval>
     <ForceRebuildInterval>-PT1S</ForceRebuildInterval>
-    <Source xsi:type="ProactiveCachingInheritedBinding" />
+    <Source xsi:type="ProactiveCachingInheritedBinding" dwd:design-time-name="4a4793e5-f2be-4c32-9c4b-38f2a77bcd63" />
   </ProactiveCaching>
   <ddl300:ProcessingState>Unprocessed</ddl300:ProcessingState>
 </Dimension>

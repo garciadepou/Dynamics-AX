@@ -1,14 +1,77 @@
-﻿<Dimension xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:ddl200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:ddl200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:ddl300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:ddl300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:ddl400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:ddl400_400="http://schemas.microsoft.com/analysisservices/2012/engine/400/400" xmlns:ddl500="http://schemas.microsoft.com/analysisservices/2013/engine/500" xmlns:ddl500_500="http://schemas.microsoft.com/analysisservices/2013/engine/500/500" xmlns="http://schemas.microsoft.com/analysisservices/2003/engine">
+﻿<Dimension xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:ddl200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:ddl200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:ddl300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:ddl300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:ddl400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:ddl400_400="http://schemas.microsoft.com/analysisservices/2012/engine/400/400" xmlns:ddl500="http://schemas.microsoft.com/analysisservices/2013/engine/500" xmlns:ddl500_500="http://schemas.microsoft.com/analysisservices/2013/engine/500/500" xmlns:dwd="http://schemas.microsoft.com/DataWarehouse/Designer/1.0" dwd:design-time-name="87aa661c-919f-4839-9a08-5dfa11daf354" xmlns="http://schemas.microsoft.com/analysisservices/2003/engine">
   <ID>Stock Lacks</ID>
   <Name>Stock Lacks</Name>
   <CreatedTimestamp>2018-10-01T14:54:22.726667Z</CreatedTimestamp>
   <LastSchemaUpdate>2018-12-03T08:33:39.406667Z</LastSchemaUpdate>
+  <Annotations>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramLayout</Name>
+      <Value>
+        <dds xmlns="">
+          <diagram fontclsid="{0BE35203-8F91-11CE-9DE3-00AA004BB851}" mouseiconclsid="{0BE35204-8F91-11CE-9DE3-00AA004BB851}" defaultlayout="MSDDS.Rectilinear" defaultlineroute="MSDDS.Rectilinear" version="7" nextobject="2" scale="100" pagebreakanchorx="0" pagebreakanchory="0" pagebreaksizex="0" pagebreaksizey="0" scrollleft="-4690" scrolltop="-7131" gridx="150" gridy="150" marginx="5000" marginy="5000" zoom="100" x="13732" y="19262" backcolor="16777215" defaultpersistence="2" PrintPageNumbersMode="3" PrintMarginTop="0" PrintMarginBottom="635" PrintMarginLeft="0" PrintMarginRight="0" marqueeselectionmode="0" mousepointer="0" snaptogrid="0" autotypeannotation="1" showscrollbars="0" viewpagebreaks="0" donotforceconnectorsbehindshapes="1" backpictureclsid="{00000000-0000-0000-0000-000000000000}">
+            <font>
+              <ddsxmlobjectstreamwrapper binary="01000000900144420100065461686f6d61" />
+            </font>
+            <mouseicon>
+              <ddsxmlobjectstreamwrapper binary="6c74000000000000" />
+            </mouseicon>
+          </diagram>
+          <layoutmanager>
+            <ddsxmlobj />
+          </layoutmanager>
+          <ddscontrol controlprogid="DdsShapes.DdsObjectManagedBridge" tooltip="GPSTOCKLACKS" left="20" top="0" logicalid="1" controlid="1" masterid="0" hint1="0" hint2="0" width="4313" height="5000" noresize="0" nomove="0" nodefaultattachpoints="0" autodrag="1" usedefaultiddshape="1" selectable="1" showselectionhandles="1" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+            <control>
+              <ddsxmlobjectstreaminitwrapper binary="000e0000d910000088130000" />
+            </control>
+            <layoutobject>
+              <ddsxmlobj>
+                <property name="LogicalObject" value="dbo_GPSTOCKLACKS" vartype="8" />
+              </ddsxmlobj>
+            </layoutobject>
+            <shape groupshapeid="0" groupnode="0" />
+          </ddscontrol>
+        </dds>
+      </Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ShowFriendlyNames</Name>
+      <Value>true</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ShowRelationshipNames</Name>
+      <Value>false</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:UseDiagramDefaultLayout</Name>
+      <Value>true</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramViewPortLeft</Name>
+      <Value>-4690</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramViewPortTop</Name>
+      <Value>-7131</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramBoundingLeft</Name>
+      <Value>20</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramBoundingTop</Name>
+      <Value>0</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramZoom</Name>
+      <Value>100</Value>
+    </Annotation>
+  </Annotations>
   <LastProcessed>2019-02-15T07:32:06.25Z</LastProcessed>
   <State>Processed</State>
-  <Source xsi:type="DataSourceViewBinding">
+  <Source xsi:type="DataSourceViewBinding" dwd:design-time-name="d0f11b2d-1dd4-45d7-b2e0-5a543033e861">
     <DataSourceViewID>Dynamics AX</DataSourceViewID>
   </Source>
-  <ErrorConfiguration>
+  <ErrorConfiguration dwd:design-time-name="ab4f2cbf-618d-458c-ae03-571947f3d57a">
     <KeyErrorLimitAction>StopLogging</KeyErrorLimitAction>
     <KeyNotFound>IgnoreError</KeyNotFound>
     <NullKeyNotAllowed>IgnoreError</NullKeyNotAllowed>
@@ -18,123 +81,123 @@
   <Collation>Modern_Spanish_CI_AS</Collation>
   <UnknownMemberName>Unknown</UnknownMemberName>
   <Translations>
-    <Translation>
+    <Translation dwd:design-time-name="e2a01c26-64c6-40c1-af73-f6d61d4b9440">
       <Language>3082</Language>
       <Caption>Faltas de Stock</Caption>
     </Translation>
   </Translations>
   <Attributes>
-    <Attribute>
+    <Attribute dwd:design-time-name="65ac3fa9-0580-4661-a7b7-887e89a47d32">
       <ID>GPSTOCKLACKS - DATAAREAID</ID>
       <Name>Stock Lacks</Name>
       <Usage>Key</Usage>
       <KeyColumns>
-        <KeyColumn>
+        <KeyColumn dwd:design-time-name="f8487456-e24d-494d-bcad-05bd03f2ddd4">
           <DataType>WChar</DataType>
           <DataSize>4</DataSize>
-          <Source xsi:type="ColumnBinding">
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="b09a5b4b-b02d-4f18-932e-6e32b665b203">
             <TableID>dbo_GPSTOCKLACKS</TableID>
             <ColumnID>DATAAREAID</ColumnID>
           </Source>
         </KeyColumn>
-        <KeyColumn>
+        <KeyColumn dwd:design-time-name="bf2ab47a-7310-4e60-892c-5341102e94e6">
           <DataType>WChar</DataType>
           <DataSize>20</DataSize>
-          <Source xsi:type="ColumnBinding">
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="78c9135c-4b56-49d3-a607-488ed6b20d4e">
             <TableID>dbo_GPSTOCKLACKS</TableID>
             <ColumnID>SALESREFID</ColumnID>
           </Source>
         </KeyColumn>
-        <KeyColumn>
+        <KeyColumn dwd:design-time-name="48c92de0-6138-4eea-b54b-35a0bdc81c8b">
           <DataType>WChar</DataType>
           <DataSize>20</DataSize>
-          <Source xsi:type="ColumnBinding">
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="848e4396-5d7a-43e8-b0c8-cb9d72ee204f">
             <TableID>dbo_GPSTOCKLACKS</TableID>
             <ColumnID>SALESLINEREFID</ColumnID>
           </Source>
         </KeyColumn>
-        <KeyColumn>
+        <KeyColumn dwd:design-time-name="5942ae67-e486-41e2-862c-5e4345d1b38d">
           <DataType>Date</DataType>
-          <Source xsi:type="ColumnBinding">
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="490b86d1-02f6-486a-9910-1c5e38ebee6b">
             <TableID>dbo_GPSTOCKLACKS</TableID>
             <ColumnID>TRANSDATETIME</ColumnID>
           </Source>
         </KeyColumn>
       </KeyColumns>
-      <NameColumn>
+      <NameColumn dwd:design-time-name="392aab66-76a5-48de-aa51-c51d7ef24c79">
         <DataType>WChar</DataType>
         <DataSize>41</DataSize>
-        <Source xsi:type="ColumnBinding">
+        <Source xsi:type="ColumnBinding" dwd:design-time-name="0f13d5eb-0e0a-4997-bd49-3bfac6c447dc">
           <TableID>dbo_GPSTOCKLACKS</TableID>
           <ColumnID>ID</ColumnID>
         </Source>
       </NameColumn>
       <AttributeRelationships>
-        <AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="2911c774-504f-473b-9700-d5e814ee8462">
           <AttributeID>SALESREFID</AttributeID>
           <Name>Sales Id</Name>
           <Translations>
-            <Translation>
+            <Translation dwd:design-time-name="682623c5-13a5-4f22-b917-380da3851ffa">
               <Language>3082</Language>
               <Caption>Pedido de Ventas</Caption>
             </Translation>
           </Translations>
         </AttributeRelationship>
-        <AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="1e9b38e1-1c63-4070-9f26-15062b67e026">
           <AttributeID>INVENTLOCATIONID</AttributeID>
           <Name>Invent Location ID</Name>
           <Translations>
-            <Translation>
+            <Translation dwd:design-time-name="cfa2320e-57de-4290-bbf6-649b3632b728">
               <Language>3082</Language>
               <Caption>Almacen</Caption>
             </Translation>
           </Translations>
         </AttributeRelationship>
-        <AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="1c169087-7b09-40c6-9d37-739b24d383c1">
           <AttributeID>ITEMPRIMARYVENDID</AttributeID>
           <Name>Item Primary Vend ID</Name>
           <Translations>
-            <Translation>
+            <Translation dwd:design-time-name="6f488ac5-66b8-46af-8818-42c98fc78409">
               <Language>3082</Language>
               <Caption>Proveedor</Caption>
             </Translation>
           </Translations>
         </AttributeRelationship>
-        <AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="9bcabef3-d35a-4ca4-9fce-8ba4fd1fd576">
           <AttributeID>CIAL INDAL</AttributeID>
           <Name>CIAL INDAL</Name>
           <Translations>
-            <Translation>
+            <Translation dwd:design-time-name="5112aaae-af79-4e61-aade-9aed01ebf233">
               <Language>3082</Language>
               <Caption>CIAL_INDAL</Caption>
             </Translation>
           </Translations>
         </AttributeRelationship>
-        <AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="fb6beb5b-50ad-4ff5-8e84-359a56d6cf2f">
           <AttributeID>ITEMNAME</AttributeID>
           <Name>Item Name</Name>
           <Translations>
-            <Translation>
+            <Translation dwd:design-time-name="2c6c07a2-823a-440f-bc40-25be1ca79029">
               <Language>3082</Language>
               <Caption>Nombre del Artículo</Caption>
             </Translation>
           </Translations>
         </AttributeRelationship>
-        <AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="543289ae-cd0d-4b18-b7ad-6f39ebe2c6a8">
           <AttributeID>ITEMID</AttributeID>
           <Name>Item ID</Name>
           <Translations>
-            <Translation>
+            <Translation dwd:design-time-name="f92e14fa-09ff-41d2-98ce-c848b2ef3cb1">
               <Language>3082</Language>
               <Caption>Artículo</Caption>
             </Translation>
           </Translations>
         </AttributeRelationship>
-        <AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="d95f8b01-34cd-47df-8cb6-3eef59c42c4a">
           <AttributeID>NAME</AttributeID>
           <Name>NAME_</Name>
           <Translations>
-            <Translation>
+            <Translation dwd:design-time-name="fb96a7f5-b5fa-4bb5-bfe9-c61667031c01">
               <Language>3082</Language>
               <Caption>Nombre Proveedor</Caption>
             </Translation>
@@ -145,37 +208,37 @@
       <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
       <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
     </Attribute>
-    <Attribute>
+    <Attribute dwd:design-time-name="b848cf50-6a6b-47dc-a4bc-c79a1f65939d">
       <ID>SALESREFID</ID>
       <Name>Sales Id</Name>
       <KeyColumns>
-        <KeyColumn>
+        <KeyColumn dwd:design-time-name="f20555d1-3c1e-4088-b90c-24084c83a705">
           <DataType>WChar</DataType>
           <DataSize>4</DataSize>
-          <Source xsi:type="ColumnBinding">
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="0c7e80b9-fb0c-4dad-a96b-2b84584580a0">
             <TableID>dbo_GPSTOCKLACKS</TableID>
             <ColumnID>DATAAREAID</ColumnID>
           </Source>
         </KeyColumn>
-        <KeyColumn>
+        <KeyColumn dwd:design-time-name="57d04f9a-b8a2-4a7c-948b-6fcb3a4bb20c">
           <DataType>WChar</DataType>
           <DataSize>20</DataSize>
-          <Source xsi:type="ColumnBinding">
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="e0f2122a-3b5b-41c6-858e-b042b9f9ae80">
             <TableID>dbo_GPSTOCKLACKS</TableID>
             <ColumnID>SALESREFID</ColumnID>
           </Source>
         </KeyColumn>
       </KeyColumns>
-      <NameColumn>
+      <NameColumn dwd:design-time-name="438cf670-8c8e-49bb-a0e2-db3a0321e98e">
         <DataType>WChar</DataType>
         <DataSize>20</DataSize>
-        <Source xsi:type="ColumnBinding">
+        <Source xsi:type="ColumnBinding" dwd:design-time-name="8dfd90b0-821f-4367-b5ea-64a9b0f52b78">
           <TableID>dbo_GPSTOCKLACKS</TableID>
           <ColumnID>SALESREFID</ColumnID>
         </Source>
       </NameColumn>
       <Translations>
-        <Translation>
+        <Translation dwd:design-time-name="b6c0c642-3a91-436b-ad87-0bde90373b9a">
           <Language>3082</Language>
           <Caption>Pedido de Ventas</Caption>
         </Translation>
@@ -183,29 +246,29 @@
       <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
       <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
     </Attribute>
-    <Attribute>
+    <Attribute dwd:design-time-name="7b96c44e-45f3-4243-b732-5a0e1ae2e9b6">
       <ID>INVENTLOCATIONID</ID>
       <Name>Invent Location ID</Name>
       <KeyColumns>
-        <KeyColumn>
+        <KeyColumn dwd:design-time-name="2cddec18-3842-4213-9d58-ea1e591b0b2d">
           <DataType>WChar</DataType>
           <DataSize>10</DataSize>
-          <Source xsi:type="ColumnBinding">
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="c30493b1-2564-410e-be7e-c0042a3d534d">
             <TableID>dbo_GPSTOCKLACKS</TableID>
             <ColumnID>INVENTLOCATIONID</ColumnID>
           </Source>
         </KeyColumn>
       </KeyColumns>
-      <NameColumn>
+      <NameColumn dwd:design-time-name="d8a3df54-1fd9-4417-a2ee-4b2a24fda20d">
         <DataType>WChar</DataType>
         <DataSize>10</DataSize>
-        <Source xsi:type="ColumnBinding">
+        <Source xsi:type="ColumnBinding" dwd:design-time-name="7d47f0cb-61e4-4b9c-9776-a6a6f3abd1ef">
           <TableID>dbo_GPSTOCKLACKS</TableID>
           <ColumnID>INVENTLOCATIONID</ColumnID>
         </Source>
       </NameColumn>
       <Translations>
-        <Translation>
+        <Translation dwd:design-time-name="1930a860-7ba7-4a07-9924-80dc625bf474">
           <Language>3082</Language>
           <Caption>Almacen</Caption>
         </Translation>
@@ -213,29 +276,29 @@
       <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
       <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
     </Attribute>
-    <Attribute>
+    <Attribute dwd:design-time-name="b936bbc1-0730-4d12-8227-cda842e7ff43">
       <ID>ITEMPRIMARYVENDID</ID>
       <Name>Item Primary Vend ID</Name>
       <KeyColumns>
-        <KeyColumn>
+        <KeyColumn dwd:design-time-name="22377c2c-e0f2-4525-9800-785fa23bcab4">
           <DataType>WChar</DataType>
           <DataSize>20</DataSize>
-          <Source xsi:type="ColumnBinding">
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="764749b5-f955-4196-a89b-e3a6cee54c3c">
             <TableID>dbo_GPSTOCKLACKS</TableID>
             <ColumnID>ITEMPRIMARYVENDID</ColumnID>
           </Source>
         </KeyColumn>
       </KeyColumns>
-      <NameColumn>
+      <NameColumn dwd:design-time-name="0b7b5e79-0bdd-40a9-836f-0f4cd151af4b">
         <DataType>WChar</DataType>
         <DataSize>20</DataSize>
-        <Source xsi:type="ColumnBinding">
+        <Source xsi:type="ColumnBinding" dwd:design-time-name="6cf6e3aa-7b00-4056-bde5-4090334ed1f7">
           <TableID>dbo_GPSTOCKLACKS</TableID>
           <ColumnID>ITEMPRIMARYVENDID</ColumnID>
         </Source>
       </NameColumn>
       <Translations>
-        <Translation>
+        <Translation dwd:design-time-name="55322f38-6c1a-4384-8895-3f8b8cd849ae">
           <Language>3082</Language>
           <Caption>Proveedor</Caption>
         </Translation>
@@ -243,29 +306,29 @@
       <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
       <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
     </Attribute>
-    <Attribute>
+    <Attribute dwd:design-time-name="7adf190f-db46-4004-a4c2-40b339ca0ca1">
       <ID>CIAL INDAL</ID>
       <Name>CIAL INDAL</Name>
       <KeyColumns>
-        <KeyColumn>
+        <KeyColumn dwd:design-time-name="ffeb3125-67f8-4fc8-ae2e-df3277bf2c3e">
           <DataType>WChar</DataType>
           <DataSize>5</DataSize>
-          <Source xsi:type="ColumnBinding">
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="c21af0ef-50ec-4bf3-be6a-eeb914c1957e">
             <TableID>dbo_GPSTOCKLACKS</TableID>
             <ColumnID>CIAL_INDAL</ColumnID>
           </Source>
         </KeyColumn>
       </KeyColumns>
-      <NameColumn>
+      <NameColumn dwd:design-time-name="3141f9ba-b987-407c-82ab-c41e5c8cf8e6">
         <DataType>WChar</DataType>
         <DataSize>5</DataSize>
-        <Source xsi:type="ColumnBinding">
+        <Source xsi:type="ColumnBinding" dwd:design-time-name="e97ce651-0c41-44f7-af54-8c671d82c84a">
           <TableID>dbo_GPSTOCKLACKS</TableID>
           <ColumnID>CIAL_INDAL</ColumnID>
         </Source>
       </NameColumn>
       <Translations>
-        <Translation>
+        <Translation dwd:design-time-name="2fc3fe32-7f8c-4483-8c8c-491a7d16051e">
           <Language>3082</Language>
           <Caption>CIAL_INDAL</Caption>
         </Translation>
@@ -273,29 +336,29 @@
       <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
       <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
     </Attribute>
-    <Attribute>
+    <Attribute dwd:design-time-name="f7379d46-f3b8-4fa8-9924-7bdf897ad911">
       <ID>ITEMNAME</ID>
       <Name>Item Name</Name>
       <KeyColumns>
-        <KeyColumn>
+        <KeyColumn dwd:design-time-name="ce23412a-ad3c-4bee-9d88-4686c84d4246">
           <DataType>WChar</DataType>
-          <DataSize>60</DataSize>
-          <Source xsi:type="ColumnBinding">
+          <DataSize>100</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="653dacb5-f4e4-438d-b95f-a5f92e8f5875">
             <TableID>dbo_GPSTOCKLACKS</TableID>
             <ColumnID>ITEMNAME</ColumnID>
           </Source>
         </KeyColumn>
       </KeyColumns>
-      <NameColumn>
+      <NameColumn dwd:design-time-name="688c390d-dae6-4fad-976c-4f70ae359a9f">
         <DataType>WChar</DataType>
-        <DataSize>60</DataSize>
-        <Source xsi:type="ColumnBinding">
+        <DataSize>100</DataSize>
+        <Source xsi:type="ColumnBinding" dwd:design-time-name="07b97de4-15cf-43a1-838b-3cf29fbe8e3e">
           <TableID>dbo_GPSTOCKLACKS</TableID>
           <ColumnID>ITEMNAME</ColumnID>
         </Source>
       </NameColumn>
       <Translations>
-        <Translation>
+        <Translation dwd:design-time-name="3d8b580a-9240-43f1-a541-228f34a9fdc4">
           <Language>3082</Language>
           <Caption>Nombre del Artículo</Caption>
         </Translation>
@@ -303,29 +366,29 @@
       <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
       <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
     </Attribute>
-    <Attribute>
+    <Attribute dwd:design-time-name="c2cc88b4-da91-40e5-bac4-ba42c9078c5f">
       <ID>ITEMID</ID>
       <Name>Item ID</Name>
       <KeyColumns>
-        <KeyColumn>
+        <KeyColumn dwd:design-time-name="59d7b4fb-5d98-4495-ab97-9acfa2b8c49d">
           <DataType>WChar</DataType>
           <DataSize>20</DataSize>
-          <Source xsi:type="ColumnBinding">
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="62a511d5-e7ba-412f-8a5a-796fe98fa661">
             <TableID>dbo_GPSTOCKLACKS</TableID>
             <ColumnID>ITEMID</ColumnID>
           </Source>
         </KeyColumn>
       </KeyColumns>
-      <NameColumn>
+      <NameColumn dwd:design-time-name="43c9a0bf-9cce-4db0-8eaa-7aed15dab3fc">
         <DataType>WChar</DataType>
         <DataSize>20</DataSize>
-        <Source xsi:type="ColumnBinding">
+        <Source xsi:type="ColumnBinding" dwd:design-time-name="a0b2514d-5e9d-400d-8df5-067370bf5360">
           <TableID>dbo_GPSTOCKLACKS</TableID>
           <ColumnID>ITEMID</ColumnID>
         </Source>
       </NameColumn>
       <Translations>
-        <Translation>
+        <Translation dwd:design-time-name="e37b3193-a434-4f1f-b4cc-17d2de3ba4e3">
           <Language>3082</Language>
           <Caption>Artículo</Caption>
         </Translation>
@@ -333,29 +396,29 @@
       <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
       <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
     </Attribute>
-    <Attribute>
+    <Attribute dwd:design-time-name="d562e18d-54d4-49ba-b17e-766475d615d2">
       <ID>NAME</ID>
       <Name>Vendor</Name>
       <KeyColumns>
-        <KeyColumn>
+        <KeyColumn dwd:design-time-name="79238a9f-80ae-4e94-ae21-206a95e68b52">
           <DataType>WChar</DataType>
           <DataSize>60</DataSize>
-          <Source xsi:type="ColumnBinding">
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="41299e19-0cb4-48e4-96a6-c5e74b1ef7da">
             <TableID>dbo_GPSTOCKLACKS</TableID>
             <ColumnID>NAME</ColumnID>
           </Source>
         </KeyColumn>
       </KeyColumns>
-      <NameColumn>
+      <NameColumn dwd:design-time-name="8a344051-e8b1-4688-be87-443129c805f1">
         <DataType>WChar</DataType>
         <DataSize>60</DataSize>
-        <Source xsi:type="ColumnBinding">
+        <Source xsi:type="ColumnBinding" dwd:design-time-name="35eea1ce-147d-44eb-a520-2890059faef1">
           <TableID>dbo_GPSTOCKLACKS</TableID>
           <ColumnID>NAME</ColumnID>
         </Source>
       </NameColumn>
       <Translations>
-        <Translation>
+        <Translation dwd:design-time-name="44bae1ca-3cdf-43ab-8bd0-a18e29b579d5">
           <Language>3082</Language>
           <Caption>Nombre Proveedor</Caption>
         </Translation>
@@ -365,27 +428,27 @@
     </Attribute>
   </Attributes>
   <Hierarchies>
-    <Hierarchy>
+    <Hierarchy dwd:design-time-name="aac3e079-9fd8-42f1-9d36-527f3c6e13a1">
       <ID>Jerarquía</ID>
       <Name>Jerarquía</Name>
       <Levels>
-        <Level>
+        <Level dwd:design-time-name="441dba35-f6d4-458d-973e-a16757ffdb9f">
           <ID>Sales Id</ID>
           <Name>Sales Id</Name>
           <SourceAttributeID>SALESREFID</SourceAttributeID>
           <Translations>
-            <Translation>
+            <Translation dwd:design-time-name="bdc607ba-3a42-4a16-bc1c-25465e2a6f72">
               <Language>3082</Language>
               <Caption>Pedido de Ventas</Caption>
             </Translation>
           </Translations>
         </Level>
-        <Level>
+        <Level dwd:design-time-name="3eaf2fda-d6d9-4aa1-9584-1b2d81a7a2c5">
           <ID>Stock Lacks</ID>
           <Name>Stock Lacks</Name>
           <SourceAttributeID>GPSTOCKLACKS - DATAAREAID</SourceAttributeID>
           <Translations>
-            <Translation>
+            <Translation dwd:design-time-name="fe239255-9b41-47ea-8bf2-48c519b8b8c0">
               <Language>3082</Language>
               <Caption>Faltas de Stock</Caption>
             </Translation>
@@ -393,16 +456,16 @@
         </Level>
       </Levels>
     </Hierarchy>
-    <Hierarchy>
+    <Hierarchy dwd:design-time-name="172b0437-f6ee-4f99-b536-db2d9aa0d0df">
       <ID>Jerarquía 1</ID>
       <Name>CIAL_INDAL</Name>
       <Levels>
-        <Level>
+        <Level dwd:design-time-name="41ef05d1-6f1b-4b98-a46a-6bc4d5035449">
           <ID>CIAL INDAL</ID>
           <Name>CIAL INDAL</Name>
           <SourceAttributeID>CIAL INDAL</SourceAttributeID>
         </Level>
-        <Level>
+        <Level dwd:design-time-name="3011d4e9-e4d0-4058-9b3b-49a8dd107eba">
           <ID>Stock Lacks</ID>
           <Name>Stock Lacks</Name>
           <SourceAttributeID>GPSTOCKLACKS - DATAAREAID</SourceAttributeID>
@@ -410,12 +473,12 @@
       </Levels>
     </Hierarchy>
   </Hierarchies>
-  <ProactiveCaching>
+  <ProactiveCaching dwd:design-time-name="3cd9f72e-f7df-4c90-b824-d27481c24c03">
     <SilenceInterval>-PT1S</SilenceInterval>
     <Latency>-PT1S</Latency>
     <SilenceOverrideInterval>-PT1S</SilenceOverrideInterval>
     <ForceRebuildInterval>-PT1S</ForceRebuildInterval>
-    <Source xsi:type="ProactiveCachingInheritedBinding" />
+    <Source xsi:type="ProactiveCachingInheritedBinding" dwd:design-time-name="21bbfeba-a4fd-4150-b7ca-4034683ad8b4" />
   </ProactiveCaching>
   <ddl300:ProcessingState>Unprocessed</ddl300:ProcessingState>
 </Dimension>
