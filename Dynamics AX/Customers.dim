@@ -31,7 +31,7 @@
           <layoutmanager>
             <ddsxmlobj />
           </layoutmanager>
-          <ddscontrol controlprogid="DdsShapes.DdsObjectManagedBridge" tooltip="CUSTTABLE" left="2701" top="-71" logicalid="3" controlid="1" masterid="0" hint1="0" hint2="0" width="10266" height="14949" noresize="0" nomove="0" nodefaultattachpoints="0" autodrag="1" usedefaultiddshape="1" selectable="1" showselectionhandles="1" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+          <ddscontrol controlprogid="DdsShapes.DdsObjectManagedBridge" tooltip="CUSTTABLE" left="2736" top="176" logicalid="3" controlid="1" masterid="0" hint1="0" hint2="0" width="10266" height="14949" noresize="0" nomove="0" nodefaultattachpoints="0" autodrag="1" usedefaultiddshape="1" selectable="1" showselectionhandles="1" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
             <control>
               <ddsxmlobjectstreaminitwrapper binary="000e00001a280000653a0000" />
             </control>
@@ -42,7 +42,7 @@
             </layoutobject>
             <shape groupshapeid="0" groupnode="0" />
           </ddscontrol>
-          <ddscontrol controlprogid="MSDDS.Polyline" left="1401" top="-1371" logicalid="4" controlid="2" masterid="0" hint1="0" hint2="0" width="2333" height="2574" noresize="0" nomove="0" nodefaultattachpoints="1" autodrag="0" usedefaultiddshape="0" selectable="1" showselectionhandles="0" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+          <ddscontrol controlprogid="MSDDS.Polyline" left="1436" top="-1124" logicalid="4" controlid="2" masterid="0" hint1="0" hint2="0" width="2333" height="2574" noresize="0" nomove="0" nodefaultattachpoints="1" autodrag="0" usedefaultiddshape="0" selectable="1" showselectionhandles="0" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
             <control>
               <ddsxmlobj>
                 <polyline endtypedst="6" endtypesrc="3" usercolor="0" linestyle="0" linerender="1" customendtypedstid="0" customendtypesrcid="0" adornsvisible="1" />
@@ -56,11 +56,11 @@
               </ddsxmlobj>
             </layoutobject>
             <connector lineroutestyle="MSDDS.Rectilinear" sourceid="1" destid="1" sourceattachpoint="40" destattachpoint="2" segmenteditmode="0" bendpointeditmode="0" bendpointvisibility="0" relatedid="0" virtual="0">
-              <point x="2701" y="803" />
-              <point x="1701" y="803" />
-              <point x="1701" y="-1071" />
-              <point x="3434" y="-1071" />
-              <point x="3434" y="-71" />
+              <point x="2736" y="1050" />
+              <point x="1736" y="1050" />
+              <point x="1736" y="-824" />
+              <point x="3469" y="-824" />
+              <point x="3469" y="176" />
             </connector>
           </ddscontrol>
         </dds>
@@ -88,11 +88,11 @@
     </Annotation>
     <Annotation>
       <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramBoundingLeft</Name>
-      <Value>2701</Value>
+      <Value>2736</Value>
     </Annotation>
     <Annotation>
       <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramBoundingTop</Name>
-      <Value>-71</Value>
+      <Value>176</Value>
     </Annotation>
     <Annotation>
       <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramZoom</Name>
@@ -1107,6 +1107,10 @@
         <AttributeRelationship dwd:design-time-name="bd6a1942-9888-4b33-b0d6-0ef212bb83ac">
           <AttributeID>GPREMOVEREMAINS</AttributeID>
           <Name>Remove Leftover</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="97c6d819-f8a5-4e6f-b6ab-55b4734e43af">
+          <AttributeID>VATNUM</AttributeID>
+          <Name>Vat Number</Name>
         </AttributeRelationship>
       </AttributeRelationships>
       <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
@@ -3133,6 +3137,48 @@
         <Translation dwd:design-time-name="d9467f58-9ca0-4b76-9c35-f75a58a0f537">
           <Language>3082</Language>
           <Caption>No servir restos de pedido</Caption>
+        </Translation>
+      </Translations>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="24da9a2e-77b7-4360-bbdd-70a8c078c76a">
+      <ID>VATNUM</ID>
+      <Name>Vat Number</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="a081eadc-339b-43b2-bb14-ddca12736406">
+          <DataType>WChar</DataType>
+          <DataSize>4</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="e800912f-d195-4402-aff6-2b6325355d44">
+            <TableID>CUSTTABLE</TableID>
+            <ColumnID>DATAAREAID</ColumnID>
+          </Source>
+        </KeyColumn>
+        <KeyColumn dwd:design-time-name="723856c7-bfab-4754-8483-d1df86edada5">
+          <DataType>WChar</DataType>
+          <DataSize>20</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="7c61a0ad-7ef6-43c3-afba-0ddd19ef38a6">
+            <TableID>CUSTTABLE</TableID>
+            <ColumnID>VATNUM</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <NameColumn dwd:design-time-name="e09bb8c5-c75b-4705-b961-85142e39c9f9">
+        <DataType>WChar</DataType>
+        <DataSize>20</DataSize>
+        <Source xsi:type="ColumnBinding" dwd:design-time-name="eb4ae192-0144-461b-b407-3f8d19ae1867">
+          <TableID>CUSTTABLE</TableID>
+          <ColumnID>VATNUM</ColumnID>
+        </Source>
+      </NameColumn>
+      <Translations>
+        <Translation dwd:design-time-name="55ecd968-8d32-4050-a68d-9061238ec811">
+          <Language>1033</Language>
+          <Caption>VAT Number</Caption>
+        </Translation>
+        <Translation dwd:design-time-name="92bceb91-ac5e-4183-b313-bc7a89f56614">
+          <Language>3082</Language>
+          <Caption>NIF</Caption>
         </Translation>
       </Translations>
       <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
