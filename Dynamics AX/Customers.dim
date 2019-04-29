@@ -1108,6 +1108,10 @@
           <AttributeID>GPREMOVEREMAINS</AttributeID>
           <Name>Remove Leftover</Name>
         </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="6d6ce4e2-f516-4553-8eef-0abe8b590e0c">
+          <AttributeID>VATNUM</AttributeID>
+          <Name>VatNum</Name>
+        </AttributeRelationship>
       </AttributeRelationships>
       <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
       <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
@@ -3133,6 +3137,48 @@
         <Translation dwd:design-time-name="d9467f58-9ca0-4b76-9c35-f75a58a0f537">
           <Language>3082</Language>
           <Caption>No servir restos de pedido</Caption>
+        </Translation>
+      </Translations>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="83cdf60d-05ac-4f8c-b2d0-43a7030ebd2a">
+      <ID>VATNUM</ID>
+      <Name>VatNum</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="b7618ca9-95f7-4e6c-957e-c5324ef67182">
+          <DataType>WChar</DataType>
+          <DataSize>4</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="93083250-024e-45df-8695-0c28313231de">
+            <TableID>CUSTTABLE</TableID>
+            <ColumnID>DATAAREAID</ColumnID>
+          </Source>
+        </KeyColumn>
+        <KeyColumn dwd:design-time-name="5188a753-c3a4-4483-a6b3-677dbbe60817">
+          <DataType>WChar</DataType>
+          <DataSize>20</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="694773ef-b009-4557-aee6-36bb580d2f58">
+            <TableID>CUSTTABLE</TableID>
+            <ColumnID>VATNUM</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <NameColumn dwd:design-time-name="4f23781f-86f3-4c32-a316-c18ddbebedcb">
+        <DataType>WChar</DataType>
+        <DataSize>20</DataSize>
+        <Source xsi:type="ColumnBinding" dwd:design-time-name="ffd8e04b-dd85-48eb-9149-b0b6ef2465bb">
+          <TableID>CUSTTABLE</TableID>
+          <ColumnID>VATNUM</ColumnID>
+        </Source>
+      </NameColumn>
+      <Translations>
+        <Translation dwd:design-time-name="e40f15b7-6498-4d0b-854f-a450c0467e19">
+          <Language>1033</Language>
+          <Caption>Vat Number</Caption>
+        </Translation>
+        <Translation dwd:design-time-name="a6303542-7565-4ec6-94fb-d270073683cb">
+          <Language>3082</Language>
+          <Caption>NIF</Caption>
         </Translation>
       </Translations>
       <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
