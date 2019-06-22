@@ -12,7 +12,7 @@
       <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramLayout</Name>
       <Value>
         <dds xmlns="">
-          <diagram fontclsid="{0BE35203-8F91-11CE-9DE3-00AA004BB851}" mouseiconclsid="{0BE35204-8F91-11CE-9DE3-00AA004BB851}" defaultlayout="MSDDS.Rectilinear" defaultlineroute="MSDDS.Rectilinear" version="7" nextobject="464" scale="100" pagebreakanchorx="0" pagebreakanchory="0" pagebreaksizex="0" pagebreaksizey="0" scrollleft="-5872" scrolltop="55809" gridx="150" gridy="150" marginx="5000" marginy="5000" zoom="25" x="37968" y="19262" backcolor="16777215" defaultpersistence="2" PrintPageNumbersMode="3" PrintMarginTop="0" PrintMarginBottom="635" PrintMarginLeft="0" PrintMarginRight="0" marqueeselectionmode="0" mousepointer="0" snaptogrid="0" autotypeannotation="1" showscrollbars="1" viewpagebreaks="0" donotforceconnectorsbehindshapes="1" backpictureclsid="{00000000-0000-0000-0000-000000000000}">
+          <diagram fontclsid="{0BE35203-8F91-11CE-9DE3-00AA004BB851}" mouseiconclsid="{0BE35204-8F91-11CE-9DE3-00AA004BB851}" defaultlayout="MSDDS.Rectilinear" defaultlineroute="MSDDS.Rectilinear" version="7" nextobject="464" scale="100" pagebreakanchorx="0" pagebreakanchory="0" pagebreaksizex="0" pagebreaksizey="0" scrollleft="-5872" scrolltop="55809" gridx="150" gridy="150" marginx="5000" marginy="5000" zoom="25" x="37968" y="18547" backcolor="16777215" defaultpersistence="2" PrintPageNumbersMode="3" PrintMarginTop="0" PrintMarginBottom="635" PrintMarginLeft="0" PrintMarginRight="0" marqueeselectionmode="0" mousepointer="0" snaptogrid="0" autotypeannotation="1" showscrollbars="1" viewpagebreaks="0" donotforceconnectorsbehindshapes="1" backpictureclsid="{00000000-0000-0000-0000-000000000000}">
             <font>
               <ddsxmlobjectstreamwrapper binary="01000000900144420100065461686f6d61" />
             </font>
@@ -2491,7 +2491,7 @@
               <point x="19080" y="18516" />
             </connector>
           </ddscontrol>
-          <ddscontrol controlprogid="MSDDS.Polyline" left="7514" top="12516" logicalid="377" controlid="146" masterid="0" hint1="0" hint2="0" width="1783" height="2550" noresize="0" nomove="0" nodefaultattachpoints="1" autodrag="0" usedefaultiddshape="0" selectable="1" showselectionhandles="0" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+          <ddscontrol controlprogid="MSDDS.Polyline" left="7514" top="12516" logicalid="377" controlid="146" masterid="0" hint1="0" hint2="0" width="2333" height="2550" noresize="0" nomove="0" nodefaultattachpoints="1" autodrag="0" usedefaultiddshape="0" selectable="1" showselectionhandles="0" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
             <control>
               <ddsxmlobj>
                 <polyline endtypedst="6" endtypesrc="3" usercolor="0" linestyle="0" linerender="1" customendtypedstid="0" customendtypesrcid="0" adornsvisible="1" />
@@ -2504,12 +2504,12 @@
                 <property name="VisibleAP" value="0" vartype="3" />
               </ddsxmlobj>
             </layoutobject>
-            <connector lineroutestyle="MSDDS.Rectilinear" sourceid="20" destid="20" sourceattachpoint="40" destattachpoint="0" segmenteditmode="0" bendpointeditmode="0" bendpointvisibility="0" relatedid="0" virtual="0">
+            <connector lineroutestyle="MSDDS.Rectilinear" sourceid="20" destid="20" sourceattachpoint="40" destattachpoint="2" segmenteditmode="0" bendpointeditmode="0" bendpointvisibility="0" relatedid="0" virtual="0">
               <point x="8814" y="14666" />
               <point x="7814" y="14666" />
               <point x="7814" y="12816" />
-              <point x="8997" y="12816" />
-              <point x="8997" y="13816" />
+              <point x="9547" y="12816" />
+              <point x="9547" y="13816" />
             </connector>
           </ddscontrol>
           <ddscontrol controlprogid="MSDDS.Polyline" left="18780" top="18216" logicalid="378" controlid="147" masterid="0" hint1="0" hint2="0" width="70249" height="72408" noresize="0" nomove="0" nodefaultattachpoints="1" autodrag="0" usedefaultiddshape="0" selectable="1" showselectionhandles="0" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
@@ -7004,6 +7004,28 @@
             <Translation dwd:design-time-name="8f0f1554-f0df-49d2-bb6e-887c61b1757c">
               <Language>1033</Language>
               <Caption>Price</Caption>
+            </Translation>
+          </Translations>
+        </Measure>
+        <Measure dwd:design-time-name="36eefc17-a24e-4432-afbd-7b3e4d05550d">
+          <ID>STANDARDPALLETQUANTITY</ID>
+          <Name>Standard Pallet Quantity</Name>
+          <Source dwd:design-time-name="0eca691a-f715-4663-b0d7-e7df8afae595">
+            <DataType>Double</DataType>
+            <Source xsi:type="ColumnBinding" dwd:design-time-name="8ddb37a8-e31a-41ac-8009-3158c02f5f79">
+              <TableID>INVENTTABLE</TableID>
+              <ColumnID>STANDARDPALLETQUANTITY</ColumnID>
+            </Source>
+          </Source>
+          <FormatString>#,##0.000;-#,##0.000</FormatString>
+          <Translations>
+            <Translation dwd:design-time-name="2cf63c8f-ccdb-478d-af0a-f7c09b6d94fe">
+              <Language>1033</Language>
+              <Caption>Standard Pallet Quantity</Caption>
+            </Translation>
+            <Translation dwd:design-time-name="2c441ac1-d94d-4b25-b8c1-600b7dd293de">
+              <Language>3082</Language>
+              <Caption>Cantidad por Palet</Caption>
             </Translation>
           </Translations>
         </Measure>
