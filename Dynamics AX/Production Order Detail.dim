@@ -1,4 +1,4 @@
-﻿<Dimension xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:ddl200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:ddl200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:ddl300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:ddl300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:ddl400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:ddl400_400="http://schemas.microsoft.com/analysisservices/2012/engine/400/400" xmlns:ddl500="http://schemas.microsoft.com/analysisservices/2013/engine/500" xmlns:ddl500_500="http://schemas.microsoft.com/analysisservices/2013/engine/500/500" xmlns:dwd="http://schemas.microsoft.com/DataWarehouse/Designer/1.0" dwd:design-time-name="44849eb6-b185-4054-b7f1-0f5bb7db01a1" xmlns="http://schemas.microsoft.com/analysisservices/2003/engine">
+﻿<Dimension xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:ddl200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:ddl200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:ddl300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:ddl300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:ddl400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:ddl400_400="http://schemas.microsoft.com/analysisservices/2012/engine/400/400" xmlns:ddl500="http://schemas.microsoft.com/analysisservices/2013/engine/500" xmlns:ddl500_500="http://schemas.microsoft.com/analysisservices/2013/engine/500/500" xmlns:dwd="http://schemas.microsoft.com/DataWarehouse/Designer/1.0" dwd:design-time-name="e2f3141c-49df-4c10-a571-e115391e4f13" xmlns="http://schemas.microsoft.com/analysisservices/2003/engine">
   <ID>Production Order Detail</ID>
   <Name>Production Order Detail</Name>
   <CreatedTimestamp>2018-10-16T14:06:41.366667Z</CreatedTimestamp>
@@ -8,7 +8,7 @@
       <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramLayout</Name>
       <Value>
         <dds xmlns="">
-          <diagram fontclsid="{0BE35203-8F91-11CE-9DE3-00AA004BB851}" mouseiconclsid="{0BE35204-8F91-11CE-9DE3-00AA004BB851}" defaultlayout="MSDDS.Rectilinear" defaultlineroute="MSDDS.Rectilinear" version="7" nextobject="9" scale="100" pagebreakanchorx="0" pagebreakanchory="0" pagebreaksizex="0" pagebreaksizey="0" scrollleft="-3976" scrolltop="-7131" gridx="150" gridy="150" marginx="5000" marginy="5000" zoom="100" x="16457" y="25982" backcolor="16777215" defaultpersistence="2" PrintPageNumbersMode="3" PrintMarginTop="0" PrintMarginBottom="635" PrintMarginLeft="0" PrintMarginRight="0" marqueeselectionmode="0" mousepointer="0" snaptogrid="0" autotypeannotation="1" showscrollbars="0" viewpagebreaks="0" donotforceconnectorsbehindshapes="1" backpictureclsid="{00000000-0000-0000-0000-000000000000}">
+          <diagram fontclsid="{0BE35203-8F91-11CE-9DE3-00AA004BB851}" mouseiconclsid="{0BE35204-8F91-11CE-9DE3-00AA004BB851}" defaultlayout="MSDDS.Rectilinear" defaultlineroute="MSDDS.Rectilinear" version="7" nextobject="9" scale="100" pagebreakanchorx="0" pagebreakanchory="0" pagebreaksizex="0" pagebreaksizey="0" scrollleft="-3976" scrolltop="-7131" gridx="150" gridy="150" marginx="5000" marginy="5000" zoom="100" x="14579" y="21325" backcolor="16777215" defaultpersistence="2" PrintPageNumbersMode="3" PrintMarginTop="0" PrintMarginBottom="635" PrintMarginLeft="0" PrintMarginRight="0" marqueeselectionmode="0" mousepointer="0" snaptogrid="0" autotypeannotation="1" showscrollbars="0" viewpagebreaks="0" donotforceconnectorsbehindshapes="1" backpictureclsid="{00000000-0000-0000-0000-000000000000}">
             <font>
               <ddsxmlobjectstreamwrapper binary="01000000900144420100065461686f6d61" />
             </font>
@@ -155,6 +155,7 @@
                 <Attribute Id="PRODSTATUS" />
                 <Attribute Id="PRODSTATUSNAME" />
                 <Attribute Id="REALDATE" />
+                <Attribute Id="SALESID" />
                 <Attribute Id="SCHEDDATE" />
                 <Attribute Id="SCHEDEND" />
                 <Attribute Id="SCHEDSTART" />
@@ -165,23 +166,17 @@
               </Attributes>
               <Position x="20" y="20" />
             </Shape>
-            <Shape Id="SALESID" Expanded="false">
-              <Attributes>
-                <Attribute Id="SALESID" />
-              </Attributes>
-              <Position x="262" y="20" />
-            </Shape>
             <Shape Id="ITEMID" Expanded="false">
               <Attributes>
                 <Attribute Id="ITEMID" />
               </Attributes>
-              <Position x="262" y="68" />
+              <Position x="262" y="20" />
             </Shape>
             <Shape Id="ITEMGROUPID" Expanded="false">
               <Attributes>
                 <Attribute Id="ITEMGROUPID" />
               </Attributes>
-              <Position x="505" y="68" />
+              <Position x="505" y="20" />
             </Shape>
           </Shapes>
         </DiagramLayout>
@@ -190,11 +185,11 @@
   </Annotations>
   <LastProcessed>2019-02-15T07:31:31.866667Z</LastProcessed>
   <State>Processed</State>
-  <Source xsi:type="DataSourceViewBinding" dwd:design-time-name="51153893-43c3-4a58-987e-9e649459771c">
+  <Source xsi:type="DataSourceViewBinding" dwd:design-time-name="5dc4924c-7438-4c8f-ae3d-a930a6d55f46">
     <DataSourceViewID>Dynamics AX</DataSourceViewID>
   </Source>
   <UnknownMember>Visible</UnknownMember>
-  <ErrorConfiguration dwd:design-time-name="d736cbbd-6fa8-4956-a7d7-73bbd9e992b0">
+  <ErrorConfiguration dwd:design-time-name="e707cfab-edee-4810-aea6-6fb67737ab73">
     <KeyErrorLimitAction>StopLogging</KeyErrorLimitAction>
     <KeyNotFound>IgnoreError</KeyNotFound>
     <NullKeyNotAllowed>IgnoreError</NullKeyNotAllowed>
@@ -204,500 +199,496 @@
   <Collation>Modern_Spanish_CI_AS</Collation>
   <UnknownMemberName>Unknown</UnknownMemberName>
   <Translations>
-    <Translation dwd:design-time-name="361cdb4a-cda3-4080-8a70-86753cc7f113">
+    <Translation dwd:design-time-name="874f6e55-3f5d-424c-a1ab-4d06d045a6c5">
       <Language>1033</Language>
       <Caption>Production Order Detail</Caption>
     </Translation>
-    <Translation dwd:design-time-name="69c42c2b-6dc5-4325-a2a5-6ec290ed8d78">
+    <Translation dwd:design-time-name="70be3680-149d-4819-9084-9a21df3f2346">
       <Language>3082</Language>
       <Caption>Orden de producción - Detalles</Caption>
     </Translation>
   </Translations>
   <Attributes>
-    <Attribute dwd:design-time-name="dc13c448-3c55-44dc-9707-7a1b5e60b8c9">
+    <Attribute dwd:design-time-name="9d7e49ad-58d0-493f-b589-339b20ddb207">
       <ID>DATAAREAID</ID>
       <Name>Production ID</Name>
       <Usage>Key</Usage>
       <KeyColumns>
-        <KeyColumn dwd:design-time-name="3bc8f202-6d16-435e-b1f5-e7def520e8c7">
+        <KeyColumn dwd:design-time-name="e885030b-49d3-4a63-a3fc-37937d141673">
           <DataType>WChar</DataType>
           <DataSize>4</DataSize>
           <NullProcessing>UnknownMember</NullProcessing>
-          <Source xsi:type="ColumnBinding" dwd:design-time-name="0101036f-c2bf-4f9d-954d-aee7675d63ec">
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="1b103f77-1dd5-422f-9560-da9c3ccb389c">
             <TableID>PRODTABLE</TableID>
             <ColumnID>DATAAREAID</ColumnID>
           </Source>
         </KeyColumn>
-        <KeyColumn dwd:design-time-name="6009d7af-df3b-49d4-a64a-8a0a4635e743">
+        <KeyColumn dwd:design-time-name="b1c3ef01-a724-4202-9ecc-79edf92ae9c5">
           <DataType>WChar</DataType>
           <DataSize>20</DataSize>
           <NullProcessing>UnknownMember</NullProcessing>
-          <Source xsi:type="ColumnBinding" dwd:design-time-name="6febafb4-457d-4e28-9395-d5c0aee428f9">
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="50f7adde-1c11-4567-a115-214d525a271c">
             <TableID>PRODTABLE</TableID>
             <ColumnID>PRODID</ColumnID>
           </Source>
         </KeyColumn>
       </KeyColumns>
-      <NameColumn dwd:design-time-name="ba0d5db2-f907-4859-81de-d5db70d4a066">
+      <NameColumn dwd:design-time-name="4c425d7d-f78e-4b92-9d1c-730168ee8c2f">
         <DataType>WChar</DataType>
         <DataSize>20</DataSize>
-        <Source xsi:type="ColumnBinding" dwd:design-time-name="182fd782-3d7e-4a40-a945-86c66c33dc16">
+        <Source xsi:type="ColumnBinding" dwd:design-time-name="f603b8a5-23e4-48ca-a39a-348b062b34af">
           <TableID>PRODTABLE</TableID>
           <ColumnID>PRODID</ColumnID>
         </Source>
       </NameColumn>
       <Translations>
-        <Translation dwd:design-time-name="91fd8090-805f-49e9-a3e1-62368383296b">
+        <Translation dwd:design-time-name="493f92a6-75ce-4b51-ad3b-fdd7811b4207">
           <Language>1033</Language>
           <Caption>Production Id</Caption>
         </Translation>
-        <Translation dwd:design-time-name="8e003e1e-3e34-4216-87fd-888778538bdf">
+        <Translation dwd:design-time-name="50beb281-04aa-4b3a-b8b9-f2ef51a5a9f6">
           <Language>3082</Language>
           <Caption>Producción</Caption>
         </Translation>
       </Translations>
       <AttributeRelationships>
-        <AttributeRelationship dwd:design-time-name="c68c01ae-1a5d-45a8-854a-c9dc77009e51">
+        <AttributeRelationship dwd:design-time-name="9fc575e9-f7ee-47c0-ab8b-82cc7b0ddacd">
           <AttributeID>ITEMID</AttributeID>
           <Name>Item</Name>
           <Translations>
-            <Translation dwd:design-time-name="412f1619-40ed-4993-826e-6f729912d9ce">
+            <Translation dwd:design-time-name="fe3c64d6-d2ee-4ae5-a880-12842a22e54c">
               <Language>1033</Language>
               <Caption>Item Id</Caption>
             </Translation>
-            <Translation dwd:design-time-name="9e163132-99e4-4724-a30f-e55f18837fe5">
+            <Translation dwd:design-time-name="46bce833-7139-495a-9807-df4ec6f17383">
               <Language>3082</Language>
               <Caption>Artículo</Caption>
             </Translation>
           </Translations>
         </AttributeRelationship>
-        <AttributeRelationship dwd:design-time-name="efb33a2a-7615-41e9-b5a2-d5d922f097f3">
+        <AttributeRelationship dwd:design-time-name="6462f493-f7e7-4955-88b7-759f60a7efc4">
           <AttributeID>NAME</AttributeID>
           <Name>Item name</Name>
           <Translations>
-            <Translation dwd:design-time-name="99f80c69-ab47-44de-afd4-416c4ed79084">
+            <Translation dwd:design-time-name="c4a4fef7-6d3b-4533-9dba-a7a200565791">
               <Language>1033</Language>
               <Caption>Item name</Caption>
             </Translation>
-            <Translation dwd:design-time-name="371ef170-b554-40b2-a414-003e114d3d20">
+            <Translation dwd:design-time-name="c3cc077c-e685-4fa0-b5fd-eaf0f6de0d16">
               <Language>3082</Language>
               <Caption>Nombre de artículo</Caption>
             </Translation>
           </Translations>
         </AttributeRelationship>
-        <AttributeRelationship dwd:design-time-name="2898a61f-a890-436e-b96f-a5cec3fa2e79">
+        <AttributeRelationship dwd:design-time-name="14af7181-da57-4e0d-adef-f93a4055c8ec">
           <AttributeID>STENCILID</AttributeID>
           <Name>Stencil ID</Name>
           <Translations>
-            <Translation dwd:design-time-name="654ac5aa-b839-405b-920b-c2a29a466b0c">
+            <Translation dwd:design-time-name="a47bd250-41b8-4edc-b444-ac6109a6b2c6">
               <Language>1033</Language>
               <Caption>Stencil Id</Caption>
             </Translation>
-            <Translation dwd:design-time-name="1df55512-a11d-4879-9f95-4e28dde1a532">
+            <Translation dwd:design-time-name="4e663325-615d-4b3b-9733-27b241bee0e8">
               <Language>3082</Language>
               <Caption>Cliché</Caption>
             </Translation>
           </Translations>
         </AttributeRelationship>
-        <AttributeRelationship dwd:design-time-name="b7afff4e-db4a-429b-a5f2-9314f261329d">
+        <AttributeRelationship dwd:design-time-name="e7101d38-f6b6-417d-8e73-17bcad6a2c1d">
           <AttributeID>STENCILNAME</AttributeID>
           <Name>Stencil Name</Name>
           <Translations>
-            <Translation dwd:design-time-name="ed2f68c1-de1e-4293-b5e9-ec7a9658d6cd">
+            <Translation dwd:design-time-name="04e5ad8c-c1e3-47bf-9ef5-e58832778262">
               <Language>1033</Language>
               <Caption>Stencil name</Caption>
             </Translation>
-            <Translation dwd:design-time-name="4ad49e81-81c4-4d04-91ba-5a3d0d882cb0">
+            <Translation dwd:design-time-name="bd912b45-ee57-4810-91af-67e7414fbeaf">
               <Language>3082</Language>
               <Caption>Nombre del Cliché</Caption>
             </Translation>
           </Translations>
         </AttributeRelationship>
-        <AttributeRelationship dwd:design-time-name="ac6ed7f8-63de-4e10-844c-c099da2bef41">
+        <AttributeRelationship dwd:design-time-name="0f7adf89-06b7-4f94-8670-5428632acaf0">
           <AttributeID>PRODSTATUS</AttributeID>
           <Name>Production Status</Name>
           <Translations>
-            <Translation dwd:design-time-name="f0c0b05a-8017-44d6-9eaf-2b4d8c7b3dbb">
+            <Translation dwd:design-time-name="122730ba-303b-458b-b0bd-3914e2d2ef64">
               <Language>1033</Language>
               <Caption>Production Status</Caption>
             </Translation>
-            <Translation dwd:design-time-name="6e1ab6a8-51b9-4656-9807-15d0755b83a6">
+            <Translation dwd:design-time-name="6f19895d-f9e2-40b4-a77d-5ce566478148">
               <Language>3082</Language>
               <Caption>Estado de la Producción</Caption>
             </Translation>
           </Translations>
         </AttributeRelationship>
-        <AttributeRelationship dwd:design-time-name="100e3d27-4dd0-400e-aad3-7d09965ebdc6">
+        <AttributeRelationship dwd:design-time-name="91c13636-f1d2-4d04-99e2-8cd13807d6fa">
           <AttributeID>SCHEDDATE</AttributeID>
           <Name>Schedule Date</Name>
           <Translations>
-            <Translation dwd:design-time-name="ccfd4273-bf49-42d8-9f97-b5cc73b95593">
+            <Translation dwd:design-time-name="042f0c08-a2a2-4938-b8e2-93763ce652fc">
               <Language>1033</Language>
               <Caption>Schedule Date</Caption>
             </Translation>
-            <Translation dwd:design-time-name="f11773e5-927d-4c26-be84-a27de0fcaf19">
+            <Translation dwd:design-time-name="f42ac900-d5da-49a1-9fce-16d0df502dad">
               <Language>3082</Language>
               <Caption>Fecha Programado</Caption>
             </Translation>
           </Translations>
         </AttributeRelationship>
-        <AttributeRelationship dwd:design-time-name="570646d2-4db6-4fe6-ace2-44a30770e4bb">
+        <AttributeRelationship dwd:design-time-name="1c2a9a23-3146-459f-bbc7-115c76708f9c">
           <AttributeID>DLVDATE</AttributeID>
           <Name>Delivery Date</Name>
           <Translations>
-            <Translation dwd:design-time-name="168798e8-f6de-4fee-90c5-b4041db612d4">
+            <Translation dwd:design-time-name="92ede247-be14-4890-9914-67e6be066894">
               <Language>1033</Language>
               <Caption>Delivery Date</Caption>
             </Translation>
-            <Translation dwd:design-time-name="c50d627b-2d45-4a14-904c-4e669ef203bb">
+            <Translation dwd:design-time-name="72af3416-ff50-4467-b596-ab877a05fa65">
               <Language>3082</Language>
               <Caption>Fecha Entrega</Caption>
             </Translation>
           </Translations>
         </AttributeRelationship>
-        <AttributeRelationship dwd:design-time-name="7bd7334b-5944-4e45-b018-be93314fbada">
+        <AttributeRelationship dwd:design-time-name="13934cd6-e0c3-4c88-a4fb-87cdae7e8c22">
           <AttributeID>STUPDATE</AttributeID>
           <Name>Start Update</Name>
           <Translations>
-            <Translation dwd:design-time-name="fab20356-c86f-44c4-8f3e-829f6cc1d804">
+            <Translation dwd:design-time-name="b90b71a7-9b95-4e4c-820f-5c5cf1d0b43f">
               <Language>1033</Language>
               <Caption>Start Update</Caption>
             </Translation>
-            <Translation dwd:design-time-name="55331233-6294-488d-a14a-45b2109bdc80">
+            <Translation dwd:design-time-name="7c116627-eed5-4632-87da-a3ca2236a7f4">
               <Language>3082</Language>
               <Caption>Fecha Actualizada Iniciado</Caption>
             </Translation>
           </Translations>
         </AttributeRelationship>
-        <AttributeRelationship dwd:design-time-name="4d62123f-b87d-4a79-b1ee-c63d0b3e088a">
+        <AttributeRelationship dwd:design-time-name="d4bbcb30-a55f-4a90-bb30-0b24b1afa315">
           <AttributeID>FINISHEDDATE</AttributeID>
           <Name>Finished Date</Name>
           <Translations>
-            <Translation dwd:design-time-name="9a14b3fb-633b-4a33-b716-3c5ba1cd0a2e">
+            <Translation dwd:design-time-name="be0486ee-9c2c-4dbb-8962-d5db1d28c117">
               <Language>1033</Language>
               <Caption>Finished Date</Caption>
             </Translation>
-            <Translation dwd:design-time-name="76645e27-9133-442d-b86f-bb2a86b4e2de">
+            <Translation dwd:design-time-name="dd7de61a-9813-4e11-8759-5a46b502caa4">
               <Language>3082</Language>
               <Caption>Fecha Notificado Terminado</Caption>
             </Translation>
           </Translations>
         </AttributeRelationship>
-        <AttributeRelationship dwd:design-time-name="a68aa07c-b4aa-4d53-a896-bbf35ee40121">
+        <AttributeRelationship dwd:design-time-name="4ae90e38-35c9-415d-b31d-2132fcb98502">
           <AttributeID>SCHEDSTART</AttributeID>
           <Name>Schedule Start</Name>
           <Translations>
-            <Translation dwd:design-time-name="dce4e4fe-b173-4aca-af31-1f1193dcb3fb">
+            <Translation dwd:design-time-name="56b01448-5c06-4cbe-9d5c-cdda08eab087">
               <Language>1033</Language>
               <Caption>Schedule Start</Caption>
             </Translation>
-            <Translation dwd:design-time-name="79c92ef6-f85b-411b-9773-6d98642a875b">
+            <Translation dwd:design-time-name="c311bb20-1e2e-4662-9a13-c485516a3b68">
               <Language>3082</Language>
               <Caption>Fecha Inicial Programada</Caption>
             </Translation>
           </Translations>
         </AttributeRelationship>
-        <AttributeRelationship dwd:design-time-name="a970eae1-ae53-4202-8263-a57e216f9029">
+        <AttributeRelationship dwd:design-time-name="f2a984b0-adac-4e02-ba94-328466fb03ff">
           <AttributeID>SCHEDEND</AttributeID>
           <Name>Schedule End</Name>
           <Translations>
-            <Translation dwd:design-time-name="c6918027-4728-4f6d-aadd-623b55ea9d96">
+            <Translation dwd:design-time-name="5dba7f29-9136-4cf3-ab78-ae32fdd89297">
               <Language>1033</Language>
               <Caption>Schedule End</Caption>
             </Translation>
-            <Translation dwd:design-time-name="200174ee-c32c-43b5-9b43-af47242d39c4">
+            <Translation dwd:design-time-name="146ab6ea-d404-4af2-9ec2-1f7e63cd1ee7">
               <Language>3082</Language>
               <Caption>Fecha Final Programada</Caption>
             </Translation>
           </Translations>
         </AttributeRelationship>
-        <AttributeRelationship dwd:design-time-name="7a071b9d-ce00-4265-9f8b-4c758360c93a">
+        <AttributeRelationship dwd:design-time-name="105f47d6-7f11-4812-8cd0-b6219fc8d491">
           <AttributeID>REALDATE</AttributeID>
           <Name>Real Date</Name>
           <Translations>
-            <Translation dwd:design-time-name="f9f15ff1-a9e0-4cb5-8bd9-48cd4b3beec9">
+            <Translation dwd:design-time-name="e094a029-1e0c-4b8e-9d48-eb26a770fd3a">
               <Language>1033</Language>
               <Caption>Real Date</Caption>
             </Translation>
-            <Translation dwd:design-time-name="1ea6d14f-50a2-44e9-9589-b2d381c70fe4">
+            <Translation dwd:design-time-name="34e4fb4a-0730-4bcb-afe8-5542c85e148f">
               <Language>3082</Language>
               <Caption>Fecha Terminado</Caption>
             </Translation>
           </Translations>
         </AttributeRelationship>
-        <AttributeRelationship dwd:design-time-name="ce07ba64-eeb6-4e67-8daf-dc1f0e47bf7c">
+        <AttributeRelationship dwd:design-time-name="ffa71827-a35c-44b3-aa59-81b96db2bc93">
           <AttributeID>BOMDATE</AttributeID>
           <Name>Bill of Materials Date</Name>
           <Translations>
-            <Translation dwd:design-time-name="af40e218-e257-47e4-be0d-5e15436b7d4a">
+            <Translation dwd:design-time-name="883ffa4b-6622-47f7-aced-4d1478d10e29">
               <Language>1033</Language>
               <Caption>Bill Of Materials Date</Caption>
             </Translation>
-            <Translation dwd:design-time-name="dbfda311-c37e-4bef-92c8-29138f8d7ae4">
+            <Translation dwd:design-time-name="6a3a0163-afcd-4a24-9660-c82a68b88bca">
               <Language>3082</Language>
               <Caption>Fecha Lista Materiales</Caption>
             </Translation>
           </Translations>
         </AttributeRelationship>
-        <AttributeRelationship dwd:design-time-name="2131ccf1-fc70-4f3c-968d-d74044567400">
+        <AttributeRelationship dwd:design-time-name="044dfd8a-1011-4f20-b1e2-d3d33d581cfc">
           <AttributeID>CALCDATE</AttributeID>
           <Name>Estimated Date</Name>
           <Translations>
-            <Translation dwd:design-time-name="1f3883b4-d556-405c-bd1b-5e4f24fa1a30">
+            <Translation dwd:design-time-name="28f288dc-7834-476b-9881-4836a1c202f6">
               <Language>1033</Language>
               <Caption>Estimated Date</Caption>
             </Translation>
-            <Translation dwd:design-time-name="4f3d5c8c-7993-4cf8-a2e6-c40273d685bf">
+            <Translation dwd:design-time-name="6c413e4e-d118-4b98-ba60-48cc1e6c78c6">
               <Language>3082</Language>
               <Caption>Fecha Estimada</Caption>
             </Translation>
           </Translations>
         </AttributeRelationship>
-        <AttributeRelationship dwd:design-time-name="23fb4b39-665a-4349-a683-c9b1fedd1b5d">
+        <AttributeRelationship dwd:design-time-name="347a4e7a-bb0b-4059-b039-bba753434302">
           <AttributeID>LATESTSCHEDDATE</AttributeID>
           <Name>Latest Schedule Date</Name>
           <Translations>
-            <Translation dwd:design-time-name="96de2390-ed17-4fe1-b725-550bcafd5c9c">
+            <Translation dwd:design-time-name="e127fda6-cd3f-406f-9753-b848ae818c76">
               <Language>1033</Language>
               <Caption>Latest Schedule Date</Caption>
             </Translation>
-            <Translation dwd:design-time-name="dc6d9f66-0e28-47dc-9c2a-a208b339c865">
+            <Translation dwd:design-time-name="6dfb367a-c1b6-4eda-937f-1e13a5994689">
               <Language>3082</Language>
               <Caption>Fecha Última Programación</Caption>
             </Translation>
           </Translations>
         </AttributeRelationship>
-        <AttributeRelationship dwd:design-time-name="e1490cc7-8744-4f31-9e19-73771ec38c59">
+        <AttributeRelationship dwd:design-time-name="1c08bc19-6846-41ae-af65-22132635873a">
           <AttributeID>CREATEDDATETIME</AttributeID>
           <Name>Created Date Time</Name>
           <Translations>
-            <Translation dwd:design-time-name="c84811d3-79c4-4aa9-8ea2-bb857785d3fc">
+            <Translation dwd:design-time-name="9d131013-0c49-4493-abf9-233ff94deb65">
               <Language>1033</Language>
               <Caption>Created Date Time</Caption>
             </Translation>
-            <Translation dwd:design-time-name="0c25e0c8-2aeb-4ee5-8462-532e8f2084af">
+            <Translation dwd:design-time-name="35f010f7-29ec-4fd2-aec2-787d39b3b99b">
               <Language>3082</Language>
               <Caption>Fecha y Hora de Creación</Caption>
             </Translation>
           </Translations>
         </AttributeRelationship>
-        <AttributeRelationship dwd:design-time-name="c9642504-f930-4d51-88df-635083116d8d">
+        <AttributeRelationship dwd:design-time-name="fe9aeb37-28bb-46b9-a6e8-e33c88ee43c6">
           <AttributeID>DAYSBETWEENCALCDATE</AttributeID>
           <Name>Days Between Calc Date</Name>
           <Translations>
-            <Translation dwd:design-time-name="e20c5cb2-c320-46ec-813b-d88da2966c56">
+            <Translation dwd:design-time-name="29aab043-fb93-4ad0-82c3-d25d9eb57181">
               <Language>1033</Language>
               <Caption>Days Between Calc Date</Caption>
             </Translation>
-            <Translation dwd:design-time-name="a848629d-4ea1-49ac-b566-a7a76d6037dc">
+            <Translation dwd:design-time-name="705b9b49-72a1-46ea-b727-c90b00f62687">
               <Language>3082</Language>
               <Caption>Dias entre Fecha Estimada y Hoy</Caption>
             </Translation>
           </Translations>
         </AttributeRelationship>
-        <AttributeRelationship dwd:design-time-name="03896a07-2812-4861-b496-764358ff8ff0">
+        <AttributeRelationship dwd:design-time-name="c62d5f07-7b43-443d-a849-96cf919a78d2">
           <AttributeID>PRODSTATUSNAME</AttributeID>
           <Name>Production Status Name</Name>
           <Translations>
-            <Translation dwd:design-time-name="f9b4d3a1-4c0d-4c47-9cea-a84319351420">
+            <Translation dwd:design-time-name="d89b5d44-a0fc-4dca-8716-58c85bd9356b">
               <Language>1033</Language>
               <Caption>Production Status Name</Caption>
             </Translation>
-            <Translation dwd:design-time-name="9d2cfbdf-90d5-4055-a798-f4f61e59f90e">
+            <Translation dwd:design-time-name="ce1074d7-e3c9-46f2-b66f-b581406e32e1">
               <Language>3082</Language>
               <Caption>Nombre Estado de la Producción</Caption>
             </Translation>
           </Translations>
         </AttributeRelationship>
-        <AttributeRelationship dwd:design-time-name="2bde42d8-e53e-44a2-bcd9-b002fa8b0f9c">
+        <AttributeRelationship dwd:design-time-name="dd97bb67-cfa5-450c-88f4-15f92333a5db">
           <AttributeID>ABNORMALITIESID</AttributeID>
           <Name>Abnormalitie ID</Name>
           <Translations>
-            <Translation dwd:design-time-name="986d92bd-893a-46b6-b9cc-e3a96b56a3a5">
+            <Translation dwd:design-time-name="58edb177-7771-471c-acc9-bbe833614ee9">
               <Language>1033</Language>
               <Caption>Abnormalitie ID</Caption>
             </Translation>
-            <Translation dwd:design-time-name="e79c17f4-eddc-41e5-a5cd-40efba95e0f2">
+            <Translation dwd:design-time-name="cb984459-9f39-410c-9d49-ed1d8e5bc44a">
               <Language>3082</Language>
               <Caption>Anomalía</Caption>
             </Translation>
           </Translations>
         </AttributeRelationship>
-        <AttributeRelationship dwd:design-time-name="756a9c12-eda4-4d14-aaf5-691a93f2dcef">
+        <AttributeRelationship dwd:design-time-name="edbb80a9-308f-4e8b-a05e-8de8d33324f2">
           <AttributeID>ABNORMALITIESNAME</AttributeID>
           <Name>Abnormalitie Name</Name>
           <Translations>
-            <Translation dwd:design-time-name="99480b79-c161-4298-a9a9-99b8380ec4b4">
+            <Translation dwd:design-time-name="827e5600-e5d8-4a1e-ae79-a335843af858">
               <Language>1033</Language>
               <Caption>Abnormalitie Name</Caption>
             </Translation>
-            <Translation dwd:design-time-name="ad8afda3-284a-4608-a99a-d25e8af7ceb8">
+            <Translation dwd:design-time-name="6fac662a-8454-4847-be8a-6d648cf71097">
               <Language>3082</Language>
               <Caption>Nombre de Anomalía</Caption>
             </Translation>
           </Translations>
         </AttributeRelationship>
-        <AttributeRelationship dwd:design-time-name="6f12c4c0-0061-4d59-a4f5-401ed83992a2">
+        <AttributeRelationship dwd:design-time-name="cbb067b4-cbde-4e9e-8b59-094b276c5f0e">
           <AttributeID>QTYSCHED</AttributeID>
           <Name>Scheduled Quantity</Name>
           <Translations>
-            <Translation dwd:design-time-name="5c7c8d0e-7ff3-4ffe-99e8-49d76f7190b9">
+            <Translation dwd:design-time-name="b8a6d52c-5a5a-412c-81a2-7e38b366e832">
               <Language>1033</Language>
               <Caption>Scheduled Quantity</Caption>
             </Translation>
-            <Translation dwd:design-time-name="82af9828-99f5-4c0b-bf01-a5d5ea044348">
+            <Translation dwd:design-time-name="f17ef30d-0b2b-44ac-a3e6-36998ea5e907">
               <Language>3082</Language>
               <Caption>Cantidad Programada</Caption>
             </Translation>
           </Translations>
         </AttributeRelationship>
-        <AttributeRelationship dwd:design-time-name="e7dd2b36-3b27-4415-ab0c-507732ede6d7">
+        <AttributeRelationship dwd:design-time-name="1fb2919a-0516-4a4a-bb4f-f1abff1472ab">
           <AttributeID>SALESID</AttributeID>
           <Name>Sales ID</Name>
           <Translations>
-            <Translation dwd:design-time-name="b7575ae5-f169-4303-8561-190bbc25b2a9">
+            <Translation dwd:design-time-name="7a765a9e-04c9-4e46-9651-fafd5f4266a6">
               <Language>1033</Language>
               <Caption>Sales ID</Caption>
             </Translation>
-            <Translation dwd:design-time-name="2d8a6185-7e84-4366-84a2-5210798d32a7">
+            <Translation dwd:design-time-name="7757de60-ee5a-490f-8653-e391a3984e32">
               <Language>3082</Language>
               <Caption>Pedido de Ventas</Caption>
             </Translation>
           </Translations>
         </AttributeRelationship>
-        <AttributeRelationship dwd:design-time-name="3a792700-a7e2-4559-84a1-b53bc099c0ce">
+        <AttributeRelationship dwd:design-time-name="d8cb3486-95a5-4860-9d43-4cf51dbbb6fa">
           <AttributeID>PRODUCTIONSTATUS</AttributeID>
           <Name>Production Quantity Status</Name>
           <Translations>
-            <Translation dwd:design-time-name="21f8dd9c-d70e-434c-9512-a20f76bb4660">
+            <Translation dwd:design-time-name="56c41ecc-0083-4ced-aa08-46a9c66a65a4">
               <Language>1033</Language>
               <Caption>Production Quantity Status</Caption>
             </Translation>
-            <Translation dwd:design-time-name="17439bd9-c16c-4a21-b178-25d917f10c41">
+            <Translation dwd:design-time-name="5b0369ad-f895-4f71-8ce3-4a179c2e7bb6">
               <Language>3082</Language>
               <Caption>Estado Cantidad Producida</Caption>
             </Translation>
           </Translations>
         </AttributeRelationship>
-        <AttributeRelationship dwd:design-time-name="8b5fe79b-bdc2-43e4-b890-5cf6cf70d027">
+        <AttributeRelationship dwd:design-time-name="659b503d-2c4d-4abf-a048-205079c514b2">
           <AttributeID>CONFIRMDATE</AttributeID>
           <Name>Confirm Date</Name>
           <Translations>
-            <Translation dwd:design-time-name="51bb74cf-f360-4095-9dfb-9b08e4c93191">
+            <Translation dwd:design-time-name="5ed0720c-7d18-424b-a29e-062225f1be88">
               <Language>1033</Language>
               <Caption>Confirm Date</Caption>
             </Translation>
-            <Translation dwd:design-time-name="4e3851f2-24c4-47f0-b1da-c9dc04d0a9ae">
+            <Translation dwd:design-time-name="595bbb73-fa85-4bb7-994a-a8c2d8e65fe3">
               <Language>3082</Language>
               <Caption>Fecha Confirmación</Caption>
             </Translation>
           </Translations>
         </AttributeRelationship>
-        <AttributeRelationship dwd:design-time-name="87ac3036-cf93-4701-b585-1bfb9fd337b8">
+        <AttributeRelationship dwd:design-time-name="08e7595d-2d3e-4865-9b3d-f248b67940e8">
           <AttributeID>DAYSCONFIRMDATE</AttributeID>
           <Name>Days Between Confirm Date</Name>
           <Translations>
-            <Translation dwd:design-time-name="c8055a65-3c24-4fad-8e5b-5d73b00ed25c">
+            <Translation dwd:design-time-name="c562c419-e760-4b54-af25-35a1256dc178">
               <Language>1033</Language>
               <Caption>Days Between Confirm Date</Caption>
             </Translation>
-            <Translation dwd:design-time-name="15080f5f-3fc6-4dc7-b307-f4f3c5e7e65a">
+            <Translation dwd:design-time-name="cb5efd5e-16f3-4b83-a9be-5fdbd4fae2be">
               <Language>3082</Language>
               <Caption>Dias entre Fecha Confirmación</Caption>
             </Translation>
           </Translations>
         </AttributeRelationship>
-        <AttributeRelationship dwd:design-time-name="f29dec1a-d40d-4847-89ba-3aae311726da">
+        <AttributeRelationship dwd:design-time-name="e63f21f7-33cf-4ae5-b779-b77a8b8061c5">
           <AttributeID>CUSTACCOUNT</AttributeID>
           <Name>Cust Account</Name>
           <Translations>
-            <Translation dwd:design-time-name="bcfd94f1-fdc7-429a-8d44-c081630e7c5b">
+            <Translation dwd:design-time-name="02b7f963-2cb0-4cfb-9971-ff7d86b86557">
               <Language>1033</Language>
               <Caption>Cust Account</Caption>
             </Translation>
-            <Translation dwd:design-time-name="8da3f875-da30-4032-a5c4-c6cba9044356">
+            <Translation dwd:design-time-name="ad9d4604-00fd-4aa7-b8d7-ee439a3c144c">
               <Language>3082</Language>
               <Caption>Cliente</Caption>
             </Translation>
           </Translations>
         </AttributeRelationship>
-        <AttributeRelationship dwd:design-time-name="9743f273-d3a9-4466-b78b-ce090880151e">
+        <AttributeRelationship dwd:design-time-name="1770fc34-99e3-498b-946d-481778c5fb83">
           <AttributeID>CUSTNAME</AttributeID>
           <Name>Cust Name</Name>
           <Translations>
-            <Translation dwd:design-time-name="11ad3afa-7ab8-4e3f-97d4-ce3957cf4dbb">
+            <Translation dwd:design-time-name="1c740b58-549e-477e-921e-937bea392f0b">
               <Language>1033</Language>
               <Caption>Cust Name</Caption>
             </Translation>
-            <Translation dwd:design-time-name="b6b1779f-473b-4cd2-94ee-77e0396980ba">
+            <Translation dwd:design-time-name="31ef0275-4e33-407d-8c6a-1fdf2eb3d630">
               <Language>3082</Language>
               <Caption>Nombre del Cliente</Caption>
             </Translation>
           </Translations>
         </AttributeRelationship>
-        <AttributeRelationship dwd:design-time-name="5d461c5f-895c-45c0-829f-944da048eded">
+        <AttributeRelationship dwd:design-time-name="1835f4eb-8f0b-4f81-bb0f-5e159f4cf734">
           <AttributeID>COUNTRYREGIONID</AttributeID>
           <Name>Country Region</Name>
           <Translations>
-            <Translation dwd:design-time-name="0da4f937-2047-424e-939e-a6ebb807c832">
+            <Translation dwd:design-time-name="e1d53ab6-a1a4-4871-ac69-c007221c3433">
               <Language>1033</Language>
               <Caption>Country Region</Caption>
             </Translation>
-            <Translation dwd:design-time-name="3effd828-66ea-4da2-b4d9-c177eee334d0">
+            <Translation dwd:design-time-name="a1ae519a-a4c9-4c38-9f7d-1f7fed355bd2">
               <Language>3082</Language>
               <Caption>Pais</Caption>
             </Translation>
           </Translations>
         </AttributeRelationship>
-        <AttributeRelationship dwd:design-time-name="5b8d4395-bd4c-4492-9ca5-7e35c7267293">
-          <AttributeID>Invoice Line Amount</AttributeID>
-          <Name>Invoice Line Amount</Name>
-        </AttributeRelationship>
       </AttributeRelationships>
       <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
       <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
     </Attribute>
-    <Attribute dwd:design-time-name="d1fd6780-1b76-4519-add5-5573e9ba66d0">
+    <Attribute dwd:design-time-name="a2ef0e62-2c42-45fa-8999-be70081b9904">
       <ID>ITEMID</ID>
       <Name>Item</Name>
       <KeyColumns>
-        <KeyColumn dwd:design-time-name="fc66c5f9-d6f3-4af3-b81f-62047f4db82b">
+        <KeyColumn dwd:design-time-name="bf2d643f-9710-4781-8753-fdeae219bf12">
           <DataType>WChar</DataType>
           <DataSize>4</DataSize>
-          <Source xsi:type="ColumnBinding" dwd:design-time-name="7279c7e1-bffd-49c1-b15c-f266bd95b8e2">
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="8857c201-dc1e-4014-b1e2-1ab1f6d7c6ff">
             <TableID>PRODTABLE</TableID>
             <ColumnID>DATAAREAID</ColumnID>
           </Source>
         </KeyColumn>
-        <KeyColumn dwd:design-time-name="ade67450-f07f-49b2-9591-ec5fe10aef03">
+        <KeyColumn dwd:design-time-name="564a0657-102b-4cc9-9e2f-a490b08e74ec">
           <DataType>WChar</DataType>
           <DataSize>20</DataSize>
-          <Source xsi:type="ColumnBinding" dwd:design-time-name="447c71b8-c9ee-40a1-a478-628faf462cd3">
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="54312bbc-164e-40dc-b5f3-59b02ae76adf">
             <TableID>PRODTABLE</TableID>
             <ColumnID>ITEMID</ColumnID>
           </Source>
         </KeyColumn>
       </KeyColumns>
-      <NameColumn dwd:design-time-name="081ea85e-c2f1-4e11-89de-5d9970b06054">
+      <NameColumn dwd:design-time-name="0cc02678-9b2f-459b-bbe0-c4b313aeea93">
         <DataType>WChar</DataType>
         <DataSize>20</DataSize>
-        <Source xsi:type="ColumnBinding" dwd:design-time-name="29413bb6-d4f6-4870-a2ac-a788db85b475">
+        <Source xsi:type="ColumnBinding" dwd:design-time-name="70fb2162-667a-4016-b882-b6ef6175be87">
           <TableID>PRODTABLE</TableID>
           <ColumnID>ITEMID</ColumnID>
         </Source>
       </NameColumn>
       <Translations>
-        <Translation dwd:design-time-name="bb2707f8-7e76-41ad-90f4-ae6fa7c7e262">
+        <Translation dwd:design-time-name="8818a8b0-2f59-43f2-8fbf-4efdaaad066b">
           <Language>1033</Language>
           <Caption>Item Id</Caption>
         </Translation>
-        <Translation dwd:design-time-name="a4e7e2dc-31ab-48de-84e9-0579e934b8c5">
+        <Translation dwd:design-time-name="e89a279b-fcd6-4650-8569-42227cc388e6">
           <Language>3082</Language>
           <Caption>Artículo</Caption>
         </Translation>
       </Translations>
       <AttributeRelationships>
-        <AttributeRelationship dwd:design-time-name="619a321b-f9bf-4994-87a3-96fd72e5b267">
+        <AttributeRelationship dwd:design-time-name="eb2a27be-244d-4137-8c09-ad92b1e0254d">
           <AttributeID>ITEMGROUPID</AttributeID>
           <Name>Item Group</Name>
         </AttributeRelationship>
@@ -705,31 +696,31 @@
       <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
       <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
     </Attribute>
-    <Attribute dwd:design-time-name="2458cc82-a02d-4aa0-bd26-e06901a1abf5">
+    <Attribute dwd:design-time-name="02a8795a-86f2-4221-8518-eef9d59a9a75">
       <ID>NAME</ID>
       <Name>NAME</Name>
       <KeyColumns>
-        <KeyColumn dwd:design-time-name="0d7c9b57-3cfe-4022-b0e1-2a05413260ba">
+        <KeyColumn dwd:design-time-name="34758f4b-32a4-4dc3-b86a-b14109f7c488">
           <DataType>WChar</DataType>
-          <Source xsi:type="ColumnBinding" dwd:design-time-name="c94b020e-803a-404d-ad61-90406fbfdca1">
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="8f337563-6d35-432f-a21d-b538ebc1de74">
             <TableID>PRODTABLE</TableID>
             <ColumnID>NAME</ColumnID>
           </Source>
         </KeyColumn>
       </KeyColumns>
-      <NameColumn dwd:design-time-name="a9385f06-4091-4c0f-be13-72ef4d185887">
+      <NameColumn dwd:design-time-name="aa8cb0dc-608a-4b68-8f63-9ed7ef2f2b5d">
         <DataType>WChar</DataType>
-        <Source xsi:type="ColumnBinding" dwd:design-time-name="aeba3e0b-38ae-4015-854f-93945ef90bd8">
+        <Source xsi:type="ColumnBinding" dwd:design-time-name="87e0b73d-08eb-4399-89c6-9e40f750365d">
           <TableID>PRODTABLE</TableID>
           <ColumnID>NAME</ColumnID>
         </Source>
       </NameColumn>
       <Translations>
-        <Translation dwd:design-time-name="7f5316b9-4073-4f8b-9421-2ace6c13e121">
+        <Translation dwd:design-time-name="9f9d3ed0-576b-4fce-97fb-a1f18d5fadea">
           <Language>1033</Language>
           <Caption>Item name</Caption>
         </Translation>
-        <Translation dwd:design-time-name="2d8a01bf-e56d-4d7e-9df9-83671a28d3b4">
+        <Translation dwd:design-time-name="522876c8-32df-4a24-9f9c-6deb86daad62">
           <Language>3082</Language>
           <Caption>Nombre de artículo</Caption>
         </Translation>
@@ -737,33 +728,33 @@
       <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
       <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
     </Attribute>
-    <Attribute dwd:design-time-name="ac4a0a6d-a7bf-4224-b017-e728a01c6356">
+    <Attribute dwd:design-time-name="2d11ed14-1a72-4df1-93bd-c108fe1f2175">
       <ID>STENCILID</ID>
       <Name>Stencil ID</Name>
       <KeyColumns>
-        <KeyColumn dwd:design-time-name="4052fb80-0ee9-400b-85d5-77d6d1e0a15d">
+        <KeyColumn dwd:design-time-name="cab4190e-6104-4a4d-97bd-fa70e445bb93">
           <DataType>WChar</DataType>
           <DataSize>20</DataSize>
-          <Source xsi:type="ColumnBinding" dwd:design-time-name="164ca295-4bb5-49db-85be-b4b07654b81a">
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="52059c45-a6a9-4436-bebf-ce0dcbbee5d5">
             <TableID>PRODTABLE</TableID>
             <ColumnID>STENCILID</ColumnID>
           </Source>
         </KeyColumn>
       </KeyColumns>
-      <NameColumn dwd:design-time-name="11740736-f792-4cc9-93a9-6bdb46e640d7">
+      <NameColumn dwd:design-time-name="1920679e-25a9-4d15-aedc-16506909cc56">
         <DataType>WChar</DataType>
         <DataSize>20</DataSize>
-        <Source xsi:type="ColumnBinding" dwd:design-time-name="f0d929a5-6814-4210-afcd-1754ed94dc49">
+        <Source xsi:type="ColumnBinding" dwd:design-time-name="47be8502-222b-4915-839f-a8bf6fb9a081">
           <TableID>PRODTABLE</TableID>
           <ColumnID>STENCILID</ColumnID>
         </Source>
       </NameColumn>
       <Translations>
-        <Translation dwd:design-time-name="3cdc88df-3d63-4330-b0e0-3fc37be42218">
+        <Translation dwd:design-time-name="f90c2b88-788c-4b8f-859e-1bb006e3abfd">
           <Language>1033</Language>
           <Caption>Stencil Id</Caption>
         </Translation>
-        <Translation dwd:design-time-name="addb142c-82bd-4028-b013-ce82bc07f0b4">
+        <Translation dwd:design-time-name="ffc010f7-dc56-4287-ac0c-8ebd46fd0c1d">
           <Language>3082</Language>
           <Caption>Cliché</Caption>
         </Translation>
@@ -771,33 +762,33 @@
       <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
       <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
     </Attribute>
-    <Attribute dwd:design-time-name="2573f61d-779b-4437-9aaa-6cc6829c0cc2">
+    <Attribute dwd:design-time-name="d7ff25cc-678f-424b-96a2-6ce9bcae8559">
       <ID>STENCILNAME</ID>
       <Name>Stencil Name</Name>
       <KeyColumns>
-        <KeyColumn dwd:design-time-name="f2df9d1f-c545-46c5-b27a-790f176ab1a5">
+        <KeyColumn dwd:design-time-name="e466d81e-ed26-4b47-912b-b13ab014ee40">
           <DataType>WChar</DataType>
           <DataSize>60</DataSize>
-          <Source xsi:type="ColumnBinding" dwd:design-time-name="b8bfdfae-e931-4381-825a-9684b30cb534">
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="80fa5998-989d-48b6-9f60-91900965d962">
             <TableID>PRODTABLE</TableID>
             <ColumnID>STENCILNAME</ColumnID>
           </Source>
         </KeyColumn>
       </KeyColumns>
-      <NameColumn dwd:design-time-name="efeb8d84-ac4a-4a38-aa47-fe3e76ffcd56">
+      <NameColumn dwd:design-time-name="13f2f61f-9b59-472a-846a-929123bc2c6e">
         <DataType>WChar</DataType>
         <DataSize>60</DataSize>
-        <Source xsi:type="ColumnBinding" dwd:design-time-name="d6c91018-84ae-4b5d-a533-86aa0a69dc40">
+        <Source xsi:type="ColumnBinding" dwd:design-time-name="23775480-f968-4892-b424-f97cc94b1a51">
           <TableID>PRODTABLE</TableID>
           <ColumnID>STENCILNAME</ColumnID>
         </Source>
       </NameColumn>
       <Translations>
-        <Translation dwd:design-time-name="93daf06b-d784-4121-90f9-42997cec0af2">
+        <Translation dwd:design-time-name="823de57b-19ff-461e-85df-f3f5681af2c5">
           <Language>1033</Language>
           <Caption>Stencil name</Caption>
         </Translation>
-        <Translation dwd:design-time-name="9cc1d8dc-5468-4458-8825-bb7b8d0d28a0">
+        <Translation dwd:design-time-name="8b58bdd4-a60d-4e21-8fbc-d9db90bf0c2c">
           <Language>3082</Language>
           <Caption>Nombre del Cliché</Caption>
         </Translation>
@@ -805,31 +796,31 @@
       <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
       <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
     </Attribute>
-    <Attribute dwd:design-time-name="a3a50b0c-9124-42c9-a15d-7ff0d3d5fddb">
+    <Attribute dwd:design-time-name="0f391e4a-26d3-4341-a00c-956bb0fc16d9">
       <ID>PRODSTATUS</ID>
       <Name>Production Status</Name>
       <KeyColumns>
-        <KeyColumn dwd:design-time-name="7d1a68c5-f69e-4544-a357-c3e18eeabcf9">
+        <KeyColumn dwd:design-time-name="45244dfc-cc69-413a-95cb-27fc63884a66">
           <DataType>Integer</DataType>
-          <Source xsi:type="ColumnBinding" dwd:design-time-name="272fb6bc-e95f-4d94-95e0-515117d86416">
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="64958f91-873a-4721-8614-e65dabe65a18">
             <TableID>PRODTABLE</TableID>
             <ColumnID>PRODSTATUS</ColumnID>
           </Source>
         </KeyColumn>
       </KeyColumns>
-      <NameColumn dwd:design-time-name="cef350d8-3812-4db3-b9f4-c46d644d5c02">
+      <NameColumn dwd:design-time-name="4a01b200-9b27-47df-9ec8-141845a2bb3b">
         <DataType>WChar</DataType>
-        <Source xsi:type="ColumnBinding" dwd:design-time-name="970edf2a-c094-4b5f-aff9-59a2f4d79a5a">
+        <Source xsi:type="ColumnBinding" dwd:design-time-name="d758d626-2b19-4579-a7d8-b19ea5ccdf26">
           <TableID>PRODTABLE</TableID>
           <ColumnID>PRODSTATUS</ColumnID>
         </Source>
       </NameColumn>
       <Translations>
-        <Translation dwd:design-time-name="96dc3418-24a1-414c-a7dc-7a7c6076df0a">
+        <Translation dwd:design-time-name="09de3028-30f1-41dd-8093-c9ae36b67e1f">
           <Language>1033</Language>
           <Caption>Production Status</Caption>
         </Translation>
-        <Translation dwd:design-time-name="0c5ef954-1ea2-4983-bbd1-6d10de5908e0">
+        <Translation dwd:design-time-name="58ef55ee-c16b-4e3e-adf3-2f59f20d1abb">
           <Language>3082</Language>
           <Caption>Estado de la Producción</Caption>
         </Translation>
@@ -837,31 +828,31 @@
       <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
       <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
     </Attribute>
-    <Attribute dwd:design-time-name="8d6d2d77-bf45-42b5-83cb-df538039e542">
+    <Attribute dwd:design-time-name="9705749b-23ad-42ba-8210-50d5002382b3">
       <ID>SCHEDDATE</ID>
       <Name>Schedule Date</Name>
       <KeyColumns>
-        <KeyColumn dwd:design-time-name="20780431-5a0b-4442-ac4d-31e806b5699f">
+        <KeyColumn dwd:design-time-name="01df2595-5a77-49aa-b7c1-84e57fa1ccca">
           <DataType>Date</DataType>
-          <Source xsi:type="ColumnBinding" dwd:design-time-name="2b61b48b-b669-4a1e-bd16-af50a953c9ab">
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="3770f461-80ba-4ec7-8f7a-6a11cc4b166b">
             <TableID>PRODTABLE</TableID>
             <ColumnID>SCHEDDATE</ColumnID>
           </Source>
         </KeyColumn>
       </KeyColumns>
-      <NameColumn dwd:design-time-name="e796d5e6-f26b-48e6-a332-982be74dfb31">
+      <NameColumn dwd:design-time-name="c2ed1025-95ff-436b-8d44-1adfdca0df09">
         <DataType>WChar</DataType>
-        <Source xsi:type="ColumnBinding" dwd:design-time-name="5c981432-6c95-48e5-a9de-9d9bd0c37ee7">
+        <Source xsi:type="ColumnBinding" dwd:design-time-name="597d443a-021c-493b-ada1-cb2def8b2e16">
           <TableID>PRODTABLE</TableID>
           <ColumnID>SCHEDDATE</ColumnID>
         </Source>
       </NameColumn>
       <Translations>
-        <Translation dwd:design-time-name="875f84b7-ea32-4d29-943e-5e0da95423e9">
+        <Translation dwd:design-time-name="e7fa8ad5-9801-45b6-9790-ed620e635902">
           <Language>1033</Language>
           <Caption>Schedule Date</Caption>
         </Translation>
-        <Translation dwd:design-time-name="3d55408c-b7e7-475d-b2dd-61922506ea7c">
+        <Translation dwd:design-time-name="c8d944f5-35b4-4b7e-b756-47ee7985f0e1">
           <Language>3082</Language>
           <Caption>Fecha Programado</Caption>
         </Translation>
@@ -869,31 +860,31 @@
       <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
       <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
     </Attribute>
-    <Attribute dwd:design-time-name="1dbaa33c-8a7a-42d5-89be-4b0f11422be5">
+    <Attribute dwd:design-time-name="d41e2ac4-8a78-453d-aa1e-0b1676048783">
       <ID>DLVDATE</ID>
       <Name>Delivery Date</Name>
       <KeyColumns>
-        <KeyColumn dwd:design-time-name="3695ab2c-7dd9-47c7-a216-63a6db1386ee">
+        <KeyColumn dwd:design-time-name="6ec245fa-b725-4d8f-b11f-336476c4b587">
           <DataType>Date</DataType>
-          <Source xsi:type="ColumnBinding" dwd:design-time-name="99ee6592-e24d-47f2-992d-44eec27c13f3">
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="a510f0bf-3fdc-49a7-8135-92d6cd1ee715">
             <TableID>PRODTABLE</TableID>
             <ColumnID>DLVDATE</ColumnID>
           </Source>
         </KeyColumn>
       </KeyColumns>
-      <NameColumn dwd:design-time-name="49b5a866-03d1-456d-aee9-16198276c693">
+      <NameColumn dwd:design-time-name="873ea019-3b38-4545-98f1-4f03dcf27dc5">
         <DataType>WChar</DataType>
-        <Source xsi:type="ColumnBinding" dwd:design-time-name="f02b7bf1-1cf7-40b1-bf61-57ed6fb20de7">
+        <Source xsi:type="ColumnBinding" dwd:design-time-name="172a0503-45fc-4954-ac11-535927ac47ae">
           <TableID>PRODTABLE</TableID>
           <ColumnID>DLVDATE</ColumnID>
         </Source>
       </NameColumn>
       <Translations>
-        <Translation dwd:design-time-name="ea7877b2-f6c7-46d8-99d4-aead99f2b813">
+        <Translation dwd:design-time-name="de0d9319-4b4f-460b-8db3-9ceb9a4e85e4">
           <Language>1033</Language>
           <Caption>Delivery Date</Caption>
         </Translation>
-        <Translation dwd:design-time-name="295e8ac3-8bd0-4206-b50f-c0d2ad1a79cc">
+        <Translation dwd:design-time-name="9245ebf9-4946-4426-960f-22203d31036b">
           <Language>3082</Language>
           <Caption>Fecha Entrega</Caption>
         </Translation>
@@ -901,31 +892,31 @@
       <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
       <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
     </Attribute>
-    <Attribute dwd:design-time-name="97dbb5db-c4d7-4edb-9945-061312b23304">
+    <Attribute dwd:design-time-name="4f023fa8-15d6-46f5-8382-91602e3f8397">
       <ID>STUPDATE</ID>
       <Name>Start Update</Name>
       <KeyColumns>
-        <KeyColumn dwd:design-time-name="826af99e-1e73-44a0-ad6c-16e7dfaefd77">
+        <KeyColumn dwd:design-time-name="53dd4e04-c136-415d-9949-f1c3c9e4e08c">
           <DataType>Date</DataType>
-          <Source xsi:type="ColumnBinding" dwd:design-time-name="9f2d0d95-bbc3-4f92-9af3-ee475429dd98">
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="d0132cb1-c79c-46d6-b51f-ce056826b2bd">
             <TableID>PRODTABLE</TableID>
             <ColumnID>STUPDATE</ColumnID>
           </Source>
         </KeyColumn>
       </KeyColumns>
-      <NameColumn dwd:design-time-name="876b78a0-57e0-455b-a96b-8628195db7e7">
+      <NameColumn dwd:design-time-name="d6010cb8-7909-4a34-881d-8dde6ac78efc">
         <DataType>WChar</DataType>
-        <Source xsi:type="ColumnBinding" dwd:design-time-name="60a50f83-450b-4633-bb87-57c6beae21e0">
+        <Source xsi:type="ColumnBinding" dwd:design-time-name="bdafdfdb-d50b-4920-9dbf-39b98e5b108c">
           <TableID>PRODTABLE</TableID>
           <ColumnID>STUPDATE</ColumnID>
         </Source>
       </NameColumn>
       <Translations>
-        <Translation dwd:design-time-name="54eadc76-198f-4fc5-9a5d-2de05ee4c2a0">
+        <Translation dwd:design-time-name="b4448a82-6ebc-4166-990a-1dc67e7251a0">
           <Language>1033</Language>
           <Caption>Start Update</Caption>
         </Translation>
-        <Translation dwd:design-time-name="3cfb41e5-ab4f-448f-97fd-0280d1f25706">
+        <Translation dwd:design-time-name="672442fa-7f3e-44f2-a99a-60e06c544f33">
           <Language>3082</Language>
           <Caption>Fecha Actualizada Iniciado</Caption>
         </Translation>
@@ -933,31 +924,31 @@
       <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
       <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
     </Attribute>
-    <Attribute dwd:design-time-name="cae40978-a6e3-4fb7-9bba-368f8ec5c911">
+    <Attribute dwd:design-time-name="0d1a8b23-f729-466f-aa66-b75623caf6d8">
       <ID>FINISHEDDATE</ID>
       <Name>Finished Date</Name>
       <KeyColumns>
-        <KeyColumn dwd:design-time-name="6d38646a-a42f-43b1-a12d-b496554631e4">
+        <KeyColumn dwd:design-time-name="3679fdee-ed1b-4de8-ae3a-6c4ae4c898f1">
           <DataType>Date</DataType>
-          <Source xsi:type="ColumnBinding" dwd:design-time-name="a7d20307-0fbb-40cc-ba89-737edc0fbe2a">
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="6b81d570-d303-4f1c-8d6f-e25eeb73e9e5">
             <TableID>PRODTABLE</TableID>
             <ColumnID>FINISHEDDATE</ColumnID>
           </Source>
         </KeyColumn>
       </KeyColumns>
-      <NameColumn dwd:design-time-name="fa66eaed-df68-478e-8497-ea05638ae5d2">
+      <NameColumn dwd:design-time-name="c4ebc1c3-31da-4051-b6a0-d1bc939e0897">
         <DataType>WChar</DataType>
-        <Source xsi:type="ColumnBinding" dwd:design-time-name="4bfea5eb-7d75-4758-829f-b4c5d8ec8dbb">
+        <Source xsi:type="ColumnBinding" dwd:design-time-name="adddb53a-cab5-4556-b104-0cf7908209d8">
           <TableID>PRODTABLE</TableID>
           <ColumnID>FINISHEDDATE</ColumnID>
         </Source>
       </NameColumn>
       <Translations>
-        <Translation dwd:design-time-name="4816bde6-21e9-476b-a0f0-470d9afb201f">
+        <Translation dwd:design-time-name="012bf8a9-6c80-4279-b3d1-753cee5867c1">
           <Language>1033</Language>
           <Caption>Finished Date</Caption>
         </Translation>
-        <Translation dwd:design-time-name="15f0931a-a1d3-4f16-af01-8c9ae5e1922e">
+        <Translation dwd:design-time-name="66c40e3c-5ea3-4470-b5a6-beb566bba9f1">
           <Language>3082</Language>
           <Caption>Fecha Notificado Terminado</Caption>
         </Translation>
@@ -965,31 +956,31 @@
       <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
       <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
     </Attribute>
-    <Attribute dwd:design-time-name="442d48f7-5743-436b-a4ea-e1d0ef9e1e67">
+    <Attribute dwd:design-time-name="274b67f0-af51-4a62-b4c7-2a2a7ff09fe0">
       <ID>SCHEDSTART</ID>
       <Name>Schedule Start</Name>
       <KeyColumns>
-        <KeyColumn dwd:design-time-name="578812f9-b4ba-4eca-b0e8-50bcabe5339a">
+        <KeyColumn dwd:design-time-name="660eddbf-0dff-40bd-87e7-792226e0ff27">
           <DataType>Date</DataType>
-          <Source xsi:type="ColumnBinding" dwd:design-time-name="6831f0f5-5dc4-45c2-8388-8a53f2978b09">
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="4734b5cb-b661-42c4-8d14-2206567ea3b0">
             <TableID>PRODTABLE</TableID>
             <ColumnID>SCHEDSTART</ColumnID>
           </Source>
         </KeyColumn>
       </KeyColumns>
-      <NameColumn dwd:design-time-name="a175a61c-ec31-4907-8c4f-bd27bd243024">
+      <NameColumn dwd:design-time-name="be44c7dd-a8a2-4a16-8aa2-dd3c54085712">
         <DataType>WChar</DataType>
-        <Source xsi:type="ColumnBinding" dwd:design-time-name="351b1fc3-7a94-4245-9fcc-df3e4ec98283">
+        <Source xsi:type="ColumnBinding" dwd:design-time-name="c92dde39-d056-4f7b-827d-5a094130c1be">
           <TableID>PRODTABLE</TableID>
           <ColumnID>SCHEDSTART</ColumnID>
         </Source>
       </NameColumn>
       <Translations>
-        <Translation dwd:design-time-name="1d27737f-2bbc-4701-8d51-9bf8bd43a94c">
+        <Translation dwd:design-time-name="f49918bb-34f0-4581-8187-ab69f767d244">
           <Language>1033</Language>
           <Caption>Schedule Start</Caption>
         </Translation>
-        <Translation dwd:design-time-name="aeaca9b4-ab73-4a6f-98cb-1f1727c00918">
+        <Translation dwd:design-time-name="10dc7836-c89d-477c-8095-f62b6d91d20d">
           <Language>3082</Language>
           <Caption>Fecha Inicial Programada</Caption>
         </Translation>
@@ -997,31 +988,31 @@
       <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
       <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
     </Attribute>
-    <Attribute dwd:design-time-name="07c817f4-f0a6-4589-83f0-da614e0c80ee">
+    <Attribute dwd:design-time-name="98c16f8f-24ee-438d-850d-14759d1da6aa">
       <ID>SCHEDEND</ID>
       <Name>Schedule End</Name>
       <KeyColumns>
-        <KeyColumn dwd:design-time-name="ade0ee8b-195f-4bb4-8ddc-04a6f99d2c1b">
+        <KeyColumn dwd:design-time-name="c7ff1b21-6672-413f-b1b6-5e395e335052">
           <DataType>Date</DataType>
-          <Source xsi:type="ColumnBinding" dwd:design-time-name="92245c57-f2af-4cf4-acc8-912daea5fcfc">
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="8587bfb4-457d-4879-ad98-9439a30b74a3">
             <TableID>PRODTABLE</TableID>
             <ColumnID>SCHEDEND</ColumnID>
           </Source>
         </KeyColumn>
       </KeyColumns>
-      <NameColumn dwd:design-time-name="75e1b482-c5d3-445b-b698-042abe4cede1">
+      <NameColumn dwd:design-time-name="2243b0cd-9c0c-4df8-8078-0ad5453bf906">
         <DataType>WChar</DataType>
-        <Source xsi:type="ColumnBinding" dwd:design-time-name="11343439-e0a0-40b6-893a-d45f20297656">
+        <Source xsi:type="ColumnBinding" dwd:design-time-name="ac5c4c42-5565-49a7-b2e3-abc0b35711cb">
           <TableID>PRODTABLE</TableID>
           <ColumnID>SCHEDEND</ColumnID>
         </Source>
       </NameColumn>
       <Translations>
-        <Translation dwd:design-time-name="b44374d0-ad7d-4cbc-a1a4-441f08664f2a">
+        <Translation dwd:design-time-name="5fcbe1a6-2fbb-4e87-9410-3c458d49a2db">
           <Language>1033</Language>
           <Caption>Schedule End</Caption>
         </Translation>
-        <Translation dwd:design-time-name="3a6a58c7-13f6-4051-a2cd-3e48b5533403">
+        <Translation dwd:design-time-name="d92a033f-5931-468f-ab77-452232707b5b">
           <Language>3082</Language>
           <Caption>Fecha Final Programada</Caption>
         </Translation>
@@ -1029,31 +1020,31 @@
       <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
       <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
     </Attribute>
-    <Attribute dwd:design-time-name="e2a1e8c6-204a-4ad1-adaf-d5087d481b8d">
+    <Attribute dwd:design-time-name="8294e55e-01dd-4fd6-bcfe-fe26b15757f0">
       <ID>REALDATE</ID>
       <Name>Real Date</Name>
       <KeyColumns>
-        <KeyColumn dwd:design-time-name="e9987de0-f086-48e3-9267-c204882f5b7c">
+        <KeyColumn dwd:design-time-name="a9046eae-112b-49b2-a9c9-32f57ddc18f8">
           <DataType>Date</DataType>
-          <Source xsi:type="ColumnBinding" dwd:design-time-name="65fbc725-9d5f-4f32-b236-adf9cc41336a">
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="41cf4c43-2987-4da5-b2c6-1702155ac047">
             <TableID>PRODTABLE</TableID>
             <ColumnID>REALDATE</ColumnID>
           </Source>
         </KeyColumn>
       </KeyColumns>
-      <NameColumn dwd:design-time-name="657a92a1-1438-47a3-9ca5-16eb3dcc6f0f">
+      <NameColumn dwd:design-time-name="d6c8d42e-ea41-4dc6-af1c-8a9b6d98de14">
         <DataType>WChar</DataType>
-        <Source xsi:type="ColumnBinding" dwd:design-time-name="5e1a9033-8f4f-403d-b41d-4498dfa72314">
+        <Source xsi:type="ColumnBinding" dwd:design-time-name="05ebb98e-2464-4a1c-be9d-96ddbc1de2f5">
           <TableID>PRODTABLE</TableID>
           <ColumnID>REALDATE</ColumnID>
         </Source>
       </NameColumn>
       <Translations>
-        <Translation dwd:design-time-name="52007b5d-3015-456e-a59b-b6a98835a039">
+        <Translation dwd:design-time-name="612bb402-92ef-4296-b158-95b04389fb60">
           <Language>1033</Language>
           <Caption>Real Date</Caption>
         </Translation>
-        <Translation dwd:design-time-name="f1701dad-e183-400a-a9bd-c1a37bd1f3b6">
+        <Translation dwd:design-time-name="ffaffa24-d324-4061-a84c-cd1d8e1a37d1">
           <Language>3082</Language>
           <Caption>Fecha Terminado</Caption>
         </Translation>
@@ -1061,31 +1052,31 @@
       <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
       <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
     </Attribute>
-    <Attribute dwd:design-time-name="1e69a631-ab46-4461-9555-481136f84ba7">
+    <Attribute dwd:design-time-name="cd20852d-37d8-4014-ac9d-fb37717a96ce">
       <ID>BOMDATE</ID>
       <Name>Bill of Materials Date</Name>
       <KeyColumns>
-        <KeyColumn dwd:design-time-name="1a38e221-aee4-452a-9455-b9be2c5b2718">
+        <KeyColumn dwd:design-time-name="f6b5c931-6724-4b3f-9ec6-b6a236eb8937">
           <DataType>Date</DataType>
-          <Source xsi:type="ColumnBinding" dwd:design-time-name="b97eaf21-7445-4030-b098-af42bb6e7703">
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="f2d26b1c-802d-4428-b2cc-1c3e3722b502">
             <TableID>PRODTABLE</TableID>
             <ColumnID>BOMDATE</ColumnID>
           </Source>
         </KeyColumn>
       </KeyColumns>
-      <NameColumn dwd:design-time-name="66b9957a-4826-4450-81c1-34dc575914b6">
+      <NameColumn dwd:design-time-name="d0aa48fb-6110-4b61-9313-fa8d2d6a8f8b">
         <DataType>WChar</DataType>
-        <Source xsi:type="ColumnBinding" dwd:design-time-name="5a2d02dc-6451-4c1d-8270-e7477f874162">
+        <Source xsi:type="ColumnBinding" dwd:design-time-name="d1e3cf63-8616-49fd-aea5-69cb7430b86d">
           <TableID>PRODTABLE</TableID>
           <ColumnID>BOMDATE</ColumnID>
         </Source>
       </NameColumn>
       <Translations>
-        <Translation dwd:design-time-name="7d7e14d9-8eed-43c6-8811-796001089e6a">
+        <Translation dwd:design-time-name="0580db51-5b34-451e-b42e-6349a15b267f">
           <Language>1033</Language>
           <Caption>Bill Of Materials Date</Caption>
         </Translation>
-        <Translation dwd:design-time-name="9ab95fa6-c992-4f15-a4cf-7745162d9b1f">
+        <Translation dwd:design-time-name="6e4d11fd-9e19-4f7a-a700-b03b284aaf2c">
           <Language>3082</Language>
           <Caption>Fecha Lista Materiales</Caption>
         </Translation>
@@ -1093,31 +1084,31 @@
       <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
       <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
     </Attribute>
-    <Attribute dwd:design-time-name="2cf29852-eb2b-4424-a51b-0feffcf19679">
+    <Attribute dwd:design-time-name="705f9073-84f9-4ad7-9b6e-376cad922cdd">
       <ID>CALCDATE</ID>
       <Name>Estimated Date</Name>
       <KeyColumns>
-        <KeyColumn dwd:design-time-name="1cde4739-127f-434c-ad5b-5e02d37aff96">
+        <KeyColumn dwd:design-time-name="d255cd20-cb50-42ba-af87-e5a78247cdd5">
           <DataType>Date</DataType>
-          <Source xsi:type="ColumnBinding" dwd:design-time-name="18714bd1-9d83-48c3-aa75-1a0f2e8b2a84">
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="d1e7ae76-e9be-4810-a0ee-9ca18ee41480">
             <TableID>PRODTABLE</TableID>
             <ColumnID>CALCDATE</ColumnID>
           </Source>
         </KeyColumn>
       </KeyColumns>
-      <NameColumn dwd:design-time-name="59329a37-ed3e-4f27-8dfe-3efda14bfbbc">
+      <NameColumn dwd:design-time-name="f0999fff-5f57-49ba-a9b3-6218adcd5ec0">
         <DataType>WChar</DataType>
-        <Source xsi:type="ColumnBinding" dwd:design-time-name="8882890d-de91-4611-a3df-0c64fac1b782">
+        <Source xsi:type="ColumnBinding" dwd:design-time-name="1c092ea0-1126-4bb1-946f-61df159a3202">
           <TableID>PRODTABLE</TableID>
           <ColumnID>CALCDATE</ColumnID>
         </Source>
       </NameColumn>
       <Translations>
-        <Translation dwd:design-time-name="7d8bb478-8c5d-4e2c-ad25-45adef822a57">
+        <Translation dwd:design-time-name="1f55aae0-39f6-4ea1-bc21-62b1c909a9cc">
           <Language>1033</Language>
           <Caption>Estimated Date</Caption>
         </Translation>
-        <Translation dwd:design-time-name="94f80f4b-56e6-4107-b0a5-555b5f1f549d">
+        <Translation dwd:design-time-name="23b5b4f7-5daf-475e-b4c5-c3630c935345">
           <Language>3082</Language>
           <Caption>Fecha Estimada</Caption>
         </Translation>
@@ -1125,31 +1116,31 @@
       <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
       <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
     </Attribute>
-    <Attribute dwd:design-time-name="8dc10f78-53e1-4bc1-a183-96ddb525cd3e">
+    <Attribute dwd:design-time-name="f11d75ac-a16e-4738-ba91-c744881b4cb2">
       <ID>LATESTSCHEDDATE</ID>
       <Name>Latest Schedule Date</Name>
       <KeyColumns>
-        <KeyColumn dwd:design-time-name="feb4ea5c-6148-413b-932a-0137c733a730">
+        <KeyColumn dwd:design-time-name="e42189df-5596-44f2-8347-0aafaf68afb7">
           <DataType>Date</DataType>
-          <Source xsi:type="ColumnBinding" dwd:design-time-name="1f063c14-c12d-4bd6-96ef-ea3e25ed7fb8">
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="a9317463-93da-42c1-a563-0fea97218cf9">
             <TableID>PRODTABLE</TableID>
             <ColumnID>LATESTSCHEDDATE</ColumnID>
           </Source>
         </KeyColumn>
       </KeyColumns>
-      <NameColumn dwd:design-time-name="4fa84c29-a3d8-40cd-8127-3f21498a7600">
+      <NameColumn dwd:design-time-name="496d9b8a-7fad-4afd-a42b-fbdba490341d">
         <DataType>WChar</DataType>
-        <Source xsi:type="ColumnBinding" dwd:design-time-name="dfb900ee-4059-4804-be3d-e96728649109">
+        <Source xsi:type="ColumnBinding" dwd:design-time-name="7de75e22-0fba-4663-83b9-ac6e989857c6">
           <TableID>PRODTABLE</TableID>
           <ColumnID>LATESTSCHEDDATE</ColumnID>
         </Source>
       </NameColumn>
       <Translations>
-        <Translation dwd:design-time-name="1a4fba45-aa3f-456a-9a14-a3c49ebee677">
+        <Translation dwd:design-time-name="8ed43be8-efe6-4535-a093-e904a5a9f88b">
           <Language>1033</Language>
           <Caption>Latest Schedule Date</Caption>
         </Translation>
-        <Translation dwd:design-time-name="06c9b7a5-dbb3-48b4-906a-224fe78ca245">
+        <Translation dwd:design-time-name="3db5a76a-af68-4b7a-a78e-e9232b3e0fdf">
           <Language>3082</Language>
           <Caption>Fecha Última Programación</Caption>
         </Translation>
@@ -1157,31 +1148,31 @@
       <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
       <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
     </Attribute>
-    <Attribute dwd:design-time-name="395c24c4-0274-4f17-ba25-4aca95468ea1">
+    <Attribute dwd:design-time-name="26f1fdf1-883f-4626-a179-8829878276cf">
       <ID>CREATEDDATETIME</ID>
       <Name>Created Date Time</Name>
       <KeyColumns>
-        <KeyColumn dwd:design-time-name="87addbf9-3bf9-4699-98ed-ceea8408cadd">
+        <KeyColumn dwd:design-time-name="f060215b-66ae-4033-9210-b58f43c3230f">
           <DataType>Date</DataType>
-          <Source xsi:type="ColumnBinding" dwd:design-time-name="a8366ccb-b5a3-47b9-919a-2544f6acd280">
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="c48032b1-fb7f-45e0-ba1b-998957f56dfe">
             <TableID>PRODTABLE</TableID>
             <ColumnID>CREATEDDATETIME</ColumnID>
           </Source>
         </KeyColumn>
       </KeyColumns>
-      <NameColumn dwd:design-time-name="4f0e00b8-9840-411d-9ff3-855daaa17dfc">
+      <NameColumn dwd:design-time-name="53e57a9f-e044-4a40-9be9-04688dda372b">
         <DataType>WChar</DataType>
-        <Source xsi:type="ColumnBinding" dwd:design-time-name="b8be92b9-1007-4026-a5bf-a838c35a9d1f">
+        <Source xsi:type="ColumnBinding" dwd:design-time-name="2abcf07e-3377-4469-9346-c4c902287ab4">
           <TableID>PRODTABLE</TableID>
           <ColumnID>CREATEDDATETIME</ColumnID>
         </Source>
       </NameColumn>
       <Translations>
-        <Translation dwd:design-time-name="b4c733fa-403e-4765-8291-f38cc5f7bb7f">
+        <Translation dwd:design-time-name="d6d576ca-68bf-472d-a40f-5ad30b0cc537">
           <Language>1033</Language>
           <Caption>Created Date Time</Caption>
         </Translation>
-        <Translation dwd:design-time-name="7cc947bb-45c0-4e0d-82a6-dffd88adc29b">
+        <Translation dwd:design-time-name="92c8e286-9bc9-46ac-9dbf-4fe72ae20002">
           <Language>3082</Language>
           <Caption>Fecha y Hora de Creación</Caption>
         </Translation>
@@ -1189,31 +1180,31 @@
       <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
       <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
     </Attribute>
-    <Attribute dwd:design-time-name="1f6d5b1e-bb8e-4486-93e4-7f06fcc29c39">
+    <Attribute dwd:design-time-name="467979cc-2188-482f-8540-3fadbfda4d5d">
       <ID>DAYSBETWEENCALCDATE</ID>
       <Name>Days Between Calc Date</Name>
       <KeyColumns>
-        <KeyColumn dwd:design-time-name="f25e13f4-12a2-4740-84cf-901028ca4aa2">
+        <KeyColumn dwd:design-time-name="641d81e9-abec-4f71-970b-119fd7f2d153">
           <DataType>Integer</DataType>
-          <Source xsi:type="ColumnBinding" dwd:design-time-name="4930e88a-92f2-41b3-8b46-6d20f27239bc">
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="aed43742-79c2-4fc0-8053-f908a577435a">
             <TableID>PRODTABLE</TableID>
             <ColumnID>DAYSBETWEENCALCDATE</ColumnID>
           </Source>
         </KeyColumn>
       </KeyColumns>
-      <NameColumn dwd:design-time-name="4e7a0881-30df-4ea0-a6d4-afbdf6da88a0">
+      <NameColumn dwd:design-time-name="41db72d8-1696-4491-b9f2-f338c32aed89">
         <DataType>WChar</DataType>
-        <Source xsi:type="ColumnBinding" dwd:design-time-name="64b22bb1-969f-4b3e-b4a0-17feaa521d20">
+        <Source xsi:type="ColumnBinding" dwd:design-time-name="5cdf9ab7-2068-497a-9598-3f573ddd0d1e">
           <TableID>PRODTABLE</TableID>
           <ColumnID>DAYSBETWEENCALCDATE</ColumnID>
         </Source>
       </NameColumn>
       <Translations>
-        <Translation dwd:design-time-name="46cb8676-d624-4570-a34e-ec20cde151fd">
+        <Translation dwd:design-time-name="d48bbfa1-7b92-4208-80c0-5c1f04a82947">
           <Language>1033</Language>
           <Caption>Days Between Calc Date</Caption>
         </Translation>
-        <Translation dwd:design-time-name="da95e253-ebf5-49e3-a2ed-8a690e128c9b">
+        <Translation dwd:design-time-name="e04b09bc-4015-4213-baf7-a4682b788718">
           <Language>3082</Language>
           <Caption>Dias entre Fecha Estimada y Hoy</Caption>
         </Translation>
@@ -1221,31 +1212,31 @@
       <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
       <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
     </Attribute>
-    <Attribute dwd:design-time-name="7207d7f6-2a4b-4b9e-b69d-c6063bb7415a">
+    <Attribute dwd:design-time-name="74f98ef7-d802-4035-ad20-dc24a5eb910a">
       <ID>PRODSTATUSNAME</ID>
       <Name>Production Status Name</Name>
       <KeyColumns>
-        <KeyColumn dwd:design-time-name="31aa6d4e-5563-4156-9f2c-e4a1ce053398">
+        <KeyColumn dwd:design-time-name="4cb014e5-eb0a-4d29-bbb3-a69e9022945e">
           <DataType>WChar</DataType>
-          <Source xsi:type="ColumnBinding" dwd:design-time-name="7195e5fa-f172-44f3-8a7a-64ea00eb9457">
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="5367c233-8268-4af0-aa24-b895c1c47708">
             <TableID>PRODTABLE</TableID>
             <ColumnID>PRODSTATUSNAME</ColumnID>
           </Source>
         </KeyColumn>
       </KeyColumns>
-      <NameColumn dwd:design-time-name="39a6dfa1-e1b8-4fda-ac77-cd57bbc7b781">
+      <NameColumn dwd:design-time-name="d914cab2-d4bd-4bd7-96fe-c1c553a34fd0">
         <DataType>WChar</DataType>
-        <Source xsi:type="ColumnBinding" dwd:design-time-name="556db88e-c543-4fd9-be1a-33cb909c6dee">
+        <Source xsi:type="ColumnBinding" dwd:design-time-name="a6e1d578-eb89-4e52-b224-cd5006e21475">
           <TableID>PRODTABLE</TableID>
           <ColumnID>PRODSTATUSNAME</ColumnID>
         </Source>
       </NameColumn>
       <Translations>
-        <Translation dwd:design-time-name="def6863b-83e4-4174-887c-22c3fd1e4795">
+        <Translation dwd:design-time-name="4f060666-c2ab-452c-9eae-797e3caad4ab">
           <Language>1033</Language>
           <Caption>Production Status Name</Caption>
         </Translation>
-        <Translation dwd:design-time-name="9c4a8a6a-37e6-44db-a33e-bdd94ebc9796">
+        <Translation dwd:design-time-name="11e05a68-784c-4279-9e0f-1b69b9d40f92">
           <Language>3082</Language>
           <Caption>Nombre Estado de la Producción</Caption>
         </Translation>
@@ -1253,33 +1244,33 @@
       <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
       <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
     </Attribute>
-    <Attribute dwd:design-time-name="86721ff0-ca4d-4ecd-a844-9a1fa333da8d">
+    <Attribute dwd:design-time-name="fa98f077-d74f-460b-9b76-af4a0bac95b4">
       <ID>ABNORMALITIESID</ID>
       <Name>Abnormalitie ID</Name>
       <KeyColumns>
-        <KeyColumn dwd:design-time-name="659fd3a6-172c-4743-8df3-3a0edecad124">
+        <KeyColumn dwd:design-time-name="93a2398f-d2bd-4e3a-b7e8-32fd39bb44fd">
           <DataType>WChar</DataType>
           <DataSize>20</DataSize>
-          <Source xsi:type="ColumnBinding" dwd:design-time-name="c6bfb7f1-5396-49a9-8d54-788c5bec4b6e">
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="3770acd7-adb1-4f94-9258-076553d6991e">
             <TableID>PRODTABLE</TableID>
             <ColumnID>ABNORMALITIESID</ColumnID>
           </Source>
         </KeyColumn>
       </KeyColumns>
-      <NameColumn dwd:design-time-name="7f98394e-d108-4a54-b2e8-7f965950192c">
+      <NameColumn dwd:design-time-name="cc9efa69-4cf1-437c-a0c0-ce46fd864ecb">
         <DataType>WChar</DataType>
         <DataSize>20</DataSize>
-        <Source xsi:type="ColumnBinding" dwd:design-time-name="4758d44b-07f7-48bd-9596-96a88587744d">
+        <Source xsi:type="ColumnBinding" dwd:design-time-name="dbe7b72d-4fc7-470c-862b-8be0bb0430c7">
           <TableID>PRODTABLE</TableID>
           <ColumnID>ABNORMALITIESID</ColumnID>
         </Source>
       </NameColumn>
       <Translations>
-        <Translation dwd:design-time-name="4335e378-fdda-4776-9b4c-d23dcdf5da98">
+        <Translation dwd:design-time-name="5ddcb526-ec49-4b2b-abac-22048c17c19a">
           <Language>1033</Language>
           <Caption>Abnormalitie ID</Caption>
         </Translation>
-        <Translation dwd:design-time-name="7a2ff7c0-4972-41a3-b5d3-c00ac296136b">
+        <Translation dwd:design-time-name="e49a482a-93e8-4309-864c-a1f5005052dc">
           <Language>3082</Language>
           <Caption>Anomalía</Caption>
         </Translation>
@@ -1287,33 +1278,33 @@
       <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
       <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
     </Attribute>
-    <Attribute dwd:design-time-name="da236393-6bc3-42b8-b047-3f5b706478ca">
+    <Attribute dwd:design-time-name="257ba78b-600a-47c4-a237-442ee0d606a0">
       <ID>ABNORMALITIESNAME</ID>
       <Name>Abnormalitie Name</Name>
       <KeyColumns>
-        <KeyColumn dwd:design-time-name="32827caf-7713-4a67-859e-49a3305e21fc">
+        <KeyColumn dwd:design-time-name="1ecd7f0e-88ae-46b9-bf57-6364054154db">
           <DataType>WChar</DataType>
           <DataSize>60</DataSize>
-          <Source xsi:type="ColumnBinding" dwd:design-time-name="2dbeb842-e1e1-466a-9444-890f14e19bea">
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="c411af4d-2bb5-4f6e-924f-3cd16e237085">
             <TableID>PRODTABLE</TableID>
             <ColumnID>ABNORMALITIESNAME</ColumnID>
           </Source>
         </KeyColumn>
       </KeyColumns>
-      <NameColumn dwd:design-time-name="aa325d67-afe6-4d11-b0b8-473c5e5d9d89">
+      <NameColumn dwd:design-time-name="a11b9c16-f294-4de5-99ff-258b6b129049">
         <DataType>WChar</DataType>
         <DataSize>60</DataSize>
-        <Source xsi:type="ColumnBinding" dwd:design-time-name="5dbcee30-5d12-4020-820b-53111dc7eace">
+        <Source xsi:type="ColumnBinding" dwd:design-time-name="44297c70-5f2d-47e2-9ec0-33766b9cbe77">
           <TableID>PRODTABLE</TableID>
           <ColumnID>ABNORMALITIESNAME</ColumnID>
         </Source>
       </NameColumn>
       <Translations>
-        <Translation dwd:design-time-name="d00ddffe-479f-4a4e-aefe-26500d40261e">
+        <Translation dwd:design-time-name="1e462bfa-3469-46e5-b0ca-fda910fd26a4">
           <Language>1033</Language>
           <Caption>Abnormalitie Name</Caption>
         </Translation>
-        <Translation dwd:design-time-name="5ff92bdd-a795-4804-b0be-6c68cd181847">
+        <Translation dwd:design-time-name="73e18651-899d-487b-9dfe-f37068330e3a">
           <Language>3082</Language>
           <Caption>Nombre de Anomalía</Caption>
         </Translation>
@@ -1321,31 +1312,31 @@
       <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
       <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
     </Attribute>
-    <Attribute dwd:design-time-name="e2c4e4bf-3c69-4cf2-a15c-180771df1113">
+    <Attribute dwd:design-time-name="225b29ae-e15a-46a5-a319-7743f99cf87b">
       <ID>QTYSCHED</ID>
       <Name>Scheduled Quantity</Name>
       <KeyColumns>
-        <KeyColumn dwd:design-time-name="d1a227e7-7528-4974-804b-863a5e626ac0">
+        <KeyColumn dwd:design-time-name="2b598eb3-2e3c-4678-8a22-9bb525fefe37">
           <DataType>Double</DataType>
-          <Source xsi:type="ColumnBinding" dwd:design-time-name="8d9b884d-5236-42a1-867b-58ac147905be">
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="a85a63dc-7c59-4d87-8071-19503a53f7f4">
             <TableID>PRODTABLE</TableID>
             <ColumnID>QTYSCHED</ColumnID>
           </Source>
         </KeyColumn>
       </KeyColumns>
-      <NameColumn dwd:design-time-name="ccb43c12-fcae-4328-b163-bff56bd4ce21">
+      <NameColumn dwd:design-time-name="42b8ba11-e55f-4e7c-b02e-905726af217b">
         <DataType>WChar</DataType>
-        <Source xsi:type="ColumnBinding" dwd:design-time-name="3af89dbf-d26c-4cf4-81f9-aa01c3ee9257">
+        <Source xsi:type="ColumnBinding" dwd:design-time-name="7414c907-69ac-4af8-83f8-361dc59b5566">
           <TableID>PRODTABLE</TableID>
           <ColumnID>QTYSCHED</ColumnID>
         </Source>
       </NameColumn>
       <Translations>
-        <Translation dwd:design-time-name="63d7ead8-e7c0-4599-8bc6-9432bd7aedbe">
+        <Translation dwd:design-time-name="70a4ef0c-910f-46d0-874e-bd723d3a6fe4">
           <Language>1033</Language>
           <Caption>Scheduled Quantity</Caption>
         </Translation>
-        <Translation dwd:design-time-name="2b0cd3a7-4b1d-46ab-9e06-93c509c8367c">
+        <Translation dwd:design-time-name="a48b0a5e-12ce-460d-9dad-4ade83eef3e6">
           <Language>3082</Language>
           <Caption>Cantidad Programada</Caption>
         </Translation>
@@ -1354,33 +1345,33 @@
       <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
       <ddl300_300:FormatString>#,##0.0000;-#,##0.0000</ddl300_300:FormatString>
     </Attribute>
-    <Attribute dwd:design-time-name="27b6036f-74eb-4425-adca-fbe584255930">
+    <Attribute dwd:design-time-name="7861edd9-a7c4-4189-a09a-8a006cd7489c">
       <ID>SALESID</ID>
       <Name>Sales ID</Name>
       <KeyColumns>
-        <KeyColumn dwd:design-time-name="85dd2308-7c9a-406d-9cb3-b65579258198">
+        <KeyColumn dwd:design-time-name="f5420922-4671-405e-89b0-04d7f3e41276">
           <DataType>WChar</DataType>
           <DataSize>20</DataSize>
-          <Source xsi:type="ColumnBinding" dwd:design-time-name="9eb1fdf4-edd1-4ef3-884b-4aa63990cc48">
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="26a3f2c4-7e6f-4d30-aaed-5d0b653804c1">
             <TableID>PRODTABLE</TableID>
             <ColumnID>SALESID</ColumnID>
           </Source>
         </KeyColumn>
       </KeyColumns>
-      <NameColumn dwd:design-time-name="b6cbde79-d725-42f9-a2f9-50c629ffe215">
+      <NameColumn dwd:design-time-name="1807dd9b-c093-4f03-b36f-d840802af3f8">
         <DataType>WChar</DataType>
         <DataSize>20</DataSize>
-        <Source xsi:type="ColumnBinding" dwd:design-time-name="5692ab44-fb50-4f60-b0b1-afafbecb920f">
+        <Source xsi:type="ColumnBinding" dwd:design-time-name="abdaa35f-5a5c-41c3-97fa-e63cf215b609">
           <TableID>PRODTABLE</TableID>
           <ColumnID>SALESID</ColumnID>
         </Source>
       </NameColumn>
       <Translations>
-        <Translation dwd:design-time-name="137fffc5-a667-49a8-afd8-fccef04be159">
+        <Translation dwd:design-time-name="95555962-039b-4880-91b8-11a2fd417f83">
           <Language>1033</Language>
           <Caption>Sales ID</Caption>
         </Translation>
-        <Translation dwd:design-time-name="f5159c2e-13b8-4526-8500-89171bac65d0">
+        <Translation dwd:design-time-name="13e7e1f3-7555-443d-8e56-cecc6112a3ae">
           <Language>3082</Language>
           <Caption>Pedido de Ventas</Caption>
         </Translation>
@@ -1388,33 +1379,33 @@
       <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
       <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
     </Attribute>
-    <Attribute dwd:design-time-name="bc17a27b-c09b-4fa5-906f-71b6ee8b5bfe">
+    <Attribute dwd:design-time-name="10b6a1c7-f56c-4a26-8073-e6098aa87f8f">
       <ID>PRODUCTIONSTATUS</ID>
       <Name>Production Quantity Status</Name>
       <KeyColumns>
-        <KeyColumn dwd:design-time-name="cb4b0a05-4a3c-4eda-b39f-ce6dda3c10d7">
+        <KeyColumn dwd:design-time-name="c2685ece-2bfd-4bc3-bcf1-08a9905f1705">
           <DataType>WChar</DataType>
           <DataSize>13</DataSize>
-          <Source xsi:type="ColumnBinding" dwd:design-time-name="e5ab626c-c2df-4dd4-8b50-eece944288f3">
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="95d4b951-4cfd-454e-bc67-64fc3ccccb1c">
             <TableID>PRODTABLE</TableID>
             <ColumnID>PRODUCTIONSTATUS</ColumnID>
           </Source>
         </KeyColumn>
       </KeyColumns>
-      <NameColumn dwd:design-time-name="6f763439-2108-4826-8e79-030f978e8cbf">
+      <NameColumn dwd:design-time-name="71cbd845-1da9-4c4f-9e54-98e2dd24a2ae">
         <DataType>WChar</DataType>
         <DataSize>13</DataSize>
-        <Source xsi:type="ColumnBinding" dwd:design-time-name="bc9c38d7-3ae5-494b-8337-7bd7d37a0bd1">
+        <Source xsi:type="ColumnBinding" dwd:design-time-name="63e00e2c-364e-465f-80b6-1242edd684a4">
           <TableID>PRODTABLE</TableID>
           <ColumnID>PRODUCTIONSTATUS</ColumnID>
         </Source>
       </NameColumn>
       <Translations>
-        <Translation dwd:design-time-name="f721ccb7-d1eb-4a29-85e6-ce55981c7192">
+        <Translation dwd:design-time-name="188591d9-3f43-4cac-a3d4-6a58617d40f2">
           <Language>1033</Language>
           <Caption>Production Quantity Status</Caption>
         </Translation>
-        <Translation dwd:design-time-name="dbac56d6-f01d-47ce-ae93-e35104be0804">
+        <Translation dwd:design-time-name="6f02f19b-0157-4ba9-9e9d-4ca863f0c0c5">
           <Language>3082</Language>
           <Caption>Estado Cantidad Producida</Caption>
         </Translation>
@@ -1422,31 +1413,31 @@
       <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
       <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
     </Attribute>
-    <Attribute dwd:design-time-name="7815311c-a6a6-4dde-b32f-d6afced9a287">
+    <Attribute dwd:design-time-name="9e17091a-a4e7-40cd-8268-44d1054a60e2">
       <ID>CONFIRMDATE</ID>
       <Name>Confirm Date</Name>
       <KeyColumns>
-        <KeyColumn dwd:design-time-name="b70766bf-13a2-48fe-b90f-f30dd1992c31">
+        <KeyColumn dwd:design-time-name="c2ed12cf-e02b-44b7-955d-0b71d3e27e4e">
           <DataType>Date</DataType>
-          <Source xsi:type="ColumnBinding" dwd:design-time-name="cb710bea-5298-448b-91b4-041ddfa93f14">
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="4e8397c2-7477-4697-a2c4-dded4814bb64">
             <TableID>PRODTABLE</TableID>
             <ColumnID>CONFIRMDATE</ColumnID>
           </Source>
         </KeyColumn>
       </KeyColumns>
-      <NameColumn dwd:design-time-name="982efed4-a981-49b1-bf68-c60bd58218b1">
+      <NameColumn dwd:design-time-name="0743865b-5067-49ef-9a39-d192507c1493">
         <DataType>WChar</DataType>
-        <Source xsi:type="ColumnBinding" dwd:design-time-name="f3bbfc8a-a265-459e-a088-673769a69223">
+        <Source xsi:type="ColumnBinding" dwd:design-time-name="b1277be8-0484-4829-801f-dc9736734af2">
           <TableID>PRODTABLE</TableID>
           <ColumnID>CONFIRMDATE</ColumnID>
         </Source>
       </NameColumn>
       <Translations>
-        <Translation dwd:design-time-name="dfb32ec3-61fd-42c7-ada3-83bb86fe1d19">
+        <Translation dwd:design-time-name="08bcc73d-cba2-4dc8-a96d-e8cdc07b97ee">
           <Language>1033</Language>
           <Caption>Confirm Date</Caption>
         </Translation>
-        <Translation dwd:design-time-name="5b395185-70a5-493d-a669-9ebc9b452473">
+        <Translation dwd:design-time-name="8014af5d-8728-4fdd-97e8-7e6872d64265">
           <Language>3082</Language>
           <Caption>Fecha Confirmación</Caption>
         </Translation>
@@ -1454,31 +1445,31 @@
       <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
       <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
     </Attribute>
-    <Attribute dwd:design-time-name="a6aeaee5-2822-405b-a0b3-62265f899fb7">
+    <Attribute dwd:design-time-name="92a25c91-bc68-4222-b9d6-e16a570d7f7d">
       <ID>DAYSCONFIRMDATE</ID>
       <Name>Days Between Confirm Date</Name>
       <KeyColumns>
-        <KeyColumn dwd:design-time-name="e1790bec-eb5f-4023-8bcd-4f287bedf9d9">
+        <KeyColumn dwd:design-time-name="8a1c9a73-de06-486c-9062-83aff3003973">
           <DataType>Integer</DataType>
-          <Source xsi:type="ColumnBinding" dwd:design-time-name="06495dbb-757d-4543-8cca-8a1daeac5f7e">
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="7b0a2845-b14b-4710-a84b-86b1af033e61">
             <TableID>PRODTABLE</TableID>
             <ColumnID>DAYSCONFIRMDATE</ColumnID>
           </Source>
         </KeyColumn>
       </KeyColumns>
-      <NameColumn dwd:design-time-name="88bef107-c6d6-45ae-8da6-bb6e16270870">
+      <NameColumn dwd:design-time-name="cdc92169-6adf-4880-af60-d8af5a6674fc">
         <DataType>WChar</DataType>
-        <Source xsi:type="ColumnBinding" dwd:design-time-name="4a14cf95-e449-4602-b0f3-4033e4049daf">
+        <Source xsi:type="ColumnBinding" dwd:design-time-name="440f904c-d7e3-436b-9f6f-33bcda47102a">
           <TableID>PRODTABLE</TableID>
           <ColumnID>DAYSCONFIRMDATE</ColumnID>
         </Source>
       </NameColumn>
       <Translations>
-        <Translation dwd:design-time-name="cff39ea8-2d4f-44f5-a0d7-387994550145">
+        <Translation dwd:design-time-name="fce4afc2-136a-40a2-9376-9849c4662ca9">
           <Language>1033</Language>
           <Caption>Days Between Confirm Date</Caption>
         </Translation>
-        <Translation dwd:design-time-name="1c9356c9-ef13-4343-b781-e938126e6fd4">
+        <Translation dwd:design-time-name="b20f26d9-ef96-4480-9a2d-284d49cbc72f">
           <Language>3082</Language>
           <Caption>Dias entre Fecha Confirmación</Caption>
         </Translation>
@@ -1486,33 +1477,33 @@
       <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
       <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
     </Attribute>
-    <Attribute dwd:design-time-name="050546b5-937b-4928-8663-0acfd47dfcba">
+    <Attribute dwd:design-time-name="49781962-f6b9-4b7b-bf21-089eb59f1052">
       <ID>CUSTACCOUNT</ID>
       <Name>Cust Account</Name>
       <KeyColumns>
-        <KeyColumn dwd:design-time-name="0687d32c-63da-4560-90b9-0d724d94fb84">
+        <KeyColumn dwd:design-time-name="5aee876f-631f-46da-978b-1aa5b5ddf6a9">
           <DataType>WChar</DataType>
           <DataSize>20</DataSize>
-          <Source xsi:type="ColumnBinding" dwd:design-time-name="db1da789-6037-4bb7-80f2-71c40f6c07e5">
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="baeacb18-8706-4899-941d-31b091d72c61">
             <TableID>PRODTABLE</TableID>
             <ColumnID>CUSTACCOUNT</ColumnID>
           </Source>
         </KeyColumn>
       </KeyColumns>
-      <NameColumn dwd:design-time-name="833e470f-dd1c-472f-b39b-a919864c481b">
+      <NameColumn dwd:design-time-name="e5653c75-11e2-471f-b144-e97a302848ff">
         <DataType>WChar</DataType>
         <DataSize>20</DataSize>
-        <Source xsi:type="ColumnBinding" dwd:design-time-name="f65bd5c5-4795-49e5-9a9e-bc2def96b4e3">
+        <Source xsi:type="ColumnBinding" dwd:design-time-name="a0df8372-1691-4562-bf2a-fe5bb5782c2d">
           <TableID>PRODTABLE</TableID>
           <ColumnID>CUSTACCOUNT</ColumnID>
         </Source>
       </NameColumn>
       <Translations>
-        <Translation dwd:design-time-name="4d54d95f-cd78-4376-b320-7b5f6ed808ce">
+        <Translation dwd:design-time-name="fd413671-7746-4d6d-b2b7-e6867cd1ee0d">
           <Language>1033</Language>
           <Caption>Cust Account</Caption>
         </Translation>
-        <Translation dwd:design-time-name="3ba2081b-51e0-482e-9d1f-d3eea4f5b07b">
+        <Translation dwd:design-time-name="e1abdda8-d75c-4949-99f1-732806a4becc">
           <Language>3082</Language>
           <Caption>Cliente</Caption>
         </Translation>
@@ -1520,33 +1511,33 @@
       <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
       <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
     </Attribute>
-    <Attribute dwd:design-time-name="ac15dfad-b0c0-4d8c-b984-fe4784f365a5">
+    <Attribute dwd:design-time-name="8fce2dd5-2ad1-44d6-a8a9-d4d56ae6c387">
       <ID>CUSTNAME</ID>
       <Name>Cust Name</Name>
       <KeyColumns>
-        <KeyColumn dwd:design-time-name="1ee1b0b6-666b-4531-8f22-684957b76490">
+        <KeyColumn dwd:design-time-name="01ae01d2-d9e0-45c0-b23f-aa7f218ec28e">
           <DataType>WChar</DataType>
           <DataSize>60</DataSize>
-          <Source xsi:type="ColumnBinding" dwd:design-time-name="482e15ac-9b57-4890-b0b1-3cc72105cea0">
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="18ae9069-de07-4b3a-8ae7-249bdc28cb58">
             <TableID>PRODTABLE</TableID>
             <ColumnID>CUSTNAME</ColumnID>
           </Source>
         </KeyColumn>
       </KeyColumns>
-      <NameColumn dwd:design-time-name="9a29d15c-ed15-4c26-970a-39b94a71c3a1">
+      <NameColumn dwd:design-time-name="eb11ec6f-4e80-431a-b45c-2ef28b2ef21b">
         <DataType>WChar</DataType>
         <DataSize>60</DataSize>
-        <Source xsi:type="ColumnBinding" dwd:design-time-name="7d782b96-6820-46a7-a18b-bdb938059550">
+        <Source xsi:type="ColumnBinding" dwd:design-time-name="22e2548b-2ac7-4ea1-b122-b7af6025f242">
           <TableID>PRODTABLE</TableID>
           <ColumnID>CUSTNAME</ColumnID>
         </Source>
       </NameColumn>
       <Translations>
-        <Translation dwd:design-time-name="982df92d-9878-45f1-a463-8e031779e10c">
+        <Translation dwd:design-time-name="c6c22ba9-da0a-4813-87b1-2bf4f5909f82">
           <Language>1033</Language>
           <Caption>Cust Name</Caption>
         </Translation>
-        <Translation dwd:design-time-name="f6bcb140-ebda-4975-9677-c534e0461d1d">
+        <Translation dwd:design-time-name="ee5c97e9-fa63-4f61-83e3-d732862bdf4a">
           <Language>3082</Language>
           <Caption>Nombre del Cliente</Caption>
         </Translation>
@@ -1554,33 +1545,33 @@
       <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
       <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
     </Attribute>
-    <Attribute dwd:design-time-name="84257512-a4af-4dba-91eb-3e6fc02abdb6">
+    <Attribute dwd:design-time-name="9a249abd-a4e6-4cbb-bd62-e3b149c1d752">
       <ID>ITEMGROUPID</ID>
       <Name>Item Group</Name>
       <KeyColumns>
-        <KeyColumn dwd:design-time-name="f1144e55-f760-4426-bc67-6d96d636b0a6">
+        <KeyColumn dwd:design-time-name="810d85f4-2841-4e58-afc1-0f4c2c20d56e">
           <DataType>WChar</DataType>
           <DataSize>80</DataSize>
-          <Source xsi:type="ColumnBinding" dwd:design-time-name="419cd0f2-1cba-4e82-84e3-32d88189ad4d">
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="b0328d7a-4c48-42a6-82c3-19b9f0b1531e">
             <TableID>PRODTABLE</TableID>
             <ColumnID>ITEMGROUPID</ColumnID>
           </Source>
         </KeyColumn>
       </KeyColumns>
-      <NameColumn dwd:design-time-name="d120bb8f-f771-4e14-a5b8-f45eef6e9f19">
+      <NameColumn dwd:design-time-name="4fc0b739-481d-45b6-82fa-6fcaf2193998">
         <DataType>WChar</DataType>
         <DataSize>80</DataSize>
-        <Source xsi:type="ColumnBinding" dwd:design-time-name="c89ab128-f17a-4492-bd87-9244d70e0c34">
+        <Source xsi:type="ColumnBinding" dwd:design-time-name="d27f2e30-dbee-43f4-97bb-224ccc28667b">
           <TableID>PRODTABLE</TableID>
           <ColumnID>ITEMGROUPID</ColumnID>
         </Source>
       </NameColumn>
       <Translations>
-        <Translation dwd:design-time-name="1951c3c5-4fd0-4e8e-8fb7-dba80ac39a83">
+        <Translation dwd:design-time-name="c12f4dad-c1e5-4352-b9a4-8a97f75c1068">
           <Language>1033</Language>
           <Caption>Item Group</Caption>
         </Translation>
-        <Translation dwd:design-time-name="8ab736f6-456d-4a17-81c7-e36aac6be26b">
+        <Translation dwd:design-time-name="e871d5c2-0709-4d9b-9672-c7d23b0dd3d7">
           <Language>3082</Language>
           <Caption>Grupo de Artículos</Caption>
         </Translation>
@@ -1588,33 +1579,33 @@
       <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
       <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
     </Attribute>
-    <Attribute dwd:design-time-name="89a9fe7e-d20b-4412-88b3-1b7a41b4a595">
+    <Attribute dwd:design-time-name="4c951541-e134-4715-b504-e504e206ff0b">
       <ID>COUNTRYREGIONID</ID>
       <Name>Country Region</Name>
       <KeyColumns>
-        <KeyColumn dwd:design-time-name="66029a48-3055-4e44-85e3-0c5658712cef">
+        <KeyColumn dwd:design-time-name="e4d82fa6-0f1d-4fe2-a281-f375d387691b">
           <DataType>WChar</DataType>
           <DataSize>80</DataSize>
-          <Source xsi:type="ColumnBinding" dwd:design-time-name="6ab4a551-1b87-48fa-9481-f97a3822fbd9">
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="3384ec1a-a96c-413b-84f0-a8e553bcd328">
             <TableID>PRODTABLE</TableID>
             <ColumnID>COUNTRYREGIONID</ColumnID>
           </Source>
         </KeyColumn>
       </KeyColumns>
-      <NameColumn dwd:design-time-name="5f05a218-79e7-432f-a79d-69d418512dde">
+      <NameColumn dwd:design-time-name="cc7ce862-7974-4570-a5b5-a3cecd347b5a">
         <DataType>WChar</DataType>
         <DataSize>80</DataSize>
-        <Source xsi:type="ColumnBinding" dwd:design-time-name="ef39ac66-befc-4548-be20-5a1922a1fdbb">
+        <Source xsi:type="ColumnBinding" dwd:design-time-name="bed8338d-d6fc-4289-975b-12e0c975fba5">
           <TableID>PRODTABLE</TableID>
           <ColumnID>COUNTRYREGIONID</ColumnID>
         </Source>
       </NameColumn>
       <Translations>
-        <Translation dwd:design-time-name="c7f5a280-915f-442b-acb1-2ebfb2d11145">
+        <Translation dwd:design-time-name="8270ebe6-3f91-400f-abf8-9945514f083c">
           <Language>1033</Language>
           <Caption>Country Region</Caption>
         </Translation>
-        <Translation dwd:design-time-name="5a5d4658-b225-4b93-9a82-e3c6281872c3">
+        <Translation dwd:design-time-name="9e920949-53bc-4689-864c-66f5aa1e6c6c">
           <Language>3082</Language>
           <Caption>Pais</Caption>
         </Translation>
@@ -1622,48 +1613,23 @@
       <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
       <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
     </Attribute>
-    <Attribute dwd:design-time-name="8428310d-9b29-4bc7-a31c-cbaba2523c30">
-      <ID>Invoice Line Amount</ID>
-      <Name>Invoice Line Amount</Name>
-      <KeyColumns>
-        <KeyColumn dwd:design-time-name="1579f1d3-6d5a-43be-bb30-ff2c7946472a">
-          <DataType>Double</DataType>
-          <Source xsi:type="ColumnBinding" dwd:design-time-name="328d3a38-2973-4bbb-b8a8-f2e4573ab62f">
-            <TableID>PRODTABLE</TableID>
-            <ColumnID>InvoiceLineAmount</ColumnID>
-          </Source>
-        </KeyColumn>
-      </KeyColumns>
-      <Translations>
-        <Translation dwd:design-time-name="2d9f9ca4-9517-453d-91c1-2e6334352ac6">
-          <Language>1033</Language>
-          <Caption>Invoice Line Amount</Caption>
-        </Translation>
-        <Translation dwd:design-time-name="2714bd1b-490d-45d1-8635-fad140bda867">
-          <Language>3082</Language>
-          <Caption>Importe Linea Facturado</Caption>
-        </Translation>
-      </Translations>
-      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
-      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
-    </Attribute>
   </Attributes>
   <Hierarchies>
-    <Hierarchy dwd:design-time-name="37034182-c268-4ca3-9e28-285b63dea6ed">
+    <Hierarchy dwd:design-time-name="f50a7063-c8a2-40c2-813d-12e372a45552">
       <ID>Jerarquía</ID>
       <Name>Jerarquía</Name>
       <Levels>
-        <Level dwd:design-time-name="00d5fa96-3906-4002-96f5-11d5b5d91d30">
+        <Level dwd:design-time-name="63f9d580-85e8-4bbe-bd1e-5e4f55117773">
           <ID>Item Group</ID>
           <Name>Item Group</Name>
           <SourceAttributeID>ITEMGROUPID</SourceAttributeID>
         </Level>
-        <Level dwd:design-time-name="bddda295-7f95-4fe1-ad33-d09993ae9254">
+        <Level dwd:design-time-name="af362250-74ea-4170-8f57-f8060a5fe98e">
           <ID>Item</ID>
           <Name>Item</Name>
           <SourceAttributeID>ITEMID</SourceAttributeID>
         </Level>
-        <Level dwd:design-time-name="1f5574c6-264a-4d40-a977-890c2eeea88a">
+        <Level dwd:design-time-name="b33a02b9-fdd0-4233-a6bd-f3d58b431271">
           <ID>Production ID</ID>
           <Name>Production ID</Name>
           <SourceAttributeID>DATAAREAID</SourceAttributeID>
@@ -1671,12 +1637,12 @@
       </Levels>
     </Hierarchy>
   </Hierarchies>
-  <ProactiveCaching dwd:design-time-name="5290dd91-131d-49b1-8f37-026802d55032">
+  <ProactiveCaching dwd:design-time-name="a5096f72-31e8-43ed-bea4-56f8ef9ac617">
     <SilenceInterval>-PT1S</SilenceInterval>
     <Latency>-PT1S</Latency>
     <SilenceOverrideInterval>-PT1S</SilenceOverrideInterval>
     <ForceRebuildInterval>-PT1S</ForceRebuildInterval>
-    <Source xsi:type="ProactiveCachingInheritedBinding" dwd:design-time-name="1d646bb5-058d-47ac-98c8-e8d13ceae82b" />
+    <Source xsi:type="ProactiveCachingInheritedBinding" dwd:design-time-name="28b6fd61-0d1b-4b4d-9b98-1983ef630b92" />
   </ProactiveCaching>
   <ddl300:ProcessingState>Unprocessed</ddl300:ProcessingState>
 </Dimension>
