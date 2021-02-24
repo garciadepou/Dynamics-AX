@@ -7862,6 +7862,9 @@
         <Attribute dwd:design-time-name="4a299a51-c622-4a56-935e-eb4066a57108">
           <AttributeID>DLVSTATE</AttributeID>
         </Attribute>
+        <Attribute dwd:design-time-name="ccd9eb9b-35d7-44d9-9a68-23ca644da69f">
+          <AttributeID>EXPEDITIONCOST</AttributeID>
+        </Attribute>
       </Attributes>
     </Dimension>
     <Dimension dwd:design-time-name="c6412f69-2dd3-409c-8568-1aff6710872a">
@@ -37848,6 +37851,29 @@
             <Translation dwd:design-time-name="8bb536df-f9f6-4256-b7ef-d4be12c09477">
               <Language>1033</Language>
               <Caption>Shipping Work Days</Caption>
+            </Translation>
+          </Translations>
+        </Measure>
+        <Measure dwd:design-time-name="092f9693-a5b7-4d71-9cef-5b886cb51efa">
+          <ID>EXPEDITIONCOST</ID>
+          <Name>Expedition Cost</Name>
+          <DataType>Double</DataType>
+          <Source dwd:design-time-name="9c1d6b0c-6a49-4559-af3b-6235386d00ef">
+            <DataType>Double</DataType>
+            <Source xsi:type="ColumnBinding" dwd:design-time-name="f8451b83-53b1-4e24-8718-ab8b09c409e0">
+              <TableID>SALESSHIPPINGSTAT</TableID>
+              <ColumnID>EXPEDITIONCOST</ColumnID>
+            </Source>
+          </Source>
+          <FormatString>Currency</FormatString>
+          <Translations>
+            <Translation dwd:design-time-name="46f83afc-92bc-4ad2-868a-ed043f5c0979">
+              <Language>1033</Language>
+              <Caption>Expedition Cost</Caption>
+            </Translation>
+            <Translation dwd:design-time-name="fcec56d1-e9ff-451f-ba5f-e4ce208a1f2a">
+              <Language>3082</Language>
+              <Caption>Coste del transporte</Caption>
             </Translation>
           </Translations>
         </Measure>

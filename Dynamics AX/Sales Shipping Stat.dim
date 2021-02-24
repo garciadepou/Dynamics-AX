@@ -790,6 +790,10 @@
           <AttributeID>DLVSTATE</AttributeID>
           <Name>Delivery State</Name>
         </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="971451e1-d2f4-408a-a9b8-f30f1a4847fd">
+          <AttributeID>EXPEDITIONCOST</AttributeID>
+          <Name>Expedition Cost</Name>
+        </AttributeRelationship>
       </AttributeRelationships>
       <ValueColumn dwd:design-time-name="6d73968c-600e-4c7e-8b5e-202e6d530851">
         <DataType>WChar</DataType>
@@ -1287,6 +1291,32 @@
       </Translations>
       <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
       <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="95021589-77a3-4328-bc23-806f1aadd9ef">
+      <ID>EXPEDITIONCOST</ID>
+      <Name>Expedition Cost</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="fda35df8-a42c-4395-8e00-d7dcd6307754">
+          <DataType>Double</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="5d7b1624-15b5-4754-923c-de407435e4a6">
+            <TableID>SALESSHIPPINGSTAT</TableID>
+            <ColumnID>EXPEDITIONCOST</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <Translations>
+        <Translation dwd:design-time-name="73afbfb4-f55c-4ed8-ba88-935dee5eae47">
+          <Language>1033</Language>
+          <Caption>Expedition Cost</Caption>
+        </Translation>
+        <Translation dwd:design-time-name="2465623e-b51f-4abb-9ee5-06680ef61413">
+          <Language>3082</Language>
+          <Caption>Coste del transporte</Caption>
+        </Translation>
+      </Translations>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+      <ddl300_300:FormatString>Currency</ddl300_300:FormatString>
     </Attribute>
   </Attributes>
   <ddl300:ProcessingState>Unprocessed</ddl300:ProcessingState>
