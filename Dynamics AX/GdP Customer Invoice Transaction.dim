@@ -1,4 +1,4 @@
-﻿<Dimension xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:ddl200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:ddl200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:ddl300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:ddl300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:ddl400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:ddl400_400="http://schemas.microsoft.com/analysisservices/2012/engine/400/400" xmlns:ddl500="http://schemas.microsoft.com/analysisservices/2013/engine/500" xmlns:ddl500_500="http://schemas.microsoft.com/analysisservices/2013/engine/500/500" xmlns:dwd="http://schemas.microsoft.com/DataWarehouse/Designer/1.0" dwd:design-time-name="d1f07fdb-0660-49de-8c5c-a6b71d2edf93" xmlns="http://schemas.microsoft.com/analysisservices/2003/engine">
+﻿<Dimension xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:ddl200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:ddl200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:ddl300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:ddl300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:ddl400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:ddl400_400="http://schemas.microsoft.com/analysisservices/2012/engine/400/400" xmlns:ddl500="http://schemas.microsoft.com/analysisservices/2013/engine/500" xmlns:ddl500_500="http://schemas.microsoft.com/analysisservices/2013/engine/500/500" xmlns:dwd="http://schemas.microsoft.com/DataWarehouse/Designer/1.0" dwd:design-time-name="1732e179-d168-4dc6-8408-46474c2585f4" xmlns="http://schemas.microsoft.com/analysisservices/2003/engine">
   <ID>GdP Customer Invoice Transaction</ID>
   <Name>GdP Customer Invoice Transaction</Name>
   <CreatedTimestamp>2014-05-21T09:20:55.6Z</CreatedTimestamp>
@@ -8,7 +8,7 @@
       <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramLayout</Name>
       <Value>
         <dds xmlns="">
-          <diagram fontclsid="{0BE35203-8F91-11CE-9DE3-00AA004BB851}" mouseiconclsid="{0BE35204-8F91-11CE-9DE3-00AA004BB851}" defaultlayout="MSDDS.Rectilinear" defaultlineroute="MSDDS.Rectilinear" version="7" nextobject="3" scale="100" pagebreakanchorx="0" pagebreakanchory="0" pagebreaksizex="0" pagebreaksizey="0" scrollleft="-1171" scrolltop="-3638" gridx="150" gridy="150" marginx="5000" marginy="5000" zoom="100" x="16616" y="21008" backcolor="16777215" defaultpersistence="2" PrintPageNumbersMode="3" PrintMarginTop="0" PrintMarginBottom="635" PrintMarginLeft="0" PrintMarginRight="0" marqueeselectionmode="0" mousepointer="0" snaptogrid="0" autotypeannotation="1" showscrollbars="0" viewpagebreaks="0" donotforceconnectorsbehindshapes="1" backpictureclsid="{00000000-0000-0000-0000-000000000000}">
+          <diagram fontclsid="{0BE35203-8F91-11CE-9DE3-00AA004BB851}" mouseiconclsid="{0BE35204-8F91-11CE-9DE3-00AA004BB851}" defaultlayout="MSDDS.Rectilinear" defaultlineroute="MSDDS.Rectilinear" version="7" nextobject="3" scale="100" pagebreakanchorx="0" pagebreakanchory="0" pagebreaksizex="0" pagebreaksizey="0" scrollleft="-1171" scrolltop="-4088" gridx="150" gridy="150" marginx="5000" marginy="5000" zoom="100" x="16457" y="20664" backcolor="16777215" defaultpersistence="2" PrintPageNumbersMode="3" PrintMarginTop="0" PrintMarginBottom="635" PrintMarginLeft="0" PrintMarginRight="0" marqueeselectionmode="0" mousepointer="0" snaptogrid="0" autotypeannotation="1" showscrollbars="0" viewpagebreaks="0" donotforceconnectorsbehindshapes="1" backpictureclsid="{00000000-0000-0000-0000-000000000000}">
             <font>
               <ddsxmlobjectstreamwrapper binary="01000000900144420100065461686f6d61" />
             </font>
@@ -51,7 +51,7 @@
     </Annotation>
     <Annotation>
       <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramViewPortTop</Name>
-      <Value>-3638</Value>
+      <Value>-4088</Value>
     </Annotation>
     <Annotation>
       <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramBoundingLeft</Name>
@@ -73,23 +73,31 @@
             <Shape Id="DATAAREAID" Expanded="true">
               <Attributes>
                 <Attribute Id="DATAAREAID" />
+                <Attribute Id="QTY" />
+                <Attribute Id="CUSTINVOICEJOUR INVOICEACCOUNT" />
                 <Attribute Id="CUSTINVOICEJOUR DELIVERYNAME" />
+                <Attribute Id="INVOICEID" />
+                <Attribute Id="ISCREDITNOTE" />
+                <Attribute Id="LINEAMOUNT" />
+                <Attribute Id="CUSTNAME" />
+                <Attribute Id="RECID" />
+                <Attribute Id="SALESPRICE" />
+                <Attribute Id="SALESUNIT" />
               </Attributes>
               <Position x="20" y="20" />
-            </Shape>
-            <Shape Id="CUSTINVOICEJOUR INVOICEACCOUNT" Expanded="true">
-              <Attributes>
-                <Attribute Id="CUSTINVOICEJOUR INVOICEACCOUNT" />
-                <Attribute Id="CUSTNAME" />
-              </Attributes>
-              <Position x="268" y="20" />
             </Shape>
             <Shape Id="ITEMID" Expanded="true">
               <Attributes>
                 <Attribute Id="ITEMID" />
                 <Attribute Id="ITEMNAME" />
               </Attributes>
-              <Position x="268" y="92" />
+              <Position x="268" y="20" />
+            </Shape>
+            <Shape Id="CUSTINVOICEJOUR ORDERACCOUNT" Expanded="false">
+              <Attributes>
+                <Attribute Id="CUSTINVOICEJOUR ORDERACCOUNT" />
+              </Attributes>
+              <Position x="517" y="20" />
             </Shape>
           </Shapes>
         </DiagramLayout>
@@ -98,18 +106,18 @@
   </Annotations>
   <LastProcessed>2019-02-15T07:43:07.34Z</LastProcessed>
   <State>Processed</State>
-  <Source xsi:type="DataSourceViewBinding" dwd:design-time-name="8fc3ca7b-50b4-4a60-a8aa-395f07922a83">
+  <Source xsi:type="DataSourceViewBinding" dwd:design-time-name="9ff63d9f-58dc-452f-ac3f-59025835021b">
     <DataSourceViewID>Dynamics AX</DataSourceViewID>
   </Source>
   <UnknownMember>Visible</UnknownMember>
-  <ErrorConfiguration dwd:design-time-name="8f5e8864-3de9-4b62-b9e0-fa043c15c176">
+  <ErrorConfiguration dwd:design-time-name="88600af2-7450-4ed2-a446-17ead2a915f9">
     <KeyErrorLimitAction>StopLogging</KeyErrorLimitAction>
     <KeyNotFound>IgnoreError</KeyNotFound>
     <NullKeyNotAllowed>IgnoreError</NullKeyNotAllowed>
   </ErrorConfiguration>
   <CurrentStorageMode>Molap</CurrentStorageMode>
   <DimensionPermissions>
-    <DimensionPermission dwd:design-time-name="46287860-2344-4744-8d7d-70bab42b8387">
+    <DimensionPermission dwd:design-time-name="8c63738d-6265-41ec-ad67-68af7c06ae5b">
       <ID>DimensionPermission</ID>
       <Name>DimensionPermission</Name>
       <CreatedTimestamp>2015-02-25T08:06:42.723333Z</CreatedTimestamp>
@@ -118,7 +126,7 @@
       <ReadDefinition>Allowed</ReadDefinition>
       <Read>Allowed</Read>
     </DimensionPermission>
-    <DimensionPermission dwd:design-time-name="500a3649-3d88-44be-8c5e-4abc90a94e82">
+    <DimensionPermission dwd:design-time-name="f8f332d5-cbad-48d2-be70-da3ac5edc371">
       <ID>DimensionPermission 1</ID>
       <Name>DimensionPermission 1</Name>
       <CreatedTimestamp>2015-02-25T08:09:41.936667Z</CreatedTimestamp>
@@ -132,149 +140,161 @@
   <Collation>Modern_Spanish_CI_AS</Collation>
   <UnknownMemberName>Desconocido</UnknownMemberName>
   <Attributes>
-    <Attribute dwd:design-time-name="bff344c2-d59d-41ff-b41a-35e616e9869d">
+    <Attribute dwd:design-time-name="accdfa96-25e8-4ce8-910a-0f9e82819373">
       <ID>DATAAREAID</ID>
       <Name>Cust Invoice Transaction</Name>
       <Usage>Key</Usage>
       <EstimatedCount>1351018</EstimatedCount>
       <KeyColumns>
-        <KeyColumn dwd:design-time-name="150607f7-ad92-4a13-9e04-91957183156a">
+        <KeyColumn dwd:design-time-name="a48686b5-c6fc-4752-b9cf-10966e650fbd">
           <DataType>WChar</DataType>
           <DataSize>4</DataSize>
-          <Source xsi:type="ColumnBinding" dwd:design-time-name="97ad5bd7-26dd-438c-ac65-ec2d6dcd5f1c">
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="6b4d197f-1c52-419e-b03c-d2f8c3accec6">
             <TableID>CUSTINVOICETRANS</TableID>
             <ColumnID>DATAAREAID</ColumnID>
           </Source>
         </KeyColumn>
-        <KeyColumn dwd:design-time-name="9eefe019-bc1d-41ec-a825-737f0298df5e">
+        <KeyColumn dwd:design-time-name="b6e9259e-97df-41b6-892e-9fefc4955a0e">
           <DataType>BigInt</DataType>
-          <Source xsi:type="ColumnBinding" dwd:design-time-name="7bc6e5de-5589-456d-9379-c6849d84e772">
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="3abf1c47-4e57-4a87-8c39-7c78d3e01fcf">
             <TableID>CUSTINVOICETRANS</TableID>
             <ColumnID>RECID</ColumnID>
           </Source>
         </KeyColumn>
       </KeyColumns>
-      <NameColumn dwd:design-time-name="b3978481-af47-4ee8-aab6-de1985aa5af6">
+      <NameColumn dwd:design-time-name="02245b05-fe91-416e-8a6a-466a583f7b9f">
         <DataType>WChar</DataType>
         <DataSize>51</DataSize>
-        <Source xsi:type="ColumnBinding" dwd:design-time-name="a87796dd-a899-4475-94be-c42af83f2614">
+        <Source xsi:type="ColumnBinding" dwd:design-time-name="4a02a4a3-6745-49f2-af9a-073fdcc65365">
           <TableID>CUSTINVOICETRANS</TableID>
           <ColumnID>DIMENSION_NAME</ColumnID>
         </Source>
       </NameColumn>
       <Translations>
-        <Translation dwd:design-time-name="aaf8c4f1-f622-42a2-99b1-58e5fb37da6a">
+        <Translation dwd:design-time-name="e3b56d39-fcd0-43e9-9e17-3901a7daf777">
           <Language>3082</Language>
           <Caption>Transacción de factura de cliente</Caption>
         </Translation>
       </Translations>
       <AttributeRelationships>
-        <AttributeRelationship dwd:design-time-name="d9dafc1c-fc10-4610-af59-a8ff9462824a">
+        <AttributeRelationship dwd:design-time-name="0ce371ef-3c3a-4a43-9b91-5734a158b715">
           <AttributeID>CUSTINVOICEJOUR DELIVERYNAME</AttributeID>
           <Name>Delivery Name</Name>
           <Translations>
-            <Translation dwd:design-time-name="82f149d4-d849-45aa-aa1e-22554b66c532">
+            <Translation dwd:design-time-name="2e505d28-b1c7-4fb7-9ddb-7fd521fcfabb">
               <Language>3082</Language>
               <Caption>Nombre de entrega</Caption>
             </Translation>
           </Translations>
         </AttributeRelationship>
-        <AttributeRelationship dwd:design-time-name="8a2bdc21-da12-43e5-b6c0-2b907d19b119">
+        <AttributeRelationship dwd:design-time-name="2c40478b-a4d3-4eb5-b406-0df78254227c">
           <AttributeID>ISCREDITNOTE</AttributeID>
           <Name>Is credit note</Name>
           <Translations>
-            <Translation dwd:design-time-name="b43ff1a0-48c3-4686-a88e-b05bd62895d6">
+            <Translation dwd:design-time-name="a47a7323-523d-427f-823b-32fd10f0052b">
               <Language>3082</Language>
               <Caption>Es abono</Caption>
             </Translation>
           </Translations>
         </AttributeRelationship>
-        <AttributeRelationship dwd:design-time-name="9a56c82b-51f8-42dd-aba4-b4e1f8a91f28">
+        <AttributeRelationship dwd:design-time-name="fd58b743-6552-45e2-ad77-2628bb2bb407">
           <AttributeID>CUSTINVOICEJOUR INVOICEACCOUNT</AttributeID>
           <Name>Código de cliente de facturación</Name>
           <Translations>
-            <Translation dwd:design-time-name="8b0b6393-dfe2-495d-9ead-5b14dc91d00e">
+            <Translation dwd:design-time-name="23cfe8ad-eabb-4f96-8ba1-42d8b0d7af44">
               <Language>3082</Language>
               <Caption>Código de cliente</Caption>
             </Translation>
           </Translations>
         </AttributeRelationship>
-        <AttributeRelationship dwd:design-time-name="38b4cf0c-d633-4884-a6b1-25e8deb5a930">
+        <AttributeRelationship dwd:design-time-name="f7d9043f-c7ce-46ee-9510-5424eb0158b0">
           <AttributeID>INVOICEID</AttributeID>
           <Name>Invoice Id</Name>
           <Translations>
-            <Translation dwd:design-time-name="0be5f626-14ff-48e4-bba0-b73a892dbc43">
+            <Translation dwd:design-time-name="fcb930d3-f32b-41ec-ab47-c0c133bbe608">
               <Language>3082</Language>
               <Caption>Id de factura</Caption>
             </Translation>
           </Translations>
         </AttributeRelationship>
-        <AttributeRelationship dwd:design-time-name="cbf4a4ca-7767-470a-9702-2e3c6e6fd360">
+        <AttributeRelationship dwd:design-time-name="1f56d12e-9bd8-49ca-8718-fccdf604fd17">
           <AttributeID>CUSTNAME</AttributeID>
           <Name>Nombre de cliente</Name>
           <Translations>
-            <Translation dwd:design-time-name="450447f8-2c09-4fbf-a1c4-79afd0abe4d0">
+            <Translation dwd:design-time-name="4d8d4d9f-a125-4e78-83f8-0aad1535c4bb">
               <Language>3082</Language>
               <Caption>Nombre de cliente</Caption>
             </Translation>
           </Translations>
         </AttributeRelationship>
-        <AttributeRelationship dwd:design-time-name="97b7f02f-b8f8-4081-946c-c46a50be8aae">
+        <AttributeRelationship dwd:design-time-name="b8f6517a-7573-4f29-adf9-3cf3348c5632">
           <AttributeID>ITEMID</AttributeID>
           <Name>Código de artículo</Name>
           <Translations>
-            <Translation dwd:design-time-name="6fad92a9-3ede-45a2-8f01-2509c2635ed5">
+            <Translation dwd:design-time-name="9d1dd79c-1ccd-4105-a772-c9004a094b79">
               <Language>3082</Language>
               <Caption>Código de artículo</Caption>
             </Translation>
           </Translations>
         </AttributeRelationship>
-        <AttributeRelationship dwd:design-time-name="ae8adf26-6869-4e93-a77c-a5bd9e3f9321">
+        <AttributeRelationship dwd:design-time-name="7d953fdc-1dcf-43a8-9067-e384063ec3fd">
           <AttributeID>RECID</AttributeID>
           <Name>RECID</Name>
         </AttributeRelationship>
-        <AttributeRelationship dwd:design-time-name="df3d52a5-1129-4135-9a60-ab7d51ad88a9">
+        <AttributeRelationship dwd:design-time-name="70c3c75a-d8e0-417e-a46d-c984a0600abc">
           <AttributeID>QTY</AttributeID>
           <Name>Cantidad</Name>
         </AttributeRelationship>
-        <AttributeRelationship dwd:design-time-name="884d3e1a-ec16-4007-9454-53f73c833333">
+        <AttributeRelationship dwd:design-time-name="a4e61b40-b398-473e-a8a6-689d383bb6ac">
           <AttributeID>LINEAMOUNT</AttributeID>
           <Name>Line amount</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="bae6e320-353c-4da5-8222-7fb7e321f8c4">
+          <AttributeID>SALESPRICE</AttributeID>
+          <Name>Sales Price</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="c42b20a0-cb20-4f77-88ab-c28f85648fb1">
+          <AttributeID>SALESUNIT</AttributeID>
+          <Name>Sales Unit</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="ad291e30-3f55-416e-9932-456812f1f2a5">
+          <AttributeID>INVOICEDATE</AttributeID>
+          <Name>Invoice date</Name>
         </AttributeRelationship>
       </AttributeRelationships>
       <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
       <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
     </Attribute>
-    <Attribute dwd:design-time-name="0fae7443-2a1c-46ed-a6dd-05c78c3a3c40">
+    <Attribute dwd:design-time-name="c5b80858-52f8-49f8-95fa-e1376bc6d5fe">
       <ID>CUSTINVOICEJOUR DELIVERYNAME</ID>
       <Name>Delivery Name</Name>
       <EstimatedCount>22121</EstimatedCount>
       <KeyColumns>
-        <KeyColumn dwd:design-time-name="2ab0fd82-2291-4a82-b570-b1dc4d368701">
+        <KeyColumn dwd:design-time-name="b11b4f91-c526-4e64-af88-2a05604fa270">
           <DataType>WChar</DataType>
           <DataSize>4</DataSize>
-          <Source xsi:type="ColumnBinding" dwd:design-time-name="8a61b3c9-b4d8-4cb2-bbca-0ed0d4f80f66">
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="1fd657e3-e306-490c-ab4f-5df714f7fae9">
             <TableID>CUSTINVOICETRANS</TableID>
             <ColumnID>DATAAREAID</ColumnID>
           </Source>
         </KeyColumn>
-        <KeyColumn dwd:design-time-name="2823a994-86c8-47a6-9b53-4affda1c69ab">
+        <KeyColumn dwd:design-time-name="d076ec4f-8b2e-48cf-87dd-630917052542">
           <DataType>WChar</DataType>
-          <Source xsi:type="ColumnBinding" dwd:design-time-name="df24d47d-5d34-43b9-8ca3-2dfb3738cf19">
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="fb569a10-4395-4a68-a82c-9a2e765d0b4d">
             <TableID>CUSTINVOICETRANS</TableID>
             <ColumnID>CUSTINVOICEJOUR_DELIVERYNAME</ColumnID>
           </Source>
         </KeyColumn>
       </KeyColumns>
-      <NameColumn dwd:design-time-name="41798f4a-3252-488a-91f0-aa50b3af8be9">
+      <NameColumn dwd:design-time-name="06c318e5-ac8b-449f-969e-cd33b0643514">
         <DataType>WChar</DataType>
-        <Source xsi:type="ColumnBinding" dwd:design-time-name="a9a7987b-f6a8-46fe-8199-bb9b91f4cd1a">
+        <Source xsi:type="ColumnBinding" dwd:design-time-name="fec417b8-621c-44ea-b374-d7c0fa16406c">
           <TableID>CUSTINVOICETRANS</TableID>
           <ColumnID>CUSTINVOICEJOUR_DELIVERYNAME</ColumnID>
         </Source>
       </NameColumn>
       <Translations>
-        <Translation dwd:design-time-name="50eeb0b5-a5b8-44ba-a3d6-03230a322137">
+        <Translation dwd:design-time-name="f88500ce-bce2-4a28-948d-a94798c8e27a">
           <Language>3082</Language>
           <Caption>Nombre de entrega</Caption>
         </Translation>
@@ -283,55 +303,55 @@
       <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
       <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
     </Attribute>
-    <Attribute dwd:design-time-name="cce13706-290e-4d31-8ba3-19d9d115738c">
+    <Attribute dwd:design-time-name="9b06dc28-d0f6-4c21-8288-9365c01a652e">
       <ID>ITEMID</ID>
       <Name>Código de artículo</Name>
       <EstimatedCount>7796</EstimatedCount>
       <KeyColumns>
-        <KeyColumn dwd:design-time-name="bb239a17-1b35-474b-8ffa-9ec31f17a938">
+        <KeyColumn dwd:design-time-name="a5f61102-d045-438d-a5a5-f0ee222a1e96">
           <DataType>WChar</DataType>
           <DataSize>4</DataSize>
-          <Source xsi:type="ColumnBinding" dwd:design-time-name="ea5215e7-cdd7-4682-8afa-92b110c759b6">
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="41168867-19e7-4143-ae69-3e76d2add35b">
             <TableID>CUSTINVOICETRANS</TableID>
             <ColumnID>DATAAREAID</ColumnID>
           </Source>
         </KeyColumn>
-        <KeyColumn dwd:design-time-name="0aeb0a6f-a82b-4beb-8f03-52eea6f1806d">
+        <KeyColumn dwd:design-time-name="faf0dfa6-6486-470a-89d1-27034f3b1b9b">
           <DataType>WChar</DataType>
           <DataSize>20</DataSize>
-          <Source xsi:type="ColumnBinding" dwd:design-time-name="0f8482fc-7334-44ca-a0d4-c5546dbed4fb">
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="5ba693e5-246d-441a-a92a-e8e1715f6f7f">
             <TableID>CUSTINVOICETRANS</TableID>
             <ColumnID>ITEMID</ColumnID>
           </Source>
         </KeyColumn>
       </KeyColumns>
-      <NameColumn dwd:design-time-name="51ed674e-eed0-4953-9510-aa2be4ed5d5d">
+      <NameColumn dwd:design-time-name="6f12ad07-f8c3-4d31-8a9d-fe11750a169b">
         <DataType>WChar</DataType>
         <DataSize>20</DataSize>
-        <Source xsi:type="ColumnBinding" dwd:design-time-name="6774c96a-c61a-4a83-a50d-8e01a12fd3cb">
+        <Source xsi:type="ColumnBinding" dwd:design-time-name="f185d2b8-6d13-4554-b7fd-ce6d776ead96">
           <TableID>CUSTINVOICETRANS</TableID>
           <ColumnID>ITEMID</ColumnID>
         </Source>
       </NameColumn>
       <Translations>
-        <Translation dwd:design-time-name="4a58e061-309f-4fed-8599-3e09953c5896">
+        <Translation dwd:design-time-name="42072c6e-a102-4df2-86ae-ab7fd64318ef">
           <Language>3082</Language>
           <Caption>Código de artículo</Caption>
         </Translation>
       </Translations>
       <AttributeRelationships>
-        <AttributeRelationship dwd:design-time-name="816104c7-d1f0-4dfe-9187-499011e65722">
+        <AttributeRelationship dwd:design-time-name="9da02a90-1a06-41a8-9ab6-2f83912f39a9">
           <AttributeID>ITEMNAME</AttributeID>
           <RelationshipType>Rigid</RelationshipType>
           <Name>Nombre de artículo</Name>
           <Translations>
-            <Translation dwd:design-time-name="aff5f0ad-8a0a-4875-8841-554f5bd33283">
+            <Translation dwd:design-time-name="ad0b85c0-bcf7-4304-a342-782e3e8002fc">
               <Language>3082</Language>
               <Caption>Nombre de artículo</Caption>
             </Translation>
           </Translations>
         </AttributeRelationship>
-        <AttributeRelationship dwd:design-time-name="55546d66-4298-492a-9f33-e21db1f071aa">
+        <AttributeRelationship dwd:design-time-name="507d5f2b-2c30-4342-bc8f-69db9786e67b">
           <AttributeID>CUSTINVOICEJOUR ORDERACCOUNT</AttributeID>
           <Name>Código de cliente</Name>
         </AttributeRelationship>
@@ -339,36 +359,36 @@
       <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
       <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
     </Attribute>
-    <Attribute dwd:design-time-name="4793f6c8-0e24-4499-b0f0-6f6b5ed664ca">
+    <Attribute dwd:design-time-name="5d4d6af5-67b9-4cfa-9be9-098ee7ae999b">
       <ID>ITEMNAME</ID>
       <Name>Nombre de artículo</Name>
       <EstimatedCount>7655</EstimatedCount>
       <KeyColumns>
-        <KeyColumn dwd:design-time-name="06f02dfc-facf-4d43-b004-fe93f3fd52ae">
+        <KeyColumn dwd:design-time-name="25d85b92-7c9c-48f0-895c-0a16b0918923">
           <DataType>WChar</DataType>
           <DataSize>4</DataSize>
-          <Source xsi:type="ColumnBinding" dwd:design-time-name="c4a3ed12-6395-4300-b520-ff9cbf63da31">
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="318927e7-628b-4c20-a0c4-2a3c6a01fe21">
             <TableID>CUSTINVOICETRANS</TableID>
             <ColumnID>DATAAREAID</ColumnID>
           </Source>
         </KeyColumn>
-        <KeyColumn dwd:design-time-name="85b94ea1-fe16-4c0c-be5e-3dd651b20cbe">
+        <KeyColumn dwd:design-time-name="677a7f8b-073d-4acd-8630-9be6c54bf7b6">
           <DataType>WChar</DataType>
-          <Source xsi:type="ColumnBinding" dwd:design-time-name="5c9da6ce-8afb-44e9-925f-a3476e31a334">
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="61bdcfc1-818b-4468-b656-5c728c73511f">
             <TableID>CUSTINVOICETRANS</TableID>
             <ColumnID>ITEMNAME</ColumnID>
           </Source>
         </KeyColumn>
       </KeyColumns>
-      <NameColumn dwd:design-time-name="deb58859-7798-4200-8aa4-f0dbd3c9fe00">
+      <NameColumn dwd:design-time-name="56133de8-d7fd-4c32-9405-c77536509d54">
         <DataType>WChar</DataType>
-        <Source xsi:type="ColumnBinding" dwd:design-time-name="e12dfd33-b317-46bc-ac1f-ef103dace6f1">
+        <Source xsi:type="ColumnBinding" dwd:design-time-name="d5872ae0-c0d7-47cc-9e3a-7ce6a2f6ea39">
           <TableID>CUSTINVOICETRANS</TableID>
           <ColumnID>ITEMNAME</ColumnID>
         </Source>
       </NameColumn>
       <Translations>
-        <Translation dwd:design-time-name="3a010301-4562-4c5a-b346-bf63e8a8bf41">
+        <Translation dwd:design-time-name="0fc30b89-d5bb-4098-97be-6c21d538164a">
           <Language>3082</Language>
           <Caption>Nombre de artículo</Caption>
         </Translation>
@@ -377,36 +397,36 @@
       <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
       <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
     </Attribute>
-    <Attribute dwd:design-time-name="0381f343-2ed1-41cf-b30e-dc7830de8c39">
+    <Attribute dwd:design-time-name="25a50836-9b99-4a9f-ab6d-85430d7eaf4d">
       <ID>CUSTNAME</ID>
       <Name>Nombre de cliente</Name>
       <EstimatedCount>15233</EstimatedCount>
       <KeyColumns>
-        <KeyColumn dwd:design-time-name="a6dd38e4-731c-4a7b-9d9d-7d0cf2a52653">
+        <KeyColumn dwd:design-time-name="6250d1f0-2903-4975-8af2-5172981732bd">
           <DataType>WChar</DataType>
           <DataSize>4</DataSize>
-          <Source xsi:type="ColumnBinding" dwd:design-time-name="dee95d0f-9e32-499e-bf70-b98531ed099b">
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="ff7fc9ec-b7f0-4492-93cb-ab9d57a867df">
             <TableID>CUSTINVOICETRANS</TableID>
             <ColumnID>DATAAREAID</ColumnID>
           </Source>
         </KeyColumn>
-        <KeyColumn dwd:design-time-name="bc725b4e-477f-408c-be0e-31b9c9c3ea20">
+        <KeyColumn dwd:design-time-name="63c6936f-f196-4a9e-b921-be0f7ec72861">
           <DataType>WChar</DataType>
-          <Source xsi:type="ColumnBinding" dwd:design-time-name="b29cef6c-628d-4a0d-8da8-4c6bdb0cc546">
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="2ff78f2b-3a38-4d4b-8249-639b56186220">
             <TableID>CUSTINVOICETRANS</TableID>
             <ColumnID>CUSTNAME</ColumnID>
           </Source>
         </KeyColumn>
       </KeyColumns>
-      <NameColumn dwd:design-time-name="fe19b03a-d0b2-4655-a82e-9c4cc1cc7dc0">
+      <NameColumn dwd:design-time-name="1b5334d3-08e7-4820-8fb7-65c17714da1f">
         <DataType>WChar</DataType>
-        <Source xsi:type="ColumnBinding" dwd:design-time-name="69668b43-cfcc-4ec0-befe-66741d316651">
+        <Source xsi:type="ColumnBinding" dwd:design-time-name="ca21b117-3dfc-4006-b512-4e065a66560c">
           <TableID>CUSTINVOICETRANS</TableID>
           <ColumnID>CUSTNAME</ColumnID>
         </Source>
       </NameColumn>
       <Translations>
-        <Translation dwd:design-time-name="17ceb702-aeda-4ead-b39f-fa64dcb3de58">
+        <Translation dwd:design-time-name="57523565-f82b-4e17-aca5-c8f1757691e1">
           <Language>3082</Language>
           <Caption>Nombre de cliente</Caption>
         </Translation>
@@ -415,38 +435,38 @@
       <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
       <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
     </Attribute>
-    <Attribute dwd:design-time-name="514c0c62-99e2-426c-8321-d0daceaf43a8">
+    <Attribute dwd:design-time-name="f76e135f-9206-44f8-9ee6-67e142e2d879">
       <ID>CUSTINVOICEJOUR INVOICEACCOUNT</ID>
       <Name>Código de cliente de facturación</Name>
       <EstimatedCount>16499</EstimatedCount>
       <KeyColumns>
-        <KeyColumn dwd:design-time-name="844c0146-8ebe-4a77-aaa9-fd176d0ca74d">
+        <KeyColumn dwd:design-time-name="ecdd2b65-2f47-4ad7-a81b-1cf1d2e553ee">
           <DataType>WChar</DataType>
           <DataSize>4</DataSize>
-          <Source xsi:type="ColumnBinding" dwd:design-time-name="c7a9ddf5-407d-421f-ba7d-663dea48e6db">
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="46bd87c2-2651-4b71-87c5-9fe6036b3d99">
             <TableID>CUSTINVOICETRANS</TableID>
             <ColumnID>DATAAREAID</ColumnID>
           </Source>
         </KeyColumn>
-        <KeyColumn dwd:design-time-name="a7eb21f0-9be4-4c58-b732-433323654275">
+        <KeyColumn dwd:design-time-name="a3f90943-89c1-417f-90c3-459b8b1281d0">
           <DataType>WChar</DataType>
           <DataSize>20</DataSize>
-          <Source xsi:type="ColumnBinding" dwd:design-time-name="6e5ba139-6d85-4111-8e05-8e23a710d26d">
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="15447259-f405-4cce-9575-7f961c526d62">
             <TableID>CUSTINVOICETRANS</TableID>
             <ColumnID>CUSTINVOICEJOUR_INVOICEACCOUNT</ColumnID>
           </Source>
         </KeyColumn>
       </KeyColumns>
-      <NameColumn dwd:design-time-name="f6ef3326-f4b2-4daa-a9bf-1f2b4b2dce09">
+      <NameColumn dwd:design-time-name="032a5047-cc07-496f-97ed-961c6fdce586">
         <DataType>WChar</DataType>
         <DataSize>20</DataSize>
-        <Source xsi:type="ColumnBinding" dwd:design-time-name="700ef97b-a678-49f2-9965-925544daf12a">
+        <Source xsi:type="ColumnBinding" dwd:design-time-name="e9a68d2e-93a8-4a03-8913-2823302e21fb">
           <TableID>CUSTINVOICETRANS</TableID>
           <ColumnID>CUSTINVOICEJOUR_INVOICEACCOUNT</ColumnID>
         </Source>
       </NameColumn>
       <Translations>
-        <Translation dwd:design-time-name="f4ed0d7f-8d95-4eff-8cbb-f3340cbf581c">
+        <Translation dwd:design-time-name="34011e45-5669-48d4-a8fe-2d8f181d8959">
           <Language>3082</Language>
           <Caption>Código de cliente</Caption>
         </Translation>
@@ -455,38 +475,38 @@
       <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
       <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
     </Attribute>
-    <Attribute dwd:design-time-name="c71ad097-6a5f-4bf3-8356-db336ba32a56">
+    <Attribute dwd:design-time-name="ead980c1-809b-43f7-ba36-39068ecb73a4">
       <ID>INVOICEID</ID>
       <Name>Invoice Id</Name>
       <EstimatedCount>516368</EstimatedCount>
       <KeyColumns>
-        <KeyColumn dwd:design-time-name="8485bd82-a085-4998-8546-2f5fba8ae751">
+        <KeyColumn dwd:design-time-name="1d08d1b7-5cdf-4ef7-9365-f1a05e06fe43">
           <DataType>WChar</DataType>
           <DataSize>4</DataSize>
-          <Source xsi:type="ColumnBinding" dwd:design-time-name="42ac97f6-f094-4909-a635-501dfa1e6a8a">
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="13fa814d-109c-408c-ba02-34fe5d5cabed">
             <TableID>CUSTINVOICETRANS</TableID>
             <ColumnID>DATAAREAID</ColumnID>
           </Source>
         </KeyColumn>
-        <KeyColumn dwd:design-time-name="49543279-1223-498f-8a2a-99573ef7c704">
+        <KeyColumn dwd:design-time-name="d99131df-7bbe-4d2a-b570-daf9fc3d1f5a">
           <DataType>WChar</DataType>
           <DataSize>20</DataSize>
-          <Source xsi:type="ColumnBinding" dwd:design-time-name="f3107907-ec45-419e-866c-ece2c22a91dc">
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="ce86b31d-9074-4f52-97a1-e95cec67f934">
             <TableID>CUSTINVOICETRANS</TableID>
             <ColumnID>INVOICEID</ColumnID>
           </Source>
         </KeyColumn>
       </KeyColumns>
-      <NameColumn dwd:design-time-name="24db679c-3182-443a-a33d-f21325c111fc">
+      <NameColumn dwd:design-time-name="f8f66784-ec5e-47f3-8727-90af5e2bebc3">
         <DataType>WChar</DataType>
         <DataSize>20</DataSize>
-        <Source xsi:type="ColumnBinding" dwd:design-time-name="9ad8ebdd-58d5-4700-a8d9-b8e5cbfd9124">
+        <Source xsi:type="ColumnBinding" dwd:design-time-name="5b34e126-6afa-41a2-bf00-505658159b62">
           <TableID>CUSTINVOICETRANS</TableID>
           <ColumnID>INVOICEID</ColumnID>
         </Source>
       </NameColumn>
       <Translations>
-        <Translation dwd:design-time-name="aaf44cfe-6ce0-4f07-a1d0-4b58fe0e5fef">
+        <Translation dwd:design-time-name="61e4d50c-6d1e-4bad-8f23-42d1f7753aca">
           <Language>3082</Language>
           <Caption>Id de factura</Caption>
         </Translation>
@@ -494,36 +514,36 @@
       <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
       <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
     </Attribute>
-    <Attribute dwd:design-time-name="193454b9-36e2-41fe-9b30-87ad1fd5682c">
+    <Attribute dwd:design-time-name="0ebe51d6-8394-449a-88ce-da8d3275b1fc">
       <ID>ISCREDITNOTE</ID>
       <Name>Is credit note</Name>
       <EstimatedCount>2</EstimatedCount>
       <KeyColumns>
-        <KeyColumn dwd:design-time-name="f7e13843-d7c7-4f62-bf92-f48fcadff66f">
+        <KeyColumn dwd:design-time-name="a4c3d38c-9f4a-497a-a118-e63b9916baa5">
           <DataType>WChar</DataType>
           <DataSize>4</DataSize>
-          <Source xsi:type="ColumnBinding" dwd:design-time-name="e0dda7e0-4981-4d10-8778-a659e3dc8418">
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="c921775a-fb18-49cb-a59f-005dbe0f19ad">
             <TableID>CUSTINVOICETRANS</TableID>
             <ColumnID>DATAAREAID</ColumnID>
           </Source>
         </KeyColumn>
-        <KeyColumn dwd:design-time-name="048ae1c2-9e99-453c-89a1-b67fb700aed7">
+        <KeyColumn dwd:design-time-name="31b15ade-1d31-4999-a38b-7e64cb03e32a">
           <DataType>Integer</DataType>
-          <Source xsi:type="ColumnBinding" dwd:design-time-name="d57afe9c-3507-4ea4-8776-0d768fc7af51">
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="ecd69a62-964e-4e14-9717-a8c772de84b6">
             <TableID>CUSTINVOICETRANS</TableID>
             <ColumnID>ISCREDITNOTE</ColumnID>
           </Source>
         </KeyColumn>
       </KeyColumns>
-      <NameColumn dwd:design-time-name="0a793d70-1462-4da3-bc8e-9ea72f5c7acf">
+      <NameColumn dwd:design-time-name="ce4cc698-28de-4fae-9a8a-5be7d7e12e30">
         <DataType>WChar</DataType>
-        <Source xsi:type="ColumnBinding" dwd:design-time-name="f14c46ac-ab02-4974-b7d4-06047108f337">
+        <Source xsi:type="ColumnBinding" dwd:design-time-name="1ff511cf-9505-4027-8b2a-0a7a31dc0222">
           <TableID>CUSTINVOICETRANS</TableID>
           <ColumnID>ISCREDITNOTE</ColumnID>
         </Source>
       </NameColumn>
       <Translations>
-        <Translation dwd:design-time-name="b1e62a6c-6b5a-43af-9d10-b86823181440">
+        <Translation dwd:design-time-name="fcffe432-acbe-4d68-acbb-93142652d0ee">
           <Language>3082</Language>
           <Caption>Es abono</Caption>
         </Translation>
@@ -531,32 +551,32 @@
       <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
       <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
     </Attribute>
-    <Attribute dwd:design-time-name="9b522b67-1a6c-407a-bfad-73e27a3139cb">
+    <Attribute dwd:design-time-name="0eafb95b-33e1-46e0-bb8f-c5dbc102bb43">
       <ID>CUSTINVOICEJOUR ORDERACCOUNT</ID>
       <Name>Código de cliente</Name>
       <EstimatedCount>27080</EstimatedCount>
       <KeyColumns>
-        <KeyColumn dwd:design-time-name="bf3283ee-65fb-488d-9219-1c1467a7d39d">
+        <KeyColumn dwd:design-time-name="c534e142-2a8b-4e46-a7db-3b24e2627576">
           <DataType>WChar</DataType>
           <DataSize>4</DataSize>
-          <Source xsi:type="ColumnBinding" dwd:design-time-name="13d4b2ef-cf3b-4fa0-8387-1924a972074f">
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="53c6e434-9605-4aa7-8f91-d3782eed5dd7">
             <TableID>CUSTINVOICETRANS</TableID>
             <ColumnID>DATAAREAID</ColumnID>
           </Source>
         </KeyColumn>
-        <KeyColumn dwd:design-time-name="f16ec1fd-1223-4458-8566-3f42a856a657">
+        <KeyColumn dwd:design-time-name="a4156203-fe82-453d-b85b-7b1a2b646827">
           <DataType>WChar</DataType>
           <DataSize>20</DataSize>
-          <Source xsi:type="ColumnBinding" dwd:design-time-name="32b87b6a-8455-4919-9d4f-c21ff8abb9c1">
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="58a5a18f-f814-44da-901e-0ec7c4498cc0">
             <TableID>CUSTINVOICETRANS</TableID>
             <ColumnID>CUSTINVOICEJOUR_ORDERACCOUNT</ColumnID>
           </Source>
         </KeyColumn>
       </KeyColumns>
-      <NameColumn dwd:design-time-name="82257f60-ae58-40df-ba0d-fe48ac7de590">
+      <NameColumn dwd:design-time-name="885fb3b3-3962-486d-9bab-8383557d8ad5">
         <DataType>WChar</DataType>
         <DataSize>20</DataSize>
-        <Source xsi:type="ColumnBinding" dwd:design-time-name="b237bfad-ab6e-4a62-a030-53dbdc8a229b">
+        <Source xsi:type="ColumnBinding" dwd:design-time-name="3d550e18-b8b9-495d-bc76-1dca02b7eb61">
           <TableID>CUSTINVOICETRANS</TableID>
           <ColumnID>CUSTINVOICEJOUR_ORDERACCOUNT</ColumnID>
         </Source>
@@ -564,29 +584,29 @@
       <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
       <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
     </Attribute>
-    <Attribute dwd:design-time-name="8eb698ce-e330-41fb-9046-1c62d7c9f6af">
+    <Attribute dwd:design-time-name="6a898add-b680-42b6-a4dc-44c2e0ba3ff1">
       <ID>RECID</ID>
       <Name>RECID</Name>
       <KeyColumns>
-        <KeyColumn dwd:design-time-name="14a559df-d6ac-4701-b8c4-d1e829298b0e">
+        <KeyColumn dwd:design-time-name="e86608ea-cfeb-4282-9455-b5952c522a75">
           <DataType>WChar</DataType>
           <DataSize>4</DataSize>
-          <Source xsi:type="ColumnBinding" dwd:design-time-name="25946827-5fa0-429d-bc39-0ee5982a6240">
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="6ee5a9dc-5617-4c90-b092-6b148a4cedd8">
             <TableID>CUSTINVOICETRANS</TableID>
             <ColumnID>DATAAREAID</ColumnID>
           </Source>
         </KeyColumn>
-        <KeyColumn dwd:design-time-name="f7a862b2-9725-4f39-8e4d-f850720566bc">
+        <KeyColumn dwd:design-time-name="d4a8b535-1f21-49c9-97fd-92dc676c40b8">
           <DataType>BigInt</DataType>
-          <Source xsi:type="ColumnBinding" dwd:design-time-name="db5f4367-6bca-4947-a9ad-ac27ba13a7f5">
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="cbef1fbb-2f36-423c-97a0-8161b20eab1d">
             <TableID>CUSTINVOICETRANS</TableID>
             <ColumnID>RECID</ColumnID>
           </Source>
         </KeyColumn>
       </KeyColumns>
-      <NameColumn dwd:design-time-name="7742019d-4d39-47f5-81fd-5285b7b76ad0">
+      <NameColumn dwd:design-time-name="c057d7c2-235f-487a-8abd-480d00dd69d9">
         <DataType>WChar</DataType>
-        <Source xsi:type="ColumnBinding" dwd:design-time-name="7a4a75f4-5371-4a8d-94a1-17d888d23891">
+        <Source xsi:type="ColumnBinding" dwd:design-time-name="fef88fd4-540a-4fe1-ae7a-3a03064943ba">
           <TableID>CUSTINVOICETRANS</TableID>
           <ColumnID>RECID</ColumnID>
         </Source>
@@ -594,27 +614,27 @@
       <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
       <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
     </Attribute>
-    <Attribute dwd:design-time-name="832df364-12bb-4370-9403-b2d2f2a13ab3">
+    <Attribute dwd:design-time-name="70f90063-53ad-40da-a785-3af44231ebff">
       <ID>QTY</ID>
       <Name>Cantidad</Name>
       <KeyColumns>
-        <KeyColumn dwd:design-time-name="a80da33c-436a-4da4-be50-c84a2e3c171b">
+        <KeyColumn dwd:design-time-name="67e56f0e-9662-4e98-8097-cd7bd8fb518e">
           <DataType>Double</DataType>
-          <Source xsi:type="ColumnBinding" dwd:design-time-name="4bd8b1ee-ec56-432b-9ea6-28d8a5e2122e">
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="98dd35c3-5f34-4c30-a64e-b04d34efdaa7">
             <TableID>CUSTINVOICETRANS</TableID>
             <ColumnID>QTY</ColumnID>
           </Source>
         </KeyColumn>
       </KeyColumns>
-      <NameColumn dwd:design-time-name="ea7e942b-8f10-4c20-a5b7-16c4a2f9f193">
+      <NameColumn dwd:design-time-name="c9c6d352-5d75-4115-b12c-45e91d3481c2">
         <DataType>WChar</DataType>
-        <Source xsi:type="ColumnBinding" dwd:design-time-name="bb69f149-9c45-46bb-bd15-131417572094">
+        <Source xsi:type="ColumnBinding" dwd:design-time-name="95530ff3-e8ff-408d-88d3-6cc68e569c77">
           <TableID>CUSTINVOICETRANS</TableID>
           <ColumnID>QTY</ColumnID>
         </Source>
       </NameColumn>
       <Translations>
-        <Translation dwd:design-time-name="8ba26f3b-468b-40a5-8b89-dff0673a8137">
+        <Translation dwd:design-time-name="9a22d5bc-2b5a-45de-9337-6a1dfdfccd82">
           <Language>3082</Language>
           <Caption>Cantidad</Caption>
         </Translation>
@@ -623,27 +643,27 @@
       <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
       <ddl300_300:FormatString>#.##0,00;-#.##0,00</ddl300_300:FormatString>
     </Attribute>
-    <Attribute dwd:design-time-name="1bfbda59-5e8c-4d99-99e4-8d52ecd12e4c">
+    <Attribute dwd:design-time-name="258a73f5-6cd7-4037-bcea-fd8c8280f154">
       <ID>LINEAMOUNT</ID>
       <Name>Line amount</Name>
       <KeyColumns>
-        <KeyColumn dwd:design-time-name="23e5a3cb-8fe6-49dd-a4cf-e9792fc8cb06">
+        <KeyColumn dwd:design-time-name="9e001af4-3a82-460d-a736-869e7c9bea45">
           <DataType>Double</DataType>
-          <Source xsi:type="ColumnBinding" dwd:design-time-name="9f9b7cd7-c0d8-4a94-830c-34223a900349">
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="b09ae9af-9143-42df-b49a-af63fdd90010">
             <TableID>CUSTINVOICETRANS</TableID>
             <ColumnID>LINEAMOUNT</ColumnID>
           </Source>
         </KeyColumn>
       </KeyColumns>
-      <NameColumn dwd:design-time-name="1c8498eb-862a-48cf-bdd3-61ed5e31ee0c">
+      <NameColumn dwd:design-time-name="6fb082b4-9418-4efc-804b-1a5af3c0fa57">
         <DataType>WChar</DataType>
-        <Source xsi:type="ColumnBinding" dwd:design-time-name="f04c8c6e-797c-40b0-aa24-5d42ba7e7ef7">
+        <Source xsi:type="ColumnBinding" dwd:design-time-name="cd673638-7492-45a6-9ba5-7a6f5b949b36">
           <TableID>CUSTINVOICETRANS</TableID>
           <ColumnID>LINEAMOUNT</ColumnID>
         </Source>
       </NameColumn>
       <Translations>
-        <Translation dwd:design-time-name="ca8c04d9-69dd-4b59-8731-6237ffda47ec">
+        <Translation dwd:design-time-name="d253561a-8d14-4f10-816d-a5204fab4c80">
           <Language>3082</Language>
           <Caption>Importe total línea</Caption>
         </Translation>
@@ -652,23 +672,118 @@
       <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
       <ddl300_300:FormatString>Currency</ddl300_300:FormatString>
     </Attribute>
+    <Attribute dwd:design-time-name="75f6aacf-1566-4e02-b8e2-dd49d969feea">
+      <ID>SALESPRICE</ID>
+      <Name>Sales Price</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="34822f91-59de-438f-8f9d-ad50610721f3">
+          <DataType>Double</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="3b9f1bcc-48bb-44cc-a0fc-22b67e87f907">
+            <TableID>CUSTINVOICETRANS</TableID>
+            <ColumnID>SALESPRICE</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <NameColumn dwd:design-time-name="0662d8af-c7ef-4d5c-aaee-d2bb84f3011a">
+        <DataType>WChar</DataType>
+        <Source xsi:type="ColumnBinding" dwd:design-time-name="4ecdfb59-a917-420f-93d3-8c726770c8e3">
+          <TableID>CUSTINVOICETRANS</TableID>
+          <ColumnID>SALESPRICE</ColumnID>
+        </Source>
+      </NameColumn>
+      <Translations>
+        <Translation dwd:design-time-name="ecd9cf46-431f-491a-8ac2-c636ada27406">
+          <Language>3082</Language>
+          <Caption>Precio unitario</Caption>
+        </Translation>
+      </Translations>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+      <ddl300_300:FormatString>Currency</ddl300_300:FormatString>
+    </Attribute>
+    <Attribute dwd:design-time-name="db9ee164-daaa-4910-bb4a-8cc0a429f217">
+      <ID>SALESUNIT</ID>
+      <Name>Sales Unit</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="fd5bdd63-5fd5-49a9-ae72-a4fe72d11de3">
+          <DataType>WChar</DataType>
+          <DataSize>80</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="ea5d16cb-8af0-4789-b532-d312b34ca3b9">
+            <TableID>CUSTINVOICETRANS</TableID>
+            <ColumnID>SALESUNIT</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <NameColumn dwd:design-time-name="14519fb8-d688-403a-9804-79c23c9e3e97">
+        <DataType>WChar</DataType>
+        <DataSize>80</DataSize>
+        <Source xsi:type="ColumnBinding" dwd:design-time-name="d0f1198f-cbbf-4128-be50-1ae56761515f">
+          <TableID>CUSTINVOICETRANS</TableID>
+          <ColumnID>SALESUNIT</ColumnID>
+        </Source>
+      </NameColumn>
+      <Translations>
+        <Translation dwd:design-time-name="c692d3d9-2df3-426e-9cce-3b1753bb4b19">
+          <Language>3082</Language>
+          <Caption>Unidad</Caption>
+        </Translation>
+      </Translations>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="658329a6-eede-476d-8481-08be3fc837ed">
+      <ID>INVOICEDATE</ID>
+      <Name>Invoice date</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="5a0e0906-2079-477a-8591-101b79b09dad">
+          <DataType>WChar</DataType>
+          <DataSize>4</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="e2199cd8-3f12-411a-a0aa-dad8b5352c1a">
+            <TableID>CUSTINVOICETRANS</TableID>
+            <ColumnID>DATAAREAID</ColumnID>
+          </Source>
+        </KeyColumn>
+        <KeyColumn dwd:design-time-name="5aab3d67-cdfe-44b3-8709-e1a52d6bb0e4">
+          <DataType>Date</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="a8dfa8a5-737d-4418-9a56-bc62e13fafab">
+            <TableID>CUSTINVOICETRANS</TableID>
+            <ColumnID>INVOICEDATE</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <NameColumn dwd:design-time-name="5cbdde5c-114d-4f19-978a-81aebd49b235">
+        <DataType>WChar</DataType>
+        <Source xsi:type="ColumnBinding" dwd:design-time-name="677b046a-b5a3-458e-801c-a48aec1ff9e0">
+          <TableID>CUSTINVOICETRANS</TableID>
+          <ColumnID>INVOICEDATE</ColumnID>
+        </Source>
+      </NameColumn>
+      <Translations>
+        <Translation dwd:design-time-name="46b3f577-b977-403d-a255-58a8af404f88">
+          <Language>3082</Language>
+          <Caption>Fecha factura</Caption>
+        </Translation>
+      </Translations>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
   </Attributes>
   <Hierarchies>
-    <Hierarchy dwd:design-time-name="59e9a995-89a6-4845-b080-78fd283421ed">
+    <Hierarchy dwd:design-time-name="1b5834f5-6d8f-4eb7-9462-ec6f90140bef">
       <ID>Hierarchy</ID>
       <Name>Hierarchy</Name>
       <Levels>
-        <Level dwd:design-time-name="cff2f0ce-6074-488d-a51d-f9065e2b8829">
+        <Level dwd:design-time-name="9731fc0d-4c78-4065-b65c-07cdac39e1c7">
           <ID>Código de cliente</ID>
           <Name>Código de cliente</Name>
           <SourceAttributeID>CUSTINVOICEJOUR ORDERACCOUNT</SourceAttributeID>
         </Level>
-        <Level dwd:design-time-name="d1cb1071-7910-4b50-bed8-7080b93f9963">
+        <Level dwd:design-time-name="6fb093dc-9c08-4215-8887-053eb2d6687f">
           <ID>Código de artículo</ID>
           <Name>Código de artículo</Name>
           <SourceAttributeID>ITEMID</SourceAttributeID>
         </Level>
-        <Level dwd:design-time-name="fa8c9418-2ff4-4922-8e6f-ead262a13e5f">
+        <Level dwd:design-time-name="3056b8ec-e25f-4a93-b9b9-9b33420299fd">
           <ID>Cust Invoice Transaction</ID>
           <Name>Cust Invoice Transaction</Name>
           <SourceAttributeID>DATAAREAID</SourceAttributeID>
@@ -676,13 +791,13 @@
       </Levels>
     </Hierarchy>
   </Hierarchies>
-  <ProactiveCaching dwd:design-time-name="99a4d9db-a7a0-4e89-a8a5-ed4a63207c77">
+  <ProactiveCaching dwd:design-time-name="22c54334-ad15-435e-8f8d-d4ef1d2a959f">
     <SilenceInterval>-PT1S</SilenceInterval>
     <Latency>-PT1S</Latency>
     <SilenceOverrideInterval>-PT1S</SilenceOverrideInterval>
     <ForceRebuildInterval>P1D</ForceRebuildInterval>
     <AggregationStorage>MolapOnly</AggregationStorage>
-    <Source xsi:type="ProactiveCachingInheritedBinding" dwd:design-time-name="94ca4138-a877-4e91-a2a8-a87797871dfb">
+    <Source xsi:type="ProactiveCachingInheritedBinding" dwd:design-time-name="c4a5152c-9c5f-4fbf-8810-ae497520edac">
       <NotificationTechnique>Server</NotificationTechnique>
     </Source>
   </ProactiveCaching>
