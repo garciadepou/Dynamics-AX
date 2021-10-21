@@ -1,4 +1,4 @@
-﻿<Dimension xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:ddl200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:ddl200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:ddl300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:ddl300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:ddl400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:ddl400_400="http://schemas.microsoft.com/analysisservices/2012/engine/400/400" xmlns:ddl500="http://schemas.microsoft.com/analysisservices/2013/engine/500" xmlns:ddl500_500="http://schemas.microsoft.com/analysisservices/2013/engine/500/500" xmlns:dwd="http://schemas.microsoft.com/DataWarehouse/Designer/1.0" dwd:design-time-name="efd4c7ba-09cc-40d9-870b-ae1cd92ebdc8" xmlns="http://schemas.microsoft.com/analysisservices/2003/engine">
+﻿<Dimension xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:ddl200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:ddl200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:ddl300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:ddl300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:ddl400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:ddl400_400="http://schemas.microsoft.com/analysisservices/2012/engine/400/400" xmlns:ddl500="http://schemas.microsoft.com/analysisservices/2013/engine/500" xmlns:ddl500_500="http://schemas.microsoft.com/analysisservices/2013/engine/500/500" xmlns:dwd="http://schemas.microsoft.com/DataWarehouse/Designer/1.0" dwd:design-time-name="5d651449-6741-4612-a6f0-fb86ce6c0cdc" xmlns="http://schemas.microsoft.com/analysisservices/2003/engine">
   <ID>INVENTITEMTECHSPECS</ID>
   <Name>Invent Item Tech Specs</Name>
   <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
@@ -8,7 +8,7 @@
       <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramLayout</Name>
       <Value>
         <dds xmlns="">
-          <diagram fontclsid="{0BE35203-8F91-11CE-9DE3-00AA004BB851}" mouseiconclsid="{0BE35204-8F91-11CE-9DE3-00AA004BB851}" defaultlayout="MSDDS.Rectilinear" defaultlineroute="MSDDS.Rectilinear" version="7" nextobject="10" scale="100" pagebreakanchorx="0" pagebreakanchory="0" pagebreaksizex="0" pagebreaksizey="0" scrollleft="-3765" scrolltop="-4039" gridx="150" gridy="150" marginx="5000" marginy="5000" zoom="100" x="16589" y="20929" backcolor="16777215" defaultpersistence="2" PrintPageNumbersMode="3" PrintMarginTop="0" PrintMarginBottom="635" PrintMarginLeft="0" PrintMarginRight="0" marqueeselectionmode="0" mousepointer="0" snaptogrid="0" autotypeannotation="1" showscrollbars="0" viewpagebreaks="0" donotforceconnectorsbehindshapes="1" backpictureclsid="{00000000-0000-0000-0000-000000000000}">
+          <diagram fontclsid="{0BE35203-8F91-11CE-9DE3-00AA004BB851}" mouseiconclsid="{0BE35204-8F91-11CE-9DE3-00AA004BB851}" defaultlayout="MSDDS.Rectilinear" defaultlineroute="MSDDS.Rectilinear" version="7" nextobject="10" scale="100" pagebreakanchorx="0" pagebreakanchory="0" pagebreaksizex="0" pagebreaksizey="0" scrollleft="-3765" scrolltop="-4039" gridx="150" gridy="150" marginx="5000" marginy="5000" zoom="100" x="16616" y="20929" backcolor="16777215" defaultpersistence="2" PrintPageNumbersMode="3" PrintMarginTop="0" PrintMarginBottom="635" PrintMarginLeft="0" PrintMarginRight="0" marqueeselectionmode="0" mousepointer="0" snaptogrid="0" autotypeannotation="1" showscrollbars="0" viewpagebreaks="0" donotforceconnectorsbehindshapes="1" backpictureclsid="{00000000-0000-0000-0000-000000000000}">
             <font>
               <ddsxmlobjectstreamwrapper binary="01000000900144420100065461686f6d61" />
             </font>
@@ -118,261 +118,269 @@
   </Annotations>
   <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
   <State>Unprocessed</State>
-  <Source xsi:type="DataSourceViewBinding" dwd:design-time-name="39614d90-b294-4393-bac6-fc9e5ff5604c">
+  <Source xsi:type="DataSourceViewBinding" dwd:design-time-name="836452c5-28c8-4f76-9f7e-f566348252de">
     <DataSourceViewID>Dynamics AX</DataSourceViewID>
   </Source>
-  <ErrorConfiguration dwd:design-time-name="1a29033c-f366-4346-90de-a03bffc7c3bd">
+  <ErrorConfiguration dwd:design-time-name="dbef99f9-06a7-4f2a-b572-1e2bf044ce7d">
     <KeyErrorLimitAction>StopLogging</KeyErrorLimitAction>
     <KeyNotFound>IgnoreError</KeyNotFound>
     <NullKeyNotAllowed>IgnoreError</NullKeyNotAllowed>
   </ErrorConfiguration>
   <CurrentStorageMode>Molap</CurrentStorageMode>
   <Translations>
-    <Translation dwd:design-time-name="d07d2a22-c2b1-4142-a7dd-9104f1d245b9">
+    <Translation dwd:design-time-name="5be0dd21-2930-4470-89fe-40a2bb943a62">
       <Language>3082</Language>
       <Caption>Especificaciones técnicas</Caption>
     </Translation>
-    <Translation dwd:design-time-name="e18c43c0-60b3-43d6-8617-ee5548b014c3">
+    <Translation dwd:design-time-name="749024d0-1efb-412b-bed3-871af398c040">
       <Language>1033</Language>
       <Caption>Technical especidications</Caption>
     </Translation>
   </Translations>
   <Attributes>
-    <Attribute dwd:design-time-name="f5e6137a-47f7-4faa-8efa-9e68a21243bc">
+    <Attribute dwd:design-time-name="ccb81f7b-cbcb-484b-b2c5-e0e275db87e0">
       <ID>ITEMID</ID>
       <Name>ITEMID</Name>
       <Usage>Key</Usage>
       <KeyColumns>
-        <KeyColumn dwd:design-time-name="b34f8d0c-bea0-4aa8-95dd-21c27c5c8200">
+        <KeyColumn dwd:design-time-name="ce617495-0c14-4f13-b57a-4620de5702e2">
           <DataType>WChar</DataType>
           <DataSize>4</DataSize>
-          <Source xsi:type="ColumnBinding" dwd:design-time-name="d68be80d-633f-4137-b919-6e89f85a1e7f">
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="2ad9ed7e-e9a4-4e6b-8735-b733a8a7be68">
             <TableID>dbo_INVENTITEMTECHSPECS</TableID>
             <ColumnID>DATAAREAID</ColumnID>
           </Source>
         </KeyColumn>
-        <KeyColumn dwd:design-time-name="d30060f4-802d-4eec-98ec-68942bab1a64">
+        <KeyColumn dwd:design-time-name="f0e3a46e-7378-4832-b92f-b12a5feaf9bd">
           <DataType>WChar</DataType>
           <DataSize>20</DataSize>
-          <Source xsi:type="ColumnBinding" dwd:design-time-name="707fd723-131f-442a-9e23-3811c5a8b2ab">
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="76c93cc0-6b43-4783-8c86-2e158941bea1">
             <TableID>dbo_INVENTITEMTECHSPECS</TableID>
             <ColumnID>ITEMID</ColumnID>
           </Source>
         </KeyColumn>
       </KeyColumns>
-      <NameColumn dwd:design-time-name="b552fa26-9dc8-46ac-994b-3fe64f6b0084">
+      <NameColumn dwd:design-time-name="8f746aac-72fb-41fa-accb-4bb1f1a3874a">
         <DataType>WChar</DataType>
         <DataSize>20</DataSize>
-        <Source xsi:type="ColumnBinding" dwd:design-time-name="843547d1-b063-471b-8dd6-40c5f428c349">
+        <Source xsi:type="ColumnBinding" dwd:design-time-name="af9f187b-663f-4426-be10-0247922983c4">
           <TableID>dbo_INVENTITEMTECHSPECS</TableID>
           <ColumnID>ITEMID</ColumnID>
         </Source>
       </NameColumn>
       <Translations>
-        <Translation dwd:design-time-name="684f0392-48ad-466d-8001-1cf5f924c8c0">
+        <Translation dwd:design-time-name="44078ba2-b751-472d-8dec-e9ee50be294d">
           <Language>1033</Language>
           <Caption>Item ID</Caption>
         </Translation>
-        <Translation dwd:design-time-name="6b928646-7631-4c86-b38d-0145c14d7315">
+        <Translation dwd:design-time-name="8a11c32c-b17c-4131-b8c4-9134fa342d77">
           <Language>3082</Language>
           <Caption>Item ID</Caption>
         </Translation>
       </Translations>
       <AttributeRelationships>
-        <AttributeRelationship dwd:design-time-name="d453e9ba-c4c4-4f6f-b639-5dd00fdcfd22">
+        <AttributeRelationship dwd:design-time-name="6a3578a7-9284-4446-bfc0-f0a834f4edc6">
           <AttributeID>CE</AttributeID>
           <Name>CE</Name>
         </AttributeRelationship>
-        <AttributeRelationship dwd:design-time-name="0b4dbc21-e8fa-450c-8d5c-de6a43e4431a">
+        <AttributeRelationship dwd:design-time-name="ca5716eb-ad82-4c3a-84d2-ae48f85ca333">
           <AttributeID>GLUES</AttributeID>
           <Name>Glues</Name>
         </AttributeRelationship>
-        <AttributeRelationship dwd:design-time-name="17d3ef0b-afd4-4ec3-b2a0-3fd7ba46a5e3">
+        <AttributeRelationship dwd:design-time-name="a6f46082-c94c-4841-b752-af46aade1f44">
           <AttributeID>COMPOSTABLEINKS</AttributeID>
           <Name>Compostable INKS</Name>
         </AttributeRelationship>
-        <AttributeRelationship dwd:design-time-name="9492f7a9-c80f-4ccb-b10a-bcf83634076d">
+        <AttributeRelationship dwd:design-time-name="3b125c3a-8861-4737-bff6-1a925aab2430">
           <AttributeID>COSMETICS</AttributeID>
           <Name>Cosmetics</Name>
         </AttributeRelationship>
-        <AttributeRelationship dwd:design-time-name="8f056efc-3f70-4359-bd86-979181fb6d32">
+        <AttributeRelationship dwd:design-time-name="298063e6-93d3-4b76-8763-32b580227bf1">
           <AttributeID>ECOLABEL</AttributeID>
           <Name>EcoLabel</Name>
         </AttributeRelationship>
-        <AttributeRelationship dwd:design-time-name="866bd39d-f574-4fd2-af5e-4ddd64ba52f1">
+        <AttributeRelationship dwd:design-time-name="41a168ce-1ce4-4341-8df5-1aa7234ef03e">
           <AttributeID>SANITARYREGISTRATION</AttributeID>
           <Name>Sanitary Registration</Name>
         </AttributeRelationship>
-        <AttributeRelationship dwd:design-time-name="2d00ecd1-d3e5-4736-bce4-c695d3e73804">
+        <AttributeRelationship dwd:design-time-name="2b7d84eb-50db-4bec-b4b8-064c33c0b751">
           <AttributeID>ISO9001</AttributeID>
           <Name>ISO9001</Name>
         </AttributeRelationship>
-        <AttributeRelationship dwd:design-time-name="4e2500e2-4750-4db2-83bd-5f03404c3273">
+        <AttributeRelationship dwd:design-time-name="f19c2996-ed73-44d3-8157-047b5d39494f">
           <AttributeID>DISHWASHER</AttributeID>
           <Name>Dishwasher</Name>
         </AttributeRelationship>
-        <AttributeRelationship dwd:design-time-name="af324948-bdb7-4916-9436-ed4f2882df85">
+        <AttributeRelationship dwd:design-time-name="3124a76a-fe42-43df-b119-6526876eb0fa">
           <AttributeID>GREASEANDOILRESISTANT</AttributeID>
           <Name>Grease and oil resistant</Name>
         </AttributeRelationship>
-        <AttributeRelationship dwd:design-time-name="fb46be04-ce2a-4c47-8862-ab36ffd2a311">
+        <AttributeRelationship dwd:design-time-name="a921b1ce-4aae-475d-b273-321696da9d72">
           <AttributeID>ONEUSEONLY</AttributeID>
           <Name>One use only</Name>
         </AttributeRelationship>
-        <AttributeRelationship dwd:design-time-name="b076d8e2-c375-45e6-b44c-662565e5f9b8">
+        <AttributeRelationship dwd:design-time-name="5fbf1887-8fd0-445d-afbf-2f65a245170c">
           <AttributeID>BIODEGRADABLE</AttributeID>
           <Name>Biodegradable</Name>
         </AttributeRelationship>
-        <AttributeRelationship dwd:design-time-name="990d303e-e8ba-4bd9-8bd2-121dce9be216">
+        <AttributeRelationship dwd:design-time-name="8f89da7c-7acf-4a33-a00d-7193cde81509">
           <AttributeID>RECYCLED</AttributeID>
           <Name>Recycled</Name>
         </AttributeRelationship>
-        <AttributeRelationship dwd:design-time-name="5fb188e8-5ad9-4bfa-87d2-7e352f4abaea">
+        <AttributeRelationship dwd:design-time-name="dfa8fc30-f78d-44c8-a6cb-cc2beeb2d2b8">
           <AttributeID>NONOVENPROOF</AttributeID>
           <Name>Not Oven Proof</Name>
         </AttributeRelationship>
-        <AttributeRelationship dwd:design-time-name="7e2cd155-92c5-401b-a5d4-481853932326">
+        <AttributeRelationship dwd:design-time-name="ceb6bd85-63f7-4c94-9c49-7dcb44ebd692">
           <AttributeID>OVENPROOF</AttributeID>
           <Name>Oven proof</Name>
         </AttributeRelationship>
-        <AttributeRelationship dwd:design-time-name="df51b45b-8713-4d84-9cd4-25d8ae2bcd35">
+        <AttributeRelationship dwd:design-time-name="671c0eb1-6b2f-42f0-8e2f-1085db637e55">
           <AttributeID>NONMICROWAVEABLE</AttributeID>
           <Name>Not  Microwaveable</Name>
         </AttributeRelationship>
-        <AttributeRelationship dwd:design-time-name="1e9cf239-1e7c-47db-9679-a173cfdb1518">
+        <AttributeRelationship dwd:design-time-name="2aaa66d3-3110-4e05-a629-6a9222a5ca1d">
           <AttributeID>MICROWAVEABLE</AttributeID>
           <Name>Microwaveable</Name>
         </AttributeRelationship>
-        <AttributeRelationship dwd:design-time-name="bbcfba69-6162-44a6-ae71-bba622bda5b0">
+        <AttributeRelationship dwd:design-time-name="bb54903a-f939-4157-aa96-2054d77f155c">
           <AttributeID>NONFREEZING</AttributeID>
           <Name>Not freezable</Name>
         </AttributeRelationship>
-        <AttributeRelationship dwd:design-time-name="c5fcd29f-97fa-4b40-8498-148d964ef768">
+        <AttributeRelationship dwd:design-time-name="5091596b-a099-43f9-b24c-64be8a6c8d1e">
           <AttributeID>FREEZABLE</AttributeID>
           <Name>Freezable</Name>
         </AttributeRelationship>
-        <AttributeRelationship dwd:design-time-name="0e8025ba-1364-42b2-a961-42162321a3c6">
+        <AttributeRelationship dwd:design-time-name="d9de6d91-7879-466c-8797-c5686d7134f9">
           <AttributeID>CASHCARRY</AttributeID>
           <Name>Cash Carry</Name>
         </AttributeRelationship>
-        <AttributeRelationship dwd:design-time-name="f284f50b-94fa-470f-b56f-5a7b05f23704">
+        <AttributeRelationship dwd:design-time-name="10c0aa2f-be4c-4f2b-85c5-ef71c0bfe653">
           <AttributeID>RAWMATERIALFSC</AttributeID>
           <Name>Raw Material FSC</Name>
         </AttributeRelationship>
-        <AttributeRelationship dwd:design-time-name="6464e370-adcc-492e-a06b-5204f7cbb3dd">
+        <AttributeRelationship dwd:design-time-name="5eea424e-b37a-4dd1-98fb-b865546974ad">
           <AttributeID>FOODSECTOR</AttributeID>
           <Name>Food Sector</Name>
         </AttributeRelationship>
-        <AttributeRelationship dwd:design-time-name="d2de2693-de8a-47f1-9435-33c2c4818b32">
+        <AttributeRelationship dwd:design-time-name="955a193d-529b-41c5-8f09-2169d75a00c2">
           <AttributeID>RECYCLABLEPRODUCT</AttributeID>
           <Name>Recyclable product</Name>
         </AttributeRelationship>
-        <AttributeRelationship dwd:design-time-name="36596ff1-0512-41ba-9f18-27f236b44e57">
+        <AttributeRelationship dwd:design-time-name="bda3a7c6-cb20-44a5-9619-64cb2ff9e92b">
           <AttributeID>UNITWEIGHT</AttributeID>
           <Name>Unit Weight</Name>
         </AttributeRelationship>
-        <AttributeRelationship dwd:design-time-name="bc692a9f-6653-4e96-920f-b5777769b87f">
+        <AttributeRelationship dwd:design-time-name="9c5223fa-06bb-433d-acfa-6ae458e4d34a">
           <AttributeID>RAWMATEIRALPEFC</AttributeID>
           <Name>Raw Material PEFC</Name>
         </AttributeRelationship>
-        <AttributeRelationship dwd:design-time-name="7c9789b4-329d-4dcc-98d1-d02f1dcbf827">
+        <AttributeRelationship dwd:design-time-name="1fc49ccc-c316-4365-9254-6d41a581ce77">
           <AttributeID>COMPOSTABLE</AttributeID>
           <Name>Compostable</Name>
         </AttributeRelationship>
-        <AttributeRelationship dwd:design-time-name="67c8e4de-a5e5-4301-a70f-4bccd13e1ac8">
+        <AttributeRelationship dwd:design-time-name="8a335ebd-82d6-41dd-a769-bb59b1d01cd8">
           <AttributeID>REACHCONFORMITY</AttributeID>
           <Name>Reach Conformity</Name>
         </AttributeRelationship>
-        <AttributeRelationship dwd:design-time-name="ae41de0f-77cb-4f70-83df-eea3d72dcff1">
+        <AttributeRelationship dwd:design-time-name="4320742a-d30e-4dd6-b79c-3b0999c121b9">
           <AttributeID>BPAFREE</AttributeID>
           <Name>BPA free</Name>
         </AttributeRelationship>
-        <AttributeRelationship dwd:design-time-name="ba9c7547-f463-4643-99a5-605c178f16f5">
+        <AttributeRelationship dwd:design-time-name="53484db4-7c25-46c1-98ef-7daebe733282">
           <AttributeID>NANOPARTFREE</AttributeID>
           <Name>Nanoparticles free</Name>
         </AttributeRelationship>
-        <AttributeRelationship dwd:design-time-name="ee23d4e3-d373-4141-a25d-fa7f2ef178da">
+        <AttributeRelationship dwd:design-time-name="6fe64d7a-168f-4d2f-b706-40bc93e5c3c3">
           <AttributeID>SHOWCOMPANYADDRESSONLABELS</AttributeID>
           <Name>Show Company Address on labels</Name>
         </AttributeRelationship>
-        <AttributeRelationship dwd:design-time-name="de37e988-0926-45c3-a8b7-13236c0412a5">
+        <AttributeRelationship dwd:design-time-name="a054d5e1-8671-4aa5-837e-bc7c69a0e3ac">
           <AttributeID>FOODANDPLASTICS</AttributeID>
           <Name>Food and Plastics</Name>
         </AttributeRelationship>
-        <AttributeRelationship dwd:design-time-name="b87aa5d0-3559-4fdc-ac17-0533bd97e6e8">
+        <AttributeRelationship dwd:design-time-name="9864d9ff-4f03-420c-bdaf-253ebb30ce58">
           <AttributeID>GOODMANUFPRACTICES</AttributeID>
           <Name>Good manufacturing practices</Name>
         </AttributeRelationship>
-        <AttributeRelationship dwd:design-time-name="929ae9e8-72a1-42ce-bee8-3eab161b90f6">
+        <AttributeRelationship dwd:design-time-name="33d2291d-6e03-4d39-94ec-4feee73aa70c">
           <AttributeID>FSCCODE</AttributeID>
           <Name>FSC Code</Name>
         </AttributeRelationship>
-        <AttributeRelationship dwd:design-time-name="cba1d7be-49c0-46d8-adab-8eb34751aac0">
+        <AttributeRelationship dwd:design-time-name="653e7d64-77b6-43c6-a224-8be5bda8d3da">
           <AttributeID>PEFCCODE</AttributeID>
           <Name>PEFC Code</Name>
         </AttributeRelationship>
-        <AttributeRelationship dwd:design-time-name="452714be-c9a1-4ba1-879a-c58441e4cb6a">
+        <AttributeRelationship dwd:design-time-name="e4ea27fb-adbf-42a1-931f-8c29503592f0">
           <AttributeID>FSCPRODCLASSLVL</AttributeID>
           <Name>FSC Classification</Name>
         </AttributeRelationship>
-        <AttributeRelationship dwd:design-time-name="c45bd019-c28e-4306-ad43-336eb9775771">
+        <AttributeRelationship dwd:design-time-name="82a3c414-c827-43ca-9b20-4a5aff38d517">
           <AttributeID>USENONPRINTEDFACE</AttributeID>
           <Name>Use Unprinted side</Name>
         </AttributeRelationship>
-        <AttributeRelationship dwd:design-time-name="8b54365f-cd31-4154-8878-2f2fb353fbd8">
+        <AttributeRelationship dwd:design-time-name="c32db4d4-ecbe-4983-95f9-e32586da2ff9">
           <AttributeID>BATTERIES</AttributeID>
           <Name>Batteries</Name>
         </AttributeRelationship>
-        <AttributeRelationship dwd:design-time-name="a18aaaf9-6ec0-42bf-af66-2346bb0e4476">
+        <AttributeRelationship dwd:design-time-name="aa50ce2a-752c-4127-8ebc-1883cba3a9bb">
           <AttributeID>PLUGTYPE</AttributeID>
           <Name>Plug Type</Name>
         </AttributeRelationship>
-        <AttributeRelationship dwd:design-time-name="1dba1569-410c-4aaa-9a32-7907643c1ad1">
+        <AttributeRelationship dwd:design-time-name="5fdb7958-8f93-4c97-85ef-791618dec432">
           <AttributeID>DRYFOOD</AttributeID>
           <Name>Dry food</Name>
         </AttributeRelationship>
-        <AttributeRelationship dwd:design-time-name="f83375c4-731b-4758-b1cf-01bfa0167584">
+        <AttributeRelationship dwd:design-time-name="b3052ea5-1088-43c7-831c-d3bc9d4774be">
           <AttributeID>ALLFOOD</AttributeID>
           <Name>All food</Name>
         </AttributeRelationship>
-        <AttributeRelationship dwd:design-time-name="cfddd01c-7e56-4f8e-acd7-fa27f55d0225">
+        <AttributeRelationship dwd:design-time-name="8aed8bd8-26ec-4e5e-8e31-39968c6c9bed">
           <AttributeID>TEMPERATURERANGE</AttributeID>
           <Name>Temperature Range</Name>
         </AttributeRelationship>
-        <AttributeRelationship dwd:design-time-name="8b274edd-89cb-408a-882b-2de82db0ccf8">
+        <AttributeRelationship dwd:design-time-name="705e8f3c-0a6e-4ac2-80ae-2c75aa8ba81c">
           <AttributeID>REUSABLE</AttributeID>
           <Name>Reusable</Name>
         </AttributeRelationship>
-        <AttributeRelationship dwd:design-time-name="e24c525f-1af3-4fa7-9cd9-70a161ddcf80">
+        <AttributeRelationship dwd:design-time-name="b3be6763-135d-462a-9819-6fe25fdd8a29">
           <AttributeID>ITEMNAME</AttributeID>
           <Name>Item Name</Name>
         </AttributeRelationship>
-        <AttributeRelationship dwd:design-time-name="010a1aa4-4f0f-4729-96e6-275934e1f596">
+        <AttributeRelationship dwd:design-time-name="fe9294fc-2312-4791-a393-87815f4a0e5f">
           <AttributeID>CONTAINSRECYCLEDFIBERS</AttributeID>
           <Name>Contains recycled fibers</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="9c5966cd-308a-44ef-bafb-def768944590">
+          <AttributeID>APTINDIRECTCONTACTFOODS</AttributeID>
+          <Name>Indirect contact foods</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="91425daa-a9d3-42f8-8d79-5970f74f1d0c">
+          <AttributeID>APTDIRECTCONTACTFOODS</AttributeID>
+          <Name>Direct contact foods</Name>
         </AttributeRelationship>
       </AttributeRelationships>
       <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
       <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
     </Attribute>
-    <Attribute dwd:design-time-name="bee3be89-f559-4052-9125-965507c06177">
+    <Attribute dwd:design-time-name="312b09ba-dde1-481c-b628-18a80823ee98">
       <ID>CE</ID>
       <Name>CE</Name>
       <KeyColumns>
-        <KeyColumn dwd:design-time-name="d43c2058-fbfe-4148-b9df-ee2a97bb90e0">
+        <KeyColumn dwd:design-time-name="adc43f28-d502-4b67-bf11-1729cf5f5300">
           <DataType>Integer</DataType>
-          <Source xsi:type="ColumnBinding" dwd:design-time-name="3fb94cd3-27ca-4747-96a0-1796e8fcbd92">
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="4df73882-3612-4174-91b9-74b14fc03e13">
             <TableID>dbo_INVENTITEMTECHSPECS</TableID>
             <ColumnID>CE</ColumnID>
           </Source>
         </KeyColumn>
       </KeyColumns>
       <Translations>
-        <Translation dwd:design-time-name="03a7dc8b-8e42-44cd-b3c5-c96b9ce4f827">
+        <Translation dwd:design-time-name="07ff4010-6f5e-4f49-937d-064cca74cd6d">
           <Language>1033</Language>
           <Caption>CE</Caption>
         </Translation>
-        <Translation dwd:design-time-name="cd4e0022-d807-4d75-929f-099b6704f375">
+        <Translation dwd:design-time-name="0f9fe99d-b88b-4eaa-99fd-465099d1ff31">
           <Language>3082</Language>
           <Caption>CE</Caption>
         </Translation>
@@ -381,24 +389,24 @@
       <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
       <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
     </Attribute>
-    <Attribute dwd:design-time-name="7333040b-888f-4434-b1b2-833043f953d1">
+    <Attribute dwd:design-time-name="ddd0dd93-7893-4019-bd75-a0e96443c650">
       <ID>GLUES</ID>
       <Name>Glues</Name>
       <KeyColumns>
-        <KeyColumn dwd:design-time-name="ff776d05-8d14-42df-aae1-0bc192e2d0ec">
+        <KeyColumn dwd:design-time-name="83c87f16-c7e6-479d-9cb7-30fdcc012844">
           <DataType>Integer</DataType>
-          <Source xsi:type="ColumnBinding" dwd:design-time-name="4faf8e7c-8922-429f-a2b1-f317d52aebf8">
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="b0e2a7a0-3be4-4f0e-810c-1499cf9aaea3">
             <TableID>dbo_INVENTITEMTECHSPECS</TableID>
             <ColumnID>GLUES</ColumnID>
           </Source>
         </KeyColumn>
       </KeyColumns>
       <Translations>
-        <Translation dwd:design-time-name="735c6bab-810f-45be-848c-0b8a7a0098b5">
+        <Translation dwd:design-time-name="5966d8be-9d63-463e-83a1-8a0fc0a652a3">
           <Language>1033</Language>
           <Caption>Glues</Caption>
         </Translation>
-        <Translation dwd:design-time-name="8a7be866-daf1-4b51-96e7-dcbbb1f76c5b">
+        <Translation dwd:design-time-name="9aebf1b6-1196-41d0-95a3-fc92d9c5188e">
           <Language>3082</Language>
           <Caption>Colas</Caption>
         </Translation>
@@ -407,24 +415,24 @@
       <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
       <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
     </Attribute>
-    <Attribute dwd:design-time-name="dcdcec25-705d-48a0-840c-7c35b9919460">
+    <Attribute dwd:design-time-name="ae4afe5a-8695-42f5-82d0-dd2bf48e7428">
       <ID>COMPOSTABLEINKS</ID>
       <Name>Compostable INKS</Name>
       <KeyColumns>
-        <KeyColumn dwd:design-time-name="48fccecd-be5a-4e24-a9c0-d440708e4466">
+        <KeyColumn dwd:design-time-name="a250efcc-4b7c-4335-9f26-85356cb88bff">
           <DataType>Integer</DataType>
-          <Source xsi:type="ColumnBinding" dwd:design-time-name="836af2fa-d3e4-4f75-be55-37db05e34f19">
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="3155a514-b53e-4fa7-bc6b-53a9a978052c">
             <TableID>dbo_INVENTITEMTECHSPECS</TableID>
             <ColumnID>COMPOSTABLEINKS</ColumnID>
           </Source>
         </KeyColumn>
       </KeyColumns>
       <Translations>
-        <Translation dwd:design-time-name="ef04b182-9058-4ad8-bd7b-16fdb771be77">
+        <Translation dwd:design-time-name="d923adc5-f2ce-45f6-be7c-bcca3649e2e7">
           <Language>1033</Language>
           <Caption>Compostable INKS</Caption>
         </Translation>
-        <Translation dwd:design-time-name="6d55ce31-8b83-4674-9f13-1941bbc4f409">
+        <Translation dwd:design-time-name="776c2ecb-eb43-4d20-b752-bd41408fd375">
           <Language>3082</Language>
           <Caption>Tintas Compostables</Caption>
         </Translation>
@@ -433,24 +441,24 @@
       <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
       <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
     </Attribute>
-    <Attribute dwd:design-time-name="de8ebb0f-3f78-4db3-8612-f207af082fe8">
+    <Attribute dwd:design-time-name="2b93b319-d1f9-4693-972c-5c2739a4b483">
       <ID>COSMETICS</ID>
       <Name>Cosmetics</Name>
       <KeyColumns>
-        <KeyColumn dwd:design-time-name="1687e5ca-498e-439c-a242-04dc10707d58">
+        <KeyColumn dwd:design-time-name="a9ef4869-65a9-4c7c-b36a-410b57f7fd83">
           <DataType>Integer</DataType>
-          <Source xsi:type="ColumnBinding" dwd:design-time-name="7cfad182-b780-4115-b6b5-b2f9441553db">
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="f9e5e62d-2346-4292-b802-9748979c42e2">
             <TableID>dbo_INVENTITEMTECHSPECS</TableID>
             <ColumnID>COSMETICS</ColumnID>
           </Source>
         </KeyColumn>
       </KeyColumns>
       <Translations>
-        <Translation dwd:design-time-name="bf80bfb8-f3ad-4560-9666-7a88f27a91d3">
+        <Translation dwd:design-time-name="42f80f23-af70-4ed0-9a96-3dad04c7a17e">
           <Language>1033</Language>
           <Caption>Cosmetics</Caption>
         </Translation>
-        <Translation dwd:design-time-name="27a93e7f-e3bf-4ded-a11b-296c632f6e09">
+        <Translation dwd:design-time-name="2cab70a1-0558-47f8-8dbb-12cde8ce5acc">
           <Language>3082</Language>
           <Caption>Cosmética</Caption>
         </Translation>
@@ -459,24 +467,24 @@
       <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
       <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
     </Attribute>
-    <Attribute dwd:design-time-name="4b96550f-5e45-427d-b3e6-ad4a6d98a5f3">
+    <Attribute dwd:design-time-name="f463c772-28a2-410e-b241-c3469cbfcc2d">
       <ID>ECOLABEL</ID>
       <Name>EcoLabel</Name>
       <KeyColumns>
-        <KeyColumn dwd:design-time-name="b4b2e485-b10c-4164-9bd2-e9682a5757ff">
+        <KeyColumn dwd:design-time-name="eba68efe-844b-45ea-a25f-59a2d1169934">
           <DataType>Integer</DataType>
-          <Source xsi:type="ColumnBinding" dwd:design-time-name="7a0818b9-6818-4a21-90d2-362db27f8aaa">
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="d4f5ec3f-4844-4a7b-a403-c8e278d5691c">
             <TableID>dbo_INVENTITEMTECHSPECS</TableID>
             <ColumnID>ECOLABEL</ColumnID>
           </Source>
         </KeyColumn>
       </KeyColumns>
       <Translations>
-        <Translation dwd:design-time-name="8be7b755-08f2-403c-9ab6-59c4ae40f2e0">
+        <Translation dwd:design-time-name="b41ff807-10d7-461b-b371-b941da6f935b">
           <Language>1033</Language>
           <Caption>EcoLabel</Caption>
         </Translation>
-        <Translation dwd:design-time-name="b102173b-4b8e-436d-b140-d407b6de31ab">
+        <Translation dwd:design-time-name="d9cd8724-7a05-4427-86d0-863e8b1626d3">
           <Language>3082</Language>
           <Caption>Ecolabel</Caption>
         </Translation>
@@ -485,24 +493,24 @@
       <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
       <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
     </Attribute>
-    <Attribute dwd:design-time-name="e40640d6-0df9-46e7-8827-0d4684b98d99">
+    <Attribute dwd:design-time-name="72ad7f73-3a98-4539-b16d-73fd127755a2">
       <ID>SANITARYREGISTRATION</ID>
       <Name>Sanitary Registration</Name>
       <KeyColumns>
-        <KeyColumn dwd:design-time-name="a1512ad7-e16c-4de2-a3f6-209d268ed4a3">
+        <KeyColumn dwd:design-time-name="2b6de5e9-aa70-42b3-a15c-b1bfad1955ed">
           <DataType>Integer</DataType>
-          <Source xsi:type="ColumnBinding" dwd:design-time-name="fed33b8d-6526-4e6d-850a-9d72ad59fe67">
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="1d537238-afb9-4b90-8225-e53f880ba55e">
             <TableID>dbo_INVENTITEMTECHSPECS</TableID>
             <ColumnID>SANITARYREGISTRATION</ColumnID>
           </Source>
         </KeyColumn>
       </KeyColumns>
       <Translations>
-        <Translation dwd:design-time-name="4efadc2a-75ae-4879-bfe1-17e996a6311a">
+        <Translation dwd:design-time-name="bb8e4dfe-8855-4a35-8148-05e948aa6f47">
           <Language>1033</Language>
           <Caption>Sanitary Registration</Caption>
         </Translation>
-        <Translation dwd:design-time-name="aff600c7-9fd5-4799-a093-8e8a37b05182">
+        <Translation dwd:design-time-name="6d5a4598-d50f-4930-997f-d9df54fc157e">
           <Language>3082</Language>
           <Caption>Registro sanitario</Caption>
         </Translation>
@@ -511,24 +519,24 @@
       <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
       <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
     </Attribute>
-    <Attribute dwd:design-time-name="2ea9befc-5c0a-4765-9000-4ef6009a7900">
+    <Attribute dwd:design-time-name="d99c9e28-76f0-49d5-bf50-764869cbd9ec">
       <ID>ISO9001</ID>
       <Name>ISO9001</Name>
       <KeyColumns>
-        <KeyColumn dwd:design-time-name="24aaf9b9-7253-4a90-9bef-6b10e5ad19f0">
+        <KeyColumn dwd:design-time-name="cdfbf776-ee4f-4b3f-bd94-c3b45ca0075c">
           <DataType>Integer</DataType>
-          <Source xsi:type="ColumnBinding" dwd:design-time-name="fe646349-b3ce-4782-9a88-f737118ba14e">
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="a196ef2b-cf65-4e4c-b7a3-fe38f33b5f30">
             <TableID>dbo_INVENTITEMTECHSPECS</TableID>
             <ColumnID>ISO9001</ColumnID>
           </Source>
         </KeyColumn>
       </KeyColumns>
       <Translations>
-        <Translation dwd:design-time-name="641ff678-9804-4e59-9c8f-31c700da4762">
+        <Translation dwd:design-time-name="8ba237d9-d4f2-4bab-b639-ae03da966db5">
           <Language>1033</Language>
           <Caption>ISO9001</Caption>
         </Translation>
-        <Translation dwd:design-time-name="8cbd7a7a-1c52-4fad-a6b8-3d16571ec9bf">
+        <Translation dwd:design-time-name="55d1c906-5033-4510-b8d3-ea11482fa735">
           <Language>3082</Language>
           <Caption>ISO9001</Caption>
         </Translation>
@@ -537,24 +545,24 @@
       <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
       <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
     </Attribute>
-    <Attribute dwd:design-time-name="82abf721-14a1-4db6-83f9-accc643f38f5">
+    <Attribute dwd:design-time-name="c025c3fc-c142-4412-8168-ae2386486c48">
       <ID>DISHWASHER</ID>
       <Name>Dishwasher</Name>
       <KeyColumns>
-        <KeyColumn dwd:design-time-name="990801a4-3a84-4694-aa99-c730ca9e7211">
+        <KeyColumn dwd:design-time-name="ee473944-142e-4391-9b8b-d12d802ed8a3">
           <DataType>Integer</DataType>
-          <Source xsi:type="ColumnBinding" dwd:design-time-name="a086d17c-cc77-4112-a09b-7e9e4397b5d2">
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="cccf31a7-443a-41dd-a37d-062036e2e133">
             <TableID>dbo_INVENTITEMTECHSPECS</TableID>
             <ColumnID>DISHWASHER</ColumnID>
           </Source>
         </KeyColumn>
       </KeyColumns>
       <Translations>
-        <Translation dwd:design-time-name="ca887100-59e9-4571-b2ee-d8a3a15b4275">
+        <Translation dwd:design-time-name="a8a63164-6a5e-4088-80b3-3126c2dc321f">
           <Language>1033</Language>
           <Caption>Dishwasher</Caption>
         </Translation>
-        <Translation dwd:design-time-name="00fdaa9b-944e-456d-9b45-61886c1f8904">
+        <Translation dwd:design-time-name="98ed480a-019b-4d52-85cf-029fbd5ebc8c">
           <Language>3082</Language>
           <Caption>Lavaplatos</Caption>
         </Translation>
@@ -563,24 +571,24 @@
       <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
       <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
     </Attribute>
-    <Attribute dwd:design-time-name="a183e77a-8274-4ff8-bf2b-e4160c07d96c">
+    <Attribute dwd:design-time-name="1c9b0b68-40a7-4b40-b3f9-2f535d2ccfed">
       <ID>GREASEANDOILRESISTANT</ID>
       <Name>Grease and oil resistant</Name>
       <KeyColumns>
-        <KeyColumn dwd:design-time-name="e117366e-3f57-4dcc-944f-4db658a047fa">
+        <KeyColumn dwd:design-time-name="02131fe9-efeb-4651-9ee0-bd849c6e22d2">
           <DataType>Integer</DataType>
-          <Source xsi:type="ColumnBinding" dwd:design-time-name="ec085296-89be-453b-a2fa-e0aa30c6cd28">
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="042a3f81-2ca0-4fe3-ae43-9c33da845a31">
             <TableID>dbo_INVENTITEMTECHSPECS</TableID>
             <ColumnID>GREASEANDOILRESISTANT</ColumnID>
           </Source>
         </KeyColumn>
       </KeyColumns>
       <Translations>
-        <Translation dwd:design-time-name="c587fba6-3777-4c08-8d23-c200ef907863">
+        <Translation dwd:design-time-name="fcdbdc29-7d94-4185-95a2-2a4fbdd3582d">
           <Language>1033</Language>
           <Caption>Grease and oil resistant</Caption>
         </Translation>
-        <Translation dwd:design-time-name="cb186e3b-5534-4726-a346-5c119f1775d2">
+        <Translation dwd:design-time-name="3740f3a0-095b-4507-b985-44e7d232044a">
           <Language>3082</Language>
           <Caption>Resistente aceites</Caption>
         </Translation>
@@ -589,24 +597,24 @@
       <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
       <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
     </Attribute>
-    <Attribute dwd:design-time-name="292f891a-0a2c-49e9-b0d9-1dd4da706866">
+    <Attribute dwd:design-time-name="ddb0ae8d-e1e6-4a7c-a678-47c751a4583a">
       <ID>ONEUSEONLY</ID>
       <Name>One use only</Name>
       <KeyColumns>
-        <KeyColumn dwd:design-time-name="62621ab7-87d9-429b-bf06-c37674d6951a">
+        <KeyColumn dwd:design-time-name="24aba074-bed8-473a-9f6a-926483b81d4d">
           <DataType>Integer</DataType>
-          <Source xsi:type="ColumnBinding" dwd:design-time-name="d8fc59ef-fc66-49a2-8a11-0b5ede870d7d">
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="660556ff-47cc-4e33-b4fc-97acaaa1f3ca">
             <TableID>dbo_INVENTITEMTECHSPECS</TableID>
             <ColumnID>ONEUSEONLY</ColumnID>
           </Source>
         </KeyColumn>
       </KeyColumns>
       <Translations>
-        <Translation dwd:design-time-name="53e8d44d-4983-4f2c-a661-e4d1659b92e4">
+        <Translation dwd:design-time-name="9e3b56d5-5f87-4b4b-8ec8-bc2c85881fc2">
           <Language>1033</Language>
           <Caption>One use only</Caption>
         </Translation>
-        <Translation dwd:design-time-name="0aaee277-9c9b-4fd1-b9bb-4512aab1d6cc">
+        <Translation dwd:design-time-name="dfd6525b-82b8-4be4-9ac4-e65312b10078">
           <Language>3082</Language>
           <Caption>Un solo uso</Caption>
         </Translation>
@@ -615,24 +623,24 @@
       <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
       <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
     </Attribute>
-    <Attribute dwd:design-time-name="dd9ebeb3-da00-42d9-ba43-6c719e70ec6e">
+    <Attribute dwd:design-time-name="83193c05-5c20-43cc-a745-b22b89e1e45f">
       <ID>BIODEGRADABLE</ID>
       <Name>Biodegradable</Name>
       <KeyColumns>
-        <KeyColumn dwd:design-time-name="491929ed-84bc-4bf6-ae38-8dacf97397da">
+        <KeyColumn dwd:design-time-name="3f6087a6-e651-4b89-9fae-0b915c6c1e60">
           <DataType>Integer</DataType>
-          <Source xsi:type="ColumnBinding" dwd:design-time-name="6916e77b-e559-454f-9831-ad5d95f2b63c">
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="95c12743-f2b2-4f1e-b839-f5272cfad562">
             <TableID>dbo_INVENTITEMTECHSPECS</TableID>
             <ColumnID>BIODEGRADABLE</ColumnID>
           </Source>
         </KeyColumn>
       </KeyColumns>
       <Translations>
-        <Translation dwd:design-time-name="8c3d828a-21ea-4e6e-a5db-a2692ffc4178">
+        <Translation dwd:design-time-name="4fae1747-c394-4bab-8785-e876f15d605d">
           <Language>1033</Language>
           <Caption>Biodegradable</Caption>
         </Translation>
-        <Translation dwd:design-time-name="44728adc-ccf2-4c8c-8d90-986178ca244c">
+        <Translation dwd:design-time-name="b3df7de2-b137-4ea0-8e79-57ccff1b0442">
           <Language>3082</Language>
           <Caption>Biodegradable</Caption>
         </Translation>
@@ -641,24 +649,24 @@
       <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
       <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
     </Attribute>
-    <Attribute dwd:design-time-name="37c1785e-0aea-4b9f-bc9d-33b313fe8ad5">
+    <Attribute dwd:design-time-name="7e5cbba5-96c9-4b9a-9e67-a2c5a9cdb184">
       <ID>RECYCLED</ID>
       <Name>Recycled</Name>
       <KeyColumns>
-        <KeyColumn dwd:design-time-name="bf4143b6-2281-48c8-b127-73891ffdf99d">
+        <KeyColumn dwd:design-time-name="f444f25e-ec28-4afb-8163-1129e2e9884a">
           <DataType>Integer</DataType>
-          <Source xsi:type="ColumnBinding" dwd:design-time-name="30c14efd-0360-475e-9f4c-eeaffe964d8f">
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="7a5f3e7c-2303-4cc1-bf52-8fb24449045d">
             <TableID>dbo_INVENTITEMTECHSPECS</TableID>
             <ColumnID>RECYCLED</ColumnID>
           </Source>
         </KeyColumn>
       </KeyColumns>
       <Translations>
-        <Translation dwd:design-time-name="553faf3d-c530-4282-ad67-11efe3bcbe2c">
+        <Translation dwd:design-time-name="e01a3fc0-3cba-40d9-a510-ab06e32a2698">
           <Language>1033</Language>
           <Caption>Recycled</Caption>
         </Translation>
-        <Translation dwd:design-time-name="3e207f7c-3d24-4912-a11f-03473f37c7f7">
+        <Translation dwd:design-time-name="8f990fde-ea61-495f-a805-7e162a4188a1">
           <Language>3082</Language>
           <Caption>Reciclado</Caption>
         </Translation>
@@ -667,24 +675,24 @@
       <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
       <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
     </Attribute>
-    <Attribute dwd:design-time-name="f85f76a4-d05c-43b9-b1d8-16a13bec6232">
+    <Attribute dwd:design-time-name="bf28f9a1-26c2-4a75-a647-637045df13fd">
       <ID>NONOVENPROOF</ID>
       <Name>Not Oven Proof</Name>
       <KeyColumns>
-        <KeyColumn dwd:design-time-name="334c9df9-c747-418a-a050-21c1d523f119">
+        <KeyColumn dwd:design-time-name="0cf13004-3cb7-4e12-9589-c64c4b4c2ef2">
           <DataType>Integer</DataType>
-          <Source xsi:type="ColumnBinding" dwd:design-time-name="31cce816-400e-4322-b6d6-b8cdaa4945e8">
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="a56e7fc3-9c9d-45c6-bade-2aa7fd7883b9">
             <TableID>dbo_INVENTITEMTECHSPECS</TableID>
             <ColumnID>NONOVENPROOF</ColumnID>
           </Source>
         </KeyColumn>
       </KeyColumns>
       <Translations>
-        <Translation dwd:design-time-name="689404f2-4037-40b2-aad6-1e2b2a252144">
+        <Translation dwd:design-time-name="3325100f-873c-4abb-95dc-4e9d17eafd4f">
           <Language>1033</Language>
           <Caption>Not oven proof</Caption>
         </Translation>
-        <Translation dwd:design-time-name="4942a5cc-6489-4ab4-9030-f46f4695cd88">
+        <Translation dwd:design-time-name="e621505c-8d22-4211-b0ba-e45e1b27781c">
           <Language>3082</Language>
           <Caption>No apto para horno</Caption>
         </Translation>
@@ -693,24 +701,24 @@
       <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
       <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
     </Attribute>
-    <Attribute dwd:design-time-name="9fc97175-05a5-49c5-84b0-f9908ccfe296">
+    <Attribute dwd:design-time-name="643d4b3c-01f9-402f-aabd-744f82c28959">
       <ID>OVENPROOF</ID>
       <Name>Oven proof</Name>
       <KeyColumns>
-        <KeyColumn dwd:design-time-name="20196cf8-5254-4f6c-8d57-d95d7821237d">
+        <KeyColumn dwd:design-time-name="64ea2980-c573-4d2e-bf35-f9618ca51e65">
           <DataType>Integer</DataType>
-          <Source xsi:type="ColumnBinding" dwd:design-time-name="1eb6c98e-7eab-4c15-a3b4-8aa787294284">
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="4b54341e-c2b3-4e73-bd0b-80e8176d98c5">
             <TableID>dbo_INVENTITEMTECHSPECS</TableID>
             <ColumnID>OVENPROOF</ColumnID>
           </Source>
         </KeyColumn>
       </KeyColumns>
       <Translations>
-        <Translation dwd:design-time-name="130c72e1-97a4-4fc2-a301-ebdb5afa1daa">
+        <Translation dwd:design-time-name="2bb853b2-48e3-4e3b-bfea-b87a3e24bf21">
           <Language>1033</Language>
           <Caption>Oven proof</Caption>
         </Translation>
-        <Translation dwd:design-time-name="847bc26b-2b3e-42b0-badb-7c879c4b2a23">
+        <Translation dwd:design-time-name="18fceada-3331-43cb-92f7-a1a03e1cc5e8">
           <Language>3082</Language>
           <Caption>Apto para horno</Caption>
         </Translation>
@@ -719,24 +727,24 @@
       <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
       <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
     </Attribute>
-    <Attribute dwd:design-time-name="818586ef-4427-4f48-a4a7-5fc298138707">
+    <Attribute dwd:design-time-name="e5f205f5-859b-413f-8532-64c8b9fba117">
       <ID>NONMICROWAVEABLE</ID>
       <Name>Not  Microwaveable</Name>
       <KeyColumns>
-        <KeyColumn dwd:design-time-name="81fcf40b-dd7a-4d97-9b51-c46dcf8a19af">
+        <KeyColumn dwd:design-time-name="497b42dc-3b69-4b3f-975d-ddbb3e861bfa">
           <DataType>Integer</DataType>
-          <Source xsi:type="ColumnBinding" dwd:design-time-name="43c20836-ede9-440e-b8bf-40aa974079ce">
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="e8a4d040-1dba-4bd4-a7cd-bcbbbae190bc">
             <TableID>dbo_INVENTITEMTECHSPECS</TableID>
             <ColumnID>NONMICROWAVEABLE</ColumnID>
           </Source>
         </KeyColumn>
       </KeyColumns>
       <Translations>
-        <Translation dwd:design-time-name="4fa6b17a-20dc-40bd-8638-3e0861790970">
+        <Translation dwd:design-time-name="3b3877bd-eae4-46aa-b703-9830f468ba13">
           <Language>1033</Language>
           <Caption>Not Microwaveable</Caption>
         </Translation>
-        <Translation dwd:design-time-name="cfafeac2-3728-432f-a79d-1b7e10a9331f">
+        <Translation dwd:design-time-name="5a904afa-4727-4b90-bd95-0c6a39ecf953">
           <Language>3082</Language>
           <Caption>No apto para microondas</Caption>
         </Translation>
@@ -745,24 +753,24 @@
       <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
       <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
     </Attribute>
-    <Attribute dwd:design-time-name="5097faa9-e7da-440f-86e4-5c4097ea3cf0">
+    <Attribute dwd:design-time-name="92329704-0ea0-49fb-a4f8-a90a96266c1c">
       <ID>MICROWAVEABLE</ID>
       <Name>Microwaveable</Name>
       <KeyColumns>
-        <KeyColumn dwd:design-time-name="5a455d6d-13af-4ace-97e2-e4d455834fa3">
+        <KeyColumn dwd:design-time-name="42eec50d-0da2-4750-84fc-6b8709d7fd53">
           <DataType>Integer</DataType>
-          <Source xsi:type="ColumnBinding" dwd:design-time-name="b0ad7d16-a39a-4182-8080-d1e0dede1f0f">
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="0746b1fa-f34d-480f-96d3-26385d8176af">
             <TableID>dbo_INVENTITEMTECHSPECS</TableID>
             <ColumnID>MICROWAVEABLE</ColumnID>
           </Source>
         </KeyColumn>
       </KeyColumns>
       <Translations>
-        <Translation dwd:design-time-name="8b28b5a6-5ddd-48da-9471-79f9b5c6db73">
+        <Translation dwd:design-time-name="660bfd96-0a30-48ab-aeb0-19f78292c6bf">
           <Language>1033</Language>
           <Caption>Microwaveable</Caption>
         </Translation>
-        <Translation dwd:design-time-name="779c8fd8-2944-4f55-b7f2-50faea7ab5ae">
+        <Translation dwd:design-time-name="da99420f-0c34-4b5a-bded-32ad4b783ed1">
           <Language>3082</Language>
           <Caption>Apto para microondas</Caption>
         </Translation>
@@ -771,24 +779,24 @@
       <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
       <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
     </Attribute>
-    <Attribute dwd:design-time-name="88647f49-59aa-4add-bceb-a731d77e024f">
+    <Attribute dwd:design-time-name="70f7ce2f-cfdd-4081-bfbb-f75a95ac5002">
       <ID>NONFREEZING</ID>
       <Name>Not freezable</Name>
       <KeyColumns>
-        <KeyColumn dwd:design-time-name="f7345b39-1fe4-4822-b158-4d7665b21dea">
+        <KeyColumn dwd:design-time-name="1164d071-94a3-4703-98f8-a43b924282da">
           <DataType>Integer</DataType>
-          <Source xsi:type="ColumnBinding" dwd:design-time-name="330fa3a9-f82e-4d33-bf8e-06803e51ef2c">
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="b92e3976-4568-4495-b9c9-bde7e08fffd5">
             <TableID>dbo_INVENTITEMTECHSPECS</TableID>
             <ColumnID>NONFREEZING</ColumnID>
           </Source>
         </KeyColumn>
       </KeyColumns>
       <Translations>
-        <Translation dwd:design-time-name="cc5a2a03-3f78-4165-8de2-25038009da8b">
+        <Translation dwd:design-time-name="a5162621-fad2-4041-9150-ec8181c25fd7">
           <Language>3082</Language>
           <Caption>No congelable</Caption>
         </Translation>
-        <Translation dwd:design-time-name="804c7fee-1cb8-476e-aac7-6a106702aaea">
+        <Translation dwd:design-time-name="1b2386ca-7526-4194-9e4d-4835c84b329e">
           <Language>1033</Language>
           <Caption>Not freezable</Caption>
         </Translation>
@@ -797,24 +805,24 @@
       <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
       <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
     </Attribute>
-    <Attribute dwd:design-time-name="bc317e21-199b-40b0-851e-4419222401ea">
+    <Attribute dwd:design-time-name="bacdc4d3-396b-4e8f-a7fc-1918f48a841f">
       <ID>FREEZABLE</ID>
       <Name>Freezable</Name>
       <KeyColumns>
-        <KeyColumn dwd:design-time-name="92e870bf-2b32-4d2c-8862-ef2c2449eb28">
+        <KeyColumn dwd:design-time-name="b250ca6f-8773-4409-a1a4-d84880a884bb">
           <DataType>Integer</DataType>
-          <Source xsi:type="ColumnBinding" dwd:design-time-name="133ef0ee-42a6-4d12-8503-acdca0d29dce">
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="297d4f5c-8928-46ab-82e2-592e4425179d">
             <TableID>dbo_INVENTITEMTECHSPECS</TableID>
             <ColumnID>FREEZABLE</ColumnID>
           </Source>
         </KeyColumn>
       </KeyColumns>
       <Translations>
-        <Translation dwd:design-time-name="8e59867e-5ab1-4ec5-aa47-12b65e420e5a">
+        <Translation dwd:design-time-name="318f506e-0926-4f89-9c1e-4fcf20654e93">
           <Language>1033</Language>
           <Caption>Freezable</Caption>
         </Translation>
-        <Translation dwd:design-time-name="af3d1cc2-a65e-44b6-8f0f-50a9140480d1">
+        <Translation dwd:design-time-name="f105deb5-1a03-4c45-acfe-da222e096cff">
           <Language>3082</Language>
           <Caption>Congelable</Caption>
         </Translation>
@@ -823,24 +831,24 @@
       <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
       <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
     </Attribute>
-    <Attribute dwd:design-time-name="f1c13780-cdd5-4773-a88e-d521e4464796">
+    <Attribute dwd:design-time-name="da012f4c-a577-4150-97c5-29dc4cae1846">
       <ID>CASHCARRY</ID>
       <Name>Cash Carry</Name>
       <KeyColumns>
-        <KeyColumn dwd:design-time-name="b4036c19-d5d5-4158-b395-b26e9877e544">
+        <KeyColumn dwd:design-time-name="8d64ac1b-e4ec-46a5-9b1a-09722c1ed9db">
           <DataType>Integer</DataType>
-          <Source xsi:type="ColumnBinding" dwd:design-time-name="22354de2-21a9-4aeb-adac-5c85218eb73a">
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="745f3fc0-649c-4de0-bf97-7fdd697a6018">
             <TableID>dbo_INVENTITEMTECHSPECS</TableID>
             <ColumnID>CASHCARRY</ColumnID>
           </Source>
         </KeyColumn>
       </KeyColumns>
       <Translations>
-        <Translation dwd:design-time-name="99bfe765-ea02-4bdf-8ef8-3f117a6e646f">
+        <Translation dwd:design-time-name="f036af91-60bf-45c8-8c71-7cc425ba87a9">
           <Language>1033</Language>
           <Caption>Cahs &amp; Carry</Caption>
         </Translation>
-        <Translation dwd:design-time-name="89bac804-0f9b-4c4b-9d32-f7b455512eb9">
+        <Translation dwd:design-time-name="af40298c-1e36-4c61-8f73-692dd08d7d62">
           <Language>3082</Language>
           <Caption>Cash &amp; Carry</Caption>
         </Translation>
@@ -849,24 +857,24 @@
       <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
       <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
     </Attribute>
-    <Attribute dwd:design-time-name="301300ce-a313-4d35-9cc7-ed7affb491da">
+    <Attribute dwd:design-time-name="9c909031-2a8d-41a5-84aa-df75f6a3a23b">
       <ID>RAWMATERIALFSC</ID>
       <Name>Raw Material FSC</Name>
       <KeyColumns>
-        <KeyColumn dwd:design-time-name="c77c6ebe-a1c3-47f2-b1a9-ddf86d834e72">
+        <KeyColumn dwd:design-time-name="d9d7de1e-faa0-4d9a-a319-eddefe7a6167">
           <DataType>Integer</DataType>
-          <Source xsi:type="ColumnBinding" dwd:design-time-name="02b35094-8616-4848-82b4-ec74ed99edce">
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="abf6ca9c-4787-465b-a817-cf98c715d9db">
             <TableID>dbo_INVENTITEMTECHSPECS</TableID>
             <ColumnID>RAWMATERIALFSC</ColumnID>
           </Source>
         </KeyColumn>
       </KeyColumns>
       <Translations>
-        <Translation dwd:design-time-name="41e2cec3-f8f9-47a3-a0af-414ed0e12452">
+        <Translation dwd:design-time-name="036af9a0-1e97-4bc4-a63a-934f0b0c2ebe">
           <Language>1033</Language>
           <Caption>Raw material FSC</Caption>
         </Translation>
-        <Translation dwd:design-time-name="617e6890-4814-4a1f-8a02-f13475bc59af">
+        <Translation dwd:design-time-name="1299b594-4196-47f0-81d4-fba38537ae41">
           <Language>3082</Language>
           <Caption>Materia prima FSC</Caption>
         </Translation>
@@ -875,24 +883,24 @@
       <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
       <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
     </Attribute>
-    <Attribute dwd:design-time-name="9f980eb6-2b3d-4a5c-bdc6-be11a182698c">
+    <Attribute dwd:design-time-name="df9b7624-447d-4fde-8a88-94274289ed13">
       <ID>FOODSECTOR</ID>
       <Name>Food Sector</Name>
       <KeyColumns>
-        <KeyColumn dwd:design-time-name="8a834bed-047b-414c-bb22-7681374d0440">
+        <KeyColumn dwd:design-time-name="390dc3e2-7684-4e5d-bc47-cada3261f136">
           <DataType>Integer</DataType>
-          <Source xsi:type="ColumnBinding" dwd:design-time-name="4eee91b7-89dd-4f9a-879a-410212c3f5d6">
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="435b2cd3-84cf-45c0-a86b-fceabbca4c42">
             <TableID>dbo_INVENTITEMTECHSPECS</TableID>
             <ColumnID>FOODSECTOR</ColumnID>
           </Source>
         </KeyColumn>
       </KeyColumns>
       <Translations>
-        <Translation dwd:design-time-name="5a50a3c7-9c5d-4ee9-bb53-d6ee40df81dd">
+        <Translation dwd:design-time-name="41960859-02fd-4bb6-80e9-0366367d0128">
           <Language>1033</Language>
           <Caption>Food sector</Caption>
         </Translation>
-        <Translation dwd:design-time-name="35d7a6dd-e794-4ac2-afbc-2e43ee6876aa">
+        <Translation dwd:design-time-name="6548211b-b8ff-42b2-a86c-805fa3dc1a2b">
           <Language>3082</Language>
           <Caption>Sector alimentación</Caption>
         </Translation>
@@ -901,24 +909,24 @@
       <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
       <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
     </Attribute>
-    <Attribute dwd:design-time-name="7ae8ca07-77e9-4e17-bffd-7cb3a723ba2b">
+    <Attribute dwd:design-time-name="55c4e714-73c7-4709-b548-f32222cc34aa">
       <ID>RECYCLABLEPRODUCT</ID>
       <Name>Recyclable product</Name>
       <KeyColumns>
-        <KeyColumn dwd:design-time-name="bd2eff65-2bcc-41dd-9bb9-d89b47cbbf8a">
+        <KeyColumn dwd:design-time-name="effd1ae7-51d0-4230-9696-3225e77278d8">
           <DataType>Integer</DataType>
-          <Source xsi:type="ColumnBinding" dwd:design-time-name="1c5d6331-b45a-4c22-a123-de731d3e3290">
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="768115f5-8f66-46f4-bba3-1f9f4f6fce64">
             <TableID>dbo_INVENTITEMTECHSPECS</TableID>
             <ColumnID>RECYCLABLEPRODUCT</ColumnID>
           </Source>
         </KeyColumn>
       </KeyColumns>
       <Translations>
-        <Translation dwd:design-time-name="a724d9fb-9910-4b14-9152-f192cf743d3e">
+        <Translation dwd:design-time-name="6c8826b9-7789-41fd-a975-8bfa75d2e58b">
           <Language>1033</Language>
           <Caption>Recyclable product</Caption>
         </Translation>
-        <Translation dwd:design-time-name="8627a00e-76b5-40a4-a17f-874aaed4f069">
+        <Translation dwd:design-time-name="d553e314-d275-43a1-9469-6e9b4b2932c1">
           <Language>3082</Language>
           <Caption>Reciclable</Caption>
         </Translation>
@@ -927,24 +935,24 @@
       <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
       <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
     </Attribute>
-    <Attribute dwd:design-time-name="f79d8be7-c44b-45f2-af29-b7dea28feeb5">
+    <Attribute dwd:design-time-name="d1c0e9a9-51ba-4748-8d8c-b5eeb022df68">
       <ID>UNITWEIGHT</ID>
       <Name>Unit Weight</Name>
       <KeyColumns>
-        <KeyColumn dwd:design-time-name="85198203-7e7c-4d85-9901-cd7418758cb7">
+        <KeyColumn dwd:design-time-name="e6429e8c-f0da-4160-bf53-02fa7386a07d">
           <DataType>Double</DataType>
-          <Source xsi:type="ColumnBinding" dwd:design-time-name="8d580324-66c1-48c5-a76c-2c3756ce9b4c">
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="a95feaa3-a072-4cf0-9771-10c88e601db0">
             <TableID>dbo_INVENTITEMTECHSPECS</TableID>
             <ColumnID>UNITWEIGHT</ColumnID>
           </Source>
         </KeyColumn>
       </KeyColumns>
       <Translations>
-        <Translation dwd:design-time-name="3aa55382-7146-439b-9e27-6ac8ff82fcb2">
+        <Translation dwd:design-time-name="46e389a8-4276-4f47-8e55-b63422e6369b">
           <Language>1033</Language>
           <Caption>Unit weight</Caption>
         </Translation>
-        <Translation dwd:design-time-name="7301c0d8-64e4-4b80-9795-3c33ca9ccbc3">
+        <Translation dwd:design-time-name="33b2a767-611e-47ef-9270-23aba7dd783d">
           <Language>3082</Language>
           <Caption>Peso de una unidad (g)</Caption>
         </Translation>
@@ -953,24 +961,24 @@
       <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
       <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
     </Attribute>
-    <Attribute dwd:design-time-name="711f1d43-d828-4105-8ffc-90bcd50ff32f">
+    <Attribute dwd:design-time-name="8a24b550-4cfd-49f9-9815-d28bc36f0526">
       <ID>RAWMATEIRALPEFC</ID>
       <Name>Raw Material PEFC</Name>
       <KeyColumns>
-        <KeyColumn dwd:design-time-name="5558a38e-de81-46f2-b90f-acc98c676836">
+        <KeyColumn dwd:design-time-name="7c1bc624-97b5-4e8b-99b1-3820eb228cdf">
           <DataType>Integer</DataType>
-          <Source xsi:type="ColumnBinding" dwd:design-time-name="068d3eec-6b1f-4a34-847b-53f5778c7c81">
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="2c375792-c714-4446-877c-2b6a8be2e3bc">
             <TableID>dbo_INVENTITEMTECHSPECS</TableID>
             <ColumnID>RAWMATEIRALPEFC</ColumnID>
           </Source>
         </KeyColumn>
       </KeyColumns>
       <Translations>
-        <Translation dwd:design-time-name="5f8e564d-97fb-4aa7-be04-b345b55af173">
+        <Translation dwd:design-time-name="4f3eb368-d038-4b03-a1c2-ee5e6295b854">
           <Language>1033</Language>
           <Caption>Raw Material PEFC</Caption>
         </Translation>
-        <Translation dwd:design-time-name="f392fd7c-c7e4-401b-ae6e-6849a4b64356">
+        <Translation dwd:design-time-name="9cc6266f-65e5-4778-bfbb-4eb7c78b3874">
           <Language>3082</Language>
           <Caption>Materia prima PEFC</Caption>
         </Translation>
@@ -979,24 +987,24 @@
       <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
       <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
     </Attribute>
-    <Attribute dwd:design-time-name="fb12db76-f1cf-404d-99ad-70e9d6fd4fad">
+    <Attribute dwd:design-time-name="d798f8d1-4f93-41bb-84ce-dd70bc2b1735">
       <ID>COMPOSTABLE</ID>
       <Name>Compostable</Name>
       <KeyColumns>
-        <KeyColumn dwd:design-time-name="33991fe3-6a85-4d2d-93c7-5aea93427051">
+        <KeyColumn dwd:design-time-name="beb34fb1-b7a3-4f49-aab4-5694a9be7ed2">
           <DataType>Integer</DataType>
-          <Source xsi:type="ColumnBinding" dwd:design-time-name="64093579-f93b-4c59-8bf7-8eb8a358a3f2">
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="34bead9c-0af4-4c85-a19a-8bbab05b9110">
             <TableID>dbo_INVENTITEMTECHSPECS</TableID>
             <ColumnID>COMPOSTABLE</ColumnID>
           </Source>
         </KeyColumn>
       </KeyColumns>
       <Translations>
-        <Translation dwd:design-time-name="9708ea32-57d1-4880-af31-01f9c2eb858d">
+        <Translation dwd:design-time-name="29b48bde-5c3f-4d06-ad6b-8683b6487521">
           <Language>1033</Language>
           <Caption>Compostable</Caption>
         </Translation>
-        <Translation dwd:design-time-name="887c48e8-423e-40ee-aafa-17d64f0cdca1">
+        <Translation dwd:design-time-name="b890e858-a71e-46aa-af42-f2a391772758">
           <Language>3082</Language>
           <Caption>Compostable</Caption>
         </Translation>
@@ -1005,24 +1013,24 @@
       <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
       <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
     </Attribute>
-    <Attribute dwd:design-time-name="1f58ca0c-bae8-47d8-aa6a-443bef364bce">
+    <Attribute dwd:design-time-name="df7d8580-621c-433c-b4b9-f03e36658d42">
       <ID>REACHCONFORMITY</ID>
       <Name>Reach Conformity</Name>
       <KeyColumns>
-        <KeyColumn dwd:design-time-name="7dd9d7da-3cec-4878-b3e7-b9dc126034da">
+        <KeyColumn dwd:design-time-name="3b583fe8-1ba4-4482-addd-9b6532f8164a">
           <DataType>Integer</DataType>
-          <Source xsi:type="ColumnBinding" dwd:design-time-name="ac84f8e0-5461-4193-815a-4b1490823372">
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="5ba0423f-3b6a-4f4d-9eb5-5bdec02e7461">
             <TableID>dbo_INVENTITEMTECHSPECS</TableID>
             <ColumnID>REACHCONFORMITY</ColumnID>
           </Source>
         </KeyColumn>
       </KeyColumns>
       <Translations>
-        <Translation dwd:design-time-name="42b99f0b-9a05-459f-ae33-62fcadfbdc87">
+        <Translation dwd:design-time-name="473f6758-7054-49bc-8498-106ddb2e344d">
           <Language>1033</Language>
           <Caption>Conformity REACH</Caption>
         </Translation>
-        <Translation dwd:design-time-name="e21be3c9-bef9-4bb7-87d9-55eaee3dc62b">
+        <Translation dwd:design-time-name="06ab5bc0-d4b7-44a0-99e6-f923fa72eb21">
           <Language>3082</Language>
           <Caption>Reglamento REACH</Caption>
         </Translation>
@@ -1031,24 +1039,24 @@
       <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
       <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
     </Attribute>
-    <Attribute dwd:design-time-name="f5b95b39-7783-4ce1-820e-57f3d94328ff">
+    <Attribute dwd:design-time-name="a30d0e67-2d0f-43be-a960-b3e7c5191024">
       <ID>BPAFREE</ID>
       <Name>BPA free</Name>
       <KeyColumns>
-        <KeyColumn dwd:design-time-name="784a36be-1168-4dea-a1b8-a900c1125980">
+        <KeyColumn dwd:design-time-name="513be272-f32a-4e76-a020-7dd1b0625347">
           <DataType>Integer</DataType>
-          <Source xsi:type="ColumnBinding" dwd:design-time-name="8d550ef9-74ae-4257-8922-ed2f1cf32d04">
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="686d5b48-0273-4cbf-a35f-42d34197cc0c">
             <TableID>dbo_INVENTITEMTECHSPECS</TableID>
             <ColumnID>BPAFREE</ColumnID>
           </Source>
         </KeyColumn>
       </KeyColumns>
       <Translations>
-        <Translation dwd:design-time-name="89fc6cc5-0c3d-48a3-af0c-334428f311fc">
+        <Translation dwd:design-time-name="deae7d1d-37e9-4594-b69d-3a4e6beb5f51">
           <Language>1033</Language>
           <Caption>BPA free</Caption>
         </Translation>
-        <Translation dwd:design-time-name="b4f0d9a5-02bf-4b5f-a251-ccd7c16e88ae">
+        <Translation dwd:design-time-name="42590817-349d-4e22-a261-318e3f3b0390">
           <Language>3082</Language>
           <Caption>Libre de Bisphenol</Caption>
         </Translation>
@@ -1057,24 +1065,24 @@
       <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
       <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
     </Attribute>
-    <Attribute dwd:design-time-name="fae5c14b-a870-461f-8fcf-36097b80c017">
+    <Attribute dwd:design-time-name="f7fce9f2-71c2-4e2c-a030-c691e575da84">
       <ID>NANOPARTFREE</ID>
       <Name>Nanoparticles free</Name>
       <KeyColumns>
-        <KeyColumn dwd:design-time-name="6689658e-8427-4ff0-8785-4f0413ddfcf7">
+        <KeyColumn dwd:design-time-name="59ab6c2d-7927-44d1-97ff-3a9a7a02ca04">
           <DataType>Integer</DataType>
-          <Source xsi:type="ColumnBinding" dwd:design-time-name="28bad293-299d-449f-bfff-ce5ef3a1339e">
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="cf96582b-c66b-4aee-a1be-570be6039dc8">
             <TableID>dbo_INVENTITEMTECHSPECS</TableID>
             <ColumnID>NANOPARTFREE</ColumnID>
           </Source>
         </KeyColumn>
       </KeyColumns>
       <Translations>
-        <Translation dwd:design-time-name="b1f26f74-00d3-45c1-b721-8a4d3ae4fe79">
+        <Translation dwd:design-time-name="263cdec9-9b03-43a2-8c75-476d3fe7f0a5">
           <Language>1033</Language>
           <Caption>Nanoparticles free</Caption>
         </Translation>
-        <Translation dwd:design-time-name="8359cb0d-90de-4602-b14c-c1044da2ab6d">
+        <Translation dwd:design-time-name="77a83527-14db-4bfa-8f3e-93f7364afa9c">
           <Language>3082</Language>
           <Caption>Libre de Nano-Partículas</Caption>
         </Translation>
@@ -1083,24 +1091,24 @@
       <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
       <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
     </Attribute>
-    <Attribute dwd:design-time-name="9ab10e9d-6d3c-4059-84bf-14afe4083502">
+    <Attribute dwd:design-time-name="931c2a00-0458-4168-b63b-b92b8fe6146c">
       <ID>SHOWCOMPANYADDRESSONLABELS</ID>
       <Name>Show Company Address on labels</Name>
       <KeyColumns>
-        <KeyColumn dwd:design-time-name="7ee33c90-4306-4acd-9b99-af051bbfe76a">
+        <KeyColumn dwd:design-time-name="696cf50c-5a47-499d-bfcc-20bff4ffba56">
           <DataType>Integer</DataType>
-          <Source xsi:type="ColumnBinding" dwd:design-time-name="f4254553-fcc2-456e-bc0d-0d2c5361a1e8">
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="2357bc67-9f9b-43b6-9fb2-67e401d8ecea">
             <TableID>dbo_INVENTITEMTECHSPECS</TableID>
             <ColumnID>SHOWCOMPANYADDRESSONLABELS</ColumnID>
           </Source>
         </KeyColumn>
       </KeyColumns>
       <Translations>
-        <Translation dwd:design-time-name="76213b20-42d7-4e38-b9c5-5153f2f73ea8">
+        <Translation dwd:design-time-name="af48569b-f5cd-4d4d-b28d-87ca24a5b4d8">
           <Language>1033</Language>
           <Caption>Show Company Address</Caption>
         </Translation>
-        <Translation dwd:design-time-name="a5f68425-977e-4f63-851b-304e229d1b24">
+        <Translation dwd:design-time-name="e10923fd-1a09-47b6-a458-dda86bfcaa61">
           <Language>3082</Language>
           <Caption>Mostrar dirección de la empresa</Caption>
         </Translation>
@@ -1109,24 +1117,24 @@
       <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
       <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
     </Attribute>
-    <Attribute dwd:design-time-name="4d3dedc9-472c-43aa-9b5b-ea08a882b8ad">
+    <Attribute dwd:design-time-name="0de6d9d0-ce9b-4a72-b2eb-5bb7474d1eaf">
       <ID>FOODANDPLASTICS</ID>
       <Name>Food and Plastics</Name>
       <KeyColumns>
-        <KeyColumn dwd:design-time-name="cb1305a4-272c-4144-994d-803b717b9454">
+        <KeyColumn dwd:design-time-name="91d7cece-87c5-4f2c-83e5-d9e4e81475a8">
           <DataType>Integer</DataType>
-          <Source xsi:type="ColumnBinding" dwd:design-time-name="9449ce08-18f0-4696-866b-de55b9f93ea9">
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="d65900c5-3e1b-4204-9ccb-1dd634d4c79b">
             <TableID>dbo_INVENTITEMTECHSPECS</TableID>
             <ColumnID>FOODANDPLASTICS</ColumnID>
           </Source>
         </KeyColumn>
       </KeyColumns>
       <Translations>
-        <Translation dwd:design-time-name="257db790-0258-46e4-a9d3-31bbd335e494">
+        <Translation dwd:design-time-name="dfc8b40b-0474-4128-8aa8-d243f307569b">
           <Language>1033</Language>
           <Caption>Food and Plastics</Caption>
         </Translation>
-        <Translation dwd:design-time-name="99d119a3-894f-4a17-9210-3fd45b51b1f6">
+        <Translation dwd:design-time-name="6471d947-e720-476a-8526-aa7f80edfa85">
           <Language>3082</Language>
           <Caption>Alimentación (10, 2011) - Plásticos</Caption>
         </Translation>
@@ -1135,24 +1143,24 @@
       <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
       <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
     </Attribute>
-    <Attribute dwd:design-time-name="5e520d3d-3942-45be-897c-56929021f8ec">
+    <Attribute dwd:design-time-name="a3b33c60-fd1a-4bd5-83c8-1fc054fe123e">
       <ID>GOODMANUFPRACTICES</ID>
       <Name>Good manufacturing practices</Name>
       <KeyColumns>
-        <KeyColumn dwd:design-time-name="83c8e81e-0cc7-4f9a-b893-a60c22f67418">
+        <KeyColumn dwd:design-time-name="648c7f22-e858-439e-aaa5-b24c5139730c">
           <DataType>Integer</DataType>
-          <Source xsi:type="ColumnBinding" dwd:design-time-name="16a83dab-a9a6-4b31-83e5-c737ecaf1eeb">
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="2804d3b3-cb57-4c19-b692-ed6d3601c8b7">
             <TableID>dbo_INVENTITEMTECHSPECS</TableID>
             <ColumnID>GOODMANUFPRACTICES</ColumnID>
           </Source>
         </KeyColumn>
       </KeyColumns>
       <Translations>
-        <Translation dwd:design-time-name="ef125639-a70a-4f58-be27-cfd923918484">
+        <Translation dwd:design-time-name="0d046df4-f5c5-422f-b2b1-e335a287ebfe">
           <Language>1033</Language>
           <Caption>Good manufacturing practices</Caption>
         </Translation>
-        <Translation dwd:design-time-name="68328f39-1bb1-4ed7-aa4c-f2d285844589">
+        <Translation dwd:design-time-name="043d0c9e-e417-4fdb-88f5-ee6bb9e77c78">
           <Language>3082</Language>
           <Caption>Buenas prácticas de fabricación</Caption>
         </Translation>
@@ -1161,25 +1169,25 @@
       <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
       <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
     </Attribute>
-    <Attribute dwd:design-time-name="2542b849-0622-4d88-a570-b80b82a83f18">
+    <Attribute dwd:design-time-name="ac44f0cb-d5dd-4493-a88d-3c1305f54285">
       <ID>FSCCODE</ID>
       <Name>FSC Code</Name>
       <KeyColumns>
-        <KeyColumn dwd:design-time-name="07e11b60-3cfe-4961-948e-70a0091fc410">
+        <KeyColumn dwd:design-time-name="a3948373-e67a-4d22-a43f-d727e7fcf0b0">
           <DataType>WChar</DataType>
           <DataSize>10</DataSize>
-          <Source xsi:type="ColumnBinding" dwd:design-time-name="f27fd52d-7d0a-49e1-a251-9cc9d4fc92c5">
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="29262508-bef5-4b1a-bdc6-9d9139d33747">
             <TableID>dbo_INVENTITEMTECHSPECS</TableID>
             <ColumnID>FSCCODE</ColumnID>
           </Source>
         </KeyColumn>
       </KeyColumns>
       <Translations>
-        <Translation dwd:design-time-name="6153b6ca-4585-46ba-92a9-4f953b20f8fc">
+        <Translation dwd:design-time-name="e50d409c-2171-4c63-9507-109467c7a88b">
           <Language>1033</Language>
           <Caption>FSC Code</Caption>
         </Translation>
-        <Translation dwd:design-time-name="82675f4c-2615-4c29-9e10-b11694befd66">
+        <Translation dwd:design-time-name="fa71b9a1-a183-42a4-9f26-8221b82db397">
           <Language>3082</Language>
           <Caption>Código FSC</Caption>
         </Translation>
@@ -1188,25 +1196,25 @@
       <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
       <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
     </Attribute>
-    <Attribute dwd:design-time-name="46a8bb6a-a4d5-40ea-a9fe-4ff68f1811e9">
+    <Attribute dwd:design-time-name="82980ceb-68c8-4891-9a1f-fbabcf369f6a">
       <ID>PEFCCODE</ID>
       <Name>PEFC Code</Name>
       <KeyColumns>
-        <KeyColumn dwd:design-time-name="c147f4b3-f4e9-4076-8903-3ca237cd78a1">
+        <KeyColumn dwd:design-time-name="4b5a4855-4173-4db8-b531-18f1380ff944">
           <DataType>WChar</DataType>
           <DataSize>10</DataSize>
-          <Source xsi:type="ColumnBinding" dwd:design-time-name="b55f52a8-8b77-43ca-b13f-3d561f863086">
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="d33d33b6-9a56-4886-bfe3-5e04842958b0">
             <TableID>dbo_INVENTITEMTECHSPECS</TableID>
             <ColumnID>PEFCCODE</ColumnID>
           </Source>
         </KeyColumn>
       </KeyColumns>
       <Translations>
-        <Translation dwd:design-time-name="7fd55b8b-af36-4ae4-baa4-b9b14219b768">
+        <Translation dwd:design-time-name="2d939ccd-0e27-4596-8df7-8cc2a18f6653">
           <Language>1033</Language>
           <Caption>PEFC Code</Caption>
         </Translation>
-        <Translation dwd:design-time-name="25d1a461-4680-481f-8457-e6f34ed90e37">
+        <Translation dwd:design-time-name="45b1db25-89dc-4e62-a7c4-636d8508a67c">
           <Language>3082</Language>
           <Caption>Código PEFC</Caption>
         </Translation>
@@ -1215,25 +1223,25 @@
       <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
       <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
     </Attribute>
-    <Attribute dwd:design-time-name="ec72ae2b-3357-4440-bb2f-8e27315a9a7b">
+    <Attribute dwd:design-time-name="fecf9ff9-8b5c-4cf7-ba94-5b2416df3054">
       <ID>FSCPRODCLASSLVL</ID>
       <Name>FSC Classification</Name>
       <KeyColumns>
-        <KeyColumn dwd:design-time-name="6b107306-132c-440a-b547-1032e4dca20d">
+        <KeyColumn dwd:design-time-name="f05657d6-c0dc-450f-a2de-83033d8c4cb1">
           <DataType>WChar</DataType>
           <DataSize>10</DataSize>
-          <Source xsi:type="ColumnBinding" dwd:design-time-name="b8f40ff8-adcd-425e-ba76-400b4ceaa7ad">
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="112ec5a6-a950-4fb9-9e97-4fbed66cdf87">
             <TableID>dbo_INVENTITEMTECHSPECS</TableID>
             <ColumnID>FSCPRODCLASSLVL</ColumnID>
           </Source>
         </KeyColumn>
       </KeyColumns>
       <Translations>
-        <Translation dwd:design-time-name="1533baa9-6c9f-4a43-8a83-23e43765fca3">
+        <Translation dwd:design-time-name="677f9ccf-e5c6-46e4-a0e4-c1d9324becf5">
           <Language>1033</Language>
           <Caption>FSC Classification</Caption>
         </Translation>
-        <Translation dwd:design-time-name="3f9cd649-3e51-4362-a609-1dfca9c64e6d">
+        <Translation dwd:design-time-name="e3953c50-b499-4e88-a4c6-8851c0fdd6b4">
           <Language>3082</Language>
           <Caption>Clasificación FSC</Caption>
         </Translation>
@@ -1242,24 +1250,24 @@
       <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
       <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
     </Attribute>
-    <Attribute dwd:design-time-name="df51e615-6cb8-4864-9e61-b2e0e16fd32c">
+    <Attribute dwd:design-time-name="192a9f8a-7bf4-4282-abf6-f3947c33579b">
       <ID>USENONPRINTEDFACE</ID>
       <Name>Use Unprinted side</Name>
       <KeyColumns>
-        <KeyColumn dwd:design-time-name="ca46df54-64c5-471f-8894-51b3dc9e9d5d">
+        <KeyColumn dwd:design-time-name="2100b114-d11c-46d8-8349-d9823fec77c6">
           <DataType>Integer</DataType>
-          <Source xsi:type="ColumnBinding" dwd:design-time-name="91c84d07-1e25-473f-94b6-7eb7f2437266">
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="0c6c0005-e234-4363-90cd-32f541043675">
             <TableID>dbo_INVENTITEMTECHSPECS</TableID>
             <ColumnID>USENONPRINTEDFACE</ColumnID>
           </Source>
         </KeyColumn>
       </KeyColumns>
       <Translations>
-        <Translation dwd:design-time-name="3792a4eb-a784-460e-a3ab-6a3e84032630">
+        <Translation dwd:design-time-name="6b7963c5-3c8d-4564-9407-ea63e4b5e312">
           <Language>1033</Language>
           <Caption>Use unprinted side</Caption>
         </Translation>
-        <Translation dwd:design-time-name="cd8be451-2665-49a1-9909-2da7f2297212">
+        <Translation dwd:design-time-name="e525344e-0782-4f07-9659-b292daf6fd3f">
           <Language>3082</Language>
           <Caption>Usar cara no impresa</Caption>
         </Translation>
@@ -1268,24 +1276,24 @@
       <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
       <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
     </Attribute>
-    <Attribute dwd:design-time-name="003dddef-2254-4fef-8300-4a717688d7d0">
+    <Attribute dwd:design-time-name="055aa3b2-7893-4bd8-91a4-b1629fe30b4c">
       <ID>BATTERIES</ID>
       <Name>Batteries</Name>
       <KeyColumns>
-        <KeyColumn dwd:design-time-name="a0aa3d4f-2bb8-469e-90e8-61b75905f880">
+        <KeyColumn dwd:design-time-name="5e33d082-6385-431d-bc09-da1996f9390a">
           <DataType>Integer</DataType>
-          <Source xsi:type="ColumnBinding" dwd:design-time-name="bcdb0b3f-9677-4209-b7ee-a209dbb32cfa">
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="f63f5354-c8cd-4f32-bf15-5b071fcba6b0">
             <TableID>dbo_INVENTITEMTECHSPECS</TableID>
             <ColumnID>BATTERIES</ColumnID>
           </Source>
         </KeyColumn>
       </KeyColumns>
       <Translations>
-        <Translation dwd:design-time-name="4b264d07-b8ef-4b7c-a7f9-0c8acbb3ed09">
+        <Translation dwd:design-time-name="adcc761f-f766-4753-8fa1-179c262ab668">
           <Language>1033</Language>
           <Caption>Batteries</Caption>
         </Translation>
-        <Translation dwd:design-time-name="3d6d1c46-08e1-41ab-9dad-aceaaa2188df">
+        <Translation dwd:design-time-name="c96479b0-43d1-4150-8fa7-626511cdf469">
           <Language>3082</Language>
           <Caption>Contiene Pilas</Caption>
         </Translation>
@@ -1294,25 +1302,25 @@
       <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
       <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
     </Attribute>
-    <Attribute dwd:design-time-name="aa1df2f7-1c8e-435e-89d6-22a303fd1cbd">
+    <Attribute dwd:design-time-name="ffeb24ce-de5d-4333-ab15-8de7e8cb7750">
       <ID>PLUGTYPE</ID>
       <Name>Plug Type</Name>
       <KeyColumns>
-        <KeyColumn dwd:design-time-name="0387ecb9-4316-4507-85c5-156b574d4a3e">
+        <KeyColumn dwd:design-time-name="18d90bc2-d441-48ef-a5e3-d2fd355d553c">
           <DataType>WChar</DataType>
           <DataSize>80</DataSize>
-          <Source xsi:type="ColumnBinding" dwd:design-time-name="f78d8eb5-ed23-4b0e-b2c6-310f08451419">
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="0995aab7-5efa-4d3f-8c49-a8180bed7bce">
             <TableID>dbo_INVENTITEMTECHSPECS</TableID>
             <ColumnID>PLUGTYPE</ColumnID>
           </Source>
         </KeyColumn>
       </KeyColumns>
       <Translations>
-        <Translation dwd:design-time-name="b76cb282-28c7-4e2a-8275-1fc7caab528c">
+        <Translation dwd:design-time-name="cefefee0-1d4b-44d1-828b-22f48ff2f166">
           <Language>1033</Language>
           <Caption>Plug Type</Caption>
         </Translation>
-        <Translation dwd:design-time-name="40a43284-a5da-4a3c-bcbe-cbe3afada58c">
+        <Translation dwd:design-time-name="c05f8347-c3ed-47f0-b2f0-db804e102c0e">
           <Language>3082</Language>
           <Caption>Tipo de enchufe</Caption>
         </Translation>
@@ -1321,24 +1329,24 @@
       <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
       <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
     </Attribute>
-    <Attribute dwd:design-time-name="517cbe61-0fee-4fb8-a836-5576a74ae63c">
+    <Attribute dwd:design-time-name="9097277d-dc76-49a1-b4f1-5100c393235c">
       <ID>DRYFOOD</ID>
       <Name>Dry food</Name>
       <KeyColumns>
-        <KeyColumn dwd:design-time-name="382cec50-0924-4153-9be6-9ca9ee9afd71">
+        <KeyColumn dwd:design-time-name="532bae8f-672a-4406-ae36-bfb424627c42">
           <DataType>Integer</DataType>
-          <Source xsi:type="ColumnBinding" dwd:design-time-name="e729e50d-7a6b-4c9d-9174-e776da6efbb8">
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="b565ea38-5573-4d04-ba90-2d0dcc74ad13">
             <TableID>dbo_INVENTITEMTECHSPECS</TableID>
             <ColumnID>DRYFOOD</ColumnID>
           </Source>
         </KeyColumn>
       </KeyColumns>
       <Translations>
-        <Translation dwd:design-time-name="3c10b6e9-99d3-47cc-9531-973057d311e4">
+        <Translation dwd:design-time-name="b07f906f-e76c-4fb9-8304-008652255cb5">
           <Language>1033</Language>
           <Caption>Dry food</Caption>
         </Translation>
-        <Translation dwd:design-time-name="0f340bd5-35e4-435e-8179-e915cd3608a7">
+        <Translation dwd:design-time-name="9b87980b-e1b4-4dc7-97e3-ebdd0790d5c5">
           <Language>3082</Language>
           <Caption>IT - D.M. 21/03/1973 (sólido seco)</Caption>
         </Translation>
@@ -1347,24 +1355,24 @@
       <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
       <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
     </Attribute>
-    <Attribute dwd:design-time-name="daad8833-7029-45c0-9a3f-1a176bc63db4">
+    <Attribute dwd:design-time-name="916cf1ae-a62e-4dcd-a65c-fe31b62f398e">
       <ID>ALLFOOD</ID>
       <Name>All food</Name>
       <KeyColumns>
-        <KeyColumn dwd:design-time-name="6588af04-8b67-47c6-be8c-a75f77134a15">
+        <KeyColumn dwd:design-time-name="2ececb62-fb11-4f23-a7bf-685046ee254e">
           <DataType>Integer</DataType>
-          <Source xsi:type="ColumnBinding" dwd:design-time-name="1e2afd8b-eef7-45ba-a562-83ecf3257ee1">
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="3c94d7c6-73e0-4033-8047-81e0fdcdc1d1">
             <TableID>dbo_INVENTITEMTECHSPECS</TableID>
             <ColumnID>ALLFOOD</ColumnID>
           </Source>
         </KeyColumn>
       </KeyColumns>
       <Translations>
-        <Translation dwd:design-time-name="8f9badb1-fc48-46aa-ad88-b9a1b4bcefa0">
+        <Translation dwd:design-time-name="16c627f2-a09b-4326-bbb3-c7c4a6a68629">
           <Language>1033</Language>
           <Caption>All food</Caption>
         </Translation>
-        <Translation dwd:design-time-name="74df3ba7-63bd-421c-84c3-e4349ecbc70e">
+        <Translation dwd:design-time-name="6644095d-ce59-4ef9-bcd4-39ef0eb0dea2">
           <Language>3082</Language>
           <Caption>IT - D.M. 21/03/1973</Caption>
         </Translation>
@@ -1373,25 +1381,25 @@
       <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
       <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
     </Attribute>
-    <Attribute dwd:design-time-name="89d525ef-4b4c-4c1a-8cbb-a4c7f7497179">
+    <Attribute dwd:design-time-name="c5c4d4d8-e63a-4e0a-ad9a-16f5f4672079">
       <ID>TEMPERATURERANGE</ID>
       <Name>Temperature Range</Name>
       <KeyColumns>
-        <KeyColumn dwd:design-time-name="872a29cf-216a-4dbb-a27c-b96418c00af3">
+        <KeyColumn dwd:design-time-name="a1fa4d66-7d32-4f6a-a8f3-3ed179f55d8c">
           <DataType>WChar</DataType>
           <DataSize>100</DataSize>
-          <Source xsi:type="ColumnBinding" dwd:design-time-name="2fcc9cab-6da5-4416-999d-0e6881330886">
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="c05f6f7f-02d2-4c07-9433-49f2f8273c0e">
             <TableID>dbo_INVENTITEMTECHSPECS</TableID>
             <ColumnID>TEMPERATURERANGE</ColumnID>
           </Source>
         </KeyColumn>
       </KeyColumns>
       <Translations>
-        <Translation dwd:design-time-name="12978bd3-6fa0-4f7a-abea-ad2ad626b051">
+        <Translation dwd:design-time-name="57c9bb80-3717-43e9-84f2-b04161d50297">
           <Language>1033</Language>
           <Caption>Temperature range</Caption>
         </Translation>
-        <Translation dwd:design-time-name="d7272816-a30a-4c60-9a34-eb9a9d6051a2">
+        <Translation dwd:design-time-name="5df0811e-31c4-46be-8160-022bf3711d29">
           <Language>3082</Language>
           <Caption>Rango de temperaturas</Caption>
         </Translation>
@@ -1400,24 +1408,24 @@
       <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
       <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
     </Attribute>
-    <Attribute dwd:design-time-name="9ef51cfa-e677-45cf-b443-263d46580f61">
+    <Attribute dwd:design-time-name="e45ac5ed-cccc-49ae-8ccd-f67ba9868107">
       <ID>REUSABLE</ID>
       <Name>Reusable</Name>
       <KeyColumns>
-        <KeyColumn dwd:design-time-name="68f7a712-eb4a-4660-bc64-db29c5a73873">
+        <KeyColumn dwd:design-time-name="45918841-11df-4d8f-bcb7-a011b3a6afc4">
           <DataType>Integer</DataType>
-          <Source xsi:type="ColumnBinding" dwd:design-time-name="f3c57dc2-d645-42ba-89eb-4567f0b789eb">
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="f24bef1c-8928-4189-aca4-89731071f67d">
             <TableID>dbo_INVENTITEMTECHSPECS</TableID>
             <ColumnID>REUSABLE</ColumnID>
           </Source>
         </KeyColumn>
       </KeyColumns>
       <Translations>
-        <Translation dwd:design-time-name="bcfcb431-873f-4a4c-ae65-098bbcc8fbda">
+        <Translation dwd:design-time-name="a9a57fe6-7f1e-493c-aa79-ee468ad57337">
           <Language>1033</Language>
           <Caption>Reusable</Caption>
         </Translation>
-        <Translation dwd:design-time-name="411ec104-e2e0-4244-b0bd-87408a9be4cb">
+        <Translation dwd:design-time-name="b4a1e1fa-a276-4bfb-9e60-4427789f9e73">
           <Language>3082</Language>
           <Caption>Reutilizable</Caption>
         </Translation>
@@ -1426,25 +1434,25 @@
       <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
       <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
     </Attribute>
-    <Attribute dwd:design-time-name="749dea8e-11bc-4b96-9b6d-adf88f6cf71e">
+    <Attribute dwd:design-time-name="9890bbbb-2f2a-47e1-8f93-2db5db6cd300">
       <ID>ITEMNAME</ID>
       <Name>Item Name</Name>
       <KeyColumns>
-        <KeyColumn dwd:design-time-name="eb2653ee-8973-4f0c-8237-473401ab7471">
+        <KeyColumn dwd:design-time-name="f72b5326-730f-4706-8a0f-a99ce094b9dc">
           <DataType>WChar</DataType>
           <DataSize>150</DataSize>
-          <Source xsi:type="ColumnBinding" dwd:design-time-name="71498cf5-af88-4854-b472-2c9ef7a855a6">
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="4214ba20-9404-4103-9a8e-86172306dc6a">
             <TableID>INVENTTABLE</TableID>
             <ColumnID>ITEMNAME</ColumnID>
           </Source>
         </KeyColumn>
       </KeyColumns>
       <Translations>
-        <Translation dwd:design-time-name="1134dd16-af0a-476a-92f6-bd90e3cc6a36">
+        <Translation dwd:design-time-name="54a79fdf-202f-441d-b647-c4d6a14bbbb0">
           <Language>1033</Language>
           <Caption>Item Name</Caption>
         </Translation>
-        <Translation dwd:design-time-name="089dec7f-aa3c-4f22-a803-d2228d40af1a">
+        <Translation dwd:design-time-name="163f137f-06b9-4e06-8307-0cc097342ca4">
           <Language>3082</Language>
           <Caption>Nombre del artículo</Caption>
         </Translation>
@@ -1453,28 +1461,80 @@
       <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
       <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
     </Attribute>
-    <Attribute dwd:design-time-name="c532b13b-17dd-4bfc-ac5f-2db85d0290a3">
+    <Attribute dwd:design-time-name="b1e9dd2a-2e82-4457-885a-0218bcfad593">
       <ID>CONTAINSRECYCLEDFIBERS</ID>
       <Name>Contains recycled fibers</Name>
       <KeyColumns>
-        <KeyColumn dwd:design-time-name="06a44da4-5487-4546-8ba5-e3d6f4b14585">
+        <KeyColumn dwd:design-time-name="900e0a1f-1e09-42d9-9fef-7e626c9e6295">
           <DataType>Integer</DataType>
-          <Source xsi:type="ColumnBinding" dwd:design-time-name="a06e3a63-31e8-4b29-ab84-670a127843f3">
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="cee8ef58-65b5-49d7-9ef3-00765c6d39b7">
             <TableID>dbo_INVENTITEMTECHSPECS</TableID>
             <ColumnID>CONTAINSRECYCLEDFIBERS</ColumnID>
           </Source>
         </KeyColumn>
       </KeyColumns>
       <Translations>
-        <Translation dwd:design-time-name="3888cfcd-68d9-4dba-8da6-cb6a7ab537f3">
+        <Translation dwd:design-time-name="5b7b9f65-11b7-420d-a70b-ef9832178e70">
           <Language>3082</Language>
           <Caption>Contiene fibras recicladas</Caption>
         </Translation>
-        <Translation dwd:design-time-name="34dfcbc9-d748-4a96-a845-71ff7bbe1890">
+        <Translation dwd:design-time-name="2b551957-308a-42ad-8eb6-034ce7f5e9f2">
           <Language>1033</Language>
           <Caption>Contains recycled fibers</Caption>
         </Translation>
       </Translations>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="ce7e6d5b-76d5-4a44-92d7-0192949244df">
+      <ID>APTINDIRECTCONTACTFOODS</ID>
+      <Name>Indirect contact foods</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="9364f2b2-0d8f-4dba-a0ee-93649bb2a86f">
+          <DataType>Integer</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="4d07cd7e-d611-432d-8e29-998b5901736d">
+            <TableID>dbo_INVENTITEMTECHSPECS</TableID>
+            <ColumnID>APTINDIRECTCONTACTFOODS</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <Translations>
+        <Translation dwd:design-time-name="46768796-fdf3-4379-a376-c9cd5f7325ea">
+          <Language>3082</Language>
+          <Caption>Contacto indirecto</Caption>
+        </Translation>
+        <Translation dwd:design-time-name="968aefc2-ed5d-4a95-9650-4ec8b7b587f9">
+          <Language>1033</Language>
+          <Caption>Indirect contact</Caption>
+        </Translation>
+      </Translations>
+      <OrderBy>Key</OrderBy>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="35d44b5c-8264-4e31-afe1-01de34c1c055">
+      <ID>APTDIRECTCONTACTFOODS</ID>
+      <Name>Direct contact foods</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="5df78c52-8e89-4bae-8667-78c2c065b7a9">
+          <DataType>Integer</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="670ef63a-ba4a-46b1-93d5-be796c4088d7">
+            <TableID>dbo_INVENTITEMTECHSPECS</TableID>
+            <ColumnID>APTDIRECTCONTACTFOODS</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <Translations>
+        <Translation dwd:design-time-name="d24e3e23-243a-4c28-ae0b-5901141b8488">
+          <Language>3082</Language>
+          <Caption>Contacto directo</Caption>
+        </Translation>
+        <Translation dwd:design-time-name="481603a6-96c0-4801-8bf4-41ed70f1b5d0">
+          <Language>1033</Language>
+          <Caption>Direct contact</Caption>
+        </Translation>
+      </Translations>
+      <OrderBy>Key</OrderBy>
       <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
       <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
     </Attribute>
