@@ -1,0 +1,494 @@
+﻿<Dimension xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:ddl200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:ddl200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:ddl300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:ddl300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:ddl400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:ddl400_400="http://schemas.microsoft.com/analysisservices/2012/engine/400/400" xmlns:ddl500="http://schemas.microsoft.com/analysisservices/2013/engine/500" xmlns:ddl500_500="http://schemas.microsoft.com/analysisservices/2013/engine/500/500" xmlns:dwd="http://schemas.microsoft.com/DataWarehouse/Designer/1.0" dwd:design-time-name="971a61b9-28be-4182-bdf7-03b5935e3670" xmlns="http://schemas.microsoft.com/analysisservices/2003/engine">
+  <ID>RMA Line</ID>
+  <Name>RMA Line</Name>
+  <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+  <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+  <Annotations>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramLayout</Name>
+      <Value>
+        <dds xmlns="">
+          <diagram fontclsid="{0BE35203-8F91-11CE-9DE3-00AA004BB851}" mouseiconclsid="{0BE35204-8F91-11CE-9DE3-00AA004BB851}" defaultlayout="MSDDS.Rectilinear" defaultlineroute="MSDDS.Rectilinear" version="7" nextobject="3" scale="100" pagebreakanchorx="0" pagebreakanchory="0" pagebreaksizex="0" pagebreaksizey="0" scrollleft="-7058" scrolltop="-7051" gridx="150" gridy="150" marginx="5000" marginy="5000" zoom="100" x="19156" y="19103" backcolor="16777215" defaultpersistence="2" PrintPageNumbersMode="3" PrintMarginTop="0" PrintMarginBottom="635" PrintMarginLeft="0" PrintMarginRight="0" marqueeselectionmode="0" mousepointer="0" snaptogrid="0" autotypeannotation="1" showscrollbars="0" viewpagebreaks="0" donotforceconnectorsbehindshapes="1" backpictureclsid="{00000000-0000-0000-0000-000000000000}">
+            <font>
+              <ddsxmlobjectstreamwrapper binary="01000000900144420100065461686f6d61" />
+            </font>
+            <mouseicon>
+              <ddsxmlobjectstreamwrapper binary="6c74000000000000" />
+            </mouseicon>
+          </diagram>
+          <layoutmanager>
+            <ddsxmlobj />
+          </layoutmanager>
+          <ddscontrol controlprogid="DdsShapes.DdsObjectManagedBridge" tooltip="RMALINE" left="20" top="0" logicalid="2" controlid="1" masterid="0" hint1="0" hint2="0" width="5927" height="5000" noresize="0" nomove="0" nodefaultattachpoints="0" autodrag="1" usedefaultiddshape="1" selectable="1" showselectionhandles="1" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+            <control>
+              <ddsxmlobjectstreaminitwrapper binary="000e00002717000088130000" />
+            </control>
+            <layoutobject>
+              <ddsxmlobj>
+                <property name="LogicalObject" value="RMALINE" vartype="8" />
+              </ddsxmlobj>
+            </layoutobject>
+            <shape groupshapeid="0" groupnode="0" />
+          </ddscontrol>
+        </dds>
+      </Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ShowFriendlyNames</Name>
+      <Value>true</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ShowRelationshipNames</Name>
+      <Value>false</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:UseDiagramDefaultLayout</Name>
+      <Value>true</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramViewPortLeft</Name>
+      <Value>-7058</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramViewPortTop</Name>
+      <Value>-7051</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramBoundingLeft</Name>
+      <Value>20</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramBoundingTop</Name>
+      <Value>0</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramZoom</Name>
+      <Value>100</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ARDiagramLayout</Name>
+      <Value>
+        <DiagramLayout ZoomPercent="100" ViewPortX="0" ViewPortY="0" xmlns="">
+          <Shapes NodeWidth="176">
+            <Shape Id="DATAAREAID" Expanded="true">
+              <Attributes>
+                <Attribute Id="DATAAREAID" />
+                <Attribute Id="CREATEDDATE" />
+                <Attribute Id="EXPECTEDRETQTY" />
+                <Attribute Id="LINENUM" />
+                <Attribute Id="RMAPACKAGENUM" />
+                <Attribute Id="RMADESCRIPTION" />
+                <Attribute Id="RMAWELLSHRINKWRAPPACKAGE" />
+                <Attribute Id="RMAWMSCOMMENTS" />
+              </Attributes>
+              <Position x="20" y="20" />
+            </Shape>
+            <Shape Id="RMAAPPROVED" Expanded="false">
+              <Attributes>
+                <Attribute Id="RMAAPPROVED" />
+              </Attributes>
+              <Position x="245" y="20" />
+            </Shape>
+            <Shape Id="RETURNSTATUS" Expanded="false">
+              <Attributes>
+                <Attribute Id="RETURNSTATUS" />
+              </Attributes>
+              <Position x="470" y="20" />
+            </Shape>
+          </Shapes>
+        </DiagramLayout>
+      </Value>
+    </Annotation>
+  </Annotations>
+  <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+  <State>Unprocessed</State>
+  <Source xsi:type="DataSourceViewBinding" dwd:design-time-name="31376c36-1446-4655-b079-fdf10f27bbb0">
+    <DataSourceViewID>Dynamics AX</DataSourceViewID>
+  </Source>
+  <ErrorConfiguration dwd:design-time-name="ec83d9ac-b6fc-470f-a9fb-286ab311160a">
+    <KeyNotFound>ReportAndStop</KeyNotFound>
+    <KeyDuplicate>ReportAndStop</KeyDuplicate>
+    <NullKeyNotAllowed>ReportAndStop</NullKeyNotAllowed>
+  </ErrorConfiguration>
+  <CurrentStorageMode>Molap</CurrentStorageMode>
+  <Translations>
+    <Translation dwd:design-time-name="9343381a-cf4d-42f6-860f-66db62cbac07">
+      <Language>3082</Language>
+      <Caption>Línea RMA</Caption>
+    </Translation>
+  </Translations>
+  <Attributes>
+    <Attribute dwd:design-time-name="16780342-d7d2-4175-8238-b31feaf79305">
+      <ID>DATAAREAID</ID>
+      <Name>RMA Line</Name>
+      <Usage>Key</Usage>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="c427b08c-74ea-410e-8371-26b65582cd13">
+          <DataType>WChar</DataType>
+          <DataSize>4</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="534fa96c-8558-4218-aab7-3662916b7b69">
+            <TableID>RMALINE</TableID>
+            <ColumnID>DATAAREAID</ColumnID>
+          </Source>
+        </KeyColumn>
+        <KeyColumn dwd:design-time-name="33e246fa-14bb-40c7-9ad5-70ac629cb265">
+          <DataType>WChar</DataType>
+          <DataSize>20</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="fdd3a632-c878-47d2-a268-f9ba3766333c">
+            <TableID>RMALINE</TableID>
+            <ColumnID>INVENTTRANSID</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <NameColumn dwd:design-time-name="bc931736-4d77-4c40-ba41-f18aabb9eefe">
+        <DataType>WChar</DataType>
+        <DataSize>20</DataSize>
+        <Source xsi:type="ColumnBinding" dwd:design-time-name="17a1d499-6ed9-4661-9795-f6bd5e67fcc8">
+          <TableID>RMALINE</TableID>
+          <ColumnID>INVENTTRANSID</ColumnID>
+        </Source>
+      </NameColumn>
+      <Translations>
+        <Translation dwd:design-time-name="823ef782-d5b3-403a-8732-998911d2aff9">
+          <Language>3082</Language>
+          <Caption>Línea RMA</Caption>
+        </Translation>
+      </Translations>
+      <AttributeRelationships>
+        <AttributeRelationship dwd:design-time-name="926a1885-a611-4e1e-9ba2-6324fe6da6c5">
+          <AttributeID>LINENUM</AttributeID>
+          <RelationshipType>Rigid</RelationshipType>
+          <Name>Line Num</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="eac12d04-dbea-4ce3-b5b2-f8725ee09f65">
+          <AttributeID>EXPECTEDRETQTY</AttributeID>
+          <Name>Expected Return Qty</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="c54234b0-da22-43a2-aedb-3bf7e58abe53">
+          <AttributeID>RMAPACKAGENUM</AttributeID>
+          <Name>Package Num</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="2151d3be-94f3-49b2-bbc7-22cd4785c87c">
+          <AttributeID>RMAWELLSHRINKWRAPPACKAGE</AttributeID>
+          <Name>Well shrink wrap package</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="f73c9611-1cc2-4eaa-8f9c-fcf7419dea5f">
+          <AttributeID>CREATEDDATE</AttributeID>
+          <RelationshipType>Rigid</RelationshipType>
+          <Name>Created Date</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="74a19b9d-4f91-4122-b300-a183d3988666">
+          <AttributeID>RMAAPPROVED</AttributeID>
+          <Name>Approved</Name>
+        </AttributeRelationship>
+      </AttributeRelationships>
+      <OrderBy>Key</OrderBy>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="493824a7-d16c-4c39-b5f3-04981efdd62a">
+      <ID>LINENUM</ID>
+      <Name>Line Num</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="910f4bcd-5c7b-481b-ba42-eceb18fbb9c6">
+          <DataType>WChar</DataType>
+          <DataSize>4</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="469f2e11-cf46-4e4b-bc73-fc583c49f91e">
+            <TableID>RMALINE</TableID>
+            <ColumnID>DATAAREAID</ColumnID>
+          </Source>
+        </KeyColumn>
+        <KeyColumn dwd:design-time-name="d781196c-4c34-4aa8-8cc9-ebca2fa12b5d">
+          <DataType>Double</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="41d95818-d768-48ab-9ed7-732dd699b166">
+            <TableID>RMALINE</TableID>
+            <ColumnID>LINENUM</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <NameColumn dwd:design-time-name="7b969148-1b0f-4201-91da-8ddd3d0649f1">
+        <DataType>WChar</DataType>
+        <Source xsi:type="ColumnBinding" dwd:design-time-name="e11b5596-2ec9-4c36-a43c-0b03fb0c5f19">
+          <TableID>RMALINE</TableID>
+          <ColumnID>LINENUM</ColumnID>
+        </Source>
+      </NameColumn>
+      <Translations>
+        <Translation dwd:design-time-name="70241845-fa37-42be-8ff9-23ee20df8a4b">
+          <Language>3082</Language>
+          <Caption>Número línea</Caption>
+        </Translation>
+      </Translations>
+      <OrderBy>Key</OrderBy>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="7c37bf21-72d8-4de2-902c-c02aef75bedc">
+      <ID>EXPECTEDRETQTY</ID>
+      <Name>Expected Return Qty</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="d0820de6-37fa-412c-85f2-c32c0243f687">
+          <DataType>WChar</DataType>
+          <DataSize>4</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="600fcdd7-0baf-4e52-99f0-95502fcf6837">
+            <TableID>RMALINE</TableID>
+            <ColumnID>DATAAREAID</ColumnID>
+          </Source>
+        </KeyColumn>
+        <KeyColumn dwd:design-time-name="31452821-0671-4c86-9ca6-85be385e0531">
+          <DataType>Double</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="cada6907-94be-4b6b-85ca-538f2a078934">
+            <TableID>RMALINE</TableID>
+            <ColumnID>EXPECTEDRETQTY</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <NameColumn dwd:design-time-name="1cc8a1e8-8dbb-44b3-8db5-63aaef0d0809">
+        <DataType>WChar</DataType>
+        <Source xsi:type="ColumnBinding" dwd:design-time-name="d2963c0d-93aa-44ae-a21d-5d772c3ba713">
+          <TableID>RMALINE</TableID>
+          <ColumnID>EXPECTEDRETQTY</ColumnID>
+        </Source>
+      </NameColumn>
+      <Translations>
+        <Translation dwd:design-time-name="21076c3b-0763-4574-bd7e-93e21f46c10c">
+          <Language>3082</Language>
+          <Caption>Cantidad a retornar esperada</Caption>
+        </Translation>
+      </Translations>
+      <OrderBy>Key</OrderBy>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="f5b52dee-8e06-4567-816c-3d104a326428">
+      <ID>RETURNSTATUS</ID>
+      <Name>Return Status</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="a8ce593d-b31b-47dc-a49d-28d887d14f84">
+          <DataType>WChar</DataType>
+          <DataSize>4</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="76a4c3b4-906c-4fea-bb62-d4cb34c980be">
+            <TableID>RMALINE</TableID>
+            <ColumnID>DATAAREAID</ColumnID>
+          </Source>
+        </KeyColumn>
+        <KeyColumn dwd:design-time-name="933ee5a3-cc90-4a8b-9e0f-ef57932f6d41">
+          <DataType>WChar</DataType>
+          <DataSize>10</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="ef5151f6-b4c0-44bb-9e5b-f6c24f8159ba">
+            <TableID>RMALINE</TableID>
+            <ColumnID>RETURNSTATUS</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <NameColumn dwd:design-time-name="3aa7cf01-32c6-4c35-8ac5-9937c602a871">
+        <DataType>WChar</DataType>
+        <DataSize>10</DataSize>
+        <Source xsi:type="ColumnBinding" dwd:design-time-name="b6e85b34-38f5-4a6d-b277-a55f2643a97c">
+          <TableID>RMALINE</TableID>
+          <ColumnID>RETURNSTATUS</ColumnID>
+        </Source>
+      </NameColumn>
+      <Translations>
+        <Translation dwd:design-time-name="94d38418-f6a6-406a-a1c1-6ab431a2281a">
+          <Language>3082</Language>
+          <Caption>Estado de retorno</Caption>
+        </Translation>
+      </Translations>
+      <OrderBy>Key</OrderBy>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="170b604d-2451-4a55-a167-1a621ee5cb1d">
+      <ID>RMAPACKAGENUM</ID>
+      <Name>Package Num</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="6b1b6b4e-422a-4189-8c89-48f6fe63201d">
+          <DataType>WChar</DataType>
+          <DataSize>4</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="c801f58b-e67e-4858-9f0a-ebcf8f7595cc">
+            <TableID>RMALINE</TableID>
+            <ColumnID>DATAAREAID</ColumnID>
+          </Source>
+        </KeyColumn>
+        <KeyColumn dwd:design-time-name="e4616b42-9d2d-4edb-b408-0a618e2d23b8">
+          <DataType>Integer</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="15d7e2aa-7876-4551-967d-d0b7ee636984">
+            <TableID>RMALINE</TableID>
+            <ColumnID>RMAPACKAGENUM</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <NameColumn dwd:design-time-name="dd94aebb-887a-4b73-97ef-2ecee70247e7">
+        <DataType>WChar</DataType>
+        <Source xsi:type="ColumnBinding" dwd:design-time-name="4c7e55c1-a035-4e6c-a4f7-ad14a2943672">
+          <TableID>RMALINE</TableID>
+          <ColumnID>RMAPACKAGENUM</ColumnID>
+        </Source>
+      </NameColumn>
+      <Translations>
+        <Translation dwd:design-time-name="f5f3e9da-3b5e-46e7-91a9-5bcbbc4eab66">
+          <Language>3082</Language>
+          <Caption>Número de paquetes</Caption>
+        </Translation>
+      </Translations>
+      <OrderBy>Key</OrderBy>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="02130fee-39a9-4355-a43f-19f136c0ced0">
+      <ID>RMAWELLSHRINKWRAPPACKAGE</ID>
+      <Name>Well shrink wrap package</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="bc919bfa-238c-4680-82e0-3a2b2ce06418">
+          <DataType>WChar</DataType>
+          <DataSize>4</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="ae238c50-83ab-4d28-8d8f-9f780da6a6f8">
+            <TableID>RMALINE</TableID>
+            <ColumnID>DATAAREAID</ColumnID>
+          </Source>
+        </KeyColumn>
+        <KeyColumn dwd:design-time-name="486d618e-cb4f-41ff-a6da-16eef7a76fc1">
+          <DataType>Integer</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="f466cd14-915e-478a-a8ff-d421e2be8b73">
+            <TableID>RMALINE</TableID>
+            <ColumnID>RMAWELLSHRINKWRAPPACKAGE</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <NameColumn dwd:design-time-name="2f9ecf39-b4f0-432a-99f0-33baad9770f6">
+        <DataType>WChar</DataType>
+        <Source xsi:type="ColumnBinding" dwd:design-time-name="a42019bf-3d7e-4810-9c54-27c207a0019c">
+          <TableID>RMALINE</TableID>
+          <ColumnID>RMAWELLSHRINKWRAPPACKAGE</ColumnID>
+        </Source>
+      </NameColumn>
+      <Translations>
+        <Translation dwd:design-time-name="de90bbc1-1c5e-4b01-b753-e895637715cb">
+          <Language>3082</Language>
+          <Caption>Paquete bién retractilado</Caption>
+        </Translation>
+      </Translations>
+      <OrderBy>Key</OrderBy>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="d8598491-4ce9-47e5-bde7-36794fb5a001">
+      <ID>CREATEDDATE</ID>
+      <Name>Created Date</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="197758fc-bff3-4e21-abc1-a03cd1024fc6">
+          <DataType>WChar</DataType>
+          <DataSize>4</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="4c70c2f7-b99d-47ca-b46c-0b9b0ed53bec">
+            <TableID>RMALINE</TableID>
+            <ColumnID>DATAAREAID</ColumnID>
+          </Source>
+        </KeyColumn>
+        <KeyColumn dwd:design-time-name="4e97cf8c-dd04-44b4-ac7c-4b85e8398d3f">
+          <DataType>Date</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="9d4a4153-16d9-48f4-b2dc-aac5000dbe0d">
+            <TableID>RMALINE</TableID>
+            <ColumnID>CREATEDDATE</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <NameColumn dwd:design-time-name="2fa33423-c923-41df-980d-0670cd930c9d">
+        <DataType>WChar</DataType>
+        <Source xsi:type="ColumnBinding" dwd:design-time-name="5435b174-a90e-47c5-bc64-b36d7c29dacc">
+          <TableID>RMALINE</TableID>
+          <ColumnID>CREATEDDATE</ColumnID>
+        </Source>
+      </NameColumn>
+      <Translations>
+        <Translation dwd:design-time-name="9ff2d0d2-9a06-4136-92a8-6edf1924da5f">
+          <Language>3082</Language>
+          <Caption>Fecha creación</Caption>
+        </Translation>
+      </Translations>
+      <OrderBy>Key</OrderBy>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="6349cce8-8bde-4f79-ac39-26290e9a14d4">
+      <ID>RMAAPPROVED</ID>
+      <Name>Approved</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="cfbb9640-340f-47fc-af39-d269ee647f6f">
+          <DataType>WChar</DataType>
+          <DataSize>4</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="5f9c358a-23c3-4d20-aef0-88d3b560edc0">
+            <TableID>RMALINE</TableID>
+            <ColumnID>DATAAREAID</ColumnID>
+          </Source>
+        </KeyColumn>
+        <KeyColumn dwd:design-time-name="39cf5741-54bc-48a6-8c31-3382b98ab731">
+          <DataType>Integer</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="be38ab15-0927-4ec2-9cec-d807afe8f8fd">
+            <TableID>RMALINE</TableID>
+            <ColumnID>RMAAPPROVED</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <NameColumn dwd:design-time-name="662c893d-0020-4707-ad19-6d3d497266e3">
+        <DataType>WChar</DataType>
+        <Source xsi:type="ColumnBinding" dwd:design-time-name="df2e6d3b-bfc2-4840-aea9-c32dd1039ba8">
+          <TableID>RMALINE</TableID>
+          <ColumnID>RMAAPPROVED</ColumnID>
+        </Source>
+      </NameColumn>
+      <AttributeRelationships>
+        <AttributeRelationship dwd:design-time-name="8b2c04b5-c2a6-4cbb-8520-070f453f7311">
+          <AttributeID>RETURNSTATUS</AttributeID>
+          <Name>Return Status</Name>
+        </AttributeRelationship>
+      </AttributeRelationships>
+      <OrderBy>Key</OrderBy>
+      <AttributeHierarchyVisible>false</AttributeHierarchyVisible>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+  </Attributes>
+  <Hierarchies>
+    <Hierarchy dwd:design-time-name="800e0972-1864-4560-8e76-142112a6626a">
+      <ID>Jerarquía</ID>
+      <Name>Jerarquía</Name>
+      <Levels>
+        <Level dwd:design-time-name="e848d9d1-f0f1-40a8-a269-a0ce486cd667">
+          <ID>Return Status</ID>
+          <Name>Return Status</Name>
+          <SourceAttributeID>RETURNSTATUS</SourceAttributeID>
+          <Translations>
+            <Translation dwd:design-time-name="c91fa642-5594-4218-bb1f-be95a77e2a84">
+              <Language>3082</Language>
+              <Caption>Estado de retorno</Caption>
+            </Translation>
+          </Translations>
+        </Level>
+        <Level dwd:design-time-name="7966dbd7-751f-4d2f-8b8d-2f2e8950e176">
+          <ID>Approved</ID>
+          <Name>Approved</Name>
+          <SourceAttributeID>RMAAPPROVED</SourceAttributeID>
+          <Translations>
+            <Translation dwd:design-time-name="37fc2f3d-47bc-4dd7-84e7-bdf8121068cf">
+              <Language>3082</Language>
+              <Caption>Aprobado</Caption>
+            </Translation>
+          </Translations>
+        </Level>
+        <Level dwd:design-time-name="e1431084-94a1-4de3-ad6a-91c9a80f10a1">
+          <ID>RMA Line</ID>
+          <Name>RMA Line</Name>
+          <SourceAttributeID>DATAAREAID</SourceAttributeID>
+          <Translations>
+            <Translation dwd:design-time-name="9fe4f2da-919b-4e9a-a936-1e4ce7b56e11">
+              <Language>3082</Language>
+              <Caption>Línea RMA</Caption>
+            </Translation>
+          </Translations>
+        </Level>
+      </Levels>
+    </Hierarchy>
+  </Hierarchies>
+  <ddl300:ProcessingState>Unprocessed</ddl300:ProcessingState>
+</Dimension>

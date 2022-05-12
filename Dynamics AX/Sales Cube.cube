@@ -12,7 +12,7 @@
       <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramLayout</Name>
       <Value>
         <dds xmlns="">
-          <diagram fontclsid="{0BE35203-8F91-11CE-9DE3-00AA004BB851}" mouseiconclsid="{0BE35204-8F91-11CE-9DE3-00AA004BB851}" defaultlayout="MSDDS.Rectilinear" defaultlineroute="MSDDS.Rectilinear" version="7" nextobject="698" scale="100" pagebreakanchorx="0" pagebreakanchory="0" pagebreaksizex="0" pagebreaksizey="0" scrollleft="-6296" scrolltop="16761" gridx="150" gridy="150" marginx="5000" marginy="5000" zoom="25" x="58499" y="19103" backcolor="16777215" defaultpersistence="2" PrintPageNumbersMode="3" PrintMarginTop="0" PrintMarginBottom="635" PrintMarginLeft="0" PrintMarginRight="0" marqueeselectionmode="0" mousepointer="0" snaptogrid="0" autotypeannotation="1" showscrollbars="1" viewpagebreaks="0" donotforceconnectorsbehindshapes="1" backpictureclsid="{00000000-0000-0000-0000-000000000000}">
+          <diagram fontclsid="{0BE35203-8F91-11CE-9DE3-00AA004BB851}" mouseiconclsid="{0BE35204-8F91-11CE-9DE3-00AA004BB851}" defaultlayout="MSDDS.Rectilinear" defaultlineroute="MSDDS.Rectilinear" version="7" nextobject="698" scale="100" pagebreakanchorx="0" pagebreakanchory="0" pagebreaksizex="0" pagebreaksizey="0" scrollleft="-6296" scrolltop="16761" gridx="150" gridy="150" marginx="5000" marginy="5000" zoom="25" x="56224" y="19103" backcolor="16777215" defaultpersistence="2" PrintPageNumbersMode="3" PrintMarginTop="0" PrintMarginBottom="635" PrintMarginLeft="0" PrintMarginRight="0" marqueeselectionmode="0" mousepointer="0" snaptogrid="0" autotypeannotation="1" showscrollbars="1" viewpagebreaks="0" donotforceconnectorsbehindshapes="1" backpictureclsid="{00000000-0000-0000-0000-000000000000}">
             <font>
               <ddsxmlobjectstreamwrapper binary="01000000900144420100065461686f6d61" />
             </font>
@@ -9076,6 +9076,90 @@
         </Hierarchy>
         <Hierarchy dwd:design-time-name="5ca5fa62-7067-43e0-96a4-5a47b5648b76">
           <HierarchyID>Hierarchy 1</HierarchyID>
+        </Hierarchy>
+      </Hierarchies>
+    </Dimension>
+    <Dimension dwd:design-time-name="f1f921c4-b86c-4c25-82a7-325b4a9c6c0d">
+      <ID>RMA</ID>
+      <Name>RMA</Name>
+      <DimensionID>RMA</DimensionID>
+      <Attributes>
+        <Attribute dwd:design-time-name="244bda62-7963-47f0-a716-e833c00ee7dd">
+          <AttributeID>SALESID</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="aa791c2f-e307-424e-ab6d-d40e5abe7570">
+          <AttributeID>RETURNITEMNUM</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="32934fcb-c7ec-4025-8467-6344cd1cb87d">
+          <AttributeID>RETURNREASONCODEID</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="0a28a8a8-cb4d-449c-857b-9a001f947100">
+          <AttributeID>RMANAME</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="962ae9b6-cdbf-4a04-9f33-6fe3848d6987">
+          <AttributeID>RMAAPPROVED</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="1957c7e0-23dd-422c-946b-2e8b7a2e835b">
+          <AttributeID>RETURNSTATUS</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="5f52a01c-dc2b-46bf-acf7-ecd2810f962e">
+          <AttributeID>CREATEDDATE</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="300b9e96-9b52-4054-8673-76f989be6384">
+          <AttributeID>INVENTSITEID</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="bdc9d07a-7311-4ceb-b1ca-a9f92f88059a">
+          <AttributeID>INVENTLOCATIONID</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="5aee4cb5-9b7a-48e4-bc9f-836163270574">
+          <AttributeID>CUSTOMERREF</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="b240fe05-d05f-43c9-9807-98de20d1a286">
+          <AttributeID>PURCHORDERFORMNUM</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="645039d3-c0fe-4357-92ea-60758e10354c">
+          <AttributeID>RMAPACKAGENUM</AttributeID>
+        </Attribute>
+      </Attributes>
+      <Hierarchies>
+        <Hierarchy dwd:design-time-name="9f5d33a6-49e5-4cec-961e-b91992ce5a91">
+          <HierarchyID>Jerarquía 2</HierarchyID>
+        </Hierarchy>
+      </Hierarchies>
+    </Dimension>
+    <Dimension dwd:design-time-name="431d8ecf-b779-48d0-83fe-aa8fad2a8b79">
+      <ID>RMA Line</ID>
+      <Name>RMA Line</Name>
+      <DimensionID>RMA Line</DimensionID>
+      <Attributes>
+        <Attribute dwd:design-time-name="0a1993e9-e866-4dbf-9172-fb046fa3b9e4">
+          <AttributeID>DATAAREAID</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="9b9c50c2-8440-432c-8406-4aff60fc1f48">
+          <AttributeID>LINENUM</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="675dea92-1b31-48bf-b5fb-890fa97acfb7">
+          <AttributeID>EXPECTEDRETQTY</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="c12b5c79-cadf-44cc-a452-7483646d0361">
+          <AttributeID>RETURNSTATUS</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="0dd121b3-7546-40c1-b102-9ddb6356b790">
+          <AttributeID>RMAPACKAGENUM</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="f1049b12-a9b6-4038-956b-a0ea4fe03862">
+          <AttributeID>RMAWELLSHRINKWRAPPACKAGE</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="6fac9650-8ab0-4a45-a0f0-821383ce221a">
+          <AttributeID>CREATEDDATE</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="b55dc7cf-598a-4cdd-89ce-89c5b8ad4e35">
+          <AttributeID>RMAAPPROVED</AttributeID>
+        </Attribute>
+      </Attributes>
+      <Hierarchies>
+        <Hierarchy dwd:design-time-name="9caf94c2-86f7-44c9-9eed-660941c856d6">
+          <HierarchyID>Jerarquía</HierarchyID>
         </Hierarchy>
       </Hierarchies>
     </Dimension>
@@ -39811,6 +39895,35 @@
             </Attribute>
           </Attributes>
         </Dimension>
+        <Dimension xsi:type="DegenerateMeasureGroupDimension" dwd:design-time-name="b360e5d7-1a79-4d3d-bcee-382ebe5a55f2">
+          <CubeDimensionID>RMA</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="10d8f374-7d58-4278-8864-134d688df703">
+              <AttributeID>SALESID</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="55919730-3481-4579-a6a1-68f6953bba30">
+                  <DataType>WChar</DataType>
+                  <DataSize>4</DataSize>
+                  <NullProcessing>UnknownMember</NullProcessing>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="c53a54a9-32cf-478f-8cd2-ba94f73d2056">
+                    <TableID>RMATABLE</TableID>
+                    <ColumnID>DATAAREAID</ColumnID>
+                  </Source>
+                </KeyColumn>
+                <KeyColumn dwd:design-time-name="6ab8b384-256a-4149-a41b-19dd285a388d">
+                  <DataType>WChar</DataType>
+                  <DataSize>20</DataSize>
+                  <NullProcessing>UnknownMember</NullProcessing>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="0f239b89-21d2-4594-bb74-f0294768468a">
+                    <TableID>RMATABLE</TableID>
+                    <ColumnID>SALESID</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+        </Dimension>
       </Dimensions>
       <Partitions />
     </MeasureGroup>
@@ -40102,6 +40215,60 @@
         <Dimension xsi:type="ManyToManyMeasureGroupDimension" dwd:design-time-name="0957bf57-5fd6-4293-a1a3-fb1697baba91">
           <CubeDimensionID>Catalogs and Items</CubeDimensionID>
           <MeasureGroupID>GPINVENTCATALOG</MeasureGroupID>
+        </Dimension>
+        <Dimension xsi:type="RegularMeasureGroupDimension" dwd:design-time-name="9b645fcc-fc59-44bd-b023-f39a4fc5a162">
+          <CubeDimensionID>RMA</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="0bbd744f-7062-42dd-a339-02d8632bd4f6">
+              <AttributeID>SALESID</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="9393da6c-6f7f-4c1f-b3a5-dee8757a313f">
+                  <DataType>WChar</DataType>
+                  <DataSize>4</DataSize>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="d70da2e9-ccb4-48a2-8e7d-ca93c5d2834e">
+                    <TableID>RMALINE</TableID>
+                    <ColumnID>DATAAREAID</ColumnID>
+                  </Source>
+                </KeyColumn>
+                <KeyColumn dwd:design-time-name="8be2398e-7c6b-414e-99a7-16fe49efbab1">
+                  <DataType>WChar</DataType>
+                  <DataSize>20</DataSize>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="afaf7928-e0e1-47a4-81d4-cf4f6fc50b4b">
+                    <TableID>RMALINE</TableID>
+                    <ColumnID>SALESID</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+        </Dimension>
+        <Dimension xsi:type="DegenerateMeasureGroupDimension" dwd:design-time-name="bb820fe1-cd06-4ec1-b1a1-9d9d2937eca2">
+          <CubeDimensionID>RMA Line</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="859c365d-5fe9-4c18-adaa-46cedbcb40ce">
+              <AttributeID>DATAAREAID</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="626cef80-84ac-4da1-a680-6c5dc3f3bb65">
+                  <DataType>WChar</DataType>
+                  <DataSize>4</DataSize>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="a3f2810f-eaeb-475e-a477-f4c830e9afc1">
+                    <TableID>RMALINE</TableID>
+                    <ColumnID>DATAAREAID</ColumnID>
+                  </Source>
+                </KeyColumn>
+                <KeyColumn dwd:design-time-name="bbcc4904-947b-4447-9a8f-d0a3bd61dbb6">
+                  <DataType>WChar</DataType>
+                  <DataSize>20</DataSize>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="4ec4ebe5-dbcc-4695-a21a-7cbeb2943f8e">
+                    <TableID>RMALINE</TableID>
+                    <ColumnID>INVENTTRANSID</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
         </Dimension>
       </Dimensions>
       <Partitions />
