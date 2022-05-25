@@ -1,0 +1,531 @@
+﻿<Dimension xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:ddl200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:ddl200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:ddl300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:ddl300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:ddl400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:ddl400_400="http://schemas.microsoft.com/analysisservices/2012/engine/400/400" xmlns:ddl500="http://schemas.microsoft.com/analysisservices/2013/engine/500" xmlns:ddl500_500="http://schemas.microsoft.com/analysisservices/2013/engine/500/500" xmlns:dwd="http://schemas.microsoft.com/DataWarehouse/Designer/1.0" dwd:design-time-name="b15cb6b6-0c57-4d44-a670-d40a8e7968be" xmlns="http://schemas.microsoft.com/analysisservices/2003/engine">
+  <ID>Employee Dates</ID>
+  <Name>Employee Dates</Name>
+  <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+  <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+  <Annotations>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramLayout</Name>
+      <Value>
+        <dds xmlns="">
+          <diagram fontclsid="{0BE35203-8F91-11CE-9DE3-00AA004BB851}" mouseiconclsid="{0BE35204-8F91-11CE-9DE3-00AA004BB851}" defaultlayout="MSDDS.Rectilinear" defaultlineroute="MSDDS.Rectilinear" version="7" nextobject="2" scale="100" pagebreakanchorx="0" pagebreakanchory="0" pagebreaksizex="0" pagebreaksizey="0" scrollleft="-8010" scrolltop="-7567" gridx="150" gridy="150" marginx="5000" marginy="5000" zoom="100" x="22595" y="20135" backcolor="16777215" defaultpersistence="2" PrintPageNumbersMode="3" PrintMarginTop="0" PrintMarginBottom="635" PrintMarginLeft="0" PrintMarginRight="0" marqueeselectionmode="0" mousepointer="0" snaptogrid="0" autotypeannotation="1" showscrollbars="0" viewpagebreaks="0" donotforceconnectorsbehindshapes="1" backpictureclsid="{00000000-0000-0000-0000-000000000000}">
+            <font>
+              <ddsxmlobjectstreamwrapper binary="01000000900144420100065461686f6d61" />
+            </font>
+            <mouseicon>
+              <ddsxmlobjectstreamwrapper binary="6c74000000000000" />
+            </mouseicon>
+          </diagram>
+          <layoutmanager>
+            <ddsxmlobj />
+          </layoutmanager>
+          <ddscontrol controlprogid="DdsShapes.DdsObjectManagedBridge" tooltip="HRMPARTYEMPLOYEERELATIONSHIP" left="20" top="0" logicalid="1" controlid="1" masterid="0" hint1="0" hint2="0" width="6535" height="5000" noresize="0" nomove="0" nodefaultattachpoints="0" autodrag="1" usedefaultiddshape="1" selectable="1" showselectionhandles="1" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+            <control>
+              <ddsxmlobjectstreaminitwrapper binary="000e00008719000088130000" />
+            </control>
+            <layoutobject>
+              <ddsxmlobj>
+                <property name="LogicalObject" value="HRMPARTYEMPLOYEERELATIONSHIP" vartype="8" />
+              </ddsxmlobj>
+            </layoutobject>
+            <shape groupshapeid="0" groupnode="0" />
+          </ddscontrol>
+        </dds>
+      </Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ShowFriendlyNames</Name>
+      <Value>true</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ShowRelationshipNames</Name>
+      <Value>false</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:UseDiagramDefaultLayout</Name>
+      <Value>true</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramViewPortLeft</Name>
+      <Value>-8010</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramViewPortTop</Name>
+      <Value>-7567</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramBoundingLeft</Name>
+      <Value>20</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramBoundingTop</Name>
+      <Value>0</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramZoom</Name>
+      <Value>100</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ARDiagramLayout</Name>
+      <Value>
+        <DiagramLayout ZoomPercent="100" ViewPortX="0" ViewPortY="0" xmlns="">
+          <Shapes NodeWidth="179">
+            <Shape Id="EMPLID" Expanded="true">
+              <Attributes>
+                <Attribute Id="EMPLID" />
+                <Attribute Id="ABSENCEFROMDATE" />
+                <Attribute Id="EMPLOYEETYPE" />
+                <Attribute Id="ETTVENDOR" />
+                <Attribute Id="GPCONTRACTTYPE" />
+                <Attribute Id="INCOMETAXCATEGORYID" />
+                <Attribute Id="ISETT" />
+                <Attribute Id="LASTDATEWORKED" />
+                <Attribute Id="PAYROLLCSICODE" />
+                <Attribute Id="TERMINATIONDATE" />
+                <Attribute Id="VALIDFROMDATETIME" />
+                <Attribute Id="VALIDTODATETIME" />
+                <Attribute Id="VENDACCOUNT" />
+              </Attributes>
+              <Position x="20" y="20" />
+            </Shape>
+          </Shapes>
+        </DiagramLayout>
+      </Value>
+    </Annotation>
+  </Annotations>
+  <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+  <State>Unprocessed</State>
+  <Source xsi:type="DataSourceViewBinding" dwd:design-time-name="dc999aae-b897-4e11-9fa1-1301f0639b08">
+    <DataSourceViewID>Dynamics AX</DataSourceViewID>
+  </Source>
+  <ErrorConfiguration dwd:design-time-name="daaaf5e3-c9aa-429a-8742-6a66e18600f3">
+    <KeyErrorLimitAction>StopLogging</KeyErrorLimitAction>
+    <KeyNotFound>IgnoreError</KeyNotFound>
+    <NullKeyNotAllowed>IgnoreError</NullKeyNotAllowed>
+  </ErrorConfiguration>
+  <CurrentStorageMode>Molap</CurrentStorageMode>
+  <Translations>
+    <Translation dwd:design-time-name="89ba1067-75ff-471c-9b72-daaa92c17d1b">
+      <Language>3082</Language>
+      <Caption>Fechas del empleado</Caption>
+    </Translation>
+    <Translation dwd:design-time-name="6f8442fa-0550-45c8-9f61-d79d68c58a7b">
+      <Language>1033</Language>
+      <Caption>Employee Dates</Caption>
+    </Translation>
+  </Translations>
+  <Attributes>
+    <Attribute dwd:design-time-name="77f6ec0b-ad94-447c-9206-347b2d3c99f2">
+      <ID>EMPLID</ID>
+      <Name>EMPLID</Name>
+      <Usage>Key</Usage>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="0643b348-aa2e-4f79-9d30-4dae80b01a8c">
+          <DataType>WChar</DataType>
+          <DataSize>4</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="758e8360-f57e-4323-babb-6da96a170d9b">
+            <TableID>HRMPARTYEMPLOYEERELATIONSHIP</TableID>
+            <ColumnID>DATAAREAID</ColumnID>
+          </Source>
+        </KeyColumn>
+        <KeyColumn dwd:design-time-name="cbf9684a-c6ac-4a28-9295-711214788eb0">
+          <DataType>WChar</DataType>
+          <DataSize>20</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="631fcee6-e975-472b-ba37-339030cafaae">
+            <TableID>HRMPARTYEMPLOYEERELATIONSHIP</TableID>
+            <ColumnID>EMPLID</ColumnID>
+          </Source>
+        </KeyColumn>
+        <KeyColumn dwd:design-time-name="8c7bff5f-cac7-4a6d-aca8-28ed0e6b3d65">
+          <DataType>Date</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="88e9d1b5-e127-4d76-8f52-b9defe04645f">
+            <TableID>HRMPARTYEMPLOYEERELATIONSHIP</TableID>
+            <ColumnID>VALIDFROMDATETIME</ColumnID>
+          </Source>
+        </KeyColumn>
+        <KeyColumn dwd:design-time-name="8e955d64-a08a-4e7f-bdf4-64fc36845cd9">
+          <DataType>Date</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="1b644aba-1ea9-4ae1-bd49-01d0f7009ae9">
+            <TableID>HRMPARTYEMPLOYEERELATIONSHIP</TableID>
+            <ColumnID>VALIDTODATETIME</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <NameColumn dwd:design-time-name="07322a43-6147-4976-84de-6f8aa3274beb">
+        <DataType>WChar</DataType>
+        <DataSize>20</DataSize>
+        <Source xsi:type="ColumnBinding" dwd:design-time-name="f9d5c431-da4c-496e-a4bb-4cc9ca61427c">
+          <TableID>HRMPARTYEMPLOYEERELATIONSHIP</TableID>
+          <ColumnID>EMPLID</ColumnID>
+        </Source>
+      </NameColumn>
+      <Translations>
+        <Translation dwd:design-time-name="4f6e16e6-73f6-4eb4-82b2-46b6d3f5a554">
+          <Language>3082</Language>
+          <Caption>Empleado</Caption>
+        </Translation>
+        <Translation dwd:design-time-name="75f8a6aa-caa0-4336-a6ff-3160c2f25104">
+          <Language>1033</Language>
+          <Caption>Employee</Caption>
+        </Translation>
+      </Translations>
+      <AttributeRelationships>
+        <AttributeRelationship dwd:design-time-name="abbce46c-9a68-4ec2-a3bd-38e984aa3345">
+          <AttributeID>VALIDFROMDATETIME</AttributeID>
+          <Name>VALIDFROMDATETIME</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="fdb70f1f-2964-4ea5-8293-42adb6ca9e88">
+          <AttributeID>VALIDTODATETIME</AttributeID>
+          <Name>VALIDTODATETIME</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="304934e3-0bab-4564-a55e-54e24be55683">
+          <AttributeID>INCOMETAXCATEGORYID</AttributeID>
+          <Name>INCOMETAXCATEGORYID</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="22586ee9-c4ca-4780-8cfa-b7452e0d70da">
+          <AttributeID>ABSENCEFROMDATE</AttributeID>
+          <Name>ABSENCEFROMDATE</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="0dad6eb4-c4c1-42f9-bee8-0ed46b82c694">
+          <AttributeID>PAYROLLCSICODE</AttributeID>
+          <Name>PAYROLLCSICODE</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="b7701767-01bc-4c4a-b743-be5b386cfaa3">
+          <AttributeID>ISETT</AttributeID>
+          <Name>ISETT</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="ba33ea64-1724-4327-a295-b91022ef2490">
+          <AttributeID>EMPLOYEETYPE</AttributeID>
+          <Name>EMPLOYEETYPE</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="5414b362-5e42-43b0-a5ce-650f80be557d">
+          <AttributeID>GPCONTRACTTYPE</AttributeID>
+          <Name>GPCONTRACTTYPE</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="b93597da-f694-4700-afec-12a5b8868bcb">
+          <AttributeID>LASTDATEWORKED</AttributeID>
+          <Name>LASTDATEWORKED</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="0e0f9d85-9df6-4142-9f5e-2d2ffef611a7">
+          <AttributeID>ETTVENDOR</AttributeID>
+          <Name>ETTVENDOR</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="116ca125-e869-4a77-bb00-e9b0a32d9e91">
+          <AttributeID>TERMINATIONDATE</AttributeID>
+          <Name>TERMINATIONDATE</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="2b9f3605-8cba-480c-94a1-c988b6d51d56">
+          <AttributeID>VENDACCOUNT</AttributeID>
+          <Name>VENDACCOUNT</Name>
+        </AttributeRelationship>
+      </AttributeRelationships>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="e5d8e361-30ae-46a3-86cd-68fcabeb5b4e">
+      <ID>VALIDFROMDATETIME</ID>
+      <Name>VALIDFROMDATETIME</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="37a0854b-a1ba-43f5-8e07-eb34e3b4c9f4">
+          <DataType>Date</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="331ec5c6-62e1-47df-8db9-71bb2b70d3e0">
+            <TableID>HRMPARTYEMPLOYEERELATIONSHIP</TableID>
+            <ColumnID>VALIDFROMDATETIME</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <Translations>
+        <Translation dwd:design-time-name="1be2a44b-f613-4853-a0f1-12b0e4636534">
+          <Language>3082</Language>
+          <Caption>Válido desde</Caption>
+        </Translation>
+        <Translation dwd:design-time-name="4cb00e05-b338-4601-9dc4-2d6c5b087087">
+          <Language>1033</Language>
+          <Caption>Valid from date</Caption>
+        </Translation>
+      </Translations>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="c9d5c879-e75c-4122-bec9-98df43eedcf3">
+      <ID>VALIDTODATETIME</ID>
+      <Name>VALIDTODATETIME</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="528cd1fc-0f4c-48c8-8526-4025db1c1b09">
+          <DataType>Date</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="9f71d694-8d1f-442a-955c-6bfb07781681">
+            <TableID>HRMPARTYEMPLOYEERELATIONSHIP</TableID>
+            <ColumnID>VALIDTODATETIME</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <Translations>
+        <Translation dwd:design-time-name="632a8b64-c8bf-4949-a258-38a0e5f9bb6d">
+          <Language>3082</Language>
+          <Caption>Válido hasta</Caption>
+        </Translation>
+        <Translation dwd:design-time-name="77a7dcfc-edbd-46a7-8292-0a6b6c9e6820">
+          <Language>1033</Language>
+          <Caption>Valid to date</Caption>
+        </Translation>
+      </Translations>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="a3c917ca-2d36-457f-9917-48f6d992b2b6">
+      <ID>INCOMETAXCATEGORYID</ID>
+      <Name>INCOMETAXCATEGORYID</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="92131ebe-c4ed-4f8c-b668-7ed0447f94b4">
+          <DataType>WChar</DataType>
+          <DataSize>10</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="3ad7719e-88e0-4dbb-9877-012c45dda942">
+            <TableID>HRMPARTYEMPLOYEERELATIONSHIP</TableID>
+            <ColumnID>INCOMETAXCATEGORYID</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <Translations>
+        <Translation dwd:design-time-name="f8104874-98a4-4b50-b351-4eb1b949a814">
+          <Language>3082</Language>
+          <Caption>Categoría</Caption>
+        </Translation>
+        <Translation dwd:design-time-name="619c3c8c-1712-45c8-b9b6-028b0a9154f7">
+          <Language>1033</Language>
+          <Caption>Category</Caption>
+        </Translation>
+      </Translations>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="33f8d31b-99b1-4931-9439-b60473f44823">
+      <ID>ABSENCEFROMDATE</ID>
+      <Name>ABSENCEFROMDATE</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="ed25f263-c4f7-49f3-a5b9-c17ae44c1d1e">
+          <DataType>Date</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="2a79a1b3-34c9-47a9-92b0-ed32344778b8">
+            <TableID>HRMPARTYEMPLOYEERELATIONSHIP</TableID>
+            <ColumnID>ABSENCEFROMDATE</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <Translations>
+        <Translation dwd:design-time-name="e7d04c14-3a34-49fe-a5ee-27c0961c4800">
+          <Language>3082</Language>
+          <Caption>Fecha de ausencia</Caption>
+        </Translation>
+        <Translation dwd:design-time-name="e5bf23cb-8466-4fed-94bc-f72571c97ec1">
+          <Language>1033</Language>
+          <Caption>Absence from date</Caption>
+        </Translation>
+      </Translations>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="3b185360-7e95-474c-81c6-84e14b76ec88">
+      <ID>PAYROLLCSICODE</ID>
+      <Name>PAYROLLCSICODE</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="69bce3f5-84d9-4b5f-ad42-dccbb4224f53">
+          <DataType>WChar</DataType>
+          <DataSize>20</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="8f5ecea2-18c7-4643-b2c1-b9fef9d6eb24">
+            <TableID>HRMPARTYEMPLOYEERELATIONSHIP</TableID>
+            <ColumnID>PAYROLLCSICODE</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <Translations>
+        <Translation dwd:design-time-name="4bec1aad-c461-4022-9b7a-15703ccf683a">
+          <Language>3082</Language>
+          <Caption>Código empleado A3</Caption>
+        </Translation>
+        <Translation dwd:design-time-name="2334a0fe-e227-4a98-9f55-de467121b720">
+          <Language>1033</Language>
+          <Caption>A3 employee code</Caption>
+        </Translation>
+      </Translations>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="cec4d126-8a07-4ea2-9d13-b2929b2e090c">
+      <ID>ISETT</ID>
+      <Name>ISETT</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="c466a57e-ff38-4dac-bfed-4c9999a9ed68">
+          <DataType>Integer</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="c96c63fb-f63a-4351-9a86-0e49eca8d883">
+            <TableID>HRMPARTYEMPLOYEERELATIONSHIP</TableID>
+            <ColumnID>ISETT</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <Translations>
+        <Translation dwd:design-time-name="24aa9dc9-9ab7-4952-b9b8-bdde477b4ba9">
+          <Language>3082</Language>
+          <Caption>Empleado de ETT</Caption>
+        </Translation>
+        <Translation dwd:design-time-name="42e7ad6c-5f93-4b18-bfe4-82d3e15f7bc0">
+          <Language>1033</Language>
+          <Caption>ETT employee</Caption>
+        </Translation>
+      </Translations>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="65608177-c52b-4e81-85f5-a01e2a83fa4c">
+      <ID>EMPLOYEETYPE</ID>
+      <Name>EMPLOYEETYPE</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="dd632f95-de16-4108-93e5-8aa229a9bfa4">
+          <DataType>Integer</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="33627073-6f74-4cd2-8477-7981289edaa8">
+            <TableID>HRMPARTYEMPLOYEERELATIONSHIP</TableID>
+            <ColumnID>EMPLOYEETYPE</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <Translations>
+        <Translation dwd:design-time-name="66a62228-3560-4497-8b9a-9eef497305df">
+          <Language>3082</Language>
+          <Caption>Tipo de empleado</Caption>
+        </Translation>
+        <Translation dwd:design-time-name="fe48ccd2-5fe1-41c1-9e4b-d704fc1b1fcc">
+          <Language>1033</Language>
+          <Caption>Employee type</Caption>
+        </Translation>
+      </Translations>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="47ea638c-97d3-4ede-898a-828b7874df5c">
+      <ID>GPCONTRACTTYPE</ID>
+      <Name>GPCONTRACTTYPE</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="24aee390-6f56-4568-be8e-1ff90b9dc0ad">
+          <DataType>Integer</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="e5537610-29f5-4c24-ada8-09c9ec2c2f31">
+            <TableID>HRMPARTYEMPLOYEERELATIONSHIP</TableID>
+            <ColumnID>GPCONTRACTTYPE</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <Translations>
+        <Translation dwd:design-time-name="f0156239-5a13-4d3f-b4db-7fb7350e4b02">
+          <Language>3082</Language>
+          <Caption>Tipo de contrato</Caption>
+        </Translation>
+        <Translation dwd:design-time-name="c6997271-fc1a-48e2-92f2-6917ad9f7fd7">
+          <Language>1033</Language>
+          <Caption>Contract type</Caption>
+        </Translation>
+      </Translations>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="65b22313-bc2f-4bf8-96ba-16b4d7f15727">
+      <ID>LASTDATEWORKED</ID>
+      <Name>LASTDATEWORKED</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="c90ed2fe-bf9f-46e2-8539-fcc3d2830489">
+          <DataType>Date</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="7b78cc26-a5d3-464f-8345-e6ad2b959cff">
+            <TableID>HRMPARTYEMPLOYEERELATIONSHIP</TableID>
+            <ColumnID>LASTDATEWORKED</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <Translations>
+        <Translation dwd:design-time-name="c9588d5b-f788-43d7-a893-474e7e88d5b1">
+          <Language>3082</Language>
+          <Caption>Último día trabajado</Caption>
+        </Translation>
+        <Translation dwd:design-time-name="05b0579a-2a7f-4d53-89ef-d75f6c62f520">
+          <Language>1033</Language>
+          <Caption>Last date worked</Caption>
+        </Translation>
+      </Translations>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="29382739-226a-4222-a9d7-78e12f5b4cd4">
+      <ID>ETTVENDOR</ID>
+      <Name>ETTVENDOR</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="7da81e32-5908-4979-97a4-2cafca808414">
+          <DataType>WChar</DataType>
+          <DataSize>20</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="429fa578-b8c3-46b1-8e29-62fd523b72f2">
+            <TableID>HRMPARTYEMPLOYEERELATIONSHIP</TableID>
+            <ColumnID>ETTVENDOR</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <Translations>
+        <Translation dwd:design-time-name="320a4e5d-b10c-42ab-a1f1-97430ce39256">
+          <Language>3082</Language>
+          <Caption>Proveedor ETT</Caption>
+        </Translation>
+        <Translation dwd:design-time-name="c2efd2e1-399b-4213-9ca9-9a10c8011228">
+          <Language>1033</Language>
+          <Caption>ETT vendor</Caption>
+        </Translation>
+      </Translations>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="8ee4a012-8085-428f-a46f-551dfaf46796">
+      <ID>TERMINATIONDATE</ID>
+      <Name>TERMINATIONDATE</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="8d0f5c3f-cf07-40bb-bcb3-913f93bfded8">
+          <DataType>Date</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="6751575f-ddbe-42ee-9642-fa7b27f1f549">
+            <TableID>HRMPARTYEMPLOYEERELATIONSHIP</TableID>
+            <ColumnID>TERMINATIONDATE</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <Translations>
+        <Translation dwd:design-time-name="056a85f0-1569-46f2-bcc9-a3b29ee18cd7">
+          <Language>3082</Language>
+          <Caption>Fecha de finalización</Caption>
+        </Translation>
+        <Translation dwd:design-time-name="31ba6894-9d42-45e1-a854-5502c0094f39">
+          <Language>1033</Language>
+          <Caption>Termination date</Caption>
+        </Translation>
+      </Translations>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="d5447217-e2b4-4bff-b433-5f004567f816">
+      <ID>VENDACCOUNT</ID>
+      <Name>VENDACCOUNT</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="46e60d8e-8e58-4ebf-bec4-94492eabec7a">
+          <DataType>WChar</DataType>
+          <DataSize>20</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="f2410766-f455-4b6b-8815-2740faf67835">
+            <TableID>HRMPARTYEMPLOYEERELATIONSHIP</TableID>
+            <ColumnID>VENDACCOUNT</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <Translations>
+        <Translation dwd:design-time-name="9c09c1d3-274f-4a17-9955-77dbf140561a">
+          <Language>3082</Language>
+          <Caption>Cuenta del proveedor</Caption>
+        </Translation>
+        <Translation dwd:design-time-name="eb79e19c-e26b-4700-9d5f-86daea610335">
+          <Language>1033</Language>
+          <Caption>Vendor account</Caption>
+        </Translation>
+      </Translations>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+  </Attributes>
+  <ddl300:ProcessingState>Unprocessed</ddl300:ProcessingState>
+</Dimension>
