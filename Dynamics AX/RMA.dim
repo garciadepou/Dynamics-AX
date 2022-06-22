@@ -1,4 +1,4 @@
-﻿<Dimension xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:ddl200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:ddl200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:ddl300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:ddl300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:ddl400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:ddl400_400="http://schemas.microsoft.com/analysisservices/2012/engine/400/400" xmlns:ddl500="http://schemas.microsoft.com/analysisservices/2013/engine/500" xmlns:ddl500_500="http://schemas.microsoft.com/analysisservices/2013/engine/500/500" xmlns:dwd="http://schemas.microsoft.com/DataWarehouse/Designer/1.0" dwd:design-time-name="7a889531-db77-4ae7-85e9-f21d943a9ab0" xmlns="http://schemas.microsoft.com/analysisservices/2003/engine">
+﻿<Dimension xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:ddl200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:ddl200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:ddl300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:ddl300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:ddl400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:ddl400_400="http://schemas.microsoft.com/analysisservices/2012/engine/400/400" xmlns:ddl500="http://schemas.microsoft.com/analysisservices/2013/engine/500" xmlns:ddl500_500="http://schemas.microsoft.com/analysisservices/2013/engine/500/500" xmlns:dwd="http://schemas.microsoft.com/DataWarehouse/Designer/1.0" dwd:design-time-name="7cf3099f-eddd-4a25-a8d4-e9c2023fc51f" xmlns="http://schemas.microsoft.com/analysisservices/2003/engine">
   <ID>RMA</ID>
   <Name>RMA</Name>
   <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
@@ -8,7 +8,7 @@
       <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramLayout</Name>
       <Value>
         <dds xmlns="">
-          <diagram fontclsid="{0BE35203-8F91-11CE-9DE3-00AA004BB851}" mouseiconclsid="{0BE35204-8F91-11CE-9DE3-00AA004BB851}" defaultlayout="MSDDS.Rectilinear" defaultlineroute="MSDDS.Rectilinear" version="7" nextobject="3" scale="100" pagebreakanchorx="0" pagebreakanchory="0" pagebreaksizex="0" pagebreaksizey="0" scrollleft="-7653" scrolltop="-7051" gridx="150" gridy="150" marginx="5000" marginy="5000" zoom="100" x="19156" y="19103" backcolor="16777215" defaultpersistence="2" PrintPageNumbersMode="3" PrintMarginTop="0" PrintMarginBottom="635" PrintMarginLeft="0" PrintMarginRight="0" marqueeselectionmode="0" mousepointer="0" snaptogrid="0" autotypeannotation="1" showscrollbars="0" viewpagebreaks="0" donotforceconnectorsbehindshapes="1" backpictureclsid="{00000000-0000-0000-0000-000000000000}">
+          <diagram fontclsid="{0BE35203-8F91-11CE-9DE3-00AA004BB851}" mouseiconclsid="{0BE35204-8F91-11CE-9DE3-00AA004BB851}" defaultlayout="MSDDS.Rectilinear" defaultlineroute="MSDDS.Rectilinear" version="7" nextobject="3" scale="100" pagebreakanchorx="0" pagebreakanchory="0" pagebreaksizex="0" pagebreaksizey="0" scrollleft="-7653" scrolltop="-7051" gridx="150" gridy="150" marginx="5000" marginy="5000" zoom="100" x="22595" y="20135" backcolor="16777215" defaultpersistence="2" PrintPageNumbersMode="3" PrintMarginTop="0" PrintMarginBottom="635" PrintMarginLeft="0" PrintMarginRight="0" marqueeselectionmode="0" mousepointer="0" snaptogrid="0" autotypeannotation="1" showscrollbars="0" viewpagebreaks="0" donotforceconnectorsbehindshapes="1" backpictureclsid="{00000000-0000-0000-0000-000000000000}">
             <font>
               <ddsxmlobjectstreamwrapper binary="01000000900144420100065461686f6d61" />
             </font>
@@ -102,14 +102,13 @@
   </Annotations>
   <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
   <State>Unprocessed</State>
-  <Source xsi:type="DataSourceViewBinding" dwd:design-time-name="9c43ab15-5675-4b60-a50a-e01fe96455a5">
+  <Source xsi:type="DataSourceViewBinding" dwd:design-time-name="eb490001-fcae-4189-97ba-c5f27cf583ca">
     <DataSourceViewID>Dynamics AX</DataSourceViewID>
   </Source>
   <UnknownMember>Visible</UnknownMember>
-  <ErrorConfiguration dwd:design-time-name="a3c8752b-dd12-454e-88b7-6da42cb25794">
+  <ErrorConfiguration dwd:design-time-name="786bc400-4fd1-4030-9c78-b16835b7922e">
     <KeyErrorLimitAction>StopLogging</KeyErrorLimitAction>
     <KeyNotFound>IgnoreError</KeyNotFound>
-    <KeyDuplicate>ReportAndStop</KeyDuplicate>
     <NullKeyNotAllowed>IgnoreError</NullKeyNotAllowed>
   </ErrorConfiguration>
   <CurrentStorageMode>Molap</CurrentStorageMode>
@@ -117,83 +116,83 @@
   <Collation>Modern_Spanish_CI_AS</Collation>
   <UnknownMemberName>Unknown</UnknownMemberName>
   <UnknownMemberTranslations>
-    <UnknownMemberTranslation dwd:design-time-name="4a2339e7-c55e-4654-a25a-496f448f934a">
+    <UnknownMemberTranslation dwd:design-time-name="aaa8b7cc-41e3-469a-a2d9-0dbfc19a6f40">
       <Language>3082</Language>
       <Caption>Desconocido</Caption>
     </UnknownMemberTranslation>
   </UnknownMemberTranslations>
   <Attributes>
-    <Attribute dwd:design-time-name="8881862a-5d76-46bb-8c13-a4c1d4d2b5df">
+    <Attribute dwd:design-time-name="57304e18-5e48-4b19-8f3f-6178d97c11a0">
       <ID>SALESID</ID>
       <Name>RMA</Name>
       <Usage>Key</Usage>
       <KeyColumns>
-        <KeyColumn dwd:design-time-name="1fd766cd-474c-48b8-b3fc-9bed207026fb">
+        <KeyColumn dwd:design-time-name="accc1d6d-95da-4c50-92e5-78d87dad08e6">
           <DataType>WChar</DataType>
           <DataSize>4</DataSize>
-          <Source xsi:type="ColumnBinding" dwd:design-time-name="fa5a9a30-8904-4244-9e08-24998df6aaf1">
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="eae961f9-7deb-4e31-97bc-b78dc01a9a33">
             <TableID>RMATABLE</TableID>
             <ColumnID>DATAAREAID</ColumnID>
           </Source>
         </KeyColumn>
-        <KeyColumn dwd:design-time-name="b01750de-be68-4289-8280-dae9bf8d9892">
+        <KeyColumn dwd:design-time-name="e8d96421-30a5-4cf5-a8c6-a7993bc59082">
           <DataType>WChar</DataType>
           <DataSize>20</DataSize>
-          <Source xsi:type="ColumnBinding" dwd:design-time-name="3bbd004f-e963-4aa4-80c2-ba14ee5623ac">
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="cc1278b8-2382-4b00-8129-e9cda687d224">
             <TableID>RMATABLE</TableID>
             <ColumnID>SALESID</ColumnID>
           </Source>
         </KeyColumn>
       </KeyColumns>
-      <NameColumn dwd:design-time-name="bd84706c-34b7-4dbe-a9ed-1ecce2b54d68">
+      <NameColumn dwd:design-time-name="4992c07f-4785-46bf-b683-60e1bc9908c6">
         <DataType>WChar</DataType>
         <DataSize>20</DataSize>
-        <Source xsi:type="ColumnBinding" dwd:design-time-name="31ffcbd0-fb38-465a-afda-1420ab6913e2">
+        <Source xsi:type="ColumnBinding" dwd:design-time-name="c328aa71-d7bc-4466-9d0f-870cbade2a65">
           <TableID>RMATABLE</TableID>
           <ColumnID>SALESID</ColumnID>
         </Source>
       </NameColumn>
       <Translations>
-        <Translation dwd:design-time-name="5a3b56f8-2201-442c-ac8a-4396ecad7e2f">
+        <Translation dwd:design-time-name="84630c73-7901-438c-ab17-456cee6e0172">
           <Language>3082</Language>
           <Caption>RMA</Caption>
         </Translation>
       </Translations>
       <AttributeRelationships>
-        <AttributeRelationship dwd:design-time-name="481b026f-30c6-4964-8461-3e61a24940f2">
+        <AttributeRelationship dwd:design-time-name="6d14fd20-1d88-411f-996f-f2a47d09ef57">
           <AttributeID>RETURNITEMNUM</AttributeID>
           <RelationshipType>Rigid</RelationshipType>
           <Name>Return Item Number</Name>
         </AttributeRelationship>
-        <AttributeRelationship dwd:design-time-name="4e671b31-31a8-4a51-91fe-cfec651fe3d4">
+        <AttributeRelationship dwd:design-time-name="1abcaa5b-cece-4c47-a628-44bec2b8e96d">
           <AttributeID>RMANAME</AttributeID>
           <Name>RMA Name</Name>
         </AttributeRelationship>
-        <AttributeRelationship dwd:design-time-name="e786d3a4-a010-4833-bcb7-a8d49fa6628e">
+        <AttributeRelationship dwd:design-time-name="6355ab48-5884-4aec-a2bc-88889f56e33b">
           <AttributeID>RETURNSTATUS</AttributeID>
           <Name>Return Status</Name>
         </AttributeRelationship>
-        <AttributeRelationship dwd:design-time-name="c14abe7b-e27f-4232-b357-8e7d85866920">
+        <AttributeRelationship dwd:design-time-name="84f97484-b1b1-4264-80d3-6b3a87ab4928">
           <AttributeID>CREATEDDATE</AttributeID>
           <Name>Created Date</Name>
         </AttributeRelationship>
-        <AttributeRelationship dwd:design-time-name="d422886a-269c-4fdf-a7fc-f02ee78ff9c5">
+        <AttributeRelationship dwd:design-time-name="ef1cf4fb-77ae-4af1-84a3-199613cf0497">
           <AttributeID>INVENTSITEID</AttributeID>
           <Name>Invent Site</Name>
         </AttributeRelationship>
-        <AttributeRelationship dwd:design-time-name="929825c8-b19e-4d89-b1dd-ed3eaf70aa12">
+        <AttributeRelationship dwd:design-time-name="0ec700db-a33a-4cc7-8537-29072530b015">
           <AttributeID>INVENTLOCATIONID</AttributeID>
           <Name>Invent Location</Name>
         </AttributeRelationship>
-        <AttributeRelationship dwd:design-time-name="318522cf-26f5-40f1-a225-7aa4e30355cf">
+        <AttributeRelationship dwd:design-time-name="c730c412-34cf-4e3c-89ad-d4e3b9cb714c">
           <AttributeID>CUSTOMERREF</AttributeID>
           <Name>Customer Ref</Name>
         </AttributeRelationship>
-        <AttributeRelationship dwd:design-time-name="ba56cc0e-6fcd-4e3a-acc0-3cca4eee1f9f">
+        <AttributeRelationship dwd:design-time-name="8c76e397-4ab3-4fbc-bb61-2b043484aca7">
           <AttributeID>PURCHORDERFORMNUM</AttributeID>
           <Name>Purch Order Form Num</Name>
         </AttributeRelationship>
-        <AttributeRelationship dwd:design-time-name="c89a375a-514b-4be0-86a9-1dd2d8fd5b38">
+        <AttributeRelationship dwd:design-time-name="26eb69c0-5ea0-42bf-b545-2ed9e0729e22">
           <AttributeID>RMAPACKAGENUM</AttributeID>
           <Name>Package Num</Name>
         </AttributeRelationship>
@@ -202,43 +201,43 @@
       <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
       <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
     </Attribute>
-    <Attribute dwd:design-time-name="e4648f04-94e9-4aef-9aab-df998082c1e7">
+    <Attribute dwd:design-time-name="42fd292b-a759-4569-92b8-a2af5c4cc8e7">
       <ID>RETURNITEMNUM</ID>
       <Name>Return Item Number</Name>
       <KeyColumns>
-        <KeyColumn dwd:design-time-name="c1bb3b5a-c7f7-42fd-9760-a7dd9d12c36f">
+        <KeyColumn dwd:design-time-name="14e2805c-3d1c-4143-83bf-5481270fa2ee">
           <DataType>WChar</DataType>
           <DataSize>4</DataSize>
-          <Source xsi:type="ColumnBinding" dwd:design-time-name="9443a73f-fc38-46a9-b343-c89de0499ddb">
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="5026f55f-9e16-4647-924f-f650d9a7ff7f">
             <TableID>RMATABLE</TableID>
             <ColumnID>DATAAREAID</ColumnID>
           </Source>
         </KeyColumn>
-        <KeyColumn dwd:design-time-name="692934c2-1f53-42c6-866d-ce6fe6489c15">
+        <KeyColumn dwd:design-time-name="f7856533-51fc-4158-bd8b-a4d62b367ee4">
           <DataType>WChar</DataType>
           <DataSize>10</DataSize>
-          <Source xsi:type="ColumnBinding" dwd:design-time-name="7b998714-ea7d-472a-8efc-207afbe7c90e">
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="3612b035-f76b-47c0-9a4d-606fd0edb3e9">
             <TableID>RMATABLE</TableID>
             <ColumnID>RETURNITEMNUM</ColumnID>
           </Source>
         </KeyColumn>
       </KeyColumns>
-      <NameColumn dwd:design-time-name="f8e30f62-c599-49f6-85c6-23577ed50058">
+      <NameColumn dwd:design-time-name="ed2f854d-e09a-4d39-afee-821b79224335">
         <DataType>WChar</DataType>
         <DataSize>10</DataSize>
-        <Source xsi:type="ColumnBinding" dwd:design-time-name="22d6fa76-1648-4f66-b9be-1692211ef76d">
+        <Source xsi:type="ColumnBinding" dwd:design-time-name="318f691f-6629-4515-818b-41779bc55adb">
           <TableID>RMATABLE</TableID>
           <ColumnID>RETURNITEMNUM</ColumnID>
         </Source>
       </NameColumn>
       <Translations>
-        <Translation dwd:design-time-name="f47e10c5-f2b6-4fa3-a0d6-9f85b1141cc4">
+        <Translation dwd:design-time-name="da179d38-e581-48c9-8a0f-9657c64a2a6a">
           <Language>3082</Language>
           <Caption>Número RMA</Caption>
         </Translation>
       </Translations>
       <AttributeRelationships>
-        <AttributeRelationship dwd:design-time-name="0a836a25-c042-4009-8d17-ec39fafc060b">
+        <AttributeRelationship dwd:design-time-name="5bf796dd-a8e0-4b36-9106-4e5b92107c8c">
           <AttributeID>RMAAPPROVED</AttributeID>
           <Name>Approved</Name>
         </AttributeRelationship>
@@ -246,37 +245,37 @@
       <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
       <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
     </Attribute>
-    <Attribute dwd:design-time-name="557db6c8-9b86-4aeb-a957-65299bb24f94">
+    <Attribute dwd:design-time-name="276750cc-6c26-4a3d-b282-9af251bdfe42">
       <ID>RETURNREASONCODEID</ID>
       <Name>Return Reason Code</Name>
       <KeyColumns>
-        <KeyColumn dwd:design-time-name="5624d0f5-2b74-4a8f-9796-9642c7e62b6c">
+        <KeyColumn dwd:design-time-name="d2752688-d892-4f16-89ac-e8cc49cbfa65">
           <DataType>WChar</DataType>
           <DataSize>4</DataSize>
-          <Source xsi:type="ColumnBinding" dwd:design-time-name="b30528a0-0478-4c76-91de-b54c7c353bb0">
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="c46c7b6e-93cf-43cc-ac93-51bff08a601a">
             <TableID>RMATABLE</TableID>
             <ColumnID>DATAAREAID</ColumnID>
           </Source>
         </KeyColumn>
-        <KeyColumn dwd:design-time-name="8ee6a83d-3424-480f-a554-6733209d7152">
+        <KeyColumn dwd:design-time-name="f0314a71-aeda-4a52-9a40-092a18e1ab22">
           <DataType>WChar</DataType>
           <DataSize>25</DataSize>
-          <Source xsi:type="ColumnBinding" dwd:design-time-name="80d42705-71aa-4b5d-a7db-9a1118490752">
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="f75813c3-a0b3-4136-913c-ceb2458ee6e0">
             <TableID>RMATABLE</TableID>
             <ColumnID>RETURNREASONCODEID</ColumnID>
           </Source>
         </KeyColumn>
       </KeyColumns>
-      <NameColumn dwd:design-time-name="c443ba45-7d93-4dad-9bad-42e59b87c705">
+      <NameColumn dwd:design-time-name="bee9289c-f96e-4df2-8b9e-e17e02d1af3d">
         <DataType>WChar</DataType>
         <DataSize>25</DataSize>
-        <Source xsi:type="ColumnBinding" dwd:design-time-name="d4d16868-961c-4798-a739-5ab960bc9abf">
+        <Source xsi:type="ColumnBinding" dwd:design-time-name="00a30d28-d712-46a3-bb54-264f060cd716">
           <TableID>RMATABLE</TableID>
           <ColumnID>RETURNREASONCODEID</ColumnID>
         </Source>
       </NameColumn>
       <Translations>
-        <Translation dwd:design-time-name="d31311fd-f139-4950-931c-f6bb2c6a6e2a">
+        <Translation dwd:design-time-name="465f75c0-bec3-4dfb-8577-c94ad5c378c3">
           <Language>3082</Language>
           <Caption>Motivo devolución</Caption>
         </Translation>
@@ -284,37 +283,37 @@
       <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
       <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
     </Attribute>
-    <Attribute dwd:design-time-name="0a70f376-7fe5-4b78-86b0-5314682ee250">
+    <Attribute dwd:design-time-name="f4f58e08-1d62-4e88-a622-4b3cb46f90a0">
       <ID>RMANAME</ID>
       <Name>RMA Name</Name>
       <KeyColumns>
-        <KeyColumn dwd:design-time-name="50e1ab30-13d9-46f5-b828-3dc8ff46d324">
+        <KeyColumn dwd:design-time-name="2bff5095-0597-4cac-9a8c-efb5b0b38c97">
           <DataType>WChar</DataType>
           <DataSize>4</DataSize>
-          <Source xsi:type="ColumnBinding" dwd:design-time-name="b197bd8d-8102-4828-a2e0-6b5591065b12">
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="b7022859-c66a-49b9-a377-9bd8e787d249">
             <TableID>RMATABLE</TableID>
             <ColumnID>DATAAREAID</ColumnID>
           </Source>
         </KeyColumn>
-        <KeyColumn dwd:design-time-name="d8a933bc-f847-432c-a3d7-80f433ba96d3">
+        <KeyColumn dwd:design-time-name="538ff81b-436e-4613-98cf-f68433d46bda">
           <DataType>WChar</DataType>
           <DataSize>150</DataSize>
-          <Source xsi:type="ColumnBinding" dwd:design-time-name="5be1e6c2-3a00-4249-95c7-4e7c2895967d">
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="e7c4a305-c341-40cb-9e82-8b52379ab42d">
             <TableID>RMATABLE</TableID>
             <ColumnID>RMANAME</ColumnID>
           </Source>
         </KeyColumn>
       </KeyColumns>
-      <NameColumn dwd:design-time-name="3d35e258-d46e-4496-ae27-377973acd644">
+      <NameColumn dwd:design-time-name="68ba24e5-3b7e-4bda-b136-bae08ca9df7a">
         <DataType>WChar</DataType>
         <DataSize>150</DataSize>
-        <Source xsi:type="ColumnBinding" dwd:design-time-name="a1bc14d7-2049-4104-8d70-0609a74df74d">
+        <Source xsi:type="ColumnBinding" dwd:design-time-name="c8af1264-0cfa-47a8-8df8-581acc322138">
           <TableID>RMATABLE</TableID>
           <ColumnID>RMANAME</ColumnID>
         </Source>
       </NameColumn>
       <Translations>
-        <Translation dwd:design-time-name="aa2d60ef-2286-405e-89a3-89d52d439f2d">
+        <Translation dwd:design-time-name="1c6cc3b7-c0c3-4b30-b883-74ca3d051d4f">
           <Language>3082</Language>
           <Caption>Nombre</Caption>
         </Translation>
@@ -322,41 +321,41 @@
       <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
       <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
     </Attribute>
-    <Attribute dwd:design-time-name="bc789940-95ba-4445-b58d-4601795c75f8">
+    <Attribute dwd:design-time-name="553a469a-df7e-4f15-8f9d-e0c7c11f0c75">
       <ID>RMAAPPROVED</ID>
       <Name>Approved</Name>
       <KeyColumns>
-        <KeyColumn dwd:design-time-name="33459df4-392b-48a4-9d4b-b50b97f92cf4">
+        <KeyColumn dwd:design-time-name="33ca70f3-67f6-4950-af73-7e31869eec72">
           <DataType>WChar</DataType>
           <DataSize>4</DataSize>
-          <Source xsi:type="ColumnBinding" dwd:design-time-name="19a57682-a8aa-4099-8dc0-c92c2492bd15">
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="5fefdda4-54a9-4a9c-b2dc-92a550194251">
             <TableID>RMATABLE</TableID>
             <ColumnID>DATAAREAID</ColumnID>
           </Source>
         </KeyColumn>
-        <KeyColumn dwd:design-time-name="7df21906-033b-4b99-8126-0357e0e9bf3c">
+        <KeyColumn dwd:design-time-name="d6f23dac-777b-4e33-96b9-ea669b440ddb">
           <DataType>Integer</DataType>
-          <Source xsi:type="ColumnBinding" dwd:design-time-name="31366c0a-1ef2-45e5-bfb7-f36b3a14b03a">
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="e3d80e9f-be42-42cd-ba87-6a9d99b03c2d">
             <TableID>RMATABLE</TableID>
             <ColumnID>RMAAPPROVED</ColumnID>
           </Source>
         </KeyColumn>
       </KeyColumns>
-      <NameColumn dwd:design-time-name="7030e815-d001-4da7-9089-0bd3fca16a4e">
+      <NameColumn dwd:design-time-name="665d3806-90fa-4095-9854-d269c25d63ab">
         <DataType>WChar</DataType>
-        <Source xsi:type="ColumnBinding" dwd:design-time-name="08bcd9af-bd32-48e9-a96d-b011dc3abadb">
+        <Source xsi:type="ColumnBinding" dwd:design-time-name="63d7db41-1e72-4b16-91de-62a077f583d3">
           <TableID>RMATABLE</TableID>
           <ColumnID>RMAAPPROVED</ColumnID>
         </Source>
       </NameColumn>
       <Translations>
-        <Translation dwd:design-time-name="ed940a9e-377e-4de5-849f-6bdc40af09c3">
+        <Translation dwd:design-time-name="5c856907-d22c-426b-ad4f-feb2c499149b">
           <Language>3082</Language>
           <Caption>Aprobado</Caption>
         </Translation>
       </Translations>
       <AttributeRelationships>
-        <AttributeRelationship dwd:design-time-name="8ed2180b-22b3-4447-a44c-4217adfdc8e9">
+        <AttributeRelationship dwd:design-time-name="e664074d-b394-4d23-a19a-d1f1624e7d0b">
           <AttributeID>RETURNREASONCODEID</AttributeID>
           <Name>Return Reason Code</Name>
         </AttributeRelationship>
@@ -364,37 +363,37 @@
       <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
       <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
     </Attribute>
-    <Attribute dwd:design-time-name="fbacc0ac-2fa3-4af5-9d1f-49d5d02f9dbf">
+    <Attribute dwd:design-time-name="215d9b03-7358-4af1-9e9e-12c2e09b113d">
       <ID>RETURNSTATUS</ID>
       <Name>Return Status</Name>
       <KeyColumns>
-        <KeyColumn dwd:design-time-name="27a127bc-97e1-466d-baf3-1f9ca4d186f6">
+        <KeyColumn dwd:design-time-name="92445f58-909a-401e-8560-8e81c938d3ac">
           <DataType>WChar</DataType>
           <DataSize>4</DataSize>
-          <Source xsi:type="ColumnBinding" dwd:design-time-name="46924979-3bc6-4d22-a1a9-e285875b5581">
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="35baf091-88c7-4ea1-aedc-446f63684a21">
             <TableID>RMATABLE</TableID>
             <ColumnID>DATAAREAID</ColumnID>
           </Source>
         </KeyColumn>
-        <KeyColumn dwd:design-time-name="9de17e30-4938-48dc-bed6-f132a0e7806e">
+        <KeyColumn dwd:design-time-name="7c435afb-86be-41e4-b446-b424ca3ba27f">
           <DataType>WChar</DataType>
           <DataSize>9</DataSize>
-          <Source xsi:type="ColumnBinding" dwd:design-time-name="a3e84b0d-4f80-49f6-ac47-7b28211160e1">
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="509d2c5c-ef11-437b-9d83-52ad7d424800">
             <TableID>RMATABLE</TableID>
             <ColumnID>RETURNSTATUS</ColumnID>
           </Source>
         </KeyColumn>
       </KeyColumns>
-      <NameColumn dwd:design-time-name="7b434090-6278-4ed4-b520-9f77cb900aa0">
+      <NameColumn dwd:design-time-name="3ccbbc17-7644-47f0-a0d1-0e5fb1612058">
         <DataType>WChar</DataType>
         <DataSize>9</DataSize>
-        <Source xsi:type="ColumnBinding" dwd:design-time-name="aab53ff8-7b09-4c46-8147-2ddedb026aac">
+        <Source xsi:type="ColumnBinding" dwd:design-time-name="1e39f54e-a2e5-4643-9a07-68849a0daa24">
           <TableID>RMATABLE</TableID>
           <ColumnID>RETURNSTATUS</ColumnID>
         </Source>
       </NameColumn>
       <Translations>
-        <Translation dwd:design-time-name="09af9bb8-d3ab-45c3-a275-09f453f3e1ea">
+        <Translation dwd:design-time-name="ff6d24ad-f2dd-4d85-a19e-962a49e8a1bb">
           <Language>3082</Language>
           <Caption>Estado retorno</Caption>
         </Translation>
@@ -402,35 +401,35 @@
       <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
       <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
     </Attribute>
-    <Attribute dwd:design-time-name="46fd8231-aef4-44d2-9d4f-423b279e0458">
+    <Attribute dwd:design-time-name="a691b33d-dbf2-4fe2-a03f-e8966bd14e8e">
       <ID>CREATEDDATE</ID>
       <Name>Created Date</Name>
       <KeyColumns>
-        <KeyColumn dwd:design-time-name="2747eb39-ca2f-4ed2-bbbd-40ef3b62d967">
+        <KeyColumn dwd:design-time-name="10ac5969-3a06-48c8-8d57-96883178e659">
           <DataType>WChar</DataType>
           <DataSize>4</DataSize>
-          <Source xsi:type="ColumnBinding" dwd:design-time-name="14b19793-a37a-42f8-9595-e2aed304c607">
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="5c9fc6e9-b85b-468d-ab47-44127dacbf54">
             <TableID>RMATABLE</TableID>
             <ColumnID>DATAAREAID</ColumnID>
           </Source>
         </KeyColumn>
-        <KeyColumn dwd:design-time-name="29100781-ddfe-48f6-aec6-5c5ada2813e0">
+        <KeyColumn dwd:design-time-name="9068e814-a6e8-4cfe-8783-daacd1555751">
           <DataType>Date</DataType>
-          <Source xsi:type="ColumnBinding" dwd:design-time-name="c25c735e-ac83-44da-9358-563bdb6ba245">
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="c736ba03-d91a-4e18-ac13-e0f5774a7a44">
             <TableID>RMATABLE</TableID>
             <ColumnID>CREATEDDATE</ColumnID>
           </Source>
         </KeyColumn>
       </KeyColumns>
-      <NameColumn dwd:design-time-name="63fb2c84-9fcc-48fe-a901-185a2e3ef079">
+      <NameColumn dwd:design-time-name="be8c15f7-e9d9-4786-aca8-6160e9bd3e97">
         <DataType>WChar</DataType>
-        <Source xsi:type="ColumnBinding" dwd:design-time-name="c9866935-e75c-4bf2-9a74-2b2251029e2f">
+        <Source xsi:type="ColumnBinding" dwd:design-time-name="39427645-6a23-4afb-9e2b-b67c0b4e703c">
           <TableID>RMATABLE</TableID>
           <ColumnID>CREATEDDATE</ColumnID>
         </Source>
       </NameColumn>
       <Translations>
-        <Translation dwd:design-time-name="be08ee63-0250-433c-bbe7-f8617e29c3af">
+        <Translation dwd:design-time-name="65d44654-f650-4251-b587-f5163ecdce11">
           <Language>3082</Language>
           <Caption>Fecha creación</Caption>
         </Translation>
@@ -438,37 +437,37 @@
       <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
       <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
     </Attribute>
-    <Attribute dwd:design-time-name="d6438fce-20eb-4e2d-8e11-d4f7d560db8f">
+    <Attribute dwd:design-time-name="c09e0fa5-fdb4-490b-aa4f-28faca1ffd03">
       <ID>INVENTSITEID</ID>
       <Name>Invent Site</Name>
       <KeyColumns>
-        <KeyColumn dwd:design-time-name="a6e2f7b8-62af-477f-aa3f-39a4e8145800">
+        <KeyColumn dwd:design-time-name="518881ec-18a4-4dea-8fe5-a50994545ac9">
           <DataType>WChar</DataType>
           <DataSize>4</DataSize>
-          <Source xsi:type="ColumnBinding" dwd:design-time-name="0c1f61d7-02ab-4fe1-9917-6f5dea8ab41f">
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="f4f97c04-d1f8-487e-8573-0016e53ae3a7">
             <TableID>RMATABLE</TableID>
             <ColumnID>DATAAREAID</ColumnID>
           </Source>
         </KeyColumn>
-        <KeyColumn dwd:design-time-name="435fa7f5-3217-4516-af0e-f215d61a1a42">
+        <KeyColumn dwd:design-time-name="f1367083-8712-4352-917f-6cb6d4f9b780">
           <DataType>WChar</DataType>
           <DataSize>10</DataSize>
-          <Source xsi:type="ColumnBinding" dwd:design-time-name="c51767c3-33e0-45ef-a3d2-18eff4495e45">
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="9976b8eb-0606-4ed0-afe0-9ecf3a9f5a6d">
             <TableID>RMATABLE</TableID>
             <ColumnID>INVENTSITEID</ColumnID>
           </Source>
         </KeyColumn>
       </KeyColumns>
-      <NameColumn dwd:design-time-name="570c0733-49b2-41a4-acc8-6af4fe4a821f">
+      <NameColumn dwd:design-time-name="0beef632-73d9-4357-be09-f6781fd3faee">
         <DataType>WChar</DataType>
         <DataSize>10</DataSize>
-        <Source xsi:type="ColumnBinding" dwd:design-time-name="20a6aaad-dae3-4346-844b-875515accf83">
+        <Source xsi:type="ColumnBinding" dwd:design-time-name="46a6af12-6dcc-4fae-b8f9-e382a79b0508">
           <TableID>RMATABLE</TableID>
           <ColumnID>INVENTSITEID</ColumnID>
         </Source>
       </NameColumn>
       <Translations>
-        <Translation dwd:design-time-name="3ec81453-0d18-4346-b448-5665d6a6bbdd">
+        <Translation dwd:design-time-name="1fa09253-5178-49ad-a278-dfe5e6a16349">
           <Language>3082</Language>
           <Caption>Sitio</Caption>
         </Translation>
@@ -476,37 +475,37 @@
       <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
       <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
     </Attribute>
-    <Attribute dwd:design-time-name="1b643672-d6b1-4af2-88ea-bf2fb53730c5">
+    <Attribute dwd:design-time-name="82ebdc4c-ac17-466a-ae1e-04e5417f34de">
       <ID>INVENTLOCATIONID</ID>
       <Name>Invent Location</Name>
       <KeyColumns>
-        <KeyColumn dwd:design-time-name="add33003-b7ff-428a-843c-641d41fea32a">
+        <KeyColumn dwd:design-time-name="d7c5cf9b-08ee-4f33-adf8-b75e685a97f0">
           <DataType>WChar</DataType>
           <DataSize>4</DataSize>
-          <Source xsi:type="ColumnBinding" dwd:design-time-name="313a019c-ae22-49d6-88bc-22b5ef185b2c">
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="388da987-9999-4c85-90fd-a907890e413e">
             <TableID>RMATABLE</TableID>
             <ColumnID>DATAAREAID</ColumnID>
           </Source>
         </KeyColumn>
-        <KeyColumn dwd:design-time-name="5f8c501f-d3b1-4433-9d94-5dbe2ffd00f4">
+        <KeyColumn dwd:design-time-name="a90cd65d-a140-4b2c-ba2f-57bcc36e1faf">
           <DataType>WChar</DataType>
           <DataSize>80</DataSize>
-          <Source xsi:type="ColumnBinding" dwd:design-time-name="35ea25d9-5cc6-43c8-98b5-248b6eb3786b">
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="65487b50-5911-4537-9800-d4ea40773823">
             <TableID>RMATABLE</TableID>
             <ColumnID>INVENTLOCATIONID</ColumnID>
           </Source>
         </KeyColumn>
       </KeyColumns>
-      <NameColumn dwd:design-time-name="dae79ed8-6c37-431a-a480-bd4bf5e0d7bc">
+      <NameColumn dwd:design-time-name="e0d87ada-bb15-4ca8-83a6-b679a6832113">
         <DataType>WChar</DataType>
         <DataSize>80</DataSize>
-        <Source xsi:type="ColumnBinding" dwd:design-time-name="ff856e76-3535-493b-aeb1-e07cb47fbdc2">
+        <Source xsi:type="ColumnBinding" dwd:design-time-name="694972ad-c2c5-4720-9baa-b774495e0442">
           <TableID>RMATABLE</TableID>
           <ColumnID>INVENTLOCATIONID</ColumnID>
         </Source>
       </NameColumn>
       <Translations>
-        <Translation dwd:design-time-name="db5a0bba-9b04-42dd-8b3b-c922da2e0b42">
+        <Translation dwd:design-time-name="5aa5d06b-751b-48f4-adbc-44d92171d88c">
           <Language>3082</Language>
           <Caption>Almacén</Caption>
         </Translation>
@@ -514,37 +513,37 @@
       <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
       <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
     </Attribute>
-    <Attribute dwd:design-time-name="f8d450b4-1b1b-43a1-8b8e-0aa6ffffba47">
+    <Attribute dwd:design-time-name="85b95062-0e5d-4043-b1da-1f64316a7e87">
       <ID>CUSTOMERREF</ID>
       <Name>Customer Ref</Name>
       <KeyColumns>
-        <KeyColumn dwd:design-time-name="90a0ffde-29a7-45ab-83a9-0e3dc837f9a1">
+        <KeyColumn dwd:design-time-name="27eb4892-6ab4-4cc4-bfbf-0465a66cb7ee">
           <DataType>WChar</DataType>
           <DataSize>150</DataSize>
-          <Source xsi:type="ColumnBinding" dwd:design-time-name="8b67cce4-8a03-46a0-ac80-b55a635dac9e">
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="8cce508c-c627-43fe-9f24-124d015ee6c0">
             <TableID>RMATABLE</TableID>
             <ColumnID>CUSTOMERREF</ColumnID>
           </Source>
         </KeyColumn>
-        <KeyColumn dwd:design-time-name="5c7d3499-c871-4777-a08e-6552ba175d0a">
+        <KeyColumn dwd:design-time-name="1d35b600-4ca1-42a3-96b1-02215f4db2c9">
           <DataType>WChar</DataType>
           <DataSize>4</DataSize>
-          <Source xsi:type="ColumnBinding" dwd:design-time-name="4fb37285-f8b0-4f6e-ade9-38b513cc741b">
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="fde01509-2b8c-48aa-9015-87db2837ac09">
             <TableID>RMATABLE</TableID>
             <ColumnID>DATAAREAID</ColumnID>
           </Source>
         </KeyColumn>
       </KeyColumns>
-      <NameColumn dwd:design-time-name="4ddf781d-8231-4a95-9753-8dae9d64a70e">
+      <NameColumn dwd:design-time-name="3596b494-ec2d-4c1b-a645-95126015fad0">
         <DataType>WChar</DataType>
         <DataSize>150</DataSize>
-        <Source xsi:type="ColumnBinding" dwd:design-time-name="a36473fd-4c3e-4353-9ffa-9748bba64231">
+        <Source xsi:type="ColumnBinding" dwd:design-time-name="38ca8553-5ee2-4043-8657-a154d158fa4f">
           <TableID>RMATABLE</TableID>
           <ColumnID>CUSTOMERREF</ColumnID>
         </Source>
       </NameColumn>
       <Translations>
-        <Translation dwd:design-time-name="9e7ed0ee-9431-4f3b-b655-6a18c1db2045">
+        <Translation dwd:design-time-name="95a20a95-5a67-4f01-9c4e-7a689395782e">
           <Language>3082</Language>
           <Caption>Referencia cliente</Caption>
         </Translation>
@@ -552,37 +551,37 @@
       <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
       <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
     </Attribute>
-    <Attribute dwd:design-time-name="19edc0f1-11cb-4263-a7fc-86c3ae4f0c37">
+    <Attribute dwd:design-time-name="dd0456c2-52fc-4b18-95c7-c4f67a093b40">
       <ID>PURCHORDERFORMNUM</ID>
       <Name>Purch Order Form Num</Name>
       <KeyColumns>
-        <KeyColumn dwd:design-time-name="3336ff1a-d7fc-4d84-be12-afe09757ed76">
+        <KeyColumn dwd:design-time-name="9e5f08de-23b8-4200-b748-0d07d6bc855e">
           <DataType>WChar</DataType>
           <DataSize>4</DataSize>
-          <Source xsi:type="ColumnBinding" dwd:design-time-name="e01bebfa-6d49-4c1f-b9a8-dad7a6ba225c">
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="7ec65208-4396-45e0-ab9e-f2eb94539923">
             <TableID>RMATABLE</TableID>
             <ColumnID>DATAAREAID</ColumnID>
           </Source>
         </KeyColumn>
-        <KeyColumn dwd:design-time-name="9f361bf1-db2c-4a25-b416-fc2d58722e7f">
+        <KeyColumn dwd:design-time-name="f3ec4e2a-cd35-4d9b-94b5-9716470956e8">
           <DataType>WChar</DataType>
           <DataSize>20</DataSize>
-          <Source xsi:type="ColumnBinding" dwd:design-time-name="8b5ded5f-320e-44f1-879d-463b49a4c7c5">
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="ed8c2807-e1b7-40b0-a7df-72435b8debfe">
             <TableID>RMATABLE</TableID>
             <ColumnID>PURCHORDERFORMNUM</ColumnID>
           </Source>
         </KeyColumn>
       </KeyColumns>
-      <NameColumn dwd:design-time-name="deb4afae-b9e6-409f-a7ea-a4bc0a1ff7c8">
+      <NameColumn dwd:design-time-name="dce5edb6-0e9b-4556-a5ee-ad5028330e7b">
         <DataType>WChar</DataType>
         <DataSize>20</DataSize>
-        <Source xsi:type="ColumnBinding" dwd:design-time-name="0eb72a00-551e-4dab-b513-4714c9729e76">
+        <Source xsi:type="ColumnBinding" dwd:design-time-name="d171c27f-a1f8-48f1-ba39-3c74537b3dc6">
           <TableID>RMATABLE</TableID>
           <ColumnID>PURCHORDERFORMNUM</ColumnID>
         </Source>
       </NameColumn>
       <Translations>
-        <Translation dwd:design-time-name="2cbec4e3-6dac-437d-a3ff-0bdc717a336c">
+        <Translation dwd:design-time-name="ea4cb4bd-01b2-4661-9a70-1a342120b348">
           <Language>3082</Language>
           <Caption>Pedido cliente</Caption>
         </Translation>
@@ -590,35 +589,35 @@
       <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
       <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
     </Attribute>
-    <Attribute dwd:design-time-name="5131af3a-a649-4d05-89a4-c99cd3b1366d">
+    <Attribute dwd:design-time-name="6ae6ebf1-9140-441d-8a3c-fa3b1d8f488d">
       <ID>RMAPACKAGENUM</ID>
       <Name>Package Num</Name>
       <KeyColumns>
-        <KeyColumn dwd:design-time-name="e2c660f7-cd85-477e-aecb-1d357d87a263">
+        <KeyColumn dwd:design-time-name="0eee5add-a1ba-4b30-9260-cd3b78ea8132">
           <DataType>WChar</DataType>
           <DataSize>4</DataSize>
-          <Source xsi:type="ColumnBinding" dwd:design-time-name="6d121fd5-0660-4cca-b0b1-4d98b5d27a9e">
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="84958746-d1d0-42be-8a4b-49d49d23fdac">
             <TableID>RMATABLE</TableID>
             <ColumnID>DATAAREAID</ColumnID>
           </Source>
         </KeyColumn>
-        <KeyColumn dwd:design-time-name="20a73bca-a981-440e-b99a-7fb3a75c5f08">
+        <KeyColumn dwd:design-time-name="9c284deb-22dd-4a29-b677-cc4a35821948">
           <DataType>Integer</DataType>
-          <Source xsi:type="ColumnBinding" dwd:design-time-name="00fecd50-8548-43cc-828d-c5b542e80909">
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="65f3ec09-2873-4294-a218-704cb2fcf781">
             <TableID>RMATABLE</TableID>
             <ColumnID>RMAPACKAGENUM</ColumnID>
           </Source>
         </KeyColumn>
       </KeyColumns>
-      <NameColumn dwd:design-time-name="514eb900-2b21-4bcd-80cc-a6470bb572f2">
+      <NameColumn dwd:design-time-name="b2a07514-c0cf-4495-aef3-4f10f3abc161">
         <DataType>WChar</DataType>
-        <Source xsi:type="ColumnBinding" dwd:design-time-name="491447d9-3e68-4d01-86b6-df069b7105d5">
+        <Source xsi:type="ColumnBinding" dwd:design-time-name="76642f01-d660-4f80-bf6c-3e3722fbf40f">
           <TableID>RMATABLE</TableID>
           <ColumnID>RMAPACKAGENUM</ColumnID>
         </Source>
       </NameColumn>
       <Translations>
-        <Translation dwd:design-time-name="93ab6602-3f36-4ee4-b9da-25735cb7a0eb">
+        <Translation dwd:design-time-name="a05c8db8-8de1-4836-a200-23de6006ed1e">
           <Language>3082</Language>
           <Caption>Num paquetes</Caption>
         </Translation>
@@ -629,44 +628,44 @@
   </Attributes>
   <AttributeAllMemberName>All</AttributeAllMemberName>
   <AttributeAllMemberTranslations>
-    <AttributeAllMemberTranslation dwd:design-time-name="b199b313-9c7f-4b02-87b2-27ee0731239a">
+    <AttributeAllMemberTranslation dwd:design-time-name="762c823b-d06e-4768-a2c9-155572f5bca1">
       <Language>3082</Language>
       <Caption>Todos</Caption>
     </AttributeAllMemberTranslation>
   </AttributeAllMemberTranslations>
   <Hierarchies>
-    <Hierarchy dwd:design-time-name="e03fd8f3-a3f8-41b7-8b39-f5d5c05426e7">
+    <Hierarchy dwd:design-time-name="c98b4702-bff2-4f1f-9e4b-7aa357b4d527">
       <ID>Jerarquía 2</ID>
       <Name>Jerarquía 2</Name>
       <Levels>
-        <Level dwd:design-time-name="522bf290-ce87-47b9-a29b-90c71ff11bf6">
+        <Level dwd:design-time-name="264e438f-f5a7-45a8-9ee1-0e7bf404d036">
           <ID>Return Reason Code</ID>
           <Name>Return Reason Code</Name>
           <SourceAttributeID>RETURNREASONCODEID</SourceAttributeID>
           <Translations>
-            <Translation dwd:design-time-name="756ccb08-22d6-459f-b660-00d3328a492c">
+            <Translation dwd:design-time-name="888f631d-c172-4043-93a3-c743d355da0c">
               <Language>3082</Language>
               <Caption>Motivo devolución</Caption>
             </Translation>
           </Translations>
         </Level>
-        <Level dwd:design-time-name="7b7de809-ed20-4ee1-962b-2025efc720df">
+        <Level dwd:design-time-name="493161f3-f56f-47aa-b6c8-3c7993f15cbb">
           <ID>Approved</ID>
           <Name>Approved</Name>
           <SourceAttributeID>RMAAPPROVED</SourceAttributeID>
           <Translations>
-            <Translation dwd:design-time-name="9a76258b-f385-49f4-ab2b-be938df8dc23">
+            <Translation dwd:design-time-name="520f0894-ef89-43c2-ab2f-41779ff90ac4">
               <Language>3082</Language>
               <Caption>Aprobado</Caption>
             </Translation>
           </Translations>
         </Level>
-        <Level dwd:design-time-name="50be79b4-f5e1-43b8-9be4-ee1bce083bd5">
+        <Level dwd:design-time-name="3d906427-6253-4796-8489-ccf2cc05abab">
           <ID>Return Item Number</ID>
           <Name>Return Item Number</Name>
           <SourceAttributeID>RETURNITEMNUM</SourceAttributeID>
           <Translations>
-            <Translation dwd:design-time-name="c8f3a92d-2a6a-4a11-ac09-993897f749cd">
+            <Translation dwd:design-time-name="7e13567e-5f24-4174-891d-6776d2068398">
               <Language>3082</Language>
               <Caption>Número RMA</Caption>
             </Translation>
@@ -675,13 +674,13 @@
       </Levels>
     </Hierarchy>
   </Hierarchies>
-  <ProactiveCaching dwd:design-time-name="862744ea-6713-4359-91e1-50f2781ce70c">
+  <ProactiveCaching dwd:design-time-name="5638bba0-2446-400e-a675-2fb14217ac26">
     <SilenceInterval>-PT1S</SilenceInterval>
     <Latency>-PT1S</Latency>
     <SilenceOverrideInterval>-PT1S</SilenceOverrideInterval>
     <ForceRebuildInterval>-PT1S</ForceRebuildInterval>
     <AggregationStorage>MolapOnly</AggregationStorage>
-    <Source xsi:type="ProactiveCachingInheritedBinding" dwd:design-time-name="0ad5b961-3a25-4b18-8b55-a0caeb2e2a0a">
+    <Source xsi:type="ProactiveCachingInheritedBinding" dwd:design-time-name="cbbe3592-064b-468b-8fa0-cd8457970ed9">
       <NotificationTechnique>Server</NotificationTechnique>
     </Source>
   </ProactiveCaching>
