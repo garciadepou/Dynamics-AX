@@ -1,4 +1,4 @@
-﻿<Cube xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:ddl200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:ddl200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:ddl300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:ddl300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:ddl400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:ddl400_400="http://schemas.microsoft.com/analysisservices/2012/engine/400/400" xmlns:ddl500="http://schemas.microsoft.com/analysisservices/2013/engine/500" xmlns:ddl500_500="http://schemas.microsoft.com/analysisservices/2013/engine/500/500" xmlns:dwd="http://schemas.microsoft.com/DataWarehouse/Designer/1.0" dwd:design-time-name="0c7ddd5f-26cc-4542-8494-f039bea8d0b2" xmlns="http://schemas.microsoft.com/analysisservices/2003/engine">
+﻿<Cube xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:ddl200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:ddl200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:ddl300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:ddl300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:ddl400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:ddl400_400="http://schemas.microsoft.com/analysisservices/2012/engine/400/400" xmlns:ddl500="http://schemas.microsoft.com/analysisservices/2013/engine/500" xmlns:ddl500_500="http://schemas.microsoft.com/analysisservices/2013/engine/500/500" xmlns:dwd="http://schemas.microsoft.com/DataWarehouse/Designer/1.0" dwd:design-time-name="e9756c3a-c6d0-42e4-9035-377f58f2416e" xmlns="http://schemas.microsoft.com/analysisservices/2003/engine">
   <ID>Wharehouse Management System</ID>
   <Name>Wharehouse Management System</Name>
   <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
@@ -357,199 +357,202 @@
   <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
   <State>Unprocessed</State>
   <Dimensions>
-    <Dimension dwd:design-time-name="63d29280-6ca5-4bc6-95cc-590d1cae06ad">
+    <Dimension dwd:design-time-name="97b695aa-e260-4ae3-849d-00e403a3b9b4">
       <ID>DSTime</ID>
       <Name>DSTime</Name>
       <DimensionID>DSTime</DimensionID>
       <Attributes>
-        <Attribute dwd:design-time-name="e817d503-8789-4db9-88ed-7e07b51eb303">
+        <Attribute dwd:design-time-name="5c460b0d-2bbd-4242-9038-ba44664456b0">
           <AttributeID>PKDATE</AttributeID>
         </Attribute>
-        <Attribute dwd:design-time-name="2ef8c690-eb58-4f76-a463-5f509157f98d">
+        <Attribute dwd:design-time-name="caaa0d27-b021-4361-9ba5-53f389692231">
           <AttributeID>YEAR</AttributeID>
         </Attribute>
-        <Attribute dwd:design-time-name="460bddc9-3ba1-4e12-ab09-ca1da55bae0a">
+        <Attribute dwd:design-time-name="dcc5799b-422c-450b-b9ee-7a7581b79ee2">
           <AttributeID>QUARTER</AttributeID>
         </Attribute>
-        <Attribute dwd:design-time-name="08a9e7d8-ccb8-408c-8139-aa4e73117d45">
+        <Attribute dwd:design-time-name="ab504e9d-107b-4eb0-930d-1c432c739c0e">
           <AttributeID>MONTH</AttributeID>
         </Attribute>
-        <Attribute dwd:design-time-name="ac8166b6-f35d-4d01-aa4b-18b366676f86">
+        <Attribute dwd:design-time-name="f4b59a48-00c5-4460-9856-87e8b49e52ae">
           <AttributeID>WEEK</AttributeID>
         </Attribute>
-        <Attribute dwd:design-time-name="6cc388d1-91c1-4579-add1-8e77ef0c1815">
+        <Attribute dwd:design-time-name="bd129ee0-4348-42da-9e77-7a10acd6e8e8">
           <AttributeID>DAYOFYEAR</AttributeID>
         </Attribute>
-        <Attribute dwd:design-time-name="272564cc-1520-48b3-a16a-8dcac3cbade8">
+        <Attribute dwd:design-time-name="d5673e48-267e-47ce-b9a2-9cc01c67383a">
           <AttributeID>DAYOFQUARTER</AttributeID>
         </Attribute>
-        <Attribute dwd:design-time-name="b8a39dda-189b-4fbd-a3bd-e6c25b909ff0">
+        <Attribute dwd:design-time-name="daf7ddb5-3aae-4cec-a830-f45a12fa6961">
           <AttributeID>DAYOFMONTH</AttributeID>
         </Attribute>
-        <Attribute dwd:design-time-name="bd11f769-5786-4c7c-be22-5a2cc7c56d13">
+        <Attribute dwd:design-time-name="c47bb172-068b-4a81-9f0d-f1af12d2f2a1">
           <AttributeID>DAYOFWEEK</AttributeID>
         </Attribute>
-        <Attribute dwd:design-time-name="70d8612c-8ffa-4364-b854-82d4b8d283b1">
+        <Attribute dwd:design-time-name="3f0a3849-4217-4791-86f8-37b3db7591fe">
           <AttributeID>WEEKOFYEAR</AttributeID>
         </Attribute>
-        <Attribute dwd:design-time-name="1da532c0-90a6-4aa5-b0a8-2c1cfdefffea">
+        <Attribute dwd:design-time-name="b4738c3d-40bd-42c9-a6d1-5cfced5ec365">
           <AttributeID>MONTHOFYEAR</AttributeID>
         </Attribute>
-        <Attribute dwd:design-time-name="8dddfc89-19a4-4d61-9ff5-528b2406bbf0">
+        <Attribute dwd:design-time-name="65321594-19e3-4820-8f3e-47cebd3ab899">
           <AttributeID>MONTHOFQUARTER</AttributeID>
         </Attribute>
-        <Attribute dwd:design-time-name="538674f7-6c1d-422c-b2e5-b658746b6452">
+        <Attribute dwd:design-time-name="238781be-500d-4906-afc7-2d54a51513a1">
           <AttributeID>QUARTEROFYEAR</AttributeID>
         </Attribute>
-        <Attribute dwd:design-time-name="0dac2572-6e1e-4c60-b12f-60164c25b90e">
+        <Attribute dwd:design-time-name="3ea89045-37de-4b8c-8fb4-5c06902a8b7b">
           <AttributeID>Año - Trimestre - Mes - Fecha Time Calculations</AttributeID>
         </Attribute>
-        <Attribute dwd:design-time-name="c7224875-db12-49cc-8b52-c4cbe3c478ff">
+        <Attribute dwd:design-time-name="2f3b9b7c-50f0-4797-b832-355e6ef14b74">
           <AttributeID>MONTH 1</AttributeID>
         </Attribute>
       </Attributes>
       <Hierarchies>
-        <Hierarchy dwd:design-time-name="b79dda0c-1f8f-4606-9d5b-b75ddc9ae8d3">
+        <Hierarchy dwd:design-time-name="4a51e56e-a793-42a1-9710-e16613ac1fbe">
           <HierarchyID>Hierarchy</HierarchyID>
         </Hierarchy>
-        <Hierarchy dwd:design-time-name="d7aab809-0c55-49c4-bb73-fa8415014481">
+        <Hierarchy dwd:design-time-name="cfe781ab-a3ea-4983-9e2f-aa37be2349be">
           <HierarchyID>Hierarchy 2</HierarchyID>
         </Hierarchy>
       </Hierarchies>
     </Dimension>
-    <Dimension dwd:design-time-name="73d75c73-5e19-4dd3-823f-b20cdc6b8024">
+    <Dimension dwd:design-time-name="3e5316c7-8c19-4b06-a62e-10f900700207">
       <ID>Employee</ID>
       <Name>Employee</Name>
       <Translations>
-        <Translation dwd:design-time-name="e3fef5c3-aa8f-47c3-870d-dd361cd8e1cc">
+        <Translation dwd:design-time-name="683162d5-90e5-47bc-8439-8771f5568042">
           <Language>1033</Language>
           <Caption>Employee</Caption>
         </Translation>
-        <Translation dwd:design-time-name="f21dfbb3-9d78-4b4d-b6f6-26f0fbd3e1d7">
+        <Translation dwd:design-time-name="268cf8b1-e433-4aab-b371-ff9d2ad1145f">
           <Language>3082</Language>
           <Caption>Empleado</Caption>
         </Translation>
       </Translations>
       <DimensionID>EMPLTABLE</DimensionID>
       <Attributes>
-        <Attribute dwd:design-time-name="4933e964-3d78-418a-9e89-0416495833ab">
+        <Attribute dwd:design-time-name="6995de5f-0952-46de-9325-ea98504cec96">
           <AttributeID>BIRTHDATE</AttributeID>
         </Attribute>
-        <Attribute dwd:design-time-name="923adf1b-63a2-40c7-a618-c51e4a1604f9">
+        <Attribute dwd:design-time-name="825153fc-623e-4996-bd2d-b4a3f21379a8">
           <AttributeID>PROJPERIODID</AttributeID>
         </Attribute>
-        <Attribute dwd:design-time-name="6b6a49b4-8ed7-422f-8bab-3fcd5b29576e">
+        <Attribute dwd:design-time-name="86717901-00b1-4db6-a4ce-02adbf6591cc">
           <AttributeID>EMPLGENDER</AttributeID>
         </Attribute>
-        <Attribute dwd:design-time-name="875868e4-5ca8-4d43-9297-e7dc329a8a1f">
+        <Attribute dwd:design-time-name="4789c946-1836-4abd-b9ed-735a2e640920">
           <AttributeID>STATUS</AttributeID>
         </Attribute>
-        <Attribute dwd:design-time-name="297224b0-3d15-49f3-b907-2da44a710d73">
+        <Attribute dwd:design-time-name="0b215700-b643-43db-b26b-f0fd04d50936">
           <AttributeID>EMPLTABLE</AttributeID>
         </Attribute>
-        <Attribute dwd:design-time-name="9c9f2547-7a5b-4df1-8788-5bacaf9b48b4">
+        <Attribute dwd:design-time-name="85a271b3-50e7-4623-ad2e-8f10ad1dee1f">
           <AttributeID>NAME</AttributeID>
         </Attribute>
-        <Attribute dwd:design-time-name="85647ec1-23b7-44ae-a682-1d9eb1fc5139">
+        <Attribute dwd:design-time-name="61e0a454-92ea-4883-8ad3-3a518d69c7d8">
           <AttributeID>DIRPARTYTABLE</AttributeID>
         </Attribute>
-        <Attribute dwd:design-time-name="5083746a-1998-4581-a405-b88523f64ea6">
+        <Attribute dwd:design-time-name="8476e894-76ea-4abc-abff-9a39b59cf409">
           <AttributeID>INVENTSITE NAME</AttributeID>
         </Attribute>
-        <Attribute dwd:design-time-name="a80c20fa-1001-4adb-baf6-9d2b733804a1">
+        <Attribute dwd:design-time-name="eecfba73-6429-41c3-b02c-077ad3ad0313">
           <AttributeID>INVENTSITE</AttributeID>
         </Attribute>
-        <Attribute dwd:design-time-name="4bd122cf-19db-4e9d-b38a-abce7fad9840">
+        <Attribute dwd:design-time-name="900ebbe7-5e47-4daf-9274-255e78afb9b6">
           <AttributeID>EMPLOYEETYPE</AttributeID>
         </Attribute>
-        <Attribute dwd:design-time-name="f2cbbb68-2995-4e02-9f7a-19e2ce8d0784">
+        <Attribute dwd:design-time-name="65849359-bd64-484c-952e-ac26308f71b0">
           <AttributeID>FROMDATETIME</AttributeID>
         </Attribute>
-        <Attribute dwd:design-time-name="6102a013-d228-42fc-8609-fd7288d1c407">
+        <Attribute dwd:design-time-name="b546860b-058f-4d42-8e15-e00f3e66f82e">
           <AttributeID>TODATETIME</AttributeID>
         </Attribute>
-        <Attribute dwd:design-time-name="935a481b-8e8a-43c9-9776-e3e3a124e311">
+        <Attribute dwd:design-time-name="d44233e6-e18d-4870-9d8d-87519337a235">
           <AttributeID>SENIORITYDATE</AttributeID>
         </Attribute>
-        <Attribute dwd:design-time-name="2a83783d-6db1-4bfe-997d-d819ef3ef3f0">
+        <Attribute dwd:design-time-name="3d2e8f31-75b7-486d-b86d-e702fdc2a57e">
           <AttributeID>DAYSOFFWITHSALARY</AttributeID>
         </Attribute>
-        <Attribute dwd:design-time-name="7175b765-ae39-4dd9-bb0f-87b83234d68c">
+        <Attribute dwd:design-time-name="7f3a8086-0804-4836-8054-76ffb1dbee3c">
           <AttributeID>MARITALSTATUS</AttributeID>
         </Attribute>
-        <Attribute dwd:design-time-name="39543724-f902-4ec7-84b8-3dcc40579a77">
+        <Attribute dwd:design-time-name="9eceb8b0-44bd-46e7-9017-707c5d109611">
           <AttributeID>ACCOUNTTYPE</AttributeID>
         </Attribute>
-        <Attribute dwd:design-time-name="f5cd8fc5-7593-4f09-841f-0ddbbc6f7752">
+        <Attribute dwd:design-time-name="6da9cfe6-98ae-4e3b-bfd4-9f10bdc7719e">
           <AttributeID>DIRPARTYTABLE FIRSTNAME</AttributeID>
         </Attribute>
-        <Attribute dwd:design-time-name="0d171f84-536e-4f3a-b29d-914360ac538e">
+        <Attribute dwd:design-time-name="3ff1c2f3-bd61-49ff-8eb2-d8a7706c35b1">
           <AttributeID>DIRPARTYTABLE MIDDLENAME</AttributeID>
         </Attribute>
-        <Attribute dwd:design-time-name="40cd9cb4-da62-4a09-905e-f0948e6bbc4c">
+        <Attribute dwd:design-time-name="ddcda18c-caa4-415d-9c05-95118c7d723f">
           <AttributeID>DIRPARTYTABLE LASTNAME</AttributeID>
         </Attribute>
-        <Attribute dwd:design-time-name="79ad9e04-befb-42c4-a0c8-c38e1a70246f">
+        <Attribute dwd:design-time-name="8c26bad3-cc8c-4f54-9b18-03b9f27c1822">
           <AttributeID>VACATIONWITHSALARY</AttributeID>
         </Attribute>
-        <Attribute dwd:design-time-name="10b20396-6e16-4d3f-a509-0e4f76a3eb72">
+        <Attribute dwd:design-time-name="6b12e9aa-1fab-4602-b293-31a00bf8c13c">
           <AttributeID>CAREWITHSALARY</AttributeID>
         </Attribute>
-        <Attribute dwd:design-time-name="c05bd465-cfb8-4213-9848-16130e167d76">
+        <Attribute dwd:design-time-name="a8f0eb98-42cb-4b4f-aafc-5a3d54053d9f">
           <AttributeID>SALARYTYPE</AttributeID>
         </Attribute>
-        <Attribute dwd:design-time-name="47f67564-9df4-4379-a0e8-e5832af9a6e8">
+        <Attribute dwd:design-time-name="1d7885d5-5919-4566-bf2d-2f7f23455746">
           <AttributeID>DIRPARTYTABLE NAMEALIAS</AttributeID>
         </Attribute>
-        <Attribute dwd:design-time-name="c3cc4128-7a32-4ae5-8da0-a0a9e4c7db98">
+        <Attribute dwd:design-time-name="ac0a4da9-9d84-4bbe-a0e1-363ec9d1f043">
           <AttributeID>INDEFINIDO</AttributeID>
         </Attribute>
-        <Attribute dwd:design-time-name="e2ddfee4-8a73-4ece-af01-981d9016ef4a">
+        <Attribute dwd:design-time-name="66681356-2cb8-491f-ba11-4d37909bb460">
           <AttributeID>TEMPORAL</AttributeID>
         </Attribute>
-        <Attribute dwd:design-time-name="f488949c-c2cc-4679-9617-e41362725231">
+        <Attribute dwd:design-time-name="2a22306e-a792-462e-ae67-03e8d0f6fd36">
           <AttributeID>ISETT</AttributeID>
         </Attribute>
-        <Attribute dwd:design-time-name="de6dd7a6-1750-4813-83f0-8f5dd952a0ea">
+        <Attribute dwd:design-time-name="483a8559-4594-43a9-bc06-03f1b6ab5526">
           <AttributeID>INCOMETAXCATEGORYID</AttributeID>
         </Attribute>
-        <Attribute dwd:design-time-name="6c57911e-2a3a-4e09-b2fe-8043e2c7a131">
+        <Attribute dwd:design-time-name="4b8819ae-b967-4b0f-9c02-38eb9e5841d0">
           <AttributeID>GPCONTRACTTYPE</AttributeID>
         </Attribute>
-        <Attribute dwd:design-time-name="d632990f-a8f6-4331-94ca-54f8222847d5">
+        <Attribute dwd:design-time-name="0b9c6062-6c2f-4b67-9bac-02e81c671142">
           <AttributeID>LASTDATEWORKED</AttributeID>
         </Attribute>
-        <Attribute dwd:design-time-name="af87a59d-5bd5-4c01-9905-c191a1e3aa0d">
+        <Attribute dwd:design-time-name="0db846d8-af84-4b31-aaea-d8e558162fc3">
           <AttributeID>INVENTSITE DIMENSION3</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="86aa562a-17f3-49da-8309-b7930431ad01">
+          <AttributeID>CALENDARID</AttributeID>
         </Attribute>
       </Attributes>
       <Hierarchies>
-        <Hierarchy dwd:design-time-name="adfecc43-322b-4aae-b329-247cdd155321">
+        <Hierarchy dwd:design-time-name="be741500-69ce-431b-97bc-874219766878">
           <HierarchyID>Directory - Employee</HierarchyID>
         </Hierarchy>
-        <Hierarchy dwd:design-time-name="48d871cc-3c5b-49db-9315-1ebe6527fe4d">
+        <Hierarchy dwd:design-time-name="c3686dd2-be81-45b2-9b1a-bf613e6b4d7d">
           <HierarchyID>Site - Employee</HierarchyID>
         </Hierarchy>
       </Hierarchies>
     </Dimension>
-    <Dimension dwd:design-time-name="8f2a2ff0-a3fa-427e-b025-22c89df3339c">
+    <Dimension dwd:design-time-name="0de99bf6-5295-46a3-acff-685bbb4378be">
       <ID>Warehouse Management System</ID>
       <Name>Warehouse Management System</Name>
       <DimensionID>Warehouse Management System</DimensionID>
       <Attributes>
-        <Attribute dwd:design-time-name="be60a0d0-9590-4bf5-ba65-e6c88fe3fa92">
+        <Attribute dwd:design-time-name="faa17ece-7ba0-411c-8521-fe4085d3285e">
           <AttributeID>LOGTYPE</AttributeID>
         </Attribute>
       </Attributes>
       <Hierarchies>
-        <Hierarchy dwd:design-time-name="4918f4b3-e401-434c-acfd-b91f218e640f">
+        <Hierarchy dwd:design-time-name="84f8905e-0548-48f8-b578-d6c0eb3745b2">
           <HierarchyID>Jerarquía</HierarchyID>
         </Hierarchy>
       </Hierarchies>
     </Dimension>
   </Dimensions>
   <CubePermissions>
-    <CubePermission dwd:design-time-name="f76f70d5-992a-4b04-8111-167f0560e6bf">
+    <CubePermission dwd:design-time-name="870cf6e4-8f04-4663-836c-e8e0cd293d57">
       <ID>CubePermission</ID>
       <Name>CubePermission</Name>
       <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
@@ -558,7 +561,7 @@
       <Read>Allowed</Read>
       <ReadSourceData>None</ReadSourceData>
     </CubePermission>
-    <CubePermission dwd:design-time-name="80387a1d-bcfa-4540-a2cb-8d4534961f9d">
+    <CubePermission dwd:design-time-name="84a1b557-e79d-41ce-96d6-e4241ac0098b">
       <ID>CubePermission 1</ID>
       <Name>CubePermission 1</Name>
       <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
@@ -569,7 +572,7 @@
     </CubePermission>
   </CubePermissions>
   <MeasureGroups>
-    <MeasureGroup dwd:design-time-name="feb601e1-69a6-4beb-b9bf-61231efb0b39">
+    <MeasureGroup dwd:design-time-name="4e3a4cd9-3efb-4140-b69f-3a6d08468f3a">
       <ID>WMSDEVACTIVITYLOG</ID>
       <Name>Wharehouse activities</Name>
       <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
@@ -577,24 +580,24 @@
       <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
       <State>Unprocessed</State>
       <Measures>
-        <Measure dwd:design-time-name="80e98256-fa18-48c8-a11a-c40235508ea2">
+        <Measure dwd:design-time-name="029db8b1-856a-4cca-9100-2b94de7a43da">
           <ID>LOADPARCELTIMESPAN</ID>
           <Name>Time Span</Name>
-          <Source dwd:design-time-name="8249fcd0-adbc-41bf-8a42-f865aef16848">
+          <Source dwd:design-time-name="331f0cfd-624a-44d5-a094-9b01ad7a5f7e">
             <DataType>BigInt</DataType>
-            <Source xsi:type="ColumnBinding" dwd:design-time-name="6006db2b-147f-432c-9cbb-ad519ce06540">
+            <Source xsi:type="ColumnBinding" dwd:design-time-name="054ad098-e8a9-4b01-a4ab-0fc8df249945">
               <TableID>dbo_WMSDEVACTIVITYLOG</TableID>
               <ColumnID>LOADPARCELTIMESPAN</ColumnID>
             </Source>
           </Source>
         </Measure>
-        <Measure dwd:design-time-name="51c59474-8234-4920-b30e-c87a201e60a9">
+        <Measure dwd:design-time-name="ac726e52-1907-4ee8-b306-90599d90539c">
           <ID>RECID</ID>
           <Name>Activity Count</Name>
           <AggregateFunction>Count</AggregateFunction>
-          <Source dwd:design-time-name="75b0185f-aa33-4384-bda2-db96dc346ffc">
+          <Source dwd:design-time-name="f78a002d-4115-4ed3-9489-1639c71a6b69">
             <DataType>BigInt</DataType>
-            <Source xsi:type="ColumnBinding" dwd:design-time-name="95241637-adac-4020-b47b-d04e77e56ed7">
+            <Source xsi:type="ColumnBinding" dwd:design-time-name="6ee28ad3-41b5-416d-8900-fd568635d7bf">
               <TableID>dbo_WMSDEVACTIVITYLOG</TableID>
               <ColumnID>RECID</ColumnID>
             </Source>
@@ -602,29 +605,29 @@
         </Measure>
       </Measures>
       <StorageMode>Molap</StorageMode>
-      <ErrorConfiguration dwd:design-time-name="adf1d9e8-3096-4e8f-97df-5710b6033608">
+      <ErrorConfiguration dwd:design-time-name="bee9c168-cb75-49d2-965e-e5f5a60df77b">
         <KeyErrorLimitAction>StopLogging</KeyErrorLimitAction>
         <KeyNotFound>IgnoreError</KeyNotFound>
         <NullKeyNotAllowed>IgnoreError</NullKeyNotAllowed>
       </ErrorConfiguration>
       <ProcessingMode>Regular</ProcessingMode>
       <Dimensions>
-        <Dimension xsi:type="RegularMeasureGroupDimension" dwd:design-time-name="ed758ebb-bbed-4ba4-9219-044f6cd1aa1c">
+        <Dimension xsi:type="RegularMeasureGroupDimension" dwd:design-time-name="2c3dc095-da0b-4a25-92f4-751070139095">
           <CubeDimensionID>Employee</CubeDimensionID>
           <Attributes>
-            <Attribute dwd:design-time-name="fc5cf37b-2ec8-417a-8386-ebc02a607225">
+            <Attribute dwd:design-time-name="6893118c-5309-4746-b792-96030ed970d4">
               <AttributeID>EMPLTABLE</AttributeID>
               <KeyColumns>
-                <KeyColumn dwd:design-time-name="84d4be66-e8b5-4ef2-8a35-7618ee0bce42">
+                <KeyColumn dwd:design-time-name="ff0bfa1d-d02f-4217-9110-c4c8b1970e57">
                   <DataType>WChar</DataType>
-                  <Source xsi:type="ColumnBinding" dwd:design-time-name="e0c87da0-ea95-48fd-841c-063862ac6ce7">
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="c5445db6-af1c-4592-b3b4-c73b044bf27f">
                     <TableID>dbo_WMSDEVACTIVITYLOG</TableID>
                     <ColumnID>DATAAREAID</ColumnID>
                   </Source>
                 </KeyColumn>
-                <KeyColumn dwd:design-time-name="18f5aa1a-72fc-42fc-a086-32dfe4b8136f">
+                <KeyColumn dwd:design-time-name="868295eb-c086-4bae-89c5-79557b00c4b2">
                   <DataType>WChar</DataType>
-                  <Source xsi:type="ColumnBinding" dwd:design-time-name="12e62735-9804-4f71-83f9-1cfa1ed1d17d">
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="3268641a-c8fb-4c76-ae27-8d4dcf2d656f">
                     <TableID>dbo_WMSDEVACTIVITYLOG</TableID>
                     <ColumnID>EMPLID</ColumnID>
                   </Source>
@@ -634,15 +637,15 @@
             </Attribute>
           </Attributes>
         </Dimension>
-        <Dimension xsi:type="RegularMeasureGroupDimension" dwd:design-time-name="37459d66-0b12-4b52-806c-145152ec4304">
+        <Dimension xsi:type="RegularMeasureGroupDimension" dwd:design-time-name="0177efd5-9dee-4f50-82c7-b1677feddfb0">
           <CubeDimensionID>DSTime</CubeDimensionID>
           <Attributes>
-            <Attribute dwd:design-time-name="816c9ccc-9519-4017-99bd-d3bed0ee90d1">
+            <Attribute dwd:design-time-name="7504f4e1-c36f-4445-bebf-8c27387830c2">
               <AttributeID>PKDATE</AttributeID>
               <KeyColumns>
-                <KeyColumn dwd:design-time-name="b1780450-23b6-4d39-a0b9-4c8e7f84111a">
+                <KeyColumn dwd:design-time-name="6e06ebc9-8a7f-41b2-8b81-40ee5a630503">
                   <DataType>Date</DataType>
-                  <Source xsi:type="ColumnBinding" dwd:design-time-name="3f403041-66f0-42b2-ae96-2b642b89fb88">
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="c58c3a41-17b3-4291-b446-da20a9798857">
                     <TableID>dbo_WMSDEVACTIVITYLOG</TableID>
                     <ColumnID>TRANSDATE</ColumnID>
                   </Source>
@@ -652,16 +655,16 @@
             </Attribute>
           </Attributes>
         </Dimension>
-        <Dimension xsi:type="RegularMeasureGroupDimension" dwd:design-time-name="83f5d9a4-fc0f-43a0-b194-5132148e8ace">
+        <Dimension xsi:type="RegularMeasureGroupDimension" dwd:design-time-name="a78b8b09-1f1c-460c-b807-e6a98a894b60">
           <CubeDimensionID>Warehouse Management System</CubeDimensionID>
           <Attributes>
-            <Attribute dwd:design-time-name="9ff058a0-2098-45df-9b92-ae4e80874304">
+            <Attribute dwd:design-time-name="401f1d7b-88bf-4318-80c1-8538f659bce6">
               <AttributeID>LOGTYPE</AttributeID>
               <KeyColumns>
-                <KeyColumn dwd:design-time-name="3ebe9f00-a611-416b-85af-00c6ae4088cf">
+                <KeyColumn dwd:design-time-name="ff5f0855-7a1d-439d-a7d0-921925567f4c">
                   <DataType>Integer</DataType>
                   <NullProcessing>UnknownMember</NullProcessing>
-                  <Source xsi:type="ColumnBinding" dwd:design-time-name="69b9b2a0-68dc-4026-a1e2-dfb94a04f9dd">
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="46f82aeb-a6c6-4406-a2fd-ee54733345fd">
                     <TableID>dbo_WMSDEVACTIVITYLOG</TableID>
                     <ColumnID>LOGTYPE</ColumnID>
                   </Source>
@@ -675,10 +678,10 @@
       <Partitions />
     </MeasureGroup>
   </MeasureGroups>
-  <Source dwd:design-time-name="3d28e4d8-150b-4c3e-bea4-66d2ae8a289e">
+  <Source dwd:design-time-name="f4fb6a59-428d-44d2-a24f-386403f00e14">
     <DataSourceViewID>Dynamics AX</DataSourceViewID>
   </Source>
-  <ErrorConfiguration dwd:design-time-name="2843f6fe-d936-4d84-9d5a-3087c9d3ad57">
+  <ErrorConfiguration dwd:design-time-name="bee94584-1a5f-42c1-890e-e0d952b88192">
     <KeyNotFound>IgnoreError</KeyNotFound>
     <NullKeyNotAllowed>IgnoreError</NullKeyNotAllowed>
   </ErrorConfiguration>
