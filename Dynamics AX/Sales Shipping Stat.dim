@@ -1,4 +1,4 @@
-﻿<Dimension xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:ddl200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:ddl200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:ddl300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:ddl300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:ddl400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:ddl400_400="http://schemas.microsoft.com/analysisservices/2012/engine/400/400" xmlns:ddl500="http://schemas.microsoft.com/analysisservices/2013/engine/500" xmlns:ddl500_500="http://schemas.microsoft.com/analysisservices/2013/engine/500/500" xmlns:dwd="http://schemas.microsoft.com/DataWarehouse/Designer/1.0" dwd:design-time-name="ddb9b6e4-90a9-4d09-8a8c-3e9ffbca3b73" xmlns="http://schemas.microsoft.com/analysisservices/2003/engine">
+﻿<Dimension xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:ddl200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:ddl200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:ddl300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:ddl300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:ddl400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:ddl400_400="http://schemas.microsoft.com/analysisservices/2012/engine/400/400" xmlns:ddl500="http://schemas.microsoft.com/analysisservices/2013/engine/500" xmlns:ddl500_500="http://schemas.microsoft.com/analysisservices/2013/engine/500/500" xmlns:dwd="http://schemas.microsoft.com/DataWarehouse/Designer/1.0" dwd:design-time-name="3693df24-c8a5-4498-adbb-ded6041f1a76" xmlns="http://schemas.microsoft.com/analysisservices/2003/engine">
   <ID>SALESSHIPPINGSTAT</ID>
   <Name>Sales Shipping Stat</Name>
   <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
@@ -8,7 +8,7 @@
       <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramLayout</Name>
       <Value>
         <dds xmlns="">
-          <diagram fontclsid="{0BE35203-8F91-11CE-9DE3-00AA004BB851}" mouseiconclsid="{0BE35204-8F91-11CE-9DE3-00AA004BB851}" defaultlayout="MSDDS.Rectilinear" defaultlineroute="MSDDS.Rectilinear" version="7" nextobject="28" scale="100" pagebreakanchorx="0" pagebreakanchory="0" pagebreaksizex="0" pagebreaksizey="0" scrollleft="-8445" scrolltop="-5664" gridx="150" gridy="150" marginx="5000" marginy="5000" zoom="100" x="22119" y="19050" backcolor="16777215" defaultpersistence="2" PrintPageNumbersMode="3" PrintMarginTop="0" PrintMarginBottom="635" PrintMarginLeft="0" PrintMarginRight="0" marqueeselectionmode="0" mousepointer="0" snaptogrid="0" autotypeannotation="1" showscrollbars="1" viewpagebreaks="0" donotforceconnectorsbehindshapes="1" backpictureclsid="{00000000-0000-0000-0000-000000000000}">
+          <diagram fontclsid="{0BE35203-8F91-11CE-9DE3-00AA004BB851}" mouseiconclsid="{0BE35204-8F91-11CE-9DE3-00AA004BB851}" defaultlayout="MSDDS.Rectilinear" defaultlineroute="MSDDS.Rectilinear" version="7" nextobject="28" scale="100" pagebreakanchorx="0" pagebreakanchory="0" pagebreaksizex="0" pagebreaksizey="0" scrollleft="-8445" scrolltop="-5664" gridx="150" gridy="150" marginx="5000" marginy="5000" zoom="100" x="23178" y="20029" backcolor="16777215" defaultpersistence="2" PrintPageNumbersMode="3" PrintMarginTop="0" PrintMarginBottom="635" PrintMarginLeft="0" PrintMarginRight="0" marqueeselectionmode="0" mousepointer="0" snaptogrid="0" autotypeannotation="1" showscrollbars="0" viewpagebreaks="0" donotforceconnectorsbehindshapes="1" backpictureclsid="{00000000-0000-0000-0000-000000000000}">
             <font>
               <ddsxmlobjectstreamwrapper binary="01000000900144420100065461686f6d61" />
             </font>
@@ -325,59 +325,60 @@
   </Annotations>
   <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
   <State>Unprocessed</State>
-  <Source xsi:type="DataSourceViewBinding" dwd:design-time-name="a283ae99-c053-49d2-b6f4-437a7a1f23f3">
+  <Source xsi:type="DataSourceViewBinding" dwd:design-time-name="f630bad0-4adf-43cb-ad7f-f5b0ca24d958">
     <DataSourceViewID>Dynamics AX</DataSourceViewID>
   </Source>
-  <ErrorConfiguration dwd:design-time-name="44892fb1-b638-45b4-ab37-aaab18c7d84f">
+  <Type>Time</Type>
+  <ErrorConfiguration dwd:design-time-name="119a7781-b98b-40c4-9ab6-375d3c3411d8">
     <KeyErrorLimitAction>StopLogging</KeyErrorLimitAction>
     <KeyNotFound>IgnoreError</KeyNotFound>
     <NullKeyNotAllowed>IgnoreError</NullKeyNotAllowed>
   </ErrorConfiguration>
   <CurrentStorageMode>Molap</CurrentStorageMode>
   <Translations>
-    <Translation dwd:design-time-name="f0b2e833-2363-4868-8d5a-de6602cd0b6e">
+    <Translation dwd:design-time-name="0643ebcc-3a91-4670-85c4-7413bf1540f7">
       <Language>1033</Language>
       <Caption>Sales Shipping Stat</Caption>
     </Translation>
-    <Translation dwd:design-time-name="45661696-4dbe-4b6e-a986-d0cf567543d9">
+    <Translation dwd:design-time-name="4d8154e9-b625-4c28-8b47-268e2814adaf">
       <Language>3082</Language>
       <Caption>Especificación de envío</Caption>
     </Translation>
   </Translations>
   <Attributes>
-    <Attribute dwd:design-time-name="d1ffe449-ac56-4489-8c34-37ac45836ffb">
+    <Attribute dwd:design-time-name="db417fec-db7c-4c51-8ad2-9cbc06261c9c">
       <ID>VOLUME</ID>
       <Name>Volume</Name>
       <KeyColumns>
-        <KeyColumn dwd:design-time-name="fa755c6c-d448-4cbe-b641-20279d64273a">
+        <KeyColumn dwd:design-time-name="0fe36848-9c72-4d15-b855-206017da59e9">
           <DataType>WChar</DataType>
           <DataSize>4</DataSize>
-          <Source xsi:type="ColumnBinding" dwd:design-time-name="13432431-868d-48b2-b766-2fb78083612f">
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="262e1fab-9ff8-4b34-bffd-31dcd225ffa9">
             <TableID>SALESSHIPPINGSTAT</TableID>
             <ColumnID>DATAAREAID</ColumnID>
           </Source>
         </KeyColumn>
-        <KeyColumn dwd:design-time-name="43f05054-b46a-43de-9d8f-94591f763b6d">
+        <KeyColumn dwd:design-time-name="876de2f3-7674-4a8b-9b8f-91568c5ff035">
           <DataType>Double</DataType>
-          <Source xsi:type="ColumnBinding" dwd:design-time-name="414f8531-d955-48d6-96c7-a604c132a8d3">
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="ec7f2b91-28f9-4209-af9d-5eb0e705d84a">
             <TableID>SALESSHIPPINGSTAT</TableID>
             <ColumnID>VOLUME</ColumnID>
           </Source>
         </KeyColumn>
       </KeyColumns>
-      <NameColumn dwd:design-time-name="bf3440f8-b371-465a-b9d2-ed63af896854">
+      <NameColumn dwd:design-time-name="f28b6865-b0b0-428d-a774-058b5cf47363">
         <DataType>WChar</DataType>
-        <Source xsi:type="ColumnBinding" dwd:design-time-name="f898dea4-a362-4582-894e-8cd18d656f5e">
+        <Source xsi:type="ColumnBinding" dwd:design-time-name="ec7ef65b-2cf7-4826-994a-f70bd3884744">
           <TableID>SALESSHIPPINGSTAT</TableID>
           <ColumnID>VOLUME</ColumnID>
         </Source>
       </NameColumn>
       <Translations>
-        <Translation dwd:design-time-name="21122553-2d9c-4559-b327-af260e7ae9f9">
+        <Translation dwd:design-time-name="d6b03c47-2c31-4b2a-8f9e-78b151d1525f">
           <Language>1033</Language>
           <Caption>Volume</Caption>
         </Translation>
-        <Translation dwd:design-time-name="c27c6e40-5538-4d63-bc1b-d0e433167ac4">
+        <Translation dwd:design-time-name="252f4f0c-3c39-4707-bc96-f4e0497a2eb9">
           <Language>3082</Language>
           <Caption>Volumen</Caption>
         </Translation>
@@ -386,39 +387,39 @@
       <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
       <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
     </Attribute>
-    <Attribute dwd:design-time-name="2d8c7083-6fab-4b1a-9da9-01ca94eca304">
+    <Attribute dwd:design-time-name="a1eb75ce-bfa5-41c6-8b40-c837616694d9">
       <ID>NETWEIGHT</ID>
       <Name>Net Weight</Name>
       <KeyColumns>
-        <KeyColumn dwd:design-time-name="9197d8f0-356f-4048-8730-18e23397380e">
+        <KeyColumn dwd:design-time-name="9383801c-bc76-457b-bef4-82afe427cdbe">
           <DataType>WChar</DataType>
           <DataSize>4</DataSize>
-          <Source xsi:type="ColumnBinding" dwd:design-time-name="1ef25128-0733-465f-8da3-c95848ad8cc9">
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="e0789aea-5068-40a8-9d6e-d25e0d3b809b">
             <TableID>SALESSHIPPINGSTAT</TableID>
             <ColumnID>DATAAREAID</ColumnID>
           </Source>
         </KeyColumn>
-        <KeyColumn dwd:design-time-name="4d2155d6-8fc3-44e7-bd43-ad3b5ad3dd55">
+        <KeyColumn dwd:design-time-name="6b730193-31f4-4d8f-a04d-062640749f91">
           <DataType>Double</DataType>
-          <Source xsi:type="ColumnBinding" dwd:design-time-name="5edc2ca1-081f-4282-8132-cc2bd3305558">
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="e9a23cd6-200f-4f64-8771-a419588539d8">
             <TableID>SALESSHIPPINGSTAT</TableID>
             <ColumnID>NETWEIGHT</ColumnID>
           </Source>
         </KeyColumn>
       </KeyColumns>
-      <NameColumn dwd:design-time-name="84ec8d09-2dec-44ab-998e-94147886b985">
+      <NameColumn dwd:design-time-name="4f61f4f6-44a8-441f-b253-c70eb3c58896">
         <DataType>WChar</DataType>
-        <Source xsi:type="ColumnBinding" dwd:design-time-name="bc92adf6-eeb9-4ab2-837c-3a170de93ec8">
+        <Source xsi:type="ColumnBinding" dwd:design-time-name="1c21491a-417a-4368-aa16-4763a66e9b52">
           <TableID>SALESSHIPPINGSTAT</TableID>
           <ColumnID>NETWEIGHT</ColumnID>
         </Source>
       </NameColumn>
       <Translations>
-        <Translation dwd:design-time-name="228a8108-582e-4b98-8896-3231553ddb6a">
+        <Translation dwd:design-time-name="56f335e5-bcf1-4905-80d3-97f390739c3f">
           <Language>1033</Language>
           <Caption>Net Weight</Caption>
         </Translation>
-        <Translation dwd:design-time-name="2ef6a574-6d79-47c2-bc91-fcfcbb5b8425">
+        <Translation dwd:design-time-name="0bcc78a4-3b98-46fe-be85-6187020147c8">
           <Language>3082</Language>
           <Caption>Peso Neto</Caption>
         </Translation>
@@ -427,39 +428,39 @@
       <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
       <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
     </Attribute>
-    <Attribute dwd:design-time-name="581c293e-97b0-4c38-934e-119ee22d45cd">
+    <Attribute dwd:design-time-name="5556cd4f-c291-474e-a8e9-e4483116554e">
       <ID>GROSSWEIGHT</ID>
       <Name>Gross Weight</Name>
       <KeyColumns>
-        <KeyColumn dwd:design-time-name="2c34986f-afed-4493-8a27-065b6c31bfab">
+        <KeyColumn dwd:design-time-name="5bfaada8-5273-481c-8ab8-b2a938dca8ac">
           <DataType>WChar</DataType>
           <DataSize>4</DataSize>
-          <Source xsi:type="ColumnBinding" dwd:design-time-name="e8512ed2-9e4d-4e5e-a590-87c7485c640f">
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="6af85b76-5e0a-46c5-81a2-4f7eb126c442">
             <TableID>SALESSHIPPINGSTAT</TableID>
             <ColumnID>DATAAREAID</ColumnID>
           </Source>
         </KeyColumn>
-        <KeyColumn dwd:design-time-name="208eef0a-a351-4164-9987-1e896fc99d9a">
+        <KeyColumn dwd:design-time-name="07773c25-4799-4efc-b61d-138f1ba7935b">
           <DataType>Double</DataType>
-          <Source xsi:type="ColumnBinding" dwd:design-time-name="d9f40c4b-2a6d-4950-9f1d-516dbc950dfb">
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="1e6e4663-f732-49b8-82d7-a22e6e6a69b2">
             <TableID>SALESSHIPPINGSTAT</TableID>
             <ColumnID>GROSSWEIGHT</ColumnID>
           </Source>
         </KeyColumn>
       </KeyColumns>
-      <NameColumn dwd:design-time-name="ce4c17dc-322a-4bd4-9451-83ebc756d6b7">
+      <NameColumn dwd:design-time-name="3a449cb1-bc6a-41e9-907c-3a490cf1a888">
         <DataType>WChar</DataType>
-        <Source xsi:type="ColumnBinding" dwd:design-time-name="07f62d00-4d85-4277-82f4-0cec120ef211">
+        <Source xsi:type="ColumnBinding" dwd:design-time-name="a508c09f-5c4d-4bf5-aaa3-c79bd6f47a24">
           <TableID>SALESSHIPPINGSTAT</TableID>
           <ColumnID>GROSSWEIGHT</ColumnID>
         </Source>
       </NameColumn>
       <Translations>
-        <Translation dwd:design-time-name="a9a0b3e8-3301-4cf4-be42-fc9b021a61a9">
+        <Translation dwd:design-time-name="368568e4-6248-4e28-88c4-b25460e0dd71">
           <Language>1033</Language>
           <Caption>Gross Weight</Caption>
         </Translation>
-        <Translation dwd:design-time-name="20df79d4-debd-4c87-9251-dd1d4668a0d3">
+        <Translation dwd:design-time-name="b765b01f-c085-4655-9616-a6fc8684377b">
           <Language>3082</Language>
           <Caption>Peso bruto</Caption>
         </Translation>
@@ -468,39 +469,39 @@
       <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
       <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
     </Attribute>
-    <Attribute dwd:design-time-name="f7990935-31bb-434a-bd4b-070e8b9a5f5e">
+    <Attribute dwd:design-time-name="c7782126-40a0-42d6-a0d1-18cbfc68299e">
       <ID>CARTONSQTY</ID>
       <Name>Cartons Quantity</Name>
       <KeyColumns>
-        <KeyColumn dwd:design-time-name="1e37199a-10b0-4793-a5dc-d90504f01879">
+        <KeyColumn dwd:design-time-name="9a9a8481-dd66-4d4b-91e2-a287176255f8">
           <DataType>WChar</DataType>
           <DataSize>4</DataSize>
-          <Source xsi:type="ColumnBinding" dwd:design-time-name="6be072d5-f027-4dc2-9474-6645a3b6e4f6">
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="f6a53a30-b3c8-4ded-b78f-0c981649519e">
             <TableID>SALESSHIPPINGSTAT</TableID>
             <ColumnID>DATAAREAID</ColumnID>
           </Source>
         </KeyColumn>
-        <KeyColumn dwd:design-time-name="9963b245-1e0d-4ab4-b3a0-21bfac9759ea">
+        <KeyColumn dwd:design-time-name="7b181c53-f88c-451d-a695-da7666803e91">
           <DataType>Double</DataType>
-          <Source xsi:type="ColumnBinding" dwd:design-time-name="00e17b8e-bdf3-4e65-a883-33543fce9a52">
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="bfcef80a-80fe-48bd-97e7-875d76f269f3">
             <TableID>SALESSHIPPINGSTAT</TableID>
             <ColumnID>CARTONSQTY</ColumnID>
           </Source>
         </KeyColumn>
       </KeyColumns>
-      <NameColumn dwd:design-time-name="ceb10c7b-b234-42ce-aade-a06aa01155fc">
+      <NameColumn dwd:design-time-name="f9582641-3ece-4567-ae72-0b5a0d0860d4">
         <DataType>WChar</DataType>
-        <Source xsi:type="ColumnBinding" dwd:design-time-name="0062d740-91e5-48c1-a1d3-720a04e0174d">
+        <Source xsi:type="ColumnBinding" dwd:design-time-name="57192563-0926-45cc-b711-67ad4ae7655f">
           <TableID>SALESSHIPPINGSTAT</TableID>
           <ColumnID>CARTONSQTY</ColumnID>
         </Source>
       </NameColumn>
       <Translations>
-        <Translation dwd:design-time-name="541e02c6-2eeb-4b34-9327-b28b72790d6e">
+        <Translation dwd:design-time-name="3bc7f582-b251-4333-b390-47f2e311ea71">
           <Language>1033</Language>
           <Caption>Cartons Quantity</Caption>
         </Translation>
-        <Translation dwd:design-time-name="3eb43a0f-48e2-471a-863a-83063c863d2a">
+        <Translation dwd:design-time-name="e87a1773-1943-4175-9526-775041f0bb79">
           <Language>3082</Language>
           <Caption>Bultos en pallet</Caption>
         </Translation>
@@ -509,39 +510,39 @@
       <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
       <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
     </Attribute>
-    <Attribute dwd:design-time-name="e28de8f6-b541-4559-96bf-cdc08b46a847">
+    <Attribute dwd:design-time-name="44eb1940-6695-4df9-9bba-2b54ad0dd792">
       <ID>QUANTITY</ID>
       <Name>Quantiy</Name>
       <KeyColumns>
-        <KeyColumn dwd:design-time-name="ca1ecf1c-ae3b-4775-8b7e-e7caf24db013">
+        <KeyColumn dwd:design-time-name="66ce2ff9-018f-43f5-9530-68271667715c">
           <DataType>WChar</DataType>
           <DataSize>4</DataSize>
-          <Source xsi:type="ColumnBinding" dwd:design-time-name="ef88e73d-717f-4fb4-9d0b-2dd1b72e66a9">
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="5f9513ad-f4b6-47d0-af78-49897112686a">
             <TableID>SALESSHIPPINGSTAT</TableID>
             <ColumnID>DATAAREAID</ColumnID>
           </Source>
         </KeyColumn>
-        <KeyColumn dwd:design-time-name="a43cbe22-338e-4779-bf50-01487328c951">
+        <KeyColumn dwd:design-time-name="3917f8e2-29c1-4c67-bfe6-71dd48f45faa">
           <DataType>Double</DataType>
-          <Source xsi:type="ColumnBinding" dwd:design-time-name="d0aea598-75bd-420b-b566-ab838eddd30e">
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="4f804b6f-e440-4f2a-a348-f049551cbf6f">
             <TableID>SALESSHIPPINGSTAT</TableID>
             <ColumnID>QUANTITY</ColumnID>
           </Source>
         </KeyColumn>
       </KeyColumns>
-      <NameColumn dwd:design-time-name="61de4e92-3aa7-4884-a095-90b1f447f1db">
+      <NameColumn dwd:design-time-name="6013e485-d9d9-4660-9717-26c7c71655fb">
         <DataType>WChar</DataType>
-        <Source xsi:type="ColumnBinding" dwd:design-time-name="e2421979-3faa-4bb7-9aea-e84f6aa446b6">
+        <Source xsi:type="ColumnBinding" dwd:design-time-name="53d59e4e-0b98-473f-aa82-db8b826dab9c">
           <TableID>SALESSHIPPINGSTAT</TableID>
           <ColumnID>QUANTITY</ColumnID>
         </Source>
       </NameColumn>
       <Translations>
-        <Translation dwd:design-time-name="9c9623d2-2394-4e3e-866c-aca15bec2571">
+        <Translation dwd:design-time-name="fc6e4d01-2d37-454b-b61f-830fd28507d5">
           <Language>1033</Language>
           <Caption>Quantity</Caption>
         </Translation>
-        <Translation dwd:design-time-name="86fcefb4-95fc-43d8-b752-39b4acc56839">
+        <Translation dwd:design-time-name="08d66691-299c-4ce7-ad10-036af51d8184">
           <Language>3082</Language>
           <Caption>Número de unidades</Caption>
         </Translation>
@@ -550,39 +551,39 @@
       <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
       <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
     </Attribute>
-    <Attribute dwd:design-time-name="bea562bf-95a4-487c-827a-eba56a8fbcd5">
+    <Attribute dwd:design-time-name="8310906d-b491-4679-ba09-3b00e7d83018">
       <ID>UNITBULK</ID>
       <Name>Unit Bulk</Name>
       <KeyColumns>
-        <KeyColumn dwd:design-time-name="ca7125f2-20b0-4bbd-a6eb-485bc4010177">
+        <KeyColumn dwd:design-time-name="3913effe-6cf1-4f13-8fed-d4c9a67ddac8">
           <DataType>WChar</DataType>
           <DataSize>4</DataSize>
-          <Source xsi:type="ColumnBinding" dwd:design-time-name="ef0fb5ba-91a9-41e9-99a0-988b9cf97b9a">
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="d0fea40e-3a02-47ac-a431-24ff7904b1c5">
             <TableID>SALESSHIPPINGSTAT</TableID>
             <ColumnID>DATAAREAID</ColumnID>
           </Source>
         </KeyColumn>
-        <KeyColumn dwd:design-time-name="b8983b19-8c11-4cfd-99ba-621ceda82026">
+        <KeyColumn dwd:design-time-name="dfffe001-2c08-4eaa-91ad-f39fe94c3849">
           <DataType>Double</DataType>
-          <Source xsi:type="ColumnBinding" dwd:design-time-name="b085347d-f75a-46ff-8fc0-503ce2d9a389">
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="a9415969-2473-4843-ba38-b2917eef5911">
             <TableID>SALESSHIPPINGSTAT</TableID>
             <ColumnID>UNITBULK</ColumnID>
           </Source>
         </KeyColumn>
       </KeyColumns>
-      <NameColumn dwd:design-time-name="525aafc7-a643-454e-a6ae-4ab3b0b10ae7">
+      <NameColumn dwd:design-time-name="db45f0d5-f49e-4464-85d7-4b0c64c90436">
         <DataType>WChar</DataType>
-        <Source xsi:type="ColumnBinding" dwd:design-time-name="9a0a2b82-9a54-41c6-938b-7da48a3cf6a9">
+        <Source xsi:type="ColumnBinding" dwd:design-time-name="27271452-63bb-4680-88aa-57758bc6b804">
           <TableID>SALESSHIPPINGSTAT</TableID>
           <ColumnID>UNITBULK</ColumnID>
         </Source>
       </NameColumn>
       <Translations>
-        <Translation dwd:design-time-name="35c729b9-5e43-43c7-b481-d993b181ed0d">
+        <Translation dwd:design-time-name="88f938a6-2726-437c-952f-5746fc37fea1">
           <Language>1033</Language>
           <Caption>Unit Bulk</Caption>
         </Translation>
-        <Translation dwd:design-time-name="620a5f8f-c67f-49ae-a097-975de7c26402">
+        <Translation dwd:design-time-name="a5d307e0-d5c1-42e2-9fe4-6dd52d919538">
           <Language>3082</Language>
           <Caption>Bultos sueltos</Caption>
         </Translation>
@@ -591,39 +592,39 @@
       <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
       <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
     </Attribute>
-    <Attribute dwd:design-time-name="b528506f-61da-4f02-b42f-c07c95422edb">
+    <Attribute dwd:design-time-name="538d3e3f-c387-4426-b786-751fd00491c2">
       <ID>PALLETEURQTY</ID>
       <Name>Euro Pallet Quantity</Name>
       <KeyColumns>
-        <KeyColumn dwd:design-time-name="8221565c-1888-40ad-93d5-504d21861228">
+        <KeyColumn dwd:design-time-name="74165b4c-d5a9-4dad-afac-f9fe897935c4">
           <DataType>WChar</DataType>
           <DataSize>4</DataSize>
-          <Source xsi:type="ColumnBinding" dwd:design-time-name="7b4dc743-c8cc-460a-878a-e4d1ee76ad30">
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="f07bb991-3380-4e50-b0a8-2bbce3d3acb9">
             <TableID>SALESSHIPPINGSTAT</TableID>
             <ColumnID>DATAAREAID</ColumnID>
           </Source>
         </KeyColumn>
-        <KeyColumn dwd:design-time-name="244ccefe-bf81-4949-867b-766cde2ee973">
+        <KeyColumn dwd:design-time-name="71b14cd1-13cc-4a08-8f7b-32317fede423">
           <DataType>Double</DataType>
-          <Source xsi:type="ColumnBinding" dwd:design-time-name="72acb3a8-1160-4a77-95e8-1c35745c093a">
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="c28d6d96-9410-4474-9485-d75ebdd62a2d">
             <TableID>SALESSHIPPINGSTAT</TableID>
             <ColumnID>PALLETEURQTY</ColumnID>
           </Source>
         </KeyColumn>
       </KeyColumns>
-      <NameColumn dwd:design-time-name="867db8d7-900e-4d0c-9b03-26ca72e26e86">
+      <NameColumn dwd:design-time-name="9d335d86-313e-4722-82bc-faa5eb901f4b">
         <DataType>WChar</DataType>
-        <Source xsi:type="ColumnBinding" dwd:design-time-name="7d31f38e-5677-4136-bffc-7ff814b475f6">
+        <Source xsi:type="ColumnBinding" dwd:design-time-name="7747c809-f4be-4042-9a3e-7c3e11333208">
           <TableID>SALESSHIPPINGSTAT</TableID>
           <ColumnID>PALLETEURQTY</ColumnID>
         </Source>
       </NameColumn>
       <Translations>
-        <Translation dwd:design-time-name="1e74d7cb-2464-4d71-bcfa-582265ac27de">
+        <Translation dwd:design-time-name="01a77ecb-66f6-42b6-a956-ba194881affd">
           <Language>1033</Language>
           <Caption>Euro Pallet Quantity</Caption>
         </Translation>
-        <Translation dwd:design-time-name="3fac7f9c-0bd1-4269-972c-863c5a534927">
+        <Translation dwd:design-time-name="87cf394e-9f1f-4ab9-a611-286a457538c2">
           <Language>3082</Language>
           <Caption>Número pallets Europeos</Caption>
         </Translation>
@@ -632,39 +633,39 @@
       <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
       <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
     </Attribute>
-    <Attribute dwd:design-time-name="be557fe3-95be-47e3-b213-49bf2cd243e3">
+    <Attribute dwd:design-time-name="50d7559c-6dfc-42aa-8180-d55eee67aca8">
       <ID>PALLETQTY</ID>
       <Name>Pallet Quantity</Name>
       <KeyColumns>
-        <KeyColumn dwd:design-time-name="b5241854-869a-4f3a-9ef6-3a539353ffe7">
+        <KeyColumn dwd:design-time-name="268c9dcc-5275-4c5c-b5c3-f83de725f467">
           <DataType>WChar</DataType>
           <DataSize>4</DataSize>
-          <Source xsi:type="ColumnBinding" dwd:design-time-name="a8d89fa7-e4db-48a4-9fee-70fb061b4ffa">
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="40303d31-02eb-4e08-9477-dde9f84b4caf">
             <TableID>SALESSHIPPINGSTAT</TableID>
             <ColumnID>DATAAREAID</ColumnID>
           </Source>
         </KeyColumn>
-        <KeyColumn dwd:design-time-name="342014df-e47b-45af-8cf7-9cab07773cd6">
+        <KeyColumn dwd:design-time-name="25e6f456-dbad-4056-aa58-53807eeb8a17">
           <DataType>Double</DataType>
-          <Source xsi:type="ColumnBinding" dwd:design-time-name="72266e74-c874-40d3-8927-4d46566c116c">
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="440cc9a2-cd07-494c-ab39-1003a67d32a6">
             <TableID>SALESSHIPPINGSTAT</TableID>
             <ColumnID>PALLETQTY</ColumnID>
           </Source>
         </KeyColumn>
       </KeyColumns>
-      <NameColumn dwd:design-time-name="dbc08c61-b503-45d2-933e-74130cc6a9bc">
+      <NameColumn dwd:design-time-name="3f6d8355-eb26-4d61-bb5f-7cf1934db29d">
         <DataType>WChar</DataType>
-        <Source xsi:type="ColumnBinding" dwd:design-time-name="515d9c5c-324c-4541-a6ca-d6cb1ceae0ae">
+        <Source xsi:type="ColumnBinding" dwd:design-time-name="b3950da9-00d8-48a8-bf4b-50e0e2f05c7e">
           <TableID>SALESSHIPPINGSTAT</TableID>
           <ColumnID>PALLETQTY</ColumnID>
         </Source>
       </NameColumn>
       <Translations>
-        <Translation dwd:design-time-name="cce8e3ef-f86a-4cd9-a238-4a00c219512d">
+        <Translation dwd:design-time-name="b2395929-c703-4b17-ae62-6f6dd2dd3bc5">
           <Language>1033</Language>
           <Caption>Pallet Quantity</Caption>
         </Translation>
-        <Translation dwd:design-time-name="9feae844-0c60-4850-8f94-2953622afda6">
+        <Translation dwd:design-time-name="1d27b5e3-7086-43c5-8327-48fde4fb16f1">
           <Language>3082</Language>
           <Caption>Número pallets Totales</Caption>
         </Translation>
@@ -673,39 +674,39 @@
       <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
       <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
     </Attribute>
-    <Attribute dwd:design-time-name="4462114c-b399-4bf3-a3c0-7c3f6c510223">
+    <Attribute dwd:design-time-name="bb13f18a-89c8-4825-8f29-991e43972594">
       <ID>TAGGDPQTY</ID>
       <Name>GDP Tag Quantity</Name>
       <KeyColumns>
-        <KeyColumn dwd:design-time-name="c398f993-c50f-4bc1-b0ed-64c878adbd10">
+        <KeyColumn dwd:design-time-name="951b4655-4e77-43df-9e70-eb264af799a8">
           <DataType>WChar</DataType>
           <DataSize>4</DataSize>
-          <Source xsi:type="ColumnBinding" dwd:design-time-name="9b978b2b-63db-46fb-9da0-b94ff8a4dce0">
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="d7bc4a77-dd57-4a4f-8374-862dced817ff">
             <TableID>SALESSHIPPINGSTAT</TableID>
             <ColumnID>DATAAREAID</ColumnID>
           </Source>
         </KeyColumn>
-        <KeyColumn dwd:design-time-name="3b46d76b-fffc-4e6f-b07c-4260df1ef42c">
+        <KeyColumn dwd:design-time-name="c674006f-b3b5-4ffb-8219-51828755e8ce">
           <DataType>Double</DataType>
-          <Source xsi:type="ColumnBinding" dwd:design-time-name="62b4946e-4e13-43bd-b819-341e3a68f03a">
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="510a3a15-998b-40c6-a9d1-1c56747e4211">
             <TableID>SALESSHIPPINGSTAT</TableID>
             <ColumnID>TAGGDPQTY</ColumnID>
           </Source>
         </KeyColumn>
       </KeyColumns>
-      <NameColumn dwd:design-time-name="11720b6a-f596-4690-a5c1-7850a73de2a3">
+      <NameColumn dwd:design-time-name="c1e5e19e-7e74-462c-9258-21b4e5f02a96">
         <DataType>WChar</DataType>
-        <Source xsi:type="ColumnBinding" dwd:design-time-name="d19415ef-4d6a-41d7-a86f-4ec84dfb5a9b">
+        <Source xsi:type="ColumnBinding" dwd:design-time-name="28516c9f-aca2-49bb-8e14-3c7bb751e687">
           <TableID>SALESSHIPPINGSTAT</TableID>
           <ColumnID>TAGGDPQTY</ColumnID>
         </Source>
       </NameColumn>
       <Translations>
-        <Translation dwd:design-time-name="564305cf-c341-448b-93e2-1ee78fd30a66">
+        <Translation dwd:design-time-name="7623b210-873b-4458-83d6-77622867e340">
           <Language>1033</Language>
           <Caption>GDP Tag Quantity</Caption>
         </Translation>
-        <Translation dwd:design-time-name="b71c706a-19b8-41ee-9311-cffaabd202df">
+        <Translation dwd:design-time-name="c1710d56-0634-4963-875e-c0be29f3bab0">
           <Language>3082</Language>
           <Caption>Número Etiquetas GDP</Caption>
         </Translation>
@@ -714,39 +715,39 @@
       <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
       <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
     </Attribute>
-    <Attribute dwd:design-time-name="b323540d-051c-4e6b-ab36-847f68e8cbd0">
+    <Attribute dwd:design-time-name="96b86e4e-1b9c-4969-9043-d68cfd7257ac">
       <ID>DELIVERYDATECARRIER</ID>
       <Name>Carrier Delivery Date</Name>
       <KeyColumns>
-        <KeyColumn dwd:design-time-name="51fc3c1a-741c-42df-b0f1-9998332cb520">
+        <KeyColumn dwd:design-time-name="6c281fcf-1de7-4f10-83ce-6b47edec6b15">
           <DataType>WChar</DataType>
           <DataSize>4</DataSize>
-          <Source xsi:type="ColumnBinding" dwd:design-time-name="fcb62a96-27f9-4e27-8744-2f259b17661f">
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="569f9778-ccf9-4e36-9182-1aaa27d4649a">
             <TableID>SALESSHIPPINGSTAT</TableID>
             <ColumnID>DATAAREAID</ColumnID>
           </Source>
         </KeyColumn>
-        <KeyColumn dwd:design-time-name="c806bf63-1810-4c59-adb0-31e1e1d7b62c">
+        <KeyColumn dwd:design-time-name="afcb53d5-1ffd-4378-ae03-80cf43d516ea">
           <DataType>Date</DataType>
-          <Source xsi:type="ColumnBinding" dwd:design-time-name="e626793e-44b7-4995-9e8a-744861f41b18">
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="e6389665-ad71-4922-8f03-38a7ef1cbef5">
             <TableID>SALESSHIPPINGSTAT</TableID>
             <ColumnID>DELIVERYDATECARRIER</ColumnID>
           </Source>
         </KeyColumn>
       </KeyColumns>
-      <NameColumn dwd:design-time-name="400f6352-9d10-4b81-83b4-6ef429d94fd2">
+      <NameColumn dwd:design-time-name="88771e53-4da8-41d8-a8b3-b1e8f508c4d1">
         <DataType>WChar</DataType>
-        <Source xsi:type="ColumnBinding" dwd:design-time-name="23798a5a-30f4-4793-96f4-0e05a221a646">
+        <Source xsi:type="ColumnBinding" dwd:design-time-name="5eec4d07-0c81-4539-99ed-834d9e6c2ad9">
           <TableID>SALESSHIPPINGSTAT</TableID>
           <ColumnID>DELIVERYDATECARRIER</ColumnID>
         </Source>
       </NameColumn>
       <Translations>
-        <Translation dwd:design-time-name="dc32c0c0-f31e-4a65-9e05-0c43b231d241">
+        <Translation dwd:design-time-name="cc253df2-470c-43d7-b7df-974eef7ad84f">
           <Language>1033</Language>
           <Caption>Carrier Delivery Date</Caption>
         </Translation>
-        <Translation dwd:design-time-name="51ffbd3d-225d-4c5a-a8a0-e045eea7f912">
+        <Translation dwd:design-time-name="ce5af42d-19ef-4e5e-9b21-6483cb4ee629">
           <Language>3082</Language>
           <Caption>Fecha Entrega Transportista</Caption>
         </Translation>
@@ -755,39 +756,39 @@
       <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
       <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
     </Attribute>
-    <Attribute dwd:design-time-name="fff33e94-9d73-4741-ad6d-8e82ce3c671c">
+    <Attribute dwd:design-time-name="6f9cdb73-f849-4719-ac58-e5c22469fed9">
       <ID>DATETIMESENDEDTRACKING</ID>
       <Name>Date Time Sended Tracking</Name>
       <KeyColumns>
-        <KeyColumn dwd:design-time-name="98733778-9f03-4421-869a-3cf492d616ce">
+        <KeyColumn dwd:design-time-name="aefc1b69-1039-4300-a61d-9c86f8581a65">
           <DataType>WChar</DataType>
           <DataSize>4</DataSize>
-          <Source xsi:type="ColumnBinding" dwd:design-time-name="677abf8b-1fbf-4a23-8354-61ccfcf3d336">
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="4025e6ac-f133-43f8-a094-86211b09ea85">
             <TableID>SALESSHIPPINGSTAT</TableID>
             <ColumnID>DATAAREAID</ColumnID>
           </Source>
         </KeyColumn>
-        <KeyColumn dwd:design-time-name="4d90e37f-8bf1-4938-a04c-fdbbe58a9d4a">
+        <KeyColumn dwd:design-time-name="3faa053a-9429-472c-89ae-2a107ab85a87">
           <DataType>Date</DataType>
-          <Source xsi:type="ColumnBinding" dwd:design-time-name="58664cb0-5553-4999-acad-6f8799009bc4">
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="c695503d-60ce-4eff-99d4-a730f17f0f29">
             <TableID>SALESSHIPPINGSTAT</TableID>
             <ColumnID>DATETIMESENDEDTRACKING</ColumnID>
           </Source>
         </KeyColumn>
       </KeyColumns>
-      <NameColumn dwd:design-time-name="14448209-01f4-492e-aa91-ceb236aa9f54">
+      <NameColumn dwd:design-time-name="10323aac-c2bf-4078-af25-7963703d5870">
         <DataType>WChar</DataType>
-        <Source xsi:type="ColumnBinding" dwd:design-time-name="95d842a9-d7d3-4931-8c05-334bf7d715c8">
+        <Source xsi:type="ColumnBinding" dwd:design-time-name="52f48fa6-3ef6-474c-98d8-a618177a4ca2">
           <TableID>SALESSHIPPINGSTAT</TableID>
           <ColumnID>DATETIMESENDEDTRACKING</ColumnID>
         </Source>
       </NameColumn>
       <Translations>
-        <Translation dwd:design-time-name="589c84b8-0af7-4b1b-b314-5b557f55c9e5">
+        <Translation dwd:design-time-name="4a6486c3-19b0-4313-9cdf-af07fbe98c29">
           <Language>1033</Language>
           <Caption>Date Time Sended Tracking</Caption>
         </Translation>
-        <Translation dwd:design-time-name="f3031792-d505-4f20-9172-1b7c816dab77">
+        <Translation dwd:design-time-name="4a836914-59b1-4032-b94b-06dd1ef3339b">
           <Language>3082</Language>
           <Caption>Fecha envío eMail seguimiento</Caption>
         </Translation>
@@ -795,216 +796,217 @@
       <OrderBy>Key</OrderBy>
       <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
       <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+      <ddl300_300:FormatString>dd/MM/yyyy</ddl300_300:FormatString>
     </Attribute>
-    <Attribute dwd:design-time-name="7503cd6e-f4cd-451f-8815-ca36c0930376">
+    <Attribute dwd:design-time-name="c2f27c42-4f22-4a4b-a3d6-c8aea38e5381">
       <ID>PACKINGSLIPID</ID>
       <Name>Packing Slip ID</Name>
       <Usage>Key</Usage>
       <KeyColumns>
-        <KeyColumn dwd:design-time-name="6974646a-d01d-4a32-b169-c91f378d4a87">
+        <KeyColumn dwd:design-time-name="8a77618f-8def-4a68-a8a1-1e4de0232b0a">
           <DataType>WChar</DataType>
           <DataSize>20</DataSize>
-          <Source xsi:type="ColumnBinding" dwd:design-time-name="b8b0cd71-2e5c-445b-923d-28d1e0246842">
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="3105b1ea-0c09-4c0b-a0cd-667c1d0ad87e">
             <TableID>SALESSHIPPINGSTAT</TableID>
             <ColumnID>SALESID</ColumnID>
           </Source>
         </KeyColumn>
-        <KeyColumn dwd:design-time-name="d4cf0f9b-f2ac-4f21-83e0-09e6ff84a149">
+        <KeyColumn dwd:design-time-name="928e89df-642e-4918-bf44-b47b13544977">
           <DataType>WChar</DataType>
           <DataSize>20</DataSize>
-          <Source xsi:type="ColumnBinding" dwd:design-time-name="a461fb41-ab76-48de-a5e7-82da88d51909">
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="948adfc2-dce8-49cb-a652-dc2f1eb5dd7c">
             <TableID>SALESSHIPPINGSTAT</TableID>
             <ColumnID>PACKINGSLIPID</ColumnID>
           </Source>
         </KeyColumn>
-        <KeyColumn dwd:design-time-name="b334c128-530a-416b-876d-e85dd4e35c22">
+        <KeyColumn dwd:design-time-name="d36ba51f-a458-485b-8925-37995125c74a">
           <DataType>Date</DataType>
-          <Source xsi:type="ColumnBinding" dwd:design-time-name="a448ca09-811b-464a-9ea7-0be1ecdee2cb">
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="2ce8e9d3-f3ee-45d2-ba7b-c594d2e1ce9c">
             <TableID>SALESSHIPPINGSTAT</TableID>
             <ColumnID>DELIVERYDATE</ColumnID>
           </Source>
         </KeyColumn>
       </KeyColumns>
-      <NameColumn dwd:design-time-name="ee3f3fc8-ac6f-4005-a896-bb059836d23e">
+      <NameColumn dwd:design-time-name="f7909717-2e1d-4b23-b1ab-0009be6a5009">
         <DataType>WChar</DataType>
         <DataSize>20</DataSize>
-        <Source xsi:type="ColumnBinding" dwd:design-time-name="33c13ca0-78ed-47ab-b92d-c64274c113fa">
+        <Source xsi:type="ColumnBinding" dwd:design-time-name="0e7b3658-602e-46b9-83a1-5d609f10e170">
           <TableID>SALESSHIPPINGSTAT</TableID>
           <ColumnID>PACKINGSLIPID</ColumnID>
         </Source>
       </NameColumn>
       <Translations>
-        <Translation dwd:design-time-name="02038502-4cb1-4094-87ad-27fa41d6eae0">
+        <Translation dwd:design-time-name="528f2f47-5287-4e85-abd4-73269bdd953e">
           <Language>1033</Language>
           <Caption>Packing Slip ID</Caption>
         </Translation>
-        <Translation dwd:design-time-name="5a48c7b2-83b9-495f-a999-bb9e866f503e">
+        <Translation dwd:design-time-name="f16bd86f-e632-43fa-b47d-eea33d79e043">
           <Language>3082</Language>
           <Caption>Albarán</Caption>
         </Translation>
       </Translations>
       <AttributeRelationships>
-        <AttributeRelationship dwd:design-time-name="5280739d-5736-4cac-8a51-1e9f95cd3170">
+        <AttributeRelationship dwd:design-time-name="b9749b38-e85a-4507-a258-372caeb89dd3">
           <AttributeID>VOLUME</AttributeID>
           <Name>Volume</Name>
         </AttributeRelationship>
-        <AttributeRelationship dwd:design-time-name="d1739301-87e7-4605-ac08-c8a40b2acd3a">
+        <AttributeRelationship dwd:design-time-name="808be0dd-e835-4614-ab77-cad61977d9d3">
           <AttributeID>NETWEIGHT</AttributeID>
           <Name>Net Weight</Name>
         </AttributeRelationship>
-        <AttributeRelationship dwd:design-time-name="92f8e0d7-cf97-49c7-b61d-057a86029644">
+        <AttributeRelationship dwd:design-time-name="b0d57432-f2b4-434c-ad0b-c2b4fae94959">
           <AttributeID>GROSSWEIGHT</AttributeID>
           <Name>Gross Weight</Name>
         </AttributeRelationship>
-        <AttributeRelationship dwd:design-time-name="ce74000f-9c68-46e7-8248-d145b9689919">
+        <AttributeRelationship dwd:design-time-name="c5632acd-6f6d-45a3-ad53-d0514eb57ccb">
           <AttributeID>CARTONSQTY</AttributeID>
           <Name>Cartons Quantity</Name>
         </AttributeRelationship>
-        <AttributeRelationship dwd:design-time-name="0986554c-48c2-4d65-9cc1-c217e200031a">
+        <AttributeRelationship dwd:design-time-name="a8dd30fc-24f6-4084-b5e1-b2d469a7932e">
           <AttributeID>QUANTITY</AttributeID>
           <Name>Quantiy</Name>
         </AttributeRelationship>
-        <AttributeRelationship dwd:design-time-name="e5349607-5bb4-443b-b8bd-fdca6334f606">
+        <AttributeRelationship dwd:design-time-name="2a1d8854-2d6d-4dab-9d12-358fd3e7979a">
           <AttributeID>UNITBULK</AttributeID>
           <Name>Unit Bulk</Name>
         </AttributeRelationship>
-        <AttributeRelationship dwd:design-time-name="ec15acde-56c1-4420-b907-a120bee6cab0">
+        <AttributeRelationship dwd:design-time-name="dc5709b2-8303-4fdf-b9e6-e1fc8d16aee5">
           <AttributeID>PALLETEURQTY</AttributeID>
           <Name>Euro Pallet Quantity</Name>
         </AttributeRelationship>
-        <AttributeRelationship dwd:design-time-name="1f41b3ff-5d29-4acc-9323-bb7a3f1358e4">
+        <AttributeRelationship dwd:design-time-name="9af4b35e-2cdd-4c4d-bd1f-aaa0a5a96f0b">
           <AttributeID>PALLETQTY</AttributeID>
           <Name>Pallet Quantity</Name>
         </AttributeRelationship>
-        <AttributeRelationship dwd:design-time-name="36ca6fcb-0ebd-4bd5-acc5-9ae8494c938c">
+        <AttributeRelationship dwd:design-time-name="37d82a90-eae1-44e7-b6fd-5f55abe4b4b1">
           <AttributeID>TAGGDPQTY</AttributeID>
           <Name>GDP Tag Quantity</Name>
         </AttributeRelationship>
-        <AttributeRelationship dwd:design-time-name="928f8e84-1450-4bf8-8d40-fb5d542e873a">
+        <AttributeRelationship dwd:design-time-name="ec2fd3b5-8bf7-4e96-8778-302671115fed">
           <AttributeID>DELIVERYDATECARRIER</AttributeID>
           <Name>Carrier Delivery Date</Name>
         </AttributeRelationship>
-        <AttributeRelationship dwd:design-time-name="7c9ea6ae-0af4-40b1-9fd4-f97a518990e2">
+        <AttributeRelationship dwd:design-time-name="11f40fef-4d4e-4d01-9acd-406477f6111b">
           <AttributeID>DATETIMESENDEDTRACKING</AttributeID>
           <Name>Date Time Sended Tracking</Name>
         </AttributeRelationship>
-        <AttributeRelationship dwd:design-time-name="d64f7661-0afa-41ee-a75d-b2df3cac2b10">
+        <AttributeRelationship dwd:design-time-name="25f295b5-0c41-4948-865a-3455aab12310">
           <AttributeID>DELIVERYDATE</AttributeID>
           <Name>Delivery Date</Name>
         </AttributeRelationship>
-        <AttributeRelationship dwd:design-time-name="1a182aa2-1fdc-4c2c-a391-fcc382fdff64">
+        <AttributeRelationship dwd:design-time-name="bf875663-aa0e-4372-8555-1a319fa39cee">
           <AttributeID>URLTRACKING</AttributeID>
           <Name>URL Tracking</Name>
         </AttributeRelationship>
-        <AttributeRelationship dwd:design-time-name="d04ad67c-f8c2-4275-8b01-ec7e4255b853">
+        <AttributeRelationship dwd:design-time-name="c1998497-a1db-412c-a100-d080f324579e">
           <AttributeID>GPCARRIERTRACKING</AttributeID>
           <Name>Carrier Tracking</Name>
         </AttributeRelationship>
-        <AttributeRelationship dwd:design-time-name="c17f04de-857b-48a2-84e4-f11a84ded529">
+        <AttributeRelationship dwd:design-time-name="6cb01b46-b864-4b5c-81b5-48dafd71d52a">
           <AttributeID>SALESORIGINFROMSALES</AttributeID>
           <Name>Sales Origin From Sales</Name>
         </AttributeRelationship>
-        <AttributeRelationship dwd:design-time-name="1b9d0804-23d6-4734-9902-4f7e6553df9a">
+        <AttributeRelationship dwd:design-time-name="6092628b-98bb-4004-af43-497b06c37b2a">
           <AttributeID>CARRIERNAME</AttributeID>
           <Name>Carrier Name</Name>
         </AttributeRelationship>
-        <AttributeRelationship dwd:design-time-name="ed7e62d0-0785-4c13-8a3e-15985dd857b2">
+        <AttributeRelationship dwd:design-time-name="59430500-b9c6-4d66-83a5-f5d6b2b129f3">
           <AttributeID>Sales Created Date Time</AttributeID>
           <Name>Sales Created Date Time</Name>
         </AttributeRelationship>
-        <AttributeRelationship dwd:design-time-name="6c3154da-9b7c-4093-ad14-99854a30bb9d">
+        <AttributeRelationship dwd:design-time-name="d36f243e-2d91-4022-8219-ef5b86eea2a4">
           <AttributeID>SHIPPINGDATETIME</AttributeID>
           <Name>Shipping Date Time</Name>
         </AttributeRelationship>
-        <AttributeRelationship dwd:design-time-name="b6d4500c-5390-443d-969f-69511b1454bf">
+        <AttributeRelationship dwd:design-time-name="a3368f8f-931d-4216-b76f-4fa7d0946b68">
           <AttributeID>Picking Date Time</AttributeID>
           <Name>Picking Date Time</Name>
         </AttributeRelationship>
-        <AttributeRelationship dwd:design-time-name="6fc33c1f-d14f-4a7d-8a6d-f96038667d5c">
+        <AttributeRelationship dwd:design-time-name="42e66153-f0a0-4be4-a8ed-a116ed998d71">
           <AttributeID>Packing Slip Delivery Date</AttributeID>
           <Name>Packing Slip Delivery Date</Name>
         </AttributeRelationship>
-        <AttributeRelationship dwd:design-time-name="f5de20d4-f34e-4240-ace9-a8e85bbe0a5c">
+        <AttributeRelationship dwd:design-time-name="b0aacbab-7b0c-4b86-a4d8-0af2d8951a90">
           <AttributeID>DLVZIPCODE</AttributeID>
           <Name>Delivery Zip Code</Name>
         </AttributeRelationship>
-        <AttributeRelationship dwd:design-time-name="b946a9fd-ee62-4842-b0d5-8cd36a582a70">
+        <AttributeRelationship dwd:design-time-name="f9ed62a7-27c7-4250-9a04-871ec0a80103">
           <AttributeID>DLVCOUNTRYREGIONID</AttributeID>
           <Name>Delivery Country</Name>
         </AttributeRelationship>
-        <AttributeRelationship dwd:design-time-name="ce75ea05-121d-45f1-b5e0-2b463226eebd">
+        <AttributeRelationship dwd:design-time-name="5d8eafc5-01fd-46f4-a92d-602b1a002b73">
           <AttributeID>DLVREASONID</AttributeID>
           <Name>Delayed Reason</Name>
         </AttributeRelationship>
-        <AttributeRelationship dwd:design-time-name="d36d2354-054a-4735-a564-d940d56c6bce">
+        <AttributeRelationship dwd:design-time-name="7c960825-9ae9-4eeb-bb6f-5138cd38f8ac">
           <AttributeID>Shipping Work Days</AttributeID>
           <Name>Shipping Work Days</Name>
         </AttributeRelationship>
-        <AttributeRelationship dwd:design-time-name="3a07413b-f643-454f-a253-f0eb072e628b">
+        <AttributeRelationship dwd:design-time-name="e321c517-eecb-4839-84f6-a38480db0ebe">
           <AttributeID>Max Delivery Days</AttributeID>
           <Name>Max Delivery Days</Name>
         </AttributeRelationship>
-        <AttributeRelationship dwd:design-time-name="dc34e285-2632-499f-a99a-a822b779dc35">
+        <AttributeRelationship dwd:design-time-name="e6d92c02-e084-4a21-aac7-ca4e14e25f00">
           <AttributeID>INVENTLOCATIONID</AttributeID>
           <Name>Invent Location</Name>
         </AttributeRelationship>
-        <AttributeRelationship dwd:design-time-name="dca3dc9f-4dcb-44ae-b2a8-4df488b8fcb8">
+        <AttributeRelationship dwd:design-time-name="4f808e96-7213-45de-923e-55b16abcd1a6">
           <AttributeID>Chargeable</AttributeID>
           <Name>Chargeable</Name>
         </AttributeRelationship>
-        <AttributeRelationship dwd:design-time-name="d5ee4302-14cd-4fa4-81cc-564ff9449600">
+        <AttributeRelationship dwd:design-time-name="3f2b0e0c-f962-4171-80ec-84a386977bff">
           <AttributeID>Delivery On Time</AttributeID>
           <Name>Delivery On Time</Name>
         </AttributeRelationship>
-        <AttributeRelationship dwd:design-time-name="02396979-93d5-4ea1-b755-27ca0a948322">
+        <AttributeRelationship dwd:design-time-name="ba1496ef-379d-42fa-a034-390159e01fc2">
           <AttributeID>DLVCOUNTY</AttributeID>
           <Name>Delivery County</Name>
         </AttributeRelationship>
-        <AttributeRelationship dwd:design-time-name="ee2e2297-9688-4ff9-af1e-b5bb8035511d">
+        <AttributeRelationship dwd:design-time-name="43d96a53-2c0e-4744-a9b3-c3977e7eaa01">
           <AttributeID>DLVSTATE</AttributeID>
           <Name>Delivery State</Name>
         </AttributeRelationship>
-        <AttributeRelationship dwd:design-time-name="1c5bc2fd-d805-479c-adff-a3d54a0f5adf">
+        <AttributeRelationship dwd:design-time-name="e29c3eff-73bb-4b25-a3e8-3bfccb7f1cab">
           <AttributeID>EXPEDITIONCOST</AttributeID>
           <Name>Expedition Cost</Name>
         </AttributeRelationship>
-        <AttributeRelationship dwd:design-time-name="214e02f1-0798-4840-841a-5aaff8d052c1">
+        <AttributeRelationship dwd:design-time-name="40b327c7-0424-4630-aa02-5a2df30df4f4">
           <AttributeID>SHIPCARRIERINVOICEDATE</AttributeID>
           <Name>Carrier Invoice Date</Name>
         </AttributeRelationship>
-        <AttributeRelationship dwd:design-time-name="ba9b4eb9-9904-4fea-a134-8312280fcb7f">
+        <AttributeRelationship dwd:design-time-name="cff249be-cfd6-4054-aee4-60400bf387b5">
           <AttributeID>EXPEDITIONCOSTREAL</AttributeID>
           <Name>Real Expedition Cost</Name>
         </AttributeRelationship>
-        <AttributeRelationship dwd:design-time-name="ad09a188-8aff-40e1-acb1-3f78d0c17d1d">
+        <AttributeRelationship dwd:design-time-name="cf97f2b5-564f-460d-b3b3-481136901bc3">
           <AttributeID>CARRIERWEIGHT</AttributeID>
           <Name>Shipping Carrier Weight</Name>
         </AttributeRelationship>
-        <AttributeRelationship dwd:design-time-name="96067f26-c5ad-412b-b0a3-f0e9608b5999">
+        <AttributeRelationship dwd:design-time-name="a2996724-f260-4402-a199-e3f91d165854">
           <AttributeID>IMPORTPACKING</AttributeID>
           <Name>Import Packing</Name>
         </AttributeRelationship>
-        <AttributeRelationship dwd:design-time-name="b9855ff9-c1d4-4ba0-9ca9-6009a46fa23e">
+        <AttributeRelationship dwd:design-time-name="8cee86c8-554a-41fa-9bed-4db47feb2fab">
           <AttributeID>GPCODPRICE</AttributeID>
           <Name>Refund</Name>
         </AttributeRelationship>
-        <AttributeRelationship dwd:design-time-name="b88cd3b1-0257-4a02-8308-074825e24a9d">
+        <AttributeRelationship dwd:design-time-name="8f82f09e-d6f6-426e-a172-bb19c31ec51a">
           <AttributeID>Volumetric Weight</AttributeID>
           <Name>Volumetric Weight</Name>
         </AttributeRelationship>
-        <AttributeRelationship dwd:design-time-name="5568d99b-83b1-4263-8519-b90020e17dbd">
+        <AttributeRelationship dwd:design-time-name="9c3fc87b-6f4e-46bf-94fb-9955dc51a7f7">
           <AttributeID>Delivered</AttributeID>
           <Name>Delivered</Name>
         </AttributeRelationship>
-        <AttributeRelationship dwd:design-time-name="452602ee-1d61-4bb6-bd32-23e46b624415">
+        <AttributeRelationship dwd:design-time-name="4aa4d65b-52c1-4cbe-9a6f-058a8e868e23">
           <AttributeID>Dispatched</AttributeID>
           <Name>Dispatched</Name>
         </AttributeRelationship>
       </AttributeRelationships>
-      <ValueColumn dwd:design-time-name="8b644a07-f5e8-4443-bdcc-7d235d1e2091">
+      <ValueColumn dwd:design-time-name="4a79956e-66e8-4772-979e-9ca7e3df978c">
         <DataType>WChar</DataType>
         <DataSize>20</DataSize>
-        <Source xsi:type="ColumnBinding" dwd:design-time-name="52b1fbfc-6910-42fe-9021-c26b70aea022">
+        <Source xsi:type="ColumnBinding" dwd:design-time-name="e4075ebd-29ca-4edb-ac81-6e6f4f7c957e">
           <TableID>SALESSHIPPINGSTAT</TableID>
           <ColumnID></ColumnID>
         </Source>
@@ -1012,39 +1014,39 @@
       <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
       <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
     </Attribute>
-    <Attribute dwd:design-time-name="847ee458-9eaa-4ff5-a800-1966d1a78e20">
+    <Attribute dwd:design-time-name="a1ecdc24-8f55-4bff-bac3-e5bc7e7f6e95">
       <ID>DELIVERYDATE</ID>
       <Name>Delivery Date</Name>
       <KeyColumns>
-        <KeyColumn dwd:design-time-name="11763700-3df2-4b2e-a5b9-a0eddbb0f240">
+        <KeyColumn dwd:design-time-name="52c1a0c6-71d2-4626-b7cc-73fa7818c539">
           <DataType>WChar</DataType>
           <DataSize>4</DataSize>
-          <Source xsi:type="ColumnBinding" dwd:design-time-name="ca80cc7a-10d4-4ba9-bec6-3dba85f8b89a">
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="b0cb5530-70a3-4749-8b8a-643f42f7285f">
             <TableID>SALESSHIPPINGSTAT</TableID>
             <ColumnID>DATAAREAID</ColumnID>
           </Source>
         </KeyColumn>
-        <KeyColumn dwd:design-time-name="f7026ec7-01a7-4f20-941b-a6aac5ba99ac">
+        <KeyColumn dwd:design-time-name="2622725b-40e3-463e-a5dc-7a3b54d28860">
           <DataType>Date</DataType>
-          <Source xsi:type="ColumnBinding" dwd:design-time-name="1fd0ebde-0ee5-445f-9726-f6749a705491">
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="53c641c3-0e2a-4b3b-8a72-c8d984478441">
             <TableID>SALESSHIPPINGSTAT</TableID>
             <ColumnID>DELIVERYDATE</ColumnID>
           </Source>
         </KeyColumn>
       </KeyColumns>
-      <NameColumn dwd:design-time-name="d2159b4b-ae43-4305-adb1-6ef736cd98d4">
+      <NameColumn dwd:design-time-name="ca562ac9-cf53-44ff-9a90-9b87e02a9eac">
         <DataType>WChar</DataType>
-        <Source xsi:type="ColumnBinding" dwd:design-time-name="f2411c78-1173-4a9a-af11-959a145b02f8">
+        <Source xsi:type="ColumnBinding" dwd:design-time-name="6f0bb312-4423-433f-8c5c-cb0a6ffc6d00">
           <TableID>SALESSHIPPINGSTAT</TableID>
           <ColumnID>DELIVERYDATE</ColumnID>
         </Source>
       </NameColumn>
       <Translations>
-        <Translation dwd:design-time-name="b29a0fe2-64cd-4415-8e66-5a31871c1688">
+        <Translation dwd:design-time-name="0a7aaf51-4c6c-41f3-aa43-34eb92079112">
           <Language>1033</Language>
           <Caption>Delivery Date</Caption>
         </Translation>
-        <Translation dwd:design-time-name="c19be1f5-d6d6-4c6f-9f9a-9eee03210c9a">
+        <Translation dwd:design-time-name="ceb5e37b-6f51-4f1a-aecb-b5e6bd0729ce">
           <Language>3082</Language>
           <Caption>Fecha de envío</Caption>
         </Translation>
@@ -1052,41 +1054,41 @@
       <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
       <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
     </Attribute>
-    <Attribute dwd:design-time-name="4751bff0-b5e1-4ce9-a9c9-3e4f106aaa34">
+    <Attribute dwd:design-time-name="e9d5eddb-4391-4ee1-9787-fa4f13f948cf">
       <ID>URLTRACKING</ID>
       <Name>URL Tracking</Name>
       <KeyColumns>
-        <KeyColumn dwd:design-time-name="a904a355-2d9e-47db-9528-7c9fefbd1a56">
+        <KeyColumn dwd:design-time-name="5856898e-c86d-4b41-b1eb-16d0b452e34c">
           <DataType>WChar</DataType>
           <DataSize>4</DataSize>
-          <Source xsi:type="ColumnBinding" dwd:design-time-name="b504a22c-5029-47d1-b410-8189dff9cfd6">
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="acbd6ecb-5a34-476b-8ee4-76c6a42163d6">
             <TableID>CUSTPACKINGSLIPJOUR</TableID>
             <ColumnID>DATAAREAID</ColumnID>
           </Source>
         </KeyColumn>
-        <KeyColumn dwd:design-time-name="1105be88-ed4f-48be-b25f-93be010047d1">
+        <KeyColumn dwd:design-time-name="b2145b39-39a6-4274-92d9-6255889d1b79">
           <DataType>WChar</DataType>
           <DataSize>512</DataSize>
-          <Source xsi:type="ColumnBinding" dwd:design-time-name="76ad5e36-b8e6-452b-b4f4-e1d800908b66">
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="0a001883-cef9-40b8-9ff1-241deabc25d5">
             <TableID>CUSTPACKINGSLIPJOUR</TableID>
             <ColumnID>URLTRACKING</ColumnID>
           </Source>
         </KeyColumn>
       </KeyColumns>
-      <NameColumn dwd:design-time-name="1349ad79-0f8f-4476-8ba7-965a4a71b354">
+      <NameColumn dwd:design-time-name="18140fef-fc22-47e8-8648-69d70a493b54">
         <DataType>WChar</DataType>
         <DataSize>512</DataSize>
-        <Source xsi:type="ColumnBinding" dwd:design-time-name="ae1389e8-389a-4883-b3c7-ac701b28073c">
+        <Source xsi:type="ColumnBinding" dwd:design-time-name="5b49ea56-8a02-4232-bd68-5ef610c8bad7">
           <TableID>CUSTPACKINGSLIPJOUR</TableID>
           <ColumnID>URLTRACKING</ColumnID>
         </Source>
       </NameColumn>
       <Translations>
-        <Translation dwd:design-time-name="c3f15e03-d7e2-430e-83d6-fba4f12eb04f">
+        <Translation dwd:design-time-name="43bb4072-114b-4f19-8a9c-4086003f9ef9">
           <Language>1033</Language>
           <Caption>URL Tracking</Caption>
         </Translation>
-        <Translation dwd:design-time-name="9bfd277d-95b4-4df6-9969-45d056a9da96">
+        <Translation dwd:design-time-name="b7b36336-1134-4b9e-930f-5318e9d1dff7">
           <Language>3082</Language>
           <Caption>URL Seguimiento</Caption>
         </Translation>
@@ -1094,41 +1096,41 @@
       <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
       <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
     </Attribute>
-    <Attribute dwd:design-time-name="dc2c85b9-8dca-4201-af34-e9f7a48df833">
+    <Attribute dwd:design-time-name="21a002bb-9ffb-49d3-80a5-12d7b7a495b7">
       <ID>GPCARRIERTRACKING</ID>
       <Name>Carrier Tracking</Name>
       <KeyColumns>
-        <KeyColumn dwd:design-time-name="a36885db-2389-4ef7-af90-518ef99c571e">
+        <KeyColumn dwd:design-time-name="d37f48f1-9d77-46e9-a156-2e382c60fc89">
           <DataType>WChar</DataType>
           <DataSize>4</DataSize>
-          <Source xsi:type="ColumnBinding" dwd:design-time-name="764eac77-4121-4768-a94c-2193507a5739">
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="2271f1f3-43a2-4693-bbfa-d0bd752d2705">
             <TableID>CUSTPACKINGSLIPJOUR</TableID>
             <ColumnID>DATAAREAID</ColumnID>
           </Source>
         </KeyColumn>
-        <KeyColumn dwd:design-time-name="5b108d1c-148b-4e46-959f-5c2ed5665756">
+        <KeyColumn dwd:design-time-name="07208043-c2bd-44cd-bb47-20be7eb9ba78">
           <DataType>WChar</DataType>
           <DataSize>30</DataSize>
-          <Source xsi:type="ColumnBinding" dwd:design-time-name="7289eb20-7c4a-4ae9-85cd-f7a49d8ac0a4">
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="a7147ccd-c27e-4ea8-b635-cef7d4317613">
             <TableID>CUSTPACKINGSLIPJOUR</TableID>
             <ColumnID>GPCARRIERTRACKING</ColumnID>
           </Source>
         </KeyColumn>
       </KeyColumns>
-      <NameColumn dwd:design-time-name="02d0da58-da8d-41fd-9269-14e402544455">
+      <NameColumn dwd:design-time-name="9b1ce3da-3ec8-4f10-b401-5d9d557fd90c">
         <DataType>WChar</DataType>
         <DataSize>30</DataSize>
-        <Source xsi:type="ColumnBinding" dwd:design-time-name="5c85dbdd-b2fc-4fd4-aa6a-a0a0d2aa15a2">
+        <Source xsi:type="ColumnBinding" dwd:design-time-name="a98fde4f-8eff-4765-8e16-2e758fa434c3">
           <TableID>CUSTPACKINGSLIPJOUR</TableID>
           <ColumnID>GPCARRIERTRACKING</ColumnID>
         </Source>
       </NameColumn>
       <Translations>
-        <Translation dwd:design-time-name="38b5a0cf-7b91-43aa-9fa3-9089424922e8">
+        <Translation dwd:design-time-name="72e8950d-1938-4a81-b2e2-1dda3e26de21">
           <Language>1033</Language>
           <Caption>Carrier Tracking</Caption>
         </Translation>
-        <Translation dwd:design-time-name="5f5c1571-7011-4566-bb9b-246726d49a7c">
+        <Translation dwd:design-time-name="754fb3c8-5e20-4dfb-81da-975d60038be3">
           <Language>3082</Language>
           <Caption>Número de seguimiento</Caption>
         </Translation>
@@ -1136,41 +1138,41 @@
       <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
       <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
     </Attribute>
-    <Attribute dwd:design-time-name="c00ba1a5-1f41-4ef3-9a2e-a4debd112bf9">
+    <Attribute dwd:design-time-name="75fbbfc7-bf57-4829-84cf-f6f7f929c853">
       <ID>SALESORIGINFROMSALES</ID>
       <Name>Sales Origin From Sales</Name>
       <KeyColumns>
-        <KeyColumn dwd:design-time-name="3a6a122b-0287-42a0-af7e-8159471a8cf9">
+        <KeyColumn dwd:design-time-name="829613eb-5a45-4eb4-b059-a9798c438f83">
           <DataType>WChar</DataType>
           <DataSize>4</DataSize>
-          <Source xsi:type="ColumnBinding" dwd:design-time-name="a852b115-4117-43dd-ad99-210be1d2902b">
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="59859af8-7006-40e6-8be8-765b9c81e515">
             <TableID>SALESSHIPPINGSTAT</TableID>
             <ColumnID>DATAAREAID</ColumnID>
           </Source>
         </KeyColumn>
-        <KeyColumn dwd:design-time-name="3aecec94-bd5f-4118-8c17-eb01a8eb55a6">
+        <KeyColumn dwd:design-time-name="95a11a05-268a-4095-8aa7-0c2003cf6fa8">
           <DataType>WChar</DataType>
           <DataSize>80</DataSize>
-          <Source xsi:type="ColumnBinding" dwd:design-time-name="fa6ea209-1dfb-47e5-8b80-bd69d1148589">
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="ed509ad2-f5eb-46d8-93a3-322960e860cd">
             <TableID>SALESSHIPPINGSTAT</TableID>
             <ColumnID>SALESORIGINFROMSALES</ColumnID>
           </Source>
         </KeyColumn>
       </KeyColumns>
-      <NameColumn dwd:design-time-name="24912d04-4b1d-4d30-aba6-3e26a7129965">
+      <NameColumn dwd:design-time-name="11e7f5a7-2d24-4703-9a27-35e671e8a731">
         <DataType>WChar</DataType>
         <DataSize>80</DataSize>
-        <Source xsi:type="ColumnBinding" dwd:design-time-name="cb0fba8f-8a34-4211-8e90-0399b0043cd6">
+        <Source xsi:type="ColumnBinding" dwd:design-time-name="c9953e3f-aabf-4b56-b410-88a67c8b3b18">
           <TableID>SALESSHIPPINGSTAT</TableID>
           <ColumnID>SALESORIGINFROMSALES</ColumnID>
         </Source>
       </NameColumn>
       <Translations>
-        <Translation dwd:design-time-name="1571d12b-77c9-4cf5-b963-e07b32aa829b">
+        <Translation dwd:design-time-name="06f56647-3dbe-46b4-92d1-88dfc1d82234">
           <Language>1033</Language>
           <Caption>Sales Origin from sales</Caption>
         </Translation>
-        <Translation dwd:design-time-name="42e53817-de0a-4852-be80-6a8a57bb9ba2">
+        <Translation dwd:design-time-name="1a6db74f-a2d4-428b-8a63-6f45364c52ff">
           <Language>3082</Language>
           <Caption>Orígen de la venta de pedidos</Caption>
         </Translation>
@@ -1178,41 +1180,41 @@
       <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
       <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
     </Attribute>
-    <Attribute dwd:design-time-name="ab5c7382-ec4b-40e9-93e6-69ca1839a50b">
+    <Attribute dwd:design-time-name="3dff5c02-3bb8-46a3-906a-ebd9569fae29">
       <ID>CARRIERNAME</ID>
       <Name>Carrier Name</Name>
       <KeyColumns>
-        <KeyColumn dwd:design-time-name="e079d37c-5857-41f3-8487-8e745667dbaa">
+        <KeyColumn dwd:design-time-name="336c81e4-0110-4212-b74d-11125d834cc5">
           <DataType>WChar</DataType>
           <DataSize>4</DataSize>
-          <Source xsi:type="ColumnBinding" dwd:design-time-name="d589236d-c267-4697-b333-3c6f462bade7">
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="c1fcb049-dea8-4a6e-8f4a-0a304f2187f1">
             <TableID>CUSTPACKINGSLIPJOUR</TableID>
             <ColumnID>DATAAREAID</ColumnID>
           </Source>
         </KeyColumn>
-        <KeyColumn dwd:design-time-name="295e4d09-bf1a-4e80-9620-33f8fadccf16">
+        <KeyColumn dwd:design-time-name="6c5fdd76-97c5-4de6-9ebb-842cdbb654ef">
           <DataType>WChar</DataType>
           <DataSize>30</DataSize>
-          <Source xsi:type="ColumnBinding" dwd:design-time-name="043f5df9-47af-40ec-95fd-4095742f5fa7">
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="79ffbceb-64f9-4f31-8579-104f6e22cf96">
             <TableID>CUSTPACKINGSLIPJOUR</TableID>
             <ColumnID>CARRIERNAME</ColumnID>
           </Source>
         </KeyColumn>
       </KeyColumns>
-      <NameColumn dwd:design-time-name="ab39093d-a935-4df2-9e17-f35656d24ee5">
+      <NameColumn dwd:design-time-name="f62028c4-6237-49e4-97e2-fd23246cca52">
         <DataType>WChar</DataType>
         <DataSize>30</DataSize>
-        <Source xsi:type="ColumnBinding" dwd:design-time-name="05503bb0-7024-432b-a6bb-e63fb2b8637b">
+        <Source xsi:type="ColumnBinding" dwd:design-time-name="a2c3a21b-7dbf-45ce-9b33-a5ef7d293e1f">
           <TableID>CUSTPACKINGSLIPJOUR</TableID>
           <ColumnID>CARRIERNAME</ColumnID>
         </Source>
       </NameColumn>
       <Translations>
-        <Translation dwd:design-time-name="6c429c2b-f458-47a5-9b39-f15a5a046b65">
+        <Translation dwd:design-time-name="1e83aa1c-282b-42d7-a82b-cf40743a2f7b">
           <Language>1033</Language>
           <Caption>Carrier Name</Caption>
         </Translation>
-        <Translation dwd:design-time-name="8e4277bc-e85e-4bd5-a658-c11ac50351ad">
+        <Translation dwd:design-time-name="d013712c-e152-47f7-a8b5-896eccffee9a">
           <Language>3082</Language>
           <Caption>Transportista</Caption>
         </Translation>
@@ -1220,79 +1222,80 @@
       <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
       <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
     </Attribute>
-    <Attribute dwd:design-time-name="ada4141e-c334-4fa3-b253-a6a37b8faecb">
+    <Attribute dwd:design-time-name="3c4a13aa-ca60-4b27-8b45-2b8eb73d9209">
       <ID>Sales Created Date Time</ID>
       <Name>Sales Created Date Time</Name>
       <KeyColumns>
-        <KeyColumn dwd:design-time-name="118ce141-ab1e-498f-b8be-ea805baeba33">
+        <KeyColumn dwd:design-time-name="c7aaddb1-7b7d-4770-a9e7-7667aaac5818">
           <DataType>WChar</DataType>
           <DataSize>4</DataSize>
-          <Source xsi:type="ColumnBinding" dwd:design-time-name="4762b018-d947-4946-8c8e-36d2f2ccf13a">
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="9305e764-ffcb-4c27-a107-3b5aa63851e2">
             <TableID>SALESSHIPPINGSTAT</TableID>
             <ColumnID>DATAAREAID</ColumnID>
           </Source>
         </KeyColumn>
-        <KeyColumn dwd:design-time-name="b675889e-bf89-46f2-8758-2d642b723176">
+        <KeyColumn dwd:design-time-name="bc89eeb9-1e36-44fe-b70f-5966c4bbbc05">
           <DataType>Date</DataType>
-          <Source xsi:type="ColumnBinding" dwd:design-time-name="dcc64605-6a2d-48e9-9980-e0cb8a7ef1e5">
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="c29f37fa-8b31-471b-839a-7533744cdda5">
             <TableID>SALESSHIPPINGSTAT</TableID>
             <ColumnID>SalesCreatedDateTime</ColumnID>
           </Source>
         </KeyColumn>
       </KeyColumns>
-      <NameColumn dwd:design-time-name="91b79174-9690-43f4-887a-eb1af588683c">
+      <NameColumn dwd:design-time-name="58a46a14-a1bb-486b-b220-4abbff46a158">
         <DataType>WChar</DataType>
-        <Source xsi:type="ColumnBinding" dwd:design-time-name="3a659b64-93ab-48ba-a7f9-52ea30780b8e">
+        <Source xsi:type="ColumnBinding" dwd:design-time-name="b44e594b-f8ae-4d3e-9a63-acb5289a6615">
           <TableID>SALESSHIPPINGSTAT</TableID>
           <ColumnID>SalesCreatedDateTime</ColumnID>
         </Source>
       </NameColumn>
       <Translations>
-        <Translation dwd:design-time-name="12097e70-7993-4b6b-b36b-fe4ef21d0a44">
+        <Translation dwd:design-time-name="004af874-c3c8-4dfb-9162-87e6c1c0d0aa">
           <Language>1033</Language>
           <Caption>Sales Created Date Time</Caption>
         </Translation>
-        <Translation dwd:design-time-name="cb747809-0784-4487-b1c6-37949940e960">
+        <Translation dwd:design-time-name="89ac21b5-06b7-4bbe-b9ed-2a82ea574a2f">
           <Language>3082</Language>
           <Caption>Fecha del pedido de Ventas</Caption>
         </Translation>
       </Translations>
       <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
       <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+      <ddl300_300:FormatString>dd/MM/yyyy</ddl300_300:FormatString>
     </Attribute>
-    <Attribute dwd:design-time-name="a0adcb96-345b-4e75-95f4-995794b18e22">
+    <Attribute dwd:design-time-name="1165d663-23fc-45af-b95e-3c246bc9bf89">
       <ID>SHIPPINGDATETIME</ID>
       <Name>Shipping Date Time</Name>
       <KeyColumns>
-        <KeyColumn dwd:design-time-name="db341380-67ce-4720-ad1b-1231fe952390">
+        <KeyColumn dwd:design-time-name="dc85db03-34be-4035-b7e8-67e645d3c350">
           <DataType>WChar</DataType>
           <DataSize>4</DataSize>
-          <Source xsi:type="ColumnBinding" dwd:design-time-name="542d548e-9d05-4478-828f-c483c9eabe53">
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="03572d0b-1cd2-4242-9885-84c0277e2b5a">
             <TableID>SALESSHIPPINGSTAT</TableID>
             <ColumnID>DATAAREAID</ColumnID>
           </Source>
         </KeyColumn>
-        <KeyColumn dwd:design-time-name="821090e2-1f8b-40cb-b829-ae50b54bdebe">
+        <KeyColumn dwd:design-time-name="2b9fd7f7-7178-49f9-8399-7a6afc2c0c5c">
           <DataType>Date</DataType>
-          <Source xsi:type="ColumnBinding" dwd:design-time-name="9783cc8c-4dea-4624-a7c8-b06be3a84974">
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="7010043c-8215-44c1-b78d-6f0761858ee4">
             <TableID>SALESSHIPPINGSTAT</TableID>
             <ColumnID>SHIPPINGDATETIME</ColumnID>
           </Source>
         </KeyColumn>
       </KeyColumns>
-      <NameColumn dwd:design-time-name="ba6481d2-53fe-49ef-8bf7-f5216db9c7ca">
+      <NameColumn dwd:design-time-name="82c97096-5671-4523-b423-54da10e433c5">
         <DataType>WChar</DataType>
-        <Source xsi:type="ColumnBinding" dwd:design-time-name="8cd241ed-a375-4988-b1ba-a9fe831b57bf">
+        <Source xsi:type="ColumnBinding" dwd:design-time-name="17f63a4e-03cf-4607-b248-de10d7eca3e7">
           <TableID>SALESSHIPPINGSTAT</TableID>
           <ColumnID>SHIPPINGDATETIME</ColumnID>
         </Source>
       </NameColumn>
       <Translations>
-        <Translation dwd:design-time-name="aab15d4a-1a09-4368-ab74-d131fb7ebc1c">
+        <Translation dwd:design-time-name="b9b67b32-813f-4d13-b8cb-f12411a85fe4">
           <Language>1033</Language>
           <Caption>Shipping Date Time</Caption>
         </Translation>
-        <Translation dwd:design-time-name="0b3ac982-f533-4fc5-bdc8-47e52eabc486">
+        <Translation dwd:design-time-name="73e7b477-be3e-4a22-ad8e-1ae6ff893c92">
           <Language>3082</Language>
           <Caption>Fecha de distribución</Caption>
         </Translation>
@@ -1300,39 +1303,39 @@
       <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
       <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
     </Attribute>
-    <Attribute dwd:design-time-name="f10b501f-51d5-47e7-82b1-dc2adea6ca7e">
+    <Attribute dwd:design-time-name="2749e882-dd01-43b0-998c-8527b9596f2b">
       <ID>Picking Date Time</ID>
       <Name>Picking Date Time</Name>
       <KeyColumns>
-        <KeyColumn dwd:design-time-name="6f08567c-7fe4-444e-87c1-7085734f3c24">
+        <KeyColumn dwd:design-time-name="662b9316-1384-43ec-baf0-0eaaa1de07be">
           <DataType>WChar</DataType>
           <DataSize>4</DataSize>
-          <Source xsi:type="ColumnBinding" dwd:design-time-name="ceb11064-5a0e-44ca-a878-cfb4b3fd1cdd">
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="e2eafee3-6f14-4517-8a0b-ea8cbe37bd45">
             <TableID>SALESSHIPPINGSTAT</TableID>
             <ColumnID>DATAAREAID</ColumnID>
           </Source>
         </KeyColumn>
-        <KeyColumn dwd:design-time-name="142144b2-7d25-462c-9ecb-5dba996e27c1">
+        <KeyColumn dwd:design-time-name="5791bb72-c386-489e-8e06-59a765b76abb">
           <DataType>Date</DataType>
-          <Source xsi:type="ColumnBinding" dwd:design-time-name="77a4c995-d882-479b-aef0-f6c3b8f49e85">
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="8b72c806-6233-4784-bd52-5b8d778ed986">
             <TableID>SALESSHIPPINGSTAT</TableID>
             <ColumnID>PickingDateTime</ColumnID>
           </Source>
         </KeyColumn>
       </KeyColumns>
-      <NameColumn dwd:design-time-name="a4a98710-7cdd-4f06-bfee-b83f0b6fc54f">
+      <NameColumn dwd:design-time-name="4d83d965-6582-4959-8dbc-76a310053a9a">
         <DataType>WChar</DataType>
-        <Source xsi:type="ColumnBinding" dwd:design-time-name="e156568a-5ab0-471f-959e-dc1d8509b8f8">
+        <Source xsi:type="ColumnBinding" dwd:design-time-name="44a32b35-3930-45d5-ac2e-2f6243c9ec9c">
           <TableID>SALESSHIPPINGSTAT</TableID>
           <ColumnID>PickingDateTime</ColumnID>
         </Source>
       </NameColumn>
       <Translations>
-        <Translation dwd:design-time-name="48314cbc-7988-45fc-9d8a-665a6d41ff39">
+        <Translation dwd:design-time-name="1a8fc6d7-e121-4d24-83ba-d7be6f4af130">
           <Language>1033</Language>
           <Caption>Picking Date Time</Caption>
         </Translation>
-        <Translation dwd:design-time-name="8c79908f-1df5-46c4-891a-9da2851cf842">
+        <Translation dwd:design-time-name="da1f2536-9796-4425-af86-59fce6373e05">
           <Language>3082</Language>
           <Caption>Fecha del picking</Caption>
         </Translation>
@@ -1340,39 +1343,39 @@
       <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
       <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
     </Attribute>
-    <Attribute dwd:design-time-name="c42b8231-980f-41a1-9e14-0c0c87ec6d5c">
+    <Attribute dwd:design-time-name="5e08f3b5-4a84-4717-94c8-bb2d69ea6915">
       <ID>Packing Slip Delivery Date</ID>
       <Name>Packing Slip Delivery Date</Name>
       <KeyColumns>
-        <KeyColumn dwd:design-time-name="5a8c6fd9-c01b-400c-9c6e-e74cdaa11d9b">
+        <KeyColumn dwd:design-time-name="6a4b9c3a-4e26-49db-a5ba-9c476502557b">
           <DataType>WChar</DataType>
           <DataSize>4</DataSize>
-          <Source xsi:type="ColumnBinding" dwd:design-time-name="27375192-ef36-4f8a-8c41-1da1c9487cb5">
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="b0ed4a6b-6907-4f02-a0de-c971c116b320">
             <TableID>SALESSHIPPINGSTAT</TableID>
             <ColumnID>DATAAREAID</ColumnID>
           </Source>
         </KeyColumn>
-        <KeyColumn dwd:design-time-name="9529d902-4193-42c3-b58a-906bc3799174">
+        <KeyColumn dwd:design-time-name="ed5ce500-d9a2-4035-a12d-88c7025c3fa9">
           <DataType>Date</DataType>
-          <Source xsi:type="ColumnBinding" dwd:design-time-name="c29cbe98-5c81-49f2-9f02-212bde3e9347">
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="e13e7a8f-ec4d-4d3f-b55b-12e038ce84f8">
             <TableID>SALESSHIPPINGSTAT</TableID>
             <ColumnID>PackingSlipDeliveryDate</ColumnID>
           </Source>
         </KeyColumn>
       </KeyColumns>
-      <NameColumn dwd:design-time-name="351c98bb-242e-4f07-be6b-89d0580c77f3">
+      <NameColumn dwd:design-time-name="641f73fb-9694-4d55-bb2b-416565c058a8">
         <DataType>WChar</DataType>
-        <Source xsi:type="ColumnBinding" dwd:design-time-name="354236d6-da7c-45de-872d-eb528d449dcd">
+        <Source xsi:type="ColumnBinding" dwd:design-time-name="d46cb6fe-52c6-4a09-9fb2-8765b5d72dd3">
           <TableID>SALESSHIPPINGSTAT</TableID>
           <ColumnID>PackingSlipDeliveryDate</ColumnID>
         </Source>
       </NameColumn>
       <Translations>
-        <Translation dwd:design-time-name="28abcf83-88fc-4fe6-81c7-5c2ad7a6e6bb">
+        <Translation dwd:design-time-name="91fdf06a-6983-4623-aaa4-ba9f9ff2770d">
           <Language>1033</Language>
           <Caption>Packing Slip Date Time</Caption>
         </Translation>
-        <Translation dwd:design-time-name="5c4166ce-ddf9-4bb8-b114-c9ae3abe7db1">
+        <Translation dwd:design-time-name="718df88a-a235-4c42-a5c3-57ffc2383ea7">
           <Language>3082</Language>
           <Caption>Fecha del Albarán</Caption>
         </Translation>
@@ -1380,41 +1383,41 @@
       <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
       <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
     </Attribute>
-    <Attribute dwd:design-time-name="0f219b5a-06e0-4efd-8a32-ae3527031225">
+    <Attribute dwd:design-time-name="d77297dc-0e8f-4417-be68-682590310f41">
       <ID>DLVZIPCODE</ID>
       <Name>Delivery Zip Code</Name>
       <KeyColumns>
-        <KeyColumn dwd:design-time-name="42be9c5d-94c4-4ca7-8032-99b00b33ed8b">
+        <KeyColumn dwd:design-time-name="7cf40cef-3090-4233-8669-85b2618eb37d">
           <DataType>WChar</DataType>
           <DataSize>4</DataSize>
-          <Source xsi:type="ColumnBinding" dwd:design-time-name="99260998-b399-4840-a17b-a0ddc975766f">
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="ba0fe49b-285b-43c2-b97d-50a11c097472">
             <TableID>CUSTPACKINGSLIPJOUR</TableID>
             <ColumnID>DATAAREAID</ColumnID>
           </Source>
         </KeyColumn>
-        <KeyColumn dwd:design-time-name="f84ed572-f6aa-411d-86e8-c857549a2680">
+        <KeyColumn dwd:design-time-name="e157ff51-ada9-44ea-8f98-afe22952436c">
           <DataType>WChar</DataType>
           <DataSize>10</DataSize>
-          <Source xsi:type="ColumnBinding" dwd:design-time-name="3fa9d649-0f66-4694-8e03-404c9df3aaaf">
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="40490580-bf91-4612-9b74-f30e4e4e008f">
             <TableID>CUSTPACKINGSLIPJOUR</TableID>
             <ColumnID>DLVZIPCODE</ColumnID>
           </Source>
         </KeyColumn>
       </KeyColumns>
-      <NameColumn dwd:design-time-name="0aabb315-c53d-4564-b80a-e9ae86e0cfc2">
+      <NameColumn dwd:design-time-name="16e91ea0-5c09-4d1c-85ee-617bd3ad813f">
         <DataType>WChar</DataType>
         <DataSize>10</DataSize>
-        <Source xsi:type="ColumnBinding" dwd:design-time-name="1861d35a-92ed-4e0c-8dc7-c09a3cbf45e5">
+        <Source xsi:type="ColumnBinding" dwd:design-time-name="a52838af-184e-45ab-be72-70450c03b6c7">
           <TableID>CUSTPACKINGSLIPJOUR</TableID>
           <ColumnID>DLVZIPCODE</ColumnID>
         </Source>
       </NameColumn>
       <Translations>
-        <Translation dwd:design-time-name="9880bb3b-431b-4c14-8106-15527626ac20">
+        <Translation dwd:design-time-name="357cc71e-58d8-4bbf-96fe-b4237824c4d0">
           <Language>1033</Language>
           <Caption>Delivery Zip Code</Caption>
         </Translation>
-        <Translation dwd:design-time-name="ed00e60d-315c-4842-a87e-6e4d6676592d">
+        <Translation dwd:design-time-name="d14052d9-af3f-4105-9b89-8b57c9cd63a9">
           <Language>3082</Language>
           <Caption>Código Postal Entrega</Caption>
         </Translation>
@@ -1422,41 +1425,41 @@
       <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
       <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
     </Attribute>
-    <Attribute dwd:design-time-name="f4c6327a-bfa1-49a5-9dcb-8ec19c6555a0">
+    <Attribute dwd:design-time-name="526d049a-567e-44d2-a7a0-69d2918ecb59">
       <ID>DLVCOUNTRYREGIONID</ID>
       <Name>Delivery Country</Name>
       <KeyColumns>
-        <KeyColumn dwd:design-time-name="69efd58d-fa33-4798-8695-af536ce4b838">
+        <KeyColumn dwd:design-time-name="f14e88dd-e232-47ec-8e4b-6698813a94bc">
           <DataType>WChar</DataType>
           <DataSize>4</DataSize>
-          <Source xsi:type="ColumnBinding" dwd:design-time-name="7aa8a9fc-d6b6-4fa6-a40a-fec60e5ab894">
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="fd9fb599-bf5d-4342-9bd7-bdbc1f00a008">
             <TableID>CUSTPACKINGSLIPJOUR</TableID>
             <ColumnID>DATAAREAID</ColumnID>
           </Source>
         </KeyColumn>
-        <KeyColumn dwd:design-time-name="f081b8a2-84f8-4a7c-91d0-370552df32fc">
+        <KeyColumn dwd:design-time-name="00a9f634-1d46-48cf-8013-502b71b531ac">
           <DataType>WChar</DataType>
           <DataSize>80</DataSize>
-          <Source xsi:type="ColumnBinding" dwd:design-time-name="48234ab0-989a-467a-9acd-b76fa7978fdf">
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="5677d86d-7449-4389-80e9-e778c910f374">
             <TableID>CUSTPACKINGSLIPJOUR</TableID>
             <ColumnID>DLVCOUNTRYREGIONID</ColumnID>
           </Source>
         </KeyColumn>
       </KeyColumns>
-      <NameColumn dwd:design-time-name="f06812cb-8a58-43e3-8d52-6d9df8a5dbd9">
+      <NameColumn dwd:design-time-name="668f2a78-1235-48fd-8afa-bd21b32d89c3">
         <DataType>WChar</DataType>
         <DataSize>80</DataSize>
-        <Source xsi:type="ColumnBinding" dwd:design-time-name="18c15ab0-dbdb-4520-966e-c994e50ad9a1">
+        <Source xsi:type="ColumnBinding" dwd:design-time-name="22d78f4d-9eea-4a47-b95e-f00b15adafc3">
           <TableID>CUSTPACKINGSLIPJOUR</TableID>
           <ColumnID>DLVCOUNTRYREGIONID</ColumnID>
         </Source>
       </NameColumn>
       <Translations>
-        <Translation dwd:design-time-name="335848d0-5eef-4baa-a022-b5677829fab1">
+        <Translation dwd:design-time-name="5cf708d9-5490-4e27-906e-119623562651">
           <Language>1033</Language>
           <Caption>Delivery Country</Caption>
         </Translation>
-        <Translation dwd:design-time-name="133fdf62-4817-4534-a672-fd2c679a4997">
+        <Translation dwd:design-time-name="cbdc347c-9665-4052-9110-b16a89a900c9">
           <Language>3082</Language>
           <Caption>Pais de Entrega</Caption>
         </Translation>
@@ -1464,41 +1467,41 @@
       <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
       <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
     </Attribute>
-    <Attribute dwd:design-time-name="7e9e7e38-0dad-4608-a297-1d4403b1eb19">
+    <Attribute dwd:design-time-name="5b8427d7-d1f5-445d-8f27-dc38a1fedf8b">
       <ID>DLVREASONID</ID>
       <Name>Delayed Reason</Name>
       <KeyColumns>
-        <KeyColumn dwd:design-time-name="4140c986-b692-4feb-9138-2d5ca4707f56">
+        <KeyColumn dwd:design-time-name="0723c35a-6aef-48b2-ab4d-c3b4ee545583">
           <DataType>WChar</DataType>
           <DataSize>4</DataSize>
-          <Source xsi:type="ColumnBinding" dwd:design-time-name="08abfc58-ac68-498d-bc5f-269e3acb0349">
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="ac9d2b1b-7bad-4901-8615-09e0d9ad805b">
             <TableID>SALESSHIPPINGSTAT</TableID>
             <ColumnID>DATAAREAID</ColumnID>
           </Source>
         </KeyColumn>
-        <KeyColumn dwd:design-time-name="74e05f37-4edc-41c6-ac4c-dcd84362712a">
+        <KeyColumn dwd:design-time-name="3a389087-379e-408a-aa54-161cf25b516f">
           <DataType>WChar</DataType>
           <DataSize>80</DataSize>
-          <Source xsi:type="ColumnBinding" dwd:design-time-name="a4b9ebce-4ea4-408a-bcbd-35b635091421">
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="d761e258-0ccd-40a9-8d7b-4e5914acd663">
             <TableID>SALESSHIPPINGSTAT</TableID>
             <ColumnID>DLVREASONID</ColumnID>
           </Source>
         </KeyColumn>
       </KeyColumns>
-      <NameColumn dwd:design-time-name="c9bb195e-19fb-41cb-8fa2-7584a45979c9">
+      <NameColumn dwd:design-time-name="bd7cbeca-0685-45e7-a5f6-b32bbfa811bd">
         <DataType>WChar</DataType>
         <DataSize>80</DataSize>
-        <Source xsi:type="ColumnBinding" dwd:design-time-name="299ce4ad-6b6b-4113-acda-5130c5a0e51f">
+        <Source xsi:type="ColumnBinding" dwd:design-time-name="e0027607-3697-4abb-b1a6-7bcca9248ce3">
           <TableID>SALESSHIPPINGSTAT</TableID>
           <ColumnID>DLVREASONID</ColumnID>
         </Source>
       </NameColumn>
       <Translations>
-        <Translation dwd:design-time-name="99b4cad5-65d8-4f51-9596-4e71f3207880">
+        <Translation dwd:design-time-name="34f8a723-1b75-4dfb-95cc-f60a68e7361e">
           <Language>1033</Language>
           <Caption>Delayed Reason</Caption>
         </Translation>
-        <Translation dwd:design-time-name="0d7a19ea-c5e6-47a4-86cd-fa0173da3e40">
+        <Translation dwd:design-time-name="bf50ba96-378d-4752-8e54-f64783605065">
           <Language>3082</Language>
           <Caption>Motivo de retraso</Caption>
         </Translation>
@@ -1506,39 +1509,39 @@
       <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
       <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
     </Attribute>
-    <Attribute dwd:design-time-name="7567e615-13ec-49c6-98ec-af56ff8c8a42">
+    <Attribute dwd:design-time-name="b0ea22fb-3427-46c3-83f6-37ea1af97f52">
       <ID>Shipping Work Days</ID>
       <Name>Shipping Work Days</Name>
       <KeyColumns>
-        <KeyColumn dwd:design-time-name="83c51597-9b94-4578-aaed-7461649ee06b">
+        <KeyColumn dwd:design-time-name="3e12b4f5-a2a4-4f9b-a201-3ad07c209697">
           <DataType>WChar</DataType>
           <DataSize>4</DataSize>
-          <Source xsi:type="ColumnBinding" dwd:design-time-name="90fdb84f-4f6a-4434-abdf-003dce512431">
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="b50635b5-ed5f-43ce-b2c8-58100d28c3b7">
             <TableID>SALESSHIPPINGSTAT</TableID>
             <ColumnID>DATAAREAID</ColumnID>
           </Source>
         </KeyColumn>
-        <KeyColumn dwd:design-time-name="01769e77-f6ea-4904-97cf-9a41a1921016">
+        <KeyColumn dwd:design-time-name="c027c9c6-dc15-4e74-8226-88423c480bf2">
           <DataType>Integer</DataType>
-          <Source xsi:type="ColumnBinding" dwd:design-time-name="0b7db0a4-1acf-40b4-ad6a-6fcc2b19b2e3">
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="c5ff85a6-4443-4884-9226-cba8b5c4ca21">
             <TableID>SALESSHIPPINGSTAT</TableID>
             <ColumnID>ShippingWorkDays</ColumnID>
           </Source>
         </KeyColumn>
       </KeyColumns>
-      <NameColumn dwd:design-time-name="c914c883-eda3-4e5e-a968-11216f4bbd46">
+      <NameColumn dwd:design-time-name="91a1a668-3521-48fe-8812-dbd6e7400798">
         <DataType>WChar</DataType>
-        <Source xsi:type="ColumnBinding" dwd:design-time-name="aa12f625-4d20-46cb-b97b-0da712efc73f">
+        <Source xsi:type="ColumnBinding" dwd:design-time-name="aaaae506-3a60-44f5-9f29-bcefae368d94">
           <TableID>SALESSHIPPINGSTAT</TableID>
           <ColumnID>ShippingWorkDays</ColumnID>
         </Source>
       </NameColumn>
       <Translations>
-        <Translation dwd:design-time-name="3fb24ad2-2423-405b-a5d2-579eac49bc1a">
+        <Translation dwd:design-time-name="1321dcee-2dd8-4c9e-8f8a-64131732292d">
           <Language>1033</Language>
           <Caption>Shipping Work Days</Caption>
         </Translation>
-        <Translation dwd:design-time-name="3ac1dafc-3c69-4cdd-888b-be582696c59f">
+        <Translation dwd:design-time-name="d13863b6-ad1d-40eb-81e4-065d949b34c4">
           <Language>3082</Language>
           <Caption>Dias laborables transcurridos</Caption>
         </Translation>
@@ -1546,39 +1549,39 @@
       <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
       <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
     </Attribute>
-    <Attribute dwd:design-time-name="756133be-1c57-4e24-91b5-cdda872027fa">
+    <Attribute dwd:design-time-name="2484efd2-4e27-4a3d-a9df-d07ae1ebbb1d">
       <ID>Max Delivery Days</ID>
       <Name>Max Delivery Days</Name>
       <KeyColumns>
-        <KeyColumn dwd:design-time-name="ecfdd7f7-db1f-4c03-8b8d-2e0dc4817418">
+        <KeyColumn dwd:design-time-name="95ec7675-5c43-4c83-9325-59147f1c1235">
           <DataType>WChar</DataType>
           <DataSize>4</DataSize>
-          <Source xsi:type="ColumnBinding" dwd:design-time-name="aa96c45d-8dd5-4ec0-bc1e-29fdb050a32a">
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="143ac64c-ee06-449d-b05f-919d5a729a8d">
             <TableID>SALESSHIPPINGSTAT</TableID>
             <ColumnID>DATAAREAID</ColumnID>
           </Source>
         </KeyColumn>
-        <KeyColumn dwd:design-time-name="4b4ffcc6-a018-49f4-af37-c3c1d015acca">
+        <KeyColumn dwd:design-time-name="0cde39af-aa56-4bff-a25b-ac8523d422bb">
           <DataType>Integer</DataType>
-          <Source xsi:type="ColumnBinding" dwd:design-time-name="8e0df064-3303-44d0-ac4d-bc4342872798">
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="313cd48c-cdbb-4514-9faf-5fe8affe2fd8">
             <TableID>SALESSHIPPINGSTAT</TableID>
             <ColumnID>MaxDeliveryDays</ColumnID>
           </Source>
         </KeyColumn>
       </KeyColumns>
-      <NameColumn dwd:design-time-name="2a022786-8fee-4549-8afd-4b734c3d07d2">
+      <NameColumn dwd:design-time-name="213c59bd-dc3c-4955-99db-ef43366145f5">
         <DataType>WChar</DataType>
-        <Source xsi:type="ColumnBinding" dwd:design-time-name="23df534c-b0de-4ac8-991f-cf571de52158">
+        <Source xsi:type="ColumnBinding" dwd:design-time-name="c54cf85c-34f2-4cfb-8e13-adef24aef99e">
           <TableID>SALESSHIPPINGSTAT</TableID>
           <ColumnID>MaxDeliveryDays</ColumnID>
         </Source>
       </NameColumn>
       <Translations>
-        <Translation dwd:design-time-name="d25fc3d8-d7cc-4450-8e2f-1c8bd0052117">
+        <Translation dwd:design-time-name="b328ccb3-bdd0-4b20-8968-6f59ca365f28">
           <Language>1033</Language>
           <Caption>Max Delivery Days</Caption>
         </Translation>
-        <Translation dwd:design-time-name="86155f8b-cb9e-4896-b258-5a88b383573b">
+        <Translation dwd:design-time-name="3d3b6619-ddbb-4fcf-87a7-d40d7577e451">
           <Language>3082</Language>
           <Caption>Dias para la entrega</Caption>
         </Translation>
@@ -1586,41 +1589,41 @@
       <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
       <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
     </Attribute>
-    <Attribute dwd:design-time-name="ca54699c-ebc5-4b09-8ffa-fd6dfde996d7">
+    <Attribute dwd:design-time-name="f93056ee-bcb3-49ce-b257-3da062956fc1">
       <ID>INVENTLOCATIONID</ID>
       <Name>Invent Location</Name>
       <KeyColumns>
-        <KeyColumn dwd:design-time-name="4f4402e3-5381-4dc7-952c-6a301af2a382">
+        <KeyColumn dwd:design-time-name="9cbc917c-036e-4d82-bce8-3bb0fabc68d0">
           <DataType>WChar</DataType>
           <DataSize>4</DataSize>
-          <Source xsi:type="ColumnBinding" dwd:design-time-name="25af6acc-97cf-4244-b94b-bbb2863101d0">
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="829720fa-02d3-4b32-8063-63e59f12f195">
             <TableID>SALESSHIPPINGSTAT</TableID>
             <ColumnID>DATAAREAID</ColumnID>
           </Source>
         </KeyColumn>
-        <KeyColumn dwd:design-time-name="f4679488-dfbb-473f-aba8-f4fe40f0c248">
+        <KeyColumn dwd:design-time-name="9ae6c2d9-1cfb-4893-85a1-42b2f1249935">
           <DataType>WChar</DataType>
           <DataSize>80</DataSize>
-          <Source xsi:type="ColumnBinding" dwd:design-time-name="d50e950c-2c30-43f5-bbcc-28ea8117f857">
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="4a04841e-3320-4a5f-bc14-a6f8a8a6ae6e">
             <TableID>SALESSHIPPINGSTAT</TableID>
             <ColumnID>INVENTLOCATIONID</ColumnID>
           </Source>
         </KeyColumn>
       </KeyColumns>
-      <NameColumn dwd:design-time-name="a6709be2-2d4a-4a53-b59b-4524df4783fc">
+      <NameColumn dwd:design-time-name="2707dd2a-3a53-448d-8d91-9733d5afcc0c">
         <DataType>WChar</DataType>
         <DataSize>80</DataSize>
-        <Source xsi:type="ColumnBinding" dwd:design-time-name="6f71f8b2-e7a1-4c3e-86e5-bcdd506f96a9">
+        <Source xsi:type="ColumnBinding" dwd:design-time-name="2f8d78b9-e06f-4f60-8624-2d4b96456ab3">
           <TableID>SALESSHIPPINGSTAT</TableID>
           <ColumnID>INVENTLOCATIONID</ColumnID>
         </Source>
       </NameColumn>
       <Translations>
-        <Translation dwd:design-time-name="d5942fc7-3dbe-4c2e-bcec-b14188044fb3">
+        <Translation dwd:design-time-name="63c179f4-e22c-4bbc-92c1-2a439a99d03e">
           <Language>1033</Language>
           <Caption>Invent Location</Caption>
         </Translation>
-        <Translation dwd:design-time-name="4dab17f9-b4c3-4ca1-9d41-3b08967d1a13">
+        <Translation dwd:design-time-name="cdb67268-4467-4eae-927f-1b4a6bddec53">
           <Language>3082</Language>
           <Caption>Almacén</Caption>
         </Translation>
@@ -1628,39 +1631,39 @@
       <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
       <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
     </Attribute>
-    <Attribute dwd:design-time-name="bb30faf1-ac3e-4400-947f-0d4131d23fe9">
+    <Attribute dwd:design-time-name="070ead56-731d-4c70-af64-e2f3c00107d9">
       <ID>Chargeable</ID>
       <Name>Chargeable</Name>
       <KeyColumns>
-        <KeyColumn dwd:design-time-name="e1d812d4-a058-465a-8150-180c7059d445">
+        <KeyColumn dwd:design-time-name="3bf573ba-7d39-4d7f-9360-fede27c6bd71">
           <DataType>WChar</DataType>
           <DataSize>4</DataSize>
-          <Source xsi:type="ColumnBinding" dwd:design-time-name="0468f402-eb91-423c-a8fa-0a66a0288d62">
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="8df8fd23-8e0b-4a7d-858f-924b9ce47799">
             <TableID>SALESSHIPPINGSTAT</TableID>
             <ColumnID>DATAAREAID</ColumnID>
           </Source>
         </KeyColumn>
-        <KeyColumn dwd:design-time-name="6e274eb9-3df5-46e8-bc86-9d548e058e35">
+        <KeyColumn dwd:design-time-name="7e7440ef-8fda-490d-a139-5a31a8b65c88">
           <DataType>Integer</DataType>
-          <Source xsi:type="ColumnBinding" dwd:design-time-name="06bc5ad2-08f7-4d9c-bbf6-ebccda9c7c2b">
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="5ce2eb8a-2151-4e56-b234-e352f8b8478b">
             <TableID>SALESSHIPPINGSTAT</TableID>
             <ColumnID>Chargeable</ColumnID>
           </Source>
         </KeyColumn>
       </KeyColumns>
-      <NameColumn dwd:design-time-name="be979ac2-f243-48c9-8dcc-19a440d43917">
+      <NameColumn dwd:design-time-name="486f5402-75de-4156-a140-54062b523a0f">
         <DataType>WChar</DataType>
-        <Source xsi:type="ColumnBinding" dwd:design-time-name="5dcd6c7e-01d2-4e48-ac42-af12b8e31e85">
+        <Source xsi:type="ColumnBinding" dwd:design-time-name="e27f9695-d79d-439a-9568-ff775f5ccaf1">
           <TableID>SALESSHIPPINGSTAT</TableID>
           <ColumnID>Chargeable</ColumnID>
         </Source>
       </NameColumn>
       <Translations>
-        <Translation dwd:design-time-name="1796862f-3c74-4dda-bca9-a57bb06f8f06">
+        <Translation dwd:design-time-name="bf8889e9-3482-4df1-b7a6-05d7951818df">
           <Language>1033</Language>
           <Caption>Chargeable</Caption>
         </Translation>
-        <Translation dwd:design-time-name="e493433d-293c-42cb-903e-d39d8081de04">
+        <Translation dwd:design-time-name="3d40b882-dcf9-4571-87b2-4eb2a1155970">
           <Language>3082</Language>
           <Caption>Imputable</Caption>
         </Translation>
@@ -1668,41 +1671,41 @@
       <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
       <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
     </Attribute>
-    <Attribute dwd:design-time-name="67281c41-fdb4-4f68-9d32-55e0bc200ef7">
+    <Attribute dwd:design-time-name="5ed1d4d7-0c75-499d-bbec-0513b405e32b">
       <ID>Delivery On Time</ID>
       <Name>Delivery On Time</Name>
       <KeyColumns>
-        <KeyColumn dwd:design-time-name="33e056fb-49d0-4249-99fe-2c3f700cf613">
+        <KeyColumn dwd:design-time-name="6cfe98cf-6d3e-40d5-b573-e6e797ee3ae7">
           <DataType>WChar</DataType>
           <DataSize>4</DataSize>
-          <Source xsi:type="ColumnBinding" dwd:design-time-name="96fba34b-5616-4669-a882-0af801f6ee11">
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="909d28ff-b133-453b-80ff-546f4ad33225">
             <TableID>SALESSHIPPINGSTAT</TableID>
             <ColumnID>DATAAREAID</ColumnID>
           </Source>
         </KeyColumn>
-        <KeyColumn dwd:design-time-name="eeb73083-4ac3-4ebf-b6b5-80c7a200e24e">
+        <KeyColumn dwd:design-time-name="6462ea7b-71df-4128-81bd-be926c910eba">
           <DataType>WChar</DataType>
           <DataSize>10</DataSize>
-          <Source xsi:type="ColumnBinding" dwd:design-time-name="aa986cc0-0d01-4d84-a540-524bab3ecc8d">
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="590a29df-ec84-4018-ae88-0a2800c026b9">
             <TableID>SALESSHIPPINGSTAT</TableID>
             <ColumnID>DeliveryOnTime</ColumnID>
           </Source>
         </KeyColumn>
       </KeyColumns>
-      <NameColumn dwd:design-time-name="47a03b6a-a27d-4eac-aab1-668331abf286">
+      <NameColumn dwd:design-time-name="9af395a5-08be-41bf-8be1-3021346b4acd">
         <DataType>WChar</DataType>
         <DataSize>10</DataSize>
-        <Source xsi:type="ColumnBinding" dwd:design-time-name="fa484b59-7803-46ba-8bf0-9cc3fcfb39b0">
+        <Source xsi:type="ColumnBinding" dwd:design-time-name="c8746ff4-cf2c-4f64-a9c4-7de8b5fa8340">
           <TableID>SALESSHIPPINGSTAT</TableID>
           <ColumnID>DeliveryOnTime</ColumnID>
         </Source>
       </NameColumn>
       <Translations>
-        <Translation dwd:design-time-name="3b409a84-53b0-453a-bfc2-bdf11f01e410">
+        <Translation dwd:design-time-name="a1c5c2f7-5592-47f0-96c8-7586535a20b6">
           <Language>1033</Language>
           <Caption>Delivery On time</Caption>
         </Translation>
-        <Translation dwd:design-time-name="09ea51a9-b826-4563-ba9b-c4a2f971a8ee">
+        <Translation dwd:design-time-name="fc618e5d-d55d-4fa2-ad2e-c6c35ab5deb8">
           <Language>3082</Language>
           <Caption>Entregado a tiempo</Caption>
         </Translation>
@@ -1710,41 +1713,41 @@
       <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
       <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
     </Attribute>
-    <Attribute dwd:design-time-name="0b3e86db-67a1-49c9-aac5-6a38759071ff">
+    <Attribute dwd:design-time-name="695cb085-258c-45a8-81a8-39bd21fd4f98">
       <ID>DLVCOUNTY</ID>
       <Name>Delivery County</Name>
       <KeyColumns>
-        <KeyColumn dwd:design-time-name="2945caea-033e-4ed5-b660-5f9efa0ef9bc">
+        <KeyColumn dwd:design-time-name="af38ae1c-a976-4956-ac5c-3dd49bac5b6d">
           <DataType>WChar</DataType>
           <DataSize>4</DataSize>
-          <Source xsi:type="ColumnBinding" dwd:design-time-name="aea3f9a7-b73f-47b3-8ab1-ba0ca6c620ac">
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="28c974a2-0efe-4ba1-b972-6be00b9d5026">
             <TableID>CUSTPACKINGSLIPJOUR</TableID>
             <ColumnID>DATAAREAID</ColumnID>
           </Source>
         </KeyColumn>
-        <KeyColumn dwd:design-time-name="1fefcae6-e6f6-4ba8-85e7-a938822e1e22">
+        <KeyColumn dwd:design-time-name="28eeb7de-a282-444f-9709-5c256ec92a1f">
           <DataType>WChar</DataType>
           <DataSize>80</DataSize>
-          <Source xsi:type="ColumnBinding" dwd:design-time-name="d904f77d-6535-4192-b90d-c70ac85b5412">
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="2ad391c8-f063-4ed9-a1d3-05ef1b135f85">
             <TableID>CUSTPACKINGSLIPJOUR</TableID>
             <ColumnID>DLVCOUNTY</ColumnID>
           </Source>
         </KeyColumn>
       </KeyColumns>
-      <NameColumn dwd:design-time-name="2659930b-c86a-4f8e-9728-1e2b19832841">
+      <NameColumn dwd:design-time-name="c2abeb0c-154f-4efc-8d6d-5e37bec97288">
         <DataType>WChar</DataType>
         <DataSize>80</DataSize>
-        <Source xsi:type="ColumnBinding" dwd:design-time-name="3f6286f0-f83f-4969-ae7d-8b8e422c748e">
+        <Source xsi:type="ColumnBinding" dwd:design-time-name="b741fc22-de27-44ae-828e-5af8882fba58">
           <TableID>CUSTPACKINGSLIPJOUR</TableID>
           <ColumnID>DLVCOUNTY</ColumnID>
         </Source>
       </NameColumn>
       <Translations>
-        <Translation dwd:design-time-name="336ceaa3-1f4b-4886-9f36-8d752d8c1ebb">
+        <Translation dwd:design-time-name="528cdc7b-4222-4e7d-8a66-b9551db0a8d3">
           <Language>1033</Language>
           <Caption>Delivery County</Caption>
         </Translation>
-        <Translation dwd:design-time-name="f90d1be8-2b47-46eb-bfd8-ebf306f32184">
+        <Translation dwd:design-time-name="f612e03e-8446-49fc-a143-f5453d3d8d4b">
           <Language>3082</Language>
           <Caption>Provincia de Entrega</Caption>
         </Translation>
@@ -1752,41 +1755,41 @@
       <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
       <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
     </Attribute>
-    <Attribute dwd:design-time-name="3043cbcb-7d52-461d-a3e9-dc62e4a13afd">
+    <Attribute dwd:design-time-name="8c8a9cd8-1fb4-443f-a4c7-d632cf518eeb">
       <ID>DLVSTATE</ID>
       <Name>Delivery State</Name>
       <KeyColumns>
-        <KeyColumn dwd:design-time-name="c6c8da04-b146-423c-a7a9-131c9a96288d">
+        <KeyColumn dwd:design-time-name="6e366838-39a4-4ca4-8f52-8ca85e8ef68b">
           <DataType>WChar</DataType>
           <DataSize>4</DataSize>
-          <Source xsi:type="ColumnBinding" dwd:design-time-name="5a50c384-2c53-4bbe-a3b0-46e9dbde1e73">
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="084964f5-3137-4b0a-8e81-46551478672c">
             <TableID>CUSTPACKINGSLIPJOUR</TableID>
             <ColumnID>DATAAREAID</ColumnID>
           </Source>
         </KeyColumn>
-        <KeyColumn dwd:design-time-name="b846898d-4d09-424f-b99b-68f15865d9c5">
+        <KeyColumn dwd:design-time-name="0a28199c-c0a0-4393-9426-4a66a5e69d2c">
           <DataType>WChar</DataType>
           <DataSize>80</DataSize>
-          <Source xsi:type="ColumnBinding" dwd:design-time-name="6cf22578-d4c5-4050-8e65-2801e5d6268a">
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="27e8c732-7955-49a4-a2ed-12de70671e3f">
             <TableID>CUSTPACKINGSLIPJOUR</TableID>
             <ColumnID>DLVSTATE</ColumnID>
           </Source>
         </KeyColumn>
       </KeyColumns>
-      <NameColumn dwd:design-time-name="fe6872c9-5fbe-4aec-a496-a17ce00eac5d">
+      <NameColumn dwd:design-time-name="4e3a9dc2-68bc-43f9-86bd-b62aefc73dba">
         <DataType>WChar</DataType>
         <DataSize>80</DataSize>
-        <Source xsi:type="ColumnBinding" dwd:design-time-name="5209b20b-a4d4-4873-8ca1-c45fc0228fa1">
+        <Source xsi:type="ColumnBinding" dwd:design-time-name="085f5657-a6e0-4608-98c4-cfc5552a07b0">
           <TableID>CUSTPACKINGSLIPJOUR</TableID>
           <ColumnID>DLVSTATE</ColumnID>
         </Source>
       </NameColumn>
       <Translations>
-        <Translation dwd:design-time-name="2b6cebda-2679-4a9b-bb4f-05bf890cf14a">
+        <Translation dwd:design-time-name="806b153a-6c9e-4965-9d29-c82331df8ba1">
           <Language>3082</Language>
           <Caption>Comunidad autónoma de Entrega</Caption>
         </Translation>
-        <Translation dwd:design-time-name="38d5f043-d02f-4eb4-a1d4-bbfe07fbc876">
+        <Translation dwd:design-time-name="32c61519-805a-48b2-b8c2-9b3f7c7e5e43">
           <Language>1033</Language>
           <Caption>Delivery State</Caption>
         </Translation>
@@ -1794,39 +1797,39 @@
       <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
       <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
     </Attribute>
-    <Attribute dwd:design-time-name="f9d2e48d-758c-42d3-8a19-2f3d14cc07ea">
+    <Attribute dwd:design-time-name="cbb374b0-8f0f-480d-ba1c-b59d73de7209">
       <ID>EXPEDITIONCOST</ID>
       <Name>Expedition Cost</Name>
       <KeyColumns>
-        <KeyColumn dwd:design-time-name="cad29e5d-ff6b-411f-9e11-ffd8f8b0bcd5">
+        <KeyColumn dwd:design-time-name="bb3d11ed-4815-4b9d-914f-b87d40315954">
           <DataType>WChar</DataType>
           <DataSize>4</DataSize>
-          <Source xsi:type="ColumnBinding" dwd:design-time-name="7417ff2b-382a-4e51-8ee5-07c8173ce199">
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="5cd3adf9-09a0-47ac-af4f-9333a5a2bb5b">
             <TableID>SALESSHIPPINGSTAT</TableID>
             <ColumnID>DATAAREAID</ColumnID>
           </Source>
         </KeyColumn>
-        <KeyColumn dwd:design-time-name="52985aca-06f5-4a38-a25a-286630688552">
+        <KeyColumn dwd:design-time-name="2c11a43b-73f7-4653-bb02-167d5b386c5b">
           <DataType>Double</DataType>
-          <Source xsi:type="ColumnBinding" dwd:design-time-name="669765be-da1c-48f1-bd07-9a6aa1016b3f">
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="20509f90-94f9-4c00-9273-7d70f3e81ef0">
             <TableID>SALESSHIPPINGSTAT</TableID>
             <ColumnID>EXPEDITIONCOST</ColumnID>
           </Source>
         </KeyColumn>
       </KeyColumns>
-      <NameColumn dwd:design-time-name="8952ce6c-3f9a-42ce-a810-428a68abc33e">
+      <NameColumn dwd:design-time-name="3480994c-a5f3-4034-b7be-ea1ab81be096">
         <DataType>WChar</DataType>
-        <Source xsi:type="ColumnBinding" dwd:design-time-name="14fa67e0-98a5-431f-9eda-37e0f7973d39">
+        <Source xsi:type="ColumnBinding" dwd:design-time-name="23de06f1-92b8-4749-b437-bbe4fad2088b">
           <TableID>SALESSHIPPINGSTAT</TableID>
           <ColumnID>EXPEDITIONCOST</ColumnID>
         </Source>
       </NameColumn>
       <Translations>
-        <Translation dwd:design-time-name="7355680d-ce09-4e9d-8db1-7d0799b683a7">
+        <Translation dwd:design-time-name="6f354e49-1c6c-44d9-83a8-504abaea29e5">
           <Language>1033</Language>
           <Caption>Expedition Cost</Caption>
         </Translation>
-        <Translation dwd:design-time-name="3a043746-f6e9-4b25-8785-0c6d4d72bd9b">
+        <Translation dwd:design-time-name="65b7fa19-914e-4c56-b157-5e8264be5e58">
           <Language>3082</Language>
           <Caption>Coste del transporte</Caption>
         </Translation>
@@ -1835,39 +1838,39 @@
       <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
       <ddl300_300:FormatString>Currency</ddl300_300:FormatString>
     </Attribute>
-    <Attribute dwd:design-time-name="33a166c1-1473-4a42-ac98-829e211c5b87">
+    <Attribute dwd:design-time-name="a6ffbb9a-2fdb-47e6-84ab-1583775d5707">
       <ID>SHIPCARRIERINVOICEDATE</ID>
       <Name>Carrier Invoice Date</Name>
       <KeyColumns>
-        <KeyColumn dwd:design-time-name="97555c02-7734-403f-a705-1ae8e1db69ab">
+        <KeyColumn dwd:design-time-name="0f1da83a-4c50-49a1-bc08-3b0f4ccf15f6">
           <DataType>WChar</DataType>
           <DataSize>4</DataSize>
-          <Source xsi:type="ColumnBinding" dwd:design-time-name="b7e3cc35-197c-4a97-bc0c-ea581ec0596d">
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="dc995559-b695-49f9-bc61-29b749abd6ca">
             <TableID>CUSTPACKINGSLIPJOUR</TableID>
             <ColumnID>DATAAREAID</ColumnID>
           </Source>
         </KeyColumn>
-        <KeyColumn dwd:design-time-name="a057ae39-4eaf-44ce-b6fe-79bfa38f7e88">
+        <KeyColumn dwd:design-time-name="aa2a3513-03fd-4197-a290-24e2ac31d365">
           <DataType>Date</DataType>
-          <Source xsi:type="ColumnBinding" dwd:design-time-name="29f075bd-738b-4111-a752-788cc8addcc1">
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="3c1f0f72-0863-43e0-a889-f83b1771be10">
             <TableID>CUSTPACKINGSLIPJOUR</TableID>
             <ColumnID>SHIPCARRIERINVOICEDATE</ColumnID>
           </Source>
         </KeyColumn>
       </KeyColumns>
-      <NameColumn dwd:design-time-name="bb60b4d9-1c68-40f5-b84c-ae1fadcdaf35">
+      <NameColumn dwd:design-time-name="2eb1f4fe-43c5-4066-9627-b131cd7417df">
         <DataType>WChar</DataType>
-        <Source xsi:type="ColumnBinding" dwd:design-time-name="44b7d20c-8c40-4475-b0ef-1a6ba4451525">
+        <Source xsi:type="ColumnBinding" dwd:design-time-name="2473ca70-64d9-4606-8fe4-12f2aac16223">
           <TableID>CUSTPACKINGSLIPJOUR</TableID>
           <ColumnID>SHIPCARRIERINVOICEDATE</ColumnID>
         </Source>
       </NameColumn>
       <Translations>
-        <Translation dwd:design-time-name="91de0891-9db1-4e23-9ffe-6bccb4d3dd5a">
+        <Translation dwd:design-time-name="ae7e59e6-caa1-4918-a99f-1150758a8994">
           <Language>1033</Language>
           <Caption>Carrier invoice date</Caption>
         </Translation>
-        <Translation dwd:design-time-name="fb7705cc-b40e-4ccf-bf16-fe70b60e99c1">
+        <Translation dwd:design-time-name="caedde71-ae50-498a-863c-e06607479f81">
           <Language>3082</Language>
           <Caption>Fecha factura del transportista</Caption>
         </Translation>
@@ -1875,39 +1878,39 @@
       <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
       <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
     </Attribute>
-    <Attribute dwd:design-time-name="cb424672-7d3c-4aee-b7eb-f6eeebe05217">
+    <Attribute dwd:design-time-name="7743b34f-1c9b-4e86-8292-08686bbc1969">
       <ID>EXPEDITIONCOSTREAL</ID>
       <Name>Real Expedition Cost</Name>
       <KeyColumns>
-        <KeyColumn dwd:design-time-name="4ec65122-df53-4f17-b35b-30572594c2e9">
+        <KeyColumn dwd:design-time-name="03868c3c-49ab-496e-9e4d-fee8e96df2dc">
           <DataType>WChar</DataType>
           <DataSize>4</DataSize>
-          <Source xsi:type="ColumnBinding" dwd:design-time-name="38ec4438-4c96-43a0-a312-eb522fa7554d">
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="92bd150a-32ba-48ee-ae79-95f70b16a2f9">
             <TableID>SALESSHIPPINGSTAT</TableID>
             <ColumnID>DATAAREAID</ColumnID>
           </Source>
         </KeyColumn>
-        <KeyColumn dwd:design-time-name="01e6315f-83e3-460e-9d89-9fcaa17b7716">
+        <KeyColumn dwd:design-time-name="88a90765-23a4-40db-a365-e8c9b4d46859">
           <DataType>Double</DataType>
-          <Source xsi:type="ColumnBinding" dwd:design-time-name="bbae0c70-41de-4e9c-9d79-ece41fdd7802">
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="a997aced-ac5b-42a2-94df-8e38fde6fb42">
             <TableID>SALESSHIPPINGSTAT</TableID>
             <ColumnID>EXPEDITIONCOSTREAL</ColumnID>
           </Source>
         </KeyColumn>
       </KeyColumns>
-      <NameColumn dwd:design-time-name="259b43fe-7541-4ed9-ae78-3b41e049dd84">
+      <NameColumn dwd:design-time-name="5c0150e6-9d51-4758-b1fe-1b8de6548705">
         <DataType>WChar</DataType>
-        <Source xsi:type="ColumnBinding" dwd:design-time-name="31637ab8-a973-4c70-950a-51795310fa4b">
+        <Source xsi:type="ColumnBinding" dwd:design-time-name="49060f87-8171-4155-a026-e8d860fe961e">
           <TableID>SALESSHIPPINGSTAT</TableID>
           <ColumnID>EXPEDITIONCOSTREAL</ColumnID>
         </Source>
       </NameColumn>
       <Translations>
-        <Translation dwd:design-time-name="bdacc005-03a2-481c-b7ce-e584471a5e2a">
+        <Translation dwd:design-time-name="8ad1b376-83e5-4820-a7e4-8e95645d4f8f">
           <Language>1033</Language>
           <Caption>Real expedition cost</Caption>
         </Translation>
-        <Translation dwd:design-time-name="474e5b48-b3a2-45fe-8ff5-c9e8def66678">
+        <Translation dwd:design-time-name="d4b8ef95-74d3-49a1-ad68-b95811e9611f">
           <Language>3082</Language>
           <Caption>Coste real del transporte</Caption>
         </Translation>
@@ -1916,39 +1919,39 @@
       <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
       <ddl300_300:FormatString>Currency</ddl300_300:FormatString>
     </Attribute>
-    <Attribute dwd:design-time-name="fb3bab45-7c68-40e0-8d57-6a805b49fb99">
+    <Attribute dwd:design-time-name="3f26b870-300c-4f8d-bf13-9816412f3a3e">
       <ID>CARRIERWEIGHT</ID>
       <Name>Shipping Carrier Weight</Name>
       <KeyColumns>
-        <KeyColumn dwd:design-time-name="e37fa4b8-e64b-4830-8528-d9c3fb2db91a">
+        <KeyColumn dwd:design-time-name="555a58d2-b341-4488-9814-e68c5438dfae">
           <DataType>WChar</DataType>
           <DataSize>4</DataSize>
-          <Source xsi:type="ColumnBinding" dwd:design-time-name="6ad9bdf8-9ccc-449e-981c-c56b9144c3fb">
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="8b35fdd8-b8b5-4b11-ad38-21c49a601208">
             <TableID>SALESSHIPPINGSTAT</TableID>
             <ColumnID>DATAAREAID</ColumnID>
           </Source>
         </KeyColumn>
-        <KeyColumn dwd:design-time-name="0569fdca-2bd4-4e24-8b38-88e64d2e78c6">
+        <KeyColumn dwd:design-time-name="8cdf06a0-26c6-41da-843a-b3185a3b0f1c">
           <DataType>Double</DataType>
-          <Source xsi:type="ColumnBinding" dwd:design-time-name="ee4bba48-1bb4-436d-bf01-3bc5c52d21d2">
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="51de78bb-37f0-492f-8ea6-7037d00264ce">
             <TableID>SALESSHIPPINGSTAT</TableID>
             <ColumnID>CARRIERWEIGHT</ColumnID>
           </Source>
         </KeyColumn>
       </KeyColumns>
-      <NameColumn dwd:design-time-name="b4ca12c6-803c-414e-b476-18b47edda89d">
+      <NameColumn dwd:design-time-name="9425802e-52f2-4f8b-a2d2-1adde6d01e69">
         <DataType>WChar</DataType>
-        <Source xsi:type="ColumnBinding" dwd:design-time-name="c5c6669a-4a88-4bf2-bb05-89765ed404df">
+        <Source xsi:type="ColumnBinding" dwd:design-time-name="5740b48f-ea95-4c3c-b3a9-9243f2912ed3">
           <TableID>SALESSHIPPINGSTAT</TableID>
           <ColumnID>CARRIERWEIGHT</ColumnID>
         </Source>
       </NameColumn>
       <Translations>
-        <Translation dwd:design-time-name="70226f42-857c-4352-960f-6aadda5d54eb">
+        <Translation dwd:design-time-name="9b4fdbcd-b596-42d4-89b6-511fe0bf9c75">
           <Language>1033</Language>
           <Caption>Shipping Carrier Weight</Caption>
         </Translation>
-        <Translation dwd:design-time-name="4ea4d5d3-260d-47c9-a947-d3c7c551aa61">
+        <Translation dwd:design-time-name="9b68fd09-8722-4210-ba09-be717e0fe384">
           <Language>3082</Language>
           <Caption>Peso del transportista</Caption>
         </Translation>
@@ -1956,39 +1959,39 @@
       <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
       <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
     </Attribute>
-    <Attribute dwd:design-time-name="8f63b740-f3f8-4f4f-b85a-05cd0b5550c2">
+    <Attribute dwd:design-time-name="0d309006-b5d2-4ab8-a860-276a0a31d07c">
       <ID>IMPORTPACKING</ID>
       <Name>Import Packing</Name>
       <KeyColumns>
-        <KeyColumn dwd:design-time-name="52f7673b-843a-44ff-b47c-d47bda2b292f">
+        <KeyColumn dwd:design-time-name="2310f80a-b097-4ce9-8343-d2318be87242">
           <DataType>WChar</DataType>
           <DataSize>4</DataSize>
-          <Source xsi:type="ColumnBinding" dwd:design-time-name="b5aa604b-9d2d-4ed0-b0ac-bd960fff7c1e">
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="9b20ffbc-25e3-4bea-a321-b383cab61c4d">
             <TableID>SALESSHIPPINGSTAT</TableID>
             <ColumnID>DATAAREAID</ColumnID>
           </Source>
         </KeyColumn>
-        <KeyColumn dwd:design-time-name="1179d229-4027-43ff-b623-9cf1ecad90e7">
+        <KeyColumn dwd:design-time-name="9743a1e5-f894-4939-8427-eb6f831ae7f9">
           <DataType>Double</DataType>
-          <Source xsi:type="ColumnBinding" dwd:design-time-name="684be5da-3f37-4ef6-bc24-e3c96f3cdb2b">
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="23aaf3ec-3a32-48b1-8c89-7b2f05493580">
             <TableID>SALESSHIPPINGSTAT</TableID>
             <ColumnID>IMPORTPACKING</ColumnID>
           </Source>
         </KeyColumn>
       </KeyColumns>
-      <NameColumn dwd:design-time-name="d8a40dac-c33e-4582-8647-bb84c81da577">
+      <NameColumn dwd:design-time-name="c2f0636c-cd19-4987-bcb6-246a1a6d77eb">
         <DataType>WChar</DataType>
-        <Source xsi:type="ColumnBinding" dwd:design-time-name="15f2f783-5433-4832-827a-0406bb7e54bf">
+        <Source xsi:type="ColumnBinding" dwd:design-time-name="ebb78309-691a-46fa-b6be-253062d124a6">
           <TableID>SALESSHIPPINGSTAT</TableID>
           <ColumnID>IMPORTPACKING</ColumnID>
         </Source>
       </NameColumn>
       <Translations>
-        <Translation dwd:design-time-name="641fda19-6d95-469b-9392-87987d4f6bb3">
+        <Translation dwd:design-time-name="ecdce18b-be5c-4bfb-862a-a225e9db2c31">
           <Language>1033</Language>
           <Caption>Import Packing</Caption>
         </Translation>
-        <Translation dwd:design-time-name="9e72fe2a-3a4c-4748-bc64-d3ae55be3760">
+        <Translation dwd:design-time-name="1c3f3b9b-7674-4c61-b140-3cb4c8d2ae60">
           <Language>3082</Language>
           <Caption>Total Albarán</Caption>
         </Translation>
@@ -1997,39 +2000,39 @@
       <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
       <ddl300_300:FormatString>Currency</ddl300_300:FormatString>
     </Attribute>
-    <Attribute dwd:design-time-name="75057ead-9d1e-46f3-9ccd-f7feec0774b8">
+    <Attribute dwd:design-time-name="19f928b3-20f3-4718-9076-8eb3371c4dcc">
       <ID>GPCODPRICE</ID>
       <Name>Refund</Name>
       <KeyColumns>
-        <KeyColumn dwd:design-time-name="ff213abc-726e-43fe-9efc-355d824c062d">
+        <KeyColumn dwd:design-time-name="0125fe9b-44fb-46bf-b3c8-71dc77022ddc">
           <DataType>WChar</DataType>
           <DataSize>4</DataSize>
-          <Source xsi:type="ColumnBinding" dwd:design-time-name="4975fd38-d9bf-4a47-ad0f-3e1e6e4a671c">
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="719e2c4e-6f23-4d74-a8eb-882c1ec78ad2">
             <TableID>SALESSHIPPINGSTAT</TableID>
             <ColumnID>DATAAREAID</ColumnID>
           </Source>
         </KeyColumn>
-        <KeyColumn dwd:design-time-name="7583c60a-9dca-46b9-8743-75329ef80636">
+        <KeyColumn dwd:design-time-name="4fa7c46b-bf4e-4742-8d18-fe0a115fed58">
           <DataType>Double</DataType>
-          <Source xsi:type="ColumnBinding" dwd:design-time-name="474a474c-f294-472d-8db7-fd6655b67484">
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="ec4b4596-ea46-4578-925b-cd4609248462">
             <TableID>SALESSHIPPINGSTAT</TableID>
             <ColumnID>GPCODPRICE</ColumnID>
           </Source>
         </KeyColumn>
       </KeyColumns>
-      <NameColumn dwd:design-time-name="c103d60c-165e-4f68-b715-1172d443c345">
+      <NameColumn dwd:design-time-name="3e309655-73df-42cc-b08d-cede727b9724">
         <DataType>WChar</DataType>
-        <Source xsi:type="ColumnBinding" dwd:design-time-name="e11d86c9-91ea-42b6-81fa-4969cd6541b9">
+        <Source xsi:type="ColumnBinding" dwd:design-time-name="ac3a6465-59ed-45b8-b6c8-0866692d96a5">
           <TableID>SALESSHIPPINGSTAT</TableID>
           <ColumnID>GPCODPRICE</ColumnID>
         </Source>
       </NameColumn>
       <Translations>
-        <Translation dwd:design-time-name="8aaf62f3-e5a6-431f-a0af-7433a29ce1d5">
+        <Translation dwd:design-time-name="f2e17b89-11e6-4031-bd7c-5c94d78b72f4">
           <Language>1033</Language>
           <Caption>Refund</Caption>
         </Translation>
-        <Translation dwd:design-time-name="7257fbe8-4980-4dfc-ac7b-40ff68d74539">
+        <Translation dwd:design-time-name="ea158c56-1fb1-43c0-87ed-cdea9da6499f">
           <Language>3082</Language>
           <Caption>Reembolso</Caption>
         </Translation>
@@ -2038,39 +2041,39 @@
       <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
       <ddl300_300:FormatString>Currency</ddl300_300:FormatString>
     </Attribute>
-    <Attribute dwd:design-time-name="c56c2a94-11c4-4325-ba96-fc2191bef0a5">
+    <Attribute dwd:design-time-name="1667e798-0bdc-4c9c-a995-f87a869cf1a2">
       <ID>Volumetric Weight</ID>
       <Name>Volumetric Weight</Name>
       <KeyColumns>
-        <KeyColumn dwd:design-time-name="4b1969c3-3364-4fc5-b281-135f7f673b11">
+        <KeyColumn dwd:design-time-name="630cb93f-11cf-4b0f-aa75-016740a7cc70">
           <DataType>WChar</DataType>
           <DataSize>4</DataSize>
-          <Source xsi:type="ColumnBinding" dwd:design-time-name="0ba8f8df-a4f9-4967-bfe6-1e8030474d6b">
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="fd98ec99-a77b-44f3-8b9a-e58da291f4de">
             <TableID>SALESSHIPPINGSTAT</TableID>
             <ColumnID>DATAAREAID</ColumnID>
           </Source>
         </KeyColumn>
-        <KeyColumn dwd:design-time-name="b0470ad5-54e1-4fea-b48b-4539f373605d">
+        <KeyColumn dwd:design-time-name="d81d90c9-488f-4fe5-9565-f03116ef0b9a">
           <DataType>Double</DataType>
-          <Source xsi:type="ColumnBinding" dwd:design-time-name="2198bb32-d4c3-47f1-b789-6806c86e1e8a">
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="f492b978-0efe-4acd-b35e-9940a4964135">
             <TableID>SALESSHIPPINGSTAT</TableID>
             <ColumnID>VolumetricWeight</ColumnID>
           </Source>
         </KeyColumn>
       </KeyColumns>
-      <NameColumn dwd:design-time-name="6f782316-7549-43ad-b134-e013e3a0ecc1">
+      <NameColumn dwd:design-time-name="a128f130-889d-4f94-811b-414b53a0c1d9">
         <DataType>WChar</DataType>
-        <Source xsi:type="ColumnBinding" dwd:design-time-name="ff0c464c-31b1-4031-98a9-a4900e74b33e">
+        <Source xsi:type="ColumnBinding" dwd:design-time-name="ce97aae7-e155-46da-8a5d-c06282e560bc">
           <TableID>SALESSHIPPINGSTAT</TableID>
           <ColumnID>VolumetricWeight</ColumnID>
         </Source>
       </NameColumn>
       <Translations>
-        <Translation dwd:design-time-name="d1cb3543-e37a-451a-93b5-9ab366c48d92">
+        <Translation dwd:design-time-name="8335dfb8-8759-4009-86b1-2991320ee04d">
           <Language>1033</Language>
           <Caption>Volumetric Weight</Caption>
         </Translation>
-        <Translation dwd:design-time-name="34492745-4f98-42d8-a190-a30c43416b7b">
+        <Translation dwd:design-time-name="e4b57b23-9755-4024-b1a7-9afb218b300b">
           <Language>3082</Language>
           <Caption>Peso volumétrico</Caption>
         </Translation>
@@ -2078,39 +2081,39 @@
       <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
       <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
     </Attribute>
-    <Attribute dwd:design-time-name="49e7b143-38c4-4b5a-80e0-beb8fc2d6890">
+    <Attribute dwd:design-time-name="44124ddf-12ff-426e-81a9-c2f73f78e991">
       <ID>Delivered</ID>
       <Name>Delivered</Name>
       <KeyColumns>
-        <KeyColumn dwd:design-time-name="2cd8df94-d773-4ddc-ad73-7b602c7087c4">
+        <KeyColumn dwd:design-time-name="4e147897-57ac-4dfd-8c05-f8de31d69ca9">
           <DataType>WChar</DataType>
           <DataSize>4</DataSize>
-          <Source xsi:type="ColumnBinding" dwd:design-time-name="a44ee305-1c01-4533-9c0a-fdb6af650b0b">
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="975a77a8-5843-4ae7-a59a-ebae3ed88150">
             <TableID>SALESSHIPPINGSTAT</TableID>
             <ColumnID>DATAAREAID</ColumnID>
           </Source>
         </KeyColumn>
-        <KeyColumn dwd:design-time-name="0df23a22-8243-4b09-aa19-0ff09643d6f8">
+        <KeyColumn dwd:design-time-name="a3b2a86f-f188-4389-802d-1f3871dceb00">
           <DataType>Boolean</DataType>
-          <Source xsi:type="ColumnBinding" dwd:design-time-name="43edcf40-f459-4af0-b6ed-935af3663a27">
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="cb4499d1-6f60-4301-a27e-c89ba8657e1f">
             <TableID>SALESSHIPPINGSTAT</TableID>
             <ColumnID>Delivered</ColumnID>
           </Source>
         </KeyColumn>
       </KeyColumns>
-      <NameColumn dwd:design-time-name="1cad9abf-96ae-4b86-a6c5-c9f596eb66ca">
+      <NameColumn dwd:design-time-name="574ef875-d80a-4a52-a554-08efa5223ed9">
         <DataType>WChar</DataType>
-        <Source xsi:type="ColumnBinding" dwd:design-time-name="72372268-33b1-46df-922e-00b293141b46">
+        <Source xsi:type="ColumnBinding" dwd:design-time-name="8726d267-9156-4794-b18e-33381c9dc55a">
           <TableID>SALESSHIPPINGSTAT</TableID>
           <ColumnID>Delivered</ColumnID>
         </Source>
       </NameColumn>
       <Translations>
-        <Translation dwd:design-time-name="84aaf966-4dd9-4a9b-9d43-702751075e71">
+        <Translation dwd:design-time-name="67aff2b3-fbeb-4718-b97d-9a51e33c8a56">
           <Language>1033</Language>
           <Caption>Delivered</Caption>
         </Translation>
-        <Translation dwd:design-time-name="6e7f1f5f-6478-4953-a7b8-8aaddab2cac3">
+        <Translation dwd:design-time-name="ca88c6d1-1df3-4d53-b145-d6e2fe632e33">
           <Language>3082</Language>
           <Caption>Entregado</Caption>
         </Translation>
@@ -2118,39 +2121,39 @@
       <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
       <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
     </Attribute>
-    <Attribute dwd:design-time-name="0e820a62-7092-4884-b7cb-d58beef06958">
+    <Attribute dwd:design-time-name="2e286158-02c5-491f-bb47-0f84795a238d">
       <ID>Dispatched</ID>
       <Name>Dispatched</Name>
       <KeyColumns>
-        <KeyColumn dwd:design-time-name="ca3f1d57-2db8-46c4-96f9-48925b40e63d">
+        <KeyColumn dwd:design-time-name="2f7cda6b-a7d1-4261-9f13-a27b3eb3abc1">
           <DataType>WChar</DataType>
           <DataSize>4</DataSize>
-          <Source xsi:type="ColumnBinding" dwd:design-time-name="33f3806f-9053-44b3-91fb-db40775821f9">
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="6224e3b2-1f65-4593-83ae-71bd9f37ecca">
             <TableID>SALESSHIPPINGSTAT</TableID>
             <ColumnID>DATAAREAID</ColumnID>
           </Source>
         </KeyColumn>
-        <KeyColumn dwd:design-time-name="a7cad07e-8c33-4a04-86e3-7ef7eb309012">
+        <KeyColumn dwd:design-time-name="e1b7f843-189b-420a-bb1b-9ebdfb82cb4c">
           <DataType>Boolean</DataType>
-          <Source xsi:type="ColumnBinding" dwd:design-time-name="9d406314-5103-44bb-afc7-b98cc11351c9">
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="10c71ee1-1be2-48a4-bcda-bf7a8ae48e27">
             <TableID>SALESSHIPPINGSTAT</TableID>
             <ColumnID>Dispatched</ColumnID>
           </Source>
         </KeyColumn>
       </KeyColumns>
-      <NameColumn dwd:design-time-name="7c79a9a7-a967-4328-8729-21b27e98cf98">
+      <NameColumn dwd:design-time-name="5abdc5c4-4f14-48f3-b577-5d2242297453">
         <DataType>WChar</DataType>
-        <Source xsi:type="ColumnBinding" dwd:design-time-name="b07da048-fbd8-4a04-a1c5-82304a4de3d1">
+        <Source xsi:type="ColumnBinding" dwd:design-time-name="f969024c-7dff-46e7-9702-de744038beed">
           <TableID>SALESSHIPPINGSTAT</TableID>
           <ColumnID>Dispatched</ColumnID>
         </Source>
       </NameColumn>
       <Translations>
-        <Translation dwd:design-time-name="53cf1e58-41a9-4494-bef0-3a99ded9e09e">
+        <Translation dwd:design-time-name="531c9e73-9a43-4354-b680-3c7e1a7e2899">
           <Language>1033</Language>
           <Caption>Dispatched</Caption>
         </Translation>
-        <Translation dwd:design-time-name="a6c99030-e90d-4f1f-a553-d63a85d16333">
+        <Translation dwd:design-time-name="8502e55c-7022-4e89-93de-32048b555808">
           <Language>3082</Language>
           <Caption>Enviado</Caption>
         </Translation>
