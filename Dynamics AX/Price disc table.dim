@@ -1,0 +1,462 @@
+﻿<Dimension xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:ddl200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:ddl200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:ddl300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:ddl300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:ddl400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:ddl400_400="http://schemas.microsoft.com/analysisservices/2012/engine/400/400" xmlns:ddl500="http://schemas.microsoft.com/analysisservices/2013/engine/500" xmlns:ddl500_500="http://schemas.microsoft.com/analysisservices/2013/engine/500/500" xmlns:dwd="http://schemas.microsoft.com/DataWarehouse/Designer/1.0" dwd:design-time-name="df002762-58a6-4fd5-b137-efa0fe3d6a3d" xmlns="http://schemas.microsoft.com/analysisservices/2003/engine">
+  <ID>Price disc table</ID>
+  <Name>Price disc table</Name>
+  <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+  <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+  <Annotations>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramLayout</Name>
+      <Value>
+        <dds xmlns="">
+          <diagram fontclsid="{0BE35203-8F91-11CE-9DE3-00AA004BB851}" mouseiconclsid="{0BE35204-8F91-11CE-9DE3-00AA004BB851}" defaultlayout="MSDDS.Rectilinear" defaultlineroute="MSDDS.Rectilinear" version="7" nextobject="3" scale="100" pagebreakanchorx="0" pagebreakanchory="0" pagebreaksizex="0" pagebreaksizey="0" scrollleft="-3587" scrolltop="-4674" gridx="150" gridy="150" marginx="5000" marginy="5000" zoom="100" x="23125" y="18733" backcolor="16777215" defaultpersistence="2" PrintPageNumbersMode="3" PrintMarginTop="0" PrintMarginBottom="635" PrintMarginLeft="0" PrintMarginRight="0" marqueeselectionmode="0" mousepointer="0" snaptogrid="0" autotypeannotation="1" showscrollbars="0" viewpagebreaks="0" donotforceconnectorsbehindshapes="1" backpictureclsid="{00000000-0000-0000-0000-000000000000}">
+            <font>
+              <ddsxmlobjectstreamwrapper binary="01000000900144420100065461686f6d61" />
+            </font>
+            <mouseicon>
+              <ddsxmlobjectstreamwrapper binary="6c74000000000000" />
+            </mouseicon>
+          </diagram>
+          <layoutmanager>
+            <ddsxmlobj />
+          </layoutmanager>
+          <ddscontrol controlprogid="DdsShapes.DdsObjectManagedBridge" tooltip="PRICEDISCTABLE" left="20" top="0" logicalid="2" controlid="1" masterid="0" hint1="0" hint2="0" width="4022" height="5000" noresize="0" nomove="0" nodefaultattachpoints="0" autodrag="1" usedefaultiddshape="1" selectable="1" showselectionhandles="1" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+            <control>
+              <ddsxmlobjectstreaminitwrapper binary="000e0000b60f000088130000" />
+            </control>
+            <layoutobject>
+              <ddsxmlobj>
+                <property name="LogicalObject" value="dbo_PRICEDISCTABLE" vartype="8" />
+              </ddsxmlobj>
+            </layoutobject>
+            <shape groupshapeid="0" groupnode="0" />
+          </ddscontrol>
+        </dds>
+      </Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ShowFriendlyNames</Name>
+      <Value>true</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ShowRelationshipNames</Name>
+      <Value>false</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:UseDiagramDefaultLayout</Name>
+      <Value>true</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramViewPortLeft</Name>
+      <Value>-3587</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramViewPortTop</Name>
+      <Value>-4674</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramBoundingLeft</Name>
+      <Value>20</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramBoundingTop</Name>
+      <Value>0</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramZoom</Name>
+      <Value>100</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ARDiagramLayout</Name>
+      <Value>
+        <DiagramLayout ZoomPercent="100" ViewPortX="0" ViewPortY="0" xmlns="">
+          <Shapes NodeWidth="140">
+            <Shape Id="RECID" Expanded="false">
+              <Attributes>
+                <Attribute Id="RECID" />
+                <Attribute Id="ACCOUNTRELATION" />
+                <Attribute Id="FROMDATE" />
+                <Attribute Id="ITEMRELATION" />
+                <Attribute Id="AMOUNT" />
+                <Attribute Id="TODATE" />
+              </Attributes>
+              <Position x="20" y="20" />
+            </Shape>
+          </Shapes>
+        </DiagramLayout>
+      </Value>
+    </Annotation>
+  </Annotations>
+  <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+  <State>Unprocessed</State>
+  <Source xsi:type="DataSourceViewBinding" dwd:design-time-name="a94227ea-8694-435d-bcab-1d9165f9cb9e">
+    <DataSourceViewID>Dynamics AX</DataSourceViewID>
+  </Source>
+  <ErrorConfiguration dwd:design-time-name="1c14b806-184f-4d8f-906a-7c70a0add6fe">
+    <KeyErrorLimitAction>StopLogging</KeyErrorLimitAction>
+    <KeyNotFound>IgnoreError</KeyNotFound>
+    <NullKeyNotAllowed>IgnoreError</NullKeyNotAllowed>
+  </ErrorConfiguration>
+  <CurrentStorageMode>Molap</CurrentStorageMode>
+  <Translations>
+    <Translation dwd:design-time-name="3c6e9a97-f5e3-464e-b91c-1de1aa82b9ff">
+      <Language>3082</Language>
+      <Caption>Precios</Caption>
+    </Translation>
+  </Translations>
+  <Attributes>
+    <Attribute dwd:design-time-name="f39b0d6b-d7c4-4665-a3cc-f881a8cf7477">
+      <ID>RECID</ID>
+      <Name>Price disc table</Name>
+      <Usage>Key</Usage>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="1a5a7f7d-e2c4-4f6c-9640-f1117a122a73">
+          <DataType>WChar</DataType>
+          <DataSize>4</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="83741db9-18ae-48bb-a988-df264113c8c8">
+            <TableID>dbo_PRICEDISCTABLE</TableID>
+            <ColumnID>DATAAREAID</ColumnID>
+          </Source>
+        </KeyColumn>
+        <KeyColumn dwd:design-time-name="a652db0d-0c36-49f9-be03-fda7c43151d6">
+          <DataType>Integer</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="afd381ce-d64b-468a-9be3-cf8f22fd20a3">
+            <TableID>dbo_PRICEDISCTABLE</TableID>
+            <ColumnID>RELATION</ColumnID>
+          </Source>
+        </KeyColumn>
+        <KeyColumn dwd:design-time-name="3918fbae-6fdc-4ddc-aff1-da149f8744d5">
+          <DataType>Integer</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="fb9d1f6a-5164-40ff-8512-fceb858cde08">
+            <TableID>dbo_PRICEDISCTABLE</TableID>
+            <ColumnID>ITEMCODE</ColumnID>
+          </Source>
+        </KeyColumn>
+        <KeyColumn dwd:design-time-name="f5c563c3-d299-4283-a579-53e010f45810">
+          <DataType>WChar</DataType>
+          <DataSize>20</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="e3c4a4a0-67b6-495a-99fd-6828a783448b">
+            <TableID>dbo_PRICEDISCTABLE</TableID>
+            <ColumnID>ITEMRELATION</ColumnID>
+          </Source>
+        </KeyColumn>
+        <KeyColumn dwd:design-time-name="5122b6af-4677-4e93-9dd8-bda1a4fe3bb5">
+          <DataType>Integer</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="bc870ca9-bf44-47ce-b0b6-e213de59be6b">
+            <TableID>dbo_PRICEDISCTABLE</TableID>
+            <ColumnID>ACCOUNTCODE</ColumnID>
+          </Source>
+        </KeyColumn>
+        <KeyColumn dwd:design-time-name="75ca26ea-9a98-4c19-b8ac-3e88ec40d791">
+          <DataType>WChar</DataType>
+          <DataSize>20</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="99e36933-e2e4-46e4-aa49-1e332b199919">
+            <TableID>dbo_PRICEDISCTABLE</TableID>
+            <ColumnID>ACCOUNTRELATION</ColumnID>
+          </Source>
+        </KeyColumn>
+        <KeyColumn dwd:design-time-name="c3146dc1-c2b8-45b1-a993-bdddc85d338b">
+          <DataType>WChar</DataType>
+          <DataSize>3</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="bb8c36af-6d81-47d1-a838-da7fb857cc36">
+            <TableID>dbo_PRICEDISCTABLE</TableID>
+            <ColumnID>CURRENCY</ColumnID>
+          </Source>
+        </KeyColumn>
+        <KeyColumn dwd:design-time-name="de4fab7d-db98-4ced-b61e-66ef24a1c593">
+          <DataType>WChar</DataType>
+          <DataSize>20</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="dd7dc92f-3f0a-442c-9875-a3939062a70f">
+            <TableID>dbo_PRICEDISCTABLE</TableID>
+            <ColumnID>INVENTDIMID</ColumnID>
+          </Source>
+        </KeyColumn>
+        <KeyColumn dwd:design-time-name="f29cfee3-df35-422e-90ea-90b599653565">
+          <DataType>WChar</DataType>
+          <DataSize>80</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="e554eaf0-a7ab-4338-befc-4bce2c968a98">
+            <TableID>dbo_PRICEDISCTABLE</TableID>
+            <ColumnID>UNITID</ColumnID>
+          </Source>
+        </KeyColumn>
+        <KeyColumn dwd:design-time-name="002280c1-632c-47dd-bd38-31137d65de22">
+          <DataType>Double</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="8ce53122-9893-4146-8717-68d96d16a45b">
+            <TableID>dbo_PRICEDISCTABLE</TableID>
+            <ColumnID>QUANTITYAMOUNT</ColumnID>
+          </Source>
+        </KeyColumn>
+        <KeyColumn dwd:design-time-name="2843eb33-8d4b-45db-a8d2-e788fbf6dab3">
+          <DataType>BigInt</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="54e90f26-ac87-47e7-9e25-4c5d6010e8cd">
+            <TableID>dbo_PRICEDISCTABLE</TableID>
+            <ColumnID>RECID</ColumnID>
+          </Source>
+        </KeyColumn>
+        <KeyColumn dwd:design-time-name="d0512402-6167-4844-a3ab-e147481b74fe">
+          <DataType>Date</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="65943bff-7f55-433c-8a62-cf06f82b8fbc">
+            <TableID>dbo_PRICEDISCTABLE</TableID>
+            <ColumnID>FROMDATE</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <NameColumn dwd:design-time-name="e97b1110-753d-4b4b-ba53-7f591cbd3275">
+        <DataType>WChar</DataType>
+        <Source xsi:type="ColumnBinding" dwd:design-time-name="0483a8d3-25db-4893-98c2-ef427fd69a9d">
+          <TableID>dbo_PRICEDISCTABLE</TableID>
+          <ColumnID>AMOUNT</ColumnID>
+        </Source>
+      </NameColumn>
+      <Translations>
+        <Translation dwd:design-time-name="44c67a63-9a6b-4497-9df9-9d01d66865d6">
+          <Language>3082</Language>
+          <Caption>Precios</Caption>
+        </Translation>
+      </Translations>
+      <AttributeRelationships>
+        <AttributeRelationship dwd:design-time-name="46baf2c8-34ac-4fdd-9a41-18e8fa812c90">
+          <AttributeID>FROMDATE</AttributeID>
+          <Name>From date</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="46d175a4-623c-4673-b24c-b1d4a4fbc26e">
+          <AttributeID>TODATE</AttributeID>
+          <Name>To date</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="94284805-323d-435b-a57b-c7ba5a0d875a">
+          <AttributeID>AMOUNT</AttributeID>
+          <Name>Price</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="4ea94ac2-6744-4880-b0ac-6ede68266260">
+          <AttributeID>ITEMRELATION</AttributeID>
+          <Name>Item Id</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="3a892f40-1624-4734-bb38-17eeb4626754">
+          <AttributeID>ACCOUNTRELATION</AttributeID>
+          <Name>Account relation</Name>
+        </AttributeRelationship>
+      </AttributeRelationships>
+      <OrderBy>Key</OrderBy>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="f47f9933-3993-49c9-974f-925ce08ecdb2">
+      <ID>FROMDATE</ID>
+      <Name>From date</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="4227650f-8726-40aa-871e-e247bb75c77e">
+          <DataType>WChar</DataType>
+          <DataSize>4</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="1557f6e2-3a0e-4364-842c-569b3a132f51">
+            <TableID>dbo_PRICEDISCTABLE</TableID>
+            <ColumnID>DATAAREAID</ColumnID>
+          </Source>
+        </KeyColumn>
+        <KeyColumn dwd:design-time-name="4a8351f1-4bc9-42d0-a76f-a03a7bc8b1aa">
+          <DataType>Date</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="90e6a9ff-4f7f-432c-9000-6388f4d8ef5b">
+            <TableID>dbo_PRICEDISCTABLE</TableID>
+            <ColumnID>FROMDATE</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <NameColumn dwd:design-time-name="806f7619-0ca7-40c5-af0d-62b497697309">
+        <DataType>WChar</DataType>
+        <Source xsi:type="ColumnBinding" dwd:design-time-name="fb160cd5-89f0-4393-accf-0770ec48518b">
+          <TableID>dbo_PRICEDISCTABLE</TableID>
+          <ColumnID>FROMDATE</ColumnID>
+        </Source>
+      </NameColumn>
+      <Translations>
+        <Translation dwd:design-time-name="e18f3bc5-1332-410b-ba13-1cdbb89492b8">
+          <Language>3082</Language>
+          <Caption>Desde fecha</Caption>
+        </Translation>
+      </Translations>
+      <OrderBy>Key</OrderBy>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="2620be57-39e5-487b-97bc-0ec483a6d161">
+      <ID>TODATE</ID>
+      <Name>To date</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="c4c26831-3561-48c2-a16c-2e1b13ff54ed">
+          <DataType>WChar</DataType>
+          <DataSize>4</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="2bd1554a-6b90-491c-9ba6-e0cda2a5a4ef">
+            <TableID>dbo_PRICEDISCTABLE</TableID>
+            <ColumnID>DATAAREAID</ColumnID>
+          </Source>
+        </KeyColumn>
+        <KeyColumn dwd:design-time-name="770d2563-ba54-4fa6-8cb8-c56a3aad0d43">
+          <DataType>Date</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="34283d74-fea1-46f4-9bc7-287a103aecfa">
+            <TableID>dbo_PRICEDISCTABLE</TableID>
+            <ColumnID>TODATE</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <NameColumn dwd:design-time-name="735fb373-0e0a-484a-9bbf-77d43f5ad158">
+        <DataType>WChar</DataType>
+        <Source xsi:type="ColumnBinding" dwd:design-time-name="e3f9064a-61bd-443d-93b7-c06b12a6be41">
+          <TableID>dbo_PRICEDISCTABLE</TableID>
+          <ColumnID>TODATE</ColumnID>
+        </Source>
+      </NameColumn>
+      <Translations>
+        <Translation dwd:design-time-name="7bf705ed-1dfd-430d-854c-6599449c0eb6">
+          <Language>3082</Language>
+          <Caption>Hasta fecha</Caption>
+        </Translation>
+      </Translations>
+      <OrderBy>Key</OrderBy>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="f5a03c3e-577f-46a4-981b-ae0d345fe1b3">
+      <ID>AMOUNT</ID>
+      <Name>Price</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="c861361d-8274-4242-863d-81aeb5c7eb12">
+          <DataType>WChar</DataType>
+          <DataSize>4</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="4d536169-98e0-4089-afb4-834a032d64ae">
+            <TableID>dbo_PRICEDISCTABLE</TableID>
+            <ColumnID>DATAAREAID</ColumnID>
+          </Source>
+        </KeyColumn>
+        <KeyColumn dwd:design-time-name="5b20f24b-9fc4-4bf6-9180-a1ddc969eb49">
+          <DataType>Double</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="01854c33-dfa6-41cc-9728-560d0e80fb1b">
+            <TableID>dbo_PRICEDISCTABLE</TableID>
+            <ColumnID>AMOUNT</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <NameColumn dwd:design-time-name="ba628f5e-f1b9-4b83-84d8-5ed93ef9f35e">
+        <DataType>WChar</DataType>
+        <Source xsi:type="ColumnBinding" dwd:design-time-name="dfc844a3-5252-44ea-b284-c22932029d12">
+          <TableID>dbo_PRICEDISCTABLE</TableID>
+          <ColumnID>AMOUNT</ColumnID>
+        </Source>
+      </NameColumn>
+      <Translations>
+        <Translation dwd:design-time-name="e9c75411-61cf-40f0-bf51-f671b44201fa">
+          <Language>3082</Language>
+          <Caption>Precio</Caption>
+        </Translation>
+      </Translations>
+      <OrderBy>Key</OrderBy>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="24de27d0-f7cb-4446-9380-3de7deca697d">
+      <ID>ITEMRELATION</ID>
+      <Name>Item Id</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="97cb54f2-fa5e-4895-9dd4-14750f085cdd">
+          <DataType>WChar</DataType>
+          <DataSize>4</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="76996007-39ff-4ddf-85b1-5c4810afb06f">
+            <TableID>dbo_PRICEDISCTABLE</TableID>
+            <ColumnID>DATAAREAID</ColumnID>
+          </Source>
+        </KeyColumn>
+        <KeyColumn dwd:design-time-name="8909dc07-b45f-4adc-b86e-419feaff377d">
+          <DataType>Integer</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="e4207784-e67f-4cfb-ae1e-608ca31738ab">
+            <TableID>dbo_PRICEDISCTABLE</TableID>
+            <ColumnID>ITEMCODE</ColumnID>
+          </Source>
+        </KeyColumn>
+        <KeyColumn dwd:design-time-name="e2ef5061-26ab-4476-b6b1-7a9a97c18808">
+          <DataType>WChar</DataType>
+          <DataSize>20</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="07bab2dc-e0f3-44c3-a1e4-e6ac423a62a1">
+            <TableID>dbo_PRICEDISCTABLE</TableID>
+            <ColumnID>ITEMRELATION</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <NameColumn dwd:design-time-name="247c5d58-c697-4439-9f42-29a5cc47e4f3">
+        <DataType>WChar</DataType>
+        <DataSize>20</DataSize>
+        <Source xsi:type="ColumnBinding" dwd:design-time-name="c2749d00-819e-4e98-a123-f160546bc15e">
+          <TableID>dbo_PRICEDISCTABLE</TableID>
+          <ColumnID>ITEMRELATION</ColumnID>
+        </Source>
+      </NameColumn>
+      <Translations>
+        <Translation dwd:design-time-name="ec6d8a74-0d62-4ba4-b9e3-fd616ddd3ea5">
+          <Language>3082</Language>
+          <Caption>Artículo</Caption>
+        </Translation>
+      </Translations>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="e2d5c3b1-4f00-4077-bbb5-fb8c07ba5d19">
+      <ID>ACCOUNTRELATION</ID>
+      <Name>Account relation</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="5a0e3e84-a2ec-42fa-9f9b-69e422b855ed">
+          <DataType>WChar</DataType>
+          <DataSize>4</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="f27b3fc3-c3d9-40b6-bbf0-56287668e6f7">
+            <TableID>dbo_PRICEDISCTABLE</TableID>
+            <ColumnID>DATAAREAID</ColumnID>
+          </Source>
+        </KeyColumn>
+        <KeyColumn dwd:design-time-name="ed1f6676-759d-4523-b7fa-3ff54fbb1ac7">
+          <DataType>Integer</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="9f35d674-89eb-423f-8b38-84b35436f702">
+            <TableID>dbo_PRICEDISCTABLE</TableID>
+            <ColumnID>MODULE</ColumnID>
+          </Source>
+        </KeyColumn>
+        <KeyColumn dwd:design-time-name="9bcd09a8-ad52-462c-bfd2-6f360f1604dc">
+          <DataType>Integer</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="947efd08-c3d2-438b-af48-03f812b23dc3">
+            <TableID>dbo_PRICEDISCTABLE</TableID>
+            <ColumnID>ACCOUNTCODE</ColumnID>
+          </Source>
+        </KeyColumn>
+        <KeyColumn dwd:design-time-name="c8bbd4d1-0189-4f49-ab8c-dc6f3d873978">
+          <DataType>WChar</DataType>
+          <DataSize>20</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="f9b3ba32-b1e6-40af-b0d3-f7669a7058a5">
+            <TableID>dbo_PRICEDISCTABLE</TableID>
+            <ColumnID>ACCOUNTRELATION</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <NameColumn dwd:design-time-name="41922513-4584-4b43-b02f-4e9d82841ba2">
+        <DataType>WChar</DataType>
+        <DataSize>20</DataSize>
+        <Source xsi:type="ColumnBinding" dwd:design-time-name="33ffd216-266f-4ac9-b368-7651cc83d0c1">
+          <TableID>dbo_PRICEDISCTABLE</TableID>
+          <ColumnID>ACCOUNTRELATION</ColumnID>
+        </Source>
+      </NameColumn>
+      <Translations>
+        <Translation dwd:design-time-name="7e26f64b-1735-44f3-9fbe-1ae8c89f47a0">
+          <Language>3082</Language>
+          <Caption>Selección de cuentas</Caption>
+        </Translation>
+      </Translations>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+  </Attributes>
+  <ProactiveCaching dwd:design-time-name="195ccd0a-c685-42c0-a203-41f16f5c8c9d">
+    <SilenceInterval>-PT1S</SilenceInterval>
+    <Latency>-PT1S</Latency>
+    <SilenceOverrideInterval>-PT1S</SilenceOverrideInterval>
+    <ForceRebuildInterval>-PT1S</ForceRebuildInterval>
+    <AggregationStorage>MolapOnly</AggregationStorage>
+    <Source xsi:type="ProactiveCachingInheritedBinding" dwd:design-time-name="de1951cd-7bb7-493e-9770-89d5b7dfbe16">
+      <NotificationTechnique>Server</NotificationTechnique>
+    </Source>
+  </ProactiveCaching>
+  <ddl300:ProcessingState>Unprocessed</ddl300:ProcessingState>
+</Dimension>
