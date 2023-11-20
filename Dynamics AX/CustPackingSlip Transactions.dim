@@ -1,0 +1,1282 @@
+﻿<Dimension xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:ddl200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:ddl200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:ddl300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:ddl300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:ddl400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:ddl400_400="http://schemas.microsoft.com/analysisservices/2012/engine/400/400" xmlns:ddl500="http://schemas.microsoft.com/analysisservices/2013/engine/500" xmlns:ddl500_500="http://schemas.microsoft.com/analysisservices/2013/engine/500/500" xmlns:dwd="http://schemas.microsoft.com/DataWarehouse/Designer/1.0" dwd:design-time-name="307fb10d-de0d-42cb-9ce1-c2ba35fcd614" xmlns="http://schemas.microsoft.com/analysisservices/2003/engine">
+  <ID>CUSTPACKINGSLIPTRANS</ID>
+  <Name>CustPackingSlip Transactions</Name>
+  <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+  <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+  <Annotations>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramLayout</Name>
+      <Value>
+        <dds xmlns="">
+          <diagram fontclsid="{0BE35203-8F91-11CE-9DE3-00AA004BB851}" mouseiconclsid="{0BE35204-8F91-11CE-9DE3-00AA004BB851}" defaultlayout="MSDDS.Rectilinear" defaultlineroute="MSDDS.Rectilinear" version="7" nextobject="3" scale="100" pagebreakanchorx="0" pagebreakanchory="0" pagebreaksizex="0" pagebreaksizey="0" scrollleft="-3695" scrolltop="-11667" gridx="150" gridy="150" marginx="5000" marginy="5000" zoom="100" x="22622" y="21775" backcolor="16777215" defaultpersistence="2" PrintPageNumbersMode="3" PrintMarginTop="0" PrintMarginBottom="635" PrintMarginLeft="0" PrintMarginRight="0" marqueeselectionmode="0" mousepointer="0" snaptogrid="0" autotypeannotation="1" showscrollbars="0" viewpagebreaks="0" donotforceconnectorsbehindshapes="1" backpictureclsid="{00000000-0000-0000-0000-000000000000}">
+            <font>
+              <ddsxmlobjectstreamwrapper binary="01000000900144420100065461686f6d61" />
+            </font>
+            <mouseicon>
+              <ddsxmlobjectstreamwrapper binary="6c74000000000000" />
+            </mouseicon>
+          </diagram>
+          <layoutmanager>
+            <ddsxmlobj />
+          </layoutmanager>
+          <ddscontrol controlprogid="DdsShapes.DdsObjectManagedBridge" tooltip="CUSTPACKINGSLIPTRANS" left="-1435" top="-6667" logicalid="2" controlid="1" masterid="0" hint1="0" hint2="0" width="8175" height="7963" noresize="0" nomove="0" nodefaultattachpoints="0" autodrag="1" usedefaultiddshape="1" selectable="1" showselectionhandles="1" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+            <control>
+              <ddsxmlobjectstreaminitwrapper binary="000e0000ef1f00001b1f0000" />
+            </control>
+            <layoutobject>
+              <ddsxmlobj>
+                <property name="LogicalObject" value="CUSTPACKINGSLIPTRANS" vartype="8" />
+              </ddsxmlobj>
+            </layoutobject>
+            <shape groupshapeid="0" groupnode="0" />
+          </ddscontrol>
+        </dds>
+      </Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ShowFriendlyNames</Name>
+      <Value>true</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ShowRelationshipNames</Name>
+      <Value>false</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:UseDiagramDefaultLayout</Name>
+      <Value>true</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramViewPortLeft</Name>
+      <Value>-3695</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramViewPortTop</Name>
+      <Value>-11667</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramBoundingLeft</Name>
+      <Value>-1435</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramBoundingTop</Name>
+      <Value>-6667</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramZoom</Name>
+      <Value>100</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ARDiagramLayout</Name>
+      <Value>
+        <DiagramLayout ZoomPercent="100" ViewPortX="0" ViewPortY="0" xmlns="">
+          <Shapes NodeWidth="180">
+            <Shape Id="RECID" Expanded="true">
+              <Attributes>
+                <Attribute Id="RECID" />
+                <Attribute Id="QTY" />
+                <Attribute Id="DELIVERYDATE" />
+                <Attribute Id="DLVSTATE" />
+                <Attribute Id="DIMENSION" />
+                <Attribute Id="DIMENSION2" />
+                <Attribute Id="DIMENSION3" />
+                <Attribute Id="EXTERNALITEMID" />
+                <Attribute Id="INVENTBATCHID" />
+                <Attribute Id="INVENTDIM INVENTLOCATIONID" />
+                <Attribute Id="INVENTQTY" />
+                <Attribute Id="INVENTDIM INVENTSITEID" />
+                <Attribute Id="INVENTDIMID" />
+                <Attribute Id="INVENTTRANSID" />
+                <Attribute Id="ORDERED" />
+                <Attribute Id="ORIGSALESID" />
+                <Attribute Id="PACKINGSLIPID" />
+                <Attribute Id="PURCHASEORDER" />
+                <Attribute Id="REMAIN" />
+                <Attribute Id="SALESID" />
+                <Attribute Id="SALESUNIT" />
+                <Attribute Id="VALUEMST" />
+                <Attribute Id="VOLUME" />
+                <Attribute Id="WEIGHT" />
+                <Attribute Id="INVENTDIM WMSLOCATIONID" />
+              </Attributes>
+              <Position x="20" y="20" />
+            </Shape>
+            <Shape Id="ITEMID" Expanded="true">
+              <Attributes>
+                <Attribute Id="ITEMID" />
+                <Attribute Id="NAME" />
+              </Attributes>
+              <Position x="250" y="20" />
+            </Shape>
+          </Shapes>
+        </DiagramLayout>
+      </Value>
+    </Annotation>
+  </Annotations>
+  <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+  <State>Unprocessed</State>
+  <Source xsi:type="DataSourceViewBinding" dwd:design-time-name="2d6e7373-84c8-44e7-8d6d-bc680b33b39f">
+    <DataSourceViewID>Dynamics AX</DataSourceViewID>
+  </Source>
+  <ErrorConfiguration dwd:design-time-name="0384439e-dbc9-4a86-bee8-634a663a33d3">
+    <KeyErrorLimitAction>StopLogging</KeyErrorLimitAction>
+    <KeyNotFound>IgnoreError</KeyNotFound>
+    <NullKeyNotAllowed>IgnoreError</NullKeyNotAllowed>
+  </ErrorConfiguration>
+  <CurrentStorageMode>Molap</CurrentStorageMode>
+  <Translations>
+    <Translation dwd:design-time-name="d9970e65-189e-4960-8bd3-ccbc9a0c1c76">
+      <Language>3082</Language>
+      <Caption>Transacciones de Albarán</Caption>
+    </Translation>
+  </Translations>
+  <Attributes>
+    <Attribute dwd:design-time-name="f96ce772-6704-4d26-99e7-1569b65798b3">
+      <ID>RECID</ID>
+      <Name>Cust PackingSlip trans</Name>
+      <Usage>Key</Usage>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="ade31b91-635c-4321-ba7a-820ab0c1d375">
+          <DataType>WChar</DataType>
+          <DataSize>4</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="6391acaf-ccb2-4173-a1d5-6007039239f4">
+            <TableID>CUSTPACKINGSLIPTRANS</TableID>
+            <ColumnID>DATAAREAID</ColumnID>
+          </Source>
+        </KeyColumn>
+        <KeyColumn dwd:design-time-name="8abcba4a-f0e3-4b9f-bafe-196293ece9b6">
+          <DataType>BigInt</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="7dd19e40-cb06-40d9-97e9-65544fa35db8">
+            <TableID>CUSTPACKINGSLIPTRANS</TableID>
+            <ColumnID>RECID</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <NameColumn dwd:design-time-name="57a39a84-3bd3-4016-9ba7-13ad4689ffaf">
+        <DataType>WChar</DataType>
+        <DataSize>51</DataSize>
+        <Source xsi:type="ColumnBinding" dwd:design-time-name="3fb1d901-debc-4c90-ae49-850ab245f983">
+          <TableID>CUSTPACKINGSLIPTRANS</TableID>
+          <ColumnID>DIMENSION_NAME</ColumnID>
+        </Source>
+      </NameColumn>
+      <Translations>
+        <Translation dwd:design-time-name="826377f6-7d0d-4f5e-b251-c5c510a3c981">
+          <Language>3082</Language>
+          <Caption>Transacciones de Albarán</Caption>
+        </Translation>
+      </Translations>
+      <AttributeRelationships>
+        <AttributeRelationship dwd:design-time-name="650a9728-bcb3-4d0e-a737-47b49e1868cd">
+          <AttributeID>PACKINGSLIPID</AttributeID>
+          <Name>PACKINGSLIPID</Name>
+          <Translations>
+            <Translation dwd:design-time-name="d2f84fa0-afa2-49bd-b9a2-fe74813f712d">
+              <Language>3082</Language>
+              <Caption>Albarán</Caption>
+            </Translation>
+          </Translations>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="8d0a62c9-5e68-4bda-91e0-f097d718742d">
+          <AttributeID>QTY</AttributeID>
+          <Name>QTY</Name>
+          <Translations>
+            <Translation dwd:design-time-name="09b5ddbf-607b-4dfa-ace4-5cb42cb76e9c">
+              <Language>3082</Language>
+              <Caption>Entregado</Caption>
+            </Translation>
+          </Translations>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="c94f72a0-abd1-4538-b3db-84e52d5b7dd1">
+          <AttributeID>REMAIN</AttributeID>
+          <Name>REMAIN</Name>
+          <Translations>
+            <Translation dwd:design-time-name="dd90c71f-4f45-4931-9987-94696256073e">
+              <Language>3082</Language>
+              <Caption>Cantidad restante</Caption>
+            </Translation>
+          </Translations>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="9134e6a2-50e6-482b-9916-8885e6d385e7">
+          <AttributeID>VALUEMST</AttributeID>
+          <Name>VALUEMST</Name>
+          <Translations>
+            <Translation dwd:design-time-name="eec94a1e-10c2-473a-9897-3063ae04c1f1">
+              <Language>3082</Language>
+              <Caption>Valor</Caption>
+            </Translation>
+          </Translations>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="c0e68bbc-a079-4b1e-bd4d-ff605a18e8c3">
+          <AttributeID>DLVSTATE</AttributeID>
+          <Name>DLVSTATE</Name>
+          <Translations>
+            <Translation dwd:design-time-name="65557b9f-1793-4b18-acbb-d0c7c5c46228">
+              <Language>3082</Language>
+              <Caption>Comunidad Autónoma</Caption>
+            </Translation>
+          </Translations>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="2583a5ff-6c6b-4e83-8d08-8ea045aa4bc8">
+          <AttributeID>SALESID</AttributeID>
+          <Name>SALESID</Name>
+          <Translations>
+            <Translation dwd:design-time-name="11dba8ff-c0d0-4b98-8caf-8a78a2b1cda7">
+              <Language>3082</Language>
+              <Caption>Pedido de ventas</Caption>
+            </Translation>
+          </Translations>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="57d5d75f-67d6-40c9-a9f7-34364375c880">
+          <AttributeID>ORIGSALESID</AttributeID>
+          <Name>ORIGSALESID</Name>
+          <Translations>
+            <Translation dwd:design-time-name="17e83e3d-a785-471c-bf04-4d42676a8087">
+              <Language>3082</Language>
+              <Caption>Pedido de Ventas Original</Caption>
+            </Translation>
+          </Translations>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="f1a35b7f-6802-4c3a-b81a-11c8c0bede6d">
+          <AttributeID>INVENTDIMID</AttributeID>
+          <Name>INVENTDIMID</Name>
+          <Translations>
+            <Translation dwd:design-time-name="a9316a9a-476f-4ac4-a667-d4d2bc705b5c">
+              <Language>3082</Language>
+              <Caption>Dimensión</Caption>
+            </Translation>
+          </Translations>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="f6a672ac-d4c7-429b-af9b-3f17e7292153">
+          <AttributeID>INVENTQTY</AttributeID>
+          <Name>INVENTQTY</Name>
+          <Translations>
+            <Translation dwd:design-time-name="31ba402e-ab22-4ac1-858b-8ecd85a6124d">
+              <Language>3082</Language>
+              <Caption>Cantidad</Caption>
+            </Translation>
+          </Translations>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="c84646be-775f-4f4b-a36c-507f38487c14">
+          <AttributeID>ORDERED</AttributeID>
+          <Name>Ordered Qty</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="01f1bad2-aff0-47ae-ac46-fb28580edd08">
+          <AttributeID>EXTERNALITEMID</AttributeID>
+          <Name>External Item Id</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="9ee76d42-5de5-43bd-bc1a-f12886c8b3c9">
+          <AttributeID>INVENTTRANSID</AttributeID>
+          <Name>Inventtrans Id</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="6fcb0a48-d358-4e28-b4c0-8c8cca6bcef6">
+          <AttributeID>SALESUNIT</AttributeID>
+          <Name>Sales Unit</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="60459873-8469-4008-8e77-1c07491e738a">
+          <AttributeID>DIMENSION</AttributeID>
+          <Name>DIMENSION</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="c583dd90-216a-4aa1-bd1f-127611e5c749">
+          <AttributeID>DIMENSION2</AttributeID>
+          <Name>DIMENSION2</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="3ad0fcc0-7e10-48c3-b747-327deaf4143b">
+          <AttributeID>DIMENSION3</AttributeID>
+          <Name>DIMENSION3</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="be05ed5f-7f2e-452f-ae58-353f978564aa">
+          <AttributeID>INVENTDIM WMSLOCATIONID</AttributeID>
+          <Name>WMS Location Id</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="b41ab2f9-c4bf-47dc-a3f3-9f95dedec539">
+          <AttributeID>INVENTBATCHID</AttributeID>
+          <Name>Invent Batch Id</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="3cc1c214-1401-4653-a6d2-375f3a66acc9">
+          <AttributeID>INVENTDIM INVENTSITEID</AttributeID>
+          <Name>Invent Site Id</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="897e11df-6e25-4a27-b880-43550d6b1574">
+          <AttributeID>INVENTDIM INVENTLOCATIONID</AttributeID>
+          <Name>Invent Location Id</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="5e9f59a9-a922-4f13-af87-fb232277fbaa">
+          <AttributeID>PURCHASEORDER</AttributeID>
+          <Name>Purchase Order</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="71a51dbb-c825-4889-8801-89735fa73ada">
+          <AttributeID>DELIVERYDATE</AttributeID>
+          <Name>Delivery Date</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="ce73e8e6-e384-4476-86b0-36028f4d6895">
+          <AttributeID>ITEMID</AttributeID>
+          <Name>Item Id</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="72f938f6-6dda-4828-8e86-429f9a8f2b64">
+          <AttributeID>WEIGHT</AttributeID>
+          <Name>Weight</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="f59efcfc-b447-4a90-bd2b-75812e08b792">
+          <AttributeID>VOLUME</AttributeID>
+          <Name>Volume</Name>
+        </AttributeRelationship>
+      </AttributeRelationships>
+      <OrderBy>Key</OrderBy>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="9bcb37c7-86b3-4988-a494-aadb64a1f5c5">
+      <ID>PACKINGSLIPID</ID>
+      <Name>PackingSlipId</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="4712a482-6330-4aaf-b465-03d91f05dc60">
+          <DataType>WChar</DataType>
+          <DataSize>4</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="c06bdd7f-76f8-45ab-b588-478f424e0310">
+            <TableID>CUSTPACKINGSLIPTRANS</TableID>
+            <ColumnID>DATAAREAID</ColumnID>
+          </Source>
+        </KeyColumn>
+        <KeyColumn dwd:design-time-name="5d5f536b-8ecd-4129-8333-a650029b6f01">
+          <DataType>WChar</DataType>
+          <DataSize>20</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="27202410-15f8-4aeb-ac4e-c333cf9bb3e2">
+            <TableID>CUSTPACKINGSLIPTRANS</TableID>
+            <ColumnID>PACKINGSLIPID</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <NameColumn dwd:design-time-name="71be0aad-3c2e-44a2-aba0-c12c187e24b7">
+        <DataType>WChar</DataType>
+        <DataSize>20</DataSize>
+        <Source xsi:type="ColumnBinding" dwd:design-time-name="3195a92b-d8e3-452f-9c6e-0002e84b2f2f">
+          <TableID>CUSTPACKINGSLIPTRANS</TableID>
+          <ColumnID>PACKINGSLIPID</ColumnID>
+        </Source>
+      </NameColumn>
+      <Translations>
+        <Translation dwd:design-time-name="9bc390df-e8af-4e81-b40a-c9e5e4fbbb73">
+          <Language>3082</Language>
+          <Caption>Albarán</Caption>
+        </Translation>
+      </Translations>
+      <OrderBy>Key</OrderBy>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="e672100b-13c0-42e3-9df9-9455e98f38b9">
+      <ID>QTY</ID>
+      <Name>Delivered Qty</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="85d745ac-2884-48c3-ade7-f83d6fa98c56">
+          <DataType>WChar</DataType>
+          <DataSize>4</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="580d9bf0-dc92-4181-bd2f-33ee62ec26f9">
+            <TableID>CUSTPACKINGSLIPTRANS</TableID>
+            <ColumnID>DATAAREAID</ColumnID>
+          </Source>
+        </KeyColumn>
+        <KeyColumn dwd:design-time-name="903e72a2-aef8-409a-b1b1-7bdb476080ff">
+          <DataType>Double</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="bb268f62-65fa-4712-823b-7c5afa222274">
+            <TableID>CUSTPACKINGSLIPTRANS</TableID>
+            <ColumnID>QTY</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <NameColumn dwd:design-time-name="f7a09685-b77f-4780-86f1-3bea8bfd1a18">
+        <DataType>WChar</DataType>
+        <Source xsi:type="ColumnBinding" dwd:design-time-name="dec8c283-0b73-4cc1-8292-a08ff3a96146">
+          <TableID>CUSTPACKINGSLIPTRANS</TableID>
+          <ColumnID>QTY</ColumnID>
+        </Source>
+      </NameColumn>
+      <Translations>
+        <Translation dwd:design-time-name="48385d20-07e0-4cb6-ba30-65d4be9f82f1">
+          <Language>3082</Language>
+          <Caption>Entregado</Caption>
+        </Translation>
+      </Translations>
+      <OrderBy>Key</OrderBy>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+      <ddl300_300:FormatString>#.##0,00;-#.##0,00</ddl300_300:FormatString>
+    </Attribute>
+    <Attribute dwd:design-time-name="a932c559-5718-4519-af46-910367366540">
+      <ID>REMAIN</ID>
+      <Name>Remain Qty</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="aeb07ed8-f378-4eb5-be66-bfca63ed7c14">
+          <DataType>WChar</DataType>
+          <DataSize>4</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="9e185873-9d73-4590-bb6c-a41ab7310bc1">
+            <TableID>CUSTPACKINGSLIPTRANS</TableID>
+            <ColumnID>DATAAREAID</ColumnID>
+          </Source>
+        </KeyColumn>
+        <KeyColumn dwd:design-time-name="abb1a879-72b1-46e6-a2dd-efe07faa3ea0">
+          <DataType>Double</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="623dc52c-6982-4eda-99ae-872d6014c20f">
+            <TableID>CUSTPACKINGSLIPTRANS</TableID>
+            <ColumnID>REMAIN</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <NameColumn dwd:design-time-name="6df87076-3904-4fd1-8756-a6721d9a3582">
+        <DataType>WChar</DataType>
+        <Source xsi:type="ColumnBinding" dwd:design-time-name="2f4195a5-15ef-4232-a3a2-6a3ae8b48221">
+          <TableID>CUSTPACKINGSLIPTRANS</TableID>
+          <ColumnID>REMAIN</ColumnID>
+        </Source>
+      </NameColumn>
+      <Translations>
+        <Translation dwd:design-time-name="a3f2b474-f600-4caf-b179-4b90ebadea99">
+          <Language>3082</Language>
+          <Caption>Cantidad restante</Caption>
+        </Translation>
+      </Translations>
+      <OrderBy>Key</OrderBy>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+      <ddl300_300:FormatString>#.##0,00;-#.##0,00</ddl300_300:FormatString>
+    </Attribute>
+    <Attribute dwd:design-time-name="78f91649-9d67-47bc-92ac-8d6e4371867b">
+      <ID>VALUEMST</ID>
+      <Name>Value</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="c08dfbb8-2fb6-47dc-b3b9-431399b0f161">
+          <DataType>Double</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="d31e59a8-5dc2-45e9-8291-2f178493f498">
+            <TableID>CUSTPACKINGSLIPTRANS</TableID>
+            <ColumnID>VALUEMST</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <NameColumn dwd:design-time-name="a9b764a0-bb53-4f1f-8ef3-37f62c25f63d">
+        <DataType>WChar</DataType>
+        <Source xsi:type="ColumnBinding" dwd:design-time-name="120e2ee5-a2b1-4ad2-b2dc-a3e10994fa81">
+          <TableID>CUSTPACKINGSLIPTRANS</TableID>
+          <ColumnID>VALUEMST</ColumnID>
+        </Source>
+      </NameColumn>
+      <Translations>
+        <Translation dwd:design-time-name="a01516ea-54aa-4ca9-8b54-9ea4aaab58e0">
+          <Language>3082</Language>
+          <Caption>Valor</Caption>
+        </Translation>
+      </Translations>
+      <OrderBy>Key</OrderBy>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+      <ddl300_300:FormatString>#.##0,00 €;-#.##0,00 €</ddl300_300:FormatString>
+    </Attribute>
+    <Attribute dwd:design-time-name="d23ea400-217d-4b4c-b1a7-ca24393c5dcf">
+      <ID>DLVSTATE</ID>
+      <Name>Delivery State</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="9f8fa3d5-7ec4-41c1-866a-95f6587269d5">
+          <DataType>WChar</DataType>
+          <DataSize>4</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="e5ba9654-e805-4c36-984a-56941f225706">
+            <TableID>CUSTPACKINGSLIPTRANS</TableID>
+            <ColumnID>DATAAREAID</ColumnID>
+          </Source>
+        </KeyColumn>
+        <KeyColumn dwd:design-time-name="7464c0a3-424b-4f0a-a2b4-e4ca03045dcd">
+          <DataType>WChar</DataType>
+          <DataSize>80</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="5ea9822e-b4dc-473e-bf7c-97ccc3114f5e">
+            <TableID>CUSTPACKINGSLIPTRANS</TableID>
+            <ColumnID>DLVSTATE</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <NameColumn dwd:design-time-name="ff3a1522-d317-47c3-baa4-b806dd60a7ef">
+        <DataType>WChar</DataType>
+        <DataSize>80</DataSize>
+        <Source xsi:type="ColumnBinding" dwd:design-time-name="c6494783-ffbb-43bb-a740-5ee6545bd046">
+          <TableID>CUSTPACKINGSLIPTRANS</TableID>
+          <ColumnID>DLVSTATE</ColumnID>
+        </Source>
+      </NameColumn>
+      <Translations>
+        <Translation dwd:design-time-name="654b38a0-04ec-40b2-995f-2345fcad5aee">
+          <Language>3082</Language>
+          <Caption>Comunidad Autónoma</Caption>
+        </Translation>
+      </Translations>
+      <OrderBy>Key</OrderBy>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="bb22dc84-982f-4eab-86d7-aa95c5683152">
+      <ID>SALESID</ID>
+      <Name>Sales Id</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="6127d9e4-1c54-4085-976c-cc2ce073a480">
+          <DataType>WChar</DataType>
+          <DataSize>4</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="e9c0accd-ec20-4e48-bc9f-1a840584ea23">
+            <TableID>CUSTPACKINGSLIPTRANS</TableID>
+            <ColumnID>DATAAREAID</ColumnID>
+          </Source>
+        </KeyColumn>
+        <KeyColumn dwd:design-time-name="5b41f5d0-5828-4029-9d10-3bfcc7a30721">
+          <DataType>WChar</DataType>
+          <DataSize>20</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="aa5e6b4e-754c-4915-9037-193f38a4f9c0">
+            <TableID>CUSTPACKINGSLIPTRANS</TableID>
+            <ColumnID>SALESID</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <NameColumn dwd:design-time-name="f929c774-fa7f-4a88-b5c4-b474caad2928">
+        <DataType>WChar</DataType>
+        <DataSize>20</DataSize>
+        <Source xsi:type="ColumnBinding" dwd:design-time-name="9e99c22a-8ada-4faa-829c-fe5534968db4">
+          <TableID>CUSTPACKINGSLIPTRANS</TableID>
+          <ColumnID>SALESID</ColumnID>
+        </Source>
+      </NameColumn>
+      <Translations>
+        <Translation dwd:design-time-name="39b6a612-9fb1-4e89-bed5-b7dbe0082e2b">
+          <Language>3082</Language>
+          <Caption>Pedido de ventas</Caption>
+        </Translation>
+      </Translations>
+      <OrderBy>Key</OrderBy>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="6ec89d7f-8120-4539-b264-527a47eb8f10">
+      <ID>ORIGSALESID</ID>
+      <Name>Original Sales Id</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="dfb5c6f9-6284-491a-b807-bff655712f92">
+          <DataType>WChar</DataType>
+          <DataSize>4</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="67a51558-4740-4689-a98a-3396bd5817db">
+            <TableID>CUSTPACKINGSLIPTRANS</TableID>
+            <ColumnID>DATAAREAID</ColumnID>
+          </Source>
+        </KeyColumn>
+        <KeyColumn dwd:design-time-name="5ec43ec5-8f23-45d1-8025-849f66022a7e">
+          <DataType>WChar</DataType>
+          <DataSize>20</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="1d2b4ab7-9cb3-48a9-93f1-c2b28aab0999">
+            <TableID>CUSTPACKINGSLIPTRANS</TableID>
+            <ColumnID>ORIGSALESID</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <NameColumn dwd:design-time-name="8925d27c-18f9-4015-8ab7-264942f19a82">
+        <DataType>WChar</DataType>
+        <DataSize>20</DataSize>
+        <Source xsi:type="ColumnBinding" dwd:design-time-name="92ae7864-efee-44e0-b20e-9483cc8be753">
+          <TableID>CUSTPACKINGSLIPTRANS</TableID>
+          <ColumnID>ORIGSALESID</ColumnID>
+        </Source>
+      </NameColumn>
+      <Translations>
+        <Translation dwd:design-time-name="7b5587ba-fb01-4d77-94af-d897abe364b2">
+          <Language>3082</Language>
+          <Caption>Pedido de ventas Original</Caption>
+        </Translation>
+      </Translations>
+      <OrderBy>Key</OrderBy>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="8b3d110d-68ac-4f3f-9159-f6758ece5aaa">
+      <ID>INVENTDIMID</ID>
+      <Name>Inventdim id</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="f6590e1b-7051-45fd-9337-8f57af99784a">
+          <DataType>WChar</DataType>
+          <DataSize>4</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="1f68be16-014b-4077-b2ca-7f87ee7a2a07">
+            <TableID>CUSTPACKINGSLIPTRANS</TableID>
+            <ColumnID>DATAAREAID</ColumnID>
+          </Source>
+        </KeyColumn>
+        <KeyColumn dwd:design-time-name="2b57acd4-d7cd-4931-a423-c97f9d37543f">
+          <DataType>WChar</DataType>
+          <DataSize>20</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="b54a96c4-67b2-4fb8-bab9-9976e5e59571">
+            <TableID>CUSTPACKINGSLIPTRANS</TableID>
+            <ColumnID>INVENTDIMID</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <NameColumn dwd:design-time-name="5cc428a3-fc19-44a3-92c7-7ea6e6cebca8">
+        <DataType>WChar</DataType>
+        <DataSize>20</DataSize>
+        <Source xsi:type="ColumnBinding" dwd:design-time-name="0b0a3e2f-c258-4762-819b-f96ef4fd4348">
+          <TableID>CUSTPACKINGSLIPTRANS</TableID>
+          <ColumnID>INVENTDIMID</ColumnID>
+        </Source>
+      </NameColumn>
+      <Translations>
+        <Translation dwd:design-time-name="b4d59c9f-2895-4059-8438-9ef8e10b4dbc">
+          <Language>3082</Language>
+          <Caption>Dimensión</Caption>
+        </Translation>
+      </Translations>
+      <OrderBy>Key</OrderBy>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="3d754b37-4f1f-42ca-9b83-01ef988b7c2a">
+      <ID>INVENTQTY</ID>
+      <Name>Invent Qty</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="61d7ecae-b004-494c-9709-47229a17aa12">
+          <DataType>WChar</DataType>
+          <DataSize>4</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="7c358bdd-79b1-4d0d-aa9d-1a7a2e936606">
+            <TableID>CUSTPACKINGSLIPTRANS</TableID>
+            <ColumnID>DATAAREAID</ColumnID>
+          </Source>
+        </KeyColumn>
+        <KeyColumn dwd:design-time-name="c752f6ab-6ab6-43e7-ba60-fb3a3f846e6f">
+          <DataType>Double</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="d1b87fad-5e85-42d9-97b8-1aca0af6f6b8">
+            <TableID>CUSTPACKINGSLIPTRANS</TableID>
+            <ColumnID>INVENTQTY</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <NameColumn dwd:design-time-name="c596aa8e-2e23-4983-a4f9-4b6cd4d8ac83">
+        <DataType>WChar</DataType>
+        <Source xsi:type="ColumnBinding" dwd:design-time-name="e5619d7c-36b8-438f-8e3a-2f20b19d4784">
+          <TableID>CUSTPACKINGSLIPTRANS</TableID>
+          <ColumnID>INVENTQTY</ColumnID>
+        </Source>
+      </NameColumn>
+      <Translations>
+        <Translation dwd:design-time-name="a9535cc2-835f-48d9-b946-e47791afa142">
+          <Language>3082</Language>
+          <Caption>Cantidad</Caption>
+        </Translation>
+      </Translations>
+      <OrderBy>Key</OrderBy>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+      <ddl300_300:FormatString>#.##0,00;-#.##0,00</ddl300_300:FormatString>
+    </Attribute>
+    <Attribute dwd:design-time-name="d42e8fde-04ae-4aa5-a9c4-8719a30052d9">
+      <ID>ORDERED</ID>
+      <Name>Ordered Qty</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="2e4b4a72-4f4b-46f8-9427-1230dfa1a759">
+          <DataType>WChar</DataType>
+          <DataSize>4</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="b85e77d2-009d-458a-9882-7c50d0c46939">
+            <TableID>CUSTPACKINGSLIPTRANS</TableID>
+            <ColumnID>DATAAREAID</ColumnID>
+          </Source>
+        </KeyColumn>
+        <KeyColumn dwd:design-time-name="3db3e4c6-a121-40fd-b21d-d4717f3d7e4e">
+          <DataType>Double</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="c88da6be-5e54-40e2-b410-40558745e932">
+            <TableID>CUSTPACKINGSLIPTRANS</TableID>
+            <ColumnID>ORDERED</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <NameColumn dwd:design-time-name="687bc62a-65cf-4ff5-b33f-ad8e81eb896f">
+        <DataType>WChar</DataType>
+        <Source xsi:type="ColumnBinding" dwd:design-time-name="6e36cb6f-698b-46ff-8748-9550fc5d401c">
+          <TableID>CUSTPACKINGSLIPTRANS</TableID>
+          <ColumnID>ORDERED</ColumnID>
+        </Source>
+      </NameColumn>
+      <Translations>
+        <Translation dwd:design-time-name="7afd97f6-aa01-4084-95c5-b95d66c489b7">
+          <Language>3082</Language>
+          <Caption>Pedido</Caption>
+        </Translation>
+      </Translations>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+      <ddl300_300:FormatString>#.##0,00;-#.##0,00</ddl300_300:FormatString>
+    </Attribute>
+    <Attribute dwd:design-time-name="306fa6ee-7210-4c03-a9e6-74f94b1232fb">
+      <ID>ITEMID</ID>
+      <Name>Item Id</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="02fae375-d122-47be-9d1a-4f112e54935c">
+          <DataType>WChar</DataType>
+          <DataSize>4</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="74bd472c-c073-4322-ac13-77b8f0ede91d">
+            <TableID>CUSTPACKINGSLIPTRANS</TableID>
+            <ColumnID>DATAAREAID</ColumnID>
+          </Source>
+        </KeyColumn>
+        <KeyColumn dwd:design-time-name="472695b9-21e8-4d93-9c03-94b52c0c8ec5">
+          <DataType>WChar</DataType>
+          <DataSize>20</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="95745961-9ef5-4c6e-a8a2-196e3d387e5d">
+            <TableID>CUSTPACKINGSLIPTRANS</TableID>
+            <ColumnID>ITEMID</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <NameColumn dwd:design-time-name="9b18aef2-4a69-4722-8473-ccd41228d5b1">
+        <DataType>WChar</DataType>
+        <DataSize>20</DataSize>
+        <Source xsi:type="ColumnBinding" dwd:design-time-name="1c90eed4-28ef-42d5-897d-875c0c79c4ab">
+          <TableID>CUSTPACKINGSLIPTRANS</TableID>
+          <ColumnID>ITEMID</ColumnID>
+        </Source>
+      </NameColumn>
+      <Translations>
+        <Translation dwd:design-time-name="18efd3af-bb59-4884-94ae-5308d4297427">
+          <Language>3082</Language>
+          <Caption>Artículo</Caption>
+        </Translation>
+      </Translations>
+      <AttributeRelationships>
+        <AttributeRelationship dwd:design-time-name="32a81732-1d8c-4146-9d95-ad424aa9e00a">
+          <AttributeID>NAME</AttributeID>
+          <RelationshipType>Rigid</RelationshipType>
+          <Name>Item Name</Name>
+        </AttributeRelationship>
+      </AttributeRelationships>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="7bc2d5f8-b4b3-4013-b325-c48b4b1a33f3">
+      <ID>EXTERNALITEMID</ID>
+      <Name>External Item Id</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="dc1d1f3c-bd54-4e8a-b3ff-6e9bd2f32b3f">
+          <DataType>WChar</DataType>
+          <DataSize>4</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="7d8b6b9c-3b66-4595-ade7-eae5eba8a2ec">
+            <TableID>CUSTPACKINGSLIPTRANS</TableID>
+            <ColumnID>DATAAREAID</ColumnID>
+          </Source>
+        </KeyColumn>
+        <KeyColumn dwd:design-time-name="5ee49631-46f8-4f05-8c62-91a81ec5d8b9">
+          <DataType>WChar</DataType>
+          <DataSize>100</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="7b34b7f0-317b-4f2d-876f-af4f5e3cede7">
+            <TableID>CUSTPACKINGSLIPTRANS</TableID>
+            <ColumnID>EXTERNALITEMID</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <NameColumn dwd:design-time-name="716492af-bfcd-4d92-a722-21bc2a4db2f5">
+        <DataType>WChar</DataType>
+        <DataSize>100</DataSize>
+        <Source xsi:type="ColumnBinding" dwd:design-time-name="d51fbf0f-6a3f-4007-a501-2574deb0bdff">
+          <TableID>CUSTPACKINGSLIPTRANS</TableID>
+          <ColumnID>EXTERNALITEMID</ColumnID>
+        </Source>
+      </NameColumn>
+      <Translations>
+        <Translation dwd:design-time-name="3479acb4-0102-42dd-8506-128eb215265e">
+          <Language>3082</Language>
+          <Caption>Código externo</Caption>
+        </Translation>
+      </Translations>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="bbe82f91-47d5-4f38-835e-889d36dbeba5">
+      <ID>INVENTTRANSID</ID>
+      <Name>Inventtrans Id</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="e6170e44-e993-48a0-8cb6-4b8325e74f3d">
+          <DataType>WChar</DataType>
+          <DataSize>4</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="5a3e6edd-ba9c-44bc-b07a-8e11093e083b">
+            <TableID>CUSTPACKINGSLIPTRANS</TableID>
+            <ColumnID>DATAAREAID</ColumnID>
+          </Source>
+        </KeyColumn>
+        <KeyColumn dwd:design-time-name="2d34c8f0-a526-426f-874d-94e0a21067f9">
+          <DataType>WChar</DataType>
+          <DataSize>20</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="040bd05f-70c3-4b32-a65e-f87683bd4e3b">
+            <TableID>CUSTPACKINGSLIPTRANS</TableID>
+            <ColumnID>INVENTTRANSID</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <NameColumn dwd:design-time-name="a01b3dac-13a2-40a7-adfd-5c2253ac90ec">
+        <DataType>WChar</DataType>
+        <DataSize>20</DataSize>
+        <Source xsi:type="ColumnBinding" dwd:design-time-name="d6012340-2ae6-44bd-b327-649f16dc224e">
+          <TableID>CUSTPACKINGSLIPTRANS</TableID>
+          <ColumnID>INVENTTRANSID</ColumnID>
+        </Source>
+      </NameColumn>
+      <Translations>
+        <Translation dwd:design-time-name="90c9257e-5c49-40a2-aeb4-d2470dfd35b5">
+          <Language>3082</Language>
+          <Caption>Id de lote interno</Caption>
+        </Translation>
+      </Translations>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="cd100472-9318-426c-9d7f-c64a90389e81">
+      <ID>SALESUNIT</ID>
+      <Name>Sales Unit</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="b13204d8-c8b7-44b4-b650-64b57c82eeb8">
+          <DataType>WChar</DataType>
+          <DataSize>4</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="bdfdf339-0ec3-4895-82a9-cbdd7c4d86d3">
+            <TableID>CUSTPACKINGSLIPTRANS</TableID>
+            <ColumnID>DATAAREAID</ColumnID>
+          </Source>
+        </KeyColumn>
+        <KeyColumn dwd:design-time-name="3b9c78ca-59c6-4c80-86fc-94c3a7375af4">
+          <DataType>WChar</DataType>
+          <DataSize>80</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="726ba55b-0f68-4ac4-84c7-6a496f9378ee">
+            <TableID>CUSTPACKINGSLIPTRANS</TableID>
+            <ColumnID>SALESUNIT</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <NameColumn dwd:design-time-name="b6850ad2-2488-406d-a96d-4979243de032">
+        <DataType>WChar</DataType>
+        <DataSize>80</DataSize>
+        <Source xsi:type="ColumnBinding" dwd:design-time-name="cdd6ce2e-7ea6-41c3-a580-eb8b69131ec8">
+          <TableID>CUSTPACKINGSLIPTRANS</TableID>
+          <ColumnID>SALESUNIT</ColumnID>
+        </Source>
+      </NameColumn>
+      <Translations>
+        <Translation dwd:design-time-name="26e98392-5f0c-4add-bc99-81a9f9a2f18f">
+          <Language>3082</Language>
+          <Caption>Unidad</Caption>
+        </Translation>
+      </Translations>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="658545fa-1f75-4ded-a930-85bd621eedfb">
+      <ID>DIMENSION</ID>
+      <Name>DIMENSION</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="1df9257f-f11a-41b2-b6a6-4a6fb35797e8">
+          <DataType>WChar</DataType>
+          <DataSize>80</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="400e6784-c65b-47da-ad28-b195972f076c">
+            <TableID>CUSTPACKINGSLIPTRANS</TableID>
+            <ColumnID>DIMENSION</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <Translations>
+        <Translation dwd:design-time-name="020e4684-7001-480b-952c-dee214e7fd75">
+          <Language>3082</Language>
+          <Caption>Mercado</Caption>
+        </Translation>
+      </Translations>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="dbd1febe-04a5-4030-b66e-4419dbbd3301">
+      <ID>DIMENSION2</ID>
+      <Name>DIMENSION2</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="d5f6c07d-7948-43f4-b29a-2de04e7366f3">
+          <DataType>WChar</DataType>
+          <DataSize>80</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="21c5817c-d7cb-48c8-86e5-4421a90a60b4">
+            <TableID>CUSTPACKINGSLIPTRANS</TableID>
+            <ColumnID>DIMENSION2_</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <Translations>
+        <Translation dwd:design-time-name="8918421a-47cf-44b7-b9e6-00f83a1cb9d4">
+          <Language>3082</Language>
+          <Caption>Sección</Caption>
+        </Translation>
+      </Translations>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="908c0aef-e93d-4991-a39d-ce9051d02ee3">
+      <ID>DIMENSION3</ID>
+      <Name>DIMENSION3</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="6d15dd54-1d5e-4b1d-8ff2-080de9c41e9c">
+          <DataType>WChar</DataType>
+          <DataSize>80</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="97920703-12ca-4bfe-8474-857a2f275c51">
+            <TableID>CUSTPACKINGSLIPTRANS</TableID>
+            <ColumnID>DIMENSION3_</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <Translations>
+        <Translation dwd:design-time-name="fe836800-8db8-4f9d-95c1-1e4d369da2d9">
+          <Language>3082</Language>
+          <Caption>Centro de coste</Caption>
+        </Translation>
+      </Translations>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="7f174fca-e379-4f45-a5b8-21b2453e680e">
+      <ID>INVENTDIM WMSLOCATIONID</ID>
+      <Name>WMS Location Id</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="d01a4b6b-7dd9-4a68-ba4d-c146c71da337">
+          <DataType>WChar</DataType>
+          <DataSize>4</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="74d483b0-46b2-42b3-a7e0-16d4c45047e1">
+            <TableID>CUSTPACKINGSLIPTRANS</TableID>
+            <ColumnID>DATAAREAID</ColumnID>
+          </Source>
+        </KeyColumn>
+        <KeyColumn dwd:design-time-name="7402fc6e-1200-4fa5-a991-a88e8d9c1e67">
+          <DataType>WChar</DataType>
+          <DataSize>10</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="94f66eaa-02ba-4b0c-8134-5c9d4229d1f1">
+            <TableID>CUSTPACKINGSLIPTRANS</TableID>
+            <ColumnID>INVENTDIM_WMSLOCATIONID</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <NameColumn dwd:design-time-name="728fdffc-fc71-4c1d-86cc-de42e2cb2552">
+        <DataType>WChar</DataType>
+        <DataSize>10</DataSize>
+        <Source xsi:type="ColumnBinding" dwd:design-time-name="99f27435-312b-4a27-9710-2d09dc00f090">
+          <TableID>CUSTPACKINGSLIPTRANS</TableID>
+          <ColumnID>INVENTDIM_WMSLOCATIONID</ColumnID>
+        </Source>
+      </NameColumn>
+      <Translations>
+        <Translation dwd:design-time-name="4d866c4e-697f-4a20-9a87-6640f305c41b">
+          <Language>3082</Language>
+          <Caption>Ubicación</Caption>
+        </Translation>
+      </Translations>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="fb04831e-ca34-42e9-92ee-4540063e4d54">
+      <ID>INVENTBATCHID</ID>
+      <Name>Invent Batch Id</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="dd6a7f3d-8bd4-441a-b06b-868b384ae6ce">
+          <DataType>WChar</DataType>
+          <DataSize>4</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="e7c86954-7f4b-423e-aea9-f6688b755989">
+            <TableID>CUSTPACKINGSLIPTRANS</TableID>
+            <ColumnID>DATAAREAID</ColumnID>
+          </Source>
+        </KeyColumn>
+        <KeyColumn dwd:design-time-name="fa29147f-d025-421f-8537-c897f83eebf2">
+          <DataType>WChar</DataType>
+          <DataSize>20</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="f863329b-e107-4376-ba1e-751a06d33c7c">
+            <TableID>CUSTPACKINGSLIPTRANS</TableID>
+            <ColumnID>INVENTBATCHID</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <NameColumn dwd:design-time-name="cac4195c-41c6-44d4-aa58-1c7e10986d21">
+        <DataType>WChar</DataType>
+        <DataSize>20</DataSize>
+        <Source xsi:type="ColumnBinding" dwd:design-time-name="7613bc9f-d26f-4537-805f-6c1d3c9ccfa6">
+          <TableID>CUSTPACKINGSLIPTRANS</TableID>
+          <ColumnID>INVENTBATCHID</ColumnID>
+        </Source>
+      </NameColumn>
+      <Translations>
+        <Translation dwd:design-time-name="caa567da-07cc-446b-b9a9-ab7103503fb0">
+          <Language>3082</Language>
+          <Caption>Lote</Caption>
+        </Translation>
+      </Translations>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="8c80ad7f-8a25-4747-9347-956e7ed578ba">
+      <ID>INVENTDIM INVENTSITEID</ID>
+      <Name>Invent Site Id</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="05de9d84-ca94-433f-9254-8a354b8d3d78">
+          <DataType>WChar</DataType>
+          <DataSize>4</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="b4d9538f-4c0b-47e6-af0c-ca853927fb17">
+            <TableID>CUSTPACKINGSLIPTRANS</TableID>
+            <ColumnID>DATAAREAID</ColumnID>
+          </Source>
+        </KeyColumn>
+        <KeyColumn dwd:design-time-name="3bbc14cc-8c77-44de-8549-cf1ff64d7967">
+          <DataType>WChar</DataType>
+          <DataSize>10</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="e0c85ae1-aaa5-465a-ae88-9649cbe17703">
+            <TableID>CUSTPACKINGSLIPTRANS</TableID>
+            <ColumnID>INVENTDIM_INVENTSITEID</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <NameColumn dwd:design-time-name="5c56aa5a-63b4-433f-9f0b-cf67017ab501">
+        <DataType>WChar</DataType>
+        <DataSize>10</DataSize>
+        <Source xsi:type="ColumnBinding" dwd:design-time-name="a8ecd42e-0c9b-451b-a9ee-9a4863cf1d4b">
+          <TableID>CUSTPACKINGSLIPTRANS</TableID>
+          <ColumnID>INVENTDIM_INVENTSITEID</ColumnID>
+        </Source>
+      </NameColumn>
+      <Translations>
+        <Translation dwd:design-time-name="2f988fb5-e7b7-4bc8-800e-49137017f64a">
+          <Language>3082</Language>
+          <Caption>Sitio</Caption>
+        </Translation>
+      </Translations>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="3f91668c-8c85-44ed-8397-cb6a0f681610">
+      <ID>INVENTDIM INVENTLOCATIONID</ID>
+      <Name>Invent Location Id</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="a0d1e9a1-0cda-4f43-9172-952c2af5b700">
+          <DataType>WChar</DataType>
+          <DataSize>4</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="1c2d6892-c18f-4380-928b-25f47e6dff1c">
+            <TableID>CUSTPACKINGSLIPTRANS</TableID>
+            <ColumnID>DATAAREAID</ColumnID>
+          </Source>
+        </KeyColumn>
+        <KeyColumn dwd:design-time-name="438b9378-5bb1-442f-9ea8-4c5fe9e8dfd0">
+          <DataType>WChar</DataType>
+          <DataSize>80</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="07256c8d-afda-4411-9395-4479f723dea8">
+            <TableID>CUSTPACKINGSLIPTRANS</TableID>
+            <ColumnID>INVENTDIM_INVENTLOCATIONID</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <NameColumn dwd:design-time-name="ef06f697-6623-4165-92f4-8ff81e572448">
+        <DataType>WChar</DataType>
+        <DataSize>80</DataSize>
+        <Source xsi:type="ColumnBinding" dwd:design-time-name="305d696f-781e-40d7-aefc-53cb9faf5c37">
+          <TableID>CUSTPACKINGSLIPTRANS</TableID>
+          <ColumnID>INVENTDIM_INVENTLOCATIONID</ColumnID>
+        </Source>
+      </NameColumn>
+      <Translations>
+        <Translation dwd:design-time-name="2c87759e-572d-4c18-9d08-5d8915dbb1e3">
+          <Language>3082</Language>
+          <Caption>Almacén</Caption>
+        </Translation>
+      </Translations>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="0a6f3b12-f58f-4845-b99e-75afb207c533">
+      <ID>PURCHASEORDER</ID>
+      <Name>Purchase Order</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="4272a89c-2dbc-4efe-a0e7-5042fdebe3b2">
+          <DataType>WChar</DataType>
+          <DataSize>4</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="f4fde9fb-d706-4e39-a6ca-1bf94f88835b">
+            <TableID>CUSTPACKINGSLIPTRANS</TableID>
+            <ColumnID>DATAAREAID</ColumnID>
+          </Source>
+        </KeyColumn>
+        <KeyColumn dwd:design-time-name="a674415d-d174-48fa-9a72-aa9834b2b177">
+          <DataType>WChar</DataType>
+          <DataSize>50</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="3972b4b7-a7ac-432b-846c-2762548a558a">
+            <TableID>CUSTPACKINGSLIPTRANS</TableID>
+            <ColumnID>PURCHASEORDER</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <NameColumn dwd:design-time-name="5dc5a646-ad21-4ad6-9f23-c72f5443b2ed">
+        <DataType>WChar</DataType>
+        <DataSize>50</DataSize>
+        <Source xsi:type="ColumnBinding" dwd:design-time-name="a010106f-ec08-4063-9abf-c65b7b6c8f70">
+          <TableID>CUSTPACKINGSLIPTRANS</TableID>
+          <ColumnID>PURCHASEORDER</ColumnID>
+        </Source>
+      </NameColumn>
+      <Translations>
+        <Translation dwd:design-time-name="0d646d81-be15-413b-bb96-4c961b6d7106">
+          <Language>3082</Language>
+          <Caption>Pedido del Cliente</Caption>
+        </Translation>
+      </Translations>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="66520858-9854-4dfc-85bc-ed7f3736e89a">
+      <ID>DELIVERYDATE</ID>
+      <Name>Delivery Date</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="3cce22b6-e8ad-47e5-a54b-595d2683a82c">
+          <DataType>WChar</DataType>
+          <DataSize>4</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="3d953867-9154-4eff-a359-10f6b3fbb588">
+            <TableID>CUSTPACKINGSLIPTRANS</TableID>
+            <ColumnID>DATAAREAID</ColumnID>
+          </Source>
+        </KeyColumn>
+        <KeyColumn dwd:design-time-name="02dc2a6d-92a7-4827-b0ee-a320bc8a4a38">
+          <DataType>Date</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="029096e6-7e77-4955-8d6e-7ba3ab085c2d">
+            <TableID>CUSTPACKINGSLIPTRANS</TableID>
+            <ColumnID>DELIVERYDATE</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <NameColumn dwd:design-time-name="ed5b93d9-39d2-4804-a81f-844f03f9b0df">
+        <DataType>WChar</DataType>
+        <Source xsi:type="ColumnBinding" dwd:design-time-name="a10cf07f-0946-46e5-99a5-5967fbdd18f2">
+          <TableID>CUSTPACKINGSLIPTRANS</TableID>
+          <ColumnID>DELIVERYDATE</ColumnID>
+        </Source>
+      </NameColumn>
+      <Translations>
+        <Translation dwd:design-time-name="59d4c94f-d81d-4c5e-9a2c-5d4e4671b726">
+          <Language>3082</Language>
+          <Caption>Fecha de envío</Caption>
+        </Translation>
+      </Translations>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="e2448169-2e21-4382-820f-2312e582de4c">
+      <ID>NAME</ID>
+      <Name>Item Name</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="c3c4039a-155c-4778-8c1d-66aae5f61b35">
+          <DataType>WChar</DataType>
+          <DataSize>4</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="3856fdc6-ba7f-4d99-b72b-a86aecf9c018">
+            <TableID>CUSTPACKINGSLIPTRANS</TableID>
+            <ColumnID>DATAAREAID</ColumnID>
+          </Source>
+        </KeyColumn>
+        <KeyColumn dwd:design-time-name="b85055bb-c25e-429a-99bc-5e7b0881bf92">
+          <DataType>WChar</DataType>
+          <DataSize>1000</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="19fa98a2-f76b-4d41-9d0b-5d139704057c">
+            <TableID>CUSTPACKINGSLIPTRANS</TableID>
+            <ColumnID>NAME</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <NameColumn dwd:design-time-name="0adcd872-4bd0-46c5-8436-6e1f754550ac">
+        <DataType>WChar</DataType>
+        <DataSize>1000</DataSize>
+        <Source xsi:type="ColumnBinding" dwd:design-time-name="e45ebe42-23e0-4a2b-9ed1-7f2fd2221a4c">
+          <TableID>CUSTPACKINGSLIPTRANS</TableID>
+          <ColumnID>NAME</ColumnID>
+        </Source>
+      </NameColumn>
+      <Translations>
+        <Translation dwd:design-time-name="a21a34d7-7508-4e7f-9af4-606f508e817c">
+          <Language>3082</Language>
+          <Caption>Nombre del artículo</Caption>
+        </Translation>
+      </Translations>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="0498ba9b-1226-478e-8462-833fa1698fe3">
+      <ID>WEIGHT</ID>
+      <Name>Weight</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="a6c81592-962f-4d32-adb3-ce8716c7b061">
+          <DataType>Double</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="d25d344f-8fde-4ab6-9364-2f1abe957668">
+            <TableID>CUSTPACKINGSLIPTRANS</TableID>
+            <ColumnID>WEIGHT</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <NameColumn dwd:design-time-name="c2af57f3-923d-4e60-9d58-100c439bceaf">
+        <DataType>WChar</DataType>
+        <Source xsi:type="ColumnBinding" dwd:design-time-name="631fabfe-ad78-4daf-9161-95cd11ed8ebd">
+          <TableID>CUSTPACKINGSLIPTRANS</TableID>
+          <ColumnID>WEIGHT</ColumnID>
+        </Source>
+      </NameColumn>
+      <Translations>
+        <Translation dwd:design-time-name="259f0fcd-30db-4c5e-b2d4-2ca1b85dc5e1">
+          <Language>3082</Language>
+          <Caption>Peso</Caption>
+        </Translation>
+      </Translations>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+      <ddl300_300:FormatString>#.##0,00;-#.##0,00</ddl300_300:FormatString>
+    </Attribute>
+    <Attribute dwd:design-time-name="9ec6c8d6-1e23-4bb8-9b26-f94ede490230">
+      <ID>VOLUME</ID>
+      <Name>Volume</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="a5b4aa2a-1998-4d99-a11e-064265c3d97e">
+          <DataType>Double</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="73f25c71-62b2-4f7f-b60e-5deae1b2cef4">
+            <TableID>CUSTPACKINGSLIPTRANS</TableID>
+            <ColumnID>VOLUME</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <NameColumn dwd:design-time-name="e6f98bf4-6d72-4643-8bb4-ccff3a1eb79f">
+        <DataType>WChar</DataType>
+        <Source xsi:type="ColumnBinding" dwd:design-time-name="0c0e3c62-7b8f-437b-a524-896b8e2b2ea6">
+          <TableID>CUSTPACKINGSLIPTRANS</TableID>
+          <ColumnID>VOLUME</ColumnID>
+        </Source>
+      </NameColumn>
+      <Translations>
+        <Translation dwd:design-time-name="85b2b512-065e-431d-9aea-0d42ebe4e223">
+          <Language>3082</Language>
+          <Caption>Volumen</Caption>
+        </Translation>
+      </Translations>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+      <ddl300_300:FormatString>#.##0,00;-#.##0,00</ddl300_300:FormatString>
+    </Attribute>
+  </Attributes>
+  <Hierarchies>
+    <Hierarchy dwd:design-time-name="c21f68e4-434e-4923-90cf-d53dc596183d">
+      <ID>Jerarquía</ID>
+      <Name>Jerarquía</Name>
+      <Levels>
+        <Level dwd:design-time-name="7420877f-b622-49c4-af1d-def68ffff63b">
+          <ID>Cust PackingSlip trans</ID>
+          <Name>Cust PackingSlip trans</Name>
+          <SourceAttributeID>RECID</SourceAttributeID>
+          <Translations>
+            <Translation dwd:design-time-name="983cc64f-f31a-4b9f-a907-e34f9ae94147">
+              <Language>3082</Language>
+              <Caption>Transacciones de albarán</Caption>
+            </Translation>
+          </Translations>
+        </Level>
+      </Levels>
+    </Hierarchy>
+  </Hierarchies>
+  <ProactiveCaching dwd:design-time-name="9f093250-0ecc-4fbd-b597-e6c3a82058b1">
+    <SilenceInterval>-PT1S</SilenceInterval>
+    <Latency>-PT1S</Latency>
+    <SilenceOverrideInterval>-PT1S</SilenceOverrideInterval>
+    <ForceRebuildInterval>-PT1S</ForceRebuildInterval>
+    <AggregationStorage>MolapOnly</AggregationStorage>
+    <Source xsi:type="ProactiveCachingInheritedBinding" dwd:design-time-name="74cd042b-5115-43ff-a63a-e301a1d62250">
+      <NotificationTechnique>Server</NotificationTechnique>
+    </Source>
+  </ProactiveCaching>
+  <ddl300:ProcessingState>Unprocessed</ddl300:ProcessingState>
+</Dimension>
