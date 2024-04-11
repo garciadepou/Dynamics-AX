@@ -1,4 +1,4 @@
-﻿<Dimension xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:ddl200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:ddl200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:ddl300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:ddl300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:ddl400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:ddl400_400="http://schemas.microsoft.com/analysisservices/2012/engine/400/400" xmlns:ddl500="http://schemas.microsoft.com/analysisservices/2013/engine/500" xmlns:ddl500_500="http://schemas.microsoft.com/analysisservices/2013/engine/500/500" xmlns:dwd="http://schemas.microsoft.com/DataWarehouse/Designer/1.0" dwd:design-time-name="9aea86ff-a53e-483b-bb1f-4772e4db811f" xmlns="http://schemas.microsoft.com/analysisservices/2003/engine">
+﻿<Dimension xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:ddl200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:ddl200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:ddl300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:ddl300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:ddl400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:ddl400_400="http://schemas.microsoft.com/analysisservices/2012/engine/400/400" xmlns:ddl500="http://schemas.microsoft.com/analysisservices/2013/engine/500" xmlns:ddl500_500="http://schemas.microsoft.com/analysisservices/2013/engine/500/500" xmlns:dwd="http://schemas.microsoft.com/DataWarehouse/Designer/1.0" dwd:design-time-name="ca44eda0-716c-4ce8-a188-7025d23d33b7" xmlns="http://schemas.microsoft.com/analysisservices/2003/engine">
   <ID>Production Logs</ID>
   <Name>Production Logs</Name>
   <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
@@ -8,7 +8,7 @@
       <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramLayout</Name>
       <Value>
         <dds xmlns="">
-          <diagram fontclsid="{0BE35203-8F91-11CE-9DE3-00AA004BB851}" mouseiconclsid="{0BE35204-8F91-11CE-9DE3-00AA004BB851}" defaultlayout="MSDDS.Rectilinear" defaultlineroute="MSDDS.Rectilinear" version="7" nextobject="3" scale="100" pagebreakanchorx="0" pagebreakanchory="0" pagebreaksizex="0" pagebreaksizey="0" scrollleft="-3777" scrolltop="-7131" gridx="150" gridy="150" marginx="5000" marginy="5000" zoom="100" x="14579" y="20161" backcolor="16777215" defaultpersistence="2" PrintPageNumbersMode="3" PrintMarginTop="0" PrintMarginBottom="635" PrintMarginLeft="0" PrintMarginRight="0" marqueeselectionmode="0" mousepointer="0" snaptogrid="0" autotypeannotation="1" showscrollbars="0" viewpagebreaks="0" donotforceconnectorsbehindshapes="1" backpictureclsid="{00000000-0000-0000-0000-000000000000}">
+          <diagram fontclsid="{0BE35203-8F91-11CE-9DE3-00AA004BB851}" mouseiconclsid="{0BE35204-8F91-11CE-9DE3-00AA004BB851}" defaultlayout="MSDDS.Rectilinear" defaultlineroute="MSDDS.Rectilinear" version="7" nextobject="3" scale="100" pagebreakanchorx="0" pagebreakanchory="0" pagebreaksizex="0" pagebreaksizey="0" scrollleft="-3777" scrolltop="-7131" gridx="150" gridy="150" marginx="5000" marginy="5000" zoom="100" x="22675" y="21114" backcolor="2434342" defaultpersistence="2" PrintPageNumbersMode="3" PrintMarginTop="0" PrintMarginBottom="635" PrintMarginLeft="0" PrintMarginRight="0" marqueeselectionmode="0" mousepointer="0" snaptogrid="0" autotypeannotation="1" showscrollbars="0" viewpagebreaks="0" donotforceconnectorsbehindshapes="1" backpictureclsid="{00000000-0000-0000-0000-000000000000}">
             <font>
               <ddsxmlobjectstreamwrapper binary="01000000900144420100065461686f6d61" />
             </font>
@@ -108,131 +108,135 @@
   </Annotations>
   <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
   <State>Unprocessed</State>
-  <Source xsi:type="DataSourceViewBinding" dwd:design-time-name="72706767-6600-434a-8d6f-56f838031f9e">
+  <Source xsi:type="DataSourceViewBinding" dwd:design-time-name="1b02c2af-31fc-43dc-b6d3-07a60264ae0a">
     <DataSourceViewID>Dynamics AX</DataSourceViewID>
   </Source>
-  <ErrorConfiguration dwd:design-time-name="437f03ba-a326-4947-80e6-a9fe1fedd580">
+  <ErrorConfiguration dwd:design-time-name="06e8dc24-c3e4-47e0-a337-b403b77edb2b">
     <KeyErrorLimitAction>StopLogging</KeyErrorLimitAction>
     <KeyNotFound>IgnoreError</KeyNotFound>
     <NullKeyNotAllowed>IgnoreError</NullKeyNotAllowed>
   </ErrorConfiguration>
   <CurrentStorageMode>Molap</CurrentStorageMode>
   <Translations>
-    <Translation dwd:design-time-name="c2f064d9-24bf-423a-89e0-141a705f27f8">
+    <Translation dwd:design-time-name="9966bf04-6bd3-472f-82bc-a7cf0a7730c5">
       <Language>3082</Language>
       <Caption>Fichadas de producción</Caption>
     </Translation>
   </Translations>
   <Attributes>
-    <Attribute dwd:design-time-name="c7b7ccf3-e742-454b-a006-01b5c9f20c5d">
+    <Attribute dwd:design-time-name="ea81d57c-e8b6-490d-a3bd-445dd16e1d84">
       <ID>RECID</ID>
       <Name>Rec Id</Name>
       <Usage>Key</Usage>
       <KeyColumns>
-        <KeyColumn dwd:design-time-name="b96a61b4-39bb-4b63-b5f4-3aa133d70e20">
+        <KeyColumn dwd:design-time-name="cb2e5f80-c2cd-42d7-979f-3b41459a9582">
           <DataType>WChar</DataType>
           <DataSize>4</DataSize>
-          <Source xsi:type="ColumnBinding" dwd:design-time-name="b4ec1032-4d33-4c4e-9e43-20d429bfe0df">
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="e106bf41-be54-407f-b7fb-1883db76b532">
             <TableID>dbo_AOPROCESSCLOCKTABLE</TableID>
             <ColumnID>DATAAREAID</ColumnID>
           </Source>
         </KeyColumn>
-        <KeyColumn dwd:design-time-name="5a5b65f8-1249-4af6-a62e-96b736d1c842">
+        <KeyColumn dwd:design-time-name="ee1fd63f-9ca9-463c-bf9a-c209f6214222">
           <DataType>BigInt</DataType>
-          <Source xsi:type="ColumnBinding" dwd:design-time-name="fe0e4c4b-d337-4901-9a05-05e93061692d">
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="d8ae4b4f-418f-4986-8067-f84508778142">
             <TableID>dbo_AOPROCESSCLOCKTABLE</TableID>
             <ColumnID>RECID</ColumnID>
           </Source>
         </KeyColumn>
       </KeyColumns>
-      <NameColumn dwd:design-time-name="ce061765-9327-460c-bcd1-fb350af9e1cd">
+      <NameColumn dwd:design-time-name="198c9fcc-dd22-41e4-bf7e-2880a80b34f6">
         <DataType>WChar</DataType>
-        <Source xsi:type="ColumnBinding" dwd:design-time-name="7ca757cf-fe19-4229-bf66-ee16c134e4d4">
+        <Source xsi:type="ColumnBinding" dwd:design-time-name="c4f96093-b589-4cf2-814e-8810e98c28e0">
           <TableID>dbo_AOPROCESSCLOCKTABLE</TableID>
           <ColumnID>RECID</ColumnID>
         </Source>
       </NameColumn>
       <Translations>
-        <Translation dwd:design-time-name="34a67b55-33a7-4dd6-b62d-355b04bf36de">
+        <Translation dwd:design-time-name="d414abaa-f047-4c07-9afb-3d98c998a915">
           <Language>3082</Language>
           <Caption>Id de registro</Caption>
         </Translation>
       </Translations>
       <AttributeRelationships>
-        <AttributeRelationship dwd:design-time-name="1eba5e63-0144-4151-aa6d-86e7d3316d56">
+        <AttributeRelationship dwd:design-time-name="010cc90f-03d0-4b0e-ada3-f780f959ed50">
           <AttributeID>TIMESPAN MINUTES</AttributeID>
           <Name>TimeSpan Minutes</Name>
         </AttributeRelationship>
-        <AttributeRelationship dwd:design-time-name="408d8a13-33e6-4f95-aaaf-89dc93588513">
+        <AttributeRelationship dwd:design-time-name="4524db89-6046-4f35-a755-25623f9ff6fc">
           <AttributeID>TIMESPAN HOURS</AttributeID>
           <Name>TimeSpan Hours</Name>
         </AttributeRelationship>
-        <AttributeRelationship dwd:design-time-name="0caa4475-57ba-4ffc-acfd-aeb84a43fb9e">
+        <AttributeRelationship dwd:design-time-name="a6677b39-7211-4abc-9b40-ef15cbce151f">
           <AttributeID>CANCELED</AttributeID>
           <Name>Canceled</Name>
         </AttributeRelationship>
-        <AttributeRelationship dwd:design-time-name="71411d8d-0515-4a0f-8aed-005bac554f35">
+        <AttributeRelationship dwd:design-time-name="a92773d6-13ff-428c-b2e7-df52d6f109fd">
           <AttributeID>REGISTEREDJOURNAL</AttributeID>
           <Name>Registered Journal</Name>
         </AttributeRelationship>
-        <AttributeRelationship dwd:design-time-name="a4b8129c-9e14-4946-9c02-67aca3210d9f">
+        <AttributeRelationship dwd:design-time-name="f2af7436-3673-4062-9a18-3daad29497e4">
           <AttributeID>REGISTERED</AttributeID>
           <Name>Registerd</Name>
         </AttributeRelationship>
-        <AttributeRelationship dwd:design-time-name="4211b084-dae3-49d8-9115-e6a460197550">
+        <AttributeRelationship dwd:design-time-name="f17d822d-2c9d-4335-b67f-65316d540d2c">
           <AttributeID>WRKCTRID</AttributeID>
           <Name>Resource</Name>
         </AttributeRelationship>
-        <AttributeRelationship dwd:design-time-name="2f3059d2-3a00-459e-8152-2849b7c0900b">
+        <AttributeRelationship dwd:design-time-name="74ce4b73-83d8-4407-908e-e4ac4e48f8e1">
           <AttributeID>PRODID</AttributeID>
           <Name>Production Id</Name>
         </AttributeRelationship>
-        <AttributeRelationship dwd:design-time-name="bd822309-46ab-43b3-a571-b25088936160">
+        <AttributeRelationship dwd:design-time-name="0405b01c-e037-405e-9a38-bc787b2293e8">
           <AttributeID>ITEMID</AttributeID>
           <Name>Item Id</Name>
         </AttributeRelationship>
-        <AttributeRelationship dwd:design-time-name="7d7d5d06-dd59-4177-b65d-457e0e49790e">
+        <AttributeRelationship dwd:design-time-name="6fdc27be-21ba-4697-a501-d5cabbec10c5">
           <AttributeID>WORKSHIFT</AttributeID>
           <Name>Work Shift</Name>
         </AttributeRelationship>
-        <AttributeRelationship dwd:design-time-name="f664c0ac-63bf-4269-a4ae-abe16123332f">
+        <AttributeRelationship dwd:design-time-name="f93cff9b-3b3d-480f-9a55-bd474e895580">
           <AttributeID>ACTIVITY</AttributeID>
           <Name>Activity</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="a8cf162b-76e9-4de5-b684-a5153ba3ef4f">
+          <AttributeID>EMPLID</AttributeID>
+          <Name>EmplId</Name>
         </AttributeRelationship>
       </AttributeRelationships>
       <OrderBy>Key</OrderBy>
       <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
       <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
     </Attribute>
-    <Attribute dwd:design-time-name="417935b6-6292-4024-a85f-0c6adbbc5fab">
+    <Attribute dwd:design-time-name="817d231a-1d35-45a1-980c-dc9fc89aec96">
       <ID>TIMESPAN MINUTES</ID>
       <Name>TimeSpan Minutes</Name>
       <KeyColumns>
-        <KeyColumn dwd:design-time-name="4c126a13-d77a-441f-8f1f-dd63d08fe29a">
+        <KeyColumn dwd:design-time-name="83dc16b9-54d3-469a-81af-ba29abd904d1">
           <DataType>WChar</DataType>
           <DataSize>4</DataSize>
-          <Source xsi:type="ColumnBinding" dwd:design-time-name="5c7c333d-8fac-42dc-9288-ada6e168b799">
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="984e1701-3c8b-4fc5-84ad-2c7086a72775">
             <TableID>dbo_AOPROCESSCLOCKTABLE</TableID>
             <ColumnID>DATAAREAID</ColumnID>
           </Source>
         </KeyColumn>
-        <KeyColumn dwd:design-time-name="6bb336e2-ac94-4679-9eab-26d163ab6260">
+        <KeyColumn dwd:design-time-name="a5176dbc-f0ae-4a66-97f3-9b14aa5dcf77">
           <DataType>Integer</DataType>
-          <Source xsi:type="ColumnBinding" dwd:design-time-name="44ade7a5-9cda-4bf4-a75a-ad18866ae6a1">
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="3525c46c-ec6f-416e-a716-e93876e3ef5e">
             <TableID>dbo_AOPROCESSCLOCKTABLE</TableID>
             <ColumnID>TIMESPAN_MINUTES</ColumnID>
           </Source>
         </KeyColumn>
       </KeyColumns>
-      <NameColumn dwd:design-time-name="39f7edd0-3345-4f4f-a9bf-3c5273adf22c">
+      <NameColumn dwd:design-time-name="399925ff-0a21-4b57-9052-ac899406cd88">
         <DataType>WChar</DataType>
-        <Source xsi:type="ColumnBinding" dwd:design-time-name="b7e59283-d20e-441c-b1d5-07511c3bb2ab">
+        <Source xsi:type="ColumnBinding" dwd:design-time-name="cbe3ab9e-d3bf-4c83-9f4d-e7ddb00d8653">
           <TableID>dbo_AOPROCESSCLOCKTABLE</TableID>
           <ColumnID>TIMESPAN_MINUTES</ColumnID>
         </Source>
       </NameColumn>
       <Translations>
-        <Translation dwd:design-time-name="27f7a53e-dd01-46b4-b660-e50495e21731">
+        <Translation dwd:design-time-name="892345a9-ae3d-4bf7-9556-82077cb960cc">
           <Language>3082</Language>
           <Caption>Duración en minutos</Caption>
         </Translation>
@@ -242,35 +246,35 @@
       <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
       <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
     </Attribute>
-    <Attribute dwd:design-time-name="f7e58694-fc0f-4323-9b4b-c0402e7ca604">
+    <Attribute dwd:design-time-name="ac17e1b5-37da-4e19-8b55-1fe2d4db8f3b">
       <ID>TIMESPAN HOURS</ID>
       <Name>TimeSpan Hours</Name>
       <KeyColumns>
-        <KeyColumn dwd:design-time-name="bde4bc3b-66e0-4ed7-8606-c731f1ddbc04">
+        <KeyColumn dwd:design-time-name="c2d6c397-d643-420e-8415-a74756863d57">
           <DataType>WChar</DataType>
           <DataSize>4</DataSize>
-          <Source xsi:type="ColumnBinding" dwd:design-time-name="65d088f2-fbd5-4c2a-bdc4-31e7f13b863d">
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="8a402998-8b08-4351-bf87-85e1961e19f5">
             <TableID>dbo_AOPROCESSCLOCKTABLE</TableID>
             <ColumnID>DATAAREAID</ColumnID>
           </Source>
         </KeyColumn>
-        <KeyColumn dwd:design-time-name="043aca11-a8e1-4d37-b012-9bf053aaeda0">
+        <KeyColumn dwd:design-time-name="a2d143a1-ce81-44d6-803c-b416f7ceb0a8">
           <DataType>Double</DataType>
-          <Source xsi:type="ColumnBinding" dwd:design-time-name="c4c150fe-9c32-4703-9717-5685734b6119">
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="5474f6af-56af-4d21-bfae-ac83396982d4">
             <TableID>dbo_AOPROCESSCLOCKTABLE</TableID>
             <ColumnID>TIMESPAN_HOURS</ColumnID>
           </Source>
         </KeyColumn>
       </KeyColumns>
-      <NameColumn dwd:design-time-name="cacae24e-1257-4228-8ba0-2630f8752b37">
+      <NameColumn dwd:design-time-name="776287ba-0d0b-4320-8747-31b8c9802081">
         <DataType>WChar</DataType>
-        <Source xsi:type="ColumnBinding" dwd:design-time-name="0d1cd380-9681-458d-aa55-feb9fcd28dc4">
+        <Source xsi:type="ColumnBinding" dwd:design-time-name="3566be8b-6c5c-4c92-ba02-0aecd82ae034">
           <TableID>dbo_AOPROCESSCLOCKTABLE</TableID>
           <ColumnID>TIMESPAN_HOURS</ColumnID>
         </Source>
       </NameColumn>
       <Translations>
-        <Translation dwd:design-time-name="5b1e4407-be85-445a-b526-85e23f30dc8b">
+        <Translation dwd:design-time-name="1d7dd65e-b0e8-49f6-b0f4-1259fa4bcc75">
           <Language>3082</Language>
           <Caption>Duración en horas</Caption>
         </Translation>
@@ -280,35 +284,35 @@
       <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
       <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
     </Attribute>
-    <Attribute dwd:design-time-name="9655f0e3-a4d0-4860-9f15-4903a778857d">
+    <Attribute dwd:design-time-name="e9e3a551-0dcc-44e5-a3cf-decb75d56de3">
       <ID>REGISTERED</ID>
       <Name>Registerd</Name>
       <KeyColumns>
-        <KeyColumn dwd:design-time-name="d8fd36e2-55dd-4deb-ae58-1727d4fb840a">
+        <KeyColumn dwd:design-time-name="afc10bba-f4b6-4da1-b714-55fb109a58e5">
           <DataType>WChar</DataType>
           <DataSize>4</DataSize>
-          <Source xsi:type="ColumnBinding" dwd:design-time-name="fba46248-5c83-4ab4-bcb0-6c21c41bac8c">
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="3ff78767-439c-42ef-b31c-bf9a1023eb85">
             <TableID>dbo_AOPROCESSCLOCKTABLE</TableID>
             <ColumnID>DATAAREAID</ColumnID>
           </Source>
         </KeyColumn>
-        <KeyColumn dwd:design-time-name="ce581e68-c0b1-4604-9d08-937c28c633e7">
+        <KeyColumn dwd:design-time-name="52d72b71-aa92-4235-b5f1-68a3fbce60af">
           <DataType>Integer</DataType>
-          <Source xsi:type="ColumnBinding" dwd:design-time-name="471e0800-4db4-4e9a-bf1d-23e086a59a2c">
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="e50b60c0-4dff-4610-8554-fbc40d68b1ee">
             <TableID>dbo_AOPROCESSCLOCKTABLE</TableID>
             <ColumnID>REGISTERED</ColumnID>
           </Source>
         </KeyColumn>
       </KeyColumns>
-      <NameColumn dwd:design-time-name="5b56c90c-1c2d-4440-9cb5-f995b497a348">
+      <NameColumn dwd:design-time-name="423b4be1-2f6e-4c09-bc73-302b9985504f">
         <DataType>WChar</DataType>
-        <Source xsi:type="ColumnBinding" dwd:design-time-name="a842c90d-4c42-4866-bd47-c0a921208a54">
+        <Source xsi:type="ColumnBinding" dwd:design-time-name="ed89c4de-e3e9-4959-b3a1-1cda2c70a417">
           <TableID>dbo_AOPROCESSCLOCKTABLE</TableID>
           <ColumnID>REGISTERED</ColumnID>
         </Source>
       </NameColumn>
       <Translations>
-        <Translation dwd:design-time-name="913ffb11-8d28-4be3-b4c9-0aa501919b0c">
+        <Translation dwd:design-time-name="89e307f0-865f-4cdb-8086-f7f4f9e0e7c9">
           <Language>3082</Language>
           <Caption>Registrada</Caption>
         </Translation>
@@ -318,35 +322,35 @@
       <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
       <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
     </Attribute>
-    <Attribute dwd:design-time-name="e6429934-c982-42b6-b9b3-4cf83c9a0415">
+    <Attribute dwd:design-time-name="ad60702b-4d02-4eff-89fa-eb54922e4e91">
       <ID>CANCELED</ID>
       <Name>Canceled</Name>
       <KeyColumns>
-        <KeyColumn dwd:design-time-name="31931474-6c9c-4e78-8fe0-3b06805d2b3f">
+        <KeyColumn dwd:design-time-name="22c0376f-f71d-4aba-9300-46a134c60417">
           <DataType>WChar</DataType>
           <DataSize>4</DataSize>
-          <Source xsi:type="ColumnBinding" dwd:design-time-name="c3a79600-2515-416e-9801-3ca15e533fa6">
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="ad3ed41f-bcac-4d7f-b1e8-cff130391fd0">
             <TableID>dbo_AOPROCESSCLOCKTABLE</TableID>
             <ColumnID>DATAAREAID</ColumnID>
           </Source>
         </KeyColumn>
-        <KeyColumn dwd:design-time-name="c47313de-15fe-4c02-91d0-d1f5a627e117">
+        <KeyColumn dwd:design-time-name="023e8040-6be6-41b7-99ff-4b28bc8890ff">
           <DataType>Integer</DataType>
-          <Source xsi:type="ColumnBinding" dwd:design-time-name="4420fbac-fe2a-401d-b368-d94938705a00">
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="b6c7a94b-2daf-49f7-887c-f67efa2103c5">
             <TableID>dbo_AOPROCESSCLOCKTABLE</TableID>
             <ColumnID>CANCELED</ColumnID>
           </Source>
         </KeyColumn>
       </KeyColumns>
-      <NameColumn dwd:design-time-name="ac4b8222-857e-4437-9de9-682f164d5e69">
+      <NameColumn dwd:design-time-name="555d8242-35a2-43f8-b782-a9738f1fcc9d">
         <DataType>WChar</DataType>
-        <Source xsi:type="ColumnBinding" dwd:design-time-name="a4319d1b-9b26-408f-89ee-55235a4da6e7">
+        <Source xsi:type="ColumnBinding" dwd:design-time-name="b703b3cd-51c3-42ff-ab54-8bdfaddd4cce">
           <TableID>dbo_AOPROCESSCLOCKTABLE</TableID>
           <ColumnID>CANCELED</ColumnID>
         </Source>
       </NameColumn>
       <Translations>
-        <Translation dwd:design-time-name="1cbd4534-3298-4f9a-8e20-f6f7133a7352">
+        <Translation dwd:design-time-name="4f3621f1-c8e0-4015-860b-110f3a0be45b">
           <Language>3082</Language>
           <Caption>Cancelada</Caption>
         </Translation>
@@ -356,35 +360,35 @@
       <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
       <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
     </Attribute>
-    <Attribute dwd:design-time-name="0742bf8f-f70c-4b56-aed6-429fd778caed">
+    <Attribute dwd:design-time-name="8001d703-248a-46ed-9e3a-5c117344e215">
       <ID>REGISTEREDJOURNAL</ID>
       <Name>Registered Journal</Name>
       <KeyColumns>
-        <KeyColumn dwd:design-time-name="cba1bda5-c473-4a8a-ab59-4077e07723c9">
+        <KeyColumn dwd:design-time-name="5a7afa2b-3a90-4606-916b-deed74a5745b">
           <DataType>WChar</DataType>
           <DataSize>4</DataSize>
-          <Source xsi:type="ColumnBinding" dwd:design-time-name="9d51eaa5-4259-45fd-8b5f-7916fb1173bc">
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="e7b1396f-efbe-47af-b7d9-b4f3459dab04">
             <TableID>dbo_AOPROCESSCLOCKTABLE</TableID>
             <ColumnID>DATAAREAID</ColumnID>
           </Source>
         </KeyColumn>
-        <KeyColumn dwd:design-time-name="a922157a-44b4-4f0a-a2f8-5222a1595452">
+        <KeyColumn dwd:design-time-name="f1470678-1a0c-487d-afd8-2c11ed8056c6">
           <DataType>Integer</DataType>
-          <Source xsi:type="ColumnBinding" dwd:design-time-name="d2f8bb2d-9170-4d3c-b7ce-2812e24e44b3">
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="a76f80cb-f82d-4832-8722-85574ce8fc7a">
             <TableID>dbo_AOPROCESSCLOCKTABLE</TableID>
             <ColumnID>REGISTEREDJOURNAL</ColumnID>
           </Source>
         </KeyColumn>
       </KeyColumns>
-      <NameColumn dwd:design-time-name="768c40a7-8d66-453d-b424-a610e81816ab">
+      <NameColumn dwd:design-time-name="44d459b3-7a21-49d4-a25c-0ec7c2761d5d">
         <DataType>WChar</DataType>
-        <Source xsi:type="ColumnBinding" dwd:design-time-name="f8157ba8-a2eb-4745-bf6c-0c0f3e369ac0">
+        <Source xsi:type="ColumnBinding" dwd:design-time-name="d49004dc-aa1e-4a41-98d3-dae179a5507e">
           <TableID>dbo_AOPROCESSCLOCKTABLE</TableID>
           <ColumnID>REGISTEREDJOURNAL</ColumnID>
         </Source>
       </NameColumn>
       <Translations>
-        <Translation dwd:design-time-name="6b21bbd7-b893-4a50-be83-582c11f644fa">
+        <Translation dwd:design-time-name="a8a9e1a0-b423-4db7-9ed1-ec7542e54367">
           <Language>3082</Language>
           <Caption>Diario Registrado</Caption>
         </Translation>
@@ -394,37 +398,37 @@
       <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
       <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
     </Attribute>
-    <Attribute dwd:design-time-name="6635dec9-e8ca-4f33-88c7-043fc1d5e991">
+    <Attribute dwd:design-time-name="d17c4e2a-23f4-4715-8c06-f64cdea00c4d">
       <ID>PRODID</ID>
       <Name>Production Id</Name>
       <KeyColumns>
-        <KeyColumn dwd:design-time-name="0ca83480-783c-4b2c-9469-720469dbce0a">
+        <KeyColumn dwd:design-time-name="052825a1-a5b4-42b6-8265-c1649b5cc771">
           <DataType>WChar</DataType>
           <DataSize>4</DataSize>
-          <Source xsi:type="ColumnBinding" dwd:design-time-name="f861bc20-e754-44f5-9a83-734403cb520b">
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="be485789-625b-4c4f-b2ef-541e27d0d1f1">
             <TableID>dbo_AOPROCESSCLOCKTABLE</TableID>
             <ColumnID>DATAAREAID</ColumnID>
           </Source>
         </KeyColumn>
-        <KeyColumn dwd:design-time-name="f7fee085-10e7-4c9b-9cca-5a3650abca93">
+        <KeyColumn dwd:design-time-name="56f78693-032b-4c9a-988e-abef09dfce84">
           <DataType>WChar</DataType>
           <DataSize>20</DataSize>
-          <Source xsi:type="ColumnBinding" dwd:design-time-name="878e53b9-b22b-42fd-8bb1-24999ba14479">
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="851220fd-1be7-4a3a-b2e4-b1ea39e0e2c6">
             <TableID>dbo_AOPROCESSCLOCKTABLE</TableID>
             <ColumnID>PRODID</ColumnID>
           </Source>
         </KeyColumn>
       </KeyColumns>
-      <NameColumn dwd:design-time-name="00b83610-1abb-4384-a3c9-b5f30529888e">
+      <NameColumn dwd:design-time-name="c3158702-ddfb-42d2-b425-76beb118e096">
         <DataType>WChar</DataType>
         <DataSize>20</DataSize>
-        <Source xsi:type="ColumnBinding" dwd:design-time-name="dfca49bc-0f3b-4f38-8755-84d75816e027">
+        <Source xsi:type="ColumnBinding" dwd:design-time-name="79b9ed05-bcb4-4272-a8f1-31f6560ff439">
           <TableID>dbo_AOPROCESSCLOCKTABLE</TableID>
           <ColumnID>PRODID</ColumnID>
         </Source>
       </NameColumn>
       <Translations>
-        <Translation dwd:design-time-name="5ae1b843-9e5b-490f-9e5e-aab9200c3b3e">
+        <Translation dwd:design-time-name="2e5880d7-461e-4ad7-aa48-7fe65488f13a">
           <Language>3082</Language>
           <Caption>OF</Caption>
         </Translation>
@@ -432,43 +436,43 @@
       <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
       <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
     </Attribute>
-    <Attribute dwd:design-time-name="783990ff-c071-4684-b5ec-7f96a9069d18">
+    <Attribute dwd:design-time-name="20b083ac-d363-498d-b0b3-2490d7b3b011">
       <ID>WRKCTRID</ID>
       <Name>Resource</Name>
       <KeyColumns>
-        <KeyColumn dwd:design-time-name="df84ba1a-124e-4ed3-8920-b95d473522fa">
+        <KeyColumn dwd:design-time-name="0d1e36ac-f2c4-4c96-b55a-de36b3a8c841">
           <DataType>WChar</DataType>
           <DataSize>4</DataSize>
-          <Source xsi:type="ColumnBinding" dwd:design-time-name="9a5f7e08-6208-4aba-96b1-c50018be14d3">
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="71e77428-f6a4-4937-81ea-ac5e1b11dd08">
             <TableID>dbo_AOPROCESSCLOCKTABLE</TableID>
             <ColumnID>DATAAREAID</ColumnID>
           </Source>
         </KeyColumn>
-        <KeyColumn dwd:design-time-name="58164024-6a4a-4ef2-87f8-805abddc3380">
+        <KeyColumn dwd:design-time-name="29fe1a30-590a-4f19-a0b8-3c22ac63ac00">
           <DataType>WChar</DataType>
           <DataSize>10</DataSize>
-          <Source xsi:type="ColumnBinding" dwd:design-time-name="90445a0f-3da7-4941-acc7-56c00a2f7d2a">
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="1bec9fce-9345-4213-aeee-270015b908ad">
             <TableID>dbo_AOPROCESSCLOCKTABLE</TableID>
             <ColumnID>WRKCTRID</ColumnID>
           </Source>
         </KeyColumn>
       </KeyColumns>
-      <NameColumn dwd:design-time-name="729fe3c9-3caf-41ea-8715-0fad7641a6d4">
+      <NameColumn dwd:design-time-name="79685520-088b-4156-827c-dcc98c727d45">
         <DataType>WChar</DataType>
         <DataSize>10</DataSize>
-        <Source xsi:type="ColumnBinding" dwd:design-time-name="a0ae4267-414b-4776-991d-80de8308fe85">
+        <Source xsi:type="ColumnBinding" dwd:design-time-name="52ebec4d-49ef-4581-a3ed-9110ae25c033">
           <TableID>dbo_AOPROCESSCLOCKTABLE</TableID>
           <ColumnID>WRKCTRID</ColumnID>
         </Source>
       </NameColumn>
       <Translations>
-        <Translation dwd:design-time-name="b66df764-47a1-4f04-aac5-cd9fe469c4e0">
+        <Translation dwd:design-time-name="dfc75b31-133b-4c06-be35-f96613e243f2">
           <Language>3082</Language>
           <Caption>Recurso</Caption>
         </Translation>
       </Translations>
       <AttributeRelationships>
-        <AttributeRelationship dwd:design-time-name="c0591377-b385-4cff-bb89-fbb05c973004">
+        <AttributeRelationship dwd:design-time-name="ca8dcd23-5149-4ec2-a93e-da646a610fb7">
           <AttributeID>WRKCTR NAME</AttributeID>
           <RelationshipType>Rigid</RelationshipType>
           <Name>Resource Name</Name>
@@ -477,43 +481,43 @@
       <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
       <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
     </Attribute>
-    <Attribute dwd:design-time-name="aca61c99-4616-4a9f-8530-7212f23ffbd0">
+    <Attribute dwd:design-time-name="037541f9-7a8b-45b4-8d53-6cae8d96b4c5">
       <ID>ITEMID</ID>
       <Name>Item Id</Name>
       <KeyColumns>
-        <KeyColumn dwd:design-time-name="3fb9f2f6-110f-40b4-9cf5-e1935bbe1790">
+        <KeyColumn dwd:design-time-name="2e48bacd-d66c-4ede-abbe-8db83ff01c3e">
           <DataType>WChar</DataType>
           <DataSize>4</DataSize>
-          <Source xsi:type="ColumnBinding" dwd:design-time-name="b828d252-9eda-4658-b24f-3adda27fe841">
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="147dfcdd-d2dd-44dd-9f64-77900c78de1c">
             <TableID>dbo_AOPROCESSCLOCKTABLE</TableID>
             <ColumnID>DATAAREAID</ColumnID>
           </Source>
         </KeyColumn>
-        <KeyColumn dwd:design-time-name="cdcea5fb-c981-47b3-8528-c577abb84899">
+        <KeyColumn dwd:design-time-name="4f2b91ec-a35f-487d-8aa6-3dc24812a936">
           <DataType>WChar</DataType>
           <DataSize>20</DataSize>
-          <Source xsi:type="ColumnBinding" dwd:design-time-name="a6706a3b-8273-4596-b116-5d7a56420b51">
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="bf15da53-da6a-4514-9cb2-3fcc4ea6e5c9">
             <TableID>dbo_AOPROCESSCLOCKTABLE</TableID>
             <ColumnID>ITEMID</ColumnID>
           </Source>
         </KeyColumn>
       </KeyColumns>
-      <NameColumn dwd:design-time-name="63f62948-3524-46f0-8579-d4ac4e6c36b0">
+      <NameColumn dwd:design-time-name="d0a4476e-fe43-4ea0-9398-83f702a44a9f">
         <DataType>WChar</DataType>
         <DataSize>20</DataSize>
-        <Source xsi:type="ColumnBinding" dwd:design-time-name="dd19a21d-7e5d-49a3-9a0a-f22a2075482a">
+        <Source xsi:type="ColumnBinding" dwd:design-time-name="f288a293-4aa1-4f76-8019-8b45fc3dc03d">
           <TableID>dbo_AOPROCESSCLOCKTABLE</TableID>
           <ColumnID>ITEMID</ColumnID>
         </Source>
       </NameColumn>
       <Translations>
-        <Translation dwd:design-time-name="01049135-349f-435f-b718-40f0e9382925">
+        <Translation dwd:design-time-name="1e56edc4-8a65-4bcb-9db0-0e93976033fb">
           <Language>3082</Language>
           <Caption>Código de artículo</Caption>
         </Translation>
       </Translations>
       <AttributeRelationships>
-        <AttributeRelationship dwd:design-time-name="5452ce88-0663-48b7-a806-6eb81cf9d765">
+        <AttributeRelationship dwd:design-time-name="5637290d-4a8f-4490-b570-e2a05d32a9b1">
           <AttributeID>ITEM NAME</AttributeID>
           <RelationshipType>Rigid</RelationshipType>
           <Name>Item Name</Name>
@@ -522,35 +526,35 @@
       <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
       <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
     </Attribute>
-    <Attribute dwd:design-time-name="87a952a4-aa4d-4c83-8915-3f908872f20b">
+    <Attribute dwd:design-time-name="e0be6b3b-8099-4317-a148-c856c65d4feb">
       <ID>ITEM NAME</ID>
       <Name>Item Name</Name>
       <KeyColumns>
-        <KeyColumn dwd:design-time-name="b6147119-55f5-4515-b16c-0631e90ae066">
+        <KeyColumn dwd:design-time-name="a5e7bc34-5d97-479f-acad-24277b3288c3">
           <DataType>WChar</DataType>
           <DataSize>4</DataSize>
-          <Source xsi:type="ColumnBinding" dwd:design-time-name="b575ab81-ed52-4ffc-ab05-382115c9710f">
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="96c88790-9e0d-440f-93ea-3d91df8994b6">
             <TableID>dbo_AOPROCESSCLOCKTABLE</TableID>
             <ColumnID>DATAAREAID</ColumnID>
           </Source>
         </KeyColumn>
-        <KeyColumn dwd:design-time-name="f3910d03-ed20-4511-acc6-f5f303461af9">
+        <KeyColumn dwd:design-time-name="25988c57-30f6-4bcd-97e5-a1c17c4ac488">
           <DataType>WChar</DataType>
-          <Source xsi:type="ColumnBinding" dwd:design-time-name="a61fe256-73a0-4e3f-918b-a9655030d926">
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="de570c1a-386a-448f-a807-188609062623">
             <TableID>dbo_AOPROCESSCLOCKTABLE</TableID>
             <ColumnID>ITEM_NAME</ColumnID>
           </Source>
         </KeyColumn>
       </KeyColumns>
-      <NameColumn dwd:design-time-name="106c285a-7bba-41f9-bc5f-8f0a30a18826">
+      <NameColumn dwd:design-time-name="ce5d3f91-00c7-4b4e-a3af-eb099d923e8a">
         <DataType>WChar</DataType>
-        <Source xsi:type="ColumnBinding" dwd:design-time-name="50926aaa-6865-42bb-b06a-98fa907148cc">
+        <Source xsi:type="ColumnBinding" dwd:design-time-name="316dabd0-b639-450c-aa69-a097d2ec0e92">
           <TableID>dbo_AOPROCESSCLOCKTABLE</TableID>
           <ColumnID>ITEM_NAME</ColumnID>
         </Source>
       </NameColumn>
       <Translations>
-        <Translation dwd:design-time-name="935b0f1a-47be-43a3-8d3b-7e1450ef3578">
+        <Translation dwd:design-time-name="00c3d4fa-5158-4cbf-829a-6a844e756f99">
           <Language>3082</Language>
           <Caption>Nombre artículo</Caption>
         </Translation>
@@ -558,37 +562,37 @@
       <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
       <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
     </Attribute>
-    <Attribute dwd:design-time-name="3aac559e-7484-4d07-8266-64d1a6b01653">
+    <Attribute dwd:design-time-name="3896c186-098f-46c3-8484-d63c1cb316a3">
       <ID>WRKCTR NAME</ID>
       <Name>Resource Name</Name>
       <KeyColumns>
-        <KeyColumn dwd:design-time-name="c3cb7499-5d1d-4c1f-9015-c54c747ddb61">
+        <KeyColumn dwd:design-time-name="d1dd5dce-2999-4089-9f3f-06edd5de2584">
           <DataType>WChar</DataType>
           <DataSize>4</DataSize>
-          <Source xsi:type="ColumnBinding" dwd:design-time-name="2f5d170a-0092-4360-8c77-0da2de5c87ca">
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="13ba0531-698f-4c28-b63b-da61c866fef1">
             <TableID>dbo_AOPROCESSCLOCKTABLE</TableID>
             <ColumnID>DATAAREAID</ColumnID>
           </Source>
         </KeyColumn>
-        <KeyColumn dwd:design-time-name="42f92e67-47d5-40bb-b886-c4aef7fbc781">
+        <KeyColumn dwd:design-time-name="35fc89be-d977-4e81-94af-0a968a0df080">
           <DataType>WChar</DataType>
           <DataSize>100</DataSize>
-          <Source xsi:type="ColumnBinding" dwd:design-time-name="acc475f1-06da-4271-ab90-d37d0b0591ad">
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="700e4160-fe40-45fd-92cd-b38022ec8f2c">
             <TableID>dbo_AOPROCESSCLOCKTABLE</TableID>
             <ColumnID>WRKCTR_NAME</ColumnID>
           </Source>
         </KeyColumn>
       </KeyColumns>
-      <NameColumn dwd:design-time-name="947dfd96-17ea-4901-803b-b633cbeb2913">
+      <NameColumn dwd:design-time-name="f7f2e377-0909-413d-acbc-7799da0c348a">
         <DataType>WChar</DataType>
         <DataSize>100</DataSize>
-        <Source xsi:type="ColumnBinding" dwd:design-time-name="c26fad46-c09b-4cee-903a-c2f2a5909ad9">
+        <Source xsi:type="ColumnBinding" dwd:design-time-name="80322364-1c0e-41c6-8adf-efe035d3e786">
           <TableID>dbo_AOPROCESSCLOCKTABLE</TableID>
           <ColumnID>WRKCTR_NAME</ColumnID>
         </Source>
       </NameColumn>
       <Translations>
-        <Translation dwd:design-time-name="792ffc1a-81ec-4233-b21f-b1359b953b69">
+        <Translation dwd:design-time-name="3da7a0ba-f959-4ca2-934f-377300a59fc0">
           <Language>3082</Language>
           <Caption>Nombre recurso</Caption>
         </Translation>
@@ -596,37 +600,37 @@
       <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
       <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
     </Attribute>
-    <Attribute dwd:design-time-name="2eb2832a-41ae-4819-9b4d-5f30a471e0dd">
+    <Attribute dwd:design-time-name="5654e9bc-933f-4d4f-b459-2af24e8e1369">
       <ID>WORKSHIFT</ID>
       <Name>Work Shift</Name>
       <KeyColumns>
-        <KeyColumn dwd:design-time-name="932fe180-896c-4e71-8ce9-6f2eeeeaee9a">
+        <KeyColumn dwd:design-time-name="7634aba1-fedd-43a1-be78-dfdb80485192">
           <DataType>WChar</DataType>
           <DataSize>4</DataSize>
-          <Source xsi:type="ColumnBinding" dwd:design-time-name="01d8eb92-d028-454d-8a44-e5d4fc0f4b1e">
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="ebd8a1cf-289e-4fd9-bd7d-7cd3928359b3">
             <TableID>dbo_AOPROCESSCLOCKTABLE</TableID>
             <ColumnID>DATAAREAID</ColumnID>
           </Source>
         </KeyColumn>
-        <KeyColumn dwd:design-time-name="38ec8d3b-0ef2-4d1f-8afa-64c85ceae468">
+        <KeyColumn dwd:design-time-name="baccbfb9-5530-4b90-8049-362a8f47f79a">
           <DataType>WChar</DataType>
           <DataSize>10</DataSize>
-          <Source xsi:type="ColumnBinding" dwd:design-time-name="c10a3cf4-a01c-44ed-b748-855deda47acc">
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="ea6d2ea0-24cb-458f-b43f-91ca65b53238">
             <TableID>dbo_AOPROCESSCLOCKTABLE</TableID>
             <ColumnID>WORKSHIFT</ColumnID>
           </Source>
         </KeyColumn>
       </KeyColumns>
-      <NameColumn dwd:design-time-name="70d8ba22-7c2b-4101-8b3d-13b41dd2969c">
+      <NameColumn dwd:design-time-name="acd4673f-1625-446f-bf60-7743d869fb21">
         <DataType>WChar</DataType>
         <DataSize>10</DataSize>
-        <Source xsi:type="ColumnBinding" dwd:design-time-name="3feca1db-c842-4992-9301-d8a5d6af7784">
+        <Source xsi:type="ColumnBinding" dwd:design-time-name="8f1d629a-3078-4df9-9625-4f21fa92c072">
           <TableID>dbo_AOPROCESSCLOCKTABLE</TableID>
           <ColumnID>WORKSHIFT</ColumnID>
         </Source>
       </NameColumn>
       <Translations>
-        <Translation dwd:design-time-name="1ef772ae-a772-406c-828e-373362eec68c">
+        <Translation dwd:design-time-name="30fd54c7-fdd4-4507-8468-0efd94864f98">
           <Language>3082</Language>
           <Caption>Turno</Caption>
         </Translation>
@@ -634,37 +638,37 @@
       <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
       <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
     </Attribute>
-    <Attribute dwd:design-time-name="20359047-2d83-41d6-9cde-d1d0ae630466">
+    <Attribute dwd:design-time-name="9ef77221-cc84-41a5-bad8-8593f5166f1f">
       <ID>ACTIVITY</ID>
       <Name>Activity</Name>
       <KeyColumns>
-        <KeyColumn dwd:design-time-name="46e9947c-813d-4b46-a991-26bd10e44885">
+        <KeyColumn dwd:design-time-name="db215532-714b-41c1-9daa-a069200a3602">
           <DataType>WChar</DataType>
           <DataSize>4</DataSize>
-          <Source xsi:type="ColumnBinding" dwd:design-time-name="031753fd-b384-4b55-94bf-e0c974bdee8c">
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="162ad6ba-d5a1-4143-8fd2-7827151cce83">
             <TableID>dbo_AOPROCESSCLOCKTABLE</TableID>
             <ColumnID>DATAAREAID</ColumnID>
           </Source>
         </KeyColumn>
-        <KeyColumn dwd:design-time-name="a6ece3fc-adf6-4c6d-b057-0d2b02647c57">
+        <KeyColumn dwd:design-time-name="c3ba5963-765d-4ba9-8d2b-bdda34a35c3c">
           <DataType>WChar</DataType>
           <DataSize>20</DataSize>
-          <Source xsi:type="ColumnBinding" dwd:design-time-name="2182e290-75d4-4c08-83c6-6fae5b0cf25e">
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="bb050e16-ff3b-43f0-8796-1ab415149d63">
             <TableID>dbo_AOPROCESSCLOCKTABLE</TableID>
             <ColumnID>ACTIVITY</ColumnID>
           </Source>
         </KeyColumn>
       </KeyColumns>
-      <NameColumn dwd:design-time-name="c8e86140-fc68-422c-af1a-0e3be0ac92b5">
+      <NameColumn dwd:design-time-name="187bcd35-730c-4b60-9876-5bfdc3b15312">
         <DataType>WChar</DataType>
         <DataSize>20</DataSize>
-        <Source xsi:type="ColumnBinding" dwd:design-time-name="4119af14-7f46-4b23-aa4f-39d0c8e7ff1d">
+        <Source xsi:type="ColumnBinding" dwd:design-time-name="5b185174-b539-47f7-942c-5dafcf18d485">
           <TableID>dbo_AOPROCESSCLOCKTABLE</TableID>
           <ColumnID>ACTIVITY</ColumnID>
         </Source>
       </NameColumn>
       <Translations>
-        <Translation dwd:design-time-name="4c9742f5-3eab-4439-b940-f13ccc08c79f">
+        <Translation dwd:design-time-name="2102d055-4a41-4abc-a1a3-8b8c1039a524">
           <Language>3082</Language>
           <Caption>Actividad</Caption>
         </Translation>
@@ -672,46 +676,68 @@
       <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
       <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
     </Attribute>
+    <Attribute dwd:design-time-name="485e0ba5-60d8-4462-a94d-5d13c45557c8">
+      <ID>EMPLID</ID>
+      <Name>EmplId</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="96c6af7f-1a23-4658-b7b9-a9b249c3cfb9">
+          <DataType>WChar</DataType>
+          <DataSize>20</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="b7c986c2-f56f-400f-bdc1-722c08ba0166">
+            <TableID>dbo_AOPROCESSCLOCKTABLE</TableID>
+            <ColumnID>EMPLID</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <Translations>
+        <Translation dwd:design-time-name="1622f5ef-a1a4-421b-ab3c-342eca16a1b8">
+          <Language>3082</Language>
+          <Caption>Empleado</Caption>
+        </Translation>
+      </Translations>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
   </Attributes>
   <Hierarchies>
-    <Hierarchy dwd:design-time-name="77fec9e1-e78e-4321-9192-e64ac292f11d">
+    <Hierarchy dwd:design-time-name="949f5319-caf2-4854-b54f-358a1baaba17">
       <ID>Jerarquía</ID>
       <Name>Resource - OF - Item</Name>
       <Translations>
-        <Translation dwd:design-time-name="3b59a790-ce65-405f-897f-0796701ad2fd">
+        <Translation dwd:design-time-name="24187d0a-d62f-462e-a5bb-c18ec678dfba">
           <Language>3082</Language>
           <Caption>Recurso - OF - Artículo</Caption>
         </Translation>
       </Translations>
       <Levels>
-        <Level dwd:design-time-name="45e396f8-0f70-4266-8a82-2e6a746b82c4">
+        <Level dwd:design-time-name="63e318bf-107b-49ba-a66e-4026175aaccb">
           <ID>Resource</ID>
           <Name>Resource</Name>
           <SourceAttributeID>WRKCTRID</SourceAttributeID>
           <Translations>
-            <Translation dwd:design-time-name="ba4cc747-a273-40fa-b001-8d2560ac06e7">
+            <Translation dwd:design-time-name="9836f4aa-249b-4271-95f0-dcc9779c9de2">
               <Language>3082</Language>
               <Caption>Recurso</Caption>
             </Translation>
           </Translations>
         </Level>
-        <Level dwd:design-time-name="372442f5-acce-417b-9fcf-bd9bf6a26ea8">
+        <Level dwd:design-time-name="bf229847-36a6-4588-b370-0c51a56dc56a">
           <ID>Production Id</ID>
           <Name>Production Id</Name>
           <SourceAttributeID>PRODID</SourceAttributeID>
           <Translations>
-            <Translation dwd:design-time-name="6f8066c2-3289-4963-8244-126bbabfe771">
+            <Translation dwd:design-time-name="085b8ace-fc90-491f-b056-5377fa71498f">
               <Language>3082</Language>
               <Caption>OF</Caption>
             </Translation>
           </Translations>
         </Level>
-        <Level dwd:design-time-name="9732ab92-2f9a-4b0a-a366-55c5d3c492ba">
+        <Level dwd:design-time-name="53a6f7ab-a81d-4e91-9a09-184af642ab4a">
           <ID>Item Id</ID>
           <Name>Item Id</Name>
           <SourceAttributeID>ITEMID</SourceAttributeID>
           <Translations>
-            <Translation dwd:design-time-name="2972d6f0-1591-428e-b0ba-b01f41d63ca0">
+            <Translation dwd:design-time-name="f96c3724-3882-49e8-bfb9-ee2b0ec2dae6">
               <Language>3082</Language>
               <Caption>Artículo</Caption>
             </Translation>
@@ -719,44 +745,44 @@
         </Level>
       </Levels>
     </Hierarchy>
-    <Hierarchy dwd:design-time-name="63a65598-6ee2-45e1-9391-cda6c40a03f2">
+    <Hierarchy dwd:design-time-name="f07ffcd3-6293-4b6b-9b7d-ce03e5b1c44b">
       <ID>Jerarquía 1</ID>
       <Name>Resource - Item - OF</Name>
       <Translations>
-        <Translation dwd:design-time-name="f2bf1c4c-de6d-4b46-b3a2-5daede29ba0a">
+        <Translation dwd:design-time-name="a907c98e-e483-4509-80cc-2823cda5f336">
           <Language>3082</Language>
           <Caption>Recurso - Artículo - OF</Caption>
         </Translation>
       </Translations>
       <Levels>
-        <Level dwd:design-time-name="0be8624f-2a09-45e3-a0d9-515fedb8d47b">
+        <Level dwd:design-time-name="6db67ba4-c340-45e6-811e-585f8fdf855a">
           <ID>Resource</ID>
           <Name>Resource</Name>
           <SourceAttributeID>WRKCTRID</SourceAttributeID>
           <Translations>
-            <Translation dwd:design-time-name="953ccc8d-8e67-4089-9a4a-adafb8d0c5f8">
+            <Translation dwd:design-time-name="87a1945b-5d46-43de-95ca-0a0dd0fae454">
               <Language>3082</Language>
               <Caption>Recurso</Caption>
             </Translation>
           </Translations>
         </Level>
-        <Level dwd:design-time-name="842a81e0-275e-4e58-a290-802d6e7f5a40">
+        <Level dwd:design-time-name="6f3b11de-0944-4c3a-8085-918c19749e39">
           <ID>Item Id</ID>
           <Name>Item Id</Name>
           <SourceAttributeID>ITEMID</SourceAttributeID>
           <Translations>
-            <Translation dwd:design-time-name="ad01c944-59a5-481f-8b6b-f3926b1ad0cc">
+            <Translation dwd:design-time-name="28342340-fd82-4650-8893-ee7d0d39bafd">
               <Language>3082</Language>
               <Caption>Artículo</Caption>
             </Translation>
           </Translations>
         </Level>
-        <Level dwd:design-time-name="c4ff06ed-3588-480d-930f-4eb4ae78ad10">
+        <Level dwd:design-time-name="0dc10bfd-d7a6-4ddd-813d-980106faff1a">
           <ID>Production Id</ID>
           <Name>Production Id</Name>
           <SourceAttributeID>PRODID</SourceAttributeID>
           <Translations>
-            <Translation dwd:design-time-name="86bb6a98-566d-4965-83c3-11d7a15d2f98">
+            <Translation dwd:design-time-name="b5445e94-9d6e-45d4-bb14-0ea49739be3b">
               <Language>3082</Language>
               <Caption>OF</Caption>
             </Translation>
