@@ -1,0 +1,593 @@
+﻿<Dimension xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:ddl200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:ddl200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:ddl300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:ddl300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:ddl400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:ddl400_400="http://schemas.microsoft.com/analysisservices/2012/engine/400/400" xmlns:ddl500="http://schemas.microsoft.com/analysisservices/2013/engine/500" xmlns:ddl500_500="http://schemas.microsoft.com/analysisservices/2013/engine/500/500" xmlns:dwd="http://schemas.microsoft.com/DataWarehouse/Designer/1.0" dwd:design-time-name="fc8c36bd-14b4-4913-b874-3280ee6069e4" xmlns="http://schemas.microsoft.com/analysisservices/2003/engine">
+  <ID>ROUTEVERSION</ID>
+  <Name>ROUTEVERSION</Name>
+  <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+  <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+  <Annotations>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramLayout</Name>
+      <Value>
+        <dds xmlns="">
+          <diagram fontclsid="{0BE35203-8F91-11CE-9DE3-00AA004BB851}" mouseiconclsid="{0BE35204-8F91-11CE-9DE3-00AA004BB851}" defaultlayout="MSDDS.Rectilinear" defaultlineroute="MSDDS.Rectilinear" version="7" nextobject="14" scale="100" pagebreakanchorx="0" pagebreakanchory="0" pagebreaksizex="0" pagebreaksizey="0" scrollleft="-9187" scrolltop="-8057" gridx="150" gridy="150" marginx="5000" marginy="5000" zoom="100" x="22675" y="21114" backcolor="2434342" defaultpersistence="2" PrintPageNumbersMode="3" PrintMarginTop="0" PrintMarginBottom="635" PrintMarginLeft="0" PrintMarginRight="0" marqueeselectionmode="0" mousepointer="0" snaptogrid="0" autotypeannotation="1" showscrollbars="0" viewpagebreaks="0" donotforceconnectorsbehindshapes="1" backpictureclsid="{00000000-0000-0000-0000-000000000000}">
+            <font>
+              <ddsxmlobjectstreamwrapper binary="01000000900144420100065461686f6d61" />
+            </font>
+            <mouseicon>
+              <ddsxmlobjectstreamwrapper binary="6c74000000000000" />
+            </mouseicon>
+          </diagram>
+          <layoutmanager>
+            <ddsxmlobj />
+          </layoutmanager>
+          <ddscontrol controlprogid="DdsShapes.DdsObjectManagedBridge" tooltip="ROUTEVERSION" left="20" top="0" logicalid="7" controlid="1" masterid="0" hint1="0" hint2="0" width="4260" height="5000" noresize="0" nomove="0" nodefaultattachpoints="0" autodrag="1" usedefaultiddshape="1" selectable="1" showselectionhandles="1" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+            <control>
+              <ddsxmlobjectstreaminitwrapper binary="000e0000a410000088130000" />
+            </control>
+            <layoutobject>
+              <ddsxmlobj>
+                <property name="LogicalObject" value="dbo_ROUTE" vartype="8" />
+              </ddsxmlobj>
+            </layoutobject>
+            <shape groupshapeid="0" groupnode="0" />
+          </ddscontrol>
+          <ddscontrol controlprogid="DdsShapes.DdsObjectManagedBridge" tooltip="PRODTABLE" left="7163" top="-3057" logicalid="8" controlid="2" masterid="0" hint1="0" hint2="0" width="5450" height="5000" noresize="0" nomove="0" nodefaultattachpoints="0" autodrag="1" usedefaultiddshape="1" selectable="1" showselectionhandles="1" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+            <control>
+              <ddsxmlobjectstreaminitwrapper binary="000e00004a15000088130000" />
+            </control>
+            <layoutobject>
+              <ddsxmlobj>
+                <property name="LogicalObject" value="PRODTABLE" vartype="8" />
+              </ddsxmlobj>
+            </layoutobject>
+            <shape groupshapeid="0" groupnode="0" />
+          </ddscontrol>
+          <ddscontrol controlprogid="MSDDS.Polyline" left="3980" top="0" logicalid="9" controlid="3" masterid="0" hint1="0" hint2="0" width="3483" height="943" noresize="0" nomove="0" nodefaultattachpoints="1" autodrag="0" usedefaultiddshape="0" selectable="1" showselectionhandles="0" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+            <control>
+              <ddsxmlobj>
+                <polyline endtypedst="6" endtypesrc="3" usercolor="15856113" linestyle="0" linerender="1" customendtypedstid="0" customendtypesrcid="0" adornsvisible="1" />
+              </ddsxmlobj>
+            </control>
+            <layoutobject>
+              <ddsxmlobj>
+                <property name="LogicalObject" value="dataSet.Relations[ROUTE-PRODTABLE]" vartype="8" />
+                <property name="Virtual" value="0" vartype="11" />
+                <property name="VisibleAP" value="0" vartype="3" />
+              </ddsxmlobj>
+            </layoutobject>
+            <connector lineroutestyle="MSDDS.Rectilinear" sourceid="2" destid="1" sourceattachpoint="30" destattachpoint="15" segmenteditmode="0" bendpointeditmode="0" bendpointvisibility="0" relatedid="0" virtual="0">
+              <point x="7163" y="543" />
+              <point x="5722" y="543" />
+              <point x="5722" y="300" />
+              <point x="4280" y="300" />
+            </connector>
+          </ddscontrol>
+          <ddscontrol controlprogid="MSDDS.Polyline" left="5863" top="-4357" logicalid="10" controlid="4" masterid="0" hint1="0" hint2="0" width="2675" height="2550" noresize="0" nomove="0" nodefaultattachpoints="1" autodrag="0" usedefaultiddshape="0" selectable="1" showselectionhandles="0" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+            <control>
+              <ddsxmlobj>
+                <polyline endtypedst="6" endtypesrc="3" usercolor="15856113" linestyle="0" linerender="1" customendtypedstid="0" customendtypesrcid="0" adornsvisible="1" />
+              </ddsxmlobj>
+            </control>
+            <layoutobject>
+              <ddsxmlobj>
+                <property name="LogicalObject" value="dataSet.Relations[FKT262RT262_I1_R5_T262I1]" vartype="8" />
+                <property name="Virtual" value="0" vartype="11" />
+                <property name="VisibleAP" value="0" vartype="3" />
+              </ddsxmlobj>
+            </layoutobject>
+            <connector lineroutestyle="MSDDS.Rectilinear" sourceid="2" destid="2" sourceattachpoint="20" destattachpoint="2" segmenteditmode="0" bendpointeditmode="0" bendpointvisibility="0" relatedid="0" virtual="0">
+              <point x="7163" y="-2207" />
+              <point x="6163" y="-2207" />
+              <point x="6163" y="-4057" />
+              <point x="8238" y="-4057" />
+              <point x="8238" y="-3057" />
+            </connector>
+          </ddscontrol>
+          <ddscontrol controlprogid="MSDDS.Polyline" left="11238" top="-4357" logicalid="11" controlid="5" masterid="0" hint1="0" hint2="0" width="2675" height="2550" noresize="0" nomove="0" nodefaultattachpoints="1" autodrag="0" usedefaultiddshape="0" selectable="1" showselectionhandles="0" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+            <control>
+              <ddsxmlobj>
+                <polyline endtypedst="6" endtypesrc="3" usercolor="15856113" linestyle="0" linerender="1" customendtypedstid="0" customendtypesrcid="0" adornsvisible="1" />
+              </ddsxmlobj>
+            </control>
+            <layoutobject>
+              <ddsxmlobj>
+                <property name="LogicalObject" value="dataSet.Relations[FKT262RT262_I1_R62037_T262I1]" vartype="8" />
+                <property name="Virtual" value="0" vartype="11" />
+                <property name="VisibleAP" value="0" vartype="3" />
+              </ddsxmlobj>
+            </layoutobject>
+            <connector lineroutestyle="MSDDS.Rectilinear" sourceid="2" destid="2" sourceattachpoint="21" destattachpoint="14" segmenteditmode="0" bendpointeditmode="0" bendpointvisibility="0" relatedid="0" virtual="0">
+              <point x="12613" y="-2207" />
+              <point x="13613" y="-2207" />
+              <point x="13613" y="-4057" />
+              <point x="11538" y="-4057" />
+              <point x="11538" y="-3057" />
+            </connector>
+          </ddscontrol>
+          <ddscontrol controlprogid="MSDDS.Polyline" left="11238" top="694" logicalid="12" controlid="6" masterid="0" hint1="0" hint2="0" width="2675" height="2549" noresize="0" nomove="0" nodefaultattachpoints="1" autodrag="0" usedefaultiddshape="0" selectable="1" showselectionhandles="0" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+            <control>
+              <ddsxmlobj>
+                <polyline endtypedst="6" endtypesrc="3" usercolor="15856113" linestyle="0" linerender="1" customendtypedstid="0" customendtypesrcid="0" adornsvisible="1" />
+              </ddsxmlobj>
+            </control>
+            <layoutobject>
+              <ddsxmlobj>
+                <property name="LogicalObject" value="dataSet.Relations[FKT262RT262_I1_R62061_T262I1]" vartype="8" />
+                <property name="Virtual" value="0" vartype="11" />
+                <property name="VisibleAP" value="0" vartype="3" />
+              </ddsxmlobj>
+            </layoutobject>
+            <connector lineroutestyle="MSDDS.Rectilinear" sourceid="2" destid="2" sourceattachpoint="33" destattachpoint="15" segmenteditmode="0" bendpointeditmode="0" bendpointvisibility="0" relatedid="0" virtual="0">
+              <point x="12613" y="1093" />
+              <point x="13613" y="1093" />
+              <point x="13613" y="2943" />
+              <point x="11538" y="2943" />
+              <point x="11538" y="1943" />
+            </connector>
+          </ddscontrol>
+        </dds>
+      </Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ShowFriendlyNames</Name>
+      <Value>true</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ShowRelationshipNames</Name>
+      <Value>false</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:UseDiagramDefaultLayout</Name>
+      <Value>true</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramViewPortLeft</Name>
+      <Value>-9187</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramViewPortTop</Name>
+      <Value>-8057</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramBoundingLeft</Name>
+      <Value>20</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramBoundingTop</Name>
+      <Value>-3057</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramZoom</Name>
+      <Value>100</Value>
+    </Annotation>
+  </Annotations>
+  <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+  <State>Unprocessed</State>
+  <Source xsi:type="DataSourceViewBinding" dwd:design-time-name="017808d4-0d71-4416-a1d0-c348e07e011a">
+    <DataSourceViewID>Dynamics AX</DataSourceViewID>
+  </Source>
+  <ErrorConfiguration dwd:design-time-name="fc291d20-fbdd-4ea7-8021-fbd2fe8f30ad">
+    <KeyNotFound>IgnoreError</KeyNotFound>
+    <NullKeyNotAllowed>IgnoreError</NullKeyNotAllowed>
+  </ErrorConfiguration>
+  <CurrentStorageMode>Molap</CurrentStorageMode>
+  <Translations>
+    <Translation dwd:design-time-name="99c4fa86-132e-4726-88aa-1a2fde0b78f4">
+      <Language>3082</Language>
+      <Caption>Rutas de producción</Caption>
+    </Translation>
+  </Translations>
+  <Attributes>
+    <Attribute dwd:design-time-name="ac2f9ac2-6bc7-4237-a988-979125575427">
+      <ID>NAME</ID>
+      <Name>NAME</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="88b968e3-2383-40e6-a75b-319c4c461900">
+          <DataType>WChar</DataType>
+          <DataSize>4</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="d9b9010f-5a56-4d77-8962-622085f89834">
+            <TableID>dbo_ROUTE</TableID>
+            <ColumnID>DATAAREAID</ColumnID>
+          </Source>
+        </KeyColumn>
+        <KeyColumn dwd:design-time-name="9cd90dc0-93d3-41df-b62b-5c3afbede2fa">
+          <DataType>WChar</DataType>
+          <DataSize>150</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="dab307f8-26cb-4155-99ef-5050f3807249">
+            <TableID>dbo_ROUTE</TableID>
+            <ColumnID>NAME</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <NameColumn dwd:design-time-name="ab761f08-cac4-44e6-856d-25fe0af4130e">
+        <DataType>WChar</DataType>
+        <DataSize>150</DataSize>
+        <Source xsi:type="ColumnBinding" dwd:design-time-name="49ff9a2c-fa46-4004-924b-2cca78a27b65">
+          <TableID>dbo_ROUTE</TableID>
+          <ColumnID>NAME</ColumnID>
+        </Source>
+      </NameColumn>
+      <Translations>
+        <Translation dwd:design-time-name="a7d4066c-da97-4937-b782-1396f1559e4a">
+          <Language>3082</Language>
+          <Caption>Nombre</Caption>
+        </Translation>
+      </Translations>
+      <OrderBy>Key</OrderBy>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="dae2912d-df81-40fc-a81a-102ead238d4b">
+      <ID>FROMDATE</ID>
+      <Name>FROMDATE</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="8f85211d-2224-4848-9342-cf76c13d0d35">
+          <DataType>WChar</DataType>
+          <DataSize>4</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="8c4bafc1-c189-47e7-b48a-2d062169f641">
+            <TableID>dbo_ROUTE</TableID>
+            <ColumnID>DATAAREAID</ColumnID>
+          </Source>
+        </KeyColumn>
+        <KeyColumn dwd:design-time-name="dc2ff671-a5db-4e08-8ccb-92182894abf8">
+          <DataType>Date</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="5d5d2f2f-e41f-4467-aee0-1b0d0fc33c84">
+            <TableID>dbo_ROUTE</TableID>
+            <ColumnID>FROMDATE</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <NameColumn dwd:design-time-name="78ad65f1-2a51-411d-89e1-a1ecb76ca904">
+        <DataType>WChar</DataType>
+        <Source xsi:type="ColumnBinding" dwd:design-time-name="805b7bfc-104c-468c-b52d-b4fc1aace19e">
+          <TableID>dbo_ROUTE</TableID>
+          <ColumnID>FROMDATE</ColumnID>
+        </Source>
+      </NameColumn>
+      <Translations>
+        <Translation dwd:design-time-name="f24d3756-ee61-47ec-bb92-4fe7792f80da">
+          <Language>3082</Language>
+          <Caption>Desde fecha</Caption>
+        </Translation>
+      </Translations>
+      <OrderBy>Key</OrderBy>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="a4626dcb-d5f5-4153-af14-96e1f1b8074a">
+      <ID>TODATE</ID>
+      <Name>TODATE</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="06fdfa52-b7b3-454b-801a-c1385468d440">
+          <DataType>WChar</DataType>
+          <DataSize>4</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="2bc91cd8-f905-4b79-9536-e90a9191fbc7">
+            <TableID>dbo_ROUTE</TableID>
+            <ColumnID>DATAAREAID</ColumnID>
+          </Source>
+        </KeyColumn>
+        <KeyColumn dwd:design-time-name="9d238e92-357e-414a-ab03-fc411c2fae28">
+          <DataType>Date</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="345caee6-6b89-4b9e-bb58-b8e7cc3154ee">
+            <TableID>dbo_ROUTE</TableID>
+            <ColumnID>TODATE</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <NameColumn dwd:design-time-name="dfba659c-6275-49aa-ac93-b6e4be2e5dea">
+        <DataType>WChar</DataType>
+        <Source xsi:type="ColumnBinding" dwd:design-time-name="f67e6cb9-3902-4025-a083-84268275648d">
+          <TableID>dbo_ROUTE</TableID>
+          <ColumnID>TODATE</ColumnID>
+        </Source>
+      </NameColumn>
+      <Translations>
+        <Translation dwd:design-time-name="1fc5c938-613e-4c6b-89ba-de68deebc557">
+          <Language>3082</Language>
+          <Caption>Hasta fecha</Caption>
+        </Translation>
+      </Translations>
+      <OrderBy>Key</OrderBy>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="853c8b3c-e594-4108-bc8a-b3a5b5a81cd2">
+      <ID>ACTIVE</ID>
+      <Name>ACTIVE</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="a0fa2998-bc50-4e44-87cd-741bd5a650d1">
+          <DataType>WChar</DataType>
+          <DataSize>4</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="ac7d0868-0567-4ee0-820e-12d26d414f65">
+            <TableID>dbo_ROUTE</TableID>
+            <ColumnID>DATAAREAID</ColumnID>
+          </Source>
+        </KeyColumn>
+        <KeyColumn dwd:design-time-name="e6a63a93-0f68-463f-94e7-76d77fec3464">
+          <DataType>Integer</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="42dc0fe3-e246-4178-bc53-ea51bc8d02b8">
+            <TableID>dbo_ROUTE</TableID>
+            <ColumnID>ACTIVE</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <NameColumn dwd:design-time-name="cf18497c-4392-4c2d-adf9-7a398cca7dcb">
+        <DataType>WChar</DataType>
+        <Source xsi:type="ColumnBinding" dwd:design-time-name="7d34c319-3e84-477b-8fdd-e09930006910">
+          <TableID>dbo_ROUTE</TableID>
+          <ColumnID>ACTIVE</ColumnID>
+        </Source>
+      </NameColumn>
+      <Translations>
+        <Translation dwd:design-time-name="60b93718-2e24-4b4f-b5a4-01842ed7ccae">
+          <Language>3082</Language>
+          <Caption>Activo</Caption>
+        </Translation>
+      </Translations>
+      <OrderBy>Key</OrderBy>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="1929b64f-feb1-4421-ad61-d77a0ee9021f">
+      <ID>APPROVED</ID>
+      <Name>APPROVED</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="9572e26c-81a6-46e7-bbd2-91cb5112ee2e">
+          <DataType>WChar</DataType>
+          <DataSize>4</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="7e727ba0-7188-4cb8-964f-93d5182692a2">
+            <TableID>dbo_ROUTE</TableID>
+            <ColumnID>DATAAREAID</ColumnID>
+          </Source>
+        </KeyColumn>
+        <KeyColumn dwd:design-time-name="64443a65-c57e-408a-b522-11638c9bd92f">
+          <DataType>Integer</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="2a2c1e2d-7502-460f-bfcf-3c775b75d3d3">
+            <TableID>dbo_ROUTE</TableID>
+            <ColumnID>APPROVED</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <NameColumn dwd:design-time-name="c4ed9e42-8d8e-4e8c-836f-762110ce129d">
+        <DataType>WChar</DataType>
+        <Source xsi:type="ColumnBinding" dwd:design-time-name="678d454f-7d71-4f3b-87f1-d50896aa7526">
+          <TableID>dbo_ROUTE</TableID>
+          <ColumnID>APPROVED</ColumnID>
+        </Source>
+      </NameColumn>
+      <Translations>
+        <Translation dwd:design-time-name="48833c14-619c-4887-afa9-5e69a8613960">
+          <Language>3082</Language>
+          <Caption>Aprobado</Caption>
+        </Translation>
+      </Translations>
+      <OrderBy>Key</OrderBy>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="46a02334-0010-4d3c-b39e-fa125933315e">
+      <ID>APPROVEDBY</ID>
+      <Name>APPROVEDBY</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="0dffbaca-3a89-4d8c-a5ce-3d36f3f0eb10">
+          <DataType>WChar</DataType>
+          <DataSize>4</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="6dfd82b0-4052-4bc1-8ec4-2cb1d49c36a8">
+            <TableID>dbo_ROUTE</TableID>
+            <ColumnID>DATAAREAID</ColumnID>
+          </Source>
+        </KeyColumn>
+        <KeyColumn dwd:design-time-name="cf08bd31-70f3-45ff-9edb-9b5b116268dd">
+          <DataType>WChar</DataType>
+          <DataSize>20</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="2e1fa03c-963d-48db-9297-9b8d47e12bf7">
+            <TableID>dbo_ROUTE</TableID>
+            <ColumnID>APPROVEDBY</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <NameColumn dwd:design-time-name="3ca97a49-b75b-4318-a3b3-b4fb69f65740">
+        <DataType>WChar</DataType>
+        <DataSize>20</DataSize>
+        <Source xsi:type="ColumnBinding" dwd:design-time-name="445b1658-7734-4298-a405-63f6953dbdeb">
+          <TableID>dbo_ROUTE</TableID>
+          <ColumnID>APPROVEDBY</ColumnID>
+        </Source>
+      </NameColumn>
+      <Translations>
+        <Translation dwd:design-time-name="f58556a2-9793-4dd6-a386-ced603f3f10d">
+          <Language>3082</Language>
+          <Caption>Aprobado por</Caption>
+        </Translation>
+      </Translations>
+      <OrderBy>Key</OrderBy>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="6c68edd9-8385-4605-8b81-61b4fbb9d648">
+      <ID>INVENTDIMID</ID>
+      <Name>INVENTDIMID</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="d1aa378b-201c-4417-bede-9aecc7029293">
+          <DataType>WChar</DataType>
+          <DataSize>4</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="c8058568-ddf6-41fa-a8d8-1c07c985838a">
+            <TableID>dbo_ROUTE</TableID>
+            <ColumnID>DATAAREAID</ColumnID>
+          </Source>
+        </KeyColumn>
+        <KeyColumn dwd:design-time-name="6c114f8d-6ec5-40ed-b548-8561959dbb8a">
+          <DataType>WChar</DataType>
+          <DataSize>20</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="77ed3ab8-f759-480e-a949-303fee24a15d">
+            <TableID>dbo_ROUTE</TableID>
+            <ColumnID>INVENTDIMID</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <NameColumn dwd:design-time-name="d3853d4c-79a2-4e13-8ebf-61ae262cfbe6">
+        <DataType>WChar</DataType>
+        <DataSize>20</DataSize>
+        <Source xsi:type="ColumnBinding" dwd:design-time-name="639f053e-69b3-4443-a9b9-c9e94a3de26a">
+          <TableID>dbo_ROUTE</TableID>
+          <ColumnID>INVENTDIMID</ColumnID>
+        </Source>
+      </NameColumn>
+      <Translations>
+        <Translation dwd:design-time-name="0ba2cec7-29ce-4e8c-88a5-315e809904a3">
+          <Language>3082</Language>
+          <Caption>Dimension</Caption>
+        </Translation>
+      </Translations>
+      <OrderBy>Key</OrderBy>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="65bd0e0d-fb4d-4107-8368-483f92886dd8">
+      <ID>GPFROMNUMCOLORS</ID>
+      <Name>GPFROMNUMCOLORS</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="b03086c2-bd92-4cfd-867c-5f98bea33a9a">
+          <DataType>WChar</DataType>
+          <DataSize>4</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="d0a9001b-7479-4e43-8cad-6d7393a3bf6e">
+            <TableID>dbo_ROUTE</TableID>
+            <ColumnID>DATAAREAID</ColumnID>
+          </Source>
+        </KeyColumn>
+        <KeyColumn dwd:design-time-name="8bfbd96e-192b-4ef5-9ede-66c6f6a48e20">
+          <DataType>Integer</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="5db2e7c3-f0e8-4a4c-9e00-ec441caded26">
+            <TableID>dbo_ROUTE</TableID>
+            <ColumnID>GPFROMNUMCOLORS</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <NameColumn dwd:design-time-name="8333d5d7-c477-4057-b46e-cb50767091c4">
+        <DataType>WChar</DataType>
+        <Source xsi:type="ColumnBinding" dwd:design-time-name="5746f91b-4728-44df-bc0c-4645c6d7554d">
+          <TableID>dbo_ROUTE</TableID>
+          <ColumnID>GPFROMNUMCOLORS</ColumnID>
+        </Source>
+      </NameColumn>
+      <Translations>
+        <Translation dwd:design-time-name="afecdd5a-bc38-4efc-92eb-0bdffaab6acb">
+          <Language>3082</Language>
+          <Caption>Número de colores</Caption>
+        </Translation>
+      </Translations>
+      <OrderBy>Key</OrderBy>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="6b5a9830-fed9-43d8-9e54-543a893b2974">
+      <ID>ITEMID</ID>
+      <Name>ItemId</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="cc2dfea3-e7f3-4e94-a833-a156f5525782">
+          <DataType>WChar</DataType>
+          <DataSize>4</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="5b698ae0-c4bb-42e3-bb49-4381e8934e11">
+            <TableID>dbo_ROUTE</TableID>
+            <ColumnID>DATAAREAID</ColumnID>
+          </Source>
+        </KeyColumn>
+        <KeyColumn dwd:design-time-name="69fd7aa2-edab-4746-bdef-a365204141cf">
+          <DataType>WChar</DataType>
+          <DataSize>20</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="64554440-99d4-457f-a656-b0c116343b8d">
+            <TableID>dbo_ROUTE</TableID>
+            <ColumnID>ITEMID</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <NameColumn dwd:design-time-name="47c15447-f098-4f52-80c9-163118e02c17">
+        <DataType>WChar</DataType>
+        <DataSize>20</DataSize>
+        <Source xsi:type="ColumnBinding" dwd:design-time-name="f5f73112-bfca-4dad-9d8a-711bf2cbaca5">
+          <TableID>dbo_ROUTE</TableID>
+          <ColumnID>ITEMID</ColumnID>
+        </Source>
+      </NameColumn>
+      <Translations>
+        <Translation dwd:design-time-name="f86bc10a-7c6b-43eb-8fd8-6208d4cfcc71">
+          <Language>3082</Language>
+          <Caption>Artículo</Caption>
+        </Translation>
+      </Translations>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="856bf766-46a1-4b56-b7aa-2d90c0cfde06">
+      <ID>ROUTEID</ID>
+      <Name>ROUTEID</Name>
+      <Usage>Key</Usage>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="34537741-1e45-4226-be37-b6db2b0d71fa">
+          <DataType>WChar</DataType>
+          <DataSize>4</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="c81e6c80-c456-4d1c-bceb-f998c4aec89d">
+            <TableID>dbo_ROUTE</TableID>
+            <ColumnID>DATAAREAID</ColumnID>
+          </Source>
+        </KeyColumn>
+        <KeyColumn dwd:design-time-name="32223a31-7af8-4144-8b62-b1fe966bac89">
+          <DataType>WChar</DataType>
+          <DataSize>20</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="1bbf3d63-0db4-4cd4-95a1-8ec1b49feeac">
+            <TableID>dbo_ROUTE</TableID>
+            <ColumnID>ROUTEID</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <NameColumn dwd:design-time-name="1ada9cc0-5d24-4b9a-b0f9-985a0d4b53f1">
+        <DataType>WChar</DataType>
+        <DataSize>20</DataSize>
+        <Source xsi:type="ColumnBinding" dwd:design-time-name="33832d65-572f-4977-9963-e74c51d0da90">
+          <TableID>dbo_ROUTE</TableID>
+          <ColumnID>ROUTEID</ColumnID>
+        </Source>
+      </NameColumn>
+      <AttributeRelationships>
+        <AttributeRelationship dwd:design-time-name="c10cf131-02ea-4689-9116-a1b99026f1b1">
+          <AttributeID>NAME</AttributeID>
+          <Name>NAME_</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="cea9442b-2327-4a80-81de-6c1dcd800040">
+          <AttributeID>FROMDATE</AttributeID>
+          <Name>FROMDATE</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="06b6b699-82e1-409b-b35d-9952692187d0">
+          <AttributeID>TODATE</AttributeID>
+          <Name>TODATE</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="d14f983d-935a-479a-92c6-42aced0b3f5b">
+          <AttributeID>ACTIVE</AttributeID>
+          <Name>ACTIVE</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="9bc5db79-2c6c-4ec3-98fe-9dd01725a38e">
+          <AttributeID>APPROVED</AttributeID>
+          <Name>APPROVED</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="18067618-0c63-495a-98fe-bc7237f2c163">
+          <AttributeID>APPROVEDBY</AttributeID>
+          <Name>APPROVEDBY</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="0dc59782-d28a-45d3-a0f5-7f0e66051964">
+          <AttributeID>INVENTDIMID</AttributeID>
+          <Name>INVENTDIMID</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="f0a732ce-54b5-46d2-b662-d5c36475b2b2">
+          <AttributeID>GPFROMNUMCOLORS</AttributeID>
+          <Name>GPFROMNUMCOLORS</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="9bd4647f-30c4-4993-a1ba-1e27eda3df5f">
+          <AttributeID>ITEMID</AttributeID>
+          <Name>ItemId</Name>
+        </AttributeRelationship>
+      </AttributeRelationships>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+  </Attributes>
+  <ddl300:ProcessingState>Unprocessed</ddl300:ProcessingState>
+</Dimension>

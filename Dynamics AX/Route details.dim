@@ -1,0 +1,563 @@
+﻿<Dimension xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:ddl200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:ddl200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:ddl300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:ddl300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:ddl400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:ddl400_400="http://schemas.microsoft.com/analysisservices/2012/engine/400/400" xmlns:ddl500="http://schemas.microsoft.com/analysisservices/2013/engine/500" xmlns:ddl500_500="http://schemas.microsoft.com/analysisservices/2013/engine/500/500" xmlns:dwd="http://schemas.microsoft.com/DataWarehouse/Designer/1.0" dwd:design-time-name="c1c19fce-dcc5-4c7c-9c6a-e83752ca4ec8" xmlns="http://schemas.microsoft.com/analysisservices/2003/engine">
+  <ID>Route details</ID>
+  <Name>Route details</Name>
+  <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+  <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+  <Annotations>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramLayout</Name>
+      <Value>
+        <dds xmlns="">
+          <diagram fontclsid="{0BE35203-8F91-11CE-9DE3-00AA004BB851}" mouseiconclsid="{0BE35204-8F91-11CE-9DE3-00AA004BB851}" defaultlayout="MSDDS.Rectilinear" defaultlineroute="MSDDS.Rectilinear" version="7" nextobject="2" scale="100" pagebreakanchorx="0" pagebreakanchory="0" pagebreaksizex="0" pagebreaksizey="0" scrollleft="-9187" scrolltop="-8057" gridx="150" gridy="150" marginx="5000" marginy="5000" zoom="100" x="22675" y="21114" backcolor="2434342" defaultpersistence="2" PrintPageNumbersMode="3" PrintMarginTop="0" PrintMarginBottom="635" PrintMarginLeft="0" PrintMarginRight="0" marqueeselectionmode="0" mousepointer="0" snaptogrid="0" autotypeannotation="1" showscrollbars="0" viewpagebreaks="0" donotforceconnectorsbehindshapes="1" backpictureclsid="{00000000-0000-0000-0000-000000000000}">
+            <font>
+              <ddsxmlobjectstreamwrapper binary="01000000900144420100065461686f6d61" />
+            </font>
+            <mouseicon>
+              <ddsxmlobjectstreamwrapper binary="6c74000000000000" />
+            </mouseicon>
+          </diagram>
+          <layoutmanager>
+            <ddsxmlobj />
+          </layoutmanager>
+          <ddscontrol controlprogid="DdsShapes.DdsObjectManagedBridge" tooltip="ROUTE" left="20" top="0" logicalid="1" controlid="1" masterid="0" hint1="0" hint2="0" width="4260" height="5000" noresize="0" nomove="0" nodefaultattachpoints="0" autodrag="1" usedefaultiddshape="1" selectable="1" showselectionhandles="1" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+            <control>
+              <ddsxmlobjectstreaminitwrapper binary="000e0000a410000088130000" />
+            </control>
+            <layoutobject>
+              <ddsxmlobj>
+                <property name="LogicalObject" value="dbo_ROUTE1" vartype="8" />
+              </ddsxmlobj>
+            </layoutobject>
+            <shape groupshapeid="0" groupnode="0" />
+          </ddscontrol>
+        </dds>
+      </Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ShowFriendlyNames</Name>
+      <Value>true</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ShowRelationshipNames</Name>
+      <Value>false</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:UseDiagramDefaultLayout</Name>
+      <Value>true</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramViewPortLeft</Name>
+      <Value>-9187</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramViewPortTop</Name>
+      <Value>-8057</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramBoundingLeft</Name>
+      <Value>20</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramBoundingTop</Name>
+      <Value>0</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramZoom</Name>
+      <Value>100</Value>
+    </Annotation>
+  </Annotations>
+  <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+  <State>Unprocessed</State>
+  <Source xsi:type="DataSourceViewBinding" dwd:design-time-name="494c094f-58c4-4c42-8709-9f5dde608322">
+    <DataSourceViewID>Dynamics AX</DataSourceViewID>
+  </Source>
+  <ErrorConfiguration dwd:design-time-name="51b788e0-29ec-4aca-8c17-a5c741ce872d">
+    <KeyNotFound>ReportAndStop</KeyNotFound>
+    <NullKeyNotAllowed>ReportAndStop</NullKeyNotAllowed>
+  </ErrorConfiguration>
+  <CurrentStorageMode>Molap</CurrentStorageMode>
+  <Attributes>
+    <Attribute dwd:design-time-name="b6012723-617c-4964-a4e1-85eaadc2ba32">
+      <ID>ROUTEID</ID>
+      <Name>ROUTEID</Name>
+      <Usage>Key</Usage>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="91b7b6ed-a059-409d-9c16-bfec2d730d32">
+          <DataType>WChar</DataType>
+          <DataSize>4</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="a2a53a18-61e2-449a-8caa-a414c9aeb237">
+            <TableID>dbo_ROUTE1</TableID>
+            <ColumnID>DATAAREAID</ColumnID>
+          </Source>
+        </KeyColumn>
+        <KeyColumn dwd:design-time-name="d3d743d7-95fa-4319-8e75-3a6430ab8801">
+          <DataType>WChar</DataType>
+          <DataSize>20</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="94bec6c4-4f7c-4866-b2a2-30478d788d7f">
+            <TableID>dbo_ROUTE1</TableID>
+            <ColumnID>ROUTEID</ColumnID>
+          </Source>
+        </KeyColumn>
+        <KeyColumn dwd:design-time-name="819f7f77-24ad-4260-ab0c-da339a78f56c">
+          <DataType>Integer</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="0d7c197d-be87-4c19-8675-3f5e98cbc45f">
+            <TableID>dbo_ROUTE1</TableID>
+            <ColumnID>OPRNUM</ColumnID>
+          </Source>
+        </KeyColumn>
+        <KeyColumn dwd:design-time-name="a0e428f7-749c-4271-892a-3d11218dcb5c">
+          <DataType>Integer</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="7a427bcd-cb90-4c20-808b-27d15387432c">
+            <TableID>dbo_ROUTE1</TableID>
+            <ColumnID>OPRPRIORITY</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <NameColumn dwd:design-time-name="1a2ae300-002d-4c19-8b3e-0e1dfe76b5df">
+        <DataType>WChar</DataType>
+        <DataSize>20</DataSize>
+        <Source xsi:type="ColumnBinding" dwd:design-time-name="79fcb088-a71e-4667-b003-9d113c5ba128">
+          <TableID>dbo_ROUTE1</TableID>
+          <ColumnID>ROUTEID</ColumnID>
+        </Source>
+      </NameColumn>
+      <Translations>
+        <Translation dwd:design-time-name="62b54ef1-d85e-41a3-aaa2-0050c990473c">
+          <Language>3082</Language>
+          <Caption>Id de Ruta</Caption>
+        </Translation>
+      </Translations>
+      <AttributeRelationships>
+        <AttributeRelationship dwd:design-time-name="a794add4-6cb1-4ba2-9e83-417be27907e5">
+          <AttributeID>OPRNUM</AttributeID>
+          <Name>OPRNUM</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="0979d11a-8812-4144-85cb-c4e66465298a">
+          <AttributeID>OPRNUMNEXT</AttributeID>
+          <Name>OPRNUMNEXT</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="fcc21e3f-bdc0-466c-a0fc-dc4fcb5c5fa8">
+          <AttributeID>OPRID</AttributeID>
+          <Name>OPRID</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="0fa6742c-267e-4a40-a2b0-74765d125cc9">
+          <AttributeID>OPRPRIORITY</AttributeID>
+          <Name>OPRPRIORITY</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="cc8bbeef-4a72-44cf-a7ac-5a7b9d69995d">
+          <AttributeID>ITEMID</AttributeID>
+          <Name>ItemId</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="7b188ecc-2b92-494f-b8da-7764068719cb">
+          <AttributeID>NAME</AttributeID>
+          <Name>NAME_</Name>
+          <Translations>
+            <Translation dwd:design-time-name="246dacbc-4418-4265-9b98-a7d89aeeb7b4">
+              <Language>3082</Language>
+              <Caption>Nombre</Caption>
+            </Translation>
+          </Translations>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="e003b97e-3037-41f8-b626-b45f5656d553">
+          <AttributeID>PROCESSTIME</AttributeID>
+          <Name>PROCESSTIME</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="0504b471-152f-4479-9095-7617d2fcf8bd">
+          <AttributeID>WRKCTRSPEED</AttributeID>
+          <Name>WRKCTRSPEED</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="bc1e089f-60af-4202-af7f-27fdef346cd7">
+          <AttributeID>WRKCTRID</AttributeID>
+          <Name>WRKCTRID</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="8a6fe098-57ce-4b6e-9bdd-02f77caa864a">
+          <AttributeID>ROUTE - ROUTEID</AttributeID>
+          <Name>ROUTE - ROUTEID</Name>
+        </AttributeRelationship>
+      </AttributeRelationships>
+      <OrderBy>Key</OrderBy>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="4f6ab497-9aa5-4af1-a15e-038b72ac0bfe">
+      <ID>OPRNUM</ID>
+      <Name>OPRNUM</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="c2a98e0e-7e8d-4db9-b1fa-a9330c35c428">
+          <DataType>WChar</DataType>
+          <DataSize>4</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="206bf3ab-f962-4a0d-9a19-f439ef2f9b0e">
+            <TableID>dbo_ROUTE1</TableID>
+            <ColumnID>DATAAREAID</ColumnID>
+          </Source>
+        </KeyColumn>
+        <KeyColumn dwd:design-time-name="a3261886-b32b-44a6-8ed2-aa7afd8c32a5">
+          <DataType>Integer</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="7eaa0110-f0ab-4c6a-8881-0e85e056a674">
+            <TableID>dbo_ROUTE1</TableID>
+            <ColumnID>OPRNUM</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <NameColumn dwd:design-time-name="cbfe2194-49b9-409e-98e4-fe40abaccdda">
+        <DataType>WChar</DataType>
+        <Source xsi:type="ColumnBinding" dwd:design-time-name="4d186248-6995-43c2-b576-39ce96e3c5dc">
+          <TableID>dbo_ROUTE1</TableID>
+          <ColumnID>OPRNUM</ColumnID>
+        </Source>
+      </NameColumn>
+      <Translations>
+        <Translation dwd:design-time-name="1a62696e-5167-4c91-a6f4-17070096e210">
+          <Language>3082</Language>
+          <Caption>Número operación</Caption>
+        </Translation>
+      </Translations>
+      <OrderBy>Key</OrderBy>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="3db00f84-1ce7-4512-a891-d098bddc64fb">
+      <ID>OPRNUMNEXT</ID>
+      <Name>OPRNUMNEXT</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="eed0ec8d-b908-4d22-b268-3f151557fd8a">
+          <DataType>WChar</DataType>
+          <DataSize>4</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="00f59693-4247-4899-a09e-2a63d9dada05">
+            <TableID>dbo_ROUTE1</TableID>
+            <ColumnID>DATAAREAID</ColumnID>
+          </Source>
+        </KeyColumn>
+        <KeyColumn dwd:design-time-name="c28e2efe-45ec-47f1-8414-8679b84f5fb7">
+          <DataType>Integer</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="ae6e2a0f-081a-46f4-816f-613594b5b4dd">
+            <TableID>dbo_ROUTE1</TableID>
+            <ColumnID>OPRNUMNEXT</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <NameColumn dwd:design-time-name="9d72b4df-22a9-4bef-b712-915852ff9278">
+        <DataType>WChar</DataType>
+        <Source xsi:type="ColumnBinding" dwd:design-time-name="76c09175-321f-4bc9-8008-31b8265ad1f9">
+          <TableID>dbo_ROUTE1</TableID>
+          <ColumnID>OPRNUMNEXT</ColumnID>
+        </Source>
+      </NameColumn>
+      <Translations>
+        <Translation dwd:design-time-name="7f43c45d-4863-43aa-99c5-1215ab8497e4">
+          <Language>3082</Language>
+          <Caption>Siguiente</Caption>
+        </Translation>
+      </Translations>
+      <OrderBy>Key</OrderBy>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="08cda8fd-1e10-4ec6-8650-9beda491350e">
+      <ID>OPRID</ID>
+      <Name>OPRID</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="c8c6ae45-3c3f-41ca-a717-5fe13b2b82ca">
+          <DataType>WChar</DataType>
+          <DataSize>4</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="1f475060-ff1b-4804-ab81-9e142c621adb">
+            <TableID>dbo_ROUTE1</TableID>
+            <ColumnID>DATAAREAID</ColumnID>
+          </Source>
+        </KeyColumn>
+        <KeyColumn dwd:design-time-name="af3ce504-60c9-4987-b012-7c0fb448f53b">
+          <DataType>WChar</DataType>
+          <DataSize>80</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="96f2f19a-c79d-48b2-a80a-38ecfcc5d1d0">
+            <TableID>dbo_ROUTE1</TableID>
+            <ColumnID>OPRID</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <NameColumn dwd:design-time-name="78b4c3e7-16eb-478a-a06c-4aed64929680">
+        <DataType>WChar</DataType>
+        <DataSize>80</DataSize>
+        <Source xsi:type="ColumnBinding" dwd:design-time-name="3a9624e0-8f65-4080-bbef-e9f11b43f88d">
+          <TableID>dbo_ROUTE1</TableID>
+          <ColumnID>OPRID</ColumnID>
+        </Source>
+      </NameColumn>
+      <Translations>
+        <Translation dwd:design-time-name="14b5503d-c7b9-4f85-be3e-e3edd8b251f8">
+          <Language>3082</Language>
+          <Caption>Operación</Caption>
+        </Translation>
+      </Translations>
+      <OrderBy>Key</OrderBy>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="4b773da3-4236-4364-a7da-66070821f377">
+      <ID>OPRPRIORITY</ID>
+      <Name>OPRPRIORITY</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="3c3599bc-000d-4a2e-9e5c-61a712903cf1">
+          <DataType>WChar</DataType>
+          <DataSize>4</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="4359ba7d-779e-4edc-8159-96976fb8c905">
+            <TableID>dbo_ROUTE1</TableID>
+            <ColumnID>DATAAREAID</ColumnID>
+          </Source>
+        </KeyColumn>
+        <KeyColumn dwd:design-time-name="28877b16-aafb-41a5-b4c2-6eef27e5eda3">
+          <DataType>Integer</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="87d11064-6d95-45c6-a3d0-14bbfb750dd3">
+            <TableID>dbo_ROUTE1</TableID>
+            <ColumnID>OPRPRIORITY</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <NameColumn dwd:design-time-name="68aaf22a-e449-4249-bb5a-93dd484ce007">
+        <DataType>WChar</DataType>
+        <Source xsi:type="ColumnBinding" dwd:design-time-name="dff9dba4-12a3-42b8-89e4-a12af9ba5b75">
+          <TableID>dbo_ROUTE1</TableID>
+          <ColumnID>OPRPRIORITY</ColumnID>
+        </Source>
+      </NameColumn>
+      <Translations>
+        <Translation dwd:design-time-name="116a264f-7f24-4c95-b1d7-a64d241a9ddf">
+          <Language>3082</Language>
+          <Caption>Prioridad</Caption>
+        </Translation>
+      </Translations>
+      <OrderBy>Key</OrderBy>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="1d0cface-d8f1-44c3-8bb4-721f6578a719">
+      <ID>ITEMID</ID>
+      <Name>ItemId</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="0682d7d9-5c6f-451f-bc5d-74783dab9dc3">
+          <DataType>WChar</DataType>
+          <DataSize>4</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="db10ee66-2ded-49f4-9cc7-5937e922b462">
+            <TableID>dbo_ROUTE1</TableID>
+            <ColumnID>DATAAREAID</ColumnID>
+          </Source>
+        </KeyColumn>
+        <KeyColumn dwd:design-time-name="8465254f-2d20-486f-8cf1-aa95a67f7cc9">
+          <DataType>WChar</DataType>
+          <DataSize>20</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="633ffedf-211e-42ae-899b-c457d7283787">
+            <TableID>dbo_ROUTE1</TableID>
+            <ColumnID>ITEMID</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <NameColumn dwd:design-time-name="e71fda7e-6bed-42e8-862d-cf0079cde86b">
+        <DataType>WChar</DataType>
+        <DataSize>20</DataSize>
+        <Source xsi:type="ColumnBinding" dwd:design-time-name="7c358ddc-8fd6-4f72-88b2-61bb5cdecf45">
+          <TableID>dbo_ROUTE1</TableID>
+          <ColumnID>ITEMID</ColumnID>
+        </Source>
+      </NameColumn>
+      <Translations>
+        <Translation dwd:design-time-name="d068a91e-1c1f-4c94-b751-f7c097aa10c2">
+          <Language>3082</Language>
+          <Caption>Artículo</Caption>
+        </Translation>
+      </Translations>
+      <OrderBy>Key</OrderBy>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="47cc38cc-3052-4ca4-8163-862ef218221c">
+      <ID>NAME</ID>
+      <Name>NAME</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="a5474e0c-05f4-401e-b819-72d3ccf9822b">
+          <DataType>WChar</DataType>
+          <DataSize>4</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="5203614a-10b4-4e45-99fd-6a332b9afb31">
+            <TableID>dbo_ROUTE1</TableID>
+            <ColumnID>DATAAREAID</ColumnID>
+          </Source>
+        </KeyColumn>
+        <KeyColumn dwd:design-time-name="306987c8-9e29-4dea-9d04-80af6bc5b253">
+          <DataType>WChar</DataType>
+          <DataSize>150</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="4b9f7d6d-9557-49dc-beb4-cc1338bcdacc">
+            <TableID>dbo_ROUTE1</TableID>
+            <ColumnID>NAME</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <NameColumn dwd:design-time-name="09d4d0d1-20c1-4224-8ebc-934ff657d11b">
+        <DataType>WChar</DataType>
+        <DataSize>150</DataSize>
+        <Source xsi:type="ColumnBinding" dwd:design-time-name="2c558d78-ab6a-471b-8ace-6039729207be">
+          <TableID>dbo_ROUTE1</TableID>
+          <ColumnID>NAME</ColumnID>
+        </Source>
+      </NameColumn>
+      <Translations>
+        <Translation dwd:design-time-name="2eabd0dc-dea2-485b-a77e-3ffecc6e19f1">
+          <Language>3082</Language>
+          <Caption>Nombre</Caption>
+        </Translation>
+      </Translations>
+      <OrderBy>Key</OrderBy>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="026f7a20-ae72-4c8d-b0b6-f53ee2f43737">
+      <ID>PROCESSTIME</ID>
+      <Name>PROCESSTIME</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="7ea144f2-83fa-4938-889b-780578f8a2de">
+          <DataType>Double</DataType>
+          <Format>#.##0,00;-#.##0,00</Format>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="e5aa73f7-801b-462d-95ac-89bf8b9a3237">
+            <TableID>dbo_ROUTE1</TableID>
+            <ColumnID>PROCESSTIME</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <NameColumn dwd:design-time-name="7c9d8cee-1688-43f2-8541-f180dbea000f">
+        <DataType>WChar</DataType>
+        <Format>#.##0,00;-#.##0,00</Format>
+        <Source xsi:type="ColumnBinding" dwd:design-time-name="4b40bec8-0634-4235-b5ec-95562b2c253e">
+          <TableID>dbo_ROUTE1</TableID>
+          <ColumnID>PROCESSTIME</ColumnID>
+        </Source>
+      </NameColumn>
+      <Translations>
+        <Translation dwd:design-time-name="d766e12c-fb93-4f1a-beb3-38d44bb052cc">
+          <Language>3082</Language>
+          <Caption>Tiempo ejecución</Caption>
+        </Translation>
+      </Translations>
+      <OrderBy>Key</OrderBy>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+      <ddl300_300:FormatString>#.##0,00;-#.##0,00</ddl300_300:FormatString>
+    </Attribute>
+    <Attribute dwd:design-time-name="398c2e50-7c8a-4605-b4ee-eee5765f99c4">
+      <ID>WRKCTRSPEED</ID>
+      <Name>WRKCTRSPEED</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="603cecce-9240-4737-aacf-51668396cd65">
+          <DataType>WChar</DataType>
+          <DataSize>4</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="148dcb0d-e3fd-4dbd-835b-d947f980b13c">
+            <TableID>dbo_ROUTE1</TableID>
+            <ColumnID>DATAAREAID</ColumnID>
+          </Source>
+        </KeyColumn>
+        <KeyColumn dwd:design-time-name="3033d439-f7f4-4828-b2a5-a6f0464325ef">
+          <DataType>WChar</DataType>
+          <DataSize>30</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="2cc1e283-659c-49aa-bdb9-72f8a0f6ed62">
+            <TableID>dbo_ROUTE1</TableID>
+            <ColumnID>WRKCTRSPEED</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <NameColumn dwd:design-time-name="7ccc6cb6-d7e5-43fc-9df4-b0f6ddbd28d1">
+        <DataType>WChar</DataType>
+        <DataSize>30</DataSize>
+        <Source xsi:type="ColumnBinding" dwd:design-time-name="9e98ba31-d563-4315-9a3c-407fb34513b3">
+          <TableID>dbo_ROUTE1</TableID>
+          <ColumnID>WRKCTRSPEED</ColumnID>
+        </Source>
+      </NameColumn>
+      <Translations>
+        <Translation dwd:design-time-name="732e2580-88ff-48e8-b0a3-3f2ab617dec4">
+          <Language>3082</Language>
+          <Caption>Velocidad de máquina</Caption>
+        </Translation>
+      </Translations>
+      <OrderBy>Key</OrderBy>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="3a5d5fcf-cef9-4d1b-8fbb-2a5ddde5e265">
+      <ID>WRKCTRID</ID>
+      <Name>WRKCTRID</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="3a5ea0ab-fd31-4192-a790-e5228c2f35c2">
+          <DataType>WChar</DataType>
+          <DataSize>4</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="72b4920b-6651-49a0-a05d-508ae918bc3b">
+            <TableID>dbo_ROUTE1</TableID>
+            <ColumnID>DATAAREAID</ColumnID>
+          </Source>
+        </KeyColumn>
+        <KeyColumn dwd:design-time-name="2e40a7fa-909c-4f61-a14e-6b54f55d6724">
+          <DataType>WChar</DataType>
+          <DataSize>10</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="88d1be2b-df63-4aed-adbd-2b1b00229013">
+            <TableID>dbo_ROUTE1</TableID>
+            <ColumnID>WRKCTRID</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <NameColumn dwd:design-time-name="e6f4fd0a-d047-487f-ba01-3b90d38e1803">
+        <DataType>WChar</DataType>
+        <DataSize>10</DataSize>
+        <Source xsi:type="ColumnBinding" dwd:design-time-name="d003264d-5157-482b-afb5-c1b56286e6db">
+          <TableID>dbo_ROUTE1</TableID>
+          <ColumnID>WRKCTRID</ColumnID>
+        </Source>
+      </NameColumn>
+      <Translations>
+        <Translation dwd:design-time-name="0fea45ec-c1c8-4257-a40b-50cea18f2d70">
+          <Language>3082</Language>
+          <Caption>Recurso</Caption>
+        </Translation>
+      </Translations>
+      <OrderBy>Key</OrderBy>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="624915e3-628e-4d5c-9070-069d0eaec0fc">
+      <ID>ROUTE - ROUTEID</ID>
+      <Name>ROUTE - ROUTEID</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="d265effc-0bc8-4806-a272-b15ec4e7d647">
+          <DataType>WChar</DataType>
+          <DataSize>4</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="e870f396-5a87-4812-beae-0f94b6e2102c">
+            <TableID>dbo_ROUTE1</TableID>
+            <ColumnID>DATAAREAID</ColumnID>
+          </Source>
+        </KeyColumn>
+        <KeyColumn dwd:design-time-name="d142a540-187a-4ebb-8076-8556a7cd1d8a">
+          <DataType>WChar</DataType>
+          <DataSize>20</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="d9adf077-25a1-4c40-8f87-53f3d8301587">
+            <TableID>dbo_ROUTE1</TableID>
+            <ColumnID>ROUTEID</ColumnID>
+          </Source>
+        </KeyColumn>
+        <KeyColumn dwd:design-time-name="be5ebdb2-aba8-448d-bc3d-21be71d2af20">
+          <DataType>WChar</DataType>
+          <DataSize>20</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="46647ddc-2304-499b-b40f-58bfda49312e">
+            <TableID>dbo_ROUTE1</TableID>
+            <ColumnID>ITEMID</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <NameColumn dwd:design-time-name="cef614b6-dfa8-4dd2-bcd1-ec0346299798">
+        <DataType>WChar</DataType>
+        <DataSize>20</DataSize>
+        <Source xsi:type="ColumnBinding" dwd:design-time-name="812a4058-5099-4aa2-ba49-dbdc7967ae8b">
+          <TableID>dbo_ROUTE1</TableID>
+          <ColumnID>ROUTEID</ColumnID>
+        </Source>
+      </NameColumn>
+      <AttributeHierarchyVisible>false</AttributeHierarchyVisible>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+  </Attributes>
+  <ddl300:ProcessingState>Unprocessed</ddl300:ProcessingState>
+</Dimension>
