@@ -1,0 +1,645 @@
+﻿<Dimension xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:ddl200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:ddl200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:ddl300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:ddl300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:ddl400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:ddl400_400="http://schemas.microsoft.com/analysisservices/2012/engine/400/400" xmlns:ddl500="http://schemas.microsoft.com/analysisservices/2013/engine/500" xmlns:ddl500_500="http://schemas.microsoft.com/analysisservices/2013/engine/500/500" xmlns:dwd="http://schemas.microsoft.com/DataWarehouse/Designer/1.0" dwd:design-time-name="cc38c443-8b09-445e-a27d-07203ccaa20d" xmlns="http://schemas.microsoft.com/analysisservices/2003/engine">
+  <ID>Invent Item Setup</ID>
+  <Name>Invent Item Setup</Name>
+  <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+  <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+  <Annotations>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramLayout</Name>
+      <Value>
+        <dds xmlns="">
+          <diagram fontclsid="{0BE35203-8F91-11CE-9DE3-00AA004BB851}" mouseiconclsid="{0BE35204-8F91-11CE-9DE3-00AA004BB851}" defaultlayout="MSDDS.Rectilinear" defaultlineroute="MSDDS.Rectilinear" version="7" nextobject="3" scale="100" pagebreakanchorx="0" pagebreakanchory="0" pagebreaksizex="0" pagebreaksizey="0" scrollleft="-9042" scrolltop="-8758" gridx="150" gridy="150" marginx="5000" marginy="5000" zoom="100" x="22410" y="22543" backcolor="2434342" defaultpersistence="2" PrintPageNumbersMode="3" PrintMarginTop="0" PrintMarginBottom="635" PrintMarginLeft="0" PrintMarginRight="0" marqueeselectionmode="0" mousepointer="0" snaptogrid="0" autotypeannotation="1" showscrollbars="0" viewpagebreaks="0" donotforceconnectorsbehindshapes="1" backpictureclsid="{00000000-0000-0000-0000-000000000000}">
+            <font>
+              <ddsxmlobjectstreamwrapper binary="01000000900144420100065461686f6d61" />
+            </font>
+            <mouseicon>
+              <ddsxmlobjectstreamwrapper binary="6c74000000000000" />
+            </mouseicon>
+          </diagram>
+          <layoutmanager>
+            <ddsxmlobj />
+          </layoutmanager>
+          <ddscontrol controlprogid="DdsShapes.DdsObjectManagedBridge" tooltip="INVENTITEMSETUP" left="20" top="0" logicalid="2" controlid="1" masterid="0" hint1="0" hint2="0" width="4286" height="5000" noresize="0" nomove="0" nodefaultattachpoints="0" autodrag="1" usedefaultiddshape="1" selectable="1" showselectionhandles="1" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+            <control>
+              <ddsxmlobjectstreaminitwrapper binary="000e0000be10000088130000" />
+            </control>
+            <layoutobject>
+              <ddsxmlobj>
+                <property name="LogicalObject" value="Invent Item Setup" vartype="8" />
+              </ddsxmlobj>
+            </layoutobject>
+            <shape groupshapeid="0" groupnode="0" />
+          </ddscontrol>
+        </dds>
+      </Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ShowFriendlyNames</Name>
+      <Value>true</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ShowRelationshipNames</Name>
+      <Value>false</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:UseDiagramDefaultLayout</Name>
+      <Value>true</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramViewPortLeft</Name>
+      <Value>-9042</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramViewPortTop</Name>
+      <Value>-8758</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramBoundingLeft</Name>
+      <Value>20</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramBoundingTop</Name>
+      <Value>0</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramZoom</Name>
+      <Value>100</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ARDiagramLayout</Name>
+      <Value>
+        <DiagramLayout ZoomPercent="100" ViewPortX="0" ViewPortY="0" xmlns="">
+          <Shapes NodeWidth="177">
+            <Shape Id="RECID" Expanded="true">
+              <Attributes>
+                <Attribute Id="RECID" />
+                <Attribute Id="IIS Invent Dim Default" />
+                <Attribute Id="IIS Invent Location Id" />
+                <Attribute Id="IIS Override" />
+                <Attribute Id="Invent Highest Qty" />
+                <Attribute Id="Invent Lowest Qty" />
+                <Attribute Id="Invent Purch Highest Qty" />
+                <Attribute Id="Invent Purch Lowest Qty" />
+                <Attribute Id="Invent Sales Highest Qty" />
+                <Attribute Id="Invent Sales Lowest Qty" />
+                <Attribute Id="INVENTDIMID" />
+                <Attribute Id="IPS Invent Dim Default" />
+                <Attribute Id="IPS Invent Location Id" />
+                <Attribute Id="IPS Override" />
+                <Attribute Id="ISS Invent Dim Default" />
+                <Attribute Id="ISS Invent Location Id" />
+                <Attribute Id="ISS Override" />
+                <Attribute Id="ITEMID" />
+              </Attributes>
+              <Position x="20" y="20" />
+            </Shape>
+          </Shapes>
+        </DiagramLayout>
+      </Value>
+    </Annotation>
+  </Annotations>
+  <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+  <State>Unprocessed</State>
+  <Source xsi:type="DataSourceViewBinding" dwd:design-time-name="29b51d83-32ec-4987-81af-887f39e69cd4">
+    <DataSourceViewID>Dynamics AX</DataSourceViewID>
+  </Source>
+  <ErrorConfiguration dwd:design-time-name="1285ef01-3e48-4e76-a87e-3f28977a6414">
+    <KeyErrorLimitAction>StopLogging</KeyErrorLimitAction>
+    <KeyNotFound>IgnoreError</KeyNotFound>
+    <NullKeyNotAllowed>IgnoreError</NullKeyNotAllowed>
+  </ErrorConfiguration>
+  <CurrentStorageMode>Molap</CurrentStorageMode>
+  <Translations>
+    <Translation dwd:design-time-name="51c99c4b-2c18-475c-9a8b-9e0a3814cc41">
+      <Language>3082</Language>
+      <Caption>Artículos - Configuración de pedido</Caption>
+    </Translation>
+  </Translations>
+  <Attributes>
+    <Attribute dwd:design-time-name="eae9ad1c-1211-44a4-bced-b7aa3359ce84">
+      <ID>RECID</ID>
+      <Name>DimSetup</Name>
+      <Usage>Key</Usage>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="8b7598af-9e6b-4e34-8e37-a6995521bca0">
+          <DataType>BigInt</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="8d5fa89f-e063-4914-be39-7a0798a67979">
+            <TableID>Invent_x0020_Item_x0020_Setup</TableID>
+            <ColumnID>RECID</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <NameColumn dwd:design-time-name="9b40427f-da3e-4125-a17d-38d5c83e45bd">
+        <DataType>WChar</DataType>
+        <DataSize>20</DataSize>
+        <Source xsi:type="ColumnBinding" dwd:design-time-name="d94a22ba-5b02-40cc-be24-fc2d866853ca">
+          <TableID>Invent_x0020_Item_x0020_Setup</TableID>
+          <ColumnID>INVENTDIMID</ColumnID>
+        </Source>
+      </NameColumn>
+      <Translations>
+        <Translation dwd:design-time-name="e3d66d8f-94df-4e17-8cfd-3974c0eb6057">
+          <Language>3082</Language>
+          <Caption>Configuración Sitio</Caption>
+        </Translation>
+      </Translations>
+      <AttributeRelationships>
+        <AttributeRelationship dwd:design-time-name="90ca1369-6cf0-42d6-8c14-fa6477b251d3">
+          <AttributeID>Invent Purch Lowest Qty</AttributeID>
+          <Name>Invent Purch Lowest Qty</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="fa051e24-8b52-4fc2-818b-bb844638015d">
+          <AttributeID>Invent Purch Highest Qty</AttributeID>
+          <Name>Invent Purch Highest Qty</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="b4ef4d08-8081-41ff-b329-ca6f14ece8e7">
+          <AttributeID>Invent Lowest Qty</AttributeID>
+          <Name>Invent Lowest Qty</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="9eb16e0e-6670-4946-b775-b4cfe2618ac3">
+          <AttributeID>Invent Highest Qty</AttributeID>
+          <Name>Invent Highest Qty</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="757f4f48-9566-4409-b41e-0f89a4db27c7">
+          <AttributeID>Invent Sales Lowest Qty</AttributeID>
+          <Name>Invent Sales Lowest Qty</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="9ee6feb7-b047-45e5-a6f4-6157019d1720">
+          <AttributeID>Invent Sales Highest Qty</AttributeID>
+          <Name>Invent Sales Highest Qty</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="dbdc7e73-9c33-49de-a70c-d5b5617edfb1">
+          <AttributeID>INVENTDIMID</AttributeID>
+          <Name>INVENTDIMID</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="5373f75f-cacf-4820-9e73-dd5efd5fe7de">
+          <AttributeID>IPS Invent Dim Default</AttributeID>
+          <Name>IPS Invent Dim Default</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="e067b9a8-15e4-40d8-80cf-55304f74fed2">
+          <AttributeID>IPS Override</AttributeID>
+          <Name>IPS Override</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="2a14fcd8-64a5-4d49-92be-2c59f05a02f0">
+          <AttributeID>IPS Invent Location Id</AttributeID>
+          <Name>IPS Invent Location Id</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="6f6d7e7f-568f-44ba-be0f-b4b1f8ffa9d2">
+          <AttributeID>IIS Invent Dim Default</AttributeID>
+          <Name>IIS Invent Dim Default</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="0ba18d41-8d8d-4e33-8403-a54a3994fd1e">
+          <AttributeID>IIS Override</AttributeID>
+          <Name>IIS Override</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="58f1e9d2-03c6-4d5e-b4bb-4a20f1049325">
+          <AttributeID>IIS Invent Location Id</AttributeID>
+          <Name>IIS Invent Location Id</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="5118d839-771b-4483-ba4e-fc797a9bf9e8">
+          <AttributeID>ISS Invent Dim Default</AttributeID>
+          <Name>ISS Invent Dim Default</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="7632d224-cb8a-4612-b59f-cc3153076e92">
+          <AttributeID>ISS Override</AttributeID>
+          <Name>ISS Override</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="36b5a4c1-d35c-46be-9f6e-a2338d1ab925">
+          <AttributeID>ISS Invent Location Id</AttributeID>
+          <Name>ISS Invent Location Id</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="d0556144-75cf-482d-a8b7-26d721ece0a4">
+          <AttributeID>ITEMID</AttributeID>
+          <Name>ITEMID</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="65f062e9-efd5-424d-ac3c-5a2378f73ad6">
+          <AttributeID>Configuration</AttributeID>
+          <Name>Configuration</Name>
+        </AttributeRelationship>
+      </AttributeRelationships>
+      <OrderBy>Key</OrderBy>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="fee08cfb-dc0c-42d7-b70e-2a897b5f05d5">
+      <ID>Invent Purch Lowest Qty</ID>
+      <Name>Invent Purch Lowest Qty</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="c54536dc-c6ec-471c-b739-07d4184ac3e5">
+          <DataType>Double</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="0c1f49ac-44b0-4f54-90e5-a8b965dc92f8">
+            <TableID>Invent_x0020_Item_x0020_Setup</TableID>
+            <ColumnID>InventPurch_LowestQty</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <Translations>
+        <Translation dwd:design-time-name="58e77585-6c96-43c3-8bfc-c9736d74dee4">
+          <Language>3082</Language>
+          <Caption>Cantidad mínimo Pedido Compra</Caption>
+        </Translation>
+      </Translations>
+      <OrderBy>Key</OrderBy>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="0cb789ce-0b39-42a1-9da1-d23c0d8e3dc5">
+      <ID>Invent Purch Highest Qty</ID>
+      <Name>Invent Purch Highest Qty</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="176a22a4-ef31-4a93-890c-6519e0a18d5c">
+          <DataType>Double</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="3790c1a0-326c-4c2b-8615-799f6f02883d">
+            <TableID>Invent_x0020_Item_x0020_Setup</TableID>
+            <ColumnID>InventPurch_HighestQty</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <Translations>
+        <Translation dwd:design-time-name="38f0f9d6-a7ef-4198-b5d2-d3dc2af778c0">
+          <Language>3082</Language>
+          <Caption>Cantidad máximo Pedido Compra</Caption>
+        </Translation>
+      </Translations>
+      <OrderBy>Key</OrderBy>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="c364fa6f-5cea-41eb-9918-d7734bf46a74">
+      <ID>Invent Lowest Qty</ID>
+      <Name>Invent Lowest Qty</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="bb36a55c-8cc4-414f-b000-b255518b304b">
+          <DataType>Double</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="22ca1f03-b51e-4cdf-9fd1-70b2b462e064">
+            <TableID>Invent_x0020_Item_x0020_Setup</TableID>
+            <ColumnID>Invent_LowestQty</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <Translations>
+        <Translation dwd:design-time-name="710bdd6c-cd19-475a-aed8-75ce790ddb4f">
+          <Language>3082</Language>
+          <Caption>Cantidad mínimo Pedido Inventario</Caption>
+        </Translation>
+      </Translations>
+      <OrderBy>Key</OrderBy>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="d622b93f-192c-4f37-a4c2-d851fe369d39">
+      <ID>Invent Highest Qty</ID>
+      <Name>Invent Highest Qty</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="df95892c-c0e2-47ae-9995-b31a3f6e5333">
+          <DataType>Double</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="dc2b0abf-e1e3-4b08-a4a9-0951b9204579">
+            <TableID>Invent_x0020_Item_x0020_Setup</TableID>
+            <ColumnID>Invent_HighestQty</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <Translations>
+        <Translation dwd:design-time-name="906023c6-3132-470f-8e1c-6db7d9a86a94">
+          <Language>3082</Language>
+          <Caption>Cantidad máximo Pedido Inventario</Caption>
+        </Translation>
+      </Translations>
+      <OrderBy>Key</OrderBy>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="6c4649a0-8dd2-4f04-90a6-460714e1260f">
+      <ID>Invent Sales Lowest Qty</ID>
+      <Name>Invent Sales Lowest Qty</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="0d2687ff-de40-4849-8330-b386150f1a99">
+          <DataType>Double</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="45ea57a6-07c0-4e57-80a5-e2cd8213186d">
+            <TableID>Invent_x0020_Item_x0020_Setup</TableID>
+            <ColumnID>InventSales_LowestQty</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <Translations>
+        <Translation dwd:design-time-name="fa085728-80ce-4548-97e7-7bba5044672e">
+          <Language>3082</Language>
+          <Caption>Cantidad mínimo Pedido Ventas</Caption>
+        </Translation>
+      </Translations>
+      <OrderBy>Key</OrderBy>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="9a30114b-d004-4e08-a8ce-e50245363942">
+      <ID>Invent Sales Highest Qty</ID>
+      <Name>Invent Sales Highest Qty</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="83ac36f3-5511-481b-86eb-ad74d44ef9ab">
+          <DataType>Double</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="b7c8d5be-912a-4c9d-b044-b3abe4c37b46">
+            <TableID>Invent_x0020_Item_x0020_Setup</TableID>
+            <ColumnID>InventSales_HighestQty</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <Translations>
+        <Translation dwd:design-time-name="04aafe41-9bd0-4121-ae43-84e2a88412f2">
+          <Language>3082</Language>
+          <Caption>Cantidad máximo Pedido Ventas</Caption>
+        </Translation>
+      </Translations>
+      <OrderBy>Key</OrderBy>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="496489a1-3617-418e-b38a-41af725f89b1">
+      <ID>INVENTDIMID</ID>
+      <Name>INVENTDIMID</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="ac73e20c-13d5-4109-bd51-0eb6301ae28d">
+          <DataType>WChar</DataType>
+          <DataSize>20</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="aa7a146b-b399-4898-85a6-220547c6e4b6">
+            <TableID>Invent_x0020_Item_x0020_Setup</TableID>
+            <ColumnID>INVENTDIMID</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <Translations>
+        <Translation dwd:design-time-name="10ac8fd5-9a94-4913-9f26-4392db5be62d">
+          <Language>3082</Language>
+          <Caption>Dimensión Inventario</Caption>
+        </Translation>
+      </Translations>
+      <OrderBy>Key</OrderBy>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="bd0e2105-e4e2-48e0-85b2-e910c701f1bd">
+      <ID>IPS Invent Dim Default</ID>
+      <Name>IPS Invent Dim Default</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="5e139cb0-e2c4-464c-ae62-d5dc2dd43e4c">
+          <DataType>WChar</DataType>
+          <DataSize>20</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="7767a0de-2300-4609-a30e-0a7fd3851d11">
+            <TableID>Invent_x0020_Item_x0020_Setup</TableID>
+            <ColumnID>IPS_InventDimDefault</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <Translations>
+        <Translation dwd:design-time-name="e71df85a-3e46-46c6-a0e6-a532bb002d60">
+          <Language>3082</Language>
+          <Caption>Dimensión Pedido Compra</Caption>
+        </Translation>
+      </Translations>
+      <OrderBy>Key</OrderBy>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="d3e4be43-314d-4200-bc93-3c4083c67bc2">
+      <ID>IPS Override</ID>
+      <Name>IPS Override</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="397802d7-d316-4619-8435-40beafef59c4">
+          <DataType>Integer</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="117b2a32-5f47-44cb-adc3-4b53b79d04d7">
+            <TableID>Invent_x0020_Item_x0020_Setup</TableID>
+            <ColumnID>IPS_Override</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <Translations>
+        <Translation dwd:design-time-name="f99d87a9-ada7-4735-a6f1-c189279c60ed">
+          <Language>3082</Language>
+          <Caption>Reemplazar Pedido Compra</Caption>
+        </Translation>
+      </Translations>
+      <OrderBy>Key</OrderBy>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="63c1c309-a5a8-4fec-ba75-faab87355e2f">
+      <ID>IPS Invent Location Id</ID>
+      <Name>IPS Invent Location Id</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="f91d722a-e81a-4c1b-81a7-d84c3826c9b1">
+          <DataType>WChar</DataType>
+          <DataSize>80</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="ca087bda-0fb2-4660-841e-4498f9506a98">
+            <TableID>Invent_x0020_Item_x0020_Setup</TableID>
+            <ColumnID>IPS_InventLocationId</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <Translations>
+        <Translation dwd:design-time-name="f11cb29b-56f9-4969-bbf4-a4a5d0e5aa49">
+          <Language>3082</Language>
+          <Caption>Almacén de Compra</Caption>
+        </Translation>
+      </Translations>
+      <OrderBy>Key</OrderBy>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="6594ac15-20a2-4df9-88bc-419f80fa8101">
+      <ID>IIS Invent Dim Default</ID>
+      <Name>IIS Invent Dim Default</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="7d5f8659-ea0e-41d8-9815-a8850decdac1">
+          <DataType>WChar</DataType>
+          <DataSize>20</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="6d0f99cb-1557-48f7-8205-0e5a03262f2e">
+            <TableID>Invent_x0020_Item_x0020_Setup</TableID>
+            <ColumnID>IIS_InventDimDefault</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <Translations>
+        <Translation dwd:design-time-name="d9251564-71e8-4b80-9bbe-299526303cab">
+          <Language>3082</Language>
+          <Caption>Dimensión Pedido Inventario</Caption>
+        </Translation>
+      </Translations>
+      <OrderBy>Key</OrderBy>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="3df8045d-42f8-44d1-8d8e-72de96a4e0cf">
+      <ID>IIS Override</ID>
+      <Name>IIS Override</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="f7470d36-aecf-4a4b-adf1-741122583272">
+          <DataType>Integer</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="a49afc07-cd3f-4af5-b9db-b968bc9244d8">
+            <TableID>Invent_x0020_Item_x0020_Setup</TableID>
+            <ColumnID>IIS_Override</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <Translations>
+        <Translation dwd:design-time-name="c06206f6-a3cd-447d-b015-19ec1beb11e5">
+          <Language>3082</Language>
+          <Caption>Reemplazar Pedido Inventario</Caption>
+        </Translation>
+      </Translations>
+      <OrderBy>Key</OrderBy>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="6074ffe4-6c9b-41f0-b299-94d32f652276">
+      <ID>IIS Invent Location Id</ID>
+      <Name>IIS Invent Location Id</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="fc0991ae-d118-460c-a470-b36c8379bcb4">
+          <DataType>WChar</DataType>
+          <DataSize>80</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="62fb7be8-9623-43bd-81ed-7b5a6af5ab4d">
+            <TableID>Invent_x0020_Item_x0020_Setup</TableID>
+            <ColumnID>IIS_InventLocationId</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <Translations>
+        <Translation dwd:design-time-name="bf13c6b9-0d94-48d3-b14b-108a5445ca2c">
+          <Language>3082</Language>
+          <Caption>Almacén Inventario</Caption>
+        </Translation>
+      </Translations>
+      <OrderBy>Key</OrderBy>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="7c9762fa-022e-4e3c-8cbf-2f0bc75a145b">
+      <ID>ISS Invent Dim Default</ID>
+      <Name>ISS Invent Dim Default</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="e94668dd-fa7e-4df4-846a-9c69983fe2d6">
+          <DataType>WChar</DataType>
+          <DataSize>20</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="4fb6cf73-3ab2-4964-bb73-ad6e58f837a5">
+            <TableID>Invent_x0020_Item_x0020_Setup</TableID>
+            <ColumnID>ISS_InventDimDefault</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <Translations>
+        <Translation dwd:design-time-name="65b1e7cd-c45a-4871-9a3d-fd1f8b9b9169">
+          <Language>3082</Language>
+          <Caption>Dimensión Pedido Ventas</Caption>
+        </Translation>
+      </Translations>
+      <OrderBy>Key</OrderBy>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="42e0f431-a0c6-4e58-b113-b78057f0d736">
+      <ID>ISS Override</ID>
+      <Name>ISS Override</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="f699ab89-0633-44f8-99d1-1b25cadc664d">
+          <DataType>Integer</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="ec4f1e82-f39b-4541-b35a-ba0efbe940d0">
+            <TableID>Invent_x0020_Item_x0020_Setup</TableID>
+            <ColumnID>ISS_Override</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <Translations>
+        <Translation dwd:design-time-name="8ad48c29-25d8-44a9-892a-d613bd1408ff">
+          <Language>3082</Language>
+          <Caption>Reemplazar Pedido Ventas</Caption>
+        </Translation>
+      </Translations>
+      <OrderBy>Key</OrderBy>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="5fd33192-6b78-4742-98a3-09e098565548">
+      <ID>ISS Invent Location Id</ID>
+      <Name>ISS Invent Location Id</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="bdc216da-66f8-4ffd-9076-6b649ca5ee8b">
+          <DataType>WChar</DataType>
+          <DataSize>80</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="c0e95fbe-1870-4682-a833-d7b6c70727ab">
+            <TableID>Invent_x0020_Item_x0020_Setup</TableID>
+            <ColumnID>ISS_InventLocationId</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <Translations>
+        <Translation dwd:design-time-name="ea9900f7-ed07-4d54-a800-1cdaf66937b9">
+          <Language>3082</Language>
+          <Caption>Almacén de Ventas</Caption>
+        </Translation>
+      </Translations>
+      <OrderBy>Key</OrderBy>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="131c6e89-8099-42f4-be64-f476b0b2d1e7">
+      <ID>ITEMID</ID>
+      <Name>ITEMID</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="763e9575-991e-4a01-97ac-94460d9651db">
+          <DataType>WChar</DataType>
+          <DataSize>4</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="0f08f286-5289-4a6b-9690-e1daf4ea745e">
+            <TableID>Invent_x0020_Item_x0020_Setup</TableID>
+            <ColumnID>DATAAREAID</ColumnID>
+          </Source>
+        </KeyColumn>
+        <KeyColumn dwd:design-time-name="98df30b4-068d-416d-a118-53761a9fb6f4">
+          <DataType>WChar</DataType>
+          <DataSize>20</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="febf7d54-6822-4da1-883a-0e65bb52e500">
+            <TableID>Invent_x0020_Item_x0020_Setup</TableID>
+            <ColumnID>ITEMID</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <NameColumn dwd:design-time-name="bc769871-4052-4092-9215-f29fbfd42736">
+        <DataType>WChar</DataType>
+        <DataSize>20</DataSize>
+        <Source xsi:type="ColumnBinding" dwd:design-time-name="913d9e2b-97e0-4d0c-b120-2153bb12ab62">
+          <TableID>Invent_x0020_Item_x0020_Setup</TableID>
+          <ColumnID>ITEMID</ColumnID>
+        </Source>
+      </NameColumn>
+      <Translations>
+        <Translation dwd:design-time-name="6576af6a-f38b-444b-bac0-c25c7dd9d948">
+          <Language>3082</Language>
+          <Caption>Código de Artículo</Caption>
+        </Translation>
+      </Translations>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="7cbea536-ed69-438e-8834-7f5ae2ab2453">
+      <ID>Configuration</ID>
+      <Name>Configuration</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="46e6f9ab-37cb-45b0-ae6b-f0f43fea08f9">
+          <DataType>WChar</DataType>
+          <DataSize>14</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="95bf55e3-4b91-4cc0-bad7-252c0cb1fe47">
+            <TableID>Invent_x0020_Item_x0020_Setup</TableID>
+            <ColumnID>Configuration</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <Translations>
+        <Translation dwd:design-time-name="d37fc808-db0e-4870-8898-92b21eebbfff">
+          <Language>3082</Language>
+          <Caption>Configuración</Caption>
+        </Translation>
+      </Translations>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+  </Attributes>
+  <ddl300:ProcessingState>Unprocessed</ddl300:ProcessingState>
+</Dimension>
